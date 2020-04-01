@@ -1,0 +1,117 @@
+object frxDataBandEditorForm: TfrxDataBandEditorForm
+  Left = 200
+  Height = 301
+  Top = 108
+  Width = 277
+  BorderIcons = [biSystemMenu]
+  BorderStyle = bsDialog
+  Caption = 'Select DataSet'
+  ClientHeight = 301
+  ClientWidth = 277
+  Color = clBtnFace
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  KeyPreview = True
+  OnCreate = FormCreate
+  OnHide = FormHide
+  OnKeyDown = FormKeyDown
+  OnShow = FormShow
+  Position = poScreenCenter
+  LCLVersion = '1.2.6.0'
+  object OkB: TButton
+    Left = 114
+    Height = 25
+    Top = 268
+    Width = 75
+    HelpContext = 40
+    Caption = 'OK'
+    Default = True
+    ModalResult = 1
+    TabOrder = 0
+  end
+  object CancelB: TButton
+    Left = 194
+    Height = 25
+    Top = 268
+    Width = 75
+    HelpContext = 50
+    Cancel = True
+    Caption = 'Cancel'
+    ModalResult = 2
+    TabOrder = 1
+  end
+  object DatasetGB: TGroupBox
+    Left = 8
+    Height = 181
+    Top = 8
+    Width = 261
+    Caption = 'Dataset'
+    ClientHeight = 163
+    ClientWidth = 257
+    TabOrder = 2
+    object RecordsL: TLabel
+      Left = 78
+      Height = 13
+      Top = 132
+      Width = 93
+      Alignment = taRightJustify
+      Caption = 'Number of records:'
+      ParentColor = False
+    end
+    object DatasetsLB: TListBox
+      Left = 12
+      Height = 121
+      Top = 0
+      Width = 237
+      HelpContext = 88
+      ItemHeight = 18
+      OnClick = DatasetsLBClick
+      OnDblClick = DatasetsLBDblClick
+      OnDrawItem = DatasetsLBDrawItem
+      Style = lbOwnerDrawFixed
+      TabOrder = 0
+    end
+    object RecordsE: TEdit
+      Left = 192
+      Height = 21
+      Top = 128
+      Width = 41
+      TabOrder = 1
+      Text = '0'
+    end
+    object RecordsUD: TUpDown
+      Left = 233
+      Height = 21
+      Top = 128
+      Width = 16
+      Associate = RecordsE
+      Min = 0
+      Max = 32767
+      Position = 0
+      TabOrder = 2
+      Wrap = False
+    end
+  end
+  object FilterGB: TGroupBox
+    Left = 8
+    Height = 57
+    Top = 196
+    Width = 261
+    Caption = 'Filter'
+    ClientHeight = 39
+    ClientWidth = 257
+    TabOrder = 3
+    object FilterE: TfrxComboEdit
+      Left = 12
+      Height = 21
+      Top = 4
+      Width = 237
+      AutoSize = False
+      ItemHeight = 13
+      Style = csSimple
+      TabOrder = 0
+      OnButtonClick = FilterEButtonClick
+    end
+  end
+end

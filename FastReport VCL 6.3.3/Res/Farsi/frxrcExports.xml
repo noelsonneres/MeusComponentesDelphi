@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<Resources CodePage="1256">
+  <StrRes Name="8000" Text="Excel ШµШЇЩ€Ш± ШЁЩ‡ ЩЃШ±Щ…ШЄ"/>
+  <StrRes Name="8001" Text="Щ†Щ…Ш§"/>
+  <StrRes Name="8002" Text="ШЄШµШ§Щ€ЩЉШ±"/>
+  <StrRes Name="8003" Text="Ш§ШЇШєШ§Щ… ШіЩ„Щ€Щ„Щ‡Ш§"/>
+  <StrRes Name="8004" Text="ШµШЇЩ€Ш± ШіШ±ЩЉШ№"/>
+  <StrRes Name="8005" Text="Щ€ЩЉШІЩЉ Щ€ЩЉЪЇ"/>
+  <StrRes Name="8006" Text="ШЁШµЩ€Ш±ШЄ Щ…ШЄЩ†"/>
+  <StrRes Name="8007" Text="ШІЩ…ЩЉЩ†Щ‡"/>
+  <StrRes Name="8008" Text="ШЁШ№ШЇ Ш§ШІ ШµШЇЩ€Ш± Excle Ш§Ш¬Ш±Ш§ЩЉ"/>
+  <StrRes Name="8009" Text="ЩѕШ±Щ€Щ†ШЇЩ‡ Excel (*.xls)|*.xls"/>
+  <StrRes Name="8010" Text=".xls"/>
+  <StrRes Name="8100" Text="Excel ШµШЇЩ€Ш± ШЁЩ‡ ЩЃШ±Щ…ШЄ"/>
+  <StrRes Name="8101" Text="Щ†Щ…Ш§"/>
+  <StrRes Name="8102" Text="Щ€ЩЉШІЩЉ Щ€ЩЉЪЇ"/>
+  <StrRes Name="8103" Text="ШІЩ…ЩЉЩ†Щ‡"/>
+  <StrRes Name="8104" Text="ШЁШ№ШЇ Ш§ШІ ШµШЇЩ€Ш± Excle Ш§Ш¬Ш±Ш§ЩЉ"/>
+  <StrRes Name="8105" Text="ЩѕШ±Щ€Щ†ШЇЩ‡ XML Excel (*.xls)|*.xls"/>
+  <StrRes Name="8106" Text=".xls"/>
+  <StrRes Name="8200" Text="HTML ШµШЇЩ€Ш± ШЁЩ‡ ЩЃШ±Щ…ШЄ"/>
+  <StrRes Name="8201" Text="Ш§Ш¬Ш±Ш§ ШЁШ№ШЇ Ш§ШІ Ш°Ш®ЩЉШ±Щ‡ ШіШ§ШІЩЉ"/>
+  <StrRes Name="8202" Text="Щ†Щ…Ш§"/>
+  <StrRes Name="8203" Text="ШЄШµШ§Щ€ЩЉШ±"/>
+  <StrRes Name="8204" Text="Щ‡Щ…Щ‡ ШЇШ± ЩЉЪ© ЩѕЩ€ШґЩ‡"/>
+  <StrRes Name="8205" Text="ЩѕЩ‡Щ†Ш§ЩЉ Ш«Ш§ШЁШЄ"/>
+  <StrRes Name="8206" Text="Щ‡ШЇШ§ЩЉШЄ ЪЇШ± ШµЩЃШ­Щ‡"/>
+  <StrRes Name="8207" Text="Ъ†Щ†ШЇ ШµЩЃШ­Щ‡ Ш§ЩЉ"/>
+  <StrRes Name="8208" Text="Mozilla Ш¬ШіШЄШ¬Щ€ЪЇШ±"/>
+  <StrRes Name="8209" Text="ШІЩ…ЩЉЩ†Щ‡"/>
+  <StrRes Name="8210" Text="ЩѕШ±Щ€Щ†ШЇЩ‡ HTML (*.html)|*.html"/>
+  <StrRes Name="8211" Text=".html"/>
+  <StrRes Name="8300" Text="(Ъ†Ш§ЩѕЪЇШ± ШіЩ€ШІЩ†ЩЉ) Text ШµШЇЩ€Ш± ШЁЩ‡ ЩЃШ±Щ…ШЄ"/>
+  <StrRes Name="8301" Text="ЩѕЩЉШґ Щ†Щ…Ш§ЩЉШґ ЩЃШ№Ш§Щ„/ШєЩЉШ±ШєШ№Ш§Щ„"/>
+  <StrRes Name="8302" Text=" Ш¬ШІШ¦ЩЉШ§ШЄ ШµШЇЩ€Ш±  "/>
+  <StrRes Name="8303" Text="ШЄЩЃЪ©ЩЉЪ© ШµЩЃШ­Щ‡"/>
+  <StrRes Name="8304" Text="OEM Ъ©ШЇЩѕЫЊШ¬"/>
+  <StrRes Name="8305" Text="Ш®Ш·Щ€Ш· Ш®Ш§Щ„ЩЉ"/>
+  <StrRes Name="8306" Text="ЩЃШ¶Ш§ЩЉ Ш®Ш§Щ„ЩЉ"/>
+  <StrRes Name="8307" Text="ШґЩ…Ш§Ш±Щ‡ ШµЩЃШ­Щ‡"/>
+  <StrRes Name="8308" Text="ШґЩ…Ш§Ш±Щ‡ ЩЉШ§ Щ…Ш­ШЇЩ€ШЇЩ‡ ШµЩЃШ­Ш§ШЄ Ш±Ш§ Ъ©Щ‡ ШЁШ§ Ъ©Ш§Щ…Ш§ Ш¬ШЇШ§ ШґШЇЩ‡ Ш§Щ†ШЇ Щ€Ш§Ш±ШЇ Ъ©Щ†ЩЉШЇ. ШЁШ±Ш§ЩЉ Щ…Ш«Ш§Щ„:  1,3,5, 12-6"/>
+  <StrRes Name="8309" Text=" Щ…Щ‚ЩЉШ§Ші ЪЇШ°Ш§Ш±ЩЉ "/>
+  <StrRes Name="8310" Text="X Щ…Щ‚ЩЉШ§Ші"/>
+  <StrRes Name="8311" Text="Y Щ…Щ‚ЩЉШ§Ші"/>
+  <StrRes Name="8312" Text=" Ъ†Ш§Ш±Ъ†Щ€ШЁ "/>
+  <StrRes Name="8313" Text="Щ‡ЩЉЪ†ЩЉЪ©ШЇШ§Щ…"/>
+  <StrRes Name="8314" Text="ШіШ§ШЇЩ‡"/>
+  <StrRes Name="8315" Text="ЪЇШ±Ш§ЩЃЩЉЪ©"/>
+  <StrRes Name="8316" Text="ЩЃЩ‚Ш· ШЁШ§ Ъ©ШЇЩѕЫЊШ¬ OEM"/>
+  <StrRes Name="8317" Text="Ъ†Ш§Щѕ ШЁШ№ШЇ Ш§ШІ ШµШЇЩ€Ш±"/>
+  <StrRes Name="8318" Text="Ш¬ШІШ¦ЩЉШ§ШЄ Ш°Ш®ЩЉШ±Щ‡ ШіШ§ШІЩЉ"/>
+  <StrRes Name="8319" Text=" ЩѕЩЉШґ Щ†Щ…Ш§ЩЉШґ "/>
+  <StrRes Name="8320" Text="ЩѕЩ‡Щ†Ш§:"/>
+  <StrRes Name="8321" Text="Ш§Ш±ШЄЩЃШ§Ш№:"/>
+  <StrRes Name="8322" Text="ШµЩЃШ­Щ‡"/>
+  <StrRes Name="8323" Text="ШЁШІШ±ЪЇЩ†Щ…Ш§Ш¦ЩЉ"/>
+  <StrRes Name="8324" Text="Ъ©Щ€Ъ†Ъ©Щ†Щ…Ш§Ш¦ЩЉ"/>
+  <StrRes Name="8325" Text="ЩѕШ±Щ€Щ†ШЇЩ‡ Text (Ъ†Ш§ЩѕЪЇШ± ШіЩ€ШІЩ†ЩЉ)(*.prn)|*.prn"/>
+  <StrRes Name="8326" Text=".prn"/>
+  <StrRes Name="8400" Text="Ъ†Ш§Щѕ"/>
+  <StrRes Name="8401" Text="Ъ†Ш§ЩѕЪЇШ±"/>
+  <StrRes Name="8402" Text="Щ†Ш§Щ…"/>
+  <StrRes Name="8403" Text="ШЄЩ†ШёЩЉЩ…Ш§ШЄ..."/>
+  <StrRes Name="8404" Text="Ш±Щ€Щ†Щ€ШґШЄ"/>
+  <StrRes Name="8405" Text="ШЄШ№ШЇШ§ШЇ Ш±Щ€Щ†Щ€ШґШЄ"/>
+  <StrRes Name="8406" Text=" ШЄЩ†ШёЩЉЩ…Ш§ШЄ Ъ†Ш§ЩѕЪЇШ± "/>
+  <StrRes Name="8407" Text="Щ†Щ€Ш№ Ъ†Ш§ЩѕЪЇШ±"/>
+  <StrRes Name="8408" Text=".fpi"/>
+  <StrRes Name="8409" Text="Ш§Щ„ЪЇЩ€ Ш±Ш§Щ‡ Ш§Щ†ШЇШ§ШІ Ъ†Ш§ЩѕЪЇШ± (*.fpi)|*.fpi"/>
+  <StrRes Name="8410" Text=".fpi"/>
+  <StrRes Name="8411" Text="Ш§Щ„ЪЇЩ€ Ш±Ш§Щ‡ Ш§Щ†ШЇШ§ШІ Ъ†Ш§ЩѕЪЇШ± (*.fpi)|*.fpi"/>
+  <StrRes Name="8500" Text="RTF ШµШЇЩ€Ш± ШЁЩ‡ ЩЃШ±Щ…ШЄ"/>
+  <StrRes Name="8501" Text="ШЄШµШ§Щ€ЩЉШ±"/>
+  <StrRes Name="8502" Text="Щ€ЩЉШІЩЉ Щ€ЩЉЪЇ"/>
+  <StrRes Name="8503" Text="Ш§Ш¬Ш±Ш§ ШЁШ№ШЇ Ш§ШІ ШµШЇЩ€Ш±"/>
+  <StrRes Name="8504" Text="ЩѕШ±Щ€Щ†ШЇЩ‡ RTF (*.rtf)|*.rtf"/>
+  <StrRes Name="8505" Text=".rtf"/>
+  <StrRes Name="8600" Text="Ш¬ШІШ¦ЩЉШ§ШЄ ШµШЇЩ€Ш±"/>
+  <StrRes Name="8601" Text=" Ш¬ШІШ¦ЩЉШ§ШЄ ШЄШµЩ€ЩЉШ± "/>
+  <StrRes Name="8602" Text="JPEG Ъ©ЩЉЩЃЩЉШЄ"/>
+  <StrRes Name="8603" Text="(dpi) Щ€Ш¶Щ€Ш­"/>
+  <StrRes Name="8604" Text="ЩЃШ§ЩЉЩ„Щ‡Ш§ЩЉ Щ…Ш¬ШІШ§"/>
+  <StrRes Name="8605" Text="Ъ©Ш§Щ‡Шґ Ш§Щ†ШЇШ§ШІЩ‡ ШµЩЃШ­Ш§ШЄ"/>
+  <StrRes Name="8606" Text="ШіЩЉШ§Щ‡ Щ€ ШіЩЃЩЉШЇ"/>
+  <StrRes Name="8700" Text="PDF ШµШЇЩ€Ш± ШЁЩ‡ ЩЃШ±Щ…ШЄ"/>
+  <StrRes Name="8701" Text="PDF/A"/>
+  <StrRes Name="8702" Text="Ш¬Ш§ШіШ§ШІЩЉ ЩЃЩ€Щ†ШЄ"/>
+  <StrRes Name="8703" Text="Ъ†Ш§Щѕ ШЁЩ‡ЩЉЩ†Щ‡ ШґШЇЩ‡"/>
+  <StrRes Name="8704" Text="Щ†Щ…Ш§ЩЉ Ъ©Щ„ЩЉ"/>
+  <StrRes Name="8705" Text="ШІЩ…ЩЉЩ†Щ‡"/>
+  <StrRes Name="8706" Text="Ш§Ш¬Ш±Ш§ ШЁШ№ШЇ Ш§ШІ ШµШЇЩ€Ш±"/>
+  <StrRes Name="8707" Text="ЩѕШ±Щ€Щ†ШЇЩ‡ Adobe PDF (*.pdf)|*.pdf"/>
+  <StrRes Name="8708" Text=".pdf"/>
+  <StrRes Name="RTFexport" Text="ЩѕШ±Щ€Щ†ШЇЩ‡ RTF"/>
+  <StrRes Name="BMPexport" Text="ШЄШµЩ€ЩЉШ± BMP"/>
+  <StrRes Name="JPEGexport" Text="ШЄШµЩ€ЩЉШ± JPEG"/>
+  <StrRes Name="TIFFexport" Text="ШЄШµЩ€ЩЉШ± TIFF "/>
+  <StrRes Name="TextExport" Text="(Ъ†Ш§ЩѕЪЇШ± ШіЩ€ШІЩ†ЩЉ) Text "/>
+  <StrRes Name="XlsOLEexport" Text="Ш¬ШЇЩ€Щ„ Excel (OLE)"/>
+  <StrRes Name="HTMLexport" Text="ЩѕШ±Щ€Щ†ШЇЩ‡ HTML"/>
+  <StrRes Name="XlsXMLexport" Text="Ш¬ШЇЩ€Щ„ Excel (XML)"/>
+  <StrRes Name="PDFexport" Text="ЩѕШ±Щ€Щ†ШЇЩ‡ PDF "/>
+  <StrRes Name="ProgressWait" Text="Щ„Ш·ЩЃШ§ ШµШЁШ± Ъ©Щ†ЩЉШЇ"/>
+  <StrRes Name="ProgressRows" Text="ШўЩ…Ш§ШЇЩ‡ ШіШ§ШІЩЉ ШіШ·Ш±Щ‡Ш§"/>
+  <StrRes Name="ProgressColumns" Text="ШўЩ…Ш§ШЇЩ‡ ШіШ§ШІЩЉ ШіШЄЩ€Щ†Щ‡Ш§"/>
+  <StrRes Name="ProgressStyles" Text="ШўЩ…Ш§ШЇЩ‡ ШіШ§ШІЩЉ Щ†Щ…Ш§"/>
+  <StrRes Name="ProgressObjects" Text="ШµШЇЩ€Ш± Ш§ШґЩЉШ§ШЎ"/>
+  <StrRes Name="TIFFexportFilter" Text="ШЄШµЩ€ЩЉШ± Tiff (*.tif)|*.tif"/>
+  <StrRes Name="BMPexportFilter" Text="ШЄШµЩ€ЩЉШ± BMP (*.bmp)|*.bmp"/>
+  <StrRes Name="JPEGexportFilter" Text="ШЄШµЩ€ЩЉШ± Jpeg (*.jpg)|*.jpg"/>
+  <StrRes Name="HTMLNavFirst" Text="Ш§Щ€Щ„"/>
+  <StrRes Name="HTMLNavPrev" Text="Щ‚ШЁЩ„"/>
+  <StrRes Name="HTMLNavNext" Text="ШЁШ№ШЇ"/>
+  <StrRes Name="HTMLNavLast" Text="ШўШ®Ш±"/>
+  <StrRes Name="HTMLNavRefresh" Text="ШЁШ§ШІШЁЩЉЩ†ЩЉ"/>
+  <StrRes Name="HTMLNavPrint" Text="Ъ†Ш§Щѕ"/>
+  <StrRes Name="HTMLNavTotal" Text="Ъ©Щ„ ШµЩЃШ­Ш§ШЄ"/>
+  <StrRes Name="8800" Text="Text ШµШЇЩ€Ш± ШЁЩ‡ ЩЃШ±Щ…ШЄ"/>
+  <StrRes Name="8801" Text="ЩѕШ±Щ€Щ†ШЇЩ‡ Text (*.txt)|*.txt"/>
+  <StrRes Name="8802" Text=".txt"/>
+  <StrRes Name="SimpleTextExport" Text="ЩѕШ±Щ€Щ†ШЇЩ‡ Text"/>
+  <StrRes Name="8850" Text="CSV ШµШЇЩ€Ш± ШЁЩ‡ ЩЃШ±Щ…ШЄ"/>
+  <StrRes Name="8851" Text="ЩѕШ±Щ€Щ†ШЇЩ‡ CSV (*.csv)|*.csv"/>
+  <StrRes Name="8852" Text=".csv"/>
+  <StrRes Name="8853" Text="Ш¬ШЇШ§ Ъ©Щ†Щ†ШЇЩ‡"/>
+  <StrRes Name="CSVExport" Text="ЩѕШ±Щ€Щ†ШЇЩ‡ CSV"/>
+  <StrRes Name="8900" Text="E-Mail Ш§Ш±ШіШ§Щ„"/>
+  <StrRes Name="8901" Text="E-mail"/>
+  <StrRes Name="8902" Text="ШЇШіШЄШ±ШіЩЉ"/>
+  <StrRes Name="8903" Text="Ш§ШЄШµШ§Щ„"/>
+  <StrRes Name="8904" Text="ШўШЇШ±Ші"/>
+  <StrRes Name="8905" Text="Ш¶Щ…ЩЉЩ…Щ‡"/>
+  <StrRes Name="8906" Text="Щ‚Ш§Щ„ШЁ"/>
+  <StrRes Name="8907" Text="ШўШЇШ±Ші ЩЃШ±ШіШЄЩ†ШЇЩ‡"/>
+  <StrRes Name="8908" Text="Щ†Ш§Щ… ЩЃШ±ШіШЄЩ†ШЇЩ‡"/>
+  <StrRes Name="8909" Text="Щ…ЩЉШІШЁШ§Щ†"/>
+  <StrRes Name="8910" Text="Ъ©Ш§Ш±ШЁШ±"/>
+  <StrRes Name="8911" Text="Щ†Ш§Щ…Щ‡"/>
+  <StrRes Name="8912" Text="ЩѕЩЉШєШ§Щ…"/>
+  <StrRes Name="8913" Text="Щ…ШЄЩ†"/>
+  <StrRes Name="8914" Text="ШіШ§ШІЩ…Ш§Щ†"/>
+  <StrRes Name="8915" Text="Ъ©Щ„Щ…Щ‡ Ш±Щ…ШІ"/>
+  <StrRes Name="8916" Text="ШЇШ±ЪЇШ§Щ‡"/>
+  <StrRes Name="8917" Text="Ш°Ш®ЩЉШ± Ш¬ШІШ¦ЩЉШ§ШЄ"/>
+  <StrRes Name="8918" Text="ЩЃЩЉЩ„ШЇ Щ…Щ€Ш±ШЇ Щ†ЩЉШ§ШІ ЩѕШ± Щ†ШґШЇЩ‡ Ш§ШіШЄ"/>
+  <StrRes Name="8919" Text="Ш¬ШІШ¦ЩЉШ§ШЄ ШµШЇЩ€Ш± ЩѕЩЉШґШ±ЩЃШЄЩ‡"/>
+  <StrRes Name="8920" Text="Ш§Щ…Ш¶Ш§ШЎ"/>
+  <StrRes Name="8921" Text="ШіШ§Ш®ШЄЩ†"/>
+  <StrRes Name="8922" Text="Щ…Щ€Ш¶Щ€Ш№"/>
+  <StrRes Name="8923" Text="ШЁЩ‡ШЄШ±ЩЉЩ† ШЇШ±Щ€ШЇ"/>
+  <StrRes Name="8924" Text="ЩЃШ±ШіШЄШ§ШЇЩ† Щ†Ш§Щ…Щ‡ ШЁЩ‡"/>
+  <StrRes Name="EmailExport" Text="Ш§Ш±ШіШ§Щ„ E-mail"/>
+  <StrRes Name="FastReportFile" Text="ЩѕШ±Щ€Щ†ШЇЩ‡ FastReport"/>
+  <StrRes Name="GifexportFilter" Text="ШЄШµЩ€ЩЉШ± Gif (*.gif)|*.gif"/>
+  <StrRes Name="GIFexport" Text="ШЄШµЩ€ЩЉШ± Gif"/>
+  <StrRes Name="8950" Text="Ш§ШЇШ§Щ…Щ‡"/>
+  <StrRes Name="8951" Text="ШіШ±ШЁШ±ЪЇ/ЩѕШ§Щ€Ш±Щ‚ЩЉ ШµЩЃШ­Щ‡"/>
+  <StrRes Name="8952" Text="Щ…ШЄЩ†"/>
+  <StrRes Name="8953" Text="ШіШ±ШЁШ±ЪЇ/ЩѕШ§Щ€Ш±Щ‚ЩЉ"/>
+  <StrRes Name="8954" Text="Щ‡ЩЉЪ†"/>
+  <StrRes Name="ODSExportFilter" Text="ЩѕШ±Щ€Щ†ШЇЩ‡ Spreadsheet (*.ods)|*.ods"/>
+  <StrRes Name="ODSExport" Text="Ш¬ШЇЩ€Щ„ Spreadsheet"/>
+  <StrRes Name="ODTExportFilter" Text="ЩѕШ±Щ€Щ†ШЇЩ‡ Text(*.odt)|*.odt"/>
+  <StrRes Name="ODTExport" Text="Ш¬ШЇЩ€Щ„ Text"/>
+  <StrRes Name="8960" Text=".ods"/>
+  <StrRes Name="8961" Text=".odt"/>
+  <StrRes Name="8962" Text="Ш§Щ…Щ†ЫЊШЄ"/>
+  <StrRes Name="8963" Text="ШЄЩ†ШёЫЊЩ…Ш§ШЄ Ш§Щ…Щ†ШЄЫЊШЄ"/>
+  <StrRes Name="8964" Text="Ъ©Щ„Щ…Щ‡ Ш±Щ…ШІ Щ…Ш§Щ„Ъ©"/>
+  <StrRes Name="8965" Text="Ъ©Щ„Щ…Щ‡ Ш±Щ…ШІ Ъ©Ш§Ш±ШЁШ±"/>
+  <StrRes Name="8966" Text="Ъ†Ш§Щѕ ЩѕШ±Щ€Щ†ШЇЩ‡"/>
+  <StrRes Name="8967" Text="ШЄШєЫЊЫЊШ± ЩѕШ±Щ€Щ†ШЇЩ‡"/>
+  <StrRes Name="8968" Text="Ъ©ЩѕЫЊ Щ…ШЄЩ† Щ€ ЪЇШ±Ш§ЩЃЫЊЪ©"/>
+  <StrRes Name="8969" Text="Ш§ЩЃШІЩ€ШЇЩ† ЫЊШ§ ШЄШєЫЊЫЊШ± Щ…Щ„Ш§Ш­ШёШ§ШЄ"/>
+  <StrRes Name="8970" Text="PDF Ш§Щ…Щ†ЫЊШЄ"/>
+  <StrRes Name="8971" Text="Ш§Ш·Щ„Ш§Ш№Ш§ШЄ ЩѕШ±Щ€Щ†ШЇЩ‡"/>
+  <StrRes Name="8972" Text="Ш§Ш·Щ„Ш§Ш№Ш§ШЄ"/>
+  <StrRes Name="8973" Text="Ш№Щ†Щ€Ш§Щ†"/>
+  <StrRes Name="8974" Text="Щ…Щ€Щ„ЩЃ"/>
+  <StrRes Name="8975" Text="Щ…Щ€Ш¶Щ€Ш№"/>
+  <StrRes Name="8976" Text="Ъ©Щ„Щ…Ш§ШЄ Ъ©Щ„ЫЊШЇЫЊ"/>
+  <StrRes Name="8977" Text="ШіШ§ШІЩ†ШЇЩ‡"/>
+  <StrRes Name="8978" Text="ШЄЩ‡ЫЊЩ‡ Ъ©Щ†Щ†ШЇЩ‡"/>
+  <StrRes Name="8979" Text="ШµШ­ШЄ Ш§Ш№ШЄШЁШ§Ш±"/>
+  <StrRes Name="8980" Text="Щ…Ш¬Щ€ШІ"/>
+  <StrRes Name="8981" Text="Щ†Ш§ШёШ±"/>
+  <StrRes Name="8982" Text="ШЁШ±ШЄШ±ЫЊ Щ†Ш§ШёШ±"/>
+  <StrRes Name="8983" Text="Щ…Ш®ЩЃЫЊ Ъ©Ш±ШЇЩ† Ш¬Ш№ШЁЩ‡ Ш§ШЁШІШ§Ш±"/>
+  <StrRes Name="8984" Text="Щ…Ш®ЩЃЫЊ Ъ©Ш±ШЇЩ† ЩЃЩ‡Ш±ШіШЄ Ш§Щ†ШЄШ®Ш§ШЁ"/>
+  <StrRes Name="8985" Text="Щ…Ш®ЩЃЫЊ Ъ©Ш±ШЇЩ† ЩѕЩ†Ш¬Ш±Щ‡ Ш±Ш§ШЁШ· Ъ©Ш§Ш±ШЁШ±"/>
+  <StrRes Name="8986" Text="ШЄЩ†ШёЫЊЩ… ЩѕЩ†Ш¬Ш±Щ‡"/>
+  <StrRes Name="8987" Text="ЩѕЩ†Ш¬Ш±Щ‡ ШЇШ± Щ…Ш±Ъ©ШІ"/>
+  <StrRes Name="8988" Text="Щ…Щ‚ЫЊШ§Ші Ъ†Ш§Щѕ"/>
+  <StrRes Name="8989" Text="ШЄШ§Ш¦ЫЊШЇ Ш®Щ€Ш§Щ†ШЇЩ†"/>
+  <StrRes Name="9101" Text="Export to DBF"/>
+  <StrRes Name="9102" Text="dBase (DBF) export"/>
+  <StrRes Name="9103" Text=".dbf"/>
+  <StrRes Name="9104" Text="Failed to load the file"/>
+  <StrRes Name="9105" Text="Failure"/>
+  <StrRes Name="9106" Text="Field names"/>
+  <StrRes Name="9107" Text="Automatically"/>
+  <StrRes Name="9108" Text="Manually"/>
+  <StrRes Name="9109" Text="Load from file"/>
+  <StrRes Name="9110" Text="Text files (*.txt)|*.txt|All files|*.*"/>
+  <StrRes Name="9111" Text="DBF files (*.dbf)|*.dbf|All files|*.*"/>
+  <StrRes Name="expMailAddr" Text="Address or addresses delimited by comma"/>
+  <StrRes Name="PNGexport" Text="PNG image"/>
+  <StrRes Name="EMFexport" Text="EMF image"/>
+  <StrRes Name="PNGexportFilter" Text="PNG image (*.png)|*.png"/>
+  <StrRes Name="EMFexportFilter" Text="EMF image (*.emf)|*.emf"/>
+  <StrRes Name="9000" Text="Rows count:"/>
+  <StrRes Name="9001" Text="Split To Sheet"/>
+  <StrRes Name="9002" Text="Don't split"/>
+  <StrRes Name="9003" Text="Use report pages"/>
+  <StrRes Name="9004" Text="Use print on parent"/>
+  <StrRes Name="9151" Text="Excel 97/2000/XP file"/>
+  <StrRes Name="9152" Text="Auto create file"/>
+  <StrRes Name="9153" Text="Options"/>
+  <StrRes Name="9154" Text="Page"/>
+  <StrRes Name="9155" Text="Grid Lines"/>
+  <StrRes Name="9156" Text="All in one page"/>
+  <StrRes Name="9157" Text="Data Grouping"/>
+  <StrRes Name="9158" Text="Like the report"/>
+  <StrRes Name="9159" Text="Chunks. Each chunk has (rows):"/>
+  <StrRes Name="9160" Text="Chunk size must be a non negative integer value."/>
+  <StrRes Name="9161" Text="SingleSheet must be False when exporting to chunks"/>
+  <StrRes Name="9162" Text="Author"/>
+  <StrRes Name="9163" Text="Comment"/>
+  <StrRes Name="9164" Text="Keywords"/>
+  <StrRes Name="9165" Text="Revision"/>
+  <StrRes Name="9166" Text="Version"/>
+  <StrRes Name="9167" Text="Application"/>
+  <StrRes Name="9168" Text="Subject"/>
+  <StrRes Name="9169" Text="Category"/>
+  <StrRes Name="9170" Text="Company"/>
+  <StrRes Name="9171" Text="Title"/>
+  <StrRes Name="9172" Text="Manager"/>
+  <StrRes Name="9173" Text="General"/>
+  <StrRes Name="9174" Text="Information"/>
+  <StrRes Name="9175" Text="Protection"/>
+  <StrRes Name="9176" Text="Password"/>
+  <StrRes Name="9177" Text="If you set a non empty password string, the generated document will be protected with this password. The password is always written in Unicode characters and must be shorter than 256 Unicode characters."/>
+  <StrRes Name="9178" Text="Confirmation"/>
+  <StrRes Name="9179" Text="Password confirmation does not match the password. Type the password again."/>
+  <StrRes Name="9180" Text="Attempting to set a password of %d characters. The maximum allowed length of a password is %d characters."/>
+  <StrRes Name="9181" Text="Adjust page size"/>
+  <StrRes Name="9182" Text="Export to Excel 97/2000/XP"/>
+  <StrRes Name="9183" Text="Delete empty rows"/>
+  <StrRes Name="9184" Text="Export formulas"/>
+  <StrRes Name="BiffCol" Text="Resizing columns"/>
+  <StrRes Name="BiffRow" Text="Resizing rows"/>
+  <StrRes Name="BiffCell" Text="Exporting cells"/>
+  <StrRes Name="BiffImg" Text="Exporting pictures"/>
+  <StrRes Name="9200" Text="Microsoft Excel 2007 XML"/>
+  <StrRes Name="9201" Text="Microsoft PowerPoint 2007 XML"/>
+  <StrRes Name="9203" Text="Microsoft Word 2007 XML"/>
+  <StrRes Name="9204" Text="Microsoft Excel 2007 XML files (*.xlsx)|*.xlsx|All files|*.*"/>
+  <StrRes Name="9205" Text="Microsoft PowerPoint 2007 XML files (*.pptx)|*.pptx|All files|*.*"/>
+  <StrRes Name="9206" Text="Microsoft Word 2007 XML files (*.docx)|*.docx|All files|*.*"/>
+  <StrRes Name="9300" Text="HTML Layered"/>
+  <StrRes Name="9301" Text="HTML files (*.html)|*.html|All files|*.*"/>
+  <StrRes Name="9302" Text="HTML Layered Export"/>
+  <StrRes Name="9303" Text="HTML5 Layered"/>
+  <StrRes Name="9304" Text="HTML4 Layered"/>
+  <StrRes Name="9400" Text="Reordering components"/>
+  <StrRes Name="9401" Text="Rendering components"/>
+  <StrRes Name="9402" Text="Adjusting intersecting components"/>
+  <StrRes Name="9403" Text="Removing empty rows"/>
+  <StrRes Name="9404" Text="Adjusting frames"/>
+  <StrRes Name="9405" Text="Splitting big cells"/>
+  <StrRes Name="9406" Text="Composing BIFF file"/>
+  <StrRes Name="xProto" Text="Export Prototype"/>
+  <StrRes Name="xBlank" Text="Blank Export"/>
+  <StrRes Name="expMailAddr" Text="Address or addresses delimited by comma"/>
+
+  <StrRes Name="9512" Text="Unified Pictures"/>
+  <StrRes Name="9513" Text="Formatted"/>
+  
+  <StrRes Name="HTMLExtension" Text=".html"/>
+
+  <StrRes Name="SVGDescription" Text="SVG file"/>
+  <StrRes Name="SVGFilter"      Text="SVG file (*.svg)|*.svg"/>
+  <StrRes Name="SVGExtension"   Text=".svg"/>
+
+</Resources>

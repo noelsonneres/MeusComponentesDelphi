@@ -1,0 +1,37 @@
+package ACBr_NFCeECFVirtual;
+
+{$R *.res}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO ON}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION OFF}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO OFF}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES ON}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$DESCRIPTION 'ACBr - Implementação ECF Virtual NFCe. Permite usar ACBrECF para emitir NFCe como se fosse um ECF'}
+{$IMPLICITBUILD ON}
+
+requires
+  rtl,
+  designide,
+  ACBr_NFe,
+  ACBr_Serial;
+
+contains
+  ACBrECFVirtualNFCe in '..\..\..\..\..\Fontes\ACBrDFe\ACBrNFe\ACBrECFVirtualNFCe\ACBrECFVirtualNFCe.pas';
+
+end.

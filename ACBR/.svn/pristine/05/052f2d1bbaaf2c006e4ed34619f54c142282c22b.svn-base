@@ -1,0 +1,180 @@
+{******************************************************************************}
+{ Projeto: Componentes ACBr                                                    }
+{ Biblioteca multi plataforma de componentes Delphi para interação com equipa- }
+{ mentos de Automação Comercial utilizados no Brasil                           }
+{                                                                              }
+{  Você pode obter a última versão desse arquivo na página do Projeto ACBr     }
+{ Componentes localizado em      http://www.sourceforge.net/projects/acbr      }
+{                                                                              }
+{  Esta biblioteca é software livre; você pode redistribuí-la e/ou modificá-la }
+{ sob os termos da Licença Pública Geral Menor do GNU conforme publicada pela  }
+{ Free Software Foundation; tanto a versão 2.1 da Licença, ou (a seu critério) }
+{ qualquer versão posterior.                                                   }
+{                                                                              }
+{  Esta biblioteca é distribuída na expectativa de que seja útil, porém, SEM   }
+{ NENHUMA GARANTIA; nem mesmo a garantia implícita de COMERCIABILIDADE OU      }
+{ ADEQUAÇÃO A UMA FINALIDADE ESPECÍFICA. Consulte a Licença Pública Geral Menor}
+{ do GNU para mais detalhes. (Arquivo LICENÇA.TXT ou LICENSE.TXT)              }
+{                                                                              }
+{  Você deve ter recebido uma cópia da Licença Pública Geral Menor do GNU junto}
+{ com esta biblioteca; se não, escreva para a Free Software Foundation, Inc.,  }
+{ no endereço 59 Temple Street, Suite 330, Boston, MA 02111-1307 USA.          }
+{ Você também pode obter uma copia da licença em:                              }
+{ http://www.opensource.org/licenses/lgpl-license.php                          }
+{                                                                              }
+{ Daniel Simões de Almeida  -  daniel@djsystem.com.br  -  www.djsystem.com.br  }
+{              Praça Anita Costa, 34 - Tatuí - SP - 18270-410                  }
+{                                                                              }
+{******************************************************************************}
+
+{******************************************************************************
+|* ACBrBlocoX
+|*
+|* PROPÓSITO: Registro de Alterações
+******************************************************************************}
+
+Símbolo : Significado
+
+[+]     : Novo recurso
+[*]     : Recurso modificado/melhorado
+[-]     : Correção de Bug (assim esperamos)
+
+03/07/2019
+-- pcnRetEnvBlocoX --
+[*] Correção para leitura correta da lista de ECFs do xml de resposta ao comando ConsultarPendenciasContribuinte.
+	por: Elias César
+
+07/06/2019
+[+] Inclusão classe ACBrBlocoX_Consulta com novos métodos de acordo com novos WebServices (Requisitos LVIII e LIX),
+    como ConsultarProcessamentoArquivoBlocoX, ReprocessarArquivoBlocoX, DownloadArquivoBlocoX
+[+] Adicionados vários recursos de acordo com as alterações nos novos WebServices
+[*] ajustes acima no componente e demo por Elias César, Luciano (mansur) e Marcos Fincotto (Consinco S/A).
+Veja: https://www.projetoacbr.com.br/forum/topic/49596-altera%C3%A7%C3%A3o-webservice-bloco-x-acbrblocox/
+
+11/07/2018
+[+] Campo para retorno das mensagens do WebServices
+    https://www.projetoacbr.com.br/forum/topic/44625-bloco-x-retorno-do-campo-mensagem/
+    por Juliomar Marchetti
+
+21/11/2017
+[*] Grupo Estabelecimento: Removido os campos CNPJ e Nome Empresarial que foram removidos do layout.
+[*] Grupo PafEcf: Removido os campos NomeComercial, Versao, CNPJDesenvolvedor e NomeEmpresarialDesenvolvedor que foram removidos do layout.
+ Alterações fonte ACBrBlocoX_WebServices.pas:
+[*] Alterado a montagem dos dados da mensagem: Removido as tags pCnpjEstabelecimento, pDataReferencia e pNumeroCredenciamentoEcf que foram removidas do layout.
+[*] Alterado endereço do webservice que foi modificado.
+[*] Alteração fonte ACBrBlocoX_Estoque.pas:
+[+]Inserido controle para setar vazio a alíquota quando a alíquota for zero e a situação tributária for: Isento, Não Tributado ou Substituição Tributária, pois ocorre erro se for zero.
+ Alterações fonte ACBrBlocoX_ReducaoZ.pas:
+[*] Grupo Ecf: Removido os campos NumeroCredenciamento, Tipo, Marca, Modelo, Versao, Caixa que foram removidos do layout.
+[*] Grupo DadosReduzaoZ: Inserido controle para o tipo de convênio gerar 6 ou 9 dígitos e alterado formato dos campos VendaBrutaDiaria e GT, pois não podem ter virgula e deve ter zeros a esquerda em virtude da validação que ocorre erro.
+ Alteração fonte pcnConversao.pas:
+[*] Inserido tcNumStr no tipo de campo, utilizado na geração dos campos VendaBrutaDiaria e GT do arquivo da Redução Z.
+ Alteração fonte pcnGerador.pas:
+[*] Inserido tratamento para o tipo tcNumStr, para inserir zeros a esquerda.
+	https://www.projetoacbr.com.br/forum/topic/39376-bloco-x-altera%C3%A7%C3%B5es-no-envio/?do=findComment&comment=263302
+	por : Vanessa Mocellin
+
+09/05/2017
+[+] Mudanças para atender aos novos layouts do bloco x paf-ecf
+		http://www.projetoacbr.com.br/forum/topic/29412-bloco-x-webservice-e-validador/?page=2
+		por : Juliomar
+13/03/2017
+[-] conforme é descrito no xsd https://tributario.sef.sc.gov.br/tax.NET/sat.dfe.siv.web/xsd/estoque.xsd o campo quantidade tem o type
+		Numero1a20Mais3PrecisaoType com precisão de 3 então foi necessário enviar a correção
+		http://www.projetoacbr.com.br/forum/topic/34731-erro-de-schema-n%C3%A3o-especifcado-valida%C3%A7%C3%A3o-bloco-x-estoque/?do=findComment&comment=232573
+		por: Juliomar Marchetti
+
+
+09/02/2017
+-- ACBrBlocoX_ReducaoZ --
+[-] Correção de problema ao truncar valores. Passado a utilizar TruncFix.
+	(por: Augusto Fontana)
+
+06/02/2017
+-- ACBrBlocoX_ReducaoZ --
+[*] Modificação para atender aos novos tamanhos dos campos no arquivo de Redução Z.
+	(por: Elias César)
+
+05/01/2017
+--ACBrBlocoX_WebServices
+[-] Correção de bug "Erro: CNPJ do estabelecimento inválido ou em branco" deve ir somente Cnpj
+		http://www.projetoacbr.com.br/forum/topic/33738-erro-envio-bloco-x-redu%C3%A7%C3%B5es-z/?do=findComment&comment=225615
+		por : Juliomar Marchetti
+
+22/12/2016
+-- ACBrBlocoX, ACBrBlocoX_WebServices --
+[*] Separação das classes de ACBrBlocoX relacionadas a WebServices para
+    ACBrBlocoX_WebServices
+
+-- ACBrBlocoX_WebServices --
+[-] Corrigido o Suporte a Zip Nativo, (disponível apenas para Lazarus ou DelphiXE2
+    ou superior).
+[*] Remoção de TWebServices.EnviarBlocoX, use:
+    TACBrBlocoX_WebServices.EnviarReducaoZ ou TACBrBlocoX_WebServices.EnviarEstoque
+[*] Remoção de TWebServices.ValidarBlocoX, use:
+    TACBrBlocoX_WebServices.ValidarReducaoZ ou TACBrBlocoX_WebServices.ValidarEstoque
+[+] Adicionada a propriedade "TEnviarBlocoX.XMLZipado", para permitir ao
+    programador, informar diretamente o seu XML com Zip e Enconde64. Nesse caso
+    o mesmo não será calculado por "TEnviarBlocoX.GetXMLZipado"
+    (por: DSA)
+
+21/12/2016
+-- ACBrBlocoX --
+[+] Adicionado suporte a Zip e Encode64 do XML em: TEnviarBlocoX.XMLZipado
+    (por: DSA)
+
+20/12/2016
+-- ACBrBlocoX --
+[-] Correção de Erro de compilação em D7
+[-] Remoção de Memory Leak
+    (por: DSA)
+
+20/12/2016
+[*] Mudanças para atender modificações do webservice de SC
+    http://www.projetoacbr.com.br/forum/topic/33738-erro-envio-bloco-x-redu%C3%A7%C3%B5es-z/
+    por : Juliomar Marchetti
+
+13/12/2016
+-- ACBrBlocoX.pas --
+[*] Incluídas propriedades de retorno que serão preenchidas em TratarResposta, utilizando
+    a nova unit pcnRetEnvBlocoX para leitura do xml de resposta.
+
+-- pcnRetEnvBlocoX.pas --
+[+] Criada unit pcnRetEnvBlocoX que fará a leitura do xml de resposta do webservice.
+
+25/11/2016
+[-] Correção pois o campo quantidade não validava no webservice de teste
+    por Juliomar Marchetti
+
+05/10/2016
+-- ACBrBlocoX_Estoque
+[-] Correção conforme manual e servidor sefaz para 2 casas decimais
+    http://www.projetoacbr.com.br/forum/topic/32702-envio-blocox-altera%C3%A7%C3%A3o-campo-quantidade/
+    por: Juliomar Marchetti
+
+26/09/2016
+-- ACBrBlocoX_ReducaoZ, ACBrBlocoX_Estoque
+[*] Melhoria para deixar aparecer 3 casas decimais nas quantidades
+    http://www.projetoacbr.com.br/forum/topic/28811-paf-ecf-blocox-corre%C3%A7%C3%A3o-tipo-de-campo/?do=findComment&comment=215309
+    por: Juliomar Marchetti
+
+22/02/2016
+-- ACBrBlocoX_ReducaoZ --
+[-] Acertos no nome da propriedade Identificacao e na geração de serviços.
+
+19/02/2016
+-- ACBrBlocoX --
+[+] Adicionado parametro no SaveToFile para assinar ou não o arquivo gerado.
+    por: regys.silveira
+
+12/02/2016
+-- ACBrBlocoX --
+[-] Correção para exibição de "Configuracoes", no Object Inspector
+[+] Adicionado "Geral" para Configuracoes, para permitir mudar a LibSSL
+[-] Ajuste na chamada do método de assinatura, para correto funcionamento em
+    OpenSSL
+
+17/12/2015
+-- ACBrBlocoX --
+[+] Inicio do desenvolvimento do componente ACBr_BlocoX, Estoque e Reducao Z
+    já funcional.

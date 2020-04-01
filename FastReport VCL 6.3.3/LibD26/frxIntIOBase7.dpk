@@ -1,0 +1,49 @@
+// Package file for Delphi 7
+
+package frxIntIOBase7;
+{$I frx.inc}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO ON}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION ON}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES OFF}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST ON}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$RUNONLY}
+{$IMPLICITBUILD OFF}
+
+requires
+  VCL,
+  fs7,
+  frx7,
+  vclie;
+
+contains
+  frxIOTransportHelpers in 'frxIOTransportHelpers.pas',
+  frxBaseTransportConnection in 'frxBaseTransportConnection.pas',
+  frxIOTransportIntDialog in 'frxIOTransportIntDialog.pas',
+  frxFPUMask in 'frxFPUMask.pas',
+  frxSaveFilterBrowser in 'frxSaveFilterBrowser.pas',
+  frxIOTransportDropboxBase in 'frxIOTransportDropboxBase.pas',
+  frxIOTransportOneDriveBase in 'frxIOTransportOneDriveBase.pas',
+  frxIOTransportBoxComBase in 'frxIOTransportBoxComBase.pas',
+  frxIOTransportGoogleDriveBase in 'frxIOTransportGoogleDriveBase.pas',
+  frxIOTransportMail in 'frxIOTransportMail.pas',
+  frxIOSendMAPI in 'frxIOSendMAPI.pas',
+  frxIOSMTP in 'frxIOSMTP.pas';
+
+end.

@@ -1,0 +1,105 @@
+{******************************************************************************}
+{ Projeto: Componente ACBrGNRE                                                 }
+{  Biblioteca multiplataforma de componentes Delphi/Lazarus para emissão da    }
+{  Guia Nacional de Recolhimento de Tributos Estaduais                         }
+{  http://www.gnre.pe.gov.br/                                                  }
+{                                                                              }
+{ Direitos Autorais Reservados (c) 2008 Claudemir Vitor Pereira                }
+{                                       Daniel Simoes de Almeida               }
+{                                       André Ferreira de Moraes               }
+{                                       Juliomar Marchetti                     }
+{                                                                              }
+{ Colaboradores nesse arquivo:                                                 }
+{                                                                              }
+{  Você pode obter a última versão desse arquivo na pagina do Projeto ACBr     }
+{ Componentes localizado em http://www.sourceforge.net/projects/acbr           }
+{                                                                              }
+{                                                                              }
+{  Esta biblioteca é software livre; você pode redistribuí-la e/ou modificá-la }
+{ sob os termos da Licença Pública Geral Menor do GNU conforme publicada pela  }
+{ Free Software Foundation; tanto a versão 2.1 da Licença, ou (a seu critério) }
+{ qualquer versão posterior.                                                   }
+{                                                                              }
+{  Esta biblioteca é distribuída na expectativa de que seja útil, porém, SEM   }
+{ NENHUMA GARANTIA; nem mesmo a garantia implícita de COMERCIABILIDADE OU      }
+{ ADEQUAÇÃO A UMA FINALIDADE ESPECÍFICA. Consulte a Licença Pública Geral Menor}
+{ do GNU para mais detalhes. (Arquivo LICENÇA.TXT ou LICENSE.TXT)              }
+{                                                                              }
+{  Você deve ter recebido uma cópia da Licença Pública Geral Menor do GNU junto}
+{ com esta biblioteca; se não, escreva para a Free Software Foundation, Inc.,  }
+{ no endereço 59 Temple Street, Suite 330, Boston, MA 02111-1307 USA.          }
+{ Você também pode obter uma copia da licença em:                              }
+{ http://www.opensource.org/licenses/lgpl-license.php                          }
+{                                                                              }
+{ Daniel Simões de Almeida  -  daniel@djsystem.com.br  -  www.djsystem.com.br  }
+{              Praça Anita Costa, 34 - Tatuí - SP - 18270-410                  }
+{                                                                              }
+{******************************************************************************}
+
+{******************************************************************************
+|* Historico
+|*
+|* 09/12/2013 - Claudemir Vitor Pereira
+|*  - Doação do componente para o Projeto ACBr
+******************************************************************************}
+package ACBr_GNRE;
+
+{$R *.res}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO ON}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION OFF}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES ON}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$DESCRIPTION 'ACBr - Guia Nacional de Recolhimento de Tributos Estaduais - (http://www.projetoacbr.com.br/)'}
+{$IMPLICITBUILD OFF}
+{$DEFINE DEBUG}
+
+requires
+  rtl,
+  vcl,
+  designide,
+  ACBr_DFeComum;
+
+contains
+  ACBrGNRE2 in '..\..\..\..\Fontes\ACBrDFe\ACBrGNRE\ACBrGNRE2.pas',
+  ACBrGNREConfiguracoes in '..\..\..\..\Fontes\ACBrDFe\ACBrGNRE\ACBrGNREConfiguracoes.pas',
+  ACBrGNREGuias in '..\..\..\..\Fontes\ACBrDFe\ACBrGNRE\ACBrGNREGuias.pas',
+  ACBrGNREReg in '..\..\..\..\Fontes\ACBrDFe\ACBrGNRE\ACBrGNREReg.pas',
+  ACBrGNREWebServices in '..\..\..\..\Fontes\ACBrDFe\ACBrGNRE\ACBrGNREWebServices.pas',
+  pgnreConfigUF in '..\..\..\..\Fontes\ACBrDFe\ACBrGNRE\PCNGNRE\pgnreConfigUF.pas',
+  pgnreConsConfigUF in '..\..\..\..\Fontes\ACBrDFe\ACBrGNRE\PCNGNRE\pgnreConsConfigUF.pas',
+  pgnreConsResLoteGNRE in '..\..\..\..\Fontes\ACBrDFe\ACBrGNRE\PCNGNRE\pgnreConsResLoteGNRE.pas',
+  pgnreConversao in '..\..\..\..\Fontes\ACBrDFe\ACBrGNRE\PCNGNRE\pgnreConversao.pas',
+  pgnreGNRE in '..\..\..\..\Fontes\ACBrDFe\ACBrGNRE\PCNGNRE\pgnreGNRE.pas',
+  pgnreGNRER in '..\..\..\..\Fontes\ACBrDFe\ACBrGNRE\PCNGNRE\pgnreGNRER.pas',
+  pgnreGNRERetorno in '..\..\..\..\Fontes\ACBrDFe\ACBrGNRE\PCNGNRE\pgnreGNRERetorno.pas',
+  pgnreGNREW in '..\..\..\..\Fontes\ACBrDFe\ACBrGNRE\PCNGNRE\pgnreGNREW.pas',
+  pgnreRetCampoAdicional in '..\..\..\..\Fontes\ACBrDFe\ACBrGNRE\PCNGNRE\pgnreRetCampoAdicional.pas',
+  pgnreRetConsConfigUF in '..\..\..\..\Fontes\ACBrDFe\ACBrGNRE\PCNGNRE\pgnreRetConsConfigUF.pas',
+  pgnreRetConsResLoteGNRE in '..\..\..\..\Fontes\ACBrDFe\ACBrGNRE\PCNGNRE\pgnreRetConsResLoteGNRE.pas',
+  pgnreRetDetalhamentoReceita in '..\..\..\..\Fontes\ACBrDFe\ACBrGNRE\PCNGNRE\pgnreRetDetalhamentoReceita.pas',
+  pgnreRetEnvLoteGNRE in '..\..\..\..\Fontes\ACBrDFe\ACBrGNRE\PCNGNRE\pgnreRetEnvLoteGNRE.pas',
+  pgnreRetPeriodoApuracao in '..\..\..\..\Fontes\ACBrDFe\ACBrGNRE\PCNGNRE\pgnreRetPeriodoApuracao.pas',
+  pgnreRetProduto in '..\..\..\..\Fontes\ACBrDFe\ACBrGNRE\PCNGNRE\pgnreRetProduto.pas',
+  pgnreRetReceita in '..\..\..\..\Fontes\ACBrDFe\ACBrGNRE\PCNGNRE\pgnreRetReceita.pas',
+  pgnreRetTipoDocumentoOrigem in '..\..\..\..\Fontes\ACBrDFe\ACBrGNRE\PCNGNRE\pgnreRetTipoDocumentoOrigem.pas',
+  ACBrGNREGuiaClass in '..\..\..\..\Fontes\ACBrDFe\ACBrGNRE\GNRE\ACBrGNREGuiaClass.pas',
+  ACBrGNREGuiasRetorno in '..\..\..\..\Fontes\ACBrDFe\ACBrGNRE\ACBrGNREGuiasRetorno.pas';
+
+end.

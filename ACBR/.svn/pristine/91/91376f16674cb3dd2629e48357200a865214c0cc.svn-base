@@ -1,0 +1,471 @@
+{******************************************************************************}
+{ Projeto: Componentes ACBr                                                    }
+{ Biblioteca multi plataforma de componentes Delphi para interação com equipa- }
+{ mentos de Automação Comercial utilizados no Brasil                           }
+{                                                                              }
+{  Você pode obter a última versão desse arquivo na página do Projeto ACBr     }
+{ Componentes localizado em      http://www.sourceforge.net/projects/acbr      }
+{                                                                              }
+{  Esta biblioteca é software livre; você pode redistribuí-la e/ou modificá-la }
+{ sob os termos da Licença Pública Geral Menor do GNU conforme publicada pela  }
+{ Free Software Foundation; tanto a versão 2.1 da Licença, ou (a seu critério) }
+{ qualquer versão posterior.                                                   }
+{                                                                              }
+{  Esta biblioteca é distribuída na expectativa de que seja útil, porém, SEM   }
+{ NENHUMA GARANTIA; nem mesmo a garantia implícita de COMERCIABILIDADE OU      }
+{ ADEQUAÇÃO A UMA FINALIDADE ESPECÍFICA. Consulte a Licença Pública Geral Menor}
+{ do GNU para mais detalhes. (Arquivo LICENÇA.TXT ou LICENSE.TXT)              }
+{                                                                              }
+{  Você deve ter recebido uma cópia da Licença Pública Geral Menor do GNU junto}
+{ com esta biblioteca; se não, escreva para a Free Software Foundation, Inc.,  }
+{ no endereço 59 Temple Street, Suite 330, Boston, MA 02111-1307 USA.          }
+{ Você também pode obter uma copia da licença em:                              }
+{ http://www.opensource.org/licenses/lgpl-license.php                          }
+{                                                                              }
+{ Daniel Simões de Almeida  -  daniel@djsystem.com.br  -  www.djsystem.com.br  }
+{              Praça Anita Costa, 34 - Tatuí - SP - 18270-410                  }
+{                                                                              }
+{******************************************************************************}
+Agradecimentos:
+
+* Administradores:
+- Daniel Simões de Almeida
+- André Ferreira de Moraes
+
+* Desenvolvedores:
+- Wemerson P. Souto - Doação do componente ao projeto ACBr
+
+{******************************************************************************
+|* ACBrNFeDANFeRL
+|*
+|* PROPÓSITO: Registro de Alterações
+******************************************************************************}
+
+Símbolo : Significado
+
+[+]     : Novo recurso
+[*]     : Recurso modificado/melhorado
+[-]     : Correção de Bug (assim esperamos)
+
+20/01/2020
+-- pcnConversaoNFe, ACBrNFeDANFEClass, ACBrNFeDANFeRLPaisagem, ACBrNFeDANFeRLRetrato, ACBrNFeDANFEFRDM --
+[*] Criação de propriedade "ExibeCampoDePagamento" para controlar a impressão
+    dos pagamentos no DANFE.
+  Por: Henrique Leonardo (hleorj) / BigWings
+
+18/12/2019
+-- ACBrNFeDANFeRLRetrato --
+[-] Ajuste para impressão do canhoto apenas na primeira página.
+  Por: BigWings
+
+20/11/2019
+-- ACBrDANFCeFortesFr --
+[*] Ajuste para impressão de "procNFe.xMsg" nas informações do Fisco, com QRCode
+    Lateral
+    https://www.projetoacbr.com.br/forum/topic/54953-sefaz-ms-nota-ms-premiada-2/
+    (por: Compusofts)
+
+24/10/2019
+-- ACBrNFeDANFeRLRetrato
+[*] Ajuste na impressão do Canhoto apenas na primeira página
+    (por: José M S Junior )
+
+19/09/2019
+-- ACBrNFeDANFeRLRetrato
+[-] Corrigido erro de impressão quando tinha apenas 1 item na nfe e a continuação das observações imprimiam abaixo dos itens em vez de uma nova pagina.
+	(por: Rafael Dias )
+
+29/07/2019
+-- ACBrNFeDANFeRLRetrato
+[*] Compatibilização dos ajustes reff propriedade TPosReciboLayout para o .lfm no Lazarus
+	(por: José M S Junior )
+
+26/07/2019
+-- ACBrNFeDANFeRLRetrato
+[+] Implantação de rotinas para o controle da propriedade TPosReciboLayout.
+[+] Nova banda para apresentar o canhoto com chave de chave.
+	(por: Henrique Leonardo - Hleorj )
+
+23/05/2019
+-- ACBrNFeDANFeRLRetrato, ACBrNFeDANFeRLPaisagem --
+[*] Adicionado Mensagem no DANFe para NFe Denegada
+    (por: José M S Junior )
+
+16/04/2019
+-- ACBrNFeDANFeRLRetrato, ACBrNFeDANFeRLPaisagem --
+[*] Correção na verificação da condição para impressão dos dados de entrega e retirada.
+    https://www.projetoacbr.com.br/forum/topic/50655-local-de-entrega-n%C3%A3o-est%C3%A1-saindo-no-danfe/
+    (por: BigWings)
+
+15/03/2019
+-- ACBrNFeDANFeRL--
+[*] Ajustes no tamanho campo CNPJ/CPF em "Local Retirada", "Local Entrega"
+	(por: José M S Junior )
+
+15/03/2019
+-- ACBrDANFCeFortesFrA4--
+[*] Ajustes na configuração de Margens NFCeA4 e Descrições com caracteres especiais
+	(por: José M S Junior )
+
+18/03/2019
+-- ACBrNFeDANFeEventoRLRetrato--
+[*] Ajustes no redimensionamento do campo "Correção" do Evento Carta de Correção
+	(por: José M S Junior )
+
+01/03/2019
+-- ACBrNFeDANFeRLRetrato ACBrNFeDANFeRLPaisagem --
+[*] Melhoria na condição para apresentar o layout de local retirada / entrega.
+	(por: Henrique Leonardo - Hleorj )
+
+13/02/2019
+-- ACBrNFeDANFeRLRetrato ACBrNFeDANFeRLPaisagem --
+[+] Implantação do novo layout de local retirada / entrega
+[*] Diversos ajustes com novos / remoção de procedimentos e funçoes para o novo layout
+	(por: Henrique Leonardo - Hleorj )
+
+31/01/2019
+-- ACBrNFeDANFERL --
+[-] Ajuste na impressão das informações adicionais. 
+	https://www.projetoacbr.com.br/forum/topic/49110-danfe-fortes-com-documento-referenciado/?tab=comments#comment-324509
+	(por: Henrique Leonardo / BigWings )
+
+31/01/2019
+-- ACBrNFeDANFERL --
+[-] Ajuste na impressão, referente validação propriedade MostrarPreview para 
+	definir documento como padrão PDF.
+	(por: José M. S. Junior)
+
+25/01/2019
+-- ACBrNFeDANFEClass, ACBrDANFCeFortesFr, ACBrNFeDANFeESCPOS --
+[+] Adicionado propriedade DescricaoPagamentos, para definir o tipo de descrição a
+    ser emitido sendo: Tipo, Bandeira, Autorização
+	(por: José M. S. Junior)
+
+22/01/2019
+-- ACBrDANFCeFortesFr, ACBrNFeDANFeESCPOS --
+[*] Ajuste na validação da Bandeira de Cartão, impresso no tipo de pagamento
+	(por: José M. S. Junior)
+
+09/01/2018
+-- ACBrNFeDAInutRL.lfm, ACBrNFeDAInutRLRetrato.lfm --
+[*] Ajuste no arquivo .lfm seguindo alterações realizadas no .dfm
+    Por: José M S Junior
+
+07/01/2018   
+-- ACBrDANFCeFortesFr, ACBrNFeDANFeESCPOS, ACBrNFeDANFeRLPaisagem, ACBrNFeDANFeRLRetrato --
+[*] Ajuste para considerar a propriedade "ExibeInforAdicProduto"
+	(por Rafael Dias e DSA)
+
+29/10/2018
+-- ACBrNFeDANFeEventoRLRetrato --
+[*] Adicionada o evento EPEC que estava faltando.
+   Por: Italo Jurisato Junior
+
+21/09/2018
+-- ACBrNFeDANFeRLRetrato --
+[*] https://www.projetoacbr.com.br/forum/topic/46614-cabe%C3%A7alho-de-danfe-estar-cortando-o-telefone/?do=findComment&comment=307790
+   Por: Almeida mao
+
+14/06/2018
+-- ACBrNFeDANFeRLRetrato --
+[-] Corrigido erro na impressão das informações do medicamento. (por: Rafael Dias)
+	https://www.projetoacbr.com.br/forum/topic/44033-nf-e-400-medicamento/
+
+23/01/2018
+-- ACBrNFeDANFeRLRetrato --
+[*] Ajuste para otimizar a impressão das páginas 2 em diante, usando toda a
+    página. (por: DSA)
+
+09/01/2018
+-- ACBrNFeDANFeRLClass --
+[*] Adicionada o metodo ImprimirDANFECancelado.
+    (por: Rafael Teno)
+
+14/09/2017
+-- ACBrNFeDANFeRLRetrato ACBrNFeDANFeRLPaisagem --
+[*] Refatoração no DANFE para não mostrar a informação do pagamento na versão 4.0.
+        https://www.projetoacbr.com.br/forum/topic/38687-danfe-nfe-40/#comment-254961
+    	por: BigWings
+
+13/09/2017
+-- ACBrNFeDANFeRLRetrato ACBrNFeDANFeRLPaisagem --
+[+] Adicionado ManterRastro para imprimir os dados da Tag Rastro.
+[*] Refatoração do ManterMedicamento para versão 4.0.
+    	por: Henrique Leonardo
+
+
+25/08/2017
+-- ACBrNFeDANFEClass ACBrNFeDANFeRLRetrato ACBrNFeDANFeRLPaisagem --
+[+] Configuração padrão do tamanho da fonte ( 7 ) no endereço do emitente
+[*] Ajuste nome da variável ( FSsitema )
+[*] Refatoração do procedimento Emitente( Remoção de variáveis , código duplicado e novos padrões de controle );
+[-] Remoção código obsoleto EnderecoEntrega e EnderecoRetirada ( ACBrNFeDANFeRLRetrato )
+    	por: Henrique Leonardo
+
+
+23/07/2017
+-- ACBrNFeDANFEClass ACBrNFeDANFeRLRetrato ACBrNFeDANFeRLPaisagem --
+[*] Refatoração de ManterDocreferenciados, para utilizar as informações de NFe corrente.
+    	por: Henrique Leonardo
+
+-- ACBrNFeDANFeRLRetrato ACBrNFeDANFeRLPaisagem --
+[*] Refatoração de ManterDocreferenciados, evitando duplicidade do código nas danfe's ( Fast Report / Fortes Report ). 
+
+22/07/2017
+-- ACBrNFeDANFEClass --
+[+] Adicionada a função ManterDocReferenciados para retornar a informações de documentos referenciados.
+
+-- ACBrNFeDANFeRLRetrato ACBrNFeDANFeRLPaisagem --
+[*] Refatoração de ManterDocreferenciados, evitando duplicidade do código nas danfe's ( Fast Report / Fortes Report ). 
+
+-- ACBrNFeDANFeRL --
+[-] Remoção da função ManterDocreferenciados e da unit ACbrUtil, sem utilidade na unit. 
+    	por: Henrique Leonardo
+
+
+19/06/2017
+-- ACBrNFeDANFeRL ACBrNFeDANFEFRDM --
+[*] Refatoracao de ManterDocreferenciados, para utilização da função DescrModeloNFe
+    http://www.projetoacbr.com.br/forum/topic/37267-danfe-fortes-conflito-documentos-referenciados-adicionados-pelo-componente-no-danfe/#comment-244342
+    por: RicardoVoigt / Henrique Leonardo
+
+13/06/2017
+-- ACBrNFeDANFeRL ACBrNFeDANFeRLClass --
+[+] Adicionada propriedade ImprimirDadosDocReferenciados para parametrizar a impressão dos documentos referenciados
+    nas informações adicionais.
+Por: Levi Junior
+
+05/04/2017
+[*] Correção para o logo expandido
+		http://www.projetoacbr.com.br/forum/topic/36094-correção-logo-expandido-nfe-fortes/
+		Juliomar Marchetti
+		
+31/03/2017
+-- ACBrNFeDAInutRL.pas --
+[*] Correção de memory leak, contribuição do fórum
+	http://www.projetoacbr.com.br/forum/topic/35951-memory-leak-ao-imprimir-com-forte-inutiliza%C3%A7%C3%A3o/
+	por: Celso Marigo Junior
+
+29/03/2017
+-- ACBrNFeDANFeRL --
+[*] Refatoração de ManterDocReferenciados para retornar a informações sem quebra de linha.
+[*] Refatoração de ManterInfContr, ManterObsFisco, ManterProcreferenciado.
+     Por : Henrique Leonardo	
+
+
+
+28/03/2017
+-- ACBrNFeDANFeRL, ACBrNFeDANFeRLRetrato, ACBrNFeDANFeRLPaisagem --
+[+] Ajuste para mostrar documentos referenciados em informações adicionais.
+     http://www.projetoacbr.com.br/forum/topic/35910-mostrar-chave-da-nota-fiscal-eletronica-em-notas-de-devolu%C3%A7%C3%A3o/
+[*] Refatoração de informações adicionais, com o desenvolvimento de funções para eliminação de 
+     código duplicado nas danfe retrato e paisagem
+     Por : RicardoVoigt/Henrique Leonardo	
+	
+
+10/02/2017
+-- ACBrNFeDANFeRL
+[-] Constante sDisplayFormat removida, por não estar em uso.
+-- ACBrNFeDANFeRLRetrato, ACBrNFeDANFeRLPaisagem
+[*] Removidas máscaras de formatação hard-coded.
+	por: Celso Marigo Junior
+
+10/02/2017
+-- ACBrNFeDANFeRLRetrato, ACBrNFeDANFeRLPaisagem --
+[-] Ajuste na apresentação de valores com ponto decimal.
+     http://www.projetoacbr.com.br/forum/topic/35132-formata%C3%A7%C3%A3o-de-valores-orienta%C3%A7%C3%A3o-paisagem/
+     Por : Henrique Leonardo	
+	
+07/02/2017
+-- ACBrNFeDANFeRLSimplificado
+[-] Correção para evitar erro de divisão por zero
+		http://www.projetoacbr.com.br/forum/topic/34918-danfe-nfe-simplificada/?do=findComment&comment=229066
+		Juliomar Marchetti
+		
+01/02/2017
+-- ACBrNFeDANFeRLRetrato, ACBrNFeDANFeRLPaisagem --
+[-] Refatoração na apresentação dos dados contingência svcxx
+[*] Diversas otimizações no código. 
+     http://www.projetoacbr.com.br/forum/topic/34881-danfe-svc-an/?page=2#comment-229063
+     Por : Henrique Leonardo , Kiko Fernandes , BigWings e medeiros.sunsystem
+
+18/01/2017
+--ACBrNFeDANFeRLClass--
+[-] Correçao na apresentaçao do tipo de danfe
+       		por: Henrique Leonardo
+
+
+17/01/2017
+--ACBrNFeDANFeRL, ACBrNFeDANFeRLRetrato, ACBrNFeDANFeRLPaisagem --
+[+] Nova Propriedade ExibirBandInforAdicProduto, mostra as informações adicionais numa banda ( true ) ou
+      na coluna descrição do produto ( false ).
+[*] Ajustes / remoção de variaveis;
+       		por: Henrique Leonardo
+
+10/01/2017
+-- ACBrNFeDANFeRLPaisagem --
+[-] Ajustes para apresentação do valor / desconto conforme a danfe Fortes retrato.
+		por: Henrique Leonardo
+
+05/01/2017
+[+] Tratamento para gerar varios danfe em pdf separados mas impressos junto se enviado para impressora
+		http://www.projetoacbr.com.br/forum/topic/31936-danfe-fortes-impress%C3%A3o-v%C3%A1rias-notas/?page=2
+		por: Juliomar Marchetti
+		
+22/12/2016
+[-] Correção para a inutilização o preview ficar em modal.
+		http://www.projetoacbr.com.br/forum/topic/34021-erro-na-aplica%C3%A7%C3%A3o-ap%C3%B3s-impress%C3%A3o-de-uma-inutiliza%C3%A7%C3%A3o-nfc-e/?do=findComment&comment=224215
+		por: Juliomar Marchetti
+		
+21/12/2016
+[*] Mudança para que a impressão de inutilização fique em modal quando chamado.
+		http://www.projetoacbr.com.br/forum/topic/34021-erro-na-aplica%C3%A7%C3%A3o-ap%C3%B3s-impress%C3%A3o-de-uma-inutiliza%C3%A7%C3%A3o-nfc-e/
+		por : Juliomar Marchetti
+		
+09/12/2016
+-- ACBrNFeDANFeRLPaisagem --
+[-] Ajuste para imprimir cfop
+      		por: Henrique Leonardo
+
+
+08/12/2016
+-- ACBrNFeDANFeRL --
+[*] Ajustes para imprimir complemento de informações adicionais ( 30 linhas ).
+    http://www.projetoacbr.com.br/forum/topic/33898-informa%C3%A7%C3%B5es-complementares-incompletas/
+      		por: Henrique Leonardo
+
+07/12/2016
+-- ACBrNFeDANFeRL,ACBrNFeDANFeRLClass, ACBrNFeDANFeRLPaisagem, acbrnfedanferlretrato --
+[*] Ajustes para imprimir a banda Mostra Dados ISSQN.
+[*] Propriedade MostraDadosISSQN valor padrão igual a false.
+      		por: Henrique Leonardo / Juliomar Marchetti
+
+29/11/2016
+-- ACBrNFeDANFeRLPaisagem, acbrnfedanferlretrato
+[+] http://www.projetoacbr.com.br/forum/topic/33636-impress%C3%A3o-de-nfe-com-a-unidade-comercial-e-tribut%C3%A1vel/
+      		por: WesleyAS / HleoRj
+
+
+
+14/10/2016
+-- ACBrNFeDANFeRLPaisagem, acbrnfedanferlretrato
+[*] Implantação da quebra de linha em informações adicionais do produto, 
+    através do ponto e virgula ( ; ) 
+      		por: Henrique Leonardo
+
+
+
+03/10/2016
+-- ACBrNFeDANFeRLPaisagem, acbrnfedanferlretrato
+[-] Correção para exibir os dados de contingência em retrato e paisagem em Fortes
+		http://www.projetoacbr.com.br/forum/topic/32732-nfe-e-contigencia/
+		por: Juliomar Marchetti
+		
+22/09/2016
+-- ACBrNFeDANFeRLPaisagem --
+[-] Correção no item da segunda página desalinhado
+	http://www.projetoacbr.com.br/forum/topic/32550-primeiro-item-da-segunda-p%C3%A1gina-desalinhado-com-acbrnfedanferl/
+		por: Henrique Leonardo
+
+
+21/09/2016
+[-] Correção de dfm que estavam em utf-8
+		por:  Juliomar Marchetti
+		
+15/09/2016
+--ACBrNFeDANFeRL, ACBrNFeDANFeRLRetrato, ACBrNFeDANFeRLPaisagem --
+[+] Remoção dos componentes dbware
+		por: Henrique Leonardo
+
+14/09/2016
+[+] Modo paisagem em delphi e lazarus sem componentes dbware
+		por: Henrique Leonardo
+
+03/08/2016
+-- ACBrNFeDANFeRLRetrato, ACBrNFeDANFeRLPaisagem --
+[-] Correção para que os dados fiquem bem alinhados
+		http://www.projetoacbr.com.br/forum/topic/31630-acbrnfedanferlretrato/
+		por: Juliomar Marchetti
+		
+02/08/2016
+-- ACBrNFeDANFeRLRetrato --
+[-] Remocao do procedimento rlbCabecalhoItens.BeforePrint 
+    http://www.projetoacbr.com.br/forum/topic/31613-erro-no-fortes-depois-da-atualiza%C3%A7%C3%A3o/
+         Por : Henrique Leonardo       
+
+
+01/08/2016
+-- ACBrNFeDANFeRLRetrato --
+[-] Correção do primeiro item  quando e solicitado a impressão do valor desconto
+	http://www.projetoacbr.com.br/forum/topic/31142-valor-liquido-e-descontos-no-danfe-retrato-fortes/#comment-208670
+         Por : Henrique Leonardo       
+
+26/07/2016
+-- ACBrNFeDANFeRLPaisagem.pas, ACBrNFeDANFeRLRetrato.pas 
+		Alterações para impressão quando no modo EPEC de emissão
+		http://www.projetoacbr.com.br/forum/topic/31395-altera%C3%A7%C3%B5es-no-danfe-para-epec/
+		por : Juliomar Marchetti
+		
+10/07/2016
+-- ACBrNFeDANFeRLRetrato --
+[-] Correção das colunas valor do desconto e valor liquido trocadas,
+    quando e solicitado a impressão do valor liquido;
+         Por : Henrique Leonardo       
+
+07/07/2016
+-- ACBrNFeDANFeRLSimplificado --
+[*] Remoção de controles Dataset/ Db. 
+[+] Refatoração para aceitar dados de classe Nfe.
+         Por : Henrique Leonardo   
+
+06/07/2016
+-- ACBrNFeDANFeRLRetrato --
+[*] Remoção de controles Dataset/ Db. 
+[+] Refatoração para aceitar dados de classe Nfe.
+         Por : Henrique Leonardo       
+
+24/06/2016
+-- ACBrNFeDANFeRLRetrato, ACBrNFeDANFeRLPaisagem --
+[*] Ajustes para Habilitar ou não a Banda Fatura, atraves da 
+    propriedade ExibirCampoFatura.
+[+] Ajuste para Habilitar ou não a Banda Fatura, no caso 
+    da forma de pagamento igual a OUTROS e existir
+    dados de fatura.
+         Por : Henrique Leonardo       
+
+10/06/2016
+-- ACBrNFeDANFeRLRetrato, ACBrNFeDANFeRLPaisagem --
+[-] Ajuste para evitar erro na Impressão, caso o Logo informado seja
+    um arquivo não existente, ou um Stream Inválido  (por: DSA)
+
+20/05/2016
+[+] Implantação da Banda Local entrega na danfe Fortes Retrato
+      Caso exista a informações do Local de entrega
+       no Arquivo xml, será impressa.
+         Por : Henrique Leonardo   
+
+
+20/05/2016
+[+] Implantação da Banda Local retirada na danfe Fortes Retrato
+      Caso exista a informações do Local de retirada
+       no Arquivo xml, será impressa
+         Por : Henrique Leonardo   
+
+
+
+
+21/04/2016
+[*] Remoção do recurso de Habilitar ou não a Banda Fatura.( campo ).
+      Por padrão, a Banda Fatura, dever ser exibida sempre.
+         Por : Henrique Leonardo   
+
+
+
+20/04/2016
+[*] aplicado para deixar visivel ou não o campo de fatura!
+		tanto retrato quanto paisagem!
+		por : Juliomar Marchetti
+		
+16/03/2016
+[-] não saia o Complemento dos endereços de Retirada e Entrega em retrato e paisagem
+		por: Juliomar Marchetti

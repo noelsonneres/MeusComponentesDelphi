@@ -1,0 +1,103 @@
+inherited frxODFExportDialog: TfrxODFExportDialog
+  Tag = 8302
+  Left = 420
+  Height = 357
+  Top = 188
+  ClientHeight = 357
+  inherited PageControl1: TPageControl
+    Height = 304
+    inherited ExportPage: TTabSheet
+      ClientHeight = 277
+      inherited OpenCB: TCheckBox
+        Height = 24
+        Top = 238
+        Width = 128
+      end
+      inherited GroupQuality: TGroupBox
+        Height = 65
+        Top = 149
+        ClientHeight = 50
+        object WCB: TCheckBox[0]
+          Tag = 8102
+          Left = 140
+          Height = 24
+          Top = 3
+          Width = 93
+          Caption = 'WYSIWYG'
+          Checked = True
+          State = cbChecked
+          TabOrder = 0
+        end
+        object ContinuousCB: TCheckBox[1]
+          Tag = 8950
+          Left = 12
+          Height = 24
+          Top = 3
+          Width = 106
+          Caption = 'Continuous'
+          Checked = True
+          State = cbChecked
+          TabOrder = 1
+        end
+        object PageBreaksCB: TCheckBox[2]
+          Tag = 6
+          Left = 12
+          Height = 24
+          Top = 23
+          Width = 109
+          Caption = 'Page breaks'
+          Checked = True
+          State = cbChecked
+          TabOrder = 2
+        end
+        object BackgrCB: TCheckBox[3]
+          Tag = 8103
+          Left = 140
+          Height = 24
+          Top = 23
+          Width = 110
+          Caption = 'Background'
+          Checked = True
+          State = cbChecked
+          TabOrder = 3
+        end
+      end
+      inherited GroupPageRange: TGroupBox
+        Height = 138
+        ClientHeight = 123
+        inherited DescrL: TLabel
+          Height = 40
+        end
+        inherited AllRB: TRadioButton
+          Height = 24
+          Width = 40
+        end
+        inherited CurPageRB: TRadioButton
+          Height = 24
+          Width = 101
+        end
+        inherited PageNumbersRB: TRadioButton
+          Height = 24
+          Width = 64
+        end
+        inherited PageNumbersE: TEdit
+          Height = 23
+        end
+      end
+      inherited GroupBox1: TGroupBox
+        Top = 217
+        ClientHeight = 45
+        inherited FiltersNameCB: TComboBox
+          Height = 27
+          ItemHeight = 0
+        end
+      end
+    end
+  end
+  inherited OkB: TButton
+    Top = 314
+  end
+  inherited CancelB: TButton
+    Top = 314
+  end
+end

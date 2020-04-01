@@ -1,0 +1,48 @@
+// Package file for Delphi XE7
+
+package frxFib21;
+
+{$I frx.inc}
+
+{$ALIGN ON}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO ON}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION ON}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES OFF}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST ON}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $00400000}
+{$RUNONLY}
+{$IMPLICITBUILD OFF}
+
+requires
+  VCL,
+  VCLDB,
+  FibPlus_D21,
+  frx21,
+  frxDB21,
+{$IFDEF QBUILDER}
+  fqb210,
+{$ENDIF}
+  fs21,
+  fsDB21;
+
+contains
+  frxFIBComponents in 'frxFIBComponents.pas',
+  frxFIBEditor in 'frxFIBEditor.pas',
+  frxFIBRTTI in 'frxFIBRTTI.pas';
+
+end.

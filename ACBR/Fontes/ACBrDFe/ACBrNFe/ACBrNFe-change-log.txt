@@ -1,0 +1,3697 @@
+{******************************************************************************}
+{ Projeto: Componentes ACBr                                                    }
+{ Biblioteca multi plataforma de componentes Delphi para interação com equipa- }
+{ mentos de Automação Comercial utilizados no Brasil                           }
+{                                                                              }
+{  Você pode obter a última versão desse arquivo na página do Projeto ACBr     }
+{ Componentes localizado em      http://www.sourceforge.net/projects/acbr      }
+{                                                                              }
+{  Esta biblioteca é software livre; você pode redistribuí-la e/ou modificá-la }
+{ sob os termos da Licença Pública Geral Menor do GNU conforme publicada pela  }
+{ Free Software Foundation; tanto a versão 2.1 da Licença, ou (a seu critério) }
+{ qualquer versão posterior.                                                   }
+{                                                                              }
+{  Esta biblioteca é distribuída na expectativa de que seja útil, porém, SEM   }
+{ NENHUMA GARANTIA; nem mesmo a garantia implícita de COMERCIABILIDADE OU      }
+{ ADEQUAÇÃO A UMA FINALIDADE ESPECÍFICA. Consulte a Licença Pública Geral Menor}
+{ do GNU para mais detalhes. (Arquivo LICENÇA.TXT ou LICENSE.TXT)              }
+{                                                                              }
+{  Você deve ter recebido uma cópia da Licença Pública Geral Menor do GNU junto}
+{ com esta biblioteca; se não, escreva para a Free Software Foundation, Inc.,  }
+{ no endereço 59 Temple Street, Suite 330, Boston, MA 02111-1307 USA.          }
+{ Você também pode obter uma copia da licença em:                              }
+{ http://www.opensource.org/licenses/lgpl-license.php                          }
+{                                                                              }
+{ Daniel Simões de Almeida  -  daniel@djsystem.com.br  -  www.djsystem.com.br  }
+{              Praça Anita Costa, 34 - Tatuí - SP - 18270-410                  }
+{                                                                              }
+{******************************************************************************}
+Agradecimentos:
+
+* Administradores:
+- Daniel Simões de Almeida
+- André Ferreira de Moraes
+
+* Desenvolvedores:
+- Wemerson P. Souto - Doação do componente ao projeto ACBr
+
+{******************************************************************************
+|* ACBrNFePCN
+|*
+|* PROPÓSITO: Registro de Alterações
+******************************************************************************}
+
+Símbolo : Significado
+
+[+]     : Novo recurso
+[*]     : Recurso modificado/melhorado
+[-]     : Correção de Bug (assim esperamos)
+
+09/01/2020
+-- pcnNFeW -- 
+[*] Alterado as condições para a geração das tags: vBCSTRET, pST, 
+    vICMSSubstituto e vICMSSTRET quando o CST for 60 e CSOSN for 500.
+   Por: Italo Jurisato Junior
+
+-- pcnConversaoNFe, ACBrNFeDANFEClass, ACBrNFeDANFeRLPaisagem, ACBrNFeDANFeRLRetrato, ACBrNFeDANFEFRDM --
+[*] Criação de propriedade "ExibeCampoDePagamento" para controlar a impressão
+    dos pagamentos no DANFE.
+  Por: Henrique Leonardo (hleorj) / BigWings
+
+08/01/2020
+-- pcnLayoutTXT -- 
+[*] Atualização do Layout TXT compatibilizando com a versão 4.0 disponibilizada pelo SEBRAE
+-- pcnNFeRTXT -- 
+[*] Atualização na leitura do Layout TXT compatibilizando com a versão 4.0 disponibilizada pelo SEBRAE
+   Por: José M S Junior
+
+30/12/2019
+-- pcnNFeW -- 
+[*] https://www.projetoacbr.com.br/forum/topic/47753-notas-de-exporta%C3%A7%C3%A3o-ind-obrigando-campo-nre/?do=findComment&comment=363645
+   Por: Fernando Bolson
+
+19/12/2019
+-- ACBrNFeWebServices --
+[+] Incluido a propriedade Protocolo no retorno de envio do NF-e.
+   Por: Italo Jurisato Junior
+
+18/12/2019
+-- ACBrDANFCeFortesFr -- 
+[*] https://www.projetoacbr.com.br/forum/topic/54973-impressao-nfce-fortes-bobina/
+   Por: Volmir
+
+18/12/2019
+-- ACBrNFe -- 
+[*] Invertido as alinhas que atribuem valores para cCSC e cIdCSC, uma vez que cCSC
+    se utiliza do valor de cIdCSC caso cCSC for vazio.
+   Por: Italo Jurisato Junior
+
+21/11/2019
+-- ACBrNFeNotasFiscais 
+[-] Checagem de todos os campos que compõe o grupo <vol> para decidir se o mesmo será criado ou não.
+   Por: Italo Jurisato Junior
+
+20/11/2019
+[*] Ajustes nos arquivos .lfm ref. impressão do conteúdo da tag xMsg nos DANFE da NF-e e NFC-e
+    feitos em Fortes Report
+  Por: José M S Junior
+
+19/11/2019
+-- ACBrNFeWebServices 
+[*] https://www.projetoacbr.com.br/forum/topic/54881-sefaz-ms-nota-ms-premiada/?do=findComment&comment=360858
+   Por: Compusofts
+-- ACBrNFeWebServices --
+[*] Ajustes para a leitura dos campos cMsg, xMsg na consulta logo após o envio.
+  Por: Italo Jurisato Junior
+-- ACBrNFeWebServices --
+[+] Implementado a leitura dos campos cMsg, xMsg na consulta.
+  Por: André Moraes
+-- Diversos --
+[+] Implementado a impressão do conteúdo da tag xMsg nos DANFE da NF-e e NFC-e
+    feitos em Fortes Report e EscPos.
+  Por: Italo Jurisato Junior
+
+24/10/2019
+-- ACBrNFeServicos --
+[*] Correção da URL de consulta por QR-Code AC homologação.
+  Por: BigWings
+
+11/09/2019
+-- ACBrECFVirtualNFCe --
+[-] Acerto para considerar 0,01 de desconto no total.
+    Por: Regys Silveira
+
+04/10/2019
+-- ACBrNFeServicos --
+[*] Incluido a seção: SOAP_V4_BA no arquivo INI, pois a SEFAZ-BA esta usando 
+    namespace diferente do padrão para alguns serviços.
+   Por: Italo Jurisato Junior / Henrique Sandri Zimermam
+
+03/10/2019
+-- pcnConversaoNFe --
+[*] Incluido o tipo de evento: Averbação para Exportação.
+   Por: Italo Jurisato Junior
+
+01/10/2019
+-- ACBrNFeWebServices --
+[*] Incluido a chamada para remover os namespaces individos no método
+    Inutilização.
+   Por: Italo Jurisato Junior
+-- ACBrNFeWebServices --
+[*] Possível correção para o problema que esta ocorrendo na SEFAZ-MG,
+    estão incluido indevidamente o namespace em todas as tags de retorno.
+   Por: Italo Jurisato Junior
+
+27/09/2019
+-- pcnNFeW --
+[*] Alterado de opcional para obrigatório algumas tags do cst 51.
+  Por: Italo Jurisato Junior
+
+13/09/2019
+-- pcnEnvEventoNFe --
+[*] Correção para não tentar extrair CPF da chave de acesso no envio de evento
+    caso o evento seja uma manifestação.
+  Por: BigWings
+
+02/09/2019
+-- ACBrNFeServicos --
+[*] Excluido a chamada para a SVAN e deixando apenas a chamada para a SVRS 
+    para a SEFAZ-PA, pois a partir de 02/09/2019
+    vai deixar de usar a SVAN e passar a utilizar a SVRS.
+   Por: Italo Jurisato Junior
+
+23/08/2019
+-- ACBrNFeDANFeESCPOS --
+[-] Ajustado o metodo ImprimirDANFE para chamar o metodo ImprimirDANFECancelado quando a propriedade Cancelada for true.
+   Por: Rafael Dias
+
+21/08/2019
+-- ACBrNFeServicos --
+[*] Incluido a chamada para a SVRS para a SEFAZ-PA, pois a partir de 02/09/2019
+    vai deixar de usar a SVAN e passar a utilizar a SVRS.
+   Por: Italo Jurisato Junior
+
+14/08/2019
+-- ACBrNFe --
+[*] Alterado a forma como gera o nome do arquivo Schema dos eventos, visando
+    atender os 2 XSD do evento EPEC (NF-e e NFC-e).
+   Por: Italo Jurisato Junior
+
+01/08/2019
+-- ACBrNFeNotasFiscais/ACBrNFeWebServices --
+[*] Removido a validação do código numerico da chave do método Enviar e 
+    incluido na Validação de Regras de Negócios.
+   Por: Italo Jurisato Junior
+
+30/07/2019
+-- pcnNFeW --
+[*] A propriedade GerarTagAssinatura agora pode ser lida e escrita.
+  Por: Italo Jurisato Junior
+
+29/07/2019
+-- ACBrNFeDANFeRLClass --
+[*] No método ImprimirDANFECancelado estava setando a propriedade Cancelada com o valor
+    True e depois da impressão não estava retornando para False.
+   Por: Italo Jurisato Junior
+-- ACBrDFeDANFeReport --
+[*] No método ImprimirDANFECancelado estava setando a propriedade Cancelada com o valor
+    True e depois da impressão não estava retornando para False.
+   Por: Italo Jurisato Junior
+
+26/07/2019
+-- ACBrNFeDANFEClass --
+[+] Adicionada propriedade PosCanhotoLayout, para definir o tipo de canhoto de nfe a ser impresso.
+     (prlPadrao, prlBarra)
+  Por: Henrique Leonardo ( HLeoRj )
+
+24/07/2019
+-- ACBrNFeWebServices --
+[*] Ajustes feito para que a validação do código que compõe a chave seja
+    realizado somente no envio e não na geração do XML.
+   Por: Italo Jurisato Junior
+
+12/07/2019
+-- Diversos --
+[*] Ajustes na leitura do grupo infFisco que pode ser retornado junto com as
+    informações do protocolo.
+   Por: Italo Jurisato Junior
+
+27/06/2019
+-- ACBrNFeConfiguracoes --
+[*] Removido a classe que contem as propriedades de Download utilizadas
+    pelo método DistribuicaoDFe, pois agora se encontra na unit ACBrDFeConfiguracoes.
+   Por: Italo Jurisato Junior
+
+25/06/2019
+-- ACBrNFeServicos --
+[*] Atualização das URLs de QR-Code e de Consulta da UF: PI.
+  Por: José M S Junior
+
+24/06/2019
+-- ACBrNFeWebServices --
+[*] Tratamento do retorno do webservice de autorização NFe PE quando envio zipado.
+    https://www.projetoacbr.com.br/forum/topic/51801-retorno-do-webservice-sefaz-n%C3%A3o-tratado/
+  Por: Wladimir Isnard
+
+21/06/2019
+-- ACBrNFe --
+[*] Remoção de um IF no método Enviar que não tem mais nenhuma utilidade.
+-- ACBrNFeServicos --
+[*] Atualização das URLs de QR-Code e de Consulta da UF: PI.
+  Por: Italo Jurisato Junior
+
+17/06/2019
+-- ACBrNFeWebServices --
+[*] Ao separar o evento para a sua validação ficou faltando o atributo versao.
+  Por: Italo Jurisato Junior
+
+14/06/2019
+-- ACBrNFeNotasFiscais --
+[*] https://www.projetoacbr.com.br/forum/topic/51923-rejei%C3%A7%C3%A3o-725-nfc-e-com-cfop-inv%C3%A1lido/
+  Por: pcBonetti
+
+14/06/2019
+-- ACBrNFeWebServices --
+[*] A variável SchemaEventoNFe não estava sendo inicializada com o valor schErro.
+  Por: Waldir Paim
+
+14/06/2019
+-- Diversos --
+[+] Adicionado a função especifica para converter o código do evento para 
+    o enumerador, adicionado a função para gerar o path para o Download de
+    eventos e implementado a validação completa de um evento antes do seu
+    envio.
+  Por: Italo Jurisato Junior
+
+07/06/2019
+-- ACBrECFVirtualNFCe --
+[+] Adicionado evento QuandoImprimirDocumento que permite ao programador tratar sua
+    própria impressão.
+    https://www.projetoacbr.com.br/forum/topic/51814-sugest%C3%B5es-para-o-refactoring-dos-ecf-virtuais/
+  Por: EMBarbosa
+
+06/06/2019
+-- ACBrNFeDANFEClass --
+[+] Inclusão da propriedade "DetRastros" para configurar impressão
+    individualizada das tags do detalhamento específico "rastro" no DANFE.
+    https://www.projetoacbr.com.br/forum/topic/51434-detalhamento-específico-melhoria-impressão-fonte-disponivel/
+  Por: -=Ma®©oS=-
+
+22/05/2019
+-- ACBrNFeWebServices --
+[-] Ajuste no Método Inutiliza, para validar emitente com CPF
+  Por: Jose M S Junior
+
+15/05/2019
+-- pcnNFeRTXT, pcnLAyoutTXT --
+[*] Atualizado layout TXT com ultimas NTs.
+  Por: Jose M S Junior
+
+15/05/2019
+-- ACBrNFeNotasFiscais--
+[-] remoção de regras antigas de validação da série
+[-] alterado método de validação do cnpj do emitente para 
+    considerar CPF (Produtor Rural)
+   Por: Régys Silveira
+
+09/05/2019
+-- ACBrECFVirtualNFCe --
+[*] Atribuir a chave da NFe a propriedade ChaveCupom antes de levantar a exception em caso de falha de envia, possibilitando pegar a chave da NFe.
+  Por: Rafael Dias
+
+26/04/2019
+-- pcnRetConsSitNFe --
+[-] Correção de tipo na leitura da tag cMsg.
+    https://www.projetoacbr.com.br/forum/topic/50987-erro-invalid-argument-ao-enviarconsultar-nfc-e-tag-cmsg/
+  Por: elrond
+
+25/04/2019
+-- ACBrNFeServicos --
+[*] Ajuste das URL de consulta por chave de acesso NFCe homologação para as UF
+    usuárias da SVRS.
+  Por: BigWings
+
+16/04/2019
+-- ACBrNFe, pcnConversao.pas --
+[+] Adicionado tipo TForcarGeracaoTag que poderá ser usado em qualquer DF-e para parametrizar a exigência ou não de uma tag.
+[+] Adicionada propriedade ForcarGerarTagRejeicao938 em Opções para tentar resolver
+    de forma definitiva os problemas da geração da tag vICMSSubstituto e rejeição 938.
+    Veja: https://www.projetoacbr.com.br/forum/topic/50014-rejei%C3%A7%C3%A3o-n%C3%A3o-informada-vbcstret-pst-vicmssubstituto-e-vicmsstret/
+
+27/03/2019
+-- ACBrNFeServicos --
+[*] https://www.projetoacbr.com.br/forum/topic/50216-acrescentar-a-url-da-nf-e-40-para-pernambuco/
+  Por: Márcio Antônico
+
+-- ACBrDANFCeFortesFrA4 --
+[*] Alteração no valor default de conf. Margens
+    (por: Jose M. S. Junior)
+
+19/03/2019
+-- pcnProcNFe --
+[*] Removido um "M" a mais no nome da tag.
+  Por: Italo Jurisato Junior
+
+16/03/2019
+-- pcnNFeW --
+[*] Removido as condições impostas para gerar ou não as tags novas: pST e vICMSSubstituto.
+    Conforme consta na NT 2018/005 versão 1.20 essas tags passaram a ser opcionais.
+  Por: Italo Jurisato Junior
+
+14/03/2019
+-- pcnNFeW --
+[*] Imposto uma condição para gerar ou não a tag pST (cst41Ret e cst60Ret), pois no ambiente
+    de homologação ela já aceita e no de produção somente a partir do dia 29/04/2019.
+   Por: Italo Jurisato Junior
+
+08/03/2019
+-- pcnNFeW --
+[*] Imposto uma condição para gerar ou não a tag vICMSSubstituto, pois no ambiente
+    de homologação ela já aceita e no de produção somente a partir do dia 29/04/2019.
+   Por: Italo Jurisato Junior
+
+06/03/2019
+-- pcnNFeW --
+[*] Desfeita a alteração na condição para não gerar a tag IE do destinatário 
+    quando o mesmo não for contribuinte do ICMS
+   Por: Italo Jurisato Junior
+
+28/02/2019
+-- Diversos --
+[*] Alterações visando atender a NT 2018/005 versão 1.10
+  Por: Italo Jurisato Junior
+
+14/02/2019
+-- ACBrNFeNotasFiscais / pcnNFeR --
+[*] Ajuste para remoção completa do namespace do XML para leitura correta pelo
+    método "LerXML"
+    https://www.projetoacbr.com.br/forum/topic/49420-xml-com-xmlnshttpwwwportalfiscalinfbrnfe/
+  Por: BigWings
+
+12/02/2019
+-- pcnNFeW --
+[*] Alterado a condição para não gerar a tag IE do destinatário quando o mesmo
+    não for contribuinte do ICMS
+   Por: Italo Jurisato Junior
+
+06/02/2019
+-- pcnNFeR --
+[*] Alterado a posição da remoção do NameSpace para o inicio da rotina.
+    Mudado para fazer uma remoção total e não somente do grupo <det>.
+   Por: Italo Jurisato Junior
+
+04/02/2019
+-- pcnNFeR --
+[*] https://www.projetoacbr.com.br/forum/topic/48913-importa%C3%A7%C3%A3oleitura-do-xml-nf-e-n%C3%A3o-carrega-os-produtos/
+   Por: Lucas Martendal
+
+31/01/2019
+-- pcnNFeW --
+[*] Alterado a geração da tag IE do grupo de Retirada e Entrega com o objetivo
+    de aceitar a palavra ISENTO
+   Por: Italo Jurisato Junior
+
+30/01/2019
+-- pcnNFe / pcnNFeW --
+[*] Removido o valor inicial para os campos: xPais e cPais referente a Retirada e
+    Entrega e alterada a condição que valida o código do Pais.
+   Por: Italo Jurisato Junior
+
+-- pcnNFe / pcnNFeW --
+[*] Definido um valor inicial para os campos: xPais e cPais referente a Retirada e
+    Entrega e incluido um condição para determinar se o cPais será validado ou não.
+   Por: Italo Jurisato Junior
+
+23/01/2019
+-- ACBrNFeServicos --
+[*] https://www.projetoacbr.com.br/forum/topic/48903-webservice-nfc-e-mg-incorreto/
+   Por: Tulio Padua
+
+-- ACBrDANFCeFortesFr --
+[+] Adicionada a propriedade "FonteLinhaItem: TFont", para permitir definir
+    qual Fonte, Tamanho e estilo que deve ser apresentadas as Linhas de Itens
+[*] Ajuste para melhor espacejamento da Legenda do Item
+[*] Ajustes para melhor alinhamento a Direita dos Valores de Totais
+    (por: DSA)
+
+22/01/2019
+-- ACBrDFeDANFeReport --
+[*] Ajustes de processamento no Método "ManterCodigo"
+   Por: Henrique Leonardo
+
+17/01/2019
+-- pcnNFeR --
+[-] Correção na leitura da tag "cPais" dos grupos "Entrega" e "Retirada".
+    https://www.projetoacbr.com.br/forum/topic/48801-erro-acbrnfe1notasfiscaisloadfromstring/?do=findComment&comment=322472
+    https://www.projetoacbr.com.br/forum/topic/48887-refatora%C3%A7%C3%A3o-mantercodigoean/?tab=comments#comment-323010
+
+16/01/2019
+-- Diversos --
+[*] Remoção das units que foram Generalizadas em PCNComum e os ajustes necessários.
+   Por: Italo Jurisato Junior
+
+13/01/2019
+-- ACBrDANFCeFortesFr --
+[-] Ajustes para correta impressão do DANFCe, com Logo Lateral ou no topo, e
+    SEM Logo
+[+] Adicionada a propriedade "EspacoFinal: integer default 38"
+[*] Valores default de "TamanhoLogoHeight" modificado para 50, e de
+    "TamanhoLogoWidth" para 77;
+    (por: DSA)
+
+09/01/2019
+-- ACBrDFeDANFeReport --
+[*] Ajustes para ignora a impressão do EAN quando for o literal "SEM GTIN".
+    (por Rafael Dias).
+
+07/01/2019
+-- ACBrDFeDANFeReport, ACBrNFeDANFEClass --
+[*] Propriedade "TACBrNFeDANFEClass.QuebraLinhaEmDetalhamentoEspecifico" movida
+    para classe ancestral, em: "TACBrDFeDANFeReport.QuebraLinhaEmDetalhamentos"
+[*] Propriedade "TACBrNFeDANFEClass.ExibeInforAdicProduto: Boolean" movida para
+    classe ancestral, em: "TACBrDFeDANFeReport.ExibeInforAdicProduto: TinfAdcProd",
+    sendo que: "TinfAdcProd = (infNenhum, infDescricao, infSeparadamente)"
+[*] Método "TACBrNFeDANFEClass.QuebrarLinha: String; virtual" movido para classe
+     ancestral "TACBrDFeDANFeReport.SeparadorDetalhamentos: String; virtual"
+[*] Propriedade "TACBrDFeDANFeReport.ImprimeValor: TImprimirUnidQtdeValor" movida
+    para classe específica "TACBrNFeDANFEClass.ImprimeValor: TImprimirUnidQtdeValor"
+[+] Implementado código genérico em: "TACBrDFeDANFeReport.ManterinfAdProd", fazendo
+    uso da propriedade "ExibeInforAdicProduto", e que deve servir para a maioria
+    das classes filhas
+    (por Rafael Dias e DSA)
+
+26/12/2018
+-- pcnNFeW --
+[*] Correção no ID de algumas tags.
+  Por: Roberto S Filho
+
+21/12/2018
+-- Diversos --
+[+] Implementado o evento teCancSubst (Cancelamento por substituição) para a NFC-e
+  Por: Italo Jurisato Junior
+
+19/12/2018
+-- ACBrNFeWebServices / ACBrNFe --
+[*] Removido as units pcnRetCancNFe, pcnCCeNFe e pcnRetCCeNFe por não ter mais utilidades.
+  Por: Italo Jurisato Junior
+
+18/12/2018
+-- ACBrNFeServicos --
+[+] Inclusão das URLs de homologação e produção da NFC-e MG.
+   Por: Italo Jurisato Junior
+
+13/12/2018
+-- ACBrNFeWebServices / ACBrNFe --
+[*] Removido Classes, Procedures e métodos dos serviços: ConsulNFeDest e DownloadNFe, por
+    terem sidos desativados pela SEFAZ a um bom tempo.
+  Por: Italo Jurisato Junior
+
+07/12/2018
+-- ACBrNFeServicos --
+[*] Atualização de URLs para QRCode 2.00 NFCe TO.
+    https://www.projetoacbr.com.br/forum/topic/48100-mudan%C3%A7a-endere%C3%A7os-qrcode-tocantins/
+
+06/12/2018
+-- ACBrNFeWebServices / ACBrNFeServicos --
+[*] Incluída URL e tratamento do retorno do webservice para a consulta de 
+    cadastro MG 4.00.
+  Por: everson.turossi
+
+28/11/2018
+-- ACBrNFeNotasFiscais --
+[*] Alteração na validação de leitura do arquivo .INI, validando preenchimento
+    campo CST e CSOSN individualmente.
+  Por: José M. S. Junior
+
+28/11/2018
+-- pcnNFeW --
+[*] https://www.projetoacbr.com.br/forum/topic/47855-icms51-com-diferimento-total-pdif100/?do=findComment&comment=315345
+  Por: Italo Jurisato Junior
+
+16/11/2018
+-- ACBrNFeServicos --
+[*] https://www.projetoacbr.com.br/forum/topic/47535-mudan%C3%A7a-url-acbrnfeservicos-url-incorreta/
+  Por: Heto Andrade
+
+15/10/2018
+-- ACBrNFeNotasFiscais --
+[*] Ajuste na validação de leitura do arquivo .INI, validando preenchimento campo CST
+  Por: José M. S. Junior
+
+15/10/2018
+-- ACBrNFeWebServices --
+[*] Ao consultar agora é checado também o valor do campo cStat que se encontra dentro
+    do grupo infProt.
+  Por: Italo Jurisato Junior
+
+08/10/2018
+-- pcnNFeW --
+[*] As tags: pGLP(id:LA03a), pGNn(id:LA03b), pGNi(id:LA03c) e vPart (id:LA03d)
+    só devem ser geradas se o código (ANP) do produto for 210203001.
+  Por: Italo Jurisato Junior
+
+04/10/2018
+-- pcnNFeW --
+[*] Apesar de no manual e no Schema constar que as tags: pGLP(id:LA03a), 
+    pGNn(id:LA03b) e pGNi(id:LA03c) são opcionais, mas a SEFAZ esta exigindo
+    a presença das 3 mesmo com os seus valores zerados.
+  Por: Italo Jurisato Junior
+
+25/09/2018
+-- ACBrNFeNotasFiscais --
+[*] Correções e melhorias nas validações do método "ValidarRegrasdeNegocios".
+  Por: BigWings
+  
+20/09/2018
+-- ACBrNFeNotasFiscais --
+[*] Correções e melhorias nas Validações de Regras de Negócio.
+   por: Alexandre Faustinoni/Wanderson Pereira/André Angeluci
+
+14/09/2018
+-- ACBrNFeServicos --
+[*] Correção das URLs Consulta NFCe QRCode2.0 GO
+  Por: José M. S. Junior
+
+15/08/2018
+-- ACBrNFeNotasFiscais --
+[*] Validações na leitura do arquivo .INI
+por: José M. S. Junior
+
+05/09/2018
+-- ACBrNFeServicos --
+[*] Correção das URLs Consulta NFCe QRCode2.0 MS.
+  Por: José M. S. Junior
+
+20/08/2018
+-- ACBrNFeWebServices --
+[*] Ajuste para serviço de consulta de cadastro NFe 4.00 RS e SVRS que tiveram
+    o WSDL do serviço corrigidos.
+  Por: BigWings
+  
+15/08/2018
+-- ACBrNFeNotasFiscais --
+[*] Ajuste na leitura do arquivo .INI grupo "detExport"
+por: José M. S. Junior
+
+13/08/2018
+-- ACBrNFeNotasFiscais --
+[*] Acertos para validações de gtin da Nota Técnica 2017.001 - v 1.30
+    Outros acertos referentes a Nota Técnica 2016.002 - v 1.60
+por: Regys Silveira e André Ferreira de Moraes
+
+13/08/2018
+-- ACBrNFeWebServices --
+[*] Incluido a verificação se a UF é MT e caso afirmativo é feito os ajustes
+    necessário para a correta montagem no XML soap da Consulta ao Cadastro a 
+    ser enviando para a SEFAZ.
+por: Italo Jurisato Junior
+
+04/08/2018
+-- ACBrNFeNotasFiscais --
+[*] Ajuste na função GerarNFeIni (Escrita do .ini ref totalizadores do XML)
+por: José M. S. Junior
+
+04/08/2018
+-- pcnNFeW --
+[-] Correção na validação da tag cEANTrib.
+    https://www.projetoacbr.com.br/forum/topic/45414-valida%C3%A7%C3%A3o-do-ceantrib-melhoria/
+  Por: Gabriel Bonzanini
+  
+09/07/2018
+-- ACBrNFeServicos --
+[*] Alteração das URLs NFe 4.00 MS produção.
+  Por: guilhermefq
+  
+07/07/2018
+-- ACBrNFeServicos --
+[*] Alteração das URLs NFCe 4.00 MS produção.
+  Por: BigWings
+  
+29/06/2018
+-- ACBrNFeServicos --
+[*] Correção das URLs NFCe 4.00 MT produção.
+  Por: BigWings
+  
+25/06/2018
+-- pcnLayoutTXT --
+[*] Ajuste na leitura do Layout TXT NFe v4.0 linha <W02>
+    https://www.projetoacbr.com.br/forum/topic/44316-nfe-400-utilizando-txt-layout-sefaz/
+   por: José M. S. Junior
+
+23/06/2018
+-- ACBrNFeServicos --
+[*] Alteração das URL NFCe 4.00 AM homologação para o ambiente de testes para
+    desenvolvedores.
+    https://www.projetoacbr.com.br/forum/topic/43771-iniciando-testes-com-nfc-e-mas-sem-csc-e-idcsc/?do=findComment&comment=288653	
+  
+19/06/2018
+-- pcnNFe --
+[*] https://www.projetoacbr.com.br/forum/topic/44172-nfe-40-atualizado-m%C3%A9todo-nfeassign-com-as-novas-propriedades/
+   por: Solivan Araujo
+
+18/06/2018
+-- ACBrNFe --
+[*] Alteração no componente para deixa-lo em conformidade com a NT 2016/002
+    versão 1.60 - Alteracao Leiaute da NF-e - Versao 4.00
+   por: Italo Jurisato Junior
+
+11/06/2018
+-- ACBrNFeDANFeESCPOS --
+[*] Ajuste para calcular corretamente a Altura do QRCode Lateral, com diversas
+    situações de conteúdo de tamanhos variáveis
+    (por: DSA)
+
+08/06/2018
+-- ACBrNFeWebServices --
+[+] Acrescentado a propriedade ListaArqs na classe DistribuicaoDFe com objetivo
+    relacionar o nome de todos os XML retornados pelo método DistribuicaoDFe.
+   Por: Fabio Nery
+
+05/06/2018
+--ACBrNFeNotasFiscais--
+[*] Ajuste na escrita e leitura do campo indPag da no arquivo.INI, para NFe 4.0
+   Por: José M. S. Junior
+
+02/06/2018
+-- ACBrNFeDANFeESCPOS --
+[*] Impressão com Logo Lateral, Telefone formatado e em negrito
+[-] Impressão com QRCode Lateral, ajuste para imprimir QRCodes mais largos
+    https://www.projetoacbr.com.br/forum/topic/43648-qrcode-lateral-tm-t20-escpos-n%C3%A3o-imprime/?do=findComment&comment=288468
+[*] Ajustes para não imprimir Linhas em branco, desnecessárias
+    (por: DSA)
+
+23/05/2018
+-- ACBrNFeServicos --
+[*] Atualização das URLs de Homologação da SEFAZ-MS.
+   Por: Italo Jurisato Junior
+
+21/05/2018
+-- ACBrNFeDANFeESCPOS --
+[*] Adicionado Suporte as propriedades QRCodeLateral e ImprimeLogoLateral
+    (por: DSA e André Moraes)
+
+16/05/2018
+-- pcnNFeW --
+[*] Ajuste para sempre gerar as tags "vBCFCPUFDest", "pFCPUFDest" e "vFCPUFDest" do grupo
+    "ICMSUFDest" devido a algumas SEFAZ não terem implantado os schemas da 
+    NT 2016/002 v. 1.50.
+    https://www.projetoacbr.com.br/forum/topic/43344-nfe-difal
+  Por: BigWings
+
+14/05/2018
+-- ACBrNFe --
+[+] Adicionado o método: AjustarVersaoQRCode, para retornar a versão do QRCode
+    levando em consideração "Configuracoes.Geral.VersaoQRCode" e a versão do Documento.
+[*] Métodos: GetURLConsultaNFCe e GetURLQRCode restaurados para sua assinatura
+    original, e modificados para usar "Configuracoes.Geral.VersaoQRCode" e
+    "AjustarVersaoQRCode"  (por: DSA)
+
+-- ACBrNFeNotasFiscais, ACBrNFeDANFeESCPOS, ACBrDANFCeFortesFr, ACBrDANFCeFortesFrA4, ACBrNFeDANFEFRDM --
+[*] Modificados para usar a assinatura original de GetURLConsultaNFCe e GetURLQRCode
+    (por: DSA)
+
+10/05/2018
+-- pcnNFeW --
+[*] Alteração geração Tags PIS / COFINS para modelo 65 CST -99 (permitir gerar tags com valores zerados)
+  Por: José M. S. Junior
+
+07/05/2018
+-- ACBrNFeNotasFiscais --
+[*] Alteração Leitura .INI (GerarNFeINI) ref. Tag Medicamentos
+  Por: José M. S. Junior
+
+02/05/2018
+-- pcnNFe / pcnNFeW / pcnNFeR --
+[*] Alterações visando deixar o componente em conformidade com a NT 2016/002 versão 1.50
+  Por: Italo Jurisato Junior
+
+[*] Definição de valor padrão vazio para as tags indEscala e indPag de forma
+    a não gerar as tags caso não informado (NFe 4.00).
+[*] Ajustes de compatibilidade com layouts anteriores da NFe.
+  Por: BigWings
+
+24/04/2018
+-- ACBrNFeWebServices --
+[-] Correção em "TNFeRetRecepcao" para retornar o valor das propriedades 
+    modificadas pelo componente, na finalização do serviço.
+  https://www.projetoacbr.com.br/forum/topic/42900-ref-a-erro-no-retorno-da-nf-e-autorizada/
+  Por: BigWings
+
+23/04/2018
+-- ACBrNFeServicos --
+[*] Atualização de URLs NFe 4.00 MS homologação.
+  Por: BigWings
+
+20/04/2018
+-- ACBrNFeServicos --
+[*] Inclusão das URL NFCe 4.00 SP produção.
+[*] Atualização das URL de consulta por QRCode e chave de acesso NFCe 4.00 SP.
+[*] Atualização das URL de consulta de cadastro NFe 4.00 RS e SVRS 
+    homologação.
+  Por: BigWings
+
+18/04/2018
+-- ACBrNFeDANFEClass --
+[+] Adicionada a propriedade READONLY: TACBrNFeDANFEClass.ArquivoPDF: String
+    Útil para LER o nome do arquivo PDF que foi gerado.
+    (por: DSA)
+
+-- ACBrDANFCeFortesFr --
+[+] Adicionado suporte ao método "ImprimirEventoPDF"
+[*] Refatoração de código, removendo código repetido
+    (por: DSA)
+
+-- ACBrDANFCeFortesFr, ACBrDANFCeFortesFrA4, ACBrNFeDANFEFR, ACBrNFeDANFeRLClass --
+[+] Publicando o nome do PDF gerado em: TACBrNFeDANFEClass.ArquivoPDF
+    (por: DSA)
+
+16/04/2018
+-- pcnEventoNFe --
+[*] Modificação nos métodos "Getters" para não disparar exception no caso de
+    erros ou conversão inválida, assumindo valores vazios ou nulos.  (por: DSA)
+
+-- ACBrNFeWebServices --
+[-] Correção na execução do serviço de consulta de cadastro, para retornar o
+    FPBodyElement padrão após uma consulta de cadastro dos estados do RS e
+    estados usuários da SVRS.
+  Por: BigWings
+
+13/04/2014
+-- ACBrDANFCeFortesFr --
+[*] Adicionado o método "DiminuirFonteSeNecessario", para permitir ajuste do
+    tamanho da fonte, em Labels que não são quebrados em várias lihnhas, por não
+    possuir espaços no texto. Exemplo: "lURLConsulta"
+    (Por: DSA)
+
+12/04/2018
+-- ACBrNFeDANFeESCPOS --
+[*] Ajuste no método: ImprimirDANFECancelado, para considerar o número de 
+    cópias. (por: DSA)
+
+06/04/2018
+-- ACBrNFeNotasFiscais --
+[+] Adicionado Função que gera .INI a partir da leitura do XML da NFe
+  Por: José M. S. Junior
+
+06/04/2018
+-- ACBrNFeServicos --
+[*] Inclusão de URLs QRCode e consulta NFCe 4.00 BA.
+  https://www.projetoacbr.com.br/forum/topic/42578-nfce-urls-invalidas/
+  Por: BigWings
+
+05/04/2018
+-- pcnNFeW --
+[*] https://www.projetoacbr.com.br/forum/topic/42563-gera%C3%A7%C3%A3o-da-chave-de-nf-e-avulsa/
+  Por: BSoft
+
+-- ACBrNFeServicos --
+[*] Inclusão de URLs NFe 4.00 SVC-RS homologação.
+[*] Atualização de URLs NFe 4.00 homologação (BA, MS) e produção RS.
+  Por: BigWings
+
+-- ACBrNFeWebServices --
+[*] Ajuste para serviço de consulta de cadastro NFe 4.00 RS e SVRS onde o WSDL 
+  do serviço está fora do padrão.
+[-] Correção da versão do layout da NFe gerada no protocolo de autorização
+  ao efetuar a consulta.
+  Por: BigWings
+
+22/03/2018
+-- ACBrNFeDANFEClass --
+[*] Ajuste no manter Codigo.
+	https://www.projetoacbr.com.br/forum/topic/42326-corre%C3%A7%C3%A3o-no-m%C3%A9todo-mantercodigo-para-imprimir-o-c%C3%B3digo-e-n%C3%A3o-sem-gtin-nfce-40/
+  Por: HLeoRj
+
+21/03/2018
+-- ACBrNFeServicos --
+[*] Inclusão das URLs NFe 4.00 PE produção.
+  Por: BigWings
+
+19/03/2018
+-- ACBrNFeWebservices --
+[-] Correção no método "DefinirURL" para ajustar o layout do serviço corretamente
+  no envio de evento EPEC NFCe SP.
+  Por: BigWings
+
+17/03/2048
+-- ACBrNFeDANFeESCPOS --
+[+] Destaque separado do Valor do Frete, quando existente
+    (por: DSA)
+[+] Impressão do Valor do Documento, no Evento de Cancelamento
+    https://www.projetoacbr.com.br/forum/topic/41579-nfce-corre%C3%A7%C3%A3o-para-imprimir-valor-cancelamento-esc-pos/
+
+16/03/2018
+-- pcnNFeR --
+[*] https://www.projetoacbr.com.br/forum/topic/41734-xml-de-nfe-versao-310-com-grupo-de-repasse-de-substituicao-tributaria/?do=findComment&comment=275811
+   Por: Giovane Preis
+
+15/03/2018
+-- ACBrNFe --
+[*] Ajuste no método "EhAutorizacao" para definir corretamente a URL para
+    NFCe 4.00 AM.
+   https://www.projetoacbr.com.br/forum/topic/40618-nfc-e-40-amazonas
+   Por: BigWings / Afranio Lucas
+
+-- ACBrNFeServicos --
+[*] Atualização de URLs NFe 4.00 CE.
+  Por: BigWings
+
+13/03/2018
+-- pcnNFeW --
+[*] Comentado a alteração que atribui a string "SEM GTIN" quando os campos
+    cEAN e cEANTrib forem vazios (A validação esta prevista para 01/12/2018).
+   Por: Italo Jurisato Junior
+
+05/03/2018
+-- ACBrNFeServicos --
+[-] Remoção do ajuste do SoapAction para webservices da NFe BA homologação.
+   Por: BigWings
+
+01/03/2018
+-- pcnNFeW --
+[*] Incluido uma condição para a versão 4.00 se o produto não possuir o codigo
+    de barras deve ser informado "SEM GTIN" nos campos cEAN e cEANTrib.
+   Por: Italo Jurisato Junior
+
+20/02/2018
+-- ACBrNFeServicos --
+[*] Incluido as URLs NFCe ambiente de produção RS - versão 4.0 
+   (por: Jose M. S. Junior)
+
+14/02/2018
+-- pcnNFeRTXT / pcnNFeW / pcnNFeR --
+[*] Remção de funções em duplicidade e a troca das chamadas das funções antigas
+    pelas novas
+   Por: Italo Jurisato Junior
+
+09/02/2018
+-- ACBrNFeNotasFiscais, ACBrNFeConfiguracoes, pcnNFeW  --
+[*] Método: "ObterCodigoMunicipio" / "ObterNomeMunicipio" Ajustes nas classes ACBrDFe para validação e utilização 
+    desta funcionalidade na Geração do XML. Validando a propriedade "NormatizarMunicipios" e o path com os arquivos de Municípios IBGE.
+    (por: Jose M. S. Junior)
+
+25/01/2018
+-- ACBrNFeNotasFiscais.pas --
+[*] Atualizado Leitura do arquivo .ini com tags que faltavam na sessão Combustivel 
+    (por: Jose M. S. Junior)
+
+24/01/2018
+-- ACBrDANFCeFortesFr --
+[*] Ajuste para que o calculo da altura da página, seja feito pelo próprio
+    Fortes Report, através da nova propriedade: "UnlimitedHeight := True"
+[*] Refactoring em "Imprimir" e "ImprimirCancelado", para usar o mesmo código
+    (por: DSA)
+
+20/01/2018
+-- ACBrNFeDANFEClass --
+[+] Adicionada a propriedade "UsarSeparadorPathPDF", para permitir que os PDFs
+    sejam salvos, usando a mesma estrutura de pasta de diretórios, com separação
+    por CNPJ, AnoMes, Dia, Modelo
+    (por: DSA)
+
+19/01/2018
+-- ACBrNFeDANFEClass, ACBrDANFCeFortesFr --
+[+] Adicionada a propriedade "NomeDocumento", para permitir determinar o título
+    a ser exibido no Spool (Por: Waldir Paim)
+
+18/01/2018
+-- ACBrNFeServicos --
+[*] Incluido a URL ambiente de produção da NF-e Ambiente Nacional, 
+    Serviço: Recepção de Eventos.
+   Por: mcob
+
+17/01/2018
+-- ACBrNFeWebServices --
+[-] Correção em "TNFeRecepcao", "TNFeRetRecepcao", "TNFeConsulta", para que o
+    Numero de Versão seja mantido em todas as etapas
+    (por: DSA e BigWings)
+
+11/01/2018
+-- ACBrNFeNotasFiscais --
+[-] Acerto para não validar somatorio das formas de pagamento, conforme manual
+    para a versão 4.0 da nf-e (somente quando for versão 4.0 em diante)
+
+10/01/2018
+-- ACBrNFeDANFEClass --
+[*] Método GetPathPDF, modificado para:
+    - Se houver algum Path Definido: Usar o Path exatamente como informado
+      (sem adicionar os separadores de Diretório)
+    - Se For vazio: Calcula o Path da mesma maneira que é computado o Path onde
+      é Salvo o XML da NFe
+    - Se for Vazio, e não houver nota carregada: Usa o Path da aplicaçao
+    https://www.projetoacbr.com.br/forum/topic/40250-acbrnfe-problema-pathpdf/
+    (por: DSA)
+
+-- ACBrNFeConfiguracoes --
+[*] Ajustes para que TConfiguracoesNFe.Owner possa ser Nulo
+    (por: DSA)
+
+08/01/2018
+-- ACBrNFeConfiguracoes --
+[+] Adicionado os métodos:
+    GravarIni( const AIni: TCustomIniFile );
+    LerIni( const AIni: TCustomIniFile );
+    Que permitem Gravar e Ler os valores de todas as configurações de
+    "TConfiguracoesNFe" em um arquivo INI
+    (por: DSA)
+
+28/12/2017
+-- ACBRNFeNotasFiscais --
+[*] Métodos "LoadFromFile", "LoadFromString", e "LoadFromStream" modificados para
+    que o parâmetro "AGerarNFe", seja por padrão "False". Para respeitar o XML
+    informado, e evitar processamento de CPU desnecessário
+    (por: DSA)
+
+07/12/2017
+-- ACBRNFeNotasFiscais --
+[*] Classe "NotaFiscal" Atualizado o método:
+    function LerArqIni(const AIniString: String): Boolean;
+    com os Campos da versão NFe 4.0
+    por: Jose M. S. Junior
+
+05/12/2017
+-- ACBRNFeNotasFiscais --
+[+] Classe "NotaFiscal" Adicionado o método:
+    function LerArqIni(const AIniString: String): Boolean;
+    Permite carregar uma NFe, de um Arquivo INI no Formato aceito pelo
+    ACBrMonitorPLUS
+       http://acbr.sourceforge.net/ACBrMonitor/NFECriarNFe.html
+    O Parâmetro "AIniString", pode ser o caminho para um arquivo INI em disco
+    ou ainda o conteúdo do arquivo INI.
+[+] Classe "TNotasFiscais" adicionado o método:
+    function LoadFromIni(AIniString: String): Boolean;
+[*] Método "NotaFiscal.VerificarAssinatura", modificado para conseguir validar
+    XMLs com a tag "nfeProc"
+    (por: Rafael Teno e DSA)
+
+-- pcnEnvEventoNFe --
+[+] Adicionado o método:
+    function TEventoNFe.LerFromIni(const AIniString: String; CCe: Boolean): Boolean;
+    Permite carregar um ou vários Eventos, de um Arquivo INI, no Formato aceito
+    pelo ACBrMonitorPLUS.
+       http://acbr.sourceforge.net/ACBrMonitor/NFEEnviarEvento.html
+    O Parâmetro "AIniString", pode ser o caminho para um
+    arquivo INI em disco ou ainda o conteúdo do arquivo INI.
+    (por: Rafael Teno e DSA)
+
+30/11/2017
+-- ACBrNFeServicos -- 
+[+] Adicionado URL de homologação 4.0 PR.
+    Atualizado URL de homologacao Consulta QRCode 4.0 SP
+    por: Jose M. S. Junior
+
+23/11/2017
+-- pcnNFeW --
+[*] https://www.projetoacbr.com.br/forum/topic/40044-envio-nota-com-informa%C3%A7%C3%A3o-de-combust%C3%ADvel-nfe-40/
+   Por: Adryelle
+
+16/11/2017
+-- pcnEnvEventoNFe --
+[*] Correção no tamanho minimo da tag <descEvento>.
+   Por: Filipe Sortica
+
+15/11/2017
+-- pcnProcNFe / pcnEventoNFe --
+[*] Comentado a function GetVersaoEvento pois este retorna sempre uma versão
+    pré-definida que pode não ser a versão atual do evento.
+    Comentado também a function ObterNomeArquivo por não ter nenhuma utilidade.
+   Por: Italo Jurisato Junior
+
+09/11/2017
+-- ACBrDANFCeFortesFr --
+[-] Correção na função de Cálculo de Tamanho da Página na impressão NFCe em Fortes.
+    por: BigWings
+
+01/11/2017
+-- pcnNFeW --
+[*] A tag <VFCPUFDEST> do grupo Totais, estava como obrigatória sendo que ela é opcional.
+   Por: Thiago
+
+28/10/2017
+-- pcnNFeW --
+[*] Ajustes conforme NT 2016/002 versão 1.40.
+   Por: Italo Jurisato Junior
+
+23/10/2017
+-- ACBrNFeWebServices --
+[*] Correção, não identificava corretamente Resumo de Evento e Evento Processado.
+   Por: Italo Jurisato Junior
+
+04/10/2017
+-- ACBrDANFCeFortesFr/ACBrNFeDANFeESCPOS --
+[*] Compatibilizado com Manual de Especificacoes Tecnicas do DANFE NFC-e QR Code  - Versao 4.2
+[*] Implementado o uso da propriedade ImprimeNomeFantasia
+-- ACBrDANFCeFortesFr/ACBrSATExtratoFortesFr --
+[-] Correção para informar corretamente largura e margens dos relatórios
+-- ACBrDANFCeFortesFr --
+[+] Adicionado propriedade QRCodeLateral, para permitir a impressão conforme manual 4.2
+	Por: André Ferreira de Moraes
+
+29/09/2017
+-- pcnEventoNFe --
+[*] Incluido o valor MDFeCancelado2 que se refere ao evento 310611.
+   Por: Italo Jurisato Junior
+
+28/09/2017
+-- ACBrNFeServicos --
+[*] Removido as chamadas de WSDL_V4_SP e SOAP_V4_SP, pois a SEFAZ-SP corrigiu o
+    Web Services da versão 4.00 deixando-o conforme definido nas Notas Técnicas.
+   Por: Italo Jurisato Junior
+
+17/09/2017
+-- ACBrNFeServicos --
+[+] Inclusão das URLs da SV-AN Produção/Homologação, SVC-AN Produção/Homologação,
+    da NF-e 4.00
+   Por: Italo Jurisato Junior
+
+12/09/2017
+-- pcnNFeW --
+[*] Alteração para atender a versão 1.30 da NT 2016/002
+   Por: Italo Jurisato Junior
+
+01/09/2017
+-- ACBrDANFCeFortesFr --
+[+] Adicionado suporte as propriedades "ImprimirTributos" e "TributosSeparadamente"
+    http://www.projetoacbr.com.br/forum/topic/38342-solicitacao-de-melhoria-tributosseparadamente/?page=2#comment-253535
+    (por: DSA)
+
+31/08/2017
+-- ACBrNFeWebServices --
+[*] Corrigito a função TDistribuicaoDFe.TratarResposta, pois não estava
+    salvando os XML dos resumos de notas e de eventos.
+   Por: Italo Jurisato Junior
+
+29/08/2017
+-- ACBrNFeDANFE* --
+[+] Adicionada a propriedade "ImprimirTributos: Boolean default True".
+    Quando Falsa suprime toda a impressão dos Tributos pelo ACBr
+    http://www.projetoacbr.com.br/forum/topic/38342-solicitacao-de-melhoria-tributosseparadamente/
+    (por: DSA)
+
+28/08/2017
+-- ACBRNFeNotasFiscais --
+[*] Atualização da regra de validação para a versão 4.00
+    http://www.projetoacbr.com.br/forum/topic/38525-regras-de-valida%C3%A7%C3%A3o-da-nfe-55-ajuste/
+
+21/08/2017
+-- ACBrNFe --
+[*] Métodos ConsultaNFeDest e Download comentados, pois a SEFAZ desativou,
+    devemos agora utlizar o método DistribuicaoDFe.
+[+] Incluido as URLs de Homologação da NF-e versão 4.00 de Pernambuco.
+   Por: Italo Jurisato Junior
+
+21/08/2017
+-- ACBRNFeNotasFiscais --
+[*] Método "NotaFiscal.Assinar", ajuste para não verificar o CNPJ, quando processo
+    de assintura ocorrer externo ao ACBr
+    http://www.projetoacbr.com.br/forum/topic/38349-problemas-com-pin-a3-assinatura-de-xml/
+
+16/08/2017
+-- ACBrECFVirtualNFCe --
+[-] Acerto na ordem de assinatura e validação do NFC-e virtual para evitar erro
+    estava validando antes de assinar, então com as ultimas alterações sempre
+    acontecia um erro de estrutura no modo off-line
+    por: regys.silveira
+
+14/08/2017
+-- ACBrNFe, ACBRNFeNotasFiscais --
+[*] Ajustes para QRCode em NFCe 4.0,
+    http://www.projetoacbr.com.br/forum/topic/38060-nfc-e-40-paran%C3%A1-pr-exception-na-transmiss%C3%A3o/?tab=comments#comment-251062
+    (por BigWings)
+
+10/08/2017
+-- ACBrNFeServicos -- 
+[-] Correção na URL de homologação do QR-Code de TO.
+    por: ByteInfo
+
+01/08/2017
+-- pcnConversaoNFe / pcnNFeW -- 
+[*] Acrescentado o valor ieNenhum ao tipo TpcnIndEscala, pois com o novo Schema
+    disponibilizado pela SEFAZ a tag indEscala parassa a ser opcional, se 
+    atribuir o valor ieNenhum ao campo indEscala a tag não será gerada.
+    por: Italo Jurisato Junior
+
+31/07/2017
+-- pcnInutNFe -- 
+[*] Adicionado a leitura das tags referente a assinatura ao executar o método
+    LoadFromString ao carregar o XML de uma Inutilização de numeros.
+    por: Italo Jurisato Junior
+
+30/07/2017
+-- pcnEnvEventoNFe / pcnRetEnvEventoNFe -- 
+[*] Adicionado a leitura das tags referente a assinatura ao executar o método
+    LoadFromString ao carregar o XML de um evento.
+    por: Italo Jurisato Junior
+
+28/07/2017
+[*] Incluido as URLs de homologação da NF-e 4.00 para a UF CE.
+    Removido "?wsdl" do final das URLs de homologação da NF-e 4.00 da UF PR. 
+    Alterado algumas letras de maiuscula para minuscula das URLs de homologação da NF-e 4.00 da UF SP.
+    Incluido a URL de homologação da NF-e 4.00 para o Web Service "RecepcaoEvento" para UF SP.
+    por: Italo Jurisato Junior
+
+20/07/2017
+-- ACBrECFVirtualNFCe
+[*] Fechamento do cupom virtual melhorias
+		http://www.projetoacbr.com.br/forum/topic/32712-impressão-2-duas-vias-em-contingência/
+		(por: Juliomar Marchetti)
+		
+15/07/2017
+-- ACBrNFeWebSerices
+[-] Correção do SoapAction do RS
+		http://www.projetoacbr.com.br/forum/topic/37538-status-nfe-40-erro/?do=findComment&comment=247849
+		(por: Juliomar Marchetti)
+		
+08/07/2017
+-- ACBrNFeWebServices --
+[-] Correção nas classes "TNFeInutilizacao" e "TNFeEnvEvento", para assinar
+    corretamente, XMLs com acentos.
+    (por: DSA)
+
+30/06/2017
+-- ACBrDANFCeFortes, ACBrNFeDANFeEscPos --
+[*] Ajuste no valor Acréscimo (frete, seguro e outras despesas)
+    http://www.projetoacbr.com.br/forum/topic/37478-ajuste-no-valor-acr%C3%A9scimo-frete-seguro-e-outras-despesas/
+    (Por: Ricardo Voigt)
+
+13/06/2017
+[*] Validação de entrega a domicilio nfc-e
+    http://www.projetoacbr.com.br/forum/topic/37188-validação-entrega-a-domicílio/
+    por: Juliomar Marchetti
+		
+12/06/2017
+-- Diversos --
+[*] Em função de uma atualização da NT 2016/002 versão 1.20 se fez necessário 
+    alterar o campo indEscala de opcional para obrigatório.
+[*] Atualizado também a lista de Web Services da versão 4.00 do ambiente de 
+    homologação da UF MS.
+    (por: Italo Jurisato Junior)
+-- Diversos --
+[*] Acrescentados os novos campos referente a versão 4.00 da NF-e/NFC-e conforme
+    a NT 2016/002 versão 1.20
+    (por: Italo Jurisato Junior)
+
+09/06/2017
+-- ACBrNFeConfiguracoes --
+[*] Método "GetPathNFe", modificado para informar a Descrição do Modelo baseada
+    no conteúdo do XML a ser Salvo.
+    (por: DSA)
+
+02/06/2017
+-- ACBrECFVirtualNFCe --
+[-] Modificar para assinar antes de validar
+    http://www.projetoacbr.com.br/forum/topic/37020-nfc-e-virtual-em-contingência-com-erro/
+		
+24/05/2017
+-- ACBRNFeNotasFiscais --
+[*] Método "NotaFiscal.Validar", modificado para não tentar assinar o XML, caso
+    o mesmo não contenha a Tag de assinatura
+    (por: DSA)
+
+-- ACBrNFeWebServices --
+[*] Ajuste para salvar os valores "SSLType" e "HeaderElement", que podem ser
+    modificados pelo componente, caso a versão seja 4.0
+    (por: BigWings)
+
+15/05/2017
+-- ACBRNFeNotasFiscais
+[-] Correção das informações de validação do CNPJ do destinatário estava como emitente
+    http://www.projetoacbr.com.br/forum/topic/36706-sugest%C3%A3o-de-ajuste-na-valida%C3%A7%C3%A3o-de-regra-de-neg%C3%B3cio-208-arquivo-acbrnfenotasfiscaispas/?do=findComment&comment=240480
+    (por: Juliomar Marchetti)
+		
+28/04/2017
+-- ACBrNFeConfiguracoes --
+[*] Ajuste para que o método "GetPathNFe", considere o Modelo configurado no
+    componente, caso o parâmetro "Modelo" não seja informado.
+    (por: DSA)
+
+21/04/2017
+-- pcnNFeW --
+[*] Correções para deixar a geração do XML em conformidade com a NT 2016/002 versão 1.10
+   Por: Italo Jurisato Junior
+
+[*] possível correção para evitar problemas com acentuação de pastas na distribuicaodfe
+    http://www.projetoacbr.com.br/forum/topic/35561-distribuicaodfe-erro-na-gravação-com-propriedade-separarpornome-habilitado/
+    por Juliomar Marchetti
+		
+[*] Ajuste para separar nas pastas as nfe e eventos quando usado a distribuicaodfe
+    http://www.projetoacbr.com.br/forum/topic/35578-distribuicaodfe-separar-arquivos-de-eventos-e-da-nfe/
+		
+30/03/2017
+-- danfe fortes --
+[*] acerto para funcionar a propriedade "logoemcima" no danfe retrato.
+
+28/03/2017
+-- ACBrNFeWebServices --
+[*] Ajuste para compilação com a diretiva "DFE_SEM_OPENSSL" ligada
+    http://www.projetoacbr.com.br/forum/topic/35913-erro-de-compila%C3%A7%C3%A3o-na-unit-acbrnfewebservices-tipo-lt_tlsv1_2/
+
+26/03/2017
+-- ACBrNFeDANFeEscPos --
+[*] Ajuste para impressão do Telefone no cabeçalho, caso o mesmo seja especificado
+    http://www.projetoacbr.com.br/forum/topic/35885-cabe%C3%A7alho-danfe-escpos/
+
+19/03/2017
+-- ACBRNFeNotasFiscais --
+[*] Método "NotaFiscal.VerificarAssinatura", modificado para não tentar assinar
+    o XML, caso o mesmo não contenha a Tag de assinatura
+
+-- ACBrNFeWebServices --
+[*] Método "TNFeWebService.InicializarServico", modificado para configurar
+    automaticamente "SSL.SSLType := LT_TLSv1_2", caso "VersaoDF > ve310"
+    (por: DSA)
+
+01/03/2017
+-- ACBrNFeWebServices --
+[*] Comentado a linha que em alguns casos apaga a chave do documento consultado.
+    Método TratarResposta do Consultar.
+    Por: Italo Jurisato Junior
+
+23/02/2017
+-- ACBrNFeWebSerices --
+[-] WebService "TNFeStatusServico.TratarResposta". Correção na checagem da data/hora 
+    de recebimento, estava pegando a data/hora de retorno.
+   por: Roberto Goldinho
+
+15/02/2017
+-- ACBrNFeWebSerices --
+[-] WebService "TNFeConsulta". Correção para atualizar o XML do disco, com a
+    informação de cancelamento se "ConfiguracoesNFe.Geral.AtualizarXMLCancelado = True"
+    e CstatCancelada (101, 151, 155)  (por: DSA)
+
+13/02/2017
+-- ACBrNFeServicos.ini --
+[+] Adição das urls de consulta de nfc-e do sergipe
+    http://www.projetoacbr.com.br/forum/topic/35161-novas-urls-de-url-consultanfce-de-sergipe/
+    (por: Juliomar Marchetti)
+		
+08/02/2017
+-- ACBrECFVirtualNFCe --
+[*] Melhoria da função CancelaCupomVirtual, para encontrar o XML no disco, de
+    acordo com a configuração do Path
+    http://www.projetoacbr.com.br/forum/index.php?showtopic=34835
+    (por: PauloHenrique)
+
+07/02/2017
+-- pcnNFeW --
+[*] Ajuste para gerar as tags do grupo "pag, YA01", se Versão >= 4
+    http://www.projetoacbr.com.br/forum/topic/33789-vers%C3%A3o-400-da-nfenfce-com-acbr/?do=findComment&comment=229620
+    (por: DSA)
+
+26/01/2017
+-- ACBrDANFCeFortesFr, ACBrNFeDANFeEscPos --
+[*] Compatibilização de métodos "ImprimirDANFECancelado" e "ImprimirEVENTO"
+    (por: DSA)
+
+24/01/2017
+-- ACBrNFeWebSerices --
+[-] Alteração para evitar A.V. ao limpar os retornos
+    http://www.projetoacbr.com.br/forum/topic/34754-acbrnfewebservicesretornoclear-gerando-av/
+    por : Juliomar Marchetti
+		
+18/01/2017
+-- ACBrDANFCeFortesFr --
+[*] Otimização da informações de rodapé
+    por : Henrique Leonardo
+
+18/01/2017
+[-] Ajuste na apresentação das informações de rodapé
+    http://www.projetoacbr.com.br/forum/topic/34647-fortereport-n%C3%A3o-imprime-linha-complementar/
+    por : Henrique Leonardo
+
+09/01/2017
+[+] Adição do campo obsCont no DANFC-e em Fortes A4 e impressora térmica
+    http://www.projetoacbr.com.br/forum/topic/34463-obscont-na-danfe-nfc-e-fortes/
+    por : Juliomar Marchetti
+
+04/01/2017
+[*] Mudança do chamado para impressão do danfce
+    http://www.projetoacbr.com.br/forum/topic/34352-impress%C3%A3o-do-danfc-e-cancelado/
+    por : Juliomar Marchetti
+
+30/12/2016
+--ACBrDANFCeFortesFrA4 --
+[*] Adição InfAdProd na DANFCe em A4.
+    http://www.projetoacbr.com.br/forum/topic/34274-modifica%C3%A7%C3%A3o-adicionado-infadprod-no-modelo-de-nfce-a4-fortes/
+    por Juliomar Marchetti
+		
+27/12/2016
+-- ACBrNFeDANFEFRDM, pcnNFeW --
+  Evitar a duplicidade de alertas e o outro carregar o logo na danfe simplicado também
+  http://www.projetoacbr.com.br/forum/topic/34224-danfe-simplificado-do-fast-n%C3%A3o-mostra-logo/
+  por Juliomar Marchetti
+
+23/12/2016
+-- ACBrNFeWebServices --
+[*] Método: TNFeWebService.InicializarServico, modificado para ajustar o tipo de
+    comunicação para TLS1.2, se VersaoDF > ve310 e SSLlib = libOpenSSL
+    (por: DSA)
+
+20/12/2016
+-- ACBrNFeDANFEClass, ACBrNFeDANFeEscPos, ACBrDANFCeFortesFr --
+[*] Ajuste para imprimir corretamente numeros usando a formatação Brasileira
+    com pontos de milhar e decimais (por: DSA)
+
+20/12/2016
+[+] Adição de informações complementares no DANFCe em Fast Report igual ao Fortes e ESCPOS
+    http://www.projetoacbr.com.br/forum/topic/34096-impressao-de-complemento-de-endereco-em-fastreport/
+    por: Juliomar Marchetti
+		
+23/11/2016
+-- ACBrECFVirtualNFCe --
+[*] Recuperação de cupom na queda de energia
+    por: Gutierres
+
+16/11/2016
+-- ACBrNFeWebServices --
+[*] Correção na geração do prefixo dos arquivos de envio/retorno de eventos
+    No arquivo de envio o prefixo ficava sempre zero.
+    Os mesmos arquivos estavam sendo salvos em duas pastas, ma pasta respectiva
+    do evento e na pasta NFe, alterado para salvar somente na pasta do evento.
+    Por: Italo Jurisato Junior
+
+06/11/2016
+--ACBrNFeDANFEFRDM --
+[-] Ajuste na FormatValorUnitario.
+    http://www.projetoacbr.com.br/forum/topic/33322-corre%C3%A7%C3%A3o-erro-impress%C3%A3o-danfe-fast-report/
+    por : Henrique Leonardo
+
+05/11/2016
+--ACBrNFeDANFEClass --
+[*] Ajuste na FormatQuantidade,  ter efeitos na danfe's de Nfe , e não no cupom fiscal. 
+    por : Henrique Leonardo
+
+05/11/2016
+--ACBrNFeDANFEClass, ACBrNFeDANFEFRDM --
+[*] Melhorias nas funções FormatQuantidade e FormatValorUnitario.
+    por : Henrique Leonardo e DSA
+
+04/11/2016
+--ACBrNFeDANFEClass, ACBrNFeDANFEFRDM --
+[*] Modificação para imprimir as danfes sem casas decimais, quando a propriedade CasasDecimais._Mask_qCom igual a 0 ( zero ), 
+    Corrigidas as DANFEs do Fortes, retrato e paisagem
+    por : Henrique Leonardo
+
+03/11/2016
+--ACBrNFeDANFEFR --
+[*] implementado as funcionalidades da danfe para eventos na impressão
+    http://www.projetoacbr.com.br/forum/topic/33281-servi%C3%A7o-travando-ao-emitir-cce-carta-de-corre%C3%A7%C3%A3o-eletr%C3%B4nica/
+    por : Juliomar Marchetti
+		
+03/11/2016
+--ACBrNFeDANFEFR
+[*] Modificação para aplicar a tratativa das margens somente para modelo 55 de NF-e
+    por : Juliomar Marchetti
+		
+30/10/2016
+-- Diversos --
+[+] Implementado os métodos: DistribuicaoDFePorUltNSU, DistribuicaoDFePorNSU e 
+    DistribuicaoDFePorchNFe
+    por: Elton da Motta Barbosa / Italo Jurisato Junior
+
+24/10/2016
+-- ACBrNFeDANFEFRDM.pas --
+   Modificação para melhorar desempenho quando muitos itens e não repintar o QrCode
+   http://www.projetoacbr.com.br/forum/topic/33029-altera%C3%A7%C3%B5es-de-performance-na-visualiza%C3%A7%C3%A3o-da-nfce/?do=findComment&comment=217949
+   por : Juliomar Marchetti
+	
+20/10/2016
+-- ACBrNFeWebServices --
+[*] TNFeStatusServico. Aplicado Workaround para problema do Servidor do RS
+    que retorna Flag de horário de verão mesmo pros estados que não
+    adotam esse horário. Retornando a Data/Hora inválida. (por: ANFM e DSA)
+
+10/10/2016
+-- ACBrNFeWebServices
+[*] Modificação adicionando as validações para os tipos de prorrogações que não devem
+    ser atribuidos ao ambiente nacional mas sim de cada estado ao pegar a url
+    http://www.projetoacbr.com.br/forum/index.php?showtopic=29723
+    por : Juliomar Marchetti
+		
+26/09/2016
+-- ACBrECFVirtualNFCe --
+[-] Acerto para impressão de vias quando em contingência off-line, 
+    em contingência off-line é obrigatório a impressão de duas vias uma para o 
+    consumidor e outra para o estabelecimento.
+
+22/09/2016
+-- ACBrECFVirtualNFCe --
+[-] Acerto para não duplicar o rodapé.
+
+-- ACBrNFeDANFeEscPos --
+[-] Acerto para considerar os valores passados para o DANFE na impressão do tributos
+    estava considerando a tag na nota e pode acontecer de ela não ter sido informada
+
+22/09/2016
+-- ACBrNFeWebServices --
+[*] A função TratarResposta do método EnvEvento não estava levando em consideração
+    o status dos eventos e sim somente o status do processamento do lote.
+    Foi realizado ajustes visando checar o status do evento e desta forma o arquivo
+    *-procEventoNFe.xml só será gerado caso os status sejam: 135, 136 ou 155.
+    Por: Italo Jurisato Junior
+
+12/09/2016
+[*] Correção para o cnpj estava cortando
+    http://www.projetoacbr.com.br/forum/index.php?showtopic=32349
+    por : Juliomar Marchetti
+		
+29/08/2016
+-- ACBrNFeConfiguracoes --
+[*] Alterado o valor padrão da propriedade: IncluirQRCodeXMLNFCe para True, pois
+    ao gerar a NFC-e deve-se gerar a TAG qrCode no XML.
+    por: Italo Jurisato Junior
+
+26/08/2016
+-- UrlQrCode - ACBrNFe --
+[-] Remoção do OnlyNumber ao assinalar o valor para cDest na geração da URL QrCode
+    alguns documentos de estrangeiros possuem letras.
+
+23/08/2016
+-- diversos --
+[+] Criada a unit pcnNFeConsts que contem as constantes de mensagens usadas na
+    geração dos XML e que são apresentadas quando ocorre erro na validação.
+    por: Italo Jurisato Junior
+
+18/08/2016
+-- ACBRNFeNotasFiscais
+[-] Melhoria para corrigir erro de validação de nota de ajuste
+    http://www.projetoacbr.com.br/forum/index.php?showtopic=31622
+    por: Juliomar Marchetti
+		
+10/08/2016
+-- ACBrNFeDANFEFR
+[*] Melhoria para não precisar fazer a interação!
+    http://www.projetoacbr.com.br/forum/index.php?showtopic=31710
+    por: Juliomar Marchetti
+		
+29/07/2016
+-- ACBrNFeServicos
+[*] Novas URLs do QR-Code para a UF de GO.
+    por: Italo Jurisato Junior
+		
+27/07/2016
+-- ACBrNFeDANFEFR
+[*] Tratar para não exibir a caixa de seleção de impressora
+    http://www.projetoacbr.com.br/forum/index.php?showtopic=31487
+    por : Juliomar Marchetti
+		
+23/06/2016
+-- ACBrNFeServicos.ini
+[*] Ajuste no links de Goias para a QR-Code e ConsultaNFCe em produção e homologação
+    por: Juliomar Marchetti
+		
+16/06/2016
+-- ACBrNFeWebServices --
+[-] Ajuste para não duplicar a lista de items em  TNFeDownloadNFe e TDistribuicaoDFe
+    (por: DSA)
+
+15/06/2016
+-- ACBrNFeWebServices --
+[*] Ajustes para melhorar a performance ao acrescentar o protocolo de autorização
+    quando obtido através do método Consultar.
+    Por: Italo Jurisato e DSA
+
+13/06/2016
+-- pcnNFeW --
+[*] Método: "GerarXml", modificado para somente gerar Declaração de UTF8 no XML
+    se estiver em FPC (que usa UTF8 de forma nativa)
+
+-- ACBrNFe --
+[+] Adicionado o método "CstatCancelada(AValue: integer): Boolean;" que retorna
+    True se "AValue" estiver entre os status de cancelamento
+
+-- ACBrNFeNotasFiscais --
+[*] Método: "CalcularNomeArquivoCompleto" movido para Public
+[*] Método: "LerXML" corrigido para usar "String" e não "AnsiString"
+[*] Propriedades "XMLOriginal" e "XMLAssinado", modificadas para presumir que o
+    o seu conteudo sempre estará em UTF8
+[+] Adicionada a propriedade: "NotaFiscal.Cancelada: Boolean"
+    (True quando CStat for cancelamento)
+[*] Método: "NotaFiscal.Validar", modificado para preservar a Declaração do XML
+[*] Método "NotaFiscal.LerXML", mnodificado para converter (se necessário) o
+    conteúdo do XML informado para a String Nativa da IDE, além de efetuar o
+    "parse" dos "HTML Entity"). Isso é necessário, para que as propriedades do
+    Objeto "NFe" fiquem com apresentação correta.
+[-] Método: "CalcularNomeArquivoCompleto", correção para evitar somar o Path no
+    Resultado final, quando o nome do arquivo já conter o mesmo.
+[+] Método: "SetXMLOriginal", modificado para verificar se o conteúdo do XML
+    informado está em UTF8, convertendo-o, se necessário.
+[*] Método: "TNotasFiscais.VerificarAssinatura", modificado para disparar Erro,
+    caso nenhuma nota esteja carregada.
+[*] Método: "TNotasFiscais.LoadFromFile" modificado para não Decodificar o XML
+    para a String nativa, pois isso agora é feito por "NotaFiscal.LerXML"
+[-] Método: "TNotasFiscais.LoadFromString", modificado para conseguir processar
+    XMLs com a Tag "procNFe", obtido pelo Portal do SEFAZ
+[*] Método: "TNotasFiscais.LoadFromString", modificado para converter o XML
+    informado, para a String Nativa (se necessário)
+
+-- ACBrNFeWebServices --
+[*] Método: "TNFeRecepcao.TratarResposta", "TNFeRetRecepcao.TratarRespostaFinal",
+    "TNFeConsulta.TratarResposta" modificados para não salvar 2x o XML.
+[*] Método: "TNFeConsulta.TratarResposta": refatorados para usar "CstatCancelada"
+    e "CstatProcessado";
+[-] "TNFeConsulta.TratarResposta": Corrigido Bug que apagava o conteúdo do XML,
+    caso ocorrese uma falha no Retorno do XML
+[-] "TNFeConsulta.TratarResposta": Corrigido Bug na Atualização do XML caso o
+    mesmo estivesse Cancelado e "AtualizarXMLCancelado = True"
+[*] "TNFeConsulta.TratarResposta": Remoção de bloco de código que estava comentado
+
+19/04/2016
+-- ACBrNFeDANFEFRDM --
+[*] Disponbilizando o uso da propriedade UsaCodigoEanImpressao
+    com a Inclusão da função ManterCodigo.
+    por: Henrique Leonardo
+
+15/04/2016
+-- pcnEventoNFe --
+[*] Incluido o tipo de evento teMDFeAutorizado:
+    por: Italo Jurisato Junior
+
+13/04/2016
+-- ACBrNFeServicos --
+[+] Incluido as URLs: URL-QRCode e URL-ConsultaNFCe para a UF ES.
+    por: Italo Jurisato Junior
+
+12/02/2016
+-- ACBrNFeWebServices --
+[*] Método "TNFeWebService.Clear" modificado para inicializar:
+    SSL.UseCertificateHTTP := True  (por: DSA)
+
+-- ACBrNFeConfiguracoes --
+[*] Removida a propriedde "UseSSL"
+[*] Removida a propriedde "UseCertificate"
+[+] Adicionada a propriedade "UseCertificateHTTP" (por: DSA)
+
+08/04/2016
+-- DANFeRetratoNovo --
+[+] Canhoto no Rodapé da primeira pagina
+    Por : Henrique Leonardo
+
+07/04/2016
+-- DANFeRetrato, DANFeRetratoNovo --
+[-] Acerto para mostrar duplicatas na grid
+    http://www.projetoacbr.com.br/forum/topic/29235-erro-danferetratofr3/
+
+01/04/2016
+-- ACBrDANFCeFortesFr, ACBrDANFeRL --
+[-] Acerto para mostrar o dialogo de impressão corretamente quando não informar
+    a impressora e não configurar para preview
+    por: regys.silveira
+
+31/03/2016
+-- ACBrNFeWebServices --
+[-] Correção no WebService "TNFeInutilizacao", que não considerava o Modelo
+    informado nos parâmetros, para a obtenção da URL    (por: DSA)
+
+23/03/2016
+-- DANFeRetrato.fr3, DANFeRetratoNovo.fr3 --
+[*] Correção para mostrar ISSQN, conforme post :
+    http://www.projetoacbr.com.br/forum/topic/28624-issqn-danfe-fastreport/
+    Por : Henrique Leonardo
+    
+23/03/2016
+-- ACBrNFeDANFeEventoRLRetrato
+[*] Correção para mostrar correto a informação do CEP no evento
+    http://www.projetoacbr.com.br/forum/index.php?showtopic=28876
+    por : Juliomar Marchetti
+		
+21/03/2016
+-- ACBrDANFERL --
+[-] Acerto para ocupar todo o espaço quando não possui logomarca
+    por: regys.silveira
+
+17/03/2016
+-- ACBrNFeServicos --
+[+] Adicionado as URLs de Homologação/Produção da NFC-e de Pernambuco.
+    por: aemak / Italo Jurisato Junior
+
+16/03/2016
+--pcnNFeRTXT--
+[-] Melhoria da validação ao ler uma data ou hora vazia. 
+    por: Henrique Leonardo
+
+12/03/2016
+[*] Modificado para deixar alguns botões fora do preview em fast report
+    por: Juliomar Marchetti
+
+11/03/2016
+-- pcnNFeW --
+[*] Corrigido a validação do campo nDI, pois este pode conter os numeros dos
+    documentos: DI, DSI, DIRE, ...
+    por: csoft / Italo Jurisato Junior
+
+10/03/2016
+-- ACBrNFeNotasFiscais --
+[*] Corrigido bug introduzido em 08/03, no método "LoadFromFile"
+    http://www.projetoacbr.com.br/forum/topic/28603-unable-to-parse/
+
+08/03/2016
+-- ACBrDANFeRLRetrao
+[*] Ajuste para sair o canhoto somente na primeira folha
+    http://www.projetoacbr.com.br/forum/index.php?showtopic=27125
+    por: Juliomar Marchetti
+		
+07/03/2016   
+-- ACBrNFe, ACBrNFeDANFeRL, ACBrNFeDANFeRLPaisagem, ACBrNFeDANFeRLRetrato --
+[*] Ajustes para compilação em 64 bits. Remoção de Hints e Warnings  (por: DSA)
+
+-- ACBrNFeWebServices --
+[*] Ajustes para novo tratamento de "RetornoWS" sem tratamento de conversão
+    (por: DSA)
+
+-- ACBrNFeNotasFiscais --
+[+] Adicionada suporte a Configuracoes.Geral.RetirarEspacos   (por: DSA)
+[*] Método "LoadFromFile" modificado para usar "ParseText", para decodificar
+    caracteres "HTML Entity" no XML    (por: DSA)
+
+06/03/2016
+-- ACBrNFe --
+[*] Acrescentado os status de denegação ao veriricar se a nota foi confirmada.
+    Por: Italo Jurisato Junior
+
+04/03/2016  (por: DSA)
+-- ACBrNFeWebServices, pcnInutNFe --
+[-] Correção em "TNFeInutilizacao" e "TinutNFe", para permitir a geração de XMLs
+    com acentos
+[-] Modificado para que procedure TNFeInutilizacao.DefinirDadosMsg não modifique
+    o valor configurado em "Configuracoes.Geral.ModeloDF"
+
+03/03/2016
+-- ACBrNFeDANFeRLRetrato ACBrNFeDANFeRLPaisagem --
+[*] Modificado para imprimir o codigo do produtos em varias linhas. 
+    http://www.projetoacbr.com.br/forum/index.php?showtopic=28420
+    por : Henrique Leonardo
+
+29/02/2016
+-- pcnNFeW --
+[-] Correção, estava gerando a TAG cRegTrib mesmo com o valor RTISSNenhum.
+    Por: Italo Jurisato Junior
+
+-- ACBrNFeWebServices --
+[-] Correção no nome da TAG de retorno do método de Administração de CSC da NFC-e.
+    Por: Italo Jurisato Junior
+
+29/02/2016
+--ACBrNFeDANFeRLRetrato
+[+] Modificado para imprimir o canhoto de recibo somente na primeira página
+    indiferente do cabeçalho ou rodape
+    http://www.projetoacbr.com.br/forum/index.php?showtopic=27125
+    por : Juliomar Marchetti
+		
+26/02/2016
+[*] Modificação para ler os campos novos do manual novo do TXT
+    por: Juliomar Marchetti
+		
+25/02/2016
+[*] Modificação para compatibilizar os campos igual aos manuais do sefaz
+    http://www.emissornfe.fazenda.sp.gov.br/v310/docs/%5BEmissor_NF-e%5D_Manual_de_layout_TXT-NF-e_v3.10.1.pdf
+    http://www.emissornfehom.fazenda.sp.gov.br/v310/docs/%5BEmissor_NF-e%5D_Manual_de_layout_TXT-NF-e_v3.10.1.pdf
+    por : Juliomar Marchetti
+
+23/02/2016
+-- ACBrNFeDANFeRLRetrato ACBrNFeDANFeRLPaisagem -- 
+[*] Ajuste na critica do mostrar Dados ISSQN. 
+    Por: Henrique Leonardo
+
+22/02/2016
+-- pcnNFeW --
+[-] alteração para geração das tags do DIFAL mesmo com valor zerado, 
+    agora com a liminar do simples nacional não passa sem elas e não tem valor.
+
+18/02/2016
+--  pcnCCeNFe, pcnEnvEventoNFe, pcnNFeW, pcnProcNFe --
+[*] Ajuste para usar nova versão de pcnAuxiliar.GetUTC         (por: DSA)
+
+-- ACBrNFE, ACBrNFeNotasFiscais --
+[*] Ajuste para propagar valores de ACBrNFE.Configuracoes.WebServices.TimeZoneConf
+    para pcnAuxiliar.TimeZoneConf      (por: DSA)
+
+17/02/2016
+-- ACBrNFeNotasFiscais --
+[*] Refactoring para usar a nova rotina de validação de CNPJ, do DFeSSL (por: DSA)
+
+-- ACBrNFeWebServices --
+[-] Ajuste para que a correta nomenclatura dos servidos da "BA", quando usados
+    em contingência (por: theiller)
+    http://www.projetoacbr.com.br/forum/topic/28027-nfe-contigencia-ba-svcrs-ajustes/
+
+-- ACBrNFeDANFeRL, ACBrNFeDANFeRLClass --
+[*] Ajuste para que o método "ImprimirDANFEPDF", possa receber o nome da Impressora.
+    Na tentativa de corrigir problemas de geração de PDF em Sistemas onde existem
+    impressoras de bobina instaladas.
+    http://www.projetoacbr.com.br/forum/index.php?showtopic=28020
+
+17/02/2016
+-- ACBrNFeNotasFiscais --
+[-] Acerto para validar corretamente a raiz do certificado quando é o certificado
+    é emitido para o CPF do responsável e não para o CNPJ da empresa.
+    por: regys.silveria
+
+13/02/2016
+-- ACBrNFeNotasFiscais --
+[-] Acerto para validar corretamente a regra 773 agora que foi introduzido o DIFAL
+    http://www.projetoacbr.com.br/forum/index.php?showtopic=28025
+
+10/02/2016
+-- ACBrNFeDANFeRLRetrato ACBrNFeDANFeRLPaisagem -- 
+[*] Ajuste na critica do mostrar Dados ISSQN. 
+    Será apresentada quando a Propriedade MostraDadosISSQN igual True e
+    o valor do iss seja diferente maior que zero.
+    Por: Henrique Leonardo
+
+08/02/2016
+-- ACBrECFVirtualNFCe --
+[-] Adicionada rotina de calculo de Rateio de Descontos/Acrescimos por Item em
+    SubtotalizaCupomVirtual
+[-] Correção do valor de "Det.Prod.vDesc" em "VendeItemVirtual"
+[-] Correção de "Det.Imposto.ICMS.vBC" em "VendeItemVirtual"
+    http://www.projetoacbr.com.br/forum/index.php?showtopic=25852  (por: Endrigo)
+
+05/02/2016
+-- ACBrNFeDANFeRLRetrato -- 
+[*] Definição de coluna via codigo dos campos de fatura. 
+    Por: Henrique Leonardo
+
+29/01/2016
+-- ACBrNFeDANFeRLRetrato ACBrNFeDANFeRLPaisagem -- 
+[*] Alteração nas propriedades dos campos de fatura. 
+    Para se ajustar aos dados informados.     
+    Por: Henrique Leonardo
+
+
+29/01/2016
+-- ACBrNFeNotasFiscais -- 
+[*] Incluido um Trim para remover possiveis espaços em branco do parâmetro
+    Destinatário ao gerar a URL do QR-code.
+    Por: Italo Jurisato Junior
+
+25/01/2016
+-- ACBrNFeDANFCeFortes --
+[*] Campos "NomeFantasia" e "RazaoSocial", modificados para TRLMemo, para
+    permitir a quebra de linhas em nomes longos.  (por: DSA)
+
+21/01/2016
+-- ACBrNFeServicos -- 
+[*] Adicionado a URL de Administracao de CSC de Homologação do Estado de Goias.
+    Por: Paulo Augusto / Italo Jurisato Junior
+
+20/01/2016
+-- ACBrNFeWebServices -- 
+[*] Adicionado o código IBGE 51 em TNFeConsulta.DefinirServicoEAction.
+    Desta forma a montagem da URL de serviço fica correta para a UF de MT.
+    Por: oxinformatica
+
+20/01/2016
+-- ACBrNFeDANFeRLRetrato ACBrNFeDANFeRLPaisagem -- 
+[*] Refatoração da impressão do DANFE Fortes(TamanhoFonte_DemaisCampos, TamanhoFonteEndereco e AltLinhaComun não estavão implementados).
+      http://www.projetoacbr.com.br/forum/topic/27389-formatar-danfe-fortes/
+	por: RODRIGO_APOIOSIS
+
+20/01/2016
+-- ACBrNFeDANFeRLRetrato ACBrNFeDANFeRLPaisagem -- 
+[-] Refataração de EnderecoRetirada e EnderecoEntrega
+      Para adicionar as Tag´s Retirada e Entrega em informações adicionais.
+      por: Henrique Leonardo
+
+16/01/2016
+-- ACBrNFeDANFEFRDM -- 
+[*] Refataração do CarregaParametros.
+      Melhorando e removendo condições que se repetiam.
+[*] Refataração do CarregaFatura
+      por: Henrique Leonardo
+
+
+
+13/01/2016
+[+] Adição da impressão de inutilização em fast report
+		http://www.projetoacbr.com.br/forum/topic/22081-impress%C3%A3o-inutiliza%C3%A7%C3%A3o-fast-report/
+		por: Juliomar Marchetti
+
+09/01/2016
+-- ACBrNFeDANFeRLRetrato ACBrNFeDANFeRLPaisagem -- 
+[*] Refataraçao na apresentação de Fatura(s) e Duplicata(s).
+    Por causa da possibilidade de existir as Tag Fat e Dup no xml.
+    http://www.projetoacbr.com.br/forum/topic/27249-impressao-danfe-vencimento-a-vista-com-erro/
+    http://www.projetoacbr.com.br/forum/topic/26554-campo-duplicatas-errado-danfe/
+    por: Henrique Leonardo
+
+
+08/01/2016
+-- ACBrNFeDANFeRLPaisagem -- 
+[*] Remoçao do ManterCodigo, não existe necessidade
+    por: Henrique Leonardo
+
+08/01/2016
+-- Danfes Fortes -- 
+[*] Refatoriação para utilizar os metodos da classe pai do DANFE
+
+07/01/2016
+-- frlDANFeRL ACBrNFeDANFeRLPaisagem ACBrNFeDANFeRLRetrato ACBrNFeDANFeRLSimplificado -- 
+[*] Tratamento para imprimir codigo ou Ean conforme configuração 
+    da Propriedade ExibeEan
+    por: Henrique Leonardo
+
+06/01/2016
+-- pcnNFeW -- 
+[-] Acerto para gerar a tag de totalização do FCP mesmo quando zerada, não
+    estava passando em alguns webservices.
+    http://www.projetoacbr.com.br/forum/topic/27137-tag-sumindo/#comment-177203
+    por: regys.silveira
+
+06/01/2016
+-- ACBRNFeNotasFiscais --
+[-] Conforme nota técnica 2015.003 v1.20 foi removida a validação 739 para NFc-e
+    com grupo de combustíveis.
+    por: regys.silveira.
+
+05/01/2016
+-- ACBrNFeWebServices --
+[*] Adicionada verificação de Chave na atribuição de TNFeConsulta.NFeChave
+    (por: DSA)
+
+04/01/2016
+-- ACBrDANFCeFortesFrA4 --
+[*] Tratamentos para apresentação dos tributos ( Federal / Estadual e Municipal ).
+    conforme o manual de olho no imposto
+    http://www.afrac.org.br/wp-content/uploads/2014/11/MANUAL-DE-OLHO-NO-IMPOSTO-0-0-8-2.pdf
+    por: Henrique Leonardo 
+
+-- ACBRNFeNotasFiscais --
+[-] Correção para atribuição de "ACBrNFe.NotasFiscais[x].NomeArq" em
+    "TNotasFiscais.LoadFromFile". A rotina anterior atribuia o ultimo NomeArq
+    a todas as Notas carregadas na memória  (por: DSA)
+    http://www.projetoacbr.com.br/forum/topic/27074-xml-sendo-sobrescrito/
+
+-- ACBrNFeWebServices --
+[*] Ajustes em "Create" e "Clear" de todos os WebServices, para garantir que
+    após o "Clear" os valores necessários, para as propriedades internas, do
+    WebService esteja corretos.  (por: DSA)
+    http://www.projetoacbr.com.br/forum/index.php?showtopic=27079
+
+03/01/2016
+-- ACBrNFeWebServices --
+[+] Adicionada sobrecarga no método "Clear" de todos os WebServices
+[*] Remoção de propriedades sem uso.
+[*] Ajuste de acesso (write) em propriedades que podem ser ReadOnly
+    (por: DSA)
+
+23/12/2015
+-- pcnNFeW --
+[*] Alterado a condição para determinar se vai ser gerado o grupo <ICMSUFDest> ou
+    não. (por: Italo Jurisato Junior)
+
+-- ACBrNFeNotasFiscais --
+[*] Ajuste no método "VerificarAssinatura", para informar o infElement (por: DSA)
+
+22/12/2015
+-- ACBrNFeWebServices / ACBrNFe / pcnRetConsSitNFe --
+[*] Incluido o status 303 para que seja acrescentado o protocolo de denegação ao XML.
+    por: Italo Jurisato Junior
+
+21/12/2015
+--  ACBrNFeDANFeRL  --
+[-] Falta de Variavel 
+
+      	por : Henrique Leonardo 
+
+21/12/2015
+--  ACBrNFeDANFeRLClass / ACBrNFeDANFeRL / ACBrNFeDANFeRLPaisagem / ACBrNFeDANFeRLRetrato --
+[+] Tratamento da nova Propriedade ImprimeNomeFantasia. Quando Selecionado Verdadeiro e a
+      Tag XFantasia Preenchida : Imprime o Nome Fantasia.
+      	por : Henrique Leonardo 
+
+21/12/2015
+--  ACBrNFeDANFEFRDM --
+[+] Tratamento da nova Propriedade ImprimeNomeFantasia. Quando Selecionado Verdadeiro e a
+      Tag XFantasia Preenchida : Imprime o Nome Fantasia.
+      	por : Henrique Leonardo 
+
+
+21/12/2015
+--  ACBrNFeDANFEClass --
+[+] Nova Propriedade ImprimeNomeFantasia. Quando Selecionado Verdadeiro e a
+      Tag XFantasia Preenchida : Imprime o Nome Fantasia.
+[+] Nova Função ManterNomeImpresso.
+		
+      	por : Henrique Leonardo 
+
+18/12/2015
+--  ACBrNFeDANFEFRDM --
+[*] Novas Tabulações
+[*] Ajuste no valor liquido 
+     De  : FieldByName('Valorliquido').AsString := FormatFloatBr( Prod.vProd - ManterVDesc( Prod.vDesc , Prod.VUnCom , Prod.QCom),'###,###,##0.00');
+     Para: FieldByName('Valorliquido').AsString := FormatFloatBr( Prod.vProd - Prod.vDesc ,'###,###,##0.00');
+ 
+[*] Melhoria da funcao ManterDesc 
+     De :   if ( FDANFEClassOwner.ImprimirDescPorc ) and ( dvDesc > 0 ) then
+	  	Result := (( dvDesc*100 ) / (dVUnCom * dQCom) )
+	    else
+	  	Result := dvDesc;
+
+     Para : if ( FDANFEClassOwner.ImprimirDescPorc ) then
+	    begin
+             if ( ( dvDesc  > 0 ) and ( dVUnCom > 0 ) and ( dQCom   > 0 ) ) then
+             	Result := (( dvDesc*100 ) / (dVUnCom * dQCom) )
+	     else
+	        Result := 0;
+	    end
+	    else
+	     Result := dvDesc;
+		
+      	por : Henrique Leonardo 
+
+18/12/2015
+--  ACBrNFeDANFeRLPaisagem / ACBrNFeDANFeRLRetrato --
+[*] Melhoria da funcao ManterDesc 
+        De :     if (dvDesc > 0)  then
+        Para :   if (dvDesc > 0) and ( dvProd > 0 ) then
+		
+      	por : Henrique Leonardo 
+
+  
+18/12/2015
+--  ACBrNFeDANFeRLPaisagem / ACBrNFeDANFeRLRetrato --
+[-] Correção da funcao ManterDesc para trazer zero de percentual e nao o valor de desconto 
+   
+      	por : Henrique Leonardo 
+          
+   
+18/12/2015
+--  ACBrNFeDANFeRLPaisagem / ACBrNFeDANFeRLRetrato --
+[-] Correção quando FImprimirDescPorc = True
+	Nao imprimir o Total Liquido
+      	por : Henrique Leonardo 
+
+16/12/2015
+-- ACBrNFeWebServices / ACBrNFeNotasFiscais --
+[*] Incluido o status 302 para que seja acrescentado o protocolo de denegação
+    ao XML.
+    por: Italo Jurisato Junior
+
+-- ACBrNFeServicos --
+[-] URL-QRCode da UF: PA ambiente de produção estava igual a de homologação.
+    por: Cleiver / Italo Jurisato Junior
+
+16/12/2015
+-- pcnNFe --
+[-] Remoção de valores default para a tag "nro", o componente atribuia o valor
+    "SEM NUMERO", causando problemas quando o endereço não possuía valor na tag,
+    quando vai imprimir aparecia a string mesmo não existindo no XML.
+    por: regys.silveira
+
+11/12/2015
+[*] Acerto na importação do layout txt para a norma técnica 2015/003
+
+10/12/2015
+--  ACBrNFeDANFeRLPaisagem / ACBrNFeDANFeRLRetrato --
+[-] Correção da Formataçao do Cep. 
+     	por : Henrique Leonardo 
+
+09/12/2015
+-- ACBrNFeDANFEFRDM --
+[*] Novo campo em cdsParametros :  FieldDefs.Add('ImprimeDescAcrescItem', ftInteger);
+     	por : Henrique Leonardo   
+
+06/12/2015
+-- ACBrNFeDANFeRLPaisagem / ACBrNFeDANFeRLRetrato / ACBrNFeDANFeRL ACBrNFeDANFeRLClass --
+[+] Implantaçao da Coluna Valor Liquido e refatoração para impressão
+[+] Novo campo em cdsItens :  FieldDefs.Add('Valorliquido',ftString,18);
+[*] Novo padrão para Impressao de Medicamentos
+[*] Melhoria no Quebralinhas;
+	por : Henrique Leonardo    
+
+06/12/2015
+-- ACBrNFeDANFEFRDM --
+[*] Novo padrão para Impressao de Medicamentos
+[*] Melhoria no Quebralinhas;
+	por : Henrique Leonardo    
+
+
+03/12/2015
+-- ACBrNFeNotasFiscais --
+[*] método "Assinar", modificado para só validar CNPJ se conseguir ler o mesmo
+    com sucesso, do Certificado
+
+-- ACBrNFeWebServices --
+[*] WebService: "TNFeEnvEvento", modificado, para salvar o "NomeArquivo", se o
+    XML for salvo após a consulta (depende da configuração)
+
+-- pcnEventoNFe --
+[+] Tipo: TRetInfEvento, adicionada a propriedade: "NomeArquivo: String", que
+    conterá o nome do arquivo XML criado, após o retorno, e se estiver
+    configurado para salvar o XML
+
+02/12/2015
+-- pcnRetDownloadNFe --
+[*] Removido na montagem do XML a linha '<' + ENCODING_UTF8 + '>' para 
+    o componente forçar a conversão ao salvar o XML.
+    por: Italo Jurisato Junior
+
+-- ACBrNFeWebServices --
+[*] Removido na montagem de alguns XML a linha '<' + ENCODING_UTF8 + '>' para 
+    o componente forçar a conversão ao salvar o XML.
+    por: Italo Jurisato Junior
+
+-- ACBrNFeNotasFiscais --
+[*] Alterado o valor da propriedade verProc para 'ACBrNFe' para não confundir,
+    pois 'ACBrNFe2' alguem pode achar que se trata da versão 2.00 do XML.
+    por: Italo Jurisato Junior
+
+-- ACBrNFeWebServices --
+[*] Ao protocolar o XML após um envio ou consulta estava provocando uma nova
+    leitura do XML, agora o XML assinado e protocolado é armazenado da propriedade
+    XMLOriginal em vez de XML.
+    por: Italo Jurisato Junior
+
+28/11/2015
+-- ACBrNFeDANFEFRDM --
+[+] Tratamento para IDEstrangeiro
+[*] Refatoracao para Utilizar a Função FormatarCNPJouCPF
+    por: Henrique Leonardo
+
+-- ACBrNFeDANFeRLRetrato / ACBrNFeDANFeRLPaisagem --
+[+] Tratamento para IDEstrangeiro
+[*] Refatoracao para Utilizar a Função FormatarCNPJouCPF
+[*] Refatoracao de EnderecoEntrega e EnderecoRetirada : 
+     para apresentar CNPJ ou CPF;
+[*] Funçao TrataDocumento( sCNPJCPF : String ) : String;
+[*] Remoção de IF,  variaveis. Algumas novas tabulações;
+    por: Henrique Leonardo
+
+27/11/2015
+-- ACBrNFeWebServices --
+[*] Acrescenta o protocolo de autorização quando é autorizado fora do prazo
+    Status = 150.
+    por: Italo Jurisato Junior
+
+-- pcnEventoNFe --
+[*] Adicionado o tipo de evento: teConfInternalizacao - (990910) 
+    Confirmacao de Internalizacao da Mercadoria na SUFRAMA
+    por: Italo Jurisato Junior
+
+25/11/2015
+[+] Nova Banda ( rlbCancelada ), para apresentar Nfe. Cancelada em
+    ACBrNFeDANFeRLRetrato  e ACBrNFeDANFeRLPaisagem.
+    Quando a propriedade NfeCancelada estiver habilitada, sera
+    apresentada a banda rlbCancelada.
+[*] Remoção de algumas linhas comentadas;
+    Por: Henrique Leonardo
+
+[*] Acerto na geração de PDF, antes ao enviar por email as letras ficavam estranhas, 
+    também foi removida opção que deixa o arquivo maior.
+    por: regys.silveira
+
+24/11/2015
+-- pcnNFeW --
+[*] Fixado em 2 casas decimais a geração da TAG pICMSInter conforme o novo Schema
+    pacote PL_008h1
+    por: Italo Jurisato Junior
+
+18/11/2015
+-- pcnNFe / pcnNFeW / pcnNFeR --
+[*] Trocado o tipo dos campos vEncIni e vEncFim de String para Currency para que
+    possa ser informado um valor decimal com até 3 casas decimais conforme Nota
+    Técnica 2015/002 versão 1.10
+    por: Italo Jurisato Junior
+
+13/11/2015
+-- ACBrNFeWebServices --
+[-] Acerto na montagem do Path ao salvar o arquivo *-NFeDFe.xml
+    por: Italo Jurisato Junior
+
+12/11/2015
+-- pcnNFeW --
+[-] Acerto para não obrigar o CPF/CNPJ quando for NFC-e
+    por: regys.silveira
+
+11/11/2015
+-- ACBrDANFCeFortes --
+[-] Refatoração para usar os métodos de formatação de valor unitário, valor total 
+    e outros também para o DANFCe Fortes.
+    por: regys.silveira
+
+10/11/2015
+-- ACBrNFeDANFEFRDM --
+[-] Correção do desconto no item valor acima de 999,99
+    por : Henrique Leonardo     
+		
+07/11/2015
+-- ACBrNFeDANFEFRDM --
+[-] Correção dos FieldDefs , aplicada na revisao 10404 
+        FieldDefs.Add('vFrete'    , ftString, 18);
+        FieldDefs.Add('vOutro'    , ftString, 18);
+        FieldDefs.Add('vSeg'      , ftString, 18);
+        FieldDefs.Add('vDesc'     , ftString, 18);
+
+[*] Novos campos em cdsDadosProdutos
+        FieldDefs.Add('Valorliquido'    , ftString, 18);
+        FieldDefs.Add('ValorAcrescimos' , ftString, 18);
+
+[*] Novo campo em cdsCalculoImposto
+       FieldDefs.Add('ValorApagar' , ftFloat);
+
+[*] Refatoração para aplicar os novos campos.
+    Os novos campos serão aplicados no arquivo de DAnfe DANFeNFCe_dc.fr3
+    O arquivo DANFeNFCe.fr3 ficara obsoleto com esta atualização.
+
+	por : Henrique Leonardo
+	
+09/11/2015
+-- ACBrNFeDANFeRLRetrato --
+[-] Ajuste na geração de Duplicatas ( outras ).
+
+[*] Implantação da Geração ePec.
+
+    por: Henrique Leonardo
+
+-- ACBrNFeDANFeRLPaisagem --
+[*] Implantação da Geração ePec.
+
+    por: Henrique Leonardo
+
+
+09/11/2015
+-- pcnNFeW --
+[-] Ajuste na geração do Grupo "pag".
+    por: João Elson
+
+05/11/2015
+-- pcnNFeW --
+[-] Correção na geração do Grupo "pag"    (por: Leonardo de Biasi)
+    http://www.projetoacbr.com.br/forum/index.php?showtopic=25714
+
+03/11/2015
+-- ACBrNFeWebSerices --
+[*] Possivel correção para definição de URL no WebService de AM em:
+    TNFeRecepcao, TNFeRetRecepcao, TNFeRecibo    (por: DSA)
+
+03/11/2015
+-- ACBrNFeWebSerices --
+[*] Possível correção ao realizar o envio de uma NF-e para o SVC.
+    por: Italo Jurisato Junior
+
+02/11/2015
+--- ACBrNFeDANFeRLRetrato --
+[*] Ajustes para impressão de duplicatas no caso da forma de pagamento igual a outros;
+	por : Henrique Leonardo
+
+--- ACBrNFeDANFeRLPaisagem --
+[*] Ajustes para impressão de duplicatas no caso da forma de pagamento igual a outros;
+	por : Henrique Leonardo
+
+-- ACBrNFeWebServices --
+[*] Refatoração, simplificação de código em TNFeInutilizacao.TratarResposta e
+    TNFeEnvEvento.TratarResposta
+
+30/10/2015
+-- ACBrNFeWebServices --
+[-] Correção não estava salvando o retorno ao enviar um evento.
+    por: Italo Jurisato Junior
+
+28/10/2015 
+-- ACBrDANFCeFortesFrA4 --
+[+] Adição do modelo em Fortes
+	por : Marciano Bandeira
+	
+28/10/2015
+-- ACBrNFeDANFEFRDM --
+[*] Correção na impressão do DANFE em FastReport para notas à vista.
+		por: Gilson Inácio do Carmo
+27/10/2015
+-- ACBrNFeWebSerices --
+[*] Possível correção ao realizar uma consulta de uma NF-e enviada para o SVC.
+    por: Italo Jurisato Junior
+-- pcnNFeW --
+[-] Alterado a posição do grupo ICMSUFDest no XML, agora será gerado após o COFINSST
+    conforme consta no Schema.
+    por: Italo Jurisato Junior
+-- ACBrNFeServicos --
+[-] Incluido as URLs de homologação NFC-e UF-CE.
+    por: Evenildo / Italo Jurisato Junior
+
+26/10/2015
+-- pcnNFeW --
+[*] Possivel correção na geração do XML quando o CST é 51 para a UF - SP devemos
+    gerar a TAG vICMS mesmo com o valor zero.
+    por: Italo Jurisato Junior
+-- ACBrNFeServicos --
+[-] Acrescentado o https:// no inicio da URL do QR-Code homologação e produção.
+    por: Daniel Carus / Italo Jurisato Junior
+-- pcnNFeW --
+[-] Possivel correção na geração do XML quando é informado o grupo ICMSUFDest.
+    por: Italo Jurisato Junior
+
+23/10/2015
+-- ACBrNFeDANFeRL --
+[-] Ajuste para não exibir a janela de Progresso na geração do PDF, quando
+    MostrarStatus = False
+    http://www.projetoacbr.com.br/forum/topic/25163-impressao-nfe/
+[-] Ajuste para utilizar o Diretório da aplicação se no do PDF não contiver Path
+    (por: DSA)
+
+--ACBrDANFEFR --
+[-] Acerto para não imprimir o totalizar de impostos aproximados quando ele for 
+    igual a zero.
+    por: regys.silveira
+
+-- ACBrDANFCeFortesFr --
+[-] Ajuste para calcular corretamente o tamanho da página no DANFCe em Fortes
+    (não estava considerando a área de cabeçalho dos itens)
+    por: André Moraes
+
+-- ACBrDANFCeFortesFr -- ACBrNFeDANFeESCPOS --
+[*] Alterado para imprimir apenas uma vez o campo "Valor Líquido" quando tiver
+    desconto e acréscimo no mesmo item
+    por: André Moraes
+
+-- ACBrNFeWebServices --	
+[-] Corrigido para atualizar XML mesmo quando não estiver configurado para salvar 
+    o XML em disco.
+    por: André Moraes
+
+-- ACBrNFeNotasFiscais --
+[-] Corrigido para enviar corretamente o destinatário ao calcular o QRCode que será
+    adicionado ao XML.
+[*] Alterado para atribuir valores defaults ao País no endereço do destinatário
+    por: André Moraes
+
+-- pcnNFeW --
+[-] Alterado para o CNPJ e CPF ser gerado com prioridade ao campo IdEstrangeiro
+   por: André Moraes
+
+22/10/2015
+-- ACBrDANFCeFR --
+[-] Corrigida a impressão do troco no DANFC-e para FastReport.
+    por: regys.silveira.
+	
+-- ACBrNFeConfiguracoes --
+[*] Retornado propriedade AtualizarXMLCancelado.
+[*] Criado métodos SetCSC e SetIdCSC para atribuir os valores corretamente 
+    FCSC(Sem espaços no final) e FIdCSC(Com 6 dígitos numéricos).
+    por: André Moraes
+	
+-- ACBrNFeNotasFiscais --
+[*] Alterado método GerarXML para recalcular o valor da variável FNomeArq 
+    respeitando o Path do arquivo carregado e apenas quando o ID carregado
+    for diferente do ID calculado pelo componente.
+    por: André Moraes
+	
+-- ACBrNFeServicos.ini --	
+[*] Alterado o valor das chaves URL-QRCode e URL-ConsultaNFCe para usar HTTPS
+    conforme validação do esquema.
+    por: André Moraes
+	
+-- ACBrNFeWebServices --	
+[*] Alterado método TNFeConsulta.TratarResposta para atualizar o XML consultado
+    baseado no valor da propriedade FPConfiguracoesNFe.Geral.AtualizarXMLCancelado
+    por: André Moraes
+	
+-- ACBrNFeDANFeESCPOS -- ACBrDANFCeFortesFr --
+[-] Corrigido impressão do valor líquido do produto para considerar desconto e acréscimos	
+    por: André Moraes
+	
+21/10/2015
+-- pcnNFe / pcnNFeW / pcnNFeR --
+[+] Adicionado as novas TAGs conforme NT 2015/003 v 1.10.
+    Por: Italo Jurisato Junior
+[-] Acerto no campos de base e valor do ISSQN, quando se utilizava valores
+    muito altos acontecia um erro de conversão de tipo.
+    por: regys.silveira.
+
+-- ACBrNFe --
+[*] Método "Consultar" modificado para permitir informar a Chave por parâmetro.
+    Se parâmetro "AChave" for informado, ele será utilizado ao invez da
+    informação das Notas carregadas.
+[*] Método "EnviarEvento" modificado, para:
+    - considerar o Ambiente definido em: Configuracoes.WebServices.Ambiente;
+    - Verificar equivalencia de chaves entre NFes carregadas e Eventos
+    - Corrigida possibilidade de A.V. em Loop
+(por: DSA)
+
+-- ACBrNFeNotasFiscais --
+[*] Limpeza de variavel interna (FXML) não necessária
+[*] Atribuir conteudo a "XML", faz o componente transferir os dados lido para as
+    propriedades internas e "XMLAssinado"
+[*] Atribuir conteudo a "XMLOriginal", reflete em "XMLAssinado", (se existir a
+    tag de assinatura)
+[*] Refatoração do Nome de váriaveis para melhor compreensão do Fonte, e para
+    evitar colisão de variaves e propriedades com o mesmo nome.
+[*] Método "Assinar" agora sempre verifica se o CNPJ do XML e do Certificado
+    possuem a mesma raiz.
+[*] Método "LoadFromFile" modificado para usar TMemoryStream para evitar problemas
+    com quebra de linhas diferente do utilizado pelo S.O.
+[*] Método "LoadFromString" não mais ajusta valores de:
+    Configuracoes.Geral.ModeloDF e Configuracoes.Geral.VersaoDF pois isso poderia
+    causar efeitos colaterais
+(por: DSA)
+
+-- ACBrNFeWebServices --
+[+] Adicionado o método Protected ExtrairUFChaveAcesso
+[*] "TNFeRecepcao" modificado para considerar as informações de "Modelo, Versao,
+    UF, e Ambiente" da NFe carregada em memória.
+[*] "TNFeRetRecepcao" modificado para considerar as informações de "Modelo, Versao,
+    UF, e Ambiente" da NFe carregada em memória.
+[*] "TNFeRecibo" modificado para considerar as informações de "Modelo, Versao,
+    UF, e Ambiente" da NFe carregada em memória.
+[*] "TNFeConsulta" modificado para considerar as informações de "Versao, Ambiente"
+    da NFe carregada em memória e "Modelo, UF" da Chave da NFe
+[*] "TNFeConsultaCadastro" modificado para considerar "Configuracoes.WebServices.UF"
+    se a UF não for previamente informada
+[*] "TNFeEnvEvento" modificado para considerar: "Versao, Ambiente, UF" do Evento
+    carregado na memória
+(por: DSA)
+
+16/10/2015
+[-] contribuição: http://www.projetoacbr.com.br/forum/topic/25243-danfe-fastreport-fatura-correção/
+    Correção na impressão de informações da fatura.
+
+15/10/2015
+[-] Correção para mostrar a descrição de via consumidor/estabelecimento
+    corretamente para DANFC-e em Forte e Fast.
+    por: regys.silveira
+[-] Acerto na regra de validação 777, ela deve ser considerada somente quando 
+    o NCM for diferente de 00, porque 00 é serviço.
+    por: regys.silveira
+[-] Acerto na regra de validação 564, estava considerando todos os produtos 
+    para o calculo, mas devemos excluir os itens que são NCM 00 porque são 
+    serviços
+    por: regys.silveira
+
+-- ACBrNFeDANFeRLClass --     (por: DSA)
+[*] SavePDF: Modificada para permitir informar "MostrarStatus".
+[*] SavePDF: Modificada para verificar se o arquivo foi informado e adicionada
+    verificação do Diretório
+
+14/10/2015
+-- ACBrNFeDANFeRLClass --
+[+] Adicionada a propriedade "ExibeCampoFatura: Boolean", (default False) se
+    ativa, exibe as informações de <fat>    (por: Henrique Leonardo)
+
+-- ACBrNFeDANFeRLRetrato e ACBrNFeDANFeRLPaisagem --
+[+] Adicionada a Banda "FaturaReal", para imprimir as informações específicas
+    da Tag <fat>. Somente é impressa quando ExibeCampoFatura := True
+[+] Adicionado o suporte de Impressão de Logo por Stream
+    http://www.projetoacbr.com.br/forum/topic/25128-implatanção-da-fatura-em-danfe-fortesreport
+    (por: Henrique Leonardo)
+
+07/10/2015
+-- pcnNFeW.pas --
+[-] Acerto para trocar a descriçao do primeiro item da nota somente quando for NFC-e
+    por regys.silveira
+
+02/10/2015
+-- ACBrNFePCN --
+[-] Correção em pcnNFeW.pas para não incluir a Tag vICMS, caso não informada se CST=51
+    http://www.projetoacbr.com.br/forum/topic/17819-nfe-310-icms-cst-51-diferimento/?page=2#comment-160737
+
+30/09/2015
+-- ACBrNFeWebServices.pas --
+[-] Acerto na consulta de NF-e, não estava setando o ambiente antes de consultar
+    isso fazia com que o ambiente ficasse sempre em produção.
+    por: regys.silveira
+
+29/09/2015
+-- pcnEnvEventoNFe --
+[-] Correção ao enviar um Evento de EPEC de uma NFC-e o grupo <dest> deverá ser
+    omitido caso não tenha sido informado os dados do destinatário na nota.
+    por: Italo Jurisato Junior
+-- ACBrNFeWebServices --
+[-] TNFeConsulta, Correção de Bug introduzido em 28/09. Interpretação errada de
+    tpEmis e tpAmb (por: DSA)
+[-] http://www.projetoacbr.com.br/forum/topic/24731-chave-incorreta-ao-carregar-nfe-avulsa/
+
+28/09/2015
+-- ACBrNFeWebServices --
+[-] TNFeConsulta, correção para consulta de NFEs com UF diferente da UF do
+    Emissor.  (por: DSA)
+[-] Acerto para utilizar o CNPJ do evento quando for salvá-lo em disco,
+    em alguns casos o usuário pode utilizar o certificado da Matriz, antes
+    estava salvando utilizando o CNPJ do certificado o que mistura xmls de
+    evento da matriz com a filial.
+    por: (regys.silveira)
+
+-- ACBrNFeNotasFiscais --    (por: DSA)
+[*] Corrigido o método Validar, para extrair apenas a Tag <NFe> do XML informado
+
+-- ACBrNFeServicos.ini --
+[-] Correção de endereços
+    http://www.projetoacbr.com.br/forum/topic/24565-erro-2261-falha-ao-acessar-banco-de-dados/#comment-159784
+    por: regys.silveira
+
+26/09/2015
+-- ACBrNFeDANFeRLR --
+[+] Adicionado suporte as propriedades: CasasDecimais.Tag, CasasDecimais._Mask_qCom e
+    CasasDecimais._Mask_vUnCom   (por: Henrique Leonardo)
+    http://www.projetoacbr.com.br/forum/index.php?showtopic=24654
+
+25/09/2015
+[+] Adicionada propriedade ManterVeiculos ao DANFE para quebrar ou não a linha 
+    nas informações do veiculo
+    http://www.projetoacbr.com.br/forum/index.php?showtopic=24609
+    por (Henrique Leonardo)
+
+[-] Acerto para verificar corretamente o CNPJ ao assinar o XML da NF-e
+    Em diversos casos a filial pode utilizar o certificado da matriz, então
+    devemos checar somente a raiz do CNPJ (8 primeiros digitos)
+    por: regys.silveira
+
+24/09/2015
+-- pcnConversaoNFe --     (por: DSA)
+[+] Adicionado o método:
+    function ModeloDFToPrefixo(const t: TpcnModeloDF): String;
+    (Retorna "NFe" ou "NFCe")
+
+-- ACBrNFeWebServices --
+[-] TNFeConsulta, corrigido, para usar as informações de UF e Modelo da chave
+    informada.
+[*] TNFeConsulta, ajuste parta não atualizar o XML se não recebeu "protNFe"
+[*] TNFeConsulta, modificado para priorizar a gravação da Resposta, no arquivo
+    XML previamente informado.
+[*] TNFeConsulta, consulta por XML, modificado para respeitar o valor de
+    "Arquivos.Salvar" e "Geral.Salvar"
+[*] TNFeConsulta, remoção de código comentado
+[*] TNFeConsulta, consulta pela Chave (sem NFe carregada) ajustada para respeitar
+    os valores de "Arquivos.Salvar"  e "Arquivos.SalvarApenasNFeProcessadas" e
+    "Geral.Salvar"
+
+[*] TNFeRecepcao, modificado para priorizar a gravação da Resposta, no arquivo
+    XML previamente informado.
+[*] TNFeRecepcao, modificado para respeitar o valor de "Arquivos.Salvar"
+
+[*] TNFeRetRecepcao, modificado para priorizar a gravação da Resposta, no arquivo
+    XML previamente informado.
+[*] TNFeRetRecepcao, modificado para respeitar o valor de "Arquivos.Salvar"
+
+-- ACBrNFeNotasFiscais --
+[*] Aprimorada a atribuição da propriedade "XML", para que a mesma considere
+    o conteudo e replique o valor para XMLOriginal e XMLAssinado
+[*] Método NotaFiscal.Validar, modificado para verificar se o XML enviado possui
+    a Tag de assinatura, e no caso de não possuir, assinar o XML apenas se o
+    CNPJ do XML for o mesmo do CNPJ do Certificado
+[*] Método NotaFiscal.Assinar, modificado para respeitar o valor da propriedade
+    "Arquivos.Salvar" e dar prioridade de Gravação no Nome de arquivo
+    previamente informado.
+
+23/09/2015
+-- ACBrNFeNotasFiscais --     (por: DSA)
+[*] NotaFiscal.CalcularNomeArquivo, modificado, para considerar NFe.procNFe.cStat
+    e nomear o arquivo com o sufixo '-nfe.xml' ou '-den.xml'
+
+-- ACBrNFeWebServices --
+[-] Ajuste em TNFeRecepcao.TratarResposta para que ProcNFe conste no XML e nos
+    arquivos salvos
+[-] Ajuste em TNFeRetRecepcao.TratarRespostaFinal para que ProcNFe conste no XML e nos
+    arquivos salvos. Remoção de código comentado.
+
+22/09/2015
+-- ACBrDANFCeFortesFr --
+[*] Impressão dos descontos do Item, modificada para ficar condicionada a
+    propriedade "ImprimirDescPorc", e não "ImprimirTotalLiquido"   (por: DSA)
+
+18/09/2015
+-- pcnRetDownloadNFe --
+[*] Removido o Encoding UTF8 que estava sendo acrescentado ao retorno, pois o mesmo
+    ao ser salvo a rotina acrescenta ou não se necessário.
+    Por: Rômulo da Costa de Souza / Italo Jurisato Junior
+
+-- pcnNFeW --
+[*] Ajustado para gerar grupo "exportInd" também quando existir NF-e Referênciada
+   (por: Everton)  http://www.projetoacbr.com.br/forum/index.php?showtopic=23811
+
+17/09/2015
+-- ACBrNFeNotasFiscais, ACBrNFeWebServices --
+[*] Ajustes para que os arquivos de envio/retorno fiquem condicionados a propriedade
+    Configuracoes.Geral.Salvar e os arquivos fiscais a propriedade
+    Configuracoes.Arquivos.Salvar
+    Por: Italo Jurisato Junior
+
+-- ACBrNFeNotasFiscais --
+[*] Correção em ValidarRegrasdeNegocios para que não efetue validações 505 e 506
+    caso NFe.Ide.dSaiEnt não seja especificada  (por: Alberto Leal)
+    http://www.projetoacbr.com.br/forum/index.php?showtopic=24429
+
+16/09/2015
+-- ACBRNFeNotasFiscais --     (por: DSA)
+[-] Ajuste para ACBrNFe1.NotasFiscais.LoadFromFile para quando o XML lido com
+    assinatura, seja corretamente atribuido a propriedade "XMLAssinado" caso o
+    parâmetro AGerarNFe = True
+
+15/09/2015
+[*] (pcnNFe, pcnNFeR e pcnNFeW)
+    Alterado o tipo de Integer para String do campo: nItemPed.
+    Apesar de ser um campo numérico ele tem tamanho fixo = 6 e pode iniciar com
+    zero.
+[*] (pcnNFe, pcnNFeR e pcnNFeW)
+    Alterado o tipo de Integer para String do campo: CEST.
+    Apesar de ser um campo numérico ele tem tamanho fixo = 7 e pode iniciar com
+    zero.
+    por: Italo Jurisato Junior
+
+14/09/2015
+[*] acerto para que o DANFeNFCe não precise de scripts para rodar, 
+    assim vai funcionar nas versões Fast Embarcadero e Normal
+    por: regys.silveira
+
+11/09/2015
+[-] Alterado o tipo da TAG <CEST> estava como String sendo que o correto é Integer. 
+    Por: Italo Jurisato Junior
+[*] (pcnNFeR)
+    Incluido a leitura das novas TAGs e grupo conforme a NT2015/003 que trata sobre
+    a cobrança do ICMS na Operação Interestadual.
+[*] (pcnNFeW)
+    Incluido a escrita das novas TAGs e grupo conforme a NT2015/003 que trata sobre
+    a cobrança do ICMS na Operação Interestadual.
+    Por: Italo Jurisato Junior
+
+10/09/2015
+[*] Acerto nos endereços de webservices da NF-e PR e SP
+    http://www.projetoacbr.com.br/forum/topic/24250-correção-no-arquivo-da-nfe-nfeservicosini/#comment-156552
+
+09/09/2015
+[*] Incluido a propriedade XMLprotNFe para conter o grupo <protNFe> ao ler o XML 
+    de retorno do Consultar (pcnRetConsSitNFe).
+    Incluido as propriedades XML_NFe e XML_prot para montagem do XML assinado e 
+    protocolado (pcnProcNFe).
+    Incluido a propriedade XMLprotNFe para conter o grupo <protNFe> ao ler o XML
+    de retorno do RetRecepcao (pcnConsReciNFe).
+    Alterado o TNFeConsulta.TratarResposta e TNFeRetRecepcao.TratarRespostaFinal
+    visando usar as propriedades acimas para a montagem do XML assinado e 
+    protocolado.
+    Por: Italo Jurisato Junior
+
+08/09/2015
+-- ACBrNFeDANFeRL --
+[*] Ajuste para considerar valor da propriedade "MostrarStatus"  (por: DSA)
+
+-- ACBrNFeWebServices --
+[-] Acerto para configuração correta do endereço do webservice quando utilizado o
+    método de consulta, o webservice deve ser o mesmo do método.
+    http://www.projetoacbr.com.br/forum/topic/9564-consulta-nfe-e-cte-outra-uf/#comment-156061
+    por: regys.silveira
+
+[*] Incluido o valor LayNFeCCe na function que converte Layout em Schema.
+    Em ACBrNFeServicos.INI todos os campos: RecepcaoEvento_2.00 e RecepcaoEvento_3.10
+    foram renomeados para: RecepcaoEvento_1.00
+    por: Italo Jurisato Junior
+
+04/09/2015
+[-] Acerto na impressão do DANFE e eventos da NFC-e, gerava um erro de violação 
+    de acesso pois alguns componentes não existem na impressão de eventos.
+    por: regys.silveira
+
+01/09/2015
+[*] Alterado a URL do QR-Code da UF = AC.
+    por: Italo Jurisato Junior
+[*] Removido do ACBrNFeServicos.ini os campos NfeConsultaCadastro_3.10 da UF = BA.
+    por: Italo Jurisato Junior
+
+27/08/2015
+-- pcnEventoNFe -- (por: regys silveira)
+[-] remoção de acentuação na descrição do evento, isto estava causando erros 
+    no XML de manifestação
+    http://www.projetoacbr.com.br/forum/topic/23921-erro-na-manifestação-de-operação-não-realizada
+
+24/08/2015
+-- ACBRNFeNotasFiscais -- (por: regys silveira)
+[-] Acerto no LoadFromString, estava cortando o XML ao ler a string para o 
+    componente.
+
+22/08/2015
+-- ACBrNFeDANFCeFortesFr --    (por: DSA)
+[-] Ajuste para que a propriedade "FonteTributos" seja exibida na linha de
+    demonstração dos Impostos
+    http://www.projetoacbr.com.br/forum/index.php?showtopic=23688
+
+21/08/2015
+-- ACBrNFeDANFCeFortesFr --    (por: DSA)
+[-] Ajuste para que a propriedade "Sistema" seja exibida na última Linha
+[-] Correção de erro em caractere acentuado
+    http://www.projetoacbr.com.br/forum/index.php?showtopic=23714
+
+19/08/2015
+[*] Adicionado a descrição do tipo de evento Registro de Passagem NF-e em 
+    getDescEvento e DescricaoTipoEvento (pcnEventoNFe.pas).
+    por: Italo Jurisato Junior
+
+18/08/2015
+[*] O ValidarChave não necessita mais do prefixo da chave e internamente remove
+    todos os caracteres que não sejam digitos, desta forma na chamada da função
+    foi removido o prefixo.
+    por: Italo Jurisato Junior
+[*] Troca do StringReplace/Copy por OnlyNumber para obter somentes os digitos
+    da propriedade ID.
+    por: Italo Jurisato Junior
+
+17/08/2015
+[*] Correções no DANFE em Quick Report, estava ignorando os 3 primeiros digitos
+    da chave.
+    Por: Italo Jurisato Junior
+
+14/08/2015
+-- ACBrNFeDANFeRLRetrato --    (por: hleorj)
+[-]  Mudança da posição da checagem da propriedade FNFeCancelada
+[*]  Adicionado o Status 135 para o evento de cancelada;
+     http://www.projetoacbr.com.br/forum/index.php?showtopic=23505
+
+13/08/2015
+-- ACBrNFeConfiguracoes --
+[-] Correção para gravação Configuracoes.Geral.VersaoDF no LFM/DFM  (por: DSA)
+
+-- ACBrNFeWebServices --
+[*] A versão do ConsNFeDest e DonwloadNFe tem que ser 1.01 e 1.00 respectivamente
+    caso contrario ocorrera erro de versão do arquivo XML não suportado (cabeçalho)
+    Por: Italo Jurisato Junior
+
+12/08/2015
+[*] Uso da function TpEventoToDescStr em GetPathEvento;
+    Por: Italo Jurisato Junior
+
+10/08/2015
+-- ACBrNFe --
+[*] Removido as propriedades PathCCe e PathCan e alterado o nome da propriedade
+    SalvarCCeCanEvento para SalvarEvento.
+    por: Italo Jurisato Junior
+
+-- ACBrNFeDANFeRLRetrato --    (por: hleorj)
+[+]  Implementado o Grupo de Encerrantes
+[-]  Correção de exibição de VALORIPI
+
+-- ACBrNFeDANFeRLPaisagem --    (por: hleorj)
+[*]  Refactoring da Danfe Paisagem.
+[+]  Ajuste para aceitar denegada
+[+]  Implantacao de Encerrante no grupo combustivel;
+     http://www.projetoacbr.com.br/forum/index.php?showtopic=23505
+
+09/08/2015
+-- ACBrNFeDANFeRLRetrato --    (por: hleorj)
+[*]  Diversos ajustes no código fonte. (refactoring)
+[+]  Implantação de Encerrante no grupo combustível.
+
+-- pcnConversaoNFe --   (por: hleorj)
+[+]  function VeiculosRestricaoStr( const iRestricao :Integer ): String;
+[+]  function VeiculosCorDENATRANStr( const sCorDENATRAN : String ): String;
+[+]  function VeiculosCondicaoStr( const condVeic: TpcnCondicaoVeiculo ): String;
+[+]  function VeiculosVinStr( const sVin: String ): String;
+[+]  function VeiculosEspecieStr( const iEspecie : Integer ): String;
+[+]  function VeiculosTipoStr( const iTipoVeic : Integer ): String;
+[+]  function VeiculosCombustivelStr( const sTpComb : String ): String;
+[+]  function VeiculosTipoOperStr( const TtpOP : TpcnTipoOperacao ): String;
+[+]  function ArmaTipoStr( const TtpArma : TpcnTipoArma ): String;
+     http://www.projetoacbr.com.br/forum/index.php?showtopic=23439
+
+
+06/08/2015
+-- ACBrNFeDANFeRLRetrato --
+[*]  Ajustes na danfe para aceita Nfe denegadas corretamente (  205 , 301 e 302 )
+[*]  Ajustes no código . : Remoção de variáveis e if's,
+[*]  Implementação de algumas rotina em case após ajustes no código.
+     http://www.projetoacbr.com.br/forum/index.php?showtopic=23439
+     (por: hleorj)
+
+[*]  Revisão de Strings com acentos convertendo-as com ACBrStr()
+[*]  Remoção de comentários desnecessários, indentação
+     (por: DSA)
+
+
+05/08/2015
+[*] Ao Ler as URLs não estava levando em consideração a SVC.
+    por: Italo Jurisato Junior
+
+03/08/2015
+[*] Implementado as alterações e adição das novas TAGs conforme NT 2015/002.
+    Algumas linhas de código estão comentadas para não gerar rejeição.
+    Essas linhas devem ser descomentas somente em Outubro para testes e 
+    Novembro para o envio em ambiente de produção. 
+    por: Italo Jurisato Junior
+
+-- ACBrNFeDANFeRLRetrato, ACBrNFeDANFeRLPaisagem --    (por: DSA)
+[-] Correção para correta exibição de caracteres acentuados
+
+
+01/08/2015
+-- ACBrNFeDANFeESCPOS --    (por: DSA)
+[*] Ajuste para correta exibição do Cabeçalho de Itens em Impressoras
+    com menos de 48 colunas
+    http://www.projetoacbr.com.br/forum/index.php?showtopic=23262
+
+31/07/2015
+[*] Adicionado cabeçalho XML quando não houver ao XML baixado pelo webservice
+    de DownloadNFe
+    por: Italo Jurisato Junior
+
+29/07/2015
+[*] Adicionado cabeçalho XML quando não houver ao XML baixado pelo webservice
+    de distribuição de DFe
+    por: Regys Silveira
+
+28/07/2015
+[*] Alterado a forma de converter uma string em data/hora na unit pcnRetDownloadNFe.
+    por: Italo Jurisato Junior
+
+Data: 27/07/2015
+-- ACBrNFeNotasFiscais --  (por: DSA)
+[-] Correção para commit efetuado 26/07. XML gravado em:
+    TNFeRecepcao.TratarResposta, TNFeRetRecepcao.TratarRespostaFinal e
+    TNFeConsulta.TratarResposta, não continha as informações de "procNFe"
+
+-- ACBrNFeDANFeESCPOS --  (por: DSA)
+[*] Modificado para usar as novas Tags de configuração QRCode procurando manter
+    os valores definidos pelo Usuário em TACBrPosPrinter
+
+26/07/2015   (por: DSA)
+-- ACBrNFe --
+[*] Ajustes para evitar nova geração do XML em GravarXML e GravarTXT,
+    IMPORTANTE: Após gerado o XML, o mesmo ficará armazenado em "XMLOriginal"
+	Se modificar alguma propriedade do Componente, será necessário chamar novamente
+	"GerarXML" para atualizar "XMLOriginal"
+[*] Melhora na performance de "ValidarRegrasdeNegocios", adicionado Logs para
+    DEBUG
+[*] Adicionado parâmetro Data em: GetPathEvento
+
+14/07/2015
+[*] Alterado a forma de gerar o Envelope Soap do DistribuicaoDFe e acrescentado
+    o parametro Data ao gerar o PathDownload, permitindo desta forma salvar o 
+    XML da NF-e retornado pelo metodo Download ou DistrubuicaoDFe na pasta 
+    conforme a data de emissão ou data atual.
+    por: Italo Jurisato Junior
+
+02/07/2015
+[-] Acerto no método loadfromstring, não estava retornando o result corretamente
+
+17/06/2015
+[-] acerto de geração da tag conforme previsto na nt, mais informações no post
+    http://www.projetoacbr.com.br/forum/index.php?/topic/17819-nfe-310-icms-cst-51-redução-base/page-3
+
+27/05/2015
+[+] Adicionado recurso para salvar XML baixados por DistribuicaoDFe em pastas
+    separadas por Nome do Emitente.
+    por Isaque Pinheiro
+
+27/05/2015
+[-] Ao gerar o TXT de uma NF-e estava sendo setado a versão, e da forma que esta
+    sendo feito sempre iria gerar o TXT segundo a versão 2.00, comentei a linha
+    e aparentemente o problema resolveu.
+    por: Italo Jurisato Junior
+
+20/05/2015
+[*] Acrescentado uma condição para determinar se será salvo em disco ou não os
+    XML retornados pelo DistribuicaoDFe.
+    por: Italo Jurisato Junior e Dalpiaze
+
+10/05/2015
+[-] Mais algumas alterações de definição de Serviço e SoapAction.
+    por: Italo Jurisato Junior e Gledson Silva Santos
+
+08/05/2015
+[-] Alterado a definição do Serviço e SoapAction da Inutilização.
+    por: Gledson Silva Santos
+[-] Ao gerar o PDF da Inutilizacao não estava gerando o nome do PDF corretamente.
+    por: Jose Roberto
+
+01/05/2015
+[*] Atualização das URLs de produção e homologação da NF-e e NFC-e publicadas 
+    pela SEFAZ-RS.
+    por: Italo Jurisato Junior
+
+30/04/2015
+[+] Implementado a propriedade PathDownload que pode ser utilizada para determinar
+    o Path onde é gravado os XML de NF-e retornados pelos métodos Download e DistribuicaoDFe.
+    por: Italo Jurisato Junior
+
+09/03/2015
+[*] Removido o PathMDe, pois nunca foi utilizado.
+    Por: Italo Jurisato Junior
+		
+04/03/2015
+[*] Inclusão das URLs do QR-Code para DF.
+    Por: Gilson_ST
+		
+23/02/2015
+[*] Inclusão das novas URLs para atender o novo serviço de Administração do 
+    Código de Segurança do Contribuinte - CSC (Somente SEFAZ-AM).
+    por: Italo Jurisato Junior
+
+19/02/2015
+[*] Inclusão de novos tipos de eventos (NFe/CTe/MDFe).
+    por: Italo Jurisato Junior
+
+18/02/2015
+[-] correção pois sempre parecia uma nota
+	http://www.projetoacbr.com.br/forum/index.php?/topic/19867-salvando-em-txt-apenas-%C3%BAltima-nota-da-lista/
+	
+10/02/2015
+[*] Atribuição do conteudo de xMotivo a xMsg.
+    por: Vanessa Mocellin 
+[*] Corrigido nome do XML, estava salvando -NFe em vez de -nfe.
+    por: Italo Jurisato Junior
+
+09/02/2015
+[*] Incluida as URLs da NFC-e para BA e SP.
+    por: Italo Jurisato Junior
+
+05/02/2015
+[*] Incluida as URLs de QR-Code da NFC-e para PI.
+    por: Ricardo
+
+30/01/2015
+[+] Implementado a descompactação de retorno Zipado ao acessar o Web Services:
+    NFeDistribuicaoDFe
+    Por: Italo Jurisato Junior
+
+27/10/2015
+[*] Alteracao para validar campo por causa do formatos diferentes entre 2.00 e 3.10
+		http://www.projetoacbr.com.br/forum/index.php?/topic/19471-ajuste-valida%C3%A7%C3%A3o-pagamento/
+		por : Luis Fernando
+
+26/01/2014
+[*] Acertos na impressão do DANFC-e para EscPos
+    http://www.projetoacbr.com.br/forum/index.php?/topic/16371-componente-acbrnfedanfeescpos/#entry125002
+    Revisão feita por: Régys Silveira
+
+26/01/2015
+[*] DANFe em Fortes Report para armamentos!
+    por: ncc.star
+
+23/01/2015
+[*] Incluida as URLs de consulta da NFC-e para PB e RR.
+    por: Roberto Godinho
+		
+14/01/2015
+[*] correção para não popular campos que não existem em nf-e inferior a 3.10
+		http://www.projetoacbr.com.br/forum/index.php?/topic/19454-erro-em-nota-de-importa%C3%A7%C3%A3o-campo-vafrmm/
+		por: Juliomar Marchetti
+		
+20/01/2015
+[-] Correção de bug na impressão de evento com mais de 10 linhas.
+    por: regys.silveira
+
+08/01/2015
+[+] Adicionado o metodo de abertura da gaveta para impressoras bematech, epson e daruma
+    por: Regys Silveira
+
+05/01/2015
+[*] Correção na URL de produção do WebServices: NFeDistribuicaoDFe
+    por: LVR
+
+02/01/2015
+[*] Correção na virtual
+	  por: Juliomar Marchetti
+		
+22/12/2014
+[*] Removido da URL do PR o caracter "?" pois este já é incluido através do passo 6
+    ao montar a URL do QR-code.
+    por: Italo Jurisato Junior
+[*] Alteração na montagem da URL do QR-Code, para o Estado do Paraná tanto a 
+    data e hora de emissão e Digest Value ao serem convertidos para Hex devemos
+    converter as letras para minusculo.
+    por: Anderson.D
+[*] Para o Estado do Pará o componente utilizará as URLs da SV-AN para a NF-e
+    e as URLs da SV-RS para a NFC-e.
+    por: Italo Jurisato Junior
+
+18/12/2014
+[*] Adicionar informação do xCpl ao Danfe em fast
+    http://www.projetoacbr.com.br/forum/index.php?/topic/19191-inserir-campo-na-impress%C3%A3o-danfe-fastreports/
+		por : Juliomar Marchetti 
+		
+18/12/2014
+[*] Incluido a linha para alimentar a propriedade XML que conterá o resultado
+    do processamento do evento.
+    por: Italo Jurisato Junior
+
+16/12/2014
+[*] Para o Estado de Piaui o componente utilizará as URLs da SV-AN para a NF-e
+    e as URLs da SV-RS para a NFC-e.
+    por: Italo Jurisato Junior
+
+15/12/2014
+[*] Estava faltando o "Result" para pegar o retorno da function EnviarCartaCorrecao.
+    por: Italo Jurisato Junior
+
+12/12/2014
+[*] Refactoring em várias Units.
+    por: Italo Jurisato Junior
+
+03/12/2014
+[*] - Refatoração de código para remover funções duplicadas e aplicar padrões
+	por : Juliomar Marchetti
+	
+02/12/2014
+[*] - Alterado de posição a rotina que salva o XML da NF-e caso a propriedade
+      Configuracoes.Arquivos.Salvar seja True.
+      por: Italo Jurisato Junior
+
+01/12/2014
+[*] - acerto para formatar as decimais da quantidade somente quando for quantidade 
+      com decimais como no ECF.
+      por: regys silveira
+
+28/11/2014
+[*] - Adicionada a implementação das tags de formatação no ACBrNFeDANFeESCPOS
+      ele vai utilizar as mesmas tags que são utilizadas hoje no ACBrECF
+      o exemplo de utilização já possui botão e texto para teste
+    - Adiconados comandos de impressão de codigos de barra e logomarca na Daruma
+      por: regys silveira
+
+27/11/2014
+[*] Adição no DataModule para FastReport campos usados para medicamentos que devem ser impressos no danfe
+	http://www.projetoacbr.com.br/forum/index.php?/topic/18720-declarar-vbcst-vst-e-xlote-no-report-designer/#entry118653
+	por: Juliomar Marchetti
+
+25/11/2014
+[*] -- ACBrNFeDANFeESCPOS -- por: Regys Silveira
+       - Identação da unit para o padrão correto.
+       - Acertos gerais no layout e textos para adequação a documentação de impressão do DANFC-e
+       - adicionada opção para impressão de via consumidor ou estabelecimento
+       - opção de impressão resumida ou não revisada
+       - adicionada opção para imprimir completo em 2 linhas ou somente 1 linha
+       - adicionada opção para impressão ou não de desconto/acrescimo por linha
+       - Acerto para que o ; nas observações quebre a linha corretamente
+       - impressão de relatórios normais (texto livre)
+       - impressão de eventos
+
+26/11/2014
+[*] Utilizacao da propriedade ImprimirTotalLiquido nos DANFEs (Quick Report).
+    Por: fpasqueto
+[+] Implementado o DANFE NFC-e (Quick Report) tamanho A4.
+    Criado o valor tiNFCeA4 para que o DANFE A4 seja impresso em vez de bobina.
+    Por: Italo Jurisato Junior
+[*] Na impressão do Evento (Quick Report) será checado o modelo, caso seja 55
+    será impresso NF-e caso contrario NFC-e.
+    Por: Italo Jurisato Junior
+[*] Na function TratarRespostaFinal, dentro do for J o if que compara o conteudo
+    da propriedade DigestValue com digVal estava utilizando indice [i] em vez de [J]
+    ao ler o conteudo de DigestValue.
+    Foi feita a correção e mais algumas melhorias.
+    Por: Italo Jurisato Junior
+
+25/11/2014
+[*] A bando com o valor aproximado dos tributos só será gerada no DANFE NFC-e 
+    (Quick Report) caso o valor de vTotTrib <> 0.
+    Por: Italo Jurisato Junior
+
+20/11/2014
+[*] Acerto para envio off-line da NFC-e usando ACBrECFVirtualNFCe
+    http://www.projetoacbr.com.br/forum/index.php?/topic/18486-d%C3%BAvidas-acbrecfvirtualnfce/
+
+14/11/2014
+[+] Adicionas URLs de consulta da NFC-e pela chave e QR-Code para o estado do paraná
+    http://www.projetoacbr.com.br/forum/index.php?/topic/18569-nfc-e-erro-url-n%C3%A3o-dispon%C3%ADvel-para-o-estado-solicitado/#entry117722
+    por: Italo JurisatoJunior
+[+] Adicionas URLs da NFC-e para o estado do paraná
+    http://www.projetoacbr.com.br/forum/index.php?/topic/18569-nfc-e-erro-url-n%C3%A3o-dispon%C3%ADvel-para-o-estado-solicitado/#entry117722
+    por: regys.silveira
+
+14/11/2014
+[*] Incluido as URLs de Consulta as NF-e Destinadas e Download de NF-e para a 
+    SEFAZ-RS como consta na Relação de Serviços Web do Portal Nacional da NF-e.
+    por: Italo Jurisato Junior
+
+11/11/2014
+[*] Alterações realizadas conforme NT ACBr 2014/001 nas Units: ACBrNFeDANFERave e
+    ACBrNFeDANFERaveCB
+    por: Italo Jurisato Junior
+
+10/11/2014
+[-] Correções baseado nos relatos de Mauricio Guedes, nomes dos arquivos após ler
+    o XML usando o LoadFromStream.
+    por: Italo Jurisato Junior
+
+07/11/2014
+[*] Alterações realizadas conforme NT ACBr 2014/001
+    por: Italo Jurisato Junior
+
+31/10/2014
+[*] Alterações realizadas conforme NT ACBr 2014/001
+    por: Italo Jurisato Junior
+
+29/10/2014
+[*] Incluido nas classes que contem as estruturas dos XML de retornos a propriedade
+    versao, para que esta receba o conteudo do atributo versao.
+    por: Italo Jurisato Junior
+
+15/10/2014
+[*] Melhorias no DANFE - NFC-e (Quick Report) realizadas por Daniel Caus
+
+13/10/2014
+[-] Na unit ACBrNFeDANFeQR a propriedade FViaConsumidor estava com uma letra
+    a mais (FAViaConsumidor - letra A).
+    por: Italo Jurisato Junior
+
+10/10/2014
+[*] Incluido a propriedade boolean: ViaConsumidor para alternar as Mensagens:
+    Via Consumidor / Via Estabelecimento quando se tratar de emissão do DANFE 
+    em contingência.
+    por: Italo Jurisato Junior - Implementação feita por: Edilson
+
+06/10/2014
+[*] Faltou um begin em um procedimento!
+	por: Juliomar Marchetti
+	
+06/10/2014
+----------
+[-] Colocado uma condição checando se a UF=29 e versão 3.10, caso afirmativo
+    o nome do metodo é NfeInutilizacao em vez de NfeInutilizacao2
+    Motivo da alteração: Rejeicao: Cabecalho - Versao do arquivo XML nao suportada
+    Alterado a URL de Inutilização para a versão 3.10 da Bahia.    
+    por: Italo Jurisato Junior
+
+03/10/2014
+----------
+[*] Alterado a estrutura do envelope do metodo NFeDistribuicaoDFe
+    por: Italo Jurisato Junior
+
+02/10/2014
+----------
+[+] Incluido a URL de homologação e produção (não liberado ainda) para consumir o Web Service
+    NFeDistribuicaoDFe
+    por: Italo Jurisato Junior
+
+14/11/2013
+----------
+[-] Acerto na tag nItemPed, ela é um campo numérico e estava gerando zeros não significativos.
+    por: regys.silveira
+
+31/10/2013
+----------
+[*] Acerto para utilização dos novos links de homologação disponibilizados pelo estado do AM e válidos para uso em todo território nacional
+    http://portalnfce.sefaz.am.gov.br/desenvolvedor/ambiente-de-homologacao-para-desenvolvedores/
+
+27/05/2013 {por Fabio Gabriel e João Henrique}
+----------
+[+] - {ACBrNFeDANFEFR.pas} Inclusão da propriedade "ExibeCampoFatura", opção para cancelar a impressão do campo FATURA (Somente em FastReport)
+	Ps: Definido por padrão para True. 
+[*] - {ACBrNFeDANFEFRDM.dfm} Modificado no cdsDestinatarioIE (Inscr.Estadual) o campo de 14 para 18 caracteres	devido a utilização na formatação para 	alguns estados.
+[+] - {ACBrNFeDANFEFRDM.pas} CarregaFatura foi incluso a opção da impressão do campo (ExibeCampoFatura);  
+[*] - {ACBrNFeDANFEFRDM.pas} CarregaFatura, Indicação de pagamente será sempre de acordo com o a tag indPag (juaumkiko)
+[-] - {ACBrNFeDANFEFRDM.pas} CarregaParametros, modificado em vários locais:
+	  	TpAmb = taHomologação: (Várias opções para teste)
+		TpAmb = taProdução: (Várias opções para teste)
+		TpEmis = teDPEC: (Correção conforme relatado em: http://www.projetoacbr.com.br/forum/index.php?/topic/9203-normalização-danfe-em-fast-report/page-4#entry62155
+      		PS: Todos os testes precisam verificar primeiro a especificação do ProtocoloNfe e opção NFeCancelada diretamente pelo componente. (juaumkiko)
+[*] - {DANFeRetrato.fr3} No Canhoto foi incluso mais uma linha, para ficar padrão como a anterior (DANFE.FR3).  Isto se faz necessário, porque várias Empresas necessita de informações mas detalhadas, devido a despacho por transportadoras, entre outras, e o tamanho fica restrito.
+[*] - {DANFeRetrato.fr3} Na Fatura foi redimencionado o tamanho e incluso a opção de impressão (ExibeCampoFatura), ganhando mais espaço no produtos/serviços (obedecendo o manual).
+[+] - {DANFeRetrato.fr3} Incluso um ColumnFooter para ISSQN, assim podemos usar o recurso de exibição ou não, ganhando mais espaço com os produtos/serviços.
+[*] - {DANFeRetrato.fr3} Redimensionamento dos Dados Adicionais (obedecendo o manual)
+
+04/03/2013
+----------
+[-] Acerto no envio de e-mail normal, não estava anexando o XML
+    por regys.silveira
+
+29/01/12
+--------
+[-] Acertos feitos pelo usuário Luis Fernando para o DANFE quickreport.
+    http://www.projetoacbr.com.br/forum/index.php?/topic/8706-altera%C3%A7%C3%B5es-no-danfe-qreport-retrato-para-nf-e/
+    - Local impressão Canhoto.
+    - Mensagem obrigatória quando emitido em contingencia.
+    - Estouro da linha dos itens.
+    - Local Endereço Entrega.
+    - Mensagem livre no lugar do software que distribui.
+
+05/12/12 
+---------------
+[+] Acerto na na expansão do logotipo para o DANFE.FR3
+    conforme tópico: http://www.projetoacbr.com.br/forum/index.php?/topic/8668-logomarca-expandido-danfefr/
+
+05/12/12 (Regys Silveira, Itamar Bermond) 
+---------------
+[+] Inclusão da impressão e geração de PDF de Eventos com FastReport.  
+
+22/11/2012
+-- ACBrDFeUtil 
+[+] Unificação de funções de mesma funcionalidade das units:
+    ACBrNFeUtil, ACBrNFEsUtil, ACBrCTeUtil
+    (por Isaque Pinheiro)
+
+Alterações   08/11/12 (João Henrique)
+---------------
+[+] Inclusão da propriedade MostrarSetup (padrão FALSE) no componente Danfe Rave Code Base.     
+
+Alterações   31/10/12 (Regys Silveira)
+---------------
+[*] Ajuste para poder escolher entre enviar email com thread ou sem thread
+    o padrão continua sendo utilizando a Thread.
+
+Alterações   10/10/12 (João Henrique)
+---------------
+[*] Ajustes na Impressão do Danfe (Rave Arquivo e Code Base) de acordo com a 
+    NT 2012.003b onde prevê que o Cancelamento pode ter cStat como 101 e 151.
+
+Alterações   08/05/12 (beretta)
+---------------
+[-] Acerto para impressão da quantidade e unidade tributaveis e comercial 
+    quando forem diferentes.
+
+Alterações   08/05/12 (juaumkiko)
+---------------
+[-] Correção de memory leak. 
+    Incluído destructor da classe TNFeCartaCorrecao.
+
+Alterações   15/03/12 (Regys Silveira)
+---------------
+[-] Acerto para validar o tamanho maximo de campos decimais sem considerar a 
+    virgula, conforme apontado em:
+    http://djsystem.com.br/acbr/forum/viewtopic.php?f=6&t=5072
+
+Alterações   27/01/12 (Italo Jurisato Junior)
+---------------
+[-] Alteração na Emissão do DANFE - Quick Report código do status para CT-e DENEGADA 
+    estava 102 sendo que o correto é 110, conforme falha detectada por Moroni.
+
+Data: 24/01/2012 
+-- ACBrNFeWebServices -- 
+[-] Acerto conforme post no fórum:
+    http://djsystem.com.br/acbr/forum/viewtopic.php?f=6&t=3970
+
+
+Alteração    06/01/2012
+-----------------------
+[+] Adicionado endereço do webservice da CC-e para o Ceará
+
+Alteração    29/11/2011
+-----------------------
+[-] Acerto na passagem da senha para o certifico a cada sessão.
+    http://djsystem.com.br/acbr/forum/viewtopic.php?f=6&t=4054
+
+Alteração    08/09/2011
+-----------------------
+[-] Corrigido vazamento de memória, na emissão da CCe, o objeto "ReqResp"
+    estava sendo instanciado no método "TNFeCartaCorrecao.Executar", mas 
+    não estava sendo liberado.
+
+[-] Corrigido vazamento de memória na unit "pcnCCeNFe.pas", criado o método
+    "Destroy" na class TInfEvento, para liberar o objeto "TDetEvento", que
+    esta sendo instanciado no método Create.
+    (por Isaque Pinheiro)
+
+Alterações   14/07/2011
+---------------
+[+] Incluído recurso para imprimir informações do FISCO no respectivo quadro e não no quadro informaçõs complementares (juaumkiko)
+    Para usar o recurso basta descomentar as linhas: 1247 e 1248 do arquivo ACBrNFeDANFeRaveDM.pas e compilar o projeto ou monitor novamente
+    Não esqueça de atualizar os arquivos .RAV
+    IMPORTANTE: Esse recurso deverá ser utilizado por sua conta e risco, pois isso esta em desacordo com o que orienta o MANUAL DE INTEGRAÇÃO
+
+Alterações   07/06/2011
+---------------
+[-] Ajustado vazamento de memoria no arquivo ACBrNFeWebservices (NFeRetorno.Free) - juaumkiko
+
+Alterações   16/05/2011
+---------------
+[-] Correção nos arquivos ACBrNFeUtil, libxml2 e libxmlsec para conseguir assinar e validar uma NFe utilizando OpenSSL.
+    No Delphi XE isso não era possível. Para solucionar o problema foi alterado todos os valores PChar para PAnsiChar nos
+    arquivos libxml2 e libxmlsec. Isso levou a necessidade de alteração na unit ACBRNFeUtil da variavel schema_filename para AnsiString
+    "juaumkiko"
+
+Alterações   28/04/2011
+---------------
+[-] Correção do Layout da NFe. Retirada a propriedade RENAVAM, pois a mesma não contempla mais o Layout 2.0
+[+] Impressão da descrição do tipo de combustível no Danfe em Rave Arquivo e Code Base.
+
+Alterações   08/04/2011
+---------------
+[-] Correção de impressão do DANFE com RAVE CODE BASE quando estiver imprimindo em Formulario de Segurança no Ambiente de Producao.
+
+Alterações   10/03/2011
+---------------
+[-] Correção de impressão do NCM no DANFE com RAVE CODE BASE quando a fonte for COURIER
+
+Alterações   28/02/2011
+---------------
+[-] Retirado alguns vazamentos de memória conforme relatado em http://www.djsystem.com.br/acbr/forum/viewtopic.php?f=6&t=1165 (Cezinha Anjos)
+ 
+Alterações   22/02/2011
+---------------
+[-] Inversão dos campos vBC e pRedBC quando ICMSSN900. Caso 892 do MANTIS
+[-] Correção para imprimir o cabeçãlho CSOSN somente quando for SIMPLES NACIONAL. Danfe em Rave Arquivo.
+
+Alterações   09/02/2011
+---------------
+[*] Adicionado endereço de produção da NFe 2.0 para os WebServices do Paraná
+
+Alterações   08/02/2011
+---------------
+[-] Correção da impressão do DANFE em PDF no Danfe em Rave Arquivo. Caso 878 do Mantis
+[+] Incluido opção de Salvar diretamente para arquivo TXT as NFs carregadas no componente
+    Utilizem o método: ACBrNFe1.NotasFiscais.SaveToTXT({caminho e nome do arquivo TXT});
+    Vejam o DEMO para exemplo.
+
+Alterações   25/01/2011
+---------------
+[*] Inclusão da Propriedade TamanhoFonte_ANTT nos Danfes em RAVE. Casos 853 e 868 do Mantis
+[-] Correção da cardinalidade das TAGs BALSA e VAGAO. Caso 860 do MANTIS.
+[-] Correção da cardinalidade das TAGs referente a CANA. Caso 863 do MANTIS.
+
+
+Alterações   07/12/2010
+---------------
+[-] Correção no método LoadFromFile no tratamento da TAG REFNFP. Caso 814 do Mantis
+[-] Correção no tratamento da TAG L120 referente de combustiveis. Caso 817 do Mantis
+
+Alterações   03/12/2010
+---------------
+[-] Correção na impressão do Danfe em Rave Arquivo quando CSOSN for Vazio.
+
+Alterações   26/11/2010
+---------------
+[+] Liberação dos Webservices de Produção 2.0 do estado de Pernambuco.
+
+Alterações   24/11/2010
+---------------
+[-] Correção de Loop infinito no DANFE_RAVE513.rav quando o DANFE conter mais de uma página
+    e existir ISSQN.
+
+Alterações   10/11/2010
+---------------
+[+] Criação de classe exception para a nota eletrônica (Régys Borges da Silveira)
+    - Foi criado uma classe de exception própria EACBrNFeException para o
+      componente de nota eletrônica, visando facilitar o tratamento de exceções 
+      vindas da nota fiscal eletrônica.
+
+Alterações   17/09/2010
+---------------
+[+] Envio de nota eletrônica por e-mail (Régys Borges da Silveira, Itamar Bermond)
+    - Adicionados dois novos parâmetros, um para o nome do remetente, permitindo 
+      que ao enviar o e-mail apareça o nome do remetente ao invés do e-mail e outro 
+      para instruir o método a ficar esperando ou não a execução da thread de
+      envio de e-mail.
+
+Alterações   26/08/2010
+---------------
+[-] DANFE em FAST REPORT (Régys Borges da Silveira, Itamar Bermond)
+    - Desmarcada a propriedade StoreInDFM do FastReport para não gravar
+      o relatório no DFM e evitar o erro de compilação em versão menores
+      do delphi, favor utilizar o arquivo externo.
+
+
+Alterações   25/08/2010
+---------------
+[-] DANFE em FAST REPORT (Régys Borges da Silveira)
+    - Configuração do preview do DANFE
+    - corrigido erro ao gerar pdf para uma nota só, gerava o arquivo sem extensão
+
+
+Alterações   24/08/2010
+---------------
+[-] DANFE em FAST REPORT (Régys Borges da Silveira)
+    - Correção da exportação para PDF
+    - Correção para checar se o relatório foi realmente preparado antes de continuar a imprir ou gerar o PDF
+    - Correção nas diretivas de compilação para Delphi 2009 e superior
+    - Correções para o Simples Nacional
+    - correção para utilizar o caminho da logomarca como nos outros DANFEs
+    - Correçã para informar as propriedades titulo, criador, etc do PDF corretamente
+    - Correções gerais no DANFE
+        . layout
+        . exibição da logomarca
+        . tamanho das colunas para conter valores grandes
+        . marca d'agua para ambiente de homologação
+        . complemento a descrição da mercadoria
+        . origem no CST
+        . mostrar o CST corretamente quando for Simples Nacional
+
+
+Alterações   16/08/10
+---------------
+[+] Danfe em FastReport por (Itamar Luiz Bermond)
+
+
+Alterações   23/06/10
+---------------
+[-] Danfe em Rave Arquivo e Code Base
+    - Correção da exibição do frete "1-DEST/REM" conforme NT 2010.004
+
+
+Alterações   17/02/10
+---------------
+[-] Correções no Preview e Fonte no DANFE em FORTES REPORTS (Peterson de Cerqueira Matos)
+    
+
+Alterações   12/02/10
+---------------
+[-] DANFE em FORTES REPORTS (Peterson de Cerqueira Matos)
+    Correção na exibição do 'Preview' para modo 'MODAL' 
+[*] DANFE em RAVE ARQUIVO
+    - Modificação para imprimir no corpo da nota o texto "NFe sem Autorização de Uso da SEFAZ", 
+      quando estiver em Ambiente PRODUÇÃO e não tiver Protocolo de autorizacao de uso.
+      OBS: O texto não será impresso se estiver em Producao e em Contingencia FS ou FS-DA.
+[-] DANFE em RAVE ARQUIVO
+    - Corrigido problema de geração do PDF quando existia mais de uma nota carregada no componente.(Caso 00473 do MANTIS)
+[-] Corrigida declaraçao de Units em libxml2.pas, libxmlsec.pas e libxslt.pas
+    para permitir a correta compilação no FreePascal no Linux
+
+Alterações   10/02/10
+---------------
+[*] DANFE em FORTES REPORTS (Peterson de Cerqueira Matos)
+    - Inserção da função 'BuscaDireita', que auxiliará a correção da
+      exibição dos 'DADOS ADICIONAIS' para evitar que a última palavra do
+      quadro fique pela metade devido à limitação da quantidade de caracteres
+    - Correção da formatação de CPF, no caso de NF-e emtida para pesso física
+
+Alterações   09/02/10
+---------------
+[*] Alteração do alinhamento (para esquerda) dos campos Inscr. Estadual e CNPJ no DANFE em RAVE CB.
+
+Alterações   08/02/10
+---------------
+[-] Correção da impressão no DANFE com  FORTES REPORTS, para o canhoto ser impresso apenas 
+    na primeira página. (Créditos: Peterson de Cerqueira Matos)
+[-] Correção da impressão no DANFE com  RAVE ARQUIVO. Quando a propriedade ExpandirLogoMarca estava 
+    como true, estava imprimindo "sujeira" dos dados do emitente
+
+
+Alterações   06/02/10
+---------------
+[*] Melhorias diversas no DANFE com  FORTES REPORTS (Créditos: Peterson de Cerqueira Matos)
+    - Alteração da quantidade de casas decimais dos campos 'QUANTIDADE' e
+      'VALOR UNITÁRIO' para 4 casas, conforme consta no 'MANUAL DE INTEGRAÇÃO DO CONTRIBUINTE'
+    - Correção na distribuição dos caracteres entre os 'DADOS ADICIONAIS' e a 'CONTINUAÇÃO DOS DADOS ADICIONAIS'
+    - Inclusão dos campos 'USUÁRIO' e 'SISTEMA' no rodapé do DANFE (só folha 1)
+    - Inclusão dos campos 'SITE', 'EMAIL' e 'FAX' no quadro do emitente
+    - Inclusão do 'RESUMO' da NF-e no canhoto
+
+Alterações   28/01/10
+---------------
+[+] Incluido Propriedade PathSchemas (ACBrNFe.Configuracoes.Geral.PathSchemas)
+    Se não informar nenhum caminho, o componente procura a pasta no diretorio do executavel (como esta atualmente)
+    Se informar um caminho, o componente irá procurar os Schemas neste caminho.
+    Util para quem quiser centralizar os arquivos de Schemas em um servidor por exemplo.
+
+Alterações   22/01/10
+---------------
+[+] Incluido pacote de Danfe em Fortes Reports (Creditos: Peterson de Cerqueira Matos)
+
+Alterações   22/01/10
+---------------
+[+] Propriedade ProdutosPorPagina nos componentes do DANFE RAVE CB (caso 458 MANTIS), agora esta funcional
+    Se propriedade estiver com o valor 0 (zero), o DANFE será impresso normalmente como agora. 
+    Se especificar um valor, será impresso a quantidade máxima de produtos por página.
+    (Créditos: João Paulo Leão)
+
+Alterações   19/01/10
+---------------
+[-] Fixado tamanho de fonte no RAVE CB RETRATO para o campo FRETE POR CONTA.
+
+Alterações   15/01/10
+---------------
+[*] Criado funcao UpperCase2 (NFeUtil) para transformar em caixa alta caracteres acentuados.
+    Com isso o caso 460 do mantis pode ser solucionado.
+
+Alterações   14/01/10
+---------------
+[+] Incluido Propriedade ProdutosPorPagina nos componentes do DANFE. (caso 458 MANTIS)
+    Se propriedade estiver com o valor 0 (zero), o DANFE será impresso normalmente como agora.
+    Se especificar um valor, será impresso a quantidade máxima de produtos por página.
+    NOTA 1: Essa propriedade NÃO FUNCIONARÁ com o arquivo NotaFiscalEletronica.RAV, funcionará somente com o DANFE_Rave513.rav ou
+            DANFE com RAVE CB
+    NOTA 2: Essa propriedade ainda nao esta funcional no DANFE com RAVE CB
+    NOTA 3: NÃO ESQUEÇA DE ATUALIZAR O ARQUIVO DANFE_RAVE513.RAV NO SEU SISTEMA 
+
+Alterações   12/01/10
+---------------
+[-] Corrigido impressão (DANFE RAVE CB) de SÉRIE e FOLHA quando for SCAN (caso 449 MANTIS)
+[-] Corrigido impressão (DANFE RAVE CB) de dizeres ENTRADA/SAIDA de acordo com o que for a NFe. (caso 457 MANTIS)
+
+Alterações   18/12/09
+---------------
+[-] Corrigido impressão de numeração de páginas no DANFE Rave CB. (créditos: João Paulo Leão)
+
+Alterações   14/12/09
+---------------
+[-] Fixado tamanho da fonte Courier New no Quadro Fatura/Duplicatas para o DANFE com RAVE CB. Estava cortando a data de vencimento.
+
+Alterações   27/11/09
+---------------
+[*] Adicionado parâmetro SalvaTXT na função SaveToFile, onde quando estiver True irá salvar o arquivo da NFe no padrão do emissor gratuíto de SP
+
+Alterações   18/11/09
+---------------
+[*] Alterado função LoadFromFile para mostrar erros na leitura de XMLs inválidos e adicionado recurso de ler vários XMLs no mesmo arquivo
+[+] Adicionado ao Demo do componente o botão "Importar XML" para servir de exemplo para quem deseja usar o componente para importar XMLs 
+    de NFes recebidas de fornecedores
+
+Alterações   12/11/09
+---------------
+[+] Adicionada propriedade EmissaoPathNFe onde quando estiver True e se estiver configurado para salvar as NFe na propriedade PathNFe 
+    com criação de pasta mensal, a NFe será salva na pasta conforme a propriedade dEmi(Data de Emissão) e não mais pela data do PC.
+    Propriedade criada para resolver o caso #410 relatado no MANTIS. 
+[-] Corrigido geração do campo CIDE.qBCProd pois estava sendo gerado com o p minúsculo e estava causando erro na validação.
+
+
+Alterações   11/11/09
+---------------
+[*] Modificada funcao ReverterFiltroTextoXML (unit pcnAuxilizr.pas) para também ler caracteres HEXADECIMAIS. (Créditos João Paulo Leão)
+[*] Modificado validação do Código do País conforme relato #407 no MANTIS.
+
+
+Alterações   09/11/09
+---------------
+[-] Corrigido impressão do DANFE RETRATO em RAVE CB quando a fonte for COURIER NEW. 
+[-] Corrigido impressão das Informações Adicionais quando a mesma necessitar ser impressa em mais de uma página.
+    Somente para DANFE em RAVE ARQUIVO (Danfe_Rave513.rav).
+
+
+Alterações   05/11/09
+---------------
+[-] Corrigido tamanho do campo CHAVE DE ACESSO no DANFE com RAVE CB (retrato). 
+    Estava cortando 3 digitos, agora o tamanho da fonte desse campo esta fixo
+[+] Incluídas as propriedades: CasasDecimais._Mask_qCom e CasasDecimais._Mask_vUnCom
+    nos componentes DANFE com RAVE CB e ARQUIVO.
+    - Se especificar uma mascara nessa propriedade, será desconsiderado o tamanho de casas decimais
+      estipulado da referida TAG. Se estiver em branco o componente considera a quantidade de casas
+      especificadas e montará a mascara padrão para a mesma (padrão).
+
+Alterações   04/11/09
+---------------
+[-] Corrigido Impressão no DANFE com RAVE ARQUIVO (DANFE_Rave513.rav).
+    - Não estava imprimindo corretamente quando especificava uma MargemInferior maior que 0,8 no componente
+    - Em alguns casos ficava um loop infinito no "Generating Page..." 
+    Importante: Atualizem os arquivos .RAV no sistema
+
+Alterações   03/11/09
+---------------
+[-] Corrigido Tamanho da Fonte no DANFE em RAVE CB e RAVE Arquivo.
+    Segundo o ítem 7.7.9 (Conteúdo dos Demais Campos) no Manual no Integração 4.0, os campos devem ter valor mínimo de 10 e estava com o 
+    valor padrão de 8.
+    Para corrigir o problema foi incluída uma propriedade chamada TamanhoFonte_DemaisCampos com valor padrão de 10, quem quiser usar outro valor 
+    basta estipular nessa propriedade.
+
+Alterações   28/10/09
+---------------
+[-] Corrigido geração das informações adicionais no xml, caso seja adicionado apenas uma linha de observação.
+
+Alterações   27/10/09
+---------------
+[-] Corrigido impressão do DANFE PAISAGEM em RAVE CB. 
+    Quando tinha mais de um ítem, só reimprimia as informações do primeiro ítem impresso.
+[-] Corrigido impressão do DANFE RETRATO em RAVE CB quando a fonte for COURIER NEW. 
+
+Alterações   22/10/09
+---------------
+[+] Adicionada propriedade MostrarStatus (padrão TRUE) nos componentes DANFE (RAVE arquivo e CB)
+    - Quando valor da propriedade for FALSE não será exibido a janela "Generating Page ..." do RAVE.
+      Útil (por exemplo) na criação do PDF para enviar no email e quando desejar mostrar uma janela personalizada enquanto gera o DANFE.
+
+Alterações   21/10/09
+---------------
+[*] Arquivo instala.bat das DLLs da versão CAPICOM alterado para copiar DLLs para o local correto nas versões 64 bits do Windows
+[-] Corrigido erro na leitura da data de vencimento do certificado(Versão CAPICOM) para quando número de série não estava informado
+[*] Sincronizada algumas units do PCN com as versões disponíveis no SVN do Projeto Cooperar.
+[+] Função de cancelamento da NFe, quando for feita com a nota carregada no componente, os campos da tag procNFe serão atualizados no
+    arquivo da NFe.
+[+] DANFE em RAVE CB
+    - Ao imprimir um DANFE de um XML que ainda não tem número de protocolo e o tipo de emissão é normal ou dpec, ele imprimirá uma 
+      mensagem no DANFE alertando o usuário que a nota ainda não foi autorizada (créditos João Paulo S. Leão)
+    - Incluída propriedade ImprimirDetalhamentoEspecifico (padrão TRUE).
+      Quando for false não serão impressos informações de Detahamento específico (Veiculos, Combustiveis, Medicamentos, etc). 
+      Será útil para quem quiser exibir as referidas informações de maneira personalizada.
+
+Alterações   16/10/09
+---------------
+[*] DANFE em RAVE ARQUIVO
+    - Modificada diretiva para compatibilidade com o Delphi 2010. (créditos Luis Henrique)
+
+Alterações   15/10/09
+---------------
+[*] DANFE em RAVE ARQUIVO
+    - Quando a TAG qVol tiver valor 0 (zero) a mesma não será impressa no DANFE.
+[-] Arquivo DANFE_Rave513.rav para o DANFE em Rave Arquivo, não estava imprimindo mais de uma duplicata quando ia reimprimir um XML.
+
+Alterações   14/10/09
+---------------
+[*] DANFE em RAVE CB (créditos João Paulo S. Leão)
+    - Corrigido local de impressão das Informações do Fisco, pois a mesma tem que ser impressa no quadro Informações Complementares
+    - Propriedade FormularioContinuo agora esta funcional em RAVE CB. Antes só estava funcionando em RAVE ARQUIVO.
+      Se estiver TRUE não será impresso molduras e descrições de campo no canhoto e EMITENTE.  
+[+] DANFE em RAVE CB (créditos João Paulo S. Leão)
+    - Incluída Propriedade EspessuraBorda (padrão 2). Em algumas impressoras esta propriedade pode não surtir efeito.
+    - Incluída Propriedade ExpandirLogoMarca (padrão FALSE). Se a mesma estiver TRUE o logo ocupará todo o espaço do quadro Dados do Emitente.
+      Funcional para quem quiser personalizar o quadro Dados do Emitente. Para isso basta estipular a imagem personalizada no campo LOGO e
+      setar essa propriedade para TRUE.
+[+] DANFE em Rave Arquivo (.rav): 
+    - Incluída Propriedade ExpandirLogoMarca (padrão FALSE). Se a mesma estiver TRUE o logo ocupará todo o espaço do quadro Dados do Emitente.
+      Funcional para quem quiser personalizar o quadro Dados do Emitente. Para isso basta estipular a imagem personalizada no campo LOGO e
+      setar essa propriedade para TRUE.
+
+Alterações   09/10/09
+---------------
+[*] DANFE em RAVE CB (créditos João Paulo S. Leão)
+    - Corrigido impressão de informações Complementares em mais de Uma Página (Retrato e Paisagem)
+[*] DANFE em Rave Arquivo (.rav): 
+    - Corrigido impressão de informações Complementares em mais de Uma Página 
+      IMPORTANTE: Recurso disponível SOMENTE em no Danfe_Rave513.rav, no arquivo NotaFiscalEletronica.rav essa correção não será implementada
+                  por falta de recursos do RAVE 5.0. 
+                  Nesse caso Utilizem o Danfe_Rave513.rav (somente para RAVE 5.1.3 ou superior) ou 
+                  utilizem o DANFE em Rave CB (somente para Rave 5.0.8 ou superior)
+    - Corrigido local de impressão das Informações do Fisco, pois a mesma tem que ser impressa no quadro Informações Complementares
+
+Alterações   06/10/09
+---------------
+[+] Adicionado evento  OnGerarLog, onde poderá ser usado para gravar as mensagens enviadas pelo componente(Veja no demo como utilizar para 
+    adicionar as mensagens em um memo).
+[+] Adicionada propriedade IntervaloTentativas para definir qual deve ser o intervalo entre as tentativas de consulta de retorno de envio 
+    da NFe. Valor mínimo deve ser 1000(1 segundo)
+[+] Adicionada propriedade AjustaAguardaConsultaRet onde quando for True, a propriedade AguardarConsultaRet será ajustada com o valor do
+    campo tmed do retorno de consulta de status do serviço.
+[-] Alterado geração do campo Dest.IE para permitir valor para quando for pessoa física. Em MG produtores rurais possuem CPF e IE
+[-] Alterado geração da tag qTemp para ser gerada apenas qdo tiver algum conteúdo
+[-] Corrigido criação da tag UFCons, estava como UFcons
+
+Alterações   05/10/09 
+---------------
+[-] Corrigido vazamentos de memória em Thread de envio de e-mail (Daniel Simões de Almeida)
+[+] Adicionada propriedades AguardarConsultaRet e Tentativas nas configurações do WebService. Estas propriedades apenas serão utilizadas
+    na consulta de retorno da autorização da NFe, por padrão o números de tentativas atual do componente está como 5, então está propriedade
+    será criada com este valor, mas poderá ser alterado para o valor que o desenvolvedor desejar. A propriedade AguardarConsultaRet  deve
+    ser informada em MiliSegundos, onde 1000 equivale a 1 segundo. O valor informado na propriedade AguardarConsultaRet será usado para 
+    aguardar antes de efetuar a primeira consulta, por padrão está com 0 que é o valor utilizado hoje no componente. Para dias em que os 
+    servidores do sefaz estiverem apresentando problemas de lentidão, esta propriedae poderá ser alterada. 
+
+Alterações   29/09/09
+---------------
+[-] Alterado linhas onde existia Path+'\' para PathWithDelim(Path)
+[-] Corrigido retorno das funções EnviarDPEC, ConsultarDPEC e Consulta de Cadastro, para retornarem True quando o comando for executado
+    com sucesso(Estava retornando sempre False)
+[+] Adicionado propriedade Fonte no componente ACBrNFeDanfeRaveCB, onde pode ser usado ftTimes - para Times New Romam e ftCourier - para
+    Courier New
+
+Alterações   25/09/09
+---------------
+[-] Impressão dos dados (quando houver) no quadro Inf. Adicional do Fisco no RAVE CB
+
+
+Alterações   24/09/09
+---------------
+[*] Alterado URLs do DF para usarem URLs do SVRS
+[-] Corrigida funcção TACBrNFe.Consultar que estava consultando apenas primeira nota quando existia mais de uma nota carregada no componente.
+[*] Alterado função Assinar para atualizar XML quando for usado o comando LoadFromFile
+[-] Corrigido retorno das propriedades PathNFe, PathInu, PathCan e PathDPEC
+
+Alterações   23/09/09
+---------------
+[+] Incluída propriedade ImprimirHoraSaida_Hora nos componentes DANFE.
+    Se a propriedade ImprimirHoraSaida estiver true e a propriedade ImprimirHoraSaida_Hora estiver preenchida
+    será impressa o valor estipulado na propriedade ImprimirHoraSaida_Hora. Caso não tenha nenhum valor especificado
+    será impresso a HORA ATUAL.
+[+] Incluído propriedade FormularioContinuo nos componentes DANFE.
+    Se estiver TRUE não será impresso molduras e descrições de campo no canhoto e EMITENTE.
+    OBS: Por enquanto essa propriedade esta funcional somente para opção do DANFE em ARQUIVO (.rav)
+
+
+Alterações   18/09/09
+---------------
+[+] Danfe em Rave Arquivo (.rav) imprime um resumo no canhoto igual ao RAVE em DANFE CB.
+    Quando a propriedade ExibirResumoCanhoto estiver TRUE será exibido esse resumo.
+    Funcionalidade já existia no DANFE em RAVE CB e agora foi incluida no DANFE em RAVE ARQUIVO.
+    IMPORTANTE: ATUALIZE OS ARQUIVOS .RAV NO SEU SISTEMA
+[+] Incluída propriedade TamanhoCampoCódigo no Danfe em RAVE CB.
+    Quando o valor dessa propriedade for ZERO será utilizado o valor padrão da mesma.
+[+] Incluída propriedade ImprimirTotalLiquido no componente DANFE (Arquivo e CB)
+    Se estiver TRUE será exibido V.LIQUIDO no quadro DADOS DO PRODUTO/SERVICO e o valor da mesma sera vProd-vDesc
+    Padrão da Propriedade é FALSE.
+[+] Incluído a impressão do campo VALOR DESCONTO/DESC % no DANFE em RAVE CB (retrato e paisagem)
+    Se a propriedade ImprimirDescPorc for TRUE será impresso o desconto em percentual.
+    Funcionalidade já existia no DANFE em RAVE ARQUIVO e agora foi incluida no DANFE em RAVE CB.
+
+
+Alterações   17/09/09
+---------------
+[+] Impressão dos campos de medicamento do DANFe Rave CB
+[*] Leitura da propriedade PathPDF modificada, para verificar se o diretório configurado existe e caso não exista será criado automaticamente
+[+] Adicionada novas propriedades no componente ACBrNFe para salvar arquivos em pastas separadas.
+    -Salvar  - Propriedade booleana para indicar se os arquivos devem ou não ser salvos em pastas específicas
+    -PathNfe - Pasta para salvar os arquivos da NFE, terminados com -nfe.xml
+    -PathCan - Pasta para salvar arquivos de pedido e resposta de cancelamento, terminados em -ped-can.xml e -can.xml
+    -PathInu - Pasta para salvar arquivos de pedido e resposta de inutilização, terminados em -ped-inu.xml e -inu.xml
+    -PathDPEC - Pasta para salvar arquivos de pedido e resposta de DPEC, terminados em -env-dpec.xml e ret-dpec.xml
+    -PastaMensal - Propriedade booleana para indicar se deve ser criado um subdiretório com mes e ano dentro das pastas configuradas
+		   nas propriedades Path.. citadas acima. Exemplo: PathNFe = C:\ACBr\NFe os arquivos serao salvos em C:\ACBr\NFe\200909
+
+    -AdicionarLiteral - Propriedade booleana para indicar se deve ser adicionada a literal do arquivo na pasta. Exemplo: 
+	                PathNFe = C:\ACBr\Arqs será criado a pasta C:\ACBr\Arqs\NFe
+			Caso a propriedade PastaMensal esteja True e AdicionarLiteral tabém esteja True, as pastas serão criadas da
+                        seguinte forma: PathNFe = C:\ACBr\Arqs será criado a pasta C:\ACBr\Arqs\200909\NFe 
+[-] Correção da impressão do canhoto no DANFE RAVE CB PAISAGEM, quando o nome do emitente for muito grande.
+
+
+Alterações   16/09/09
+---------------
+[*] Na impressão do DANFE (RAVE CB) quando a razão social for muito grande, a mesma será quebrada em duas linhas.
+    Se (devido ao tamanho Razão Social) o espaço do canhoto "estourar", o mesmo será impresso em duas linhas e será desconsiderado
+    a propriedade ExibirResumoCanhoto
+[-] Corrigido impressão de Separador de Milhar (.) na função FormatFloat da unit ACBrNFeUtil.pas
+
+Alterações   15/09/09
+---------------
+[*] Na rotina de consulta, adicionada linha para atualizar a propriedade Confirmada da NFe(cStat = 100).
+[-] Na impressão do DANFE, caso não exista o protocolo não será mais impresso a data 31/12/1899
+[-] Corrigido endereço da URL de recepção no ambiente de homologação do estado do CEARÁ
+
+Alterações   14/09/09
+---------------
+[-] Corrigido criação do arquivo PDF na pasta correta quando estiver configurado a propriedade PathPDF. Caso a propriedade PathPDF
+    não esteja preenchida, será usado o valor da variável PathSalvar e caso também não esteja preenchida, será gravado na 
+    pasta do programa.
+[-] Corrigido geração do campo cPais do destinatário, para sempre gerar com 4 dígitos.
+
+Alterações   11/09/09
+---------------
+[-] Correção para leitura da variável XML com o protocolo de autorização, quando lida após o envio da NFe
+
+Alterações   10/09/09
+---------------
+[-] Corrigido função LerCampo (unit pcnNFeRTXT), para quando ler um campo data vazio, não retornar erro.
+
+Alterações   09/09/09
+---------------
+[*] Adicionado URL de Consulta ao Cadastro em ambiente de produção para MG
+[-] Correção na rotina de consulta para quando não houver nota carregada no componente(Consulta efetuada apenas pela chave)
+[*] Impressão dos campos InfAdic.obsCont nas Informações Adicionais do RAVE em CB
+
+Alterações   08/09/09
+---------------
+[-] Alterado rotina de consulta da NFe para atualizar a tag procNfe qdo o arquivo for carregado(LoadFromFile)
+
+Alterações   06/09/09
+---------------
+[-] Alterado forma de atualização da tag procNFe no arquivo XML da NFe.
+
+Alterações   03/09/09
+---------------
+[*] Alterado URL de Rondônia para utilizarem os serviços da SEFAZ Virtual do Rio Grande do Sul (SVRS).  
+[*] Alterado função para calcular nome do arquivo PDF. Será gerado apenas com a chave da nfe .pdf sem a literal NFe
+[-] Alterado função NotasFiscais.SaveToFile para pegar apenas Path do Nome passado na função.
+[-] Corrigido CSTAT do retorno do envio para atribuir CSTAT da Nota apenas qdo lote estiver processado.
+[*] Alterado geração da Inutilização para CNPJ ser gerado somente com números, sem máscara.
+
+Alterações 02/04/09 - Realizadas por Dulcemar Zilli
+[*] Ajustes para o Pacote PL_005c
+[+] Acrescentado Observações do Fisco
+[+] Incluida Informações Reboque Transportador
+[+] Incluida Informações ISSQN e Retenções Tributos e Totalizadores Gerais
+[+] Adicionadas as Complementação Emitente, IEST, IM, CNAE
+[-] Separados GTIN da Unidade Tributavel, Unidade Tributavel, Quantidade Tributavel e 
+    Valor Unitario Tributavel de EAN, Unidade de Comercializações, Quantidade e 
+    Valor Unitario pois não necessariamente as duas são iguais e  nem todos os 
+    produtos tem estas informação, que é aplicado mais em casos de 
+    comercialização de combustiveis. No caso da Unidade de Tributação não ser 
+    informada ela usa por default a Unidade de Comercialização, neste caso a GTIN 
+    fica em branco e os demais campo zerado.  
+[*] Alterado relatorio da DANFE p/ impressão de ISSQN e totais, bem como IPI, 
+    Observações do Fisco, etc.
+
+
+Versão 0.02a   29/03/09
+---------------
+[+] Adicionado opção para gerar Danfe em PDF
+[-] Corrigido XML de Cancelamento e Inutilização para incluir o encoding=UTF-8
+[+] Adicionada função que permite que ; (ponto e vírgula) seja considerada que-
+    bra de linha no campo informações complementares.
+
+Versão 0.01a   18/02/09
+---------------
+[+] Início do Projeto
+[+] Primeira Versao lançada baseado no componente fornecido por Wemerson Souto.
+
+
+
+

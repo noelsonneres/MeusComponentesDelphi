@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <Package Version="4">
+    <PathDelim Value="\"/>
+    <Name Value="ACBr_BPe"/>
+    <Type Value="RunAndDesignTime"/>
+    <Author Value="Juliomar Marchetti"/>
+    <CompilerOptions>
+      <Version Value="11"/>
+      <PathDelim Value="\"/>
+      <SearchPaths>
+        <OtherUnitFiles Value="..\..\..\..\Fontes\ACBrDFe\ACBrBPe\PCNBPe;..\..\..\..\Fontes\ACBrDFe\ACBrBPe\DABPE;..\..\..\..\Fontes\ACBrDFe\ACBrBPe"/>
+        <UnitOutputDirectory Value="..\..\..\..\Lib\Lazarus\ACBrDFe\ACBrBPe\$(TargetCPU)-$(TargetOS)"/>
+      </SearchPaths>
+    </CompilerOptions>
+    <Description Value="ACBr - Bilhete de Passagem Eletrônica - (http://www.projetoacbr.com.br/)"/>
+    <License Value="LGPL"/>
+    <Files Count="18">
+      <Item1>
+        <Filename Value="..\..\..\..\Fontes\ACBrDFe\ACBrBPe\PCNBPe\pcnBPe.pas"/>
+        <UnitName Value="pcnBPe"/>
+      </Item1>
+      <Item2>
+        <Filename Value="..\..\..\..\Fontes\ACBrDFe\ACBrBPe\PCNBPe\pcnBPeR.pas"/>
+        <UnitName Value="pcnBPeR"/>
+      </Item2>
+      <Item3>
+        <Filename Value="..\..\..\..\Fontes\ACBrDFe\ACBrBPe\PCNBPe\pcnBPeW.pas"/>
+        <UnitName Value="pcnBPeW"/>
+      </Item3>
+      <Item4>
+        <Filename Value="..\..\..\..\Fontes\ACBrDFe\ACBrBPe\PCNBPe\pcnConsSitBPe.pas"/>
+        <UnitName Value="pcnConsSitBPe"/>
+      </Item4>
+      <Item5>
+        <Filename Value="..\..\..\..\Fontes\ACBrDFe\ACBrBPe\PCNBPe\pcnConversaoBPe.pas"/>
+        <UnitName Value="pcnConversaoBPe"/>
+      </Item5>
+      <Item6>
+        <Filename Value="..\..\..\..\Fontes\ACBrDFe\ACBrBPe\PCNBPe\pcnEnvEventoBPe.pas"/>
+        <UnitName Value="pcnEnvEventoBPe"/>
+      </Item6>
+      <Item7>
+        <Filename Value="..\..\..\..\Fontes\ACBrDFe\ACBrBPe\PCNBPe\pcnEventoBPe.pas"/>
+        <UnitName Value="pcnEventoBPe"/>
+      </Item7>
+      <Item8>
+        <Filename Value="..\..\..\..\Fontes\ACBrDFe\ACBrBPe\PCNBPe\pcnProcBPe.pas"/>
+        <UnitName Value="pcnProcBPe"/>
+      </Item8>
+      <Item9>
+        <Filename Value="..\..\..\..\Fontes\ACBrDFe\ACBrBPe\PCNBPe\pcnRetConsSitBPe.pas"/>
+        <UnitName Value="pcnRetConsSitBPe"/>
+      </Item9>
+      <Item10>
+        <Filename Value="..\..\..\..\Fontes\ACBrDFe\ACBrBPe\PCNBPe\pcnRetEnvBPe.pas"/>
+        <UnitName Value="pcnRetEnvBPe"/>
+      </Item10>
+      <Item11>
+        <Filename Value="..\..\..\..\Fontes\ACBrDFe\ACBrBPe\PCNBPe\pcnRetEnvEventoBPe.pas"/>
+        <UnitName Value="pcnRetEnvEventoBPe"/>
+      </Item11>
+      <Item12>
+        <Filename Value="..\..\..\..\Fontes\ACBrDFe\ACBrBPe\ACBrBPe.pas"/>
+        <UnitName Value="ACBrBPe"/>
+      </Item12>
+      <Item13>
+        <Filename Value="..\..\..\..\Fontes\ACBrDFe\ACBrBPe\ACBrBPeBilhetes.pas"/>
+        <UnitName Value="ACBrBPeBilhetes"/>
+      </Item13>
+      <Item14>
+        <Filename Value="..\..\..\..\Fontes\ACBrDFe\ACBrBPe\ACBrBPeConfiguracoes.pas"/>
+        <UnitName Value="ACBrBPeConfiguracoes"/>
+      </Item14>
+      <Item15>
+        <Filename Value="..\..\..\..\Fontes\ACBrDFe\ACBrBPe\ACBrBPeReg.pas"/>
+        <HasRegisterProc Value="True"/>
+        <UnitName Value="ACBrBPeReg"/>
+      </Item15>
+      <Item16>
+        <Filename Value="..\..\..\..\Fontes\ACBrDFe\ACBrBPe\ACBrBPeWebServices.pas"/>
+        <UnitName Value="ACBrBPeWebServices"/>
+      </Item16>
+      <Item17>
+        <Filename Value="..\..\..\..\Fontes\ACBrDFe\ACBrBPe\DABPE\ACBrBPeDABPEClass.pas"/>
+        <UnitName Value="ACBrBPeDABPEClass"/>
+      </Item17>
+      <Item18>
+        <Filename Value="..\..\..\..\Fontes\ACBrDFe\ACBrBPe\PCNBPe\pcnBPeConsts.pas"/>
+        <UnitName Value="pcnBPeConsts"/>
+      </Item18>
+    </Files>
+    <RequiredPkgs Count="1">
+      <Item1>
+        <PackageName Value="ACBrDFeComum"/>
+      </Item1>
+    </RequiredPkgs>
+    <UsageOptions>
+      <UnitPath Value="$(PkgOutDir)"/>
+    </UsageOptions>
+    <PublishOptions>
+      <Version Value="2"/>
+    </PublishOptions>
+  </Package>
+</CONFIG>

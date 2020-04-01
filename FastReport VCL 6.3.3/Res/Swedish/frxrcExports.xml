@@ -1,0 +1,274 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<Resources CodePage="1252">
+  <StrRes Name="8000" Text="Exportera till Excel"/>
+  <StrRes Name="8001" Text="Stil"/>
+  <StrRes Name="8002" Text="Bilder"/>
+  <StrRes Name="8003" Text="Sammafoga celler"/>
+  <StrRes Name="8004" Text="Snabb exportering"/>
+  <StrRes Name="8005" Text="WYSIWYG"/>
+  <StrRes Name="8006" Text="Som text"/>
+  <StrRes Name="8007" Text="Bakgrund"/>
+  <StrRes Name="8008" Text="Öppna Excel efter export"/>
+  <StrRes Name="8009" Text="Excel fil (*.xls)|*.xls"/>
+  <StrRes Name="8010" Text=".xls"/>
+  <StrRes Name="8100" Text="Exportera till Excel"/>
+  <StrRes Name="8101" Text="Stil"/>
+  <StrRes Name="8102" Text="WYSIWYG"/>
+  <StrRes Name="8103" Text="Bakgrund"/>
+  <StrRes Name="8104" Text="Öppna Excel efter export"/>
+  <StrRes Name="8105" Text="XML Excel fil (*.xls)|*.xls"/>
+  <StrRes Name="8106" Text=".xls"/>
+  <StrRes Name="8200" Text="Exportera till HTML tabell"/>
+  <StrRes Name="8201" Text="Öppna efter export"/>
+  <StrRes Name="8202" Text="Stil"/>
+  <StrRes Name="8203" Text="Bilder"/>
+  <StrRes Name="8204" Text="Alla i en mapp"/>
+  <StrRes Name="8205" Text="Fast bredd"/>
+  <StrRes Name="8206" Text="Sidnavigator"/>
+  <StrRes Name="8207" Text="Flera sidor"/>
+  <StrRes Name="8208" Text="Mozillaläsare"/>
+  <StrRes Name="8209" Text="Bakgrund"/>
+  <StrRes Name="8210" Text="HTML fil (*.html)|*.html"/>
+  <StrRes Name="8211" Text=".html"/>
+  <StrRes Name="8300" Text="Exportera till text"/>
+  <StrRes Name="8301" Text="Förhandsgranska av/på"/>
+  <StrRes Name="8302" Text=" Exportinställningar "/>
+  <StrRes Name="8303" Text="Sidbrytning"/>
+  <StrRes Name="8304" Text="Kodsida"/>
+  <StrRes Name="8305" Text="Tomma rader"/>
+  <StrRes Name="8306" Text="Inledande mellanslag"/>
+  <StrRes Name="8307" Text="Sidnummer"/>
+  <StrRes Name="8308" Text="Skriv in sidnummer och/eller sidintervall avgränsade med kommatecken, t.ex 1,3,5-12."/>
+  <StrRes Name="8309" Text=" Skala "/>
+  <StrRes Name="8310" Text="X skalning"/>
+  <StrRes Name="8311" Text="Y skalning"/>
+  <StrRes Name="8312" Text=" Ramar "/>
+  <StrRes Name="8313" Text="Inga"/>
+  <StrRes Name="8314" Text="Enkel"/>
+  <StrRes Name="8315" Text="Grafik"/>
+  <StrRes Name="8316" Text="Bara med kodsida"/>
+  <StrRes Name="8317" Text="Skriv ut efter export"/>
+  <StrRes Name="8318" Text="Spara inställningar"/>
+  <StrRes Name="8319" Text=" Föhandsgranska "/>
+  <StrRes Name="8320" Text="Bredd:"/>
+  <StrRes Name="8321" Text="Höjd:"/>
+  <StrRes Name="8322" Text="Sida"/>
+  <StrRes Name="8323" Text="Zooma in"/>
+  <StrRes Name="8324" Text="Zooma out"/>
+  <StrRes Name="8325" Text="Textfil (*.prn)|*.prn"/>
+  <StrRes Name="8326" Text=".prn"/>
+  <StrRes Name="8400" Text="Skriv ut"/>
+  <StrRes Name="8401" Text="Skrivare"/>
+  <StrRes Name="8402" Text="Namn"/>
+  <StrRes Name="8403" Text="Inställningar..."/>
+  <StrRes Name="8404" Text="Kopior"/>
+  <StrRes Name="8405" Text="Antal kopior"/>
+  <StrRes Name="8406" Text=" Skrivare förinställning "/>
+  <StrRes Name="8407" Text="Skrivartyp"/>
+  <StrRes Name="8408" Text=".fpi"/>
+  <StrRes Name="8409" Text="Skrivare förinställningsfil (*.fpi)|*.fpi"/>
+  <StrRes Name="8410" Text=".fpi"/>
+  <StrRes Name="8411" Text="Skrivare förinställningsfil (*.fpi)|*.fpi"/>
+  <StrRes Name="8500" Text="Exportera till rtf"/>
+  <StrRes Name="8501" Text="Bilder"/>
+  <StrRes Name="8502" Text="WYSIWYG"/>
+  <StrRes Name="8503" Text="Öppna efter export"/>
+  <StrRes Name="8504" Text="Rtf-fil (*.rtf)|*.rtf"/>
+  <StrRes Name="8505" Text=".rtf"/>
+  <StrRes Name="8600" Text="Exportinställningar"/>
+  <StrRes Name="8601" Text=" Bildinställningar "/>
+  <StrRes Name="8602" Text="Jpeg-kvalité"/>
+  <StrRes Name="8603" Text="Upplösning (dpi)"/>
+  <StrRes Name="8604" Text="Separata filer"/>
+  <StrRes Name="8605" Text="Begränsa sidor"/>
+  <StrRes Name="8606" Text="Monokrom"/>
+  <StrRes Name="8700" Text="Exportera till pdf"/>
+  <StrRes Name="8701" Text="Komprimerad"/>
+  <StrRes Name="8702" Text="Inkludera fonter"/>
+  <StrRes Name="8703" Text="SKriv ut optimerad"/>
+  <StrRes Name="8704" Text="Bakgrund"/>
+  <StrRes Name="8705" Text="Öppna efter export"/>
+  <StrRes Name="8706" Text="Översikt"/>
+  <StrRes Name="8707" Text="Pdf-fil (*.pdf)|*.pdf"/>
+  <StrRes Name="8708" Text=".pdf"/>
+  <StrRes Name="RTFexport" Text="Rtf-fil"/>
+  <StrRes Name="BMPexport" Text="Bmp-bild"/>
+  <StrRes Name="JPEGexport" Text="Jpeg-bild"/>
+  <StrRes Name="TIFFexport" Text="Tiff-bild"/>
+  <StrRes Name="TextExport" Text="Text"/>
+  <StrRes Name="XlsOLEexport" Text="Excel-tabell (OLE)"/>
+  <StrRes Name="HTMLexport" Text="HTML fil"/>
+  <StrRes Name="XlsXMLexport" Text="Excel-tabell (XML)"/>
+  <StrRes Name="PDFexport" Text="Pdf-fil"/>
+  <StrRes Name="ProgressWait" Text="Vänligen vänta"/>
+  <StrRes Name="ProgressRows" Text="Skapar rader"/>
+  <StrRes Name="ProgressColumns" Text="Skapar kolumner"/>
+  <StrRes Name="ProgressStyles" Text="Skapar stil"/>
+  <StrRes Name="ProgressObjects" Text="Exporterar objekt"/>
+  <StrRes Name="TIFFexportFilter" Text="Tiff-bild (*.tif)|*.tif"/>
+  <StrRes Name="BMPexportFilter" Text="Bmp-bild (*.bmp)|*.bmp"/>
+  <StrRes Name="JPEGexportFilter" Text="Jpeg-bild (*.jpg)|*.jpg"/>
+  <StrRes Name="HTMLNavFirst" Text="Första"/>
+  <StrRes Name="HTMLNavPrev" Text="Förra"/>
+  <StrRes Name="HTMLNavNext" Text="Nästa"/>
+  <StrRes Name="HTMLNavLast" Text="Sista"/>
+  <StrRes Name="HTMLNavRefresh" Text="Läs om"/>
+  <StrRes Name="HTMLNavPrint" Text="Skriv ut"/>
+  <StrRes Name="HTMLNavTotal" Text="Totalt antal sidor"/>
+  <StrRes Name="8800" Text="Exportera till text"/>
+  <StrRes Name="8801" Text="Text-fil (*.txt)|*.txt"/>
+  <StrRes Name="8802" Text=".txt"/>
+  <StrRes Name="SimpleTextExport" Text="Text-fil"/>
+  <StrRes Name="8850" Text="Exportera till csv"/>
+  <StrRes Name="8851" Text="Csv-fil (*.csv)|*.csv"/>
+  <StrRes Name="8852" Text=".csv"/>
+  <StrRes Name="8853" Text="Separera med"/>
+  <StrRes Name="CSVExport" Text="Csv-fil"/>
+  <StrRes Name="8900" Text="Skicka med mejl"/>
+  <StrRes Name="8901" Text="Mejl"/>
+  <StrRes Name="8902" Text="Konto"/>
+  <StrRes Name="8903" Text="Uppkoppling"/>
+  <StrRes Name="8904" Text="Adress"/>
+  <StrRes Name="8905" Text="Bilagor"/>
+  <StrRes Name="8906" Text="Format"/>
+  <StrRes Name="8907" Text="Från adress"/>
+  <StrRes Name="8908" Text="Från namn"/>
+  <StrRes Name="8909" Text="Värd"/>
+  <StrRes Name="8910" Text="Login"/>
+  <StrRes Name="8911" Text="Mejl"/>
+  <StrRes Name="8912" Text="Meddelande"/>
+  <StrRes Name="8913" Text="Text"/>
+  <StrRes Name="8914" Text="Organisation"/>
+  <StrRes Name="8915" Text="Lösen"/>
+  <StrRes Name="8916" Text="Port"/>
+  <StrRes Name="8917" Text="Kom ihåg egenskaper"/>
+  <StrRes Name="8918" Text="Nödvändiga fält är inte ifyllda"/>
+  <StrRes Name="8919" Text="Avancerade export inställningar"/>
+  <StrRes Name="8920" Text="Signatur"/>
+  <StrRes Name="8921" Text="Build"/>
+  <StrRes Name="8922" Text="Ämne"/>
+  <StrRes Name="8923" Text="Varma hälsningar"/>
+  <StrRes Name="8924" Text="Skicka mejl till"/>
+  <StrRes Name="EmailExport" Text="Mejl"/>
+  <StrRes Name="FastReportFile" Text="FastReport-fil"/>
+  <StrRes Name="GifexportFilter" Text="Gif-fil (*.gif)|*.gif"/>
+  <StrRes Name="GIFexport" Text="Gif-bild"/>
+  <StrRes Name="8950" Text="Oändlig"/>
+  <StrRes Name="8951" Text="Sidhuvud/fot"/>
+  <StrRes Name="8952" Text="Text"/>
+  <StrRes Name="8953" Text="Huvud/fot"/>
+  <StrRes Name="8954" Text="Ingen"/>
+  <StrRes Name="ODSExportFilter" Text="Öppna kalkylark (*.ods)|*.ods"/>
+  <StrRes Name="ODSExport" Text="Öppna kalkylark"/>
+  <StrRes Name="ODTExportFilter" Text="Öppna dokument (*.odt)|*.odt"/>
+  <StrRes Name="ODTExport" Text="Öppna dokument"/>
+  <StrRes Name="8960" Text=".ods"/>
+  <StrRes Name="8961" Text=".odt"/>
+  <StrRes Name="8962" Text="Säkerhet"/>
+  <StrRes Name="8963" Text="Säkerhetsinställningar"/>
+  <StrRes Name="8964" Text="Ägarlösenord"/>
+  <StrRes Name="8965" Text="Användarlösenord"/>
+  <StrRes Name="8966" Text="Skriv ut"/>
+  <StrRes Name="8967" Text="Ändra"/>
+  <StrRes Name="8968" Text="Kopiera text och grafik"/>
+  <StrRes Name="8969" Text="Justera kommentarer"/>
+  <StrRes Name="8970" Text="Pdf-säkerhet"/>
+  <StrRes Name="8971" Text="Dokumentinformation"/>
+  <StrRes Name="8972" Text="Information"/>
+  <StrRes Name="8973" Text="Titel"/>
+  <StrRes Name="8974" Text="Författare"/>
+  <StrRes Name="8975" Text="Ämne"/>
+  <StrRes Name="8976" Text="Nyckelord"/>
+  <StrRes Name="8977" Text="Skapare"/>
+  <StrRes Name="8978" Text="Producent"/>
+  <StrRes Name="8979" Text="Autentisering"/>
+  <StrRes Name="8980" Text="Tillstånd"/>
+  <StrRes Name="8981" Text="Visare"/>
+  <StrRes Name="8982" Text="Visarinställningar"/>
+  <StrRes Name="8983" Text="Göm verktygsrad"/>
+  <StrRes Name="8984" Text="Göm meny"/>
+  <StrRes Name="8985" Text="Göm fönstrets användargränsnsitt"/>
+  <StrRes Name="8986" Text="Anpassa fönster"/>
+  <StrRes Name="8987" Text="Centrerar fönster"/>
+  <StrRes Name="8988" Text="Utskriftsskala"/>
+  <StrRes Name="8989" Text="Kontrolläsning"/>
+  <StrRes Name="9101" Text="Exportera till dbf"/>
+  <StrRes Name="9102" Text="dBase (DBF) export"/>
+  <StrRes Name="9103" Text=".dbf"/>
+  <StrRes Name="9104" Text="Kan inte ladda filen"/>
+  <StrRes Name="9105" Text="Misslyckande"/>
+  <StrRes Name="9106" Text="Fältnamn"/>
+  <StrRes Name="9107" Text="Automatiskt"/>
+  <StrRes Name="9108" Text="Manuellt"/>
+  <StrRes Name="9109" Text="Hämta från fil"/>
+  <StrRes Name="9110" Text="Textfiler (*.txt)|*.txt|All files|*.*"/>
+  <StrRes Name="9111" Text="Dbf-filer (*.dbf)|*.dbf|All files|*.*"/>
+  <StrRes Name="expMailAddr" Text="Adress eller kommaseparerade adresser"/>
+  <StrRes Name="PNGexport" Text="Png-bild"/>
+  <StrRes Name="EMFexport" Text="Emf-bild"/>
+  <StrRes Name="PNGexportFilter" Text="Png-bild (*.png)|*.png"/>
+  <StrRes Name="EMFexportFilter" Text="Emf-bild (*.emf)|*.emf"/>
+  <StrRes Name="9000" Text="Antal rader:"/>
+  <StrRes Name="9001" Text="Dela efter sida"/>
+  <StrRes Name="9002" Text="Dela inte"/>
+  <StrRes Name="9003" Text="Använd rapportsidor"/>
+  <StrRes Name="9004" Text="Använd skriv på förälder"/>
+  <StrRes Name="9151" Text="Excel 97/2000/XP-fil"/>
+  <StrRes Name="9152" Text="Automatskapa fil"/>
+  <StrRes Name="9153" Text="Alternativ"/>
+  <StrRes Name="9154" Text="Sida"/>
+  <StrRes Name="9155" Text="Rutnätslinjer"/>
+  <StrRes Name="9156" Text="Allt på en sida"/>
+  <StrRes Name="9157" Text="Datagruppering"/>
+  <StrRes Name="9158" Text="Som rapporten"/>
+  <StrRes Name="9159" Text="Stycken. Varje stycke har (rader):"/>
+  <StrRes Name="9160" Text="Styckestorleken måste vara ett positivt heltal."/>
+  <StrRes Name="9161" Text="Enkelsida ska vara Falsk vid export till stycken."/>
+  <StrRes Name="9162" Text="Författare"/>
+  <StrRes Name="9163" Text="Kommentar"/>
+  <StrRes Name="9164" Text="Nyckelord"/>
+  <StrRes Name="9165" Text="Revision"/>
+  <StrRes Name="9166" Text="Version"/>
+  <StrRes Name="9167" Text="Applikation"/>
+  <StrRes Name="9168" Text="Ämne"/>
+  <StrRes Name="9169" Text="Kategori"/>
+  <StrRes Name="9170" Text="Företag"/>
+  <StrRes Name="9171" Text="Titel"/>
+  <StrRes Name="9172" Text="Manager"/>
+  <StrRes Name="9173" Text="Allmän"/>
+  <StrRes Name="9174" Text="Information"/>
+  <StrRes Name="9175" Text="Skydd"/>
+  <StrRes Name="9176" Text="Lösen"/>
+  <StrRes Name="9177" Text="Anger du ett lösen ord så kommer det att krävas för åtkomst till dokumentet."/>
+  <StrRes Name="9178" Text="Bekräftelse"/>
+  <StrRes Name="9179" Text="Lösenordet är fel."/>
+  <StrRes Name="9180" Text="Du har angett för långt lösenord. Max längd är %d tecken."/>
+  <StrRes Name="9181" Text="Justera sidstorlek"/>
+  <StrRes Name="9182" Text="Export till Excel 97/2000/XP"/>
+  <StrRes Name="9183" Text="Radera tomma rader"/>
+  <StrRes Name="9184" Text="Export formler"/>
+  <StrRes Name="BiffCol" Text="Justerar kolumnstorleken"/>
+  <StrRes Name="BiffRow" Text="Justerar radstorleken"/>
+  <StrRes Name="BiffCell" Text="Exporterar celler"/>
+  <StrRes Name="BiffImg" Text="Exporterar bilder"/>
+  <StrRes Name="9200" Text="Microsoft Excel 2007 XML"/>
+  <StrRes Name="9201" Text="Microsoft PowerPoint 2007 XML"/>
+  <StrRes Name="9203" Text="Microsoft Word 2007 XML"/>
+  <StrRes Name="9204" Text="Microsoft Excel 2007 XML files (*.xlsx)|*.xlsx|All files|*.*"/>
+  <StrRes Name="9205" Text="Microsoft PowerPoint 2007 XML files (*.pptx)|*.pptx|All files|*.*"/>
+  <StrRes Name="9206" Text="Microsoft Word 2007 XML files (*.docx)|*.docx|All files|*.*"/>
+  <StrRes Name="9300" Text="HTML lagrad"/>
+  <StrRes Name="9301" Text="HTML-filer (*.html)|*.html|All files|*.*"/>
+  <StrRes Name="9302" Text="HTML lagrad export"/>
+  <StrRes Name="9303" Text="HTML5 lagrad"/>
+  <StrRes Name="9304" Text="HTML4 lagrad"/>
+  <StrRes Name="9400" Text="Sorterar komponenter"/>
+  <StrRes Name="9401" Text="Skapar komponenter"/>
+  <StrRes Name="9402" Text="Justerar komponenter"/>
+  <StrRes Name="9403" Text="Raderar tomma rader"/>
+  <StrRes Name="9404" Text="Justerar ramar"/>
+  <StrRes Name="9405" Text="Delar stora celler"/>
+  <StrRes Name="9406" Text="Skapar Biff-filer"/>
+  <StrRes Name="xProto" Text="Exportera prototyp"/>
+  <StrRes Name="xBlank" Text="Tom export"/>
+</Resources>

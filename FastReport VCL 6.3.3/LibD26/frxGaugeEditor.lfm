@@ -1,0 +1,897 @@
+object frxGaugeEditorForm: TfrxGaugeEditorForm
+  Tag = 6530
+  Left = 376
+  Height = 446
+  Top = 169
+  Width = 579
+  BorderStyle = bsDialog
+  Caption = 'Gauge Editor'
+  ClientHeight = 446
+  ClientWidth = 579
+  Color = clBtnFace
+  Font.Color = clWindowText
+  Font.Height = -10
+  Font.Name = 'Tahoma'
+  OnClose = FormClose
+  OnCreate = FormCreate
+  Position = poScreenCenter
+  LCLVersion = '1.8.4.0'
+  object SamplePaintBox: TPaintBox
+    Left = 8
+    Height = 169
+    Top = 232
+    Width = 169
+    Anchors = [akLeft, akBottom]
+    OnPaint = SamplePaintBoxPaint
+  end
+  object CancelButton: TButton
+    Tag = 2
+    Left = 499
+    Height = 24
+    Top = 416
+    Width = 73
+    Anchors = [akRight, akBottom]
+    Caption = 'Cancel'
+    ModalResult = 2
+    TabOrder = 4
+  end
+  object OkButton: TButton
+    Tag = 1
+    Left = 421
+    Height = 24
+    Top = 416
+    Width = 73
+    Anchors = [akRight, akBottom]
+    Caption = 'OK'
+    ModalResult = 1
+    TabOrder = 3
+  end
+  object FillButton: TButton
+    Tag = 6383
+    Left = 6
+    Height = 20
+    Top = 6
+    Width = 78
+    Caption = 'Fill...'
+    OnClick = FillButtonClick
+    TabOrder = 0
+  end
+  object FrameButton: TButton
+    Tag = 5103
+    Left = 6
+    Height = 20
+    Top = 33
+    Width = 78
+    Caption = 'Frame...'
+    OnClick = FrameButtonClick
+    TabOrder = 1
+  end
+  object GaugeOptionsPageControl: TPageControl
+    Left = 192
+    Height = 400
+    Top = 16
+    Width = 384
+    ActivePage = GeneralTabSheet
+    Anchors = [akTop, akRight, akBottom]
+    TabIndex = 0
+    TabOrder = 2
+    object GeneralTabSheet: TTabSheet
+      Tag = 6380
+      Caption = 'General'
+      ClientHeight = 375
+      ClientWidth = 376
+      object GaugeKindLabel: TLabel
+        Tag = 6534
+        Left = 12
+        Height = 12
+        Top = 17
+        Width = 56
+        Caption = 'Gauge Kind:'
+        ParentColor = False
+      end
+      object MinimumLabel: TLabel
+        Tag = 6536
+        Left = 12
+        Height = 12
+        Top = 44
+        Width = 44
+        Caption = 'Minimum:'
+        ParentColor = False
+      end
+      object MaximumLabel: TLabel
+        Tag = 6537
+        Left = 12
+        Height = 12
+        Top = 71
+        Width = 46
+        Caption = 'Maximum:'
+        ParentColor = False
+      end
+      object MajorStepLabel: TLabel
+        Tag = 6539
+        Left = 12
+        Height = 12
+        Top = 179
+        Width = 53
+        Caption = 'Major Step:'
+        ParentColor = False
+      end
+      object CurrentValueLabel: TLabel
+        Tag = 6538
+        Left = 12
+        Height = 12
+        Top = 98
+        Width = 28
+        Caption = 'Value:'
+        ParentColor = False
+      end
+      object MinorStepLabel: TLabel
+        Tag = 6540
+        Left = 12
+        Height = 12
+        Top = 206
+        Width = 53
+        Caption = 'Minor Step:'
+        ParentColor = False
+      end
+      object StartValueLabel: TLabel
+        Tag = 6552
+        Left = 198
+        Height = 12
+        Top = 98
+        Width = 52
+        Caption = 'Start Value:'
+        ParentColor = False
+      end
+      object EndValueLabel: TLabel
+        Tag = 6553
+        Left = 12
+        Height = 12
+        Top = 125
+        Width = 49
+        Caption = 'End Value:'
+        ParentColor = False
+      end
+      object AngleLabel: TLabel
+        Tag = 6554
+        Left = 12
+        Height = 12
+        Top = 152
+        Width = 30
+        Caption = 'Angle:'
+        ParentColor = False
+      end
+      object GaugeKindComboBox: TComboBox
+        Left = 126
+        Height = 20
+        Top = 14
+        Width = 229
+        ItemHeight = 12
+        OnChange = ComboBoxChange
+        Style = csDropDownList
+        TabOrder = 0
+      end
+      object MinimumEdit: TEdit
+        Left = 126
+        Height = 20
+        Top = 41
+        Width = 57
+        OnChange = EditChange
+        OnKeyPress = EditFloatKeyPress
+        TabOrder = 1
+        Text = '0'
+      end
+      object MaximumEdit: TEdit
+        Left = 126
+        Height = 20
+        Top = 68
+        Width = 57
+        OnChange = EditChange
+        OnKeyPress = EditFloatKeyPress
+        TabOrder = 2
+        Text = '0'
+      end
+      object MajorStepEdit: TEdit
+        Left = 126
+        Height = 20
+        Top = 177
+        Width = 57
+        OnChange = EditChange
+        OnKeyPress = EditFloatKeyPress
+        TabOrder = 6
+        Text = '0'
+      end
+      object CurrentValueEdit: TEdit
+        Left = 126
+        Height = 20
+        Top = 95
+        Width = 57
+        OnChange = EditChange
+        OnKeyPress = EditFloatKeyPress
+        TabOrder = 3
+        Text = '0'
+      end
+      object MinorStepEdit: TEdit
+        Left = 126
+        Height = 20
+        Top = 204
+        Width = 57
+        OnChange = EditChange
+        OnKeyPress = EditFloatKeyPress
+        TabOrder = 7
+        Text = '0'
+      end
+      object MarginsGroupBox: TGroupBox
+        Tag = 6541
+        Left = 11
+        Height = 133
+        Top = 233
+        Width = 352
+        Caption = 'Margins'
+        ClientHeight = 116
+        ClientWidth = 348
+        TabOrder = 8
+        object TopLabel: TLabel
+          Tag = 6543
+          Left = 12
+          Height = 12
+          Top = 36
+          Width = 22
+          Caption = 'Top:'
+          ParentColor = False
+        end
+        object LeftLabel: TLabel
+          Tag = 6542
+          Left = 12
+          Height = 12
+          Top = 9
+          Width = 20
+          Caption = 'Left:'
+          ParentColor = False
+        end
+        object BottomLabel: TLabel
+          Tag = 6545
+          Left = 12
+          Height = 12
+          Top = 90
+          Width = 36
+          Caption = 'Bottom:'
+          ParentColor = False
+        end
+        object RightLabel: TLabel
+          Tag = 6544
+          Left = 12
+          Height = 12
+          Top = 63
+          Width = 27
+          Caption = 'Right:'
+          ParentColor = False
+        end
+        object LeftEdit: TEdit
+          Left = 114
+          Height = 20
+          Top = 6
+          Width = 42
+          OnChange = SpinEditChange
+          OnKeyPress = EditIntKeyPress
+          TabOrder = 0
+          Text = '0'
+        end
+        object LeftUpDown: TUpDown
+          Left = 156
+          Height = 20
+          Top = 6
+          Width = 15
+          Associate = LeftEdit
+          Max = 10000
+          Min = 0
+          Position = 0
+          TabOrder = 1
+          Wrap = False
+        end
+        object TopEdit: TEdit
+          Left = 114
+          Height = 20
+          Top = 33
+          Width = 42
+          OnChange = SpinEditChange
+          OnKeyPress = EditIntKeyPress
+          TabOrder = 2
+          Text = '0'
+        end
+        object TopUpDown: TUpDown
+          Left = 156
+          Height = 20
+          Top = 33
+          Width = 15
+          Associate = TopEdit
+          Max = 10000
+          Min = 0
+          Position = 0
+          TabOrder = 3
+          Wrap = False
+        end
+        object RightEdit: TEdit
+          Left = 114
+          Height = 20
+          Top = 60
+          Width = 42
+          OnChange = SpinEditChange
+          OnKeyPress = EditIntKeyPress
+          TabOrder = 4
+          Text = '0'
+        end
+        object RightUpDown: TUpDown
+          Left = 156
+          Height = 20
+          Top = 60
+          Width = 15
+          Associate = RightEdit
+          Max = 10000
+          Min = 0
+          Position = 0
+          TabOrder = 5
+          Wrap = False
+        end
+        object BottomEdit: TEdit
+          Left = 114
+          Height = 20
+          Top = 87
+          Width = 42
+          OnChange = SpinEditChange
+          OnKeyPress = EditIntKeyPress
+          TabOrder = 6
+          Text = '0'
+        end
+        object BottomUpDown: TUpDown
+          Left = 156
+          Height = 20
+          Top = 87
+          Width = 15
+          Associate = BottomEdit
+          Max = 10000
+          Min = 0
+          Position = 0
+          TabOrder = 7
+          Wrap = False
+        end
+      end
+      object StartValueEdit: TEdit
+        Left = 312
+        Height = 20
+        Top = 95
+        Width = 57
+        OnChange = EditChange
+        OnKeyPress = EditFloatKeyPress
+        TabOrder = 4
+        Text = '0'
+      end
+      object EndValueEdit: TEdit
+        Left = 126
+        Height = 20
+        Top = 122
+        Width = 57
+        OnChange = EditChange
+        OnKeyPress = EditFloatKeyPress
+        TabOrder = 5
+        Text = '0'
+      end
+      object AngleUpDown: TUpDown
+        Left = 168
+        Height = 20
+        Top = 149
+        Width = 15
+        Associate = AngleEdit
+        Max = 360
+        Min = 0
+        Position = 0
+        TabOrder = 9
+        Wrap = False
+      end
+      object AngleEdit: TEdit
+        Left = 126
+        Height = 20
+        Top = 149
+        Width = 42
+        OnChange = SpinEditChange
+        OnKeyPress = EditIntKeyPress
+        TabOrder = 10
+        Text = '0'
+      end
+    end
+    object MajorScaleTabSheet: TTabSheet
+      Tag = 6531
+      Caption = 'Major Scale'
+      ClientHeight = 375
+      ClientWidth = 376
+      ImageIndex = 1
+      object MajorScaleFormatLabel: TLabel
+        Tag = 6399
+        Left = 12
+        Height = 12
+        Top = 98
+        Width = 36
+        Caption = 'Format:'
+        ParentColor = False
+      end
+      object MajorScaleFontLabel: TLabel
+        Left = 118
+        Height = 12
+        Top = 128
+        Width = 32
+        Anchors = [akTop, akRight]
+        Caption = 'Sample'
+        ParentColor = False
+      end
+      object MajorScaleVisibleCheckBox: TCheckBox
+        Tag = 6391
+        Left = 12
+        Height = 17
+        Top = 17
+        Width = 45
+        Caption = 'Visible'
+        OnClick = CheckBoxClick
+        TabOrder = 0
+      end
+      object MajorScaleVisibleDigitsCheckBox: TCheckBox
+        Tag = 6548
+        Left = 12
+        Height = 17
+        Top = 44
+        Width = 72
+        Caption = 'Visible Digits'
+        OnClick = CheckBoxClick
+        TabOrder = 1
+      end
+      object MajorScaleBilateralCheckBox: TCheckBox
+        Tag = 6549
+        Left = 12
+        Height = 17
+        Top = 71
+        Width = 52
+        Caption = 'Bilateral'
+        OnClick = CheckBoxClick
+        TabOrder = 2
+      end
+      object MajorScaleFormatEdit: TEdit
+        Left = 126
+        Height = 20
+        Top = 95
+        Width = 57
+        OnChange = EditChange
+        TabOrder = 3
+      end
+      object MajorScaleFontButton: TButton
+        Tag = 6397
+        Left = 4
+        Height = 20
+        Top = 125
+        Width = 78
+        Anchors = [akTop, akRight]
+        Caption = 'Font...'
+        OnClick = FontButtonClick
+        TabOrder = 4
+      end
+      object MajorScaleTicksGroupBox: TGroupBox
+        Tag = 6550
+        Left = 12
+        Height = 123
+        Top = 152
+        Width = 352
+        Caption = 'Ticks'
+        ClientHeight = 106
+        ClientWidth = 348
+        TabOrder = 5
+        object MajorScaleTicksWidthLabel: TLabel
+          Tag = 6546
+          Left = 12
+          Height = 12
+          Top = 50
+          Width = 31
+          Caption = 'Width:'
+          ParentColor = False
+        end
+        object MajorScaleTicksLengthLabel: TLabel
+          Tag = 6551
+          Left = 12
+          Height = 12
+          Top = 23
+          Width = 35
+          Caption = 'Length:'
+          ParentColor = False
+        end
+        object MajorScaleTicksColorLabel: TLabel
+          Tag = 6392
+          Left = 12
+          Height = 12
+          Top = 77
+          Width = 29
+          Caption = 'Color:'
+          ParentColor = False
+        end
+        object MajorScaleTicksColorColorBox: TColorBox
+          Left = 114
+          Height = 22
+          Top = 77
+          Width = 114
+          ItemHeight = 16
+          OnChange = ColorBoxChange
+          TabOrder = 4
+        end
+        object MajorScaleTicksWidthEdit: TEdit
+          Left = 114
+          Height = 20
+          Top = 47
+          Width = 42
+          OnChange = SpinEditChange
+          OnKeyPress = EditIntKeyPress
+          TabOrder = 2
+          Text = '0'
+        end
+        object MajorScaleTicksWidthUpDown: TUpDown
+          Left = 156
+          Height = 20
+          Top = 47
+          Width = 15
+          Associate = MajorScaleTicksWidthEdit
+          Max = 10000
+          Min = 0
+          Position = 0
+          TabOrder = 3
+          Wrap = False
+        end
+        object MajorScaleTicksLengthUpDown: TUpDown
+          Left = 156
+          Height = 20
+          Top = 20
+          Width = 15
+          Associate = MajorScaleTicksLengthEdit
+          Max = 10000
+          Min = 0
+          Position = 0
+          TabOrder = 1
+          Wrap = False
+        end
+        object MajorScaleTicksLengthEdit: TEdit
+          Left = 114
+          Height = 20
+          Top = 20
+          Width = 42
+          OnChange = SpinEditChange
+          OnKeyPress = EditIntKeyPress
+          TabOrder = 0
+          Text = '0'
+        end
+      end
+    end
+    object MinorScaleTabSheet: TTabSheet
+      Tag = 6532
+      Caption = 'Minor Scale'
+      ClientHeight = 375
+      ClientWidth = 376
+      ImageIndex = 2
+      object MinorScaleFormatLabel: TLabel
+        Tag = 6399
+        Left = 12
+        Height = 12
+        Top = 98
+        Width = 36
+        Caption = 'Format:'
+        ParentColor = False
+      end
+      object MinorScaleFontLabel: TLabel
+        Left = 118
+        Height = 12
+        Top = 128
+        Width = 32
+        Anchors = [akTop, akRight]
+        Caption = 'Sample'
+        ParentColor = False
+      end
+      object MinorScaleVisibleCheckBox: TCheckBox
+        Tag = 6391
+        Left = 12
+        Height = 17
+        Top = 17
+        Width = 45
+        Caption = 'Visible'
+        OnClick = CheckBoxClick
+        TabOrder = 0
+      end
+      object MinorScaleVisibleDigitsCheckBox: TCheckBox
+        Tag = 6548
+        Left = 12
+        Height = 17
+        Top = 44
+        Width = 72
+        Caption = 'Visible Digits'
+        OnClick = CheckBoxClick
+        TabOrder = 1
+      end
+      object MinorScaleBilateralCheckBox: TCheckBox
+        Tag = 6549
+        Left = 12
+        Height = 17
+        Top = 71
+        Width = 52
+        Caption = 'Bilateral'
+        OnClick = CheckBoxClick
+        TabOrder = 2
+      end
+      object MinorScaleFormatEdit: TEdit
+        Left = 126
+        Height = 20
+        Top = 95
+        Width = 57
+        OnChange = EditChange
+        TabOrder = 3
+      end
+      object MinorScaleFontButton: TButton
+        Tag = 6397
+        Left = 4
+        Height = 20
+        Top = 125
+        Width = 78
+        Anchors = [akTop, akRight]
+        Caption = 'Font...'
+        OnClick = FontButtonClick
+        TabOrder = 4
+      end
+      object MinorScaleTicksGroupBox: TGroupBox
+        Tag = 6550
+        Left = 12
+        Height = 128
+        Top = 152
+        Width = 352
+        Caption = 'Ticks'
+        ClientHeight = 111
+        ClientWidth = 348
+        TabOrder = 5
+        object MinorScaleTicksWidthLabel: TLabel
+          Tag = 6546
+          Left = 12
+          Height = 12
+          Top = 50
+          Width = 31
+          Caption = 'Width:'
+          ParentColor = False
+        end
+        object MinorScaleTicksLengthLabel: TLabel
+          Tag = 6551
+          Left = 12
+          Height = 12
+          Top = 23
+          Width = 35
+          Caption = 'Length:'
+          ParentColor = False
+        end
+        object MinorScaleTicksColorLabel: TLabel
+          Tag = 6392
+          Left = 12
+          Height = 12
+          Top = 77
+          Width = 29
+          Caption = 'Color:'
+          ParentColor = False
+        end
+        object MinorScaleTicksColorColorBox: TColorBox
+          Left = 114
+          Height = 22
+          Top = 77
+          Width = 114
+          ItemHeight = 16
+          OnChange = ColorBoxChange
+          TabOrder = 4
+        end
+        object MinorScaleTicksLengthEdit: TEdit
+          Left = 114
+          Height = 20
+          Top = 20
+          Width = 42
+          OnChange = SpinEditChange
+          OnKeyPress = EditIntKeyPress
+          TabOrder = 0
+          Text = '0'
+        end
+        object MinorScaleTicksLengthUpDown: TUpDown
+          Left = 156
+          Height = 20
+          Top = 20
+          Width = 15
+          Associate = MinorScaleTicksLengthEdit
+          Max = 10000
+          Min = 0
+          Position = 0
+          TabOrder = 1
+          Wrap = False
+        end
+        object MinorScaleTicksWidthUpDown: TUpDown
+          Left = 156
+          Height = 20
+          Top = 47
+          Width = 15
+          Associate = MinorScaleTicksWidthEdit
+          Max = 10000
+          Min = 0
+          Position = 0
+          TabOrder = 3
+          Wrap = False
+        end
+        object MinorScaleTicksWidthEdit: TEdit
+          Left = 114
+          Height = 20
+          Top = 47
+          Width = 42
+          OnChange = SpinEditChange
+          OnKeyPress = EditIntKeyPress
+          TabOrder = 2
+          Text = '0'
+        end
+      end
+    end
+    object PointerTabSheet: TTabSheet
+      Tag = 6533
+      Caption = 'Pointer'
+      ClientHeight = 375
+      ClientWidth = 376
+      ImageIndex = 3
+      object PointerKindLabel: TLabel
+        Tag = 6535
+        Left = 12
+        Height = 12
+        Top = 17
+        Width = 59
+        Caption = 'Pointer Kind:'
+        ParentColor = False
+      end
+      object BorderWidthLabel: TLabel
+        Tag = 6393
+        Left = 12
+        Height = 12
+        Top = 44
+        Width = 63
+        Caption = 'Border width:'
+        ParentColor = False
+      end
+      object BorderColorLabel: TLabel
+        Tag = 6392
+        Left = 12
+        Height = 12
+        Top = 71
+        Width = 61
+        Caption = 'Border color:'
+        ParentColor = False
+      end
+      object ColorLabel: TLabel
+        Tag = 6111
+        Left = 12
+        Height = 12
+        Top = 152
+        Width = 29
+        Caption = 'Color:'
+        ParentColor = False
+      end
+      object WidthLabel: TLabel
+        Tag = 6546
+        Left = 12
+        Height = 12
+        Top = 98
+        Width = 31
+        Caption = 'Width:'
+        ParentColor = False
+      end
+      object HeightLabel: TLabel
+        Tag = 6547
+        Left = 12
+        Height = 12
+        Top = 125
+        Width = 33
+        Caption = 'Height:'
+        ParentColor = False
+      end
+      object PointerKindComboBox: TComboBox
+        Left = 126
+        Height = 20
+        Top = 14
+        Width = 229
+        ItemHeight = 12
+        OnChange = ComboBoxChange
+        Style = csDropDownList
+        TabOrder = 0
+      end
+      object BorderColorColorBox: TColorBox
+        Left = 126
+        Height = 22
+        Top = 71
+        Width = 114
+        ItemHeight = 16
+        OnChange = ColorBoxChange
+        TabOrder = 3
+      end
+      object ColorColorBox: TColorBox
+        Left = 126
+        Height = 22
+        Top = 152
+        Width = 114
+        ItemHeight = 16
+        OnChange = ColorBoxChange
+        TabOrder = 8
+      end
+      object WidthEdit: TEdit
+        Left = 126
+        Height = 20
+        Top = 95
+        Width = 42
+        OnChange = SpinEditChange
+        OnKeyPress = EditIntKeyPress
+        TabOrder = 4
+        Text = '0'
+      end
+      object WidthUpDown: TUpDown
+        Left = 168
+        Height = 20
+        Top = 95
+        Width = 15
+        Associate = WidthEdit
+        Max = 10000
+        Min = 0
+        Position = 0
+        TabOrder = 5
+        Wrap = False
+      end
+      object HeightUpDown: TUpDown
+        Left = 168
+        Height = 20
+        Top = 122
+        Width = 15
+        Associate = HeightEdit
+        Max = 10000
+        Min = 0
+        Position = 0
+        TabOrder = 7
+        Wrap = False
+      end
+      object HeightEdit: TEdit
+        Left = 126
+        Height = 20
+        Top = 122
+        Width = 42
+        OnChange = SpinEditChange
+        OnKeyPress = EditIntKeyPress
+        TabOrder = 6
+        Text = '0'
+      end
+      object BorderWidthEdit: TEdit
+        Left = 126
+        Height = 20
+        Top = 41
+        Width = 42
+        OnChange = SpinEditChange
+        OnKeyPress = EditIntKeyPress
+        TabOrder = 1
+        Text = '0'
+      end
+      object BorderWidthUpDown: TUpDown
+        Left = 168
+        Height = 20
+        Top = 41
+        Width = 15
+        Associate = BorderWidthEdit
+        Max = 10000
+        Min = 0
+        Position = 0
+        TabOrder = 2
+        Wrap = False
+      end
+    end
+  end
+  object FontDialog: TFontDialog
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'MS Sans Serif'
+    MinFontSize = 0
+    MaxFontSize = 0
+    left = 152
+    top = 56
+  end
+end

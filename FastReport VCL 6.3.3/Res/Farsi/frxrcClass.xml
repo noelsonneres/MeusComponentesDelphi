@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<Resources CodePage="1256">
+  <StrRes Name="1" Text="ШЄШ§Ш¦ЩЉШЇ"/>
+  <StrRes Name="2" Text="Щ„ШєЩ€"/>
+  <StrRes Name="3" Text="Щ‡Щ…Щ‡"/>
+  <StrRes Name="4" Text="ШµЩЃШ­Щ‡ Ш¬Ш§Ш±ЩЉ"/>
+  <StrRes Name="5" Text="ШµЩЃШ­Ш§ШЄ:"/>
+  <StrRes Name="6" Text="ШЄЩЃЪ©ЩЉЪ© ШµЩЃШ­Щ‡"/>
+  <StrRes Name="7" Text="Щ…Ш­ШЇЩ€ШЇЩ‡ ШµЩЃШ­Щ‡"/>
+  <StrRes Name="8" Text="Ш¬ШІШ¦ЩЉШ§ШЄ ШµШЇЩ€Ш±"/>
+  <StrRes Name="9" Text="ШґЩ…Ш§Ш±Щ‡ ЩЉШ§ Щ…Ш­ШЇЩ€ШЇЩ‡ ШµЩЃШ­Ш§ШЄ Ш±Ш§ Ъ©Щ‡ ШЁШ§ Ъ©Ш§Щ…Ш§ Ш¬ШЇШ§ ШґШЇЩ‡ Ш§Щ†ШЇ Щ€Ш§Ш±ШЇ Ъ©Щ†ЩЉШЇ. ШЁШ±Ш§ЩЉ Щ…Ш«Ш§Щ„:  1,3,5, 12-6"/>
+  <StrRes Name="100" Text="ЩѕЩЉШґ Щ†Щ…Ш§ЩЉШґ"/>
+  <StrRes Name="101" Text="Ъ†Ш§Щѕ"/>
+  <StrRes Name="102" Text="Ъ†Ш§Щѕ"/>
+  <StrRes Name="103" Text="ШЁШ§ШІ Ъ©Ш±ШЇЩ†"/>
+  <StrRes Name="104" Text="ШЁШ§ШІ Ъ©Ш±ШЇЩ†"/>
+  <StrRes Name="105" Text="Ш°Ш®ЩЉШ±Щ‡"/>
+  <StrRes Name="106" Text="Ш°Ш®ЩЉШ±Щ‡"/>
+  <StrRes Name="107" Text="ШµШЇЩ€Ш±"/>
+  <StrRes Name="108" Text="ШµШЇЩ€Ш±"/>
+  <StrRes Name="109" Text="Ш¬ШіШЄШ¬Щ€"/>
+  <StrRes Name="110" Text="Ш¬ШіШЄШ¬Щ€"/>
+  <StrRes Name="111" Text="ШЄЩ…Ш§Щ… ШµЩЃШ­Щ‡"/>
+  <StrRes Name="112" Text="ШЄЩ…Ш§Щ… ШµЩЃШ­Щ‡"/>
+  <StrRes Name="113" Text="ЩѕЩ‡Щ†Ш§ЩЉ ШµЩЃШ­Щ‡"/>
+  <StrRes Name="114" Text="ЩѕЩ‡Щ†Ш§ЩЉ ШµЩЃШ­Щ‡"/>
+  <StrRes Name="115" Text="100%"/>
+  <StrRes Name="116" Text="100%"/>
+  <StrRes Name="117" Text="ШЇЩ€ ШµЩЃШ­Щ‡"/>
+  <StrRes Name="118" Text="ШЇЩ€ ШµЩЃШ­Щ‡"/>
+  <StrRes Name="119" Text="ШЁШІШ±ЪЇЩ†Щ…Ш§Ш¦ЩЉ"/>
+  <StrRes Name="120" Text="ШЄЩ†ШёЫЊЩ…Ш§ШЄ ШµЩЃШ­Щ‡"/>
+  <StrRes Name="121" Text="ШЄЩ†ШёЫЊЩ…Ш§ШЄ ШµЩЃШ­Щ‡"/>
+  <StrRes Name="122" Text="Ш·Ш±Ш­ Ъ©Щ„ЫЊ"/>
+  <StrRes Name="123" Text="Ш·Ш±Ш­ Ъ©Щ„ЫЊ"/>
+  <StrRes Name="124" Text="ШЁШІШ±ЪЇЩ†Щ…Ш§Ш¦ЩЉ"/>
+  <StrRes Name="125" Text="ШЁШІШ±ЪЇЩ†Щ…Ш§Ш¦ЩЉ"/>
+  <StrRes Name="126" Text="Ъ©Щ€Ъ†Ъ©Щ†Щ…Ш§Ш¦ЩЉ"/>
+  <StrRes Name="127" Text="Ъ©Щ€Ъ†Ъ©Щ†Щ…Ш§Ш¦ЩЉ"/>
+  <StrRes Name="128" Text="Ш·Ш±Ш­"/>
+  <StrRes Name="129" Text="Ш·Ш±Ш­ ЪЇШІШ§Ш±Шґ"/>
+  <StrRes Name="130" Text="ШўЫЊЪ©Щ€Щ†"/>
+  <StrRes Name="131" Text="ШўЫЊЪ©Щ€Щ†"/>
+  <StrRes Name="132" Text="Щ€ЩЉШ±Ш§ЩЉШґ"/>
+  <StrRes Name="133" Text="Щ€ЩЉШ±Ш§ЩЉШґ ШµЩЃШ­Щ‡"/>
+  <StrRes Name="134" Text="Ш§Щ€Щ„"/>
+  <StrRes Name="135" Text="ШµЩЃШ­Щ‡ Ш§Щ€Щ„"/>
+  <StrRes Name="136" Text="Щ‚ШЁЩ„"/>
+  <StrRes Name="137" Text="ШµЩЃШ­Щ‡ Щ‚ШЁЩ„"/>
+  <StrRes Name="138" Text="ШЁШ№ШЇ"/>
+  <StrRes Name="139" Text="ШµЩЃШ­Щ‡ ШЁШ№ШЇ"/>
+  <StrRes Name="140" Text="ШўШ®Ш±"/>
+  <StrRes Name="141" Text="ШµЩЃШ­Щ‡ ШўШ®Ш±"/>
+  <StrRes Name="142" Text="ШґЩ…Ш§Ш±Щ‡ ШµЩЃШ­Щ‡"/>
+  <StrRes Name="150" Text="ШЄЩ…Ш§Щ… ШµЩЃШ­Щ‡"/>
+  <StrRes Name="151" Text="ШµШЇЩ€Ш± ШЁЩ‡ ЩЃШ±Щ…ШЄ PDF"/>
+  <StrRes Name="152" Text="Ш§Ш±ШіШ§Щ„ ШЁШ§ E-mail"/>
+  <StrRes Name="zmPageWidth" Text="ЩѕЩ‡Щ†Ш§ЩЉ ШµЩЃШ­Щ‡"/>
+  <StrRes Name="zmWholePage" Text="ШЄЩ…Ш§Щ… ШµЩЃШ­Щ‡"/>
+  <StrRes Name="200" Text="Ъ†Ш§Щѕ"/>
+  <StrRes Name="201" Text="Ъ†Ш§ЩѕЪЇШ±"/>
+  <StrRes Name="202" Text="ШµЩЃШ­Ш§ШЄ"/>
+  <StrRes Name="203" Text="ШЄШ№ШЇШ§ШЇ Ш±Щ€Щ†Щ€ШґШЄ"/>
+  <StrRes Name="204" Text="ШЄЩ„ЩЃЩЉЩ‚"/>
+  <StrRes Name="205" Text="Ш±Щ€Щ†Щ€ШґШЄЩ‡Ш§"/>
+  <StrRes Name="206" Text="Ъ†Ш§Щѕ"/>
+  <StrRes Name="207" Text="!ШЇЫЊЪЇШ±"/>
+  <StrRes Name="208" Text="Ъ©Ш¬Ш§:"/>
+  <StrRes Name="209" Text="Ш®ШµЩ€ШµЩЉШ§ШЄ..."/>
+  <StrRes Name="210" Text="Ъ†Ш§Щѕ ШЇШ± ЩѕШ±Щ€Щ†ШЇЩ‡"/>
+  <StrRes Name="211" Text="ШЄШ±ШЄЫЊШЁ ШµЩЃШ­Ш§ШЄ"/>
+  <StrRes Name="212" Text="Щ†Ш§Щ…:"/>
+  <StrRes Name="213" Text="Ш­Ш§Щ„ШЄ Ъ†Ш§Щѕ"/>
+  <StrRes Name="214" Text="Ъ†Ш§Щѕ Ш±Щ€ЩЉ Щ†ЪЇЩ‡ШЇШ§Ш±Щ†ШЇЩ‡ Ъ©Ш§ШєШ°"/>
+  <StrRes Name="216" Text="ШЇЩ€Ш·Ш±ЩЃЩ‡"/>
+  <StrRes Name="ppAll" Text="Щ‡Щ…Щ‡ ШµЩЃШ­Ш§ШЄ"/>
+  <StrRes Name="ppOdd" Text="ШµЩЃШ­Ш§ШЄ ШІЩ€Ш¬"/>
+  <StrRes Name="ppEven" Text="ШµЩЃШ­Ш§ШЄ ЩЃШ±ШЇ"/>
+  <StrRes Name="pgDefault" Text="ЩѕЩЉШґ ЩЃШ±Ш¶"/>
+  <StrRes Name="pmDefault" Text="ЩѕЩЉШґ ЩЃШ±Ш¶"/>
+  <StrRes Name="pmSplit" Text="ШЄЩ‚ШіЩЉЩ… ШµЩЃШ­Ш§ШЄ ШЁШІШ±ЪЇ"/>
+  <StrRes Name="pmJoin" Text="Ш§ШЇЩ‚Ш§Щ… ШµЩЃШ­Ш§ШЄ Ъ©Щ€Ъ†Ъ©"/>
+  <StrRes Name="pmScale" Text="Щ…Щ‚ЩЉШ§Ші"/>
+  <StrRes Name="poDirect" Text="!(Щ…ШіШЄЩ‚ЫЊЩ… (9-1"/>
+  <StrRes Name="poReverse" Text="!(Щ…Ш№Ъ©Щ€Ші (1-9"/>
+  <StrRes Name="300" Text="Ш¬ШіШЄШ¬Щ€ Щ…ШЄЩ†"/>
+  <StrRes Name="301" Text="Щ…ШЄЩ† Щ…Щ€Ш±ШЇ Ш¬ШіШЄШ¬Щ€:"/>
+  <StrRes Name="302" Text="ЪЇШІЩЉЩ†Щ‡ Щ‡Ш§ЩЉ Ш¬ШіШЄШ¬Щ€"/>
+  <StrRes Name="303" Text="ШЄШ№Щ€ЩЉШ¶ ШЁШ§"/>
+  <StrRes Name="304" Text="Ш¬ШіШЄШ¬Щ€ Ш§ШІ Ш§ШЁШЄШЇШ§"/>
+  <StrRes Name="305" Text="Ш­ШіШ§Ші ШЁЩ‡ Ш­Ш§Щ„ШЄ"/>
+  <StrRes Name="400" Text="ШЄЩ†ШёЫЊЩ…Ш§ШЄ ШµЩЃШ­Щ‡"/>
+  <StrRes Name="401" Text="ЩѕЩ‡Щ†Ш§"/>
+  <StrRes Name="402" Text="Ш§Ш±ШЄЩЃШ§Ш№"/>
+  <StrRes Name="403" Text="Ш§Щ†ШЇШ§ШІЩ‡"/>
+  <StrRes Name="404" Text="Ш¬Щ‡ШЄ"/>
+  <StrRes Name="405" Text="Ъ†Щѕ"/>
+  <StrRes Name="406" Text="ШЁШ§Щ„Ш§"/>
+  <StrRes Name="407" Text="Ш±Ш§ШіШЄ"/>
+  <StrRes Name="408" Text="ЩѕШ§Ш¦ЩЉЩ†"/>
+  <StrRes Name="409" Text="Ш­Ш§ШґЩЉЩ‡"/>
+  <StrRes Name="410" Text="Щ„ШЁЩ‡ ШЁЩ„Щ†ШЇШ№Щ…Щ€ШЇЩЉ"/>
+  <StrRes Name="411" Text="Щ„ШЁЩ‡ ШЁЩ„Щ†ШЇ Ш§ЩЃЩ‚ЩЉ"/>
+  <StrRes Name="412" Text="ШЇЩЉЪЇШ±"/>
+  <StrRes Name="413" Text="ШЁЪ©Ш§Ш± ШЁШ±ШЇЩ† ШЇШ± ШµЩЃШ­Щ‡ Ш¬Ш§Ш±ЩЉ"/>
+  <StrRes Name="414" Text="ШЁЪ©Ш§Ш± ШЁШ±ШЇЩ† ШЇШ± Щ‡Щ…Щ‡ ШµЩЃШ­Ш§ШЄ"/>
+  <StrRes Name="500" Text="Ъ†Ш§Щѕ"/>
+  <StrRes Name="501" Text="Ъ†Ш§ЩѕЪЇШ±"/>
+  <StrRes Name="502" Text="ШµЩЃШ­Ш§ШЄ"/>
+  <StrRes Name="503" Text="Ш±Щ€Щ†Щ€ШґШЄ"/>
+  <StrRes Name="504" Text="ШЄШ№ШЇШ§ШЇ Ш±Щ€Щ†Щ€ШґШЄ"/>
+  <StrRes Name="505" Text="ЪЇШІЩЉЩ†Щ‡ Щ‡Ш§"/>
+  <StrRes Name="506" Text="ШЇШіШЄЩ€Ш± ЪЇШ±ЩЉШІ"/>
+  <StrRes Name="507" Text="Ъ†Ш§Щѕ ШЇШ± ЩЃШ§ЩЉЩ„"/>
+  <StrRes Name="508" Text="Ъ©ШЇ ЩѕЩЉШ¬ OEM"/>
+  <StrRes Name="509" Text="ЪЇШ±Ш§ЩЃЩЉЪЇ Ъ©Ш§Ш°ШЁ"/>
+  <StrRes Name="510" Text="ЩЃШ§ЩЉЩ„ Ъ†Ш§ЩѕЪЇШ± (*.prn)|*.prn"/>
+  <StrRes Name="mbConfirm" Text="ШЄШ§Ш¦ЩЉШЇ Ъ©Ш±ШЇЩ†"/>
+  <StrRes Name="mbError" Text="Ш®Ш·Ш§"/>
+  <StrRes Name="mbInfo" Text="Ш§Ш·Щ„Ш§Ш№Ш§ШЄ"/>
+  <StrRes Name="xrCantFindClass" Text="Щ†Щ…ЩЉ ШЄЩ€Ш§Щ† Ъ©Щ„Ш§Ші Ш±Ш§ ЩѕЩЉШЇШ§ Ъ©Ш±ШЇ"/>
+  <StrRes Name="prVirtual" Text="Щ…Ш¬Ш§ШІЩЉ"/>
+  <StrRes Name="prDefault" Text="ЩѕЩЉШґ ЩЃШ±Ш¶"/>
+  <StrRes Name="prCustom" Text="Ш№Ш§ШЇШЄ"/>
+  <StrRes Name="enUnconnHeader" Text="Щ†Ш§Щ…ШЄШµЩ„ ШіШ±ШўЩ…ШЇ/ЩѕШ§Щ€Ш±Щ‚ЩЉ"/>
+  <StrRes Name="enUnconnGroup" Text="ШЁШ§Щ†ШЇ ШЇШ§ШЇЩ‡ Ш§ЩЉ  ШЁШ±Ш§ЩЉ ЪЇШ±Щ€Щ‡ Щ†ЩЉШіШЄ"/>
+  <StrRes Name="enUnconnGFooter" Text="ЪЇШ±Щ€Щ‡ ШіШ±ШўЩ…ШЇ Щ†ЩЉШіШЄ ШЁШ±Ш§ЩЉ"/>
+  <StrRes Name="enBandPos" Text="Щ…Щ€Щ‚Ш№ЩЉШЄ Щ†Ш§ШЇШ±ШіШЄ ШЁШ§Щ†ШЇ:"/>
+  <StrRes Name="dbNotConn" Text="ШЁЩ‡ ШЇШ§ШЇЩ‡ Щ…ШЄШµЩ„ Щ†ЩЉШіШЄ %s Ш¬ШЇЩ€Щ„ ШЇШ§ШЇЩ‡"/>
+  <StrRes Name="dbFldNotFound" Text="ЩЃЩЉЩ„ШЇ ЩѕЩЉШЇШ§ Щ†ШґШЇ:"/>
+  <StrRes Name="clDSNotIncl" Text="(ШґШ§Щ…Щ„ Ш¬ШЇЩ€Щ„ ШЇШ§ШЇЩ‡ Щ†ЩЉШіШЄ Report.DataSets)"/>
+  <StrRes Name="clUnknownVar" Text="Щ…ШЄШєЩЉШ± ЩЉШ§ ЩЃЩЉЩ„ШЇ ШЇШ§ШЇЩ‡ Щ†Ш§ШґЩ†Ш§Ш®ШЄЩ‡:"/>
+  <StrRes Name="clScrError" Text="%s : %s Ш®Ш·Ш§ Ш§ШіЪ©Ш±ЩЉЩѕШЄ ШЇШ±"/>
+  <StrRes Name="clDSNotExist" Text="Щ…Щ€Ш¬Щ€ШЇ Щ†ЩЉШіШЄ &#38;#34;%s&#38;#34; Ш¬ШЇЩ€Щ„ ШЇШ§ШЇЩ‡"/>
+  <StrRes Name="clErrors" Text="Ш®Ш·Ш§ (Щ‡Ш§) ШІЩЉШ± Ш±Ш® ШЇШ§ШЇЩ‡ Ш§ШіШЄ:"/>
+  <StrRes Name="clExprError" Text="Ш®Ш·Ш§ ШЇШ± Ш№ШЁШ§Ш±ШЄ"/>
+  <StrRes Name="clFP3files" Text="ЪЇШІШ§Ш±Шґ ШўЩ…Ш§ШЇЩ‡"/>
+  <StrRes Name="clComprPreparedRepFilter" Text="Compressed prepared report (*.fp3)|*.fp3"/> 
+  <StrRes Name="clSaving" Text="...Ш°Ш®ЩЉШ±Щ‡ ЩѕШ±Щ€Щ†ШЇЩ‡"/>
+  <StrRes Name="clCancel" Text="Щ„ШєЩ€"/>
+  <StrRes Name="clClose" Text="ШЁШіШЄЩ†"/>
+  <StrRes Name="clPrinting" Text="Ъ†Ш§Щѕ ШµЩЃШ­Щ‡"/>
+  <StrRes Name="clLoading" Text="...Ш§Щ†ШЄЩ‚Ш§Щ„ ЩѕШ±Щ€Щ†ШЇЩ‡ ШЁЩ‡ Ш­Ш§ЩЃШёЩ‡"/>
+  <StrRes Name="clPageOf" Text="%d Ш§ШІ  %d ШµЩЃШ­Щ‡"/>
+  <StrRes Name="clOf" Text="%d Ш§ШІ"/>
+  <StrRes Name="clFirstPass" Text="ЪЇШ°Ш± Ш§Щ€Щ„ : ШµЩЃШ­Щ‡ "/>
+  <StrRes Name="clNoPrinters" Text="Ъ†Ш§ЩѕЪЇШ±ЩЉ ШЇШ± ШіЩЉШіШЄЩ… ШґЩ…Ш§ Щ†ШµШЁ Щ†ЩЉШіШЄ"/>
+  <StrRes Name="clDecompressError" Text="Ш®Ш·Ш§ ШЇШ± Щ†Ш§ЩЃШґШ±ШЇЩ‡ Ъ©Ш±ШЇЩ† Ш¬Ш±ЩЉШ§Щ†"/>
+  <StrRes Name="crFillMx" Text="...ЩѕШ± Ъ©Ш±ШЇЩ† Ш¬ШЇЩ€Щ„ ШіШЄЩ€Щ†ЩЉ"/>
+  <StrRes Name="crBuildMx" Text="...ШіШ§Ш®ШЄЩ† Ш¬ШЇЩ€Щ„ ШіШЄЩ€Щ†ЩЉ"/>
+  <StrRes Name="prRunningFirst" Text="%d ЪЇШ°Ш± Ш§Щ€Щ„ : ШµЩЃШ­Щ‡"/>
+  <StrRes Name="prRunning" Text="%d ШўЩ…Ш§ШЇЩ‡ ШіШ§ШІЩЉ ШµЩЃШ­Щ‡"/>
+  <StrRes Name="prPrinting" Text="%d Ъ†Ш§Щѕ ШµЩЃШ­Щ‡"/>
+  <StrRes Name="prExporting" Text="%d ШµШЇЩ€Ш± ШµЩЃШ­Щ‡"/>
+  <StrRes Name="uCm" Text="cm"/>
+  <StrRes Name="uInch" Text="in"/>
+  <StrRes Name="uPix" Text="px"/>
+  <StrRes Name="uChar" Text="chr"/>
+  <StrRes Name="dupDefault" Text="ЩѕЩЉШґ ЩЃШ±Ш¶"/>
+  <StrRes Name="dupVert" Text="Ш№Щ…Щ€ШЇЩЉ"/>
+  <StrRes Name="dupHorz" Text="Ш§ЩЃЩ‚ЩЉ"/>
+  <StrRes Name="dupSimpl" Text="ШіШ§ШЇЩ‡"/>
+  <StrRes Name="SLangNotFound" Text="ЩѕЩЉШЇШ§ Щ†ШґШЇ '%s' ШІШЁШ§Щ†"/>
+  <StrRes Name="SInvalidLanguage" Text="ШЄШ№Ш±ЩЉЩЃ ШІШЁШ§Щ† Щ†Ш§ШґЩ†Ш§Ш®ШЄЩ‡"/>
+  <StrRes Name="SIdRedeclared" Text="Щ…Ш№Ш±ЩЃЩЉ Щ…ШЄШєЩЉШ± ШЄЪ©Ш±Ш§Ш±ЩЉ: "/>
+  <StrRes Name="SUnknownType" Text="Щ†Щ€Ш№ Щ†Ш§ШґЩ†Ш§Ш®ШЄЩ‡: "/>
+  <StrRes Name="SIncompatibleTypes" Text="Щ†Щ€Ш№ Щ†Ш§ШіШ§ШІЪЇШ§Ш±"/>
+  <StrRes Name="SIdUndeclared" Text="Щ…ШЄШєЩЉШ± Щ…Ш№Ш±ЩЃЩЉ Щ†ШґШЇЩ‡: "/>
+  <StrRes Name="SClassRequired" Text="Щ†Щ€Ш№ Ъ©Щ„Ш§Ші Щ„Ш§ШІЩ… Щ…ЩЉ ШЁШ§ШґШЇ"/>
+  <StrRes Name="SIndexRequired" Text="ШґШ§Ш®Шµ Щ„Ш§ШІЩ… Щ…ЩЉ ШЁШ§ШґШЇ"/>
+  <StrRes Name="SStringError" Text="Ш±ШґШЄЩ‡ Ш®ШµЩ€ШµЩЉШЄ ЩЉШ§ ШЄШ§ШЁШ№ЩЉ Щ†ШЇШ§Ш±ШЇ"/>
+  <StrRes Name="SClassError" Text="Ш®ШµЩ€ШµЩЉШЄ ЩѕЩЉШґ ЩЃШ±Ш¶ Щ†ШЇШ§Ш±ШЇ %s Ъ©Щ„Ш§Ші"/>
+  <StrRes Name="SArrayRequired" Text="Щ†Щ€Ш№ ШўШ±Ш§ЩЉЩ‡ Щ„Ш§ШІЩ… Щ…ЩЉ ШЁШ§ШґШЇ"/>
+  <StrRes Name="SVarRequired" Text="Щ…ШЄШєЩЉШ± Щ„Ш§ШІЩ… Щ…ЩЉ ШЁШ§ШґШЇ"/>
+  <StrRes Name="SNotEnoughParams" Text="ЩѕШ§Ш±Ш§Щ…ШЄШ±Щ‡Ш§ЩЉ Щ€Ш§Щ‚Ш№ЩЉ Щ†Ш§Ъ©Ш§ЩЃЩЉ Ш§ШіШЄ"/>
+  <StrRes Name="STooManyParams" Text="ЩѕШ§Ш±Щ…ШЄШ±Щ‡Ш§ЩЉ Щ€Ш§Щ‚Ш№ЩЉ ШІЩЉШ§ШЇ"/>
+  <StrRes Name="SLeftCantAssigned" Text="Ш№ШЁШ§Ш±ШЄ ШіЩ…ШЄ Ъ†Щѕ Щ†Щ…ЩЉ ШЄЩ€Ш§Щ†ШЇ Щ…Щ‚ШЇШ§Ш± ШЁЪЇЩЉШ±ШЇ"/>
+  <StrRes Name="SForError" Text="ШЁШ±Ш§ЩЉ Щ…ШЄШєЩЉШ± Ш­Щ„Щ‚Щ‡ ШЁШ§ЩЉШЇ Щ…ШЄШєЩЉШ± Ш№ШЇШЇЩЉ ШЁЪ©Ш§Ш± ШЁШ±ШЇ"/>
+  <StrRes Name="SEventError" Text="ЪЇШ±ШЇШ§Щ†Щ†ШЇЩ‡ Ш±Щ€ЩЉШЇШ§ШЇ ШЁШ§ЩЉШЇ Ш±Щ€ЩЉЩ‡ ШЁШ§ШґШЇ"/>
+  <StrRes Name="600" Text="ЪЇШіШЄШ±Шґ Щ‡Щ…Щ‡"/>
+  <StrRes Name="601" Text="ШЁШіШЄЩ† Щ‡Щ…Щ‡"/>
+  <StrRes Name="clStrNotFound" Text="Щ…ШЄЩ† ЩѕЫЊШЇШ§ Щ†ШґШЇ"/>
+  <StrRes Name="clCantRen" Text="Could not rename %s, it was introduced in the ancestor report"/>
+  <StrRes Name="clCirRefNotAllow" Text="Circular child reference is not allowed"/>
+  <StrRes Name="clDupName" Text="Duplicate name"/>
+  <StrRes Name="clErrorInExp" Text="Error in Calc expression:"/>
+  <StrRes Name="expMtm" Text="Timeout expired"/>
+  <StrRes Name="erInvalidImg" Text="Invalid image format"/>
+  <StrRes Name="ReportTitle" Text="ReportTitle"/>
+  <StrRes Name="ReportSummary" Text="ReportSummary"/>
+  <StrRes Name="PageHeader" Text="PageHeader"/>
+  <StrRes Name="PageFooter" Text="PageFooter"/>
+  <StrRes Name="Header" Text="Header"/>
+  <StrRes Name="Footer" Text="Footer"/>
+  <StrRes Name="MasterData" Text="MasterData"/>
+  <StrRes Name="DetailData" Text="DetailData"/>
+  <StrRes Name="SubdetailData" Text="SubdetailData"/>
+  <StrRes Name="Data4" Text="Data4"/>
+  <StrRes Name="Data5" Text="Data5"/>
+  <StrRes Name="Data6" Text="Data6"/>
+  <StrRes Name="GroupHeader" Text="GroupHeader"/>
+  <StrRes Name="GroupFooter" Text="GroupFooter"/>
+  <StrRes Name="Child" Text="Child"/>
+  <StrRes Name="ColumnHeader" Text="ColumnHeader"/>
+  <StrRes Name="ColumnFooter" Text="ColumnFooter"/>
+  <StrRes Name="Overlay" Text="Overlay"/>
+  <StrRes Name="2_5_interleaved" Text="2_5_interleaved"/>
+  <StrRes Name="2_5_industrial" Text="2_5_industrial"/>
+  <StrRes Name="2_5_matrix" Text="2_5_matrix"/>
+  <StrRes Name="Code39" Text="Code39"/>
+  <StrRes Name="Code39 Extended" Text="Code39 Extended"/>
+  <StrRes Name="Code128A" Text="Code128A"/>
+  <StrRes Name="Code128B" Text="Code128B"/>
+  <StrRes Name="Code128C" Text="Code128C"/>
+  <StrRes Name="Code93" Text="Code93"/>
+  <StrRes Name="Code93 Extended" Text="Code93 Extended"/>
+  <StrRes Name="MSI" Text="MSI"/>
+  <StrRes Name="PostNet" Text="PostNet"/>
+  <StrRes Name="Codebar" Text="Codebar"/>
+  <StrRes Name="EAN8" Text="EAN8"/>
+  <StrRes Name="EAN13" Text="EAN13"/>
+  <StrRes Name="UPC_A" Text="UPC_A"/>
+  <StrRes Name="UPC_E0" Text="UPC_E0"/>
+  <StrRes Name="UPC_E1" Text="UPC_E1"/>
+  <StrRes Name="UPC Supp2" Text="UPC Supp2"/>
+  <StrRes Name="UPC Supp5" Text="UPC Supp5"/>
+  <StrRes Name="EAN128A" Text="EAN128A"/>
+  <StrRes Name="EAN128B" Text="EAN128B"/>
+  <StrRes Name="EAN128C" Text="EAN128C"/>
+  <StrRes Name="rpEditRep" Text="Edit Report..."/>
+  <StrRes Name="rpEditAlias" Text="Edit Fields Aliases..."/>
+  <StrRes Name="rave0" Text="Rave Import"/>
+  <StrRes Name="rave1" Text="The Rave file doesn't contain TRaveReport items."/>
+  <StrRes Name="rave2" Text="The Rave file contains %d reports. Each report will be converted to one fr3 file. Choose a directory where fr3 files will be saved. Note that only the last report will be opened in the designer."/>
+  <StrRes Name="rave3" Text="Cannot create %s."/>
+  <StrRes Name="rave4" Text="Report %s, page %s."/>
+  <StrRes Name="701" Text="Highlight editable text"/>
+  <StrRes Name="702" Text="Highlight"/>
+  <StrRes Name="149" Text="Full Screen"/>
+  <StrRes Name="153" Text="E-mail"/>
+  <StrRes Name="154" Text="PDF"/>
+  <StrRes Name="160" Text="Copy content"/>
+  <StrRes Name="161" Text="Paste content"/>
+  <StrRes Name="162" Text="Save to"/>
+  <StrRes Name="163" Text="File"/>
+</Resources>

@@ -1,0 +1,694 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <Package Version="4">
+    <Name Value="fr5_lazarus"/>
+    <Author Value="FastReports Inc."/>
+    <CompilerOptions>
+      <Version Value="11"/>
+      <SearchPaths>
+        <OtherUnitFiles Value="ExportPack"/>
+        <UnitOutputDirectory Value="lib/$(TargetCPU)-$(TargetOS)"/>
+      </SearchPaths>
+      <Parsing>
+        <SyntaxOptions>
+          <SyntaxMode Value="Delphi"/>
+          <UseAnsiStrings Value="False"/>
+        </SyntaxOptions>
+      </Parsing>
+      <Other>
+        <CompilerMessages>
+          <IgnoredMessages idx5024="True"/>
+          <UseMsgFile Value="True"/>
+        </CompilerMessages>
+        <CompilerPath Value="$(CompPath)"/>
+      </Other>
+    </CompilerOptions>
+    <Description Value="FastReport 5 components"/>
+    <License Value="Commercial"/>
+    <Version Major="5" Minor="2"/>
+    <Files Count="156">
+      <Item1>
+        <Filename Value="frxClass.lfm"/>
+        <Type Value="LFM"/>
+      </Item1>
+      <Item2>
+        <Filename Value="frxClass.pas"/>
+        <HasRegisterProc Value="True"/>
+        <UnitName Value="frxClass"/>
+      </Item2>
+      <Item3>
+        <Filename Value="frxBarcode.pas"/>
+        <HasRegisterProc Value="True"/>
+        <UnitName Value="frxBarcode"/>
+      </Item3>
+      <Item4>
+        <Filename Value="frxPrinter.pas"/>
+        <UnitName Value="frxPrinter"/>
+      </Item4>
+      <Item5>
+        <Filename Value="frxCtrls.pas"/>
+        <HasRegisterProc Value="True"/>
+        <UnitName Value="frxCtrls"/>
+      </Item5>
+      <Item6>
+        <Filename Value="frxUtils.pas"/>
+        <UnitName Value="frxUtils"/>
+      </Item6>
+      <Item7>
+        <Filename Value="frxDock.lfm"/>
+        <Type Value="LFM"/>
+      </Item7>
+      <Item8>
+        <Filename Value="frxDock.pas"/>
+        <HasRegisterProc Value="True"/>
+        <UnitName Value="frxDock"/>
+      </Item8>
+      <Item9>
+        <Filename Value="frxDBSet.pas"/>
+        <HasRegisterProc Value="True"/>
+        <UnitName Value="frxDBSet"/>
+      </Item9>
+      <Item10>
+        <Filename Value="frxChBox.pas"/>
+        <HasRegisterProc Value="True"/>
+        <UnitName Value="frxChBox"/>
+      </Item10>
+      <Item11>
+        <Filename Value="frxGradient.pas"/>
+        <HasRegisterProc Value="True"/>
+        <UnitName Value="frxGradient"/>
+      </Item11>
+      <Item12>
+        <Filename Value="frxCross.pas"/>
+        <HasRegisterProc Value="True"/>
+        <UnitName Value="frxCross"/>
+      </Item12>
+      <Item13>
+        <Filename Value="frxDesgnCtrls.pas"/>
+        <HasRegisterProc Value="True"/>
+        <UnitName Value="frxDesgnCtrls"/>
+      </Item13>
+      <Item14>
+        <Filename Value="frxBarcod.pas"/>
+        <UnitName Value="frxBarcod"/>
+      </Item14>
+      <Item15>
+        <Filename Value="frxDCtrl.pas"/>
+        <HasRegisterProc Value="True"/>
+        <UnitName Value="frxDCtrl"/>
+      </Item15>
+      <Item16>
+        <Filename Value="frxDesgn.lfm"/>
+        <Type Value="LFM"/>
+      </Item16>
+      <Item17>
+        <Filename Value="frxDesgn.pas"/>
+        <HasRegisterProc Value="True"/>
+        <UnitName Value="frxDesgn"/>
+      </Item17>
+      <Item18>
+        <Filename Value="frxPreview.lfm"/>
+        <Type Value="LFM"/>
+      </Item18>
+      <Item19>
+        <Filename Value="frxPreview.lrs"/>
+        <Type Value="LRS"/>
+      </Item19>
+      <Item20>
+        <Filename Value="frxPreview.pas"/>
+        <UnitName Value="frxPreview"/>
+      </Item20>
+      <Item21>
+        <Filename Value="frxXML.pas"/>
+        <UnitName Value="frxXML"/>
+      </Item21>
+      <Item22>
+        <Filename Value="frxXMLSerializer.pas"/>
+        <UnitName Value="frxXMLSerializer"/>
+      </Item22>
+      <Item24>
+        <Filename Value="frxLazarusComponentEditors.pas"/>
+        <HasRegisterProc Value="True"/>
+        <UnitName Value="frxLazarusComponentEditors"/>
+      </Item24>
+      <Item25>
+        <Filename Value="frxDelphiZXIngQRCode.pas"/>
+        <UnitName Value="frxDelphiZXingQRCode"/>
+      </Item25>
+      <Item26>
+        <Filename Value="fr5_lazarus.pas"/>
+        <UnitName Value="fr5_lazarus"/>
+      </Item26>
+      <Item27>
+        <Filename Value="frxAbout.lfm"/>
+        <Type Value="LFM"/>
+      </Item27>
+      <Item28>
+        <Filename Value="frxAbout.pas"/>
+        <UnitName Value="frxAbout"/>
+      </Item28>
+      <Item29>
+        <Filename Value="frxAggregate.pas"/>
+        <UnitName Value="frxAggregate"/>
+      </Item29>
+      <Item30>
+        <Filename Value="frxBarcode2D.pas"/>
+        <UnitName Value="frxBarcode2D"/>
+      </Item30>
+      <Item31>
+        <Filename Value="frxBarcode2DBase.pas"/>
+        <UnitName Value="frxBarcode2DBase"/>
+      </Item31>
+      <Item32>
+        <Filename Value="frxBarcode2DRTTI.pas"/>
+        <UnitName Value="frxBarcode2DRTTI"/>
+      </Item32>
+      <Item33>
+        <Filename Value="frxBarcodeDataMatrix.pas"/>
+        <UnitName Value="frxBarcodeDataMatrix"/>
+      </Item33>
+      <Item34>
+        <Filename Value="frxBarcodeEditor.lfm"/>
+        <Type Value="LFM"/>
+      </Item34>
+      <Item35>
+        <Filename Value="frxBarcodeEditor.pas"/>
+        <UnitName Value="frxBarcodeEditor"/>
+      </Item35>
+      <Item36>
+        <Filename Value="frxBarcodePDF417.pas"/>
+        <UnitName Value="frxBarcodePDF417"/>
+      </Item36>
+      <Item37>
+        <Filename Value="frxBarcodeProperties.pas"/>
+        <UnitName Value="frxBarcodeProperties"/>
+      </Item37>
+      <Item38>
+        <Filename Value="frxBarcodeQR.pas"/>
+        <UnitName Value="frxBarcodeQR"/>
+      </Item38>
+      <Item39>
+        <Filename Value="frxBarcodeRTTI.pas"/>
+        <UnitName Value="frxBarcodeRTTI"/>
+      </Item39>
+      <Item40>
+        <Filename Value="frxChBoxRTTI.pas"/>
+        <UnitName Value="frxChBoxRTTI"/>
+      </Item40>
+      <Item41>
+        <Filename Value="frxChm.pas"/>
+        <UnitName Value="frxChm"/>
+      </Item41>
+      <Item42>
+        <Filename Value="frxClassRTTI.pas"/>
+        <UnitName Value="frxClassRTTI"/>
+      </Item42>
+      <Item43>
+        <Filename Value="frxCodeUtils.pas"/>
+        <UnitName Value="frxCodeUtils"/>
+      </Item43>
+      <Item44>
+        <Filename Value="frxCollections.pas"/>
+        <UnitName Value="frxCollections"/>
+      </Item44>
+      <Item45>
+        <Filename Value="frxConnEditor.lfm"/>
+        <Type Value="LFM"/>
+      </Item45>
+      <Item46>
+        <Filename Value="frxConnEditor.pas"/>
+        <UnitName Value="frxConnEditor"/>
+      </Item46>
+      <Item47>
+        <Filename Value="frxConnItemEdit.lfm"/>
+        <Type Value="LFM"/>
+      </Item47>
+      <Item48>
+        <Filename Value="frxConnItemEdit.pas"/>
+        <UnitName Value="frxConnItemEdit"/>
+      </Item48>
+      <Item49>
+        <Filename Value="frxConnWizard.lfm"/>
+        <Type Value="LFM"/>
+      </Item49>
+      <Item50>
+        <Filename Value="frxConnWizard.pas"/>
+        <UnitName Value="frxConnWizard"/>
+      </Item50>
+      <Item51>
+        <Filename Value="frxCrossEditor.lfm"/>
+        <Type Value="LFM"/>
+      </Item51>
+      <Item52>
+        <Filename Value="frxCrossEditor.pas"/>
+        <UnitName Value="frxCrossEditor"/>
+      </Item52>
+      <Item53>
+        <Filename Value="frxCrossRTTI.pas"/>
+        <UnitName Value="frxCrossRTTI"/>
+      </Item53>
+      <Item54>
+        <Filename Value="frxCrypt.pas"/>
+        <UnitName Value="frxCrypt"/>
+      </Item54>
+      <Item55>
+        <Filename Value="frxCustomDB.pas"/>
+        <UnitName Value="frxCustomDB"/>
+      </Item55>
+      <Item56>
+        <Filename Value="frxCustomDBEditor.pas"/>
+        <UnitName Value="frxCustomDBEditor"/>
+      </Item56>
+      <Item57>
+        <Filename Value="frxCustomDBRTTI.pas"/>
+        <UnitName Value="frxCustomDBRTTI"/>
+      </Item57>
+      <Item58>
+        <Filename Value="frxCustomEditors.pas"/>
+        <UnitName Value="frxCustomEditors"/>
+      </Item58>
+      <Item59>
+        <Filename Value="frxDataTree.lfm"/>
+        <Type Value="LFM"/>
+      </Item59>
+      <Item60>
+        <Filename Value="frxDataTree.pas"/>
+        <UnitName Value="frxDataTree"/>
+      </Item60>
+      <Item61>
+        <Filename Value="frxDCtrlRTTI.pas"/>
+        <UnitName Value="frxDCtrlRTTI"/>
+      </Item61>
+      <Item62>
+        <Filename Value="frxDesgnEditors.pas"/>
+        <UnitName Value="frxDesgnEditors"/>
+      </Item62>
+      <Item63>
+        <Filename Value="frxDesgnWorkspace.pas"/>
+        <UnitName Value="frxDesgnWorkspace"/>
+      </Item63>
+      <Item64>
+        <Filename Value="frxDesgnWorkspace1.pas"/>
+        <UnitName Value="frxDesgnWorkspace1"/>
+      </Item64>
+      <Item65>
+        <Filename Value="frxDialogForm.lfm"/>
+        <Type Value="LFM"/>
+      </Item65>
+      <Item66>
+        <Filename Value="frxDialogForm.pas"/>
+        <UnitName Value="frxDialogForm"/>
+      </Item66>
+      <Item67>
+        <Filename Value="frxDMPClass.pas"/>
+        <UnitName Value="frxDMPClass"/>
+      </Item67>
+      <Item68>
+        <Filename Value="frxDsgnIntf.pas"/>
+        <UnitName Value="frxDsgnIntf"/>
+      </Item68>
+      <Item69>
+        <Filename Value="frxEditAliases.lfm"/>
+        <Type Value="LFM"/>
+      </Item69>
+      <Item70>
+        <Filename Value="frxEditAliases.pas"/>
+        <UnitName Value="frxEditAliases"/>
+      </Item70>
+      <Item71>
+        <Filename Value="frxEditDataBand.lfm"/>
+        <Type Value="LFM"/>
+      </Item71>
+      <Item72>
+        <Filename Value="frxEditDataBand.pas"/>
+        <UnitName Value="frxEditDataBand"/>
+      </Item72>
+      <Item73>
+        <Filename Value="frxEditExpr.lfm"/>
+        <Type Value="LFM"/>
+      </Item73>
+      <Item74>
+        <Filename Value="frxEditExpr.pas"/>
+        <UnitName Value="frxEditExpr"/>
+      </Item74>
+      <Item75>
+        <Filename Value="frxEditFill.lfm"/>
+        <Type Value="LFM"/>
+      </Item75>
+      <Item76>
+        <Filename Value="frxEditFill.pas"/>
+        <UnitName Value="frxEditFill"/>
+      </Item76>
+      <Item77>
+        <Filename Value="frxEditFormat.lfm"/>
+        <Type Value="LFM"/>
+      </Item77>
+      <Item78>
+        <Filename Value="frxEditFormat.pas"/>
+        <UnitName Value="frxEditFormat"/>
+      </Item78>
+      <Item79>
+        <Filename Value="frxEditFrame.lfm"/>
+        <Type Value="LFM"/>
+      </Item79>
+      <Item80>
+        <Filename Value="frxEditFrame.pas"/>
+        <UnitName Value="frxEditFrame"/>
+      </Item80>
+      <Item81>
+        <Filename Value="frxEditGroup.lfm"/>
+        <Type Value="LFM"/>
+      </Item81>
+      <Item82>
+        <Filename Value="frxEditGroup.pas"/>
+        <UnitName Value="frxEditGroup"/>
+      </Item82>
+      <Item83>
+        <Filename Value="frxEditHighlight.lfm"/>
+        <Type Value="LFM"/>
+      </Item83>
+      <Item84>
+        <Filename Value="frxEditHighlight.pas"/>
+        <UnitName Value="frxEditHighlight"/>
+      </Item84>
+      <Item85>
+        <Filename Value="frxEditHyperlink.lfm"/>
+        <Type Value="LFM"/>
+      </Item85>
+      <Item86>
+        <Filename Value="frxEditHyperlink.pas"/>
+        <UnitName Value="frxEditHyperlink"/>
+      </Item86>
+      <Item87>
+        <Filename Value="frxEditMD.lfm"/>
+        <Type Value="LFM"/>
+      </Item87>
+      <Item88>
+        <Filename Value="frxEditMD.pas"/>
+        <UnitName Value="frxEditMD"/>
+      </Item88>
+      <Item89>
+        <Filename Value="frxEditMemo.lfm"/>
+        <Type Value="LFM"/>
+      </Item89>
+      <Item90>
+        <Filename Value="frxEditMemo.pas"/>
+        <UnitName Value="frxEditMemo"/>
+      </Item90>
+      <Item91>
+        <Filename Value="frxEditOptions.lfm"/>
+        <Type Value="LFM"/>
+      </Item91>
+      <Item92>
+        <Filename Value="frxEditOptions.pas"/>
+        <UnitName Value="frxEditOptions"/>
+      </Item92>
+      <Item93>
+        <Filename Value="frxEditPage.lfm"/>
+        <Type Value="LFM"/>
+      </Item93>
+      <Item94>
+        <Filename Value="frxEditPage.pas"/>
+        <UnitName Value="frxEditPage"/>
+      </Item94>
+      <Item95>
+        <Filename Value="frxEditPicture.lfm"/>
+        <Type Value="LFM"/>
+      </Item95>
+      <Item96>
+        <Filename Value="frxEditPicture.pas"/>
+        <UnitName Value="frxEditPicture"/>
+      </Item96>
+      <Item97>
+        <Filename Value="frxEditQueryParams.lfm"/>
+        <Type Value="LFM"/>
+      </Item97>
+      <Item98>
+        <Filename Value="frxEditQueryParams.pas"/>
+        <UnitName Value="frxEditQueryParams"/>
+      </Item98>
+      <Item99>
+        <Filename Value="frxEditReport.lfm"/>
+        <Type Value="LFM"/>
+      </Item99>
+      <Item100>
+        <Filename Value="frxEditReport.pas"/>
+        <UnitName Value="frxEditReport"/>
+      </Item100>
+      <Item101>
+        <Filename Value="frxEditReportData.lfm"/>
+        <Type Value="LFM"/>
+      </Item101>
+      <Item102>
+        <Filename Value="frxEditReportData.pas"/>
+        <UnitName Value="frxEditReportData"/>
+      </Item102>
+      <Item103>
+        <Filename Value="frxEditSQL.lfm"/>
+        <Type Value="LFM"/>
+      </Item103>
+      <Item104>
+        <Filename Value="frxEditSQL.pas"/>
+        <UnitName Value="frxEditSQL"/>
+      </Item104>
+      <Item105>
+        <Filename Value="frxEditStrings.lfm"/>
+        <Type Value="LFM"/>
+      </Item105>
+      <Item106>
+        <Filename Value="frxEditStrings.pas"/>
+        <UnitName Value="frxEditStrings"/>
+      </Item106>
+      <Item107>
+        <Filename Value="frxEditStyle.lfm"/>
+        <Type Value="LFM"/>
+      </Item107>
+      <Item108>
+        <Filename Value="frxEditStyle.pas"/>
+        <UnitName Value="frxEditStyle"/>
+      </Item108>
+      <Item109>
+        <Filename Value="frxEditSysMemo.lfm"/>
+        <Type Value="LFM"/>
+      </Item109>
+      <Item110>
+        <Filename Value="frxEditSysMemo.pas"/>
+        <UnitName Value="frxEditSysMemo"/>
+      </Item110>
+      <Item111>
+        <Filename Value="frxEditTabOrder.lfm"/>
+        <Type Value="LFM"/>
+      </Item111>
+      <Item112>
+        <Filename Value="frxEditTabOrder.pas"/>
+        <UnitName Value="frxEditTabOrder"/>
+      </Item112>
+      <Item113>
+        <Filename Value="frxEditVar.lfm"/>
+        <Type Value="LFM"/>
+      </Item113>
+      <Item114>
+        <Filename Value="frxEditVar.pas"/>
+        <UnitName Value="frxEditVar"/>
+      </Item114>
+      <Item115>
+        <Filename Value="frxEngine.pas"/>
+        <UnitName Value="frxEngine"/>
+      </Item115>
+      <Item116>
+        <Filename Value="frxEvaluateForm.lfm"/>
+        <Type Value="LFM"/>
+      </Item116>
+      <Item117>
+        <Filename Value="frxEvaluateForm.pas"/>
+        <UnitName Value="frxEvaluateForm"/>
+      </Item117>
+      <Item118>
+        <Filename Value="frxGradientRTTI.pas"/>
+        <UnitName Value="frxGradientRTTI"/>
+      </Item118>
+      <Item119>
+        <Filename Value="frxGraphicUtils.pas"/>
+        <UnitName Value="frxGraphicUtils"/>
+      </Item119>
+      <Item120>
+        <Filename Value="frxGZip.pas"/>
+        <UnitName Value="frxGZip"/>
+      </Item120>
+      <Item121>
+        <Filename Value="frxInheritError.lfm"/>
+        <Type Value="LFM"/>
+      </Item121>
+      <Item122>
+        <Filename Value="frxInheritError.pas"/>
+        <UnitName Value="frxInheritError"/>
+      </Item122>
+      <Item123>
+        <Filename Value="frxInsp.lfm"/>
+        <Type Value="LFM"/>
+      </Item123>
+      <Item124>
+        <Filename Value="frxInsp.pas"/>
+        <UnitName Value="frxInsp"/>
+      </Item124>
+      <Item125>
+        <Filename Value="frxMD5.pas"/>
+        <UnitName Value="frxmd5"/>
+      </Item125>
+      <Item126>
+        <Filename Value="frxNewItem.lfm"/>
+        <Type Value="LFM"/>
+      </Item126>
+      <Item127>
+        <Filename Value="frxNewItem.pas"/>
+        <UnitName Value="frxNewItem"/>
+      </Item127>
+      <Item128>
+        <Filename Value="frxPassw.lfm"/>
+        <Type Value="LFM"/>
+      </Item128>
+      <Item129>
+        <Filename Value="frxPassw.pas"/>
+        <UnitName Value="frxPassw"/>
+      </Item129>
+      <Item130>
+        <Filename Value="frxPictureCache.pas"/>
+        <UnitName Value="frxPictureCache"/>
+      </Item130>
+      <Item131>
+        <Filename Value="frxPopupForm.lfm"/>
+        <Type Value="LFM"/>
+      </Item131>
+      <Item132>
+        <Filename Value="frxPopupForm.pas"/>
+        <UnitName Value="frxPopupForm"/>
+      </Item132>
+      <Item133>
+        <Filename Value="frxPreviewPages.pas"/>
+        <UnitName Value="frxPreviewPages"/>
+      </Item133>
+      <Item134>
+        <Filename Value="frxPreviewPageSettings.lfm"/>
+        <Type Value="LFM"/>
+      </Item134>
+      <Item135>
+        <Filename Value="frxPreviewPageSettings.pas"/>
+        <UnitName Value="frxPreviewPageSettings"/>
+      </Item135>
+      <Item136>
+        <Filename Value="frxPrintDialog.lfm"/>
+        <Type Value="LFM"/>
+      </Item136>
+      <Item137>
+        <Filename Value="frxPrintDialog.pas"/>
+        <UnitName Value="frxPrintDialog"/>
+      </Item137>
+      <Item138>
+        <Filename Value="frxProgress.lfm"/>
+        <Type Value="LFM"/>
+      </Item138>
+      <Item139>
+        <Filename Value="frxProgress.pas"/>
+        <UnitName Value="frxProgress"/>
+      </Item139>
+      <Item140>
+        <Filename Value="frxrcClass.pas"/>
+        <UnitName Value="frxrcClass"/>
+      </Item140>
+      <Item141>
+        <Filename Value="frxrcDesgn.pas"/>
+        <UnitName Value="frxrcDesgn"/>
+      </Item141>
+      <Item142>
+        <Filename Value="frxrcInsp.pas"/>
+        <UnitName Value="frxrcInsp"/>
+      </Item142>
+      <Item143>
+        <Filename Value="frxReportTree.lfm"/>
+        <Type Value="LFM"/>
+      </Item143>
+      <Item144>
+        <Filename Value="frxReportTree.pas"/>
+        <UnitName Value="frxReportTree"/>
+      </Item144>
+      <Item145>
+        <Filename Value="frxRes.pas"/>
+        <UnitName Value="frxRes"/>
+      </Item145>
+      <Item146>
+        <Filename Value="frxSearchDialog.lfm"/>
+        <Type Value="LFM"/>
+      </Item146>
+      <Item147>
+        <Filename Value="frxSearchDialog.pas"/>
+        <UnitName Value="frxSearchDialog"/>
+      </Item147>
+      <Item148>
+        <Filename Value="frxStdWizard.lfm"/>
+        <Type Value="LFM"/>
+      </Item148>
+      <Item149>
+        <Filename Value="frxStdWizard.pas"/>
+        <UnitName Value="frxStdWizard"/>
+      </Item149>
+      <Item150>
+        <Filename Value="frxSynMemo.pas"/>
+        <UnitName Value="frxSynMemo"/>
+      </Item150>
+      <Item151>
+        <Filename Value="frxUnicodeCtrls.pas"/>
+        <UnitName Value="frxUnicodeCtrls"/>
+      </Item151>
+      <Item152>
+        <Filename Value="frxUnicodeUtils.pas"/>
+        <UnitName Value="frxUnicodeUtils"/>
+      </Item152>
+      <Item153>
+        <Filename Value="frxVariables.pas"/>
+        <UnitName Value="frxVariables"/>
+      </Item153>
+      <Item154>
+        <Filename Value="frxWatchForm.lfm"/>
+        <Type Value="LFM"/>
+      </Item154>
+      <Item155>
+        <Filename Value="frxWatchForm.pas"/>
+        <UnitName Value="frxWatchForm"/>
+      </Item155>
+      <Item156>
+        <Filename Value="frxZLib.pas"/>
+        <UnitName Value="frxZLib"/>
+      </Item156>
+    </Files>
+    <Type Value="RunAndDesignTime"/>
+    <RequiredPkgs Count="6">
+      <Item1>
+        <PackageName Value="IDEIntf"/>
+      </Item1>
+      <Item2>
+        <PackageName Value="ImagesForLazarus"/>
+      </Item2>
+      <Item3>
+        <PackageName Value="Printer4Lazarus"/>
+      </Item3>
+      <Item4>
+        <PackageName Value="fs_lazarus"/>
+      </Item4>
+      <Item5>
+        <PackageName Value="LCL"/>
+      </Item5>
+      <Item6>
+        <PackageName Value="FCL"/>
+      </Item6>
+    </RequiredPkgs>
+    <UsageOptions>
+      <UnitPath Value="$(PkgOutDir)"/>
+    </UsageOptions>
+    <PublishOptions>
+      <Version Value="2"/>
+    </PublishOptions>
+    <CustomOptions Items="ExternHelp" Version="2">
+      <_ExternHelp Items="Count"/>
+    </CustomOptions>
+  </Package>
+</CONFIG>

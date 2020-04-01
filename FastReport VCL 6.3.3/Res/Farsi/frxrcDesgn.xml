@@ -1,0 +1,937 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<Resources CodePage="1256">
+  <StrRes Name="2000" Text="Ъ©Щ†ШЄШ±Щ„Ш± ШґЩЉШЎ"/>
+  <StrRes Name="oiProp" Text="Ш®ШµЩ€ШµЩЉШ§ШЄ"/>
+  <StrRes Name="oiEvent" Text="Ш±Щ€ЩЉШЇШ§ШЇ"/>
+  <StrRes Name="2100" Text="ШЇШ±Ш®ШЄ ШЇШ§ШЇЩ‡"/>
+  <StrRes Name="2101" Text="ШЇШ§ШЇЩ‡"/>
+  <StrRes Name="2102" Text="Щ…ШЄШєЩЉШ±Щ‡Ш§"/>
+  <StrRes Name="2103" Text="ШЄЩ€Ш§ШЁШ№"/>
+  <StrRes Name="2104" Text="Ш§ЩЉШ¬Ш§ШЇ ЩЃЩЉЩ„ШЇ"/>
+  <StrRes Name="2105" Text="Ш§ЩЉШ¬Ш§ШЇ Ш№Щ†Щ€Ш§Щ†"/>
+  <StrRes Name="2106" Text="Ъ©Щ„Ш§ШіЩ‡Ш§"/>
+  <StrRes Name="dtNoData" Text="ШЇШ§ШЇЩ‡ Ш§ЩЉ ШЇШ± ШЇШіШЄШ±Ші Щ†ЩЉШіШЄ"/>
+  <StrRes Name="dtNoData1" Text="ШЁШ±Ш§ЩЉ Ш§ЩЃШІЩ€ШЇЩ† ШЇШ§ШЇЩ‡ Ш§Ш·Щ„Ш§Ш№Ш§ШЄЩЉ Щ…Щ€Ш¬Щ€ШЇ ШЁЩ‡ Щ…Щ†Щ€ЩЉ &#38;#34;ЪЇШІШ§Ш±Шґ|ШЇШ§ШЇЩ‡..&#38;#34; ШЁШ±Щ€ЩЉШЇШЊ ЩЉШ§ ШЁЩ‡ ШіШ±Щ„Щ€Ш­Щ‡ &#38;#34;ШЇШ§ШЇЩ‡&#38;#34; ШіЩ€Ш¦ЩЉЪ† Ъ©Щ†ЩЉШЇ Щ€ ШЇШ§ШЇЩ‡ Ш§Ш·Щ„Ш§Ш№Ш§ШЄЩЉ Ш¬ШЇЩЉШЇ Ш§ЩЉШ¬Ш§ШЇ Ъ©Щ†ЩЉШЇ"/>
+  <StrRes Name="dtData" Text="ШЇШ§ШЇЩ‡"/>
+  <StrRes Name="dtSysVar" Text="Щ…ШЄШєЩЉШ±Щ‡Ш§ЩЉ ШіЩЉШіШЄЩ…"/>
+  <StrRes Name="dtVar" Text="Щ…ШЄШєЩЉШ±Щ‡Ш§"/>
+  <StrRes Name="dtFunc" Text="ШЄЩ€Ш§ШЁШ№"/>
+  <StrRes Name="2200" Text="ШЇШ±Ш®ШЄ ЪЇШІШ§Ш±Шґ"/>
+  <StrRes Name="2300" Text="Script ШЁШ§ШІ Ъ©Ш±ШЇЩ† ЩѕШ±Щ€Щ†ШЇЩ‡"/>
+  <StrRes Name="2301" Text="ШЇШ± ЩѕШ±Щ€Щ†ШЇЩ‡ Script Ш°Ш®ЩЉШ±Щ‡"/>
+  <StrRes Name="2302" Text="Script Ш§Ш¬Ш±Ш§"/>
+  <StrRes Name="2303" Text="Ш±ШЇ ЩЉШ§ШЁЩЉ Ъ©Ш±ШЇЩ† ШЇШ±Щ€Щ†"/>
+  <StrRes Name="2304" Text="Script Ш®Ш§ШЄЩ…Щ‡ ШЇШ§ШЇЩ†"/>
+  <StrRes Name="2305" Text="Ш§Ш±ШІЩЉШ§ШЁЩЉ"/>
+  <StrRes Name="2306" Text="ШІШЁШ§Щ†:"/>
+  <StrRes Name="2307" Text="Щ‡Щ… ШЄШ±Ш§ШІЩЉ"/>
+  <StrRes Name="2308" Text="Щ‡Щ…ШЄШ±Ш§ШІЩЉ Ш§ШІ Ъ†Щѕ"/>
+  <StrRes Name="2309" Text="Щ‡Щ… ШЄШ±Ш§ШІЩЉ ШЇШ± Щ€ШіШ·"/>
+  <StrRes Name="2310" Text="Щ‡Щ…ШЄШ±Ш§ШІЩЉ Ш§ШІ Ш±Ш§ШіШЄ"/>
+  <StrRes Name="2311" Text="Щ‡Щ…ШЄШ±Ш§ШІЩЉ Ш§ШІ ШЁШ§Щ„Ш§"/>
+  <StrRes Name="2312" Text="Щ‡Щ… ШЄШ±Ш§ШІЩЉ ШЇШ± Щ…Ш±Ъ©ШІ"/>
+  <StrRes Name="2313" Text="Щ‡Щ…ШЄШ±Ш§ШІЩЉ Ш§ШІ ЩѕШ§Ш¦ЩЉЩ†"/>
+  <StrRes Name="2314" Text="Ш¬Ш§ ЩЃШ§ШµЩ„Щ‡ Ш§ЩЃЩ‚ЩЉ"/>
+  <StrRes Name="2315" Text="Ш¬Ш§ ЩЃШ§ШµЩ„Щ‡ Ш№Щ…Щ€ШЇЩЉ"/>
+  <StrRes Name="2316" Text="Ш§ЩЃЩ‚ЩЉ ШЇШ± Щ…Ш±Ъ©ШІ ШЁШ§Щ†ШЇ"/>
+  <StrRes Name="2317" Text="Ш№Щ…Щ€ШЇЩЉ ШЇШ± Щ…Ш±Ъ©ШІ ШЁШ§Щ†ШЇ"/>
+  <StrRes Name="2318" Text="ЩѕЩ‡Щ†Ш§ЩЉ ЩЉЪ©ШіШ§Щ†"/>
+  <StrRes Name="2319" Text="Ш§Ш±ШЄЩЃШ§Ш№ ЩЉЪ©ШіШ§Щ†"/>
+  <StrRes Name="2320" Text="Щ…ШЄЩ†"/>
+  <StrRes Name="2321" Text="Щ†Щ…Ш§"/>
+  <StrRes Name="2322" Text="Щ†Ш§Щ… ЩЃЩ€Щ†ШЄ"/>
+  <StrRes Name="2323" Text="Ш§Щ†ШЇШ§ШІЩ‡ ЩЃЩ€Щ†ШЄ"/>
+  <StrRes Name="2324" Text="Ш¶Ш®ЩЉЩ…"/>
+  <StrRes Name="2325" Text="Щ…Ш§ЩЉЩ„"/>
+  <StrRes Name="2326" Text="ШІЩЉШ±Ш®Ш·"/>
+  <StrRes Name="2327" Text="Ш±Щ†ЪЇ ЩЃЩ€Щ†ШЄ"/>
+  <StrRes Name="2328" Text="ЩѕШ±Ш±Щ†ЪЇ"/>
+  <StrRes Name="2329" Text="Ъ†Ш±Ш®Шґ Щ…ШЄЩ†"/>
+  <StrRes Name="2330" Text="Щ‡Щ…ШЄШ±Ш§ШІЩЉ Ш§ШІ Ъ†Щѕ"/>
+  <StrRes Name="2331" Text="Щ‡Щ… ШЄШ±Ш§ШІЩЉ ШЇШ± Щ…Ш±Ъ©ШІ"/>
+  <StrRes Name="2332" Text="Щ‡Щ…ШЄШ±Ш§ШІЩЉ Ш§ШІ Ш±Ш§ШіШЄ"/>
+  <StrRes Name="2333" Text="Ш­Ш§ШґЩЉЩ‡ Щ…ШіШЄЩ‚ЩЉЩ…"/>
+  <StrRes Name="2334" Text="Щ‡Щ…ШЄШ±Ш§ШІЩЉ Ш§ШІ ШЁШ§Щ„Ш§"/>
+  <StrRes Name="2335" Text="Щ‡Щ… ШЄШ±Ш§ШІЩЉ ШЇШ± Щ€ШіШ·"/>
+  <StrRes Name="2336" Text="Щ‡Щ…ШЄШ±Ш§ШІЩЉ Ш§ШІ ЩѕШ§Ш¦ЩЉЩ†"/>
+  <StrRes Name="2337" Text="Ъ†Ш§Ш±Ъ†Щ€ШЁ"/>
+  <StrRes Name="2338" Text="Ш®Ш· ШЁШ§Щ„Ш§"/>
+  <StrRes Name="2339" Text="Ш®Ш· ЩѕШ§Ш¦ЩЉЩ†"/>
+  <StrRes Name="2340" Text="Ш®Ш· Ъ†Щѕ"/>
+  <StrRes Name="2341" Text="Ш®Ш· Ш±Ш§ШіШЄ"/>
+  <StrRes Name="2342" Text="Щ‡Щ…Щ‡ Ш®Ш·Щ€Ш· Ъ†Ш§Ш±Ъ†Щ€ШЁ"/>
+  <StrRes Name="2343" Text="ШЁШЇЩ€Щ† Ъ†Ш§Ш±Ъ†Щ€ШЁ"/>
+  <StrRes Name="2344" Text="Edit Frame"/>
+  <StrRes Name="2345" Text="Ш±Щ†ЪЇ ШІЩ…ЩЉЩ†Щ‡"/>
+  <StrRes Name="2346" Text="Ш±Щ†ЪЇ Ъ†Ш§Ш±Ъ†Щ€ШЁ"/>
+  <StrRes Name="2347" Text="Щ†Щ…Ш§ЩЉ Ъ†Ш§Ш±Ъ†Щ€ШЁ"/>
+  <StrRes Name="2348" Text="ЩѕЩ‡Щ†Ш§ЩЉ Ъ†Ш§Ш±Ъ†Щ€ШЁ"/>
+  <StrRes Name="2349" Text="Ш§ШіШЄШ§Щ†ШЇШ§Ш±ШЇ"/>
+  <StrRes Name="2350" Text="ЪЇШІШ§Ш±Шґ Ш¬ШЇЩЉШЇ"/>
+  <StrRes Name="2351" Text="ШЁШ§ШІ Ъ©Ш±ШЇЩ† ЪЇШІШ§Ш±Шґ"/>
+  <StrRes Name="2352" Text="Ш°Ш®ЩЉШ±Щ‡ ЪЇШІШ§Ш±Шґ"/>
+  <StrRes Name="2353" Text="ЩѕЩЉШґ Щ†Щ…Ш§ЩЉШґ"/>
+  <StrRes Name="2354" Text="ШµЩЃШ­Щ‡ ЪЇШІШ§Ш±Шґ Ш¬ШЇЩЉШЇ"/>
+  <StrRes Name="2355" Text="ШµЩЃШ­Щ‡ ЪЇЩЃШЄЪЇЩ€ Ш¬ШЇЩЉШЇ"/>
+  <StrRes Name="2356" Text="Ш­Ш°ЩЃ ШµЩЃШ­Щ‡"/>
+  <StrRes Name="2357" Text="Ш¬ШІШ¦ЩЉШ§ШЄ ШµЩЃШ­Щ‡"/>
+  <StrRes Name="2358" Text="Щ…ШЄШєЩЉШ±Щ‡Ш§"/>
+  <StrRes Name="2359" Text="ШЁШ±Шґ"/>
+  <StrRes Name="2360" Text="Ш±Щ€Щ†Щ€ШґШЄ"/>
+  <StrRes Name="2361" Text="Ъ†ШіШЁШ§Щ†ШЇЩ†"/>
+  <StrRes Name="2362" Text="Ъ©ЩѕЩЉ Щ‚Ш§Щ„ШЁ ШЁЩ†ШЇЩЉ"/>
+  <StrRes Name="2363" Text="Ш®Щ†Ш«ЩЉ Ъ©Ш±ШЇЩ†"/>
+  <StrRes Name="2364" Text="ШЇЩ€ШЁШ§Ш±Щ‡ Ш§Щ†Ш¬Ш§Щ… ШЇШ§ШЇЩ†"/>
+  <StrRes Name="2365" Text="ЪЇШ±Щ€Щ‡"/>
+  <StrRes Name="2366" Text="ЪЇШ±Щ€Щ‡ ШЁЩ†ШЇЩЉ Щ†ШґШЇЩ‡"/>
+  <StrRes Name="2367" Text="Щ†Щ…Ш§ЩЉШґ ШґШЁЪ©Щ‡ Ш§ЩЉ"/>
+  <StrRes Name="2368" Text="Щ‡Щ…ШЄШ±Ш§ШІЩЉ ШЁШ§ ШґШЁЪ©Щ‡"/>
+  <StrRes Name="2369" Text="Ш¬Ш§ ЪЇШ±ЩЃШЄЩ† ШЇШ± ШґШЁЪ©Щ‡"/>
+  <StrRes Name="2370" Text="ШЁШІШ±ЪЇЩ†Щ…Ш§Ш¦ЩЉ"/>
+  <StrRes Name="2371" Text="Ш§ШЁШІШ§Ш±Щ‡Ш§ЩЉ Ш§Ш¶Ш§ЩЃЩ‡"/>
+  <StrRes Name="2372" Text="Ш§Щ†ШЄШ®Ш§ШЁ Ш§ШЁШІШ§Ш±"/>
+  <StrRes Name="2373" Text="Ш§ШЁШІШ§Ш± ШЇШіШЄ"/>
+  <StrRes Name="2374" Text="Ш§ШЁШІШ§Ш± ШЁШІШ±ЪЇЩ†Щ…Ш§Ш¦ЩЉ"/>
+  <StrRes Name="2375" Text="Ш§ШЁШІШ§Ш± Щ€ЩЉШ±Ш§ЩЉШґ Щ…ШЄЩ†"/>
+  <StrRes Name="2376" Text="Ш§ШЁШІШ§Ш± Ъ©ЩѕЩЉ Щ‚Ш§Щ„ШЁ"/>
+  <StrRes Name="2377" Text="ШЇШ±Ш¬ ШЁШ§Щ†ШЇ"/>
+  <StrRes Name="2378" Text="ЩѕШ±Щ€Щ†ШЇЩ‡"/>
+  <StrRes Name="2379" Text="Щ€ЩЉШ±Ш§ЩЉШґ"/>
+  <StrRes Name="2380" Text="Ш¬ШіШЄШ¬Щ€..."/>
+  <StrRes Name="2381" Text="Ш¬ШіШЄШ¬Щ€ ШЁШ№ШЇЩЉ"/>
+  <StrRes Name="2382" Text="ШЄШ№Щ€ЩЉШ¶..."/>
+  <StrRes Name="2383" Text="ЪЇШІШ§Ш±Шґ"/>
+  <StrRes Name="2384" Text="ШЇШ§ШЇЩ‡..."/>
+  <StrRes Name="2385" Text="ЪЇШІЩЉЩ†Щ‡ Щ‡Ш§..."/>
+  <StrRes Name="2386" Text="Щ†Щ…Ш§Щ‡Ш§..."/>
+  <StrRes Name="2387" Text="Щ†Щ…Ш§ЩЉШґ"/>
+  <StrRes Name="2388" Text="ЩѕЩ†Ш¬Ш±Щ‡ Щ‡Ш§ЩЉ Ш§ШЁШІШ§Ш±"/>
+  <StrRes Name="2389" Text="Ш§ШіШЄШ§Щ†ШЇШ§Ш±ШЇ"/>
+  <StrRes Name="2390" Text="Щ…ШЄЩ†"/>
+  <StrRes Name="2391" Text="Ъ†Ш§Ш±Ъ†Щ€ШЁ"/>
+  <StrRes Name="2392" Text="Щ„Щ€Ш­Щ‡ Щ‡Щ…ШЄШ±Ш§ШІЩЉ"/>
+  <StrRes Name="2393" Text="Ш§ШЁШІШ§Ш±Щ‡Ш§ЩЉ Ш§Ш¶Ш§ЩЃЩ‡"/>
+  <StrRes Name="2394" Text="Ъ©Щ†ШЄШ±Щ„Ш± ШґЩЉШЎ"/>
+  <StrRes Name="2395" Text="ШЇШ±Ш®ШЄ ШЇШ§ШЇЩ‡"/>
+  <StrRes Name="2396" Text="ШЇШ±Ш®ШЄ ЪЇШІШ§Ш±Шґ"/>
+  <StrRes Name="2397" Text="Ш®Ш· Ъ©Шґ Щ‡Ш§"/>
+  <StrRes Name="2398" Text="Ш±Ш§Щ‡Щ†Щ…Ш§Щ‡Ш§"/>
+  <StrRes Name="2399" Text="Ш­Ш°ЩЃ Ш±Ш§Щ‡Щ†Щ…Ш§Щ‡Ш§"/>
+  <StrRes Name="2400" Text="ЪЇШІЩЉЩ†Щ‡ Щ‡Ш§..."/>
+  <StrRes Name="2401" Text="Ш±Ш§Щ‡Щ†Щ…Ш§"/>
+  <StrRes Name="2402" Text="Щ…Ш­ШЄЩ€ЩЉШ§ШЄ Ш±Ш§Щ‡Щ†Щ…Ш§..."/>
+  <StrRes Name="2403" Text="FastReport ШЇШ±ШЁШ§Ш±Щ‡..."/>
+  <StrRes Name="2404" Text="Ш¬ШЇЩ€Щ„ ШЄШ±ШЄЩЉШЁ..."/>
+  <StrRes Name="2405" Text="Ш®Щ†Ш«ЩЉ Ъ©Ш±ШЇЩ†"/>
+  <StrRes Name="2406" Text="ШЇЩ€ШЁШ§Ш±Щ‡ Ш§Щ†Ш¬Ш§Щ… ШЇШ§ШЇЩ†"/>
+  <StrRes Name="2407" Text="ШЁШ±Шґ"/>
+  <StrRes Name="2408" Text="Ш±Щ€Щ†Щ€ШґШЄ"/>
+  <StrRes Name="2409" Text="Ъ†ШіШЁШ§Щ†ШЇЩ†"/>
+  <StrRes Name="2410" Text="ЪЇШ±Щ€Щ‡"/>
+  <StrRes Name="2411" Text="ЪЇШ±Щ€Щ‡ ШЁЩ†ШЇЩЉ Щ†ШґШЇЩ‡"/>
+  <StrRes Name="2412" Text="Ш­Ш°ЩЃ"/>
+  <StrRes Name="2413" Text="Ш­Ш°ЩЃ ШµЩЃШ­Щ‡"/>
+  <StrRes Name="2414" Text="Ш§Щ†ШЄШ®Ш§ШЁ Щ‡Щ…Щ‡"/>
+  <StrRes Name="2415" Text="Щ€ЩЉШ±Ш§ЩЉШґ..."/>
+  <StrRes Name="2416" Text="ШЁЩ‡ Ш¬Щ„Щ€ ШўЩ€Ш±ШЇЩ†"/>
+  <StrRes Name="2417" Text="ШЁЩ‡ ЩѕШґШЄ ЩЃШ±ШіШЄШ§ШЇЩ†"/>
+  <StrRes Name="2418" Text="Ш¬ШЇЩЉШЇ..."/>
+  <StrRes Name="2419" Text="ЪЇШІШ§Ш±Шґ Ш¬ШЇЩЉШЇ"/>
+  <StrRes Name="2420" Text="ШµЩЃШ­Щ‡ Ш¬ШЇЩЉШЇ"/>
+  <StrRes Name="2421" Text="ЪЇЩЃШЄЪЇЩ€ Ш¬ШЇЩЉШЇ"/>
+  <StrRes Name="2422" Text="ШЁШ§ШІ Ъ©Ш±ШЇЩ†..."/>
+  <StrRes Name="2423" Text="Ш°Ш®ЩЉШ±Щ‡"/>
+  <StrRes Name="2424" Text="Ш°Ш®ЩЉШ±Щ‡ ШЇШ±..."/>
+  <StrRes Name="2425" Text="Щ…ШЄШєЩЉШ±Щ‡Ш§..."/>
+  <StrRes Name="2426" Text="Ш¬ШІШ¦ЩЉШ§ШЄ ШµЩЃШ­Щ‡..."/>
+  <StrRes Name="2427" Text="ЩѕЩЉШґ Щ†Щ…Ш§ЩЉШґ"/>
+  <StrRes Name="2428" Text="Ш®Ш±Щ€Ш¬"/>
+  <StrRes Name="2429" Text="Ш№Щ†Щ€Ш§Щ† ЪЇШІШ§Ш±Шґ"/>
+  <StrRes Name="2430" Text="Ш®Щ„Ш§ШµЩ‡ ЪЇШІШ§Ш±Шґ"/>
+  <StrRes Name="2431" Text="ШіШ±ШўЩ…ШЇ ШµЩЃШ­Щ‡"/>
+  <StrRes Name="2432" Text="ЩѕШ§Щ€Ш±Щ‚ЩЉ ШµЩЃШ­Щ‡"/>
+  <StrRes Name="2433" Text="ШіШ±ШўЩ…ШЇ"/>
+  <StrRes Name="2434" Text="ЩѕШ§Щ€Ш±Щ‚ЩЉ"/>
+  <StrRes Name="2435" Text="ШЇШ§ШЇЩ‡ Ш§ШµЩ„ЩЉ"/>
+  <StrRes Name="2436" Text="ШЇШ§ШЇЩ‡ Ш¬ШІШ¦ЩЉ"/>
+  <StrRes Name="2437" Text="ШЇШ§ШЇЩ‡ ШІЩЉШ± Ш¬ШІШЎ"/>
+  <StrRes Name="2438" Text="ШЇШ§ШЇЩ‡ ШіШ·Ш­ 4 Ш§Щ…"/>
+  <StrRes Name="2439" Text="ШЇШ§ШЇЩ‡ ШіШ·Ш­ 5 Ш§Щ…"/>
+  <StrRes Name="2440" Text="ШЇШ§ШЇЩ‡ ШіШ·Ш­ 6 Ш§Щ…"/>
+  <StrRes Name="2441" Text="ЪЇШ±Щ€Щ‡ ШіШ±ШўЩ…ШЇ"/>
+  <StrRes Name="2442" Text="ЪЇШ±Щ€Щ‡ ЩѕШ§Щ€Ш±Щ‚ЩЉ"/>
+  <StrRes Name="2443" Text="ЩЃШ±ШІЩ†ШЇ"/>
+  <StrRes Name="2444" Text="ШіШ±ШўЩ…ШЇ ШіШЄЩ€Щ†"/>
+  <StrRes Name="2445" Text="ЩѕШ§Щ€Ш±Щ‚ЩЉ ШіШЄЩ€Щ†"/>
+  <StrRes Name="2446" Text="ЩѕЩ€ШґШґ"/>
+  <StrRes Name="2447" Text="ШЁШ§Щ†ШЇЩ‡Ш§ЩЉ Ш№Щ…Щ€ШЇЩЉ"/>
+  <StrRes Name="2448" Text="ШіШ±ШўЩ…ШЇ"/>
+  <StrRes Name="2449" Text="ЩѕШ§Щ€Ш±Щ‚ЩЉ"/>
+  <StrRes Name="2450" Text="ШЇШ§ШЇЩ‡ Ш§ШµЩ„ЩЉ"/>
+  <StrRes Name="2451" Text="ШЇШ§ШЇЩ‡ Ш¬ШІШ¦ЩЉ"/>
+  <StrRes Name="2452" Text="ШЇШ§ШЇЩ‡ ШІЩЉШ± Ш¬ШІШЎ"/>
+  <StrRes Name="2453" Text="ЪЇШ±Щ€Щ‡ ШіШ±ШўЩ…ШЇ"/>
+  <StrRes Name="2454" Text="ЪЇШ±Щ€Щ‡ ЩѕШ§Щ€Ш±Щ‚ЩЉ"/>
+  <StrRes Name="2455" Text="ЩЃШ±ШІЩ†ШЇ"/>
+  <StrRes Name="2456" Text="0В°"/>
+  <StrRes Name="2457" Text="45В°"/>
+  <StrRes Name="2458" Text="90В°"/>
+  <StrRes Name="2459" Text="180В°"/>
+  <StrRes Name="2460" Text="270В°"/>
+  <StrRes Name="2461" Text="Ш¬ШІШ¦ЩЉШ§ШЄ ЩЃЩ€Щ†ШЄ"/>
+  <StrRes Name="2462" Text="Ш¶Ш®ЩЉЩ…"/>
+  <StrRes Name="2463" Text="Щ…Ш§ЩЉЩ„"/>
+  <StrRes Name="2464" Text="ШІЩЉШ±Ш®Ш·"/>
+  <StrRes Name="2465" Text="ШЁШ§Щ„Ш§ Щ†Щ€ЩЉШі"/>
+  <StrRes Name="2466" Text="ШІЩЉШ± Щ†Щ€ЩЉШі"/>
+  <StrRes Name="2467" Text="ЩЃШґШ±ШЇЩ‡"/>
+  <StrRes Name="2468" Text="Ш№Ш±ЩЉШ¶"/>
+  <StrRes Name="2469" Text="12 cpi"/>
+  <StrRes Name="2470" Text="15 cpi"/>
+  <StrRes Name="2471" Text="ЪЇШІШ§Ш±Шґ (*.fr3)|*.fr3"/>
+  <StrRes Name="2472" Text="ЩѕШ±Щ€Щ†ШЇЩ‡ Pascal (*.pas)|*.pas|ЩѕШ±Щ€Щ†ШЇЩ‡ C++ (*.cpp)|*.cpp|ЩѕШ±Щ€Щ†ШЇЩ‡ JavaScript (*.js)|*.js|ЩѕШ±Щ€Щ†ШЇЩ‡ Basic (*.vb)|*.vb|Щ‡Щ…Щ‡ ЩѕШ±Щ€Щ†ШЇЩ‡ Щ‡Ш§|*.*"/>
+  <StrRes Name="2473" Text="ЩѕШ±Щ€Щ†ШЇЩ‡ Pascal (*.pas)|*.pas|ЩѕШ±Щ€Щ†ШЇЩ‡ C++ (*.cpp)|*.cpp|ЩѕШ±Щ€Щ†ШЇЩ‡ JavaScript (*.js)|*.js|ЩѕШ±Щ€Щ†ШЇЩ‡ Basic (*.vb)|*.vb|Щ‡Щ…Щ‡ ЩѕШ±Щ€Щ†ШЇЩ‡ Щ‡Ш§|*.*"/>
+  <StrRes Name="2474" Text="Ш§ШЄШµШ§Щ„Ш§ШЄ..."/>
+  <StrRes Name="2475" Text="ШІШЁШ§Щ†"/>
+  <StrRes Name="2476" Text="ШЄШєЩЉЩЉШ± Щ€Ш¶Ш№ЩЉШЄ Щ†Щ‚Ш·Щ‡ ШЄЩ€Щ‚ЩЃ"/>
+  <StrRes Name="2477" Text="Ш§Ш¬Ш±Ш§ ШЄШ§ Ш§ШґШ§Ш±Щ‡ ЪЇШ±"/>
+  <StrRes Name="2478" Text="!Ш§ЩЃШІЩ€ШЇЩ† ШЁШ§Щ†ШЇ ЩЃШ±ШІЩ†ШЇ"/>
+  <StrRes Name="2479" Text="Edit Fill"/>
+  <StrRes Name="dsCm" Text="ШіШ§Щ†ШЄЩЉ Щ…ШЄШ±"/>
+  <StrRes Name="dsInch" Text="Ш§ЩЉЩ†Ъ†"/>
+  <StrRes Name="dsPix" Text="ЩѕЩЉЪ©ШіЩ„"/>
+  <StrRes Name="dsChars" Text="Ъ©Ш§Ш±Ш§Ъ©ШЄШ±"/>
+  <StrRes Name="dsCode" Text="Ъ©ШЇ"/>
+  <StrRes Name="dsData" Text="ШЇШ§ШЇЩ‡"/>
+  <StrRes Name="dsPage" Text="ШµЩЃШ­Щ‡"/>
+  <StrRes Name="dsRepFilter" Text="ЪЇШІШ§Ш±Шґ (*.fr3)|*.fr3"/>
+  <StrRes Name="dsComprRepFilter" Text="ЪЇШІШ§Ш±Шґ ЩЃШґШ±ШЇЩ‡ (*.fr3)|*.fr3"/>
+  <StrRes Name="dsSavePreviewChanges" Text="ШЄШєЩЉЩЉШ±Ш§ШЄ ШЇШ± ШµЩЃШ­Щ‡ ЩѕЩЉШґ Щ†Щ…Ш§ЩЉШґ Ш°Ш®ЩЉШ±Щ‡ ЪЇШ±ШЇШЇ Шџ"/>
+  <StrRes Name="dsSaveChangesTo" Text="ШЄШєЩЉЩЉШ±Ш§ШЄ Ш°Ш®ЩЉШ±Щ‡ ЪЇШ±ШЇШЇ ШЇШ±  "/>
+  <StrRes Name="dsCantLoad" Text="Щ†Щ…ЩЉ ШЄЩ€Ш§Щ† ЩѕШ±Щ€Щ†ШЇЩ‡ Ш±Ш§ ШЁЩ‡ Ш­Ш§ЩЃШёЩ‡ Щ…Щ†ШЄЩ‚Щ„ Ъ©Ш±ШЇ"/>
+  <StrRes Name="dsStyleFile" Text="Щ†Щ…Ш§"/>
+  <StrRes Name="dsCantFindProc" Text="Ш±Щ€ЩЉЩ‡ Ш§ШµЩ„ЩЉ Ш±Ш§ Щ†Щ…ЩЉШЄЩ€Ш§Щ† ЩѕЩЉШЇШ§ Ъ©Ш±ШЇ"/>
+  <StrRes Name="dsClearScript" Text="Ш§ЩЉЩ† Щ‡Щ…Щ‡ Ъ©ШЇ Ш±Ш§ ЩѕШ§Ъ© Щ…ЩЉЪ©Щ†ШЇ. ШўЩЉШ§ Щ…ЩЉШ®Щ€Ш§Щ‡ЩЉШЇ Ш§ШЇШ§Щ…Щ‡ ШЁШЇЩ‡ЩЉШЇ Шџ"/>
+  <StrRes Name="dsNoStyle" Text="ШЁШЇЩ€Щ† Щ†Щ…Ш§"/>
+  <StrRes Name="dsStyleSample" Text="Щ†Щ…Ш§ЩЉ ШіШ§ШЇЩ‡"/>
+  <StrRes Name="dsTextNotFound" Text="ЩѕЩЉШЇШ§ Щ†ШґШЇ '%s' Щ…ШЄЩ†"/>
+  <StrRes Name="dsReplace" Text="Шџ '%s' Ш§ЩЉЩ† Щ…Щ€Ш±ШЇ ШЄШєЩЉЩЉШ± Ъ©Щ†ШЇ ШЁЩ‡"/>
+  <StrRes Name="2600" Text="FastReport ШЇШ±ШЁШ§Ш±Щ‡"/>
+  <StrRes Name="2601" Text="ШЁШ±Ш§ЩЉ Ш§Ш·Щ„Ш§Ш№ ШЁЩЉШґШЄШ± Ш§ШІ Щ€ШЁ ШіШ§ЩЉШЄ Щ…Ш§ ШЇЩЉШЇЩ† Ъ©Щ†ЩЉШЇ:"/>
+  <StrRes Name="2602" Text="ЩЃШ±Щ€Шґ:"/>
+  <StrRes Name="2603" Text="ЩѕШґШЄЩЉШЁШ§Щ†ЩЉ:"/>
+  <StrRes Name="2700" Text="ЪЇШІЩЉЩ†Щ‡ Щ‡Ш§ЩЉ ШµЩЃШ­Щ‡"/>
+  <StrRes Name="2701" Text="Ъ©Ш§ШєШ°"/>
+  <StrRes Name="2702" Text="ЩѕЩ‡Щ†Ш§"/>
+  <StrRes Name="2703" Text="Ш§Ш±ШЄЩЃШ§Ш№"/>
+  <StrRes Name="2704" Text="Ш§Щ†ШЇШ§ШІЩ‡"/>
+  <StrRes Name="2705" Text="Ш¬Щ‡ШЄ"/>
+  <StrRes Name="2706" Text="Ъ†Щѕ"/>
+  <StrRes Name="2707" Text="ШЁШ§Щ„Ш§"/>
+  <StrRes Name="2708" Text="Ш±Ш§ШіШЄ"/>
+  <StrRes Name="2709" Text="ЩѕШ§Ш¦ЩЉЩ†"/>
+  <StrRes Name="2710" Text="Ш­Ш§ШґЩЉЩ‡ Щ‡Ш§"/>
+  <StrRes Name="2711" Text="Щ…Щ†ШЁШ№ Ъ©Ш§ШєШ°"/>
+  <StrRes Name="2712" Text="ШµЩЃШ­Щ‡ Ш§Щ€Щ„"/>
+  <StrRes Name="2713" Text="ШµЩЃШ­Ш§ШЄ ШЇЩЉЪЇШ±"/>
+  <StrRes Name="2714" Text="Щ„ШЁЩ‡ ШЁЩ„Щ†ШЇ Ш№Щ…Щ€ШЇЩЉ"/>
+  <StrRes Name="2715" Text="Щ„ШЁЩ‡ ШЁЩ„Щ†ШЇ Ш§ЩЃЩ‚ЩЉ"/>
+  <StrRes Name="2716" Text="ЪЇШІЩЉЩ†Щ‡ Щ‡Ш§ЩЉ ШЇЩЉЪЇШ±"/>
+  <StrRes Name="2717" Text="ШіШЄЩ€Щ†Щ‡Ш§"/>
+  <StrRes Name="2718" Text="ШЄШ№ШЇШ§ШЇ"/>
+  <StrRes Name="2719" Text="ЩѕЩ‡Щ†Ш§"/>
+  <StrRes Name="2720" Text="Щ…Щ€Щ‚Ш№ЩЉШЄ"/>
+  <StrRes Name="2721" Text="ШЇЩЉЪЇШ±"/>
+  <StrRes Name="2722" Text="ШЇЩ€ Ш·Ш±ЩЃЩ‡"/>
+  <StrRes Name="2723" Text="Ъ†Ш§Щѕ ШЇШ± ШµЩЃШ­Щ‡ Щ‚ШЁЩ„ЩЉ"/>
+  <StrRes Name="2724" Text="Ш­Ш§ШґЩЉЩ‡ Щ‡Ш§ ШўШ¦ЩЉЩ†Щ‡ Ш§ЩЉ"/>
+  <StrRes Name="2725" Text="Ш§Ш±ШЄЩЃШ§Ш№ ШІЩЉШ§ШЇ ШЇШ± Ш­Ш§Щ„ШЄ Ш·Ш±Ш§Ш­ЩЉ"/>
+  <StrRes Name="2726" Text="ЩѕЩ‡Щ†Ш§ЩЉ ШµЩЃШ­Щ‡ ШЁЩЉ ЩѕШ§ЩЉШ§Щ†"/>
+  <StrRes Name="2727" Text="Ш§Ш±ШЄЩЃШ§Ш№ ШµЩЃШ­Щ‡ ШЁЩЉ ЩѕШ§ЩЉШ§Щ†"/>
+  <StrRes Name="2800" Text="Ш§Щ†ШЄШ®Ш§ШЁ Ш¬ШЇЩ€Щ„ ШЇШ§ШЇЩ‡ Щ‡Ш§ЩЉ ЪЇШІШ§Ш±Шґ"/>
+  <StrRes Name="2900" Text="Щ€ЩЉШ±Ш§ЩЉШґ Щ…ШЄШєЩЉШ±Щ‡Ш§"/>
+  <StrRes Name="2901" Text="ШЇШіШЄЩ‡"/>
+  <StrRes Name="2902" Text="Щ…ШЄШєЩЉШ±"/>
+  <StrRes Name="2903" Text="Щ€ЩЉШ±Ш§ЩЉШґ"/>
+  <StrRes Name="2904" Text="Ш­ШЇЩЃ"/>
+  <StrRes Name="2905" Text="Щ„ЩЉШіШЄ"/>
+  <StrRes Name="2906" Text="Ш§Щ†ШЄЩ‚Ш§Щ„ ШЁЩ‡ Ш­Ш§ЩЃШёЩ‡"/>
+  <StrRes Name="2907" Text="Ш°Ш®ЩЉШ±Щ‡"/>
+  <StrRes Name="2908" Text="Ш№ШЁШ§Ш±ШЄ:"/>
+  <StrRes Name="2909" Text="ЩЃШ±Щ‡Щ†ЪЇ Щ„ШєШЄ (*.fd3)|*.fd3"/>
+  <StrRes Name="2910" Text="ЩЃШ±Щ‡Щ†ЪЇ Щ„ШєШЄ (*.fd3)|*.fd3"/>
+  <StrRes Name="vaNoVar" Text="(Щ…ШЄШєЩЉШ±ЩЉ ШЄШ№Ш±ЩЉЩЃ Щ†ШґШЇЩ‡)"/>
+  <StrRes Name="vaVar" Text="Щ…ШЄШєЩЉШ±Щ‡Ш§"/>
+  <StrRes Name="vaDupName" Text="Щ†Ш§Щ… ШЄЪ©Ш±Ш§Ш±ЩЉ"/>
+  <StrRes Name="3000" Text="ЪЇШІЩЉЩ†Щ‡ Щ‡Ш§ЩЉ Ш·Ш±Ш§Ш­"/>
+  <StrRes Name="3001" Text="ШґШЁЪ©Щ‡ Ш§ЩЉ"/>
+  <StrRes Name="3002" Text="Щ†Щ€Ш№"/>
+  <StrRes Name="3003" Text="Ш§Щ†ШЇШ§ШІЩ‡"/>
+  <StrRes Name="3004" Text="ЩЃШ±Щ… ЪЇЩЃШЄЪЇЩ€:"/>
+  <StrRes Name="3005" Text="ШЇЩЉЪЇШ±"/>
+  <StrRes Name="3006" Text="ЩЃЩ€Щ†ШЄЩ‡Ш§"/>
+  <StrRes Name="3007" Text="ЩѕЩ†Ш¬Ш±Щ‡ Ъ©ШЇ"/>
+  <StrRes Name="3008" Text="Щ€ЩЉШ±Ш§ЩЉШґЪЇШ± ЩЉШ§ШЇШЇШ§ШґШЄ"/>
+  <StrRes Name="3009" Text="Ш§Щ†ШЇШ§ШІЩ‡"/>
+  <StrRes Name="3010" Text="Ш§Щ†ШЇШ§ШІЩ‡"/>
+  <StrRes Name="3011" Text="Ш±Щ†ЪЇЩ‡Ш§"/>
+  <StrRes Name="3012" Text="ЩЃШ§ШµЩ„Щ‡ ШЁЩЉЩ† ШЁШ§Щ†ШЇЩ‡Ш§:"/>
+  <StrRes Name="3013" Text="cm"/>
+  <StrRes Name="3014" Text="in"/>
+  <StrRes Name="3015" Text="pt"/>
+  <StrRes Name="3016" Text="pt"/>
+  <StrRes Name="3017" Text="pt"/>
+  <StrRes Name="3018" Text="ШіШ§Щ†ШЄЩЉЩ…ШЄШ±:"/>
+  <StrRes Name="3019" Text="Ш§ЩЉЩ†Ъ†:"/>
+  <StrRes Name="3020" Text="ЩѕЩЉЪ©ШіЩ„:"/>
+  <StrRes Name="3021" Text="Щ†Щ…Ш§ЩЉШґ ШґШЁЪ©Щ‡ Ш§ЩЉ"/>
+  <StrRes Name="3022" Text="Щ‡Щ…ШЄШ±Ш§ШІЩЉ ШЁШ§ ШґШЁЪ©Щ‡"/>
+  <StrRes Name="3023" Text="Щ†Щ…Ш§ЩЉШґ Щ€ЩЉШ±Ш§ЩЉШґЪЇШ± ШЁШ№ШЇ Ш§ШІ ШЇШ±Ш¬"/>
+  <StrRes Name="3024" Text="Ш§ШіШЄЩЃШ§ШЇЩ‡ Ш§ШІ Ш¬ШІШ¦ЩЉШ§ШЄ ЩЃЩ€Щ†ШЄ ШґЩЉШЎ"/>
+  <StrRes Name="3025" Text="ЩЃШ¶Ш§ЩЉ Ъ©Ш§Ш±ЩЉ"/>
+  <StrRes Name="3026" Text="ЩѕЩ†Ш¬Ш±Щ‡ Щ‡Ш§ЩЉ Ш§ШЁШІШ§Ш±"/>
+  <StrRes Name="3027" Text="LCD Ш±Щ†ЪЇ ШґШЁЪ©Щ‡"/>
+  <StrRes Name="3028" Text="Щ‚Ш±Ш§Ш± ШЇШ§ШЇЩ† ШЁШ§Щ†ШЇЩ‡Ш§ЩЉ ШўШІШ§ШЇ"/>
+  <StrRes Name="3029" Text="Щ†Щ…Ш§ЩЉШґ ЩЃЩЉЩ„ШЇЩ‡Ш§ ШЇШ± Щ„ЩЉШіШЄ"/>
+  <StrRes Name="3030" Text="Щ†Щ…Ш§ЩЉШґ ШµЩЃШ­Щ‡ ШґШ±Щ€Ш№"/>
+  <StrRes Name="3031" Text="Щ€Ш¶Ш№ЩЉШЄ Щ‚Ш±Ш§Ш±ШЇШ§ШЇЩЉ"/>
+  <StrRes Name="3032" Text="Щ†Щ…Ш§ЩЉШґ Ш№Щ†Щ€Ш§Щ† ШЁШ§Щ†ШЇ"/>
+  <StrRes Name="3100" Text="Ш§Щ†ШЄШ®Ш§ШЁ Ш¬ШЇЩ€Щ„ ШЇШ§ШЇЩ‡"/>
+  <StrRes Name="3101" Text="ШЄШ№ШЇШ§ШЇ ЩѕШ±Щ€Щ†ШЇЩ‡:"/>
+  <StrRes Name="3102" Text="Dataset"/>
+  <StrRes Name="3103" Text="Filter"/>
+  <StrRes Name="dbNotAssigned" Text="[ШЄШ№ЩЉЩЉЩ† Щ†ШґШЇЩ‡]"/>
+  <StrRes Name="3200" Text="ЪЇШ±Щ€Щ‡"/>
+  <StrRes Name="3201" Text="ШЄЩЃЪ©ЩЉЪ© Ш±Щ€ЩЉ"/>
+  <StrRes Name="3202" Text="ЪЇШІЩЉЩ†Щ‡ Щ‡Ш§"/>
+  <StrRes Name="3203" Text="ЩЃЩЉЩ„ШЇ ШЇШ§ШЇЩ‡"/>
+  <StrRes Name="3204" Text="Ш№ШЁШ§Ш±ШЄ"/>
+  <StrRes Name="3205" Text="Щ†ЪЇЩ‡ ШЇШ§ШґШЄЩ† ЪЇШ±Щ€Щ‡ ШЁШ§Щ‡Щ…"/>
+  <StrRes Name="3206" Text="ШґШ±Щ€Ш№ ШµЩЃШ­Щ‡ Ш¬ШЇЩЉШЇ"/>
+  <StrRes Name="3207" Text="Щ†Щ…Ш§ЩЉШґ ШЇШ± Ъ©Щ†ШЄШ±Щ„Ш± ШІЩ…ЩЉЩ†Щ‡"/>
+  <StrRes Name="3300" Text="ЩЉШ§ШЇШЇШ§ШґШЄ ШіЩЉШіШЄЩ…"/>
+  <StrRes Name="3301" Text="ШЁШ§Щ†ШЇ ШЇШ§ШЇЩ‡"/>
+  <StrRes Name="3302" Text="Ш¬ШЇЩ€Щ„ ШЇШ§ШЇЩ‡"/>
+  <StrRes Name="3303" Text="ЩЃЩЉЩ„ШЇ ШЇШ§ШЇЩ‡"/>
+  <StrRes Name="3304" Text="ШЄШ§ШЁШ№"/>
+  <StrRes Name="3305" Text="Ш№ШЁШ§Ш±ШЄ"/>
+  <StrRes Name="3306" Text="Щ…Щ‚ШЇШ§Ш± ШЄШ§ШЁШ№ Щ…Ш­Ш§ШіШЁШ§ШЄЩЉ"/>
+  <StrRes Name="3307" Text="Щ…ШЄШєЩЉШ± ШіЩЉШіШЄЩ…ЩЉ"/>
+  <StrRes Name="3308" Text="ШґЩ…Ш§Ш±Щ‡ ШЁШ§Щ†ШЇ Щ†Ш§Щ…Ш±Ш¦ЩЉ"/>
+  <StrRes Name="3309" Text="Щ…ШЄЩ†"/>
+  <StrRes Name="3310" Text="Ъ©Ш§Ш±Ъ©Ш±ШЇ Ъ©Щ„"/>
+  <StrRes Name="agAggregate" Text="ШЇШ±Ш¬ ШЄШ§ШЁШ№ Щ…Ш­Ш§ШіШЁШ§ШЄЩЉ"/>
+  <StrRes Name="vt1" Text="[DATE]"/>
+  <StrRes Name="vt2" Text="[TIME]"/>
+  <StrRes Name="vt3" Text="[PAGE#]"/>
+  <StrRes Name="vt4" Text="[TOTALPAGES#]"/>
+  <StrRes Name="vt5" Text="[PAGE#] of [TOTALPAGES#]"/>
+  <StrRes Name="vt6" Text="[LINE#]"/>
+  <StrRes Name="3400" Text="OLE ШґЩЉШЎ"/>
+  <StrRes Name="3401" Text="ШЇШ±Ш¬..."/>
+  <StrRes Name="3402" Text="Щ€ЩЉШ±Ш§ЩЉШґ..."/>
+  <StrRes Name="3403" Text="ШЁШіШЄЩ†"/>
+  <StrRes Name="olStretched" Text="Ъ©ШґЩЉШЇЩ‡ ШґШЇЩ‡"/>
+  <StrRes Name="3500" Text="Щ€ЩЉШ±Ш§ЩЉШґЪЇШ± ШЁШ§Ш±Ъ©ШЇ"/>
+  <StrRes Name="3501" Text="Ъ©ШЇ"/>
+  <StrRes Name="3502" Text="Щ†Щ€Ш№ Щ…ЩЉЩ„Щ‡"/>
+  <StrRes Name="3503" Text="ШЁШІШ±ЪЇЩ†Щ…Ш§Ш¦ЩЉ:"/>
+  <StrRes Name="3504" Text="ЪЇШІЩЉЩ†Щ‡ Щ‡Ш§"/>
+  <StrRes Name="3505" Text="Ъ†Ш±Ш®Шґ"/>
+  <StrRes Name="3506" Text="Щ…Ш­Ш§ШіШЁЩ‡ ШµШ­ШЄ ШЇШ§ШЇЩ‡"/>
+  <StrRes Name="3507" Text="Щ…ШЄЩ†"/>
+  <StrRes Name="3508" Text="0В°"/>
+  <StrRes Name="3509" Text="90В°"/>
+  <StrRes Name="3510" Text="180В°"/>
+  <StrRes Name="3511" Text="270В°"/>
+  <StrRes Name="bcCalcChecksum" Text="Щ…Ш­Ш§ШіШЁЩ‡ ШµШ­ШЄ ШЇШ§ШЇЩ‡"/>
+  <StrRes Name="bcShowText" Text="Щ†Щ…Ш§ЩЉШґ Щ…ШЄЩ†"/>
+  <StrRes Name="3600" Text="Щ€ЩЉШ±Ш§ЩЉШґ Щ†Ш§Щ… Щ…ШіШЄШ№Ш§Ш±"/>
+  <StrRes Name="3601" Text="Ш±Ш§ ЩЃШґШ§Ш± ШЇЩ‡ЩЉШЇ Enter ШЁШ±Ш§ЩЉ Щ€ЩЉШ±Ш§ЩЉШґ ЩЃЩ‚Ш±Щ‡ Ъ©Щ„ЩЉШЇ"/>
+  <StrRes Name="3602" Text="Щ†Ш§Щ… Щ…ШіШЄШ№Ш§Ш± Ш¬ШЇЩ€Щ„ ШЇШ§ШЇЩ‡"/>
+  <StrRes Name="3603" Text="ЩЃЩЉЩ„ШЇ Щ†Ш§Щ… Щ…ШіШЄШ№Ш§Ш±"/>
+  <StrRes Name="3604" Text="ШЁШ±ЪЇШ±ШЇШ§Щ†ШЇЩ†"/>
+  <StrRes Name="3605" Text="ШЁЩ‡ Ш±Щ€ШІ ШЇШ±ШўЩ€Ш±ШЇЩ†"/>
+  <StrRes Name="alUserName" Text="Щ†Ш§Щ… Ъ©Ш§Ш±ШЁШ±"/>
+  <StrRes Name="alOriginal" Text="Щ†Ш§Щ… Ш§ШµЩ„ЩЉ"/>
+  <StrRes Name="3700" Text="Щ€ЩЉШ±Ш§ЩЉШґЪЇШ± ЩѕШ§Ш±Ш§Щ…ШЄШ±Щ‡Ш§"/>
+  <StrRes Name="qpName" Text="Щ†Ш§Щ…"/>
+  <StrRes Name="qpDataType" Text="Щ†Щ€Ш№ ШЇШ§ШЇЩ‡"/>
+  <StrRes Name="qpValue" Text="Щ…Щ‚ШЇШ§Ш±"/>
+  <StrRes Name="3800" Text="ЩѕЩЉЩ€Щ†ШЇ Ш§ШµЩ„ЩЉ - Ш¬ШІШ¦ЩЉ"/>
+  <StrRes Name="3801" Text="ЩЃЩЉЩ„ШЇ Ш¬ШІШ¦ЩЉ"/>
+  <StrRes Name="3802" Text="ЩЃЩЉЩ„ШЇ Ш§ШµЩ„ЩЉ"/>
+  <StrRes Name="3803" Text="ЩЃЩЉЩ„ШЇ ЩѕЩЉЩ€Щ†ШЇЩЉ"/>
+  <StrRes Name="3804" Text="Ш§ЩЃШІЩ€ШЇЩ†"/>
+  <StrRes Name="3805" Text="ЩѕШ§Ъ© Ъ©Ш±ШЇЩ†"/>
+  <StrRes Name="3900" Text="ЩЉШ§ШЇШЇШ§ШґШЄ"/>
+  <StrRes Name="3901" Text="ШЇШ±Ш¬ Ш№ШЁШ§Ш±ШЄ"/>
+  <StrRes Name="3902" Text="ШЇШ±Ш¬ ШЄШ§ШЁШ№ Щ…Ш­Ш§ШіШЁШ§ШЄЩЉ"/>
+  <StrRes Name="3903" Text="ШЇШ±Ш¬ Щ‚Ш§Щ„ШЁ ШЁЩ†ШЇЩЉ"/>
+  <StrRes Name="3904" Text="ШіШ·Ш± ШЁЩ†ШЇЩЉ"/>
+  <StrRes Name="3905" Text="Щ…ШЄЩ†"/>
+  <StrRes Name="3906" Text="Щ‚Ш§Щ„ШЁ ШЁЩ†ШЇЩЉ"/>
+  <StrRes Name="3907" Text="ЩѕШ±Ш±Щ†ЪЇ"/>
+  <StrRes Name="4000" Text="ШЄШµЩ€ЩЉШ±"/>
+  <StrRes Name="4001" Text="Ш§Щ†ШЄЩ‚Ш§Щ„ ШЁЩ‡ Ш­Ш§ЩЃШёЩ‡"/>
+  <StrRes Name="4002" Text="Ш±Щ€Щ†Щ€ШґШЄ"/>
+  <StrRes Name="4003" Text="Ъ†ШіШЁШ§Щ†ШЇЩ†"/>
+  <StrRes Name="4004" Text="ЩѕШ§Ъ© Ъ©Ш±ШЇЩ†"/>
+  <StrRes Name="piEmpty" Text="Ш®Ш§Щ„ЩЉ"/>
+  <StrRes Name="4100" Text="Щ€ЩЉШ±Ш§ЩЉШґЪЇШ± Щ†Щ…Щ€ШЇШ§Ш±"/>
+  <StrRes Name="4101" Text="Ш§ЩЃШІЩ€ШЇЩ† Щ…Ш¬Щ…Щ€Ш№Щ‡"/>
+  <StrRes Name="4102" Text="Ш­Ш°ЩЃ Щ…Ш¬Щ…Щ€Ш№Щ‡"/>
+  <StrRes Name="4103" Text="Щ€ЩЉШ±Ш§ЩЉШґ Щ†Щ…Щ€ШЇШ§Ш±"/>
+  <StrRes Name="4104" Text="ШЁШ§Щ†ШЇ Щ…Щ†ШЁШ№"/>
+  <StrRes Name="4105" Text="ШЇШ§ШЇЩ‡ Ш«Ш§ШЁШЄ"/>
+  <StrRes Name="4106" Text="Ш¬ШЇЩ€Щ„ ШЇШ§ШЇЩ‡"/>
+  <StrRes Name="4107" Text="Щ…Щ†ШЁШ№ ШЇШ§ШЇЩ‡"/>
+  <StrRes Name="4108" Text="Щ…Щ‚Ш§ШЇЩЉШ±"/>
+  <StrRes Name="4109" Text="Ш§ШІ ШіШ±ЩЉ Щ†Щ…Щ€ШЇШ§Ш±Щ‡Ш§ Ш§Щ†ШЄШ®Ш§ШЁ Ъ©Щ†ЩЉШЇ ЩЉШ§ ЩЉЪ© Щ†Щ…Щ€ШЇШ§Ш± Ш¬ШЇЩЉШЇ Ш§Ш¶Ш§ЩЃЩ‡ Ъ©Щ†ЩЉШЇ"/>
+  <StrRes Name="4114" Text="ЪЇШІЩЉЩ†Щ‡ Щ‡Ш§ЩЉ ШЇЩЉЪЇШ±"/>
+  <StrRes Name="4115" Text="Щ…Щ‚ШЇШ§Ш± ШЁШ§Щ„Ш§ N"/>
+  <StrRes Name="4116" Text="Ш№Щ†Щ€Ш§Щ† ШЁШ§Щ„Ш§ N"/>
+  <StrRes Name="4117" Text="Ш¬Щ‡ШЄ Щ…Ш±ШЄШЁ ШіШ§ШІЩЉ"/>
+  <StrRes Name="4126" Text="X Щ…Ш­Щ€Ш±"/>
+  <StrRes Name="ch3D" Text="3D Щ†Щ…Ш§ЩЉШґ"/>
+  <StrRes Name="chAxis" Text="Щ†Щ…Ш§ЩЉШґ Щ…Ш­Щ€Ш±"/>
+  <StrRes Name="chsoNone" Text="Щ‡ЩЉЪ†Ъ©ШЇШ§Щ…"/>
+  <StrRes Name="chsoAscending" Text="ШµШ№Щ€ШЇЩЉ"/>
+  <StrRes Name="chsoDescending" Text="Щ†ШІЩ€Щ„ЩЉ"/>
+  <StrRes Name="chxtText" Text="Щ…ШЄЩ†"/>
+  <StrRes Name="chxtNumber" Text="Ш№ШЇШЇЩЉ"/>
+  <StrRes Name="chxtDate" Text="ШЄШ§Ш±ЩЉШ®"/>
+  <StrRes Name="4200" Text="Щ€ЩЉШ±Ш§ЩЉШґЪЇШ± ШЄЩ€Ш§Щ†ЪЇШ±"/>
+  <StrRes Name="4201" Text="ШЁШ§ШІЪ©Ш±ШЇЩ† ЩѕШ±Щ€Щ†ШЇЩ‡"/>
+  <StrRes Name="4202" Text="Ш°Ш®ЩЉШ±Щ‡ ЩѕШ±Щ€Щ†ШЇЩ‡"/>
+  <StrRes Name="4203" Text="Ш®Щ†Ш«ЩЉ Ъ©Ш±ШЇЩ†"/>
+  <StrRes Name="4204" Text="ЩЃЩ€Щ†ШЄ"/>
+  <StrRes Name="4205" Text="ШЇШ±Ш¬ Ш№ШЁШ§Ш±ШЄ"/>
+  <StrRes Name="4206" Text="Ш¶Ш®ЩЉЩ…"/>
+  <StrRes Name="4207" Text="Щ…Ш§ЩЉЩ„"/>
+  <StrRes Name="4208" Text="ШІЩЉШ±Ш®Ш·"/>
+  <StrRes Name="4209" Text="Щ‡Щ…ШЄШ±Ш§ШІЩЉ Ш§ШІ Ъ†Щѕ"/>
+  <StrRes Name="4210" Text="Щ‡Щ…ШЄШ±Ш§ШІЩЉ ШЇШ± Щ€ШіШ·"/>
+  <StrRes Name="4211" Text="Щ‡Щ…ШЄШ±Ш§ШІЩЉ Ш§ШІ Ш±Ш§ШіШЄ"/>
+  <StrRes Name="4212" Text="Ш­Ш§ШґЩЉЩ‡ Щ…ШіШЄЩ‚ЩЉЩ…"/>
+  <StrRes Name="4213" Text="Ш№Щ„Ш§Щ…ШЄ"/>
+  <StrRes Name="4300" Text="Щ€ЩЉШ±Ш§ЩЉШґЪЇШ± Ш¬ШЇЩ€Щ„ ШіШЄЩ€Щ†ЩЉ"/>
+  <StrRes Name="4301" Text="Щ…Щ†ШЁШ№ ШЇШ§ШЇЩ‡"/>
+  <StrRes Name="4302" Text="Ш§ШЁШ№Ш§ШЇ"/>
+  <StrRes Name="4303" Text="ШіШ·Ш±Щ‡Ш§"/>
+  <StrRes Name="4304" Text="ШіШЄЩ€Щ†Щ‡Ш§"/>
+  <StrRes Name="4305" Text="ШіЩ„Щ€Щ„Щ‡Ш§"/>
+  <StrRes Name="4306" Text="ШіШ§Ш®ШЄШ§Ш± Ш¬ШЇЩ€Щ„ ШіШЄЩ€Щ†ЩЉ"/>
+  <StrRes Name="4307" Text="ШіШ±ШўЩ…ШЇ ШіШ·Ш±"/>
+  <StrRes Name="4308" Text="ШіШ±ШўЩ…ШЇ ШіШЄЩ€Щ†"/>
+  <StrRes Name="4309" Text="Ш¬Щ…Ш№ Ъ©Щ„ ШіШ·Ш±"/>
+  <StrRes Name="4310" Text="Ш¬Щ…Ш№ Ъ©Щ„ ШіШЄЩ€Щ†"/>
+  <StrRes Name="4311" Text="Ш№Щ€Ш¶ Ъ©Ш±ШЇЩ† ШіШ·Ш±Щ‡Ш§/ШіШЄЩ€Щ†Щ‡Ш§"/>
+  <StrRes Name="4312" Text="Щ†Щ…Ш§ЩЉ Ш¬ШЇЩ€Щ„ ШіШЄЩ€Щ†ЩЉ"/>
+  <StrRes Name="4313" Text="Ш¬ШІШ¦ЩЉШ§ШЄ ЩЃЩ€Щ†ШЄ"/>
+  <StrRes Name="4314" Text="Щ‡Щ…ШЄШ±Ш§ШІЩЉ Ш§ШІ Ъ†Щѕ"/>
+  <StrRes Name="4315" Text="Щ‡Щ…ШЄШ±Ш§ШІЩЉ ШЇШ± Щ€ШіШ·"/>
+  <StrRes Name="4316" Text="Щ‡Щ…ШЄШ±Ш§ШІЩЉ Ш§ШІ Ш±Ш§ШіШЄ"/>
+  <StrRes Name="4317" Text="Ъ†Ш±Ш®Шґ Щ…ШЄЩ†"/>
+  <StrRes Name="4318" Text="ЩѕШ±Ш±Щ†ЪЇ"/>
+  <StrRes Name="4319" Text="Щ‚Ш§Щ„ШЁ"/>
+  <StrRes Name="4320" Text="Ш¬ШІШ¦ЩЉШ§ШЄ Ъ†Ш§Ш±Ъ†Щ€ШЁ"/>
+  <StrRes Name="4321" Text="ЩѕШ± Ъ©Ш±ШЇЩ† ШЁШ§ Ш±Щ†ЪЇ"/>
+  <StrRes Name="4322" Text="Щ‡ЩЉЪ†Ъ©ШЇШ§Щ…"/>
+  <StrRes Name="4323" Text="Ш¬Щ…Ш№"/>
+  <StrRes Name="4324" Text="Ъ©Щ€Ъ†Ъ©ШЄШ±ЩЉЩ†"/>
+  <StrRes Name="4325" Text="ШЁШІШ±ЪЇШЄШ±ЩЉЩ†"/>
+  <StrRes Name="4326" Text="Щ…ЩЉШ§Щ†ЪЇЩЉЩ†"/>
+  <StrRes Name="4327" Text="ШґЩ…Ш§Ш±Шґ"/>
+  <StrRes Name="4328" Text="(ШµШ№Щ€ШЇЩЉ (Шў-ЩЉ"/>
+  <StrRes Name="4329" Text="(Щ†ШІЩ€Щ„ЩЉ (ЩЉ-Шў"/>
+  <StrRes Name="4330" Text="ШЁШЇЩ€Щ† Щ…Ш±ШЄШЁ ШіШ§ШІЩЉ"/>
+  <StrRes Name="4331" Text="Ш¶Ш®ЩЉЩ…"/>
+  <StrRes Name="4332" Text="Щ…Ш§ЩЉЩ„"/>
+  <StrRes Name="4333" Text="ШІЩЉШ±Ш®Ш·"/>
+  <StrRes Name="4334" Text="ШЁШ§Щ„Ш§ Щ†Щ€ЩЉШі"/>
+  <StrRes Name="4335" Text="ШІЩЉШ± Щ†Щ€ЩЉШі"/>
+  <StrRes Name="4336" Text="ЩЃШґШ±ШЇЩ‡"/>
+  <StrRes Name="4337" Text="Ш№Ш±ЩЉШ¶"/>
+  <StrRes Name="4338" Text="12 cpi"/>
+  <StrRes Name="4339" Text="15 cpi"/>
+  <StrRes Name="crStName" Text="!Щ†Ш§Щ… Щ†Щ…Ш§ Ш±Ш§ Щ€Ш§Ш±ШЇ Ъ©Щ†ЫЊШЇ:"/>
+  <StrRes Name="crResize" Text="!ШЁШ±Ш§ЫЊ ШЄШєЫЊЫЊШ± Ш§Щ†ШЇШ§ШІЩ‡ Ш¬ШЇЩ€Щ„ ШіШЄЩ€Щ†ЫЊШЊ Ш®ШµЫЊШµЩ‡ 'AutoSize' Ш±Ш§ Щ†Ш§ШЇШ±ШіШЄ Ъ©Щ†ЫЊШЇ."/>
+  <StrRes Name="crSubtotal" Text="ШІЩЉШ± Ш¬Щ…Ш№"/>
+  <StrRes Name="crNone" Text="Щ‡ЩЉЪ†Ъ©ШЇШ§Щ…"/>
+  <StrRes Name="crSum" Text="Ш¬Щ…Ш№"/>
+  <StrRes Name="crMin" Text="Ъ©Щ€Ъ†Ъ©ШЄШ±ЩЉЩ†"/>
+  <StrRes Name="crMax" Text="ШЁШІШ±ЪЇШЄШ±ЩЉЩ†"/>
+  <StrRes Name="crAvg" Text="Щ…ЩЉШ§Щ†ЪЇЩЉЩ†"/>
+  <StrRes Name="crCount" Text="ШґЩ…Ш§Ш±Шґ"/>
+  <StrRes Name="crAsc" Text="Шў-ЩЉ"/>
+  <StrRes Name="crDesc" Text="ЩЉ-Шў"/>
+  <StrRes Name="4400" Text="Щ€ЩЉШ±Ш§ЩЉШґЪЇШ± Ш№ШЁШ§Ш±ШЄ"/>
+  <StrRes Name="4401" Text="Ш№ШЁШ§Ш±ШЄ:"/>
+  <StrRes Name="4500" Text="Щ†Щ…Ш§ЩЉШґ ЩЃШ§Щ„ШЁ"/>
+  <StrRes Name="4501" Text="ШЇШіШЄЩ‡"/>
+  <StrRes Name="4502" Text="Щ‚Ш§Щ„ШЁ"/>
+  <StrRes Name="4503" Text="Ш±ШґШЄЩ‡ Щ‚Ш§Щ„ШЁ:"/>
+  <StrRes Name="4504" Text="Ш¬ШЇШ§ШіШ§ШІ ШЇЩ‡ ШЇЩ‡ЩЉ:"/>
+  <StrRes Name="fkText" Text="(Щ…ШЄЩ† (ШЁШЇЩ€Щ† Щ‚Ш§Щ„ШЁ ШЁЩ†ШЇЩЉ"/>
+  <StrRes Name="fkNumber" Text="Ш№ШЇШЇ"/>
+  <StrRes Name="fkDateTime" Text="ШЄШ§Ш±ЩЉШ®/ШІЩ…Ш§Щ†"/>
+  <StrRes Name="fkBoolean" Text="Щ…Щ†Ш·Щ‚ЩЉ"/>
+  <StrRes Name="fkNumber1" Text="1234.5;%g"/>
+  <StrRes Name="fkNumber2" Text="1234.50;%2.2f"/>
+  <StrRes Name="fkNumber3" Text="1,234.50;%2.2n"/>
+  <StrRes Name="fkNumber4" Text="$1,234.50;%2.2m"/>
+  <StrRes Name="fkDateTime1" Text="11.28.2002;mm.dd.yyyy"/>
+  <StrRes Name="fkDateTime2" Text="28 nov 2002;dd mmm yyyy"/>
+  <StrRes Name="fkDateTime3" Text="November 28, 2002;mmmm dd, yyyy"/>
+  <StrRes Name="fkDateTime4" Text="02:14;hh:mm"/>
+  <StrRes Name="fkDateTime5" Text="02:14am;hh:mm am/pm"/>
+  <StrRes Name="fkDateTime6" Text="02:14:00;hh:mm:ss"/>
+  <StrRes Name="fkDateTime7" Text="02:14am, November 28, 2002;hh:mm am/pm, mmmm dd, yyyy"/>
+  <StrRes Name="fkBoolean1" Text="0,1;0,1"/>
+  <StrRes Name="fkBoolean2" Text="ШЁЩ„Щ‡,Щ†Щ‡;ШЁЩ„Щ‡,Щ†Щ‡"/>
+  <StrRes Name="fkBoolean3" Text="_,x;_,x"/>
+  <StrRes Name="fkBoolean4" Text="ШЇШ±ШіШЄ,Щ†Ш§ШЇШ±ШіШЄ;ШЇШ±ШіШЄ,Щ†Ш§ШЇШ±ШіШЄ"/>
+  <StrRes Name="4600" Text="Highlight Editor"/>
+  <StrRes Name="4601" Text="Conditions"/>
+  <StrRes Name="4602" Text="Add"/>
+  <StrRes Name="4603" Text="Delete"/>
+  <StrRes Name="4604" Text="Edit"/>
+  <StrRes Name="4605" Text="Style"/>
+  <StrRes Name="4606" Text="Frame"/>
+  <StrRes Name="4607" Text="Fill"/>
+  <StrRes Name="4608" Text="Font"/>
+  <StrRes Name="4609" Text="Visible"/>
+  <StrRes Name="4700" Text="Ш¬ШІШ¦ЩЉШ§ШЄ ЪЇШІШ§Ш±Шґ"/>
+  <StrRes Name="4701" Text="Ш№Щ…Щ€Щ…ЩЉ"/>
+  <StrRes Name="4702" Text="Ш¬ШІШ¦ЩЉШ§ШЄ Ъ†Ш§ЩѕЪЇШ±"/>
+  <StrRes Name="4703" Text="Ш±Щ€Щ†ШґШЄ Щ‡Ш§"/>
+  <StrRes Name="4704" Text="Ш№Щ…Щ€Щ…ЩЉ"/>
+  <StrRes Name="4705" Text="Ъ©Щ„Щ…Щ‡ Ш±Щ…ШІ"/>
+  <StrRes Name="4706" Text="ШЄЩ„ЩЃЩЉЩ‚ Ш±Щ€Щ†Щ€ШґШЄ Щ‡Ш§"/>
+  <StrRes Name="4707" Text="ЪЇШ°Ш± Щ…Ш¶Ш§Ш№ЩЃ"/>
+  <StrRes Name="4708" Text="Ъ†Ш§Щѕ Ш§ЪЇШ± Ш®Ш§Щ„ЩЉ ШЁЩ€ШЇ"/>
+  <StrRes Name="4709" Text="ШґШ±Ш­"/>
+  <StrRes Name="4710" Text="Щ†Ш§Щ…"/>
+  <StrRes Name="4711" Text="ШґШ±Ш­"/>
+  <StrRes Name="4712" Text="ШЄШµЩ€ЩЉШ±"/>
+  <StrRes Name="4713" Text="Щ…Щ€Щ„ЩЃ"/>
+  <StrRes Name="4714" Text="Ш№Щ…ШЇЩ‡"/>
+  <StrRes Name="4715" Text="Ъ©Щ…ШЄШ±"/>
+  <StrRes Name="4716" Text="Щ†Щ‡Ш§Ш¦ЩЉ"/>
+  <StrRes Name="4717" Text="ШіШ§Ш®ШЄ"/>
+  <StrRes Name="4718" Text="Ш§ЩЉШ¬Ш§ШЇ ШґШЇЩ‡"/>
+  <StrRes Name="4719" Text="Ш§ШµЩ„Ш§Ш­ ШґШЇЩ‡"/>
+  <StrRes Name="4720" Text="ШґШ±Ш­"/>
+  <StrRes Name="4721" Text="Щ†ШіШ®Щ‡"/>
+  <StrRes Name="4722" Text="ШЇШіШЄЩЉШ§ШЁЩЉ..."/>
+  <StrRes Name="4723" Text="Ш¬ШІШ¦ЩЉШ§ШЄ Ш§Ш±Ш« ШЁШ±ЩЉ"/>
+  <StrRes Name="4724" Text="Ш§Щ†ШЄШ®Ш§ШЁ ЪЇШІЩЉЩ†Щ‡:"/>
+  <StrRes Name="4725" Text="ШЄШєЩЉЩЉШ± Щ†Ъ©Ш±ШЇ"/>
+  <StrRes Name="4726" Text="Ш¬ШЇШ§ШіШ§ШІЩЉ ЪЇШІШ§Ш±Шґ Ш§ШµЩ„ЩЉ"/>
+  <StrRes Name="4727" Text="Ш§Ш±Ш« ШЁШ±ШЇЩ† Ш§ШІ ЪЇШІШ§Ш±Шґ Ш§ШµЩ„ЩЉ:"/>
+  <StrRes Name="4728" Text="Ш§Ш±Ш« ШЁШ±ЩЉ"/>
+  <StrRes Name="rePrnOnPort" Text="Ш±Щ€ЩЉ"/>
+  <StrRes Name="riNotInherited" Text="Ш§ЩЉЩ† ЪЇШІШ§Ш±Шґ Щ…Щ€Ш±Щ€Ш«ЩЉ Щ†ЩЉШіШЄ."/>
+  <StrRes Name="riInherited" Text="Ш§ЩЉЩ† ЪЇШІШ§Ш±Шґ Ш§ШІ ЪЇШІШ§Ш±Шґ Ш§ШµЩ„ЩЉ Ш§Ш±Ш« ШЁШ±ШЇЩ‡: %s"/>
+  <StrRes Name="4800" Text="Ш®Ш·Щ€Ш·"/>
+  <StrRes Name="4900" Text="SQL"/>
+  <StrRes Name="4901" Text="ШіШ§ШІЩ†ШЇЩ‡ ЩѕШ±Ші Щ€ Ш¬Щ€"/>
+  <StrRes Name="5000" Text="Ъ©Щ„Щ…Щ‡ Ш±Щ…ШІ"/>
+  <StrRes Name="5001" Text="Ъ©Щ„Щ…Щ‡ Ш±Щ…ШІ Ш±Ш§ Щ€Ш§Ш±ШЇ Ъ©Щ†ЩЉШЇ:"/>
+  <StrRes Name="5100" Text="Щ€ЩЉШ±Ш§ЩЉШґЪЇШ± Щ†Щ…Ш§"/>
+  <StrRes Name="5101" Text="Ш±Щ†ЪЇ..."/>
+  <StrRes Name="5102" Text="ЩЃЩ€Щ†ШЄ..."/>
+  <StrRes Name="5103" Text="Ъ†Ш§Ш±Ъ†Щ€ШЁ..."/>
+  <StrRes Name="5104" Text="Ш§ЩЃШІЩ€ШЇЩ†"/>
+  <StrRes Name="5105" Text="Ш­Ш°ЩЃ"/>
+  <StrRes Name="5106" Text="Щ€ЩЉШ±Ш§ЩЉШґ"/>
+  <StrRes Name="5107" Text="Ш§Щ†ШЄЩ‚Ш§Щ„ ШЁЩ‡ Ш­Ш§ЩЃШёЩ‡"/>
+  <StrRes Name="5108" Text="Ш°Ш®ЩЉШ±Щ‡"/>
+  <StrRes Name="5200" Text="Щ€ЩЉШ±Ш§ЩЉШґЪЇШ± Ъ†Ш§Ш±Ъ†Щ€ШЁ"/>
+  <StrRes Name="5201" Text="Ъ†Ш§Ш±Ъ†Щ€ШЁ"/>
+  <StrRes Name="5202" Text="Ш®Ш· Ъ†Ш§Ш±Ъ†Щ€ШЁ"/>
+  <StrRes Name="5203" Text="ШіШ§ЩЉЩ‡"/>
+  <StrRes Name="5211" Text="Style:"/>
+  <StrRes Name="5214" Text="Color:"/>
+  <StrRes Name="5215" Text="Width:"/>
+  <StrRes Name="5216" Text="Choose the line style, then choose the line to apply the style."/>
+  <StrRes Name="5300" Text="ЩЃЩ‚Ш±Щ‡ Ш¬ШЇЩЉШЇ"/>
+  <StrRes Name="5301" Text="Ш§Щ‚Щ„Ш§Щ…"/>
+  <StrRes Name="5302" Text="Ш§Щ„ЪЇЩ€Щ‡Ш§"/>
+  <StrRes Name="5303" Text="ЪЇШІШ§Ш±Шґ Щ…Щ€Ш±Щ€Ш«ЩЉ"/>
+  <StrRes Name="5400" Text="Ш¬ШЇЩ€Щ„ ШЄШ±ШЄЩЉШЁ"/>
+  <StrRes Name="5401" Text="Ш§ШґЩЉШ§ШЎ Щ„ЩЉШіШЄ ШґШЇЩ‡ ШЇШ± Ш¬ШЇЩ€Щ„ ШЄШ±ШЄЩЉШЁ:"/>
+  <StrRes Name="5402" Text="Ш­Ш±Ъ©ШЄ ШЁЩ‡ ШЁШ§Щ„Ш§"/>
+  <StrRes Name="5403" Text="Ш­Ш±Ъ©ШЄ ШЁЩ‡ ЩѕШ§Ш¦ЩЉЩ†"/>
+  <StrRes Name="5500" Text="Ш§Ш±ШІЩЉШ§ШЁЩЉ"/>
+  <StrRes Name="5501" Text="Ш№ШЁШ§Ш±ШЄ"/>
+  <StrRes Name="5502" Text="Щ†ШЄЩЉШ¬Щ‡"/>
+  <StrRes Name="5600" Text="Ш¬Ш§ШЇЩ€ЪЇШ± ЪЇШІШ§Ш±Шґ"/>
+  <StrRes Name="5601" Text="ШЇШ§ШЇЩ‡"/>
+  <StrRes Name="5602" Text="ЩЃЩЉЩ„ШЇЩ‡Ш§"/>
+  <StrRes Name="5603" Text="ЪЇШ±Щ€Щ‡Щ‡Ш§"/>
+  <StrRes Name="5604" Text="Ш·Ш±Ш­"/>
+  <StrRes Name="5605" Text="Щ†Щ…Ш§"/>
+  <StrRes Name="5606" Text=".ЪЇШ§Щ… 1. Ш§Щ†ШЄШ®Ш§ШЁ Ш¬ШЇЩ€Щ„ ШЇШ§ШЇЩ‡"/>
+  <StrRes Name="5607" Text=".ЪЇШ§Щ… 2. Ш§Щ†ШЄШ®Ш§ШЁ ЩЃЩЉЩ„ШЇ ШЁШ±Ш§ЩЉ Щ†ШґШ§Щ† ШЇШ§ШЇЩ†"/>
+  <StrRes Name="5608" Text=".(ЪЇШ§Щ… 3. Ш§ЩЉШ¬Ш§ШЇ ЪЇШ±Щ€Щ‡ (Ш§Ш®ШЄЩЉШ§Ш±ЩЉ"/>
+  <StrRes Name="5609" Text=".ЪЇШ§Щ… 4. ШЄШ№ЩЉЩЉЩ† Ш¬Щ‡ШЄ ШµЩЃШ­Щ‡ Щ€ Ш·Ш±Ш­ ШЇШ§ШЇЩ‡"/>
+  <StrRes Name="5610" Text=".ЪЇШ§Щ… 5. Ш§Щ†ШЄШ®Ш§ШЁ Щ†Щ…Ш§ЩЉ ЪЇШІШ§Ш±Шґ"/>
+  <StrRes Name="5611" Text="Ш§ЩЃШІЩ€ШЇЩ† &#62;"/>
+  <StrRes Name="5612" Text="Ш§ЩЃШІЩ€ШЇЩ† Щ‡Щ…Щ‡ &#62;&#62;"/>
+  <StrRes Name="5613" Text="&#60; Ш­Ш°ЩЃ"/>
+  <StrRes Name="5614" Text="&#60;&#60; Ш­Ш°ЩЃ Щ‡Щ…Щ‡"/>
+  <StrRes Name="5615" Text="Ш§ЩЃШІЩ€ШЇЩ† &#62;"/>
+  <StrRes Name="5616" Text="&#60; Ш­Ш°ЩЃ"/>
+  <StrRes Name="5617" Text="ЩЃЩЉЩ„ШЇЩ‡Ш§ЩЉ Ш§Щ†ШЄШ®Ш§ШЁ ШґШЇЩ‡:"/>
+  <StrRes Name="5618" Text="ЩЃЩЉЩ„ШЇЩ‡Ш§ЩЉ ШЇШ± ШЇШіШЄШ±Ші:"/>
+  <StrRes Name="5619" Text="ЪЇШ±Щ€Щ‡Щ‡Ш§:"/>
+  <StrRes Name="5620" Text="Ш¬Щ‡ШЄ"/>
+  <StrRes Name="5621" Text="Ш·Ш±Ш­"/>
+  <StrRes Name="5622" Text="Щ„ШЁЩ‡ ШЁЩ„Щ†ШЇ Ш№Щ…Щ€ШЇЩЉ"/>
+  <StrRes Name="5623" Text="Щ„ШЁЩ‡ ШЁЩ„Щ†ШЇ Ш§ЩЃЩ‚ЩЉ"/>
+  <StrRes Name="5624" Text="Ш¬ШЇЩ€Щ„ЩЉ"/>
+  <StrRes Name="5625" Text="ШіШЄЩ€Щ†ЩЉ"/>
+  <StrRes Name="5626" Text="Ш¬Ш§ ШіШ§ШІЩЉ ЩЃЩЉЩ„ШЇЩ‡Ш§ ШЇШ± ЩѕЩ‡Щ†Ш§ЩЉ ШµЩЃШ­Щ‡"/>
+  <StrRes Name="5627" Text="&#60;&#60; Щ‚ШЁЩ„ЩЉ"/>
+  <StrRes Name="5628" Text="ШЁШ№ШЇЩЉ &#62;&#62;"/>
+  <StrRes Name="5629" Text="ЩѕШ§ЩЉШ§Щ†"/>
+  <StrRes Name="5630" Text="Ш¬ШЇЩ€Щ„ Ш¬ШЇЩЉШЇ..."/>
+  <StrRes Name="5631" Text="ЩѕШ±Ші Щ€Ш¬Щ€ Ш¬ШЇЩЉШЇ..."/>
+  <StrRes Name="5632" Text="Ш§Щ†ШЄШ®Ш§ШЁ Ш§ШЄШµШ§Щ„ ШЁШ§Щ†Ъ© Ш§Ш·Щ„Ш§Ш№Ш§ШЄЩЉ:"/>
+  <StrRes Name="5633" Text="Ш§Щ†ШЄШ®Ш§ШЁ Ш¬ШЇЩ€Щ„:"/>
+  <StrRes Name="5634" Text="ЩЉШ§"/>
+  <StrRes Name="5635" Text="Ш§Щ†ШЄШ®Ш§ШЁ ЩѕШ±Ші Щ€Ш¬Щ€..."/>
+  <StrRes Name="5636" Text="ШЄЩ†ШёЩЉЩ…Ш§ШЄ Ш§ШЄШµШ§Щ„"/>
+  <StrRes Name="wzStd" Text="Ш¬Ш§ШЇЩ€ЪЇШ± ЪЇШІШ§Ш±Шґ Ш§ШіШЄШ§Щ†ШЇШ§Ш±ШЇ"/>
+  <StrRes Name="wzDMP" Text="Ш¬Ш§ШЇЩ€ЪЇШ± ЪЇШІШ§Ш±Шґ Ъ†Ш§ЩѕЪЇШ± ШіЩ€ШІЩ†ЩЉ"/>
+  <StrRes Name="wzStdEmpty" Text="ЪЇШІШ§Ш±Шґ Ш§ШіШЄШ§Щ†ШЇШ§Ш±ШЇ"/>
+  <StrRes Name="wzDMPEmpty" Text="ЪЇШІШ§Ш±Шґ Ъ†Ш§ЩѕЪЇШ± ШіЩ€ШІЩ†ЩЉ"/>
+  <StrRes Name="5700" Text="Ш¬Ш§ШЇЩ€ЪЇШ± Ш§ШЄШµШ§Щ„"/>
+  <StrRes Name="5701" Text="Ш§ШЄШµШ§Щ„"/>
+  <StrRes Name="5702" Text="Щ†Щ€Ш№ Ш§ШЄШµШ§Щ„ Ш±Ш§ Ш§Щ†ШЄШ®Ш§ШЁ Ъ©Щ†ЩЉШЇ:"/>
+  <StrRes Name="5703" Text="ШЁШ§Щ†Ъ© Ш§Ш·Щ„Ш§Ш№Ш§ШЄЩЉ Ш±Ш§ Ш§Щ†ШЄШ®Ш§ШЁ Ъ©Щ†ЩЉШЇ:"/>
+  <StrRes Name="5704" Text="Ъ©Ш§Ш±ШЁШ±"/>
+  <StrRes Name="5705" Text="Ъ©Щ„Щ…Щ‡ Ш±Щ…ШІ"/>
+  <StrRes Name="5706" Text="Ш§Ш№Щ„Ш§Щ† Щ€Ш±Щ€ШЇ"/>
+  <StrRes Name="5707" Text="Ш§ШіШЄЩЃШ§ШЇЩ‡ Ъ©Ш§Ш±ШЁШ±/Ъ©Щ„Щ…Щ‡ Ш±Щ…ШІ:"/>
+  <StrRes Name="5708" Text="Ш¬ШЇЩ€Щ„"/>
+  <StrRes Name="5709" Text="Щ†Ш§Щ… Ш¬ШЇЩ€Щ„ Ш±Ш§ Ш§Щ†ШЄШ®Ш§ШЁ Ъ©Щ†ЩЉШЇ:"/>
+  <StrRes Name="5710" Text="ЩЃЩЉЩ„ШЄШ± Ш±Ъ©Щ€Ш±ШЇЩ‡Ш§:"/>
+  <StrRes Name="5711" Text="ЩѕШ±Ші Щ€ Ш¬Щ€"/>
+  <StrRes Name="5712" Text="SQL ШЇШіШЄЩ€Ш±Ш§ШЄ:"/>
+  <StrRes Name="5713" Text="ШіШ§ШІЩ†ШЇЩ‡ ЩѕШ±Ші Щ€ Ш¬Щ€"/>
+  <StrRes Name="5714" Text="Щ€ЩЉШ±Ш§ЩЉШґ ЩѕШ§Ш±Ш§Щ…ШЄШ±Щ‡Ш§ЩЉ ЩѕШ±Ші Щ€ Ш¬Щ€"/>
+  <StrRes Name="ftAllFiles" Text="Щ‡Щ…Щ‡ ЩѕШ±Щ€Щ†ШЇЩ‡ Щ‡Ш§"/>
+  <StrRes Name="ftPictures" Text="ШЄШµШ§Щ€ЩЉШ±"/>
+  <StrRes Name="ftDB" Text="ШЁШ§Щ†Ъ© Ш§Ш·Щ„Ш§Ш№Ш§ШЄЩЉ"/>
+  <StrRes Name="ftRichFile" Text="ЩѕШ±Щ€Щ†ШЇЩ‡ RichText"/>
+  <StrRes Name="ftTextFile" Text="ЩѕШ±Щ€Щ†ШЇЩ‡ Text"/>
+  <StrRes Name="prNotAssigned" Text="(ШЁЪ©Ш§Ш± Щ†Ш±ЩЃШЄЩ‡)"/>
+  <StrRes Name="prInvProp" Text="Щ…Щ‚ШЇШ§Ш± Щ†Ш§ШЇШ±ШіШЄ Ш®ШµЩ€ШµЩЉШЄ"/>
+  <StrRes Name="prDupl" Text="Щ†Ш§Щ… ШЄЪ©Ш±Ш§Ш±ЩЉ"/>
+  <StrRes Name="prPict" Text="(ШЄШµЩ€ЩЉШ±)"/>
+  <StrRes Name="mvExpr" Text="ЩѕШ°ЩЉШ±ЩЃШЄЩ† Ш№ШЁШ§Ш±ШЄ"/>
+  <StrRes Name="mvStretch" Text="Ъ©ШґЩЉШЇЩ†"/>
+  <StrRes Name="mvStretchToMax" Text="Ъ©ШґЩЉШЇЩ† ШЄШ§ ШЁЩЉШґШЄШ±ЩЉЩ† Ш§Ш±ШЄЩЃШ§Ш№"/>
+  <StrRes Name="mvShift" Text="ШЄШєЩЉЩЉШ± Щ…Ъ©Ш§Щ†"/>
+  <StrRes Name="mvShiftOver" Text="ШЄШєЩЉЩЉШ± Щ…Ъ©Ш§Щ† Щ‡Щ†ЪЇШ§Щ… Ш±Щ€ЩЉЩ‡Щ… Ш§ЩЃШЄШ§ШЇЩ†"/>
+  <StrRes Name="mvVisible" Text="Щ…Ш±Ш¦ЩЉ"/>
+  <StrRes Name="mvPrintable" Text="Щ‚Ш§ШЁЩ„ Ъ†Ш§Щѕ"/>
+  <StrRes Name="mvFont" Text="ЩЃЩ€Щ†ШЄ..."/>
+  <StrRes Name="mvFormat" Text="Щ†Щ…Ш§ЩЉШґ Щ‚Ш§Щ„ШЁ..."/>
+  <StrRes Name="mvClear" Text="ЩѕШ§Ъ© Ъ©Ш±ШЇЩ† Щ…Ш­ШЄЩ€ЩЉШ§ШЄ"/>
+  <StrRes Name="mvAutoWidth" Text="ШЄЩ†ШёЩЉЩ… Ш®Щ€ШЇЪ©Ш§Ш± ЩѕЩ‡Щ†Ш§"/>
+  <StrRes Name="mvWWrap" Text="ШіШ·Ш± ШЁЩ†ШЇЩЉ"/>
+  <StrRes Name="mvSuppress" Text="Щ…Ш§Щ†Ш№ ШґШЇЩ† Ш§ШІ Щ…Щ‚Ш§ШЇЩЉШ± ШЄЪ©Ш±Ш§Ш±ЩЉ"/>
+  <StrRes Name="mvHideZ" Text="Щ…Ш®ЩЃЩЉ Ъ©Ш±ШЇЩ† ШµЩЃШ±Щ‡Ш§"/>
+  <StrRes Name="mvHTML" Text="HTML ЩѕШ°ЩЉШ±ЩЃШЄЩ† ШЁШ±Ъ†ШіШЁ"/>
+  <StrRes Name="lvDiagonal" Text="Ш§Ш±ЩЉШЁ"/>
+  <StrRes Name="pvAutoSize" Text="ШЄЩ†ШёЩЉЩ… Ш®Щ€ШЇЪ©Ш§Ш± Ш§Щ†ШЇШ§ШІЩ‡"/>
+  <StrRes Name="pvCenter" Text="Щ€ШіШ·"/>
+  <StrRes Name="pvAspect" Text="Щ†ЪЇШ§Щ‡ ШЇШ§ШґШЄЩ† Щ†ШіШЁШЄ Щ†Щ…Щ€ШЇ"/>
+  <StrRes Name="bvSplit" Text="ЩѕШ°ЩЉШ±ЩЃШЄЩ† ШЄЩЃЪ©ЩЉЪ©"/>
+  <StrRes Name="bvKeepChild" Text="Щ†ЪЇШ§Щ‡ ШЇШ§ШґШЄЩ† ЩЃШ±ШІЩ†ШЇ ШЁШ§Щ‡Щ…"/>
+  <StrRes Name="bvPrintChild" Text="Ъ†Ш§Щѕ ЩЃШ±ШІЩ†ШЇ ШЇШ± ШµЩ€Ш±ШЄ Щ†Ш§Щ…Ш±Ш¦ЩЉ ШЁЩ€ШЇЩ†"/>
+  <StrRes Name="bvStartPage" Text="ШґШ±Щ€Ш№ ШµЩЃШ­Щ‡ Ш¬ШЇЩЉШЇ"/>
+  <StrRes Name="bvPrintIfEmpty" Text="Ъ†Ш§Щѕ ШЇШ± ШµЩ€Ш±ШЄ Ш®Ш§Щ„ЩЉ ШЁЩ€ШЇЩ† Ш¬ШІШ¦ЩЉШ§ШЄ"/>
+  <StrRes Name="bvKeepDetail" Text="Щ†ЪЇШ§Щ‡ ШЇШ§ШґШЄЩ† Ш¬ШІШ¦ЩЉШ§ШЄ ШЁШ§Щ‡Щ…"/>
+  <StrRes Name="bvKeepFooter" Text="Щ†ЪЇШ§Щ‡ ШЇШ§ШґШЄЩ† ЩѕШ§Щ€Ш±Щ‚ЩЉ ШЁШ§Щ‡Щ…"/>
+  <StrRes Name="bvReprint" Text="Ъ†Ш§Щѕ ШЇЩ€ШЁШ§Ш±Щ‡ ШЇШ± ШµЩЃШ­Щ‡ Ш¬ШЇЩЉШЇ"/>
+  <StrRes Name="bvOnFirst" Text="Ъ†Ш§Щѕ ШЇШ± ШµЩЃШ­Щ‡ Ш§Щ€Щ„"/>
+  <StrRes Name="bvOnLast" Text="Ъ†Ш§Щѕ ШЇШ± ШµЩЃШ­Щ‡ ШўШ®Ш±"/>
+  <StrRes Name="bvKeepGroup" Text="Щ†ЪЇШ§Щ‡ ШЇШ§ШґШЄЩ† ШЁШ§Щ‡Щ…"/>
+  <StrRes Name="bvFooterAfterEach" Text="ЩѕШ§Ш±Щ‚ЩЉ ШЁШ№ШЇ Ш§ШІ Щ‡Ш± ШіШ·Ш±"/>
+  <StrRes Name="bvDrillDown" Text="ШЄЩ€ ШЇШ± ШЄЩ€"/>
+  <StrRes Name="bvResetPageNo" Text="Ш±Ш§Щ‡ Ш§Щ†ШЇШ§ШІЩЉ Щ…Ш¬ШЇШЇ ШґЩ…Ш§Ш±Щ‡ ШµЩЃШ­Щ‡"/>
+  <StrRes Name="srParent" Text="Ъ†Ш§Щѕ Ш±Щ€ЩЉ ЩѕШЇШ±"/>
+  <StrRes Name="bvKeepHeader" Text="Щ†ЪЇШ§Щ‡ ШЇШ§ШґШЄЩ† ШіШ±ШўЩ…ШЇ ШЁШ§Щ‡Щ…"/>
+  <StrRes Name="obCatDraw" Text="Ш±ШіЩ…"/>
+  <StrRes Name="obCatOther" Text="Ш§ШґЩЉШ§ШЎ ШЇЩЉЪЇШ±"/>
+  <StrRes Name="obCatOtherControls" Text="Ъ©Щ†ШЄШ±Щ„Щ‡Ш§ЩЉ ШЇЩЉЪЇШ±"/>
+  <StrRes Name="obDiagLine" Text="Ш®Ш· Ш§Ш±ЩЉШЁ"/>
+  <StrRes Name="obRect" Text="Ъ†Щ‡Ш§Ш±ЪЇЩ€Шґ"/>
+  <StrRes Name="obRoundRect" Text="Ъ†Щ‡Ш§Ш±ЪЇЩ€Шґ Щ„ШЁЩ‡ ЪЇШ±ШЇ"/>
+  <StrRes Name="obEllipse" Text="ШЁЩЉШ¶ЩЉ"/>
+  <StrRes Name="obTrian" Text="Щ…Ш«Щ„Ш«"/>
+  <StrRes Name="obDiamond" Text="Щ„Щ€ШІЩЉ"/>
+  <StrRes Name="obLabel" Text="Ъ©Щ†ШЄШ±Щ„ ШЁШ±Ъ†ШіШЁ"/>
+  <StrRes Name="obEdit" Text="Ъ©Щ†ШЄШ±Щ„ Щ€ЩЉШ±Ш§ЩЉШґ"/>
+  <StrRes Name="obMemoC" Text="Ъ©Щ†ШЄШ±Щ„ ЩЉШ§ШЇШ§ШґШЄ"/>
+  <StrRes Name="obButton" Text="Ъ©Щ†ШЄШ±Щ„ ШЄЪ©Щ…Щ‡"/>
+  <StrRes Name="obChBoxC" Text="Ъ©Щ†ШЄШ±Щ„ Ш¬Ш№ШЁЩ‡ Ш§Щ†ШЄШ®Ш§ШЁ"/>
+  <StrRes Name="obRButton" Text="Ъ©Щ†ШЄШ±Щ„ ШЄЪ©Щ…Щ‡ Ш±Ш§ШЇЩЉЩ€Ш¦ЩЉ"/>
+  <StrRes Name="obLBox" Text="Ъ©Щ†ШЄШ±Щ„ Ш¬Ш№ШЁЩ‡ Щ„ЩЉШіШЄ"/>
+  <StrRes Name="obCBox" Text="Ъ©Щ†ШЄШ±Щ„ Ш¬Ш№ШЁЩ‡ ЩѕШ§Ш¦ЩЉЩ† Ш§ЩЃШЄШ§ШЇЩ†ЩЉ"/>
+  <StrRes Name="obDateEdit" Text="Ъ©Щ†ШЄШ±Щ„ Щ€ЩЉШ±Ш§ЩЉШґ ШЄШ§Ш±ЩЉШ®"/>
+  <StrRes Name="obImageC" Text="Ъ©Щ†ШЄШ±Щ„ ШЄШµЩ€ЩЉШ±"/>
+  <StrRes Name="obPanel" Text="Ъ©Щ†ШЄШ±Щ„ ШµЩЃШ­Щ‡"/>
+  <StrRes Name="obGrBox" Text="Ъ©Щ†ШЄШ±Щ„ Ш¬Ш№ШЁЩ‡ ЪЇШ±Щ€Щ‡"/>
+  <StrRes Name="obBBtn" Text="Ъ©Щ†ШЄШ±Щ„ ШЄЪ©Щ…Щ‡ ШЄШµЩ€ЩЉШ±ЩЉ"/>
+  <StrRes Name="obSBtn" Text="Ъ©Щ†ШЄШ±Щ„ ШЄЪ©Щ…Щ‡ ШіШ±ЩЉШ№"/>
+  <StrRes Name="obMEdit" Text="Ъ©Щ†ШЄШ±Щ„ Щ€ЩЉШ±Ш§ЩЉШґЪЇШ± Щ…Ш§ШіЪ©"/>
+  <StrRes Name="obChLB" Text="Ъ©Щ†ШЄШ±Щ„ Щ„ЩЉШіШЄ Ш¬Ш№ШЁЩ‡ Ш§Щ†ШЄШ®Ш§ШЁ"/>
+  <StrRes Name="obDBLookup" Text="Ъ©Щ†ШЄШ±Щ„ Ш¬Ш№ШЁЩ‡ ЩѕШ§Ш¦ЩЉЩ† Ш§ЩЃШЄШ§ШЇЩ†ЩЉ ШЁШ§Щ†Ъ© Ш§Ш·Щ„Ш§Ш№Ш§ШЄЩЉ"/>
+  <StrRes Name="obBevel" Text="ШґЩЉШЎ ЪЇЩ€Щ†ЩЉШ§"/>
+  <StrRes Name="obShape" Text="ШґЩЉШЎ ШґЪ©Щ„"/>
+  <StrRes Name="obText" Text="ШґЩЉШЎ Щ…ШЄЩ†"/>
+  <StrRes Name="obSysText" Text="Щ…ШЄЩ† ШіЩЉШіШЄЩ…ЩЉ"/>
+  <StrRes Name="obLine" Text="ШґЩЉШЎ Ш®Ш·"/>
+  <StrRes Name="obPicture" Text="ШґЩЉШЎ ШЄШµЩ€ЩЉШ±"/>
+  <StrRes Name="obBand" Text="ШґЩЉШЎ ШЁШ§Щ†ШЇ"/>
+  <StrRes Name="obDataBand" Text="ШЁШ§Щ†ШЇ ШЇШ§ШЇЩ‡"/>
+  <StrRes Name="obSubRep" Text="ШґЩЉШЎ ШІЩЉШ± ЪЇШІШ§Ш±Шґ"/>
+  <StrRes Name="obDlgPage" Text="ЩЃШ±Щ… ЪЇЩЃШЄЪЇЩ€"/>
+  <StrRes Name="obRepPage" Text="ШµЩЃШ­Щ‡ ЪЇШІШ§Ш±Шґ"/>
+  <StrRes Name="obReport" Text="ШґЩЉШЎ ЪЇШІШ§Ш±Шґ"/>
+  <StrRes Name="obRich" Text="ШґЩЉШЎ Щ…ШЄЩ†ЩЉ ШєЩ†ЩЉ"/>
+  <StrRes Name="obOLE" Text="OLE ШґЩЉШЎ"/>
+  <StrRes Name="obChBox" Text="ШґЩЉШЎ Ш¬Ш№ШЁЩ‡ Ш§Щ†ШЄШ®Ш§ШЁ"/>
+  <StrRes Name="obChart" Text="ШґЩЉШЎ Щ†Щ…Щ€ШЇШ§Ш±"/>
+  <StrRes Name="obBarC" Text="ШґЩЉШЎ ШЁШ§Ш±Ъ©ШЇ"/>
+  <StrRes Name="obCross" Text="ШґЩЉШЎ Ш¬ШЇЩ€Щ„ ШіШЄЩ€Щ†ЩЉ"/>
+  <StrRes Name="obDBCross" Text="ШґЩЉШЎ Ш¬ШЇЩ€Щ„ ШіШЄЩ€Щ†ЩЉ ШЁШ§Щ†Ъ© Ш§Ш·Щ„Ш§Ш№Ш§ШЄЩЉ"/>
+  <StrRes Name="obGrad" Text="ШґЩЉШЎ Щ…ШЇШ±Ш¬"/>
+  <StrRes Name="obDMPText" Text="ШґЩЉШЎ Щ…ШЄЩ†ЩЉ Ъ†Ш§ЩѕЪЇШ± ШіЩ€ШІЩ†ЩЉ"/>
+  <StrRes Name="obDMPLine" Text="ШґЩЉШЎ Ш®Ш·ЩЉ Ъ†Ш§ЩѕЪЇШ± ШіЩ€ШІЩ†ЩЉ"/>
+  <StrRes Name="obDMPCmd" Text="ШґЩЉШЎ ШЇШіШЄЩ€Ш± Ъ†Ш§ЩѕЪЇШ± ШіЩ€ШІЩ†ЩЉ"/>
+  <StrRes Name="obBDEDB" Text="BDE ШЁШ§Щ†Ъ© Ш§Ш·Щ„Ш§Ш№Ш§ШЄЩЉ"/>
+  <StrRes Name="obBDETb" Text="BDE Ш¬ШЇЩ€Щ„"/>
+  <StrRes Name="obBDEQ" Text="BDE ЩѕШ±Ші Щ€ Ш¬Щ€"/>
+  <StrRes Name="obBDEComps" Text="BDE Ш§Ш¬ШІШ§ШЎ"/>
+  <StrRes Name="obIBXDB" Text="IBX ШЁШ§Щ†Ъ© Ш§Ш·Щ„Ш§Ш№Ш§ШЄЩЉ"/>
+  <StrRes Name="obIBXTb" Text="IBX Ш¬ШЇЩ€Щ„"/>
+  <StrRes Name="obIBXQ" Text="IBX ЩѕШ±Ші Щ€ Ш¬Щ€"/>
+  <StrRes Name="obIBXComps" Text="IBX Ш§Ш¬ШІШ§ШЎ"/>
+  <StrRes Name="obADODB" Text="ADO ШЁШ§Щ†Ъ© Ш§Ш·Щ„Ш§Ш№Ш§ШЄЩЉ"/>
+  <StrRes Name="obADOTb" Text="ADO Ш¬ШЇЩ€Щ„"/>
+  <StrRes Name="obADOQ" Text="ADO ЩѕШ±Ші Щ€ Ш¬Щ€"/>
+  <StrRes Name="obADOComps" Text="ADO Ш§Ш¬ШІШ§ШЎ"/>
+  <StrRes Name="obDBXDB" Text="DBX ШЁШ§Щ†Ъ© Ш§Ш·Щ„Ш§Ш№Ш§ШЄЩЉ"/>
+  <StrRes Name="obDBXTb" Text="DBX Ш¬ШЇЩ€Щ„"/>
+  <StrRes Name="obDBXQ" Text="DBX ЩѕШ±Ші Щ€ Ш¬Щ€"/>
+  <StrRes Name="obDBXComps" Text="DBX Ш§Ш¬ШІШ§ШЎ"/>
+  <StrRes Name="obFIBDB" Text="FIB ШЁШ§Щ†Ъ© Ш§Ш·Щ„Ш§Ш№Ш§ШЄЩЉ"/>
+  <StrRes Name="obFIBTb" Text="FIB Ш¬ШЇЩ€Щ„"/>
+  <StrRes Name="obFIBQ" Text="FIB ЩѕШ±Ші Щ€ Ш¬Щ€"/>
+  <StrRes Name="obFIBComps" Text="FIB Ш§Ш¬ШІШ§ШЎ"/>
+  <StrRes Name="ctString" Text="Ш±ШґШЄЩ‡"/>
+  <StrRes Name="ctDate" Text="ШЄШ§Ш±ЩЉШ® Щ€ ШІЩ…Ш§Щ†"/>
+  <StrRes Name="ctConv" Text="ШЄШЁШЇЩЉЩ„"/>
+  <StrRes Name="ctFormat" Text="Щ‚Ш§Щ„ШЁ ШЁЩ†ШЇЩЉ"/>
+  <StrRes Name="ctMath" Text="Ш±ЩЉШ§Ш¶ЩЉ"/>
+  <StrRes Name="ctOther" Text="ШЇЩЉЪЇШ±"/>
+  <StrRes Name="IntToStr" Text="ШЄШЁШЇЩЉЩ„ ЩЉЪ© Щ…Щ‚ШЇШ§Ш± Ш№ШЇШЇЩЉ ШЁЩ‡ Ш±ШґШЄЩ‡"/>
+  <StrRes Name="FloatToStr" Text="ШЄШЁШЇЩЉЩ„ ЩЉЪ© Щ…Щ‚ШЇШ§Ш± Ш§Ш№ШґШ§Ш±ЩЉ ШЁЩ‡ Ш±ШґШЄЩ‡"/>
+  <StrRes Name="DateToStr" Text="ШЄШЁШЇЩЉЩ„ ЩЉЪ© Щ…Щ‚ШЇШ§Ш± ШЄШ§Ш±ЩЉШ® ШЁЩ‡ Ш±ШґШЄЩ‡"/>
+  <StrRes Name="TimeToStr" Text="ШЄШЁШЇЩЉЩ„ ЩЉЪ© Щ…Щ‚ШЇШ§Ш± ШІЩ…Ш§Щ† ШЁЩ‡ Ш±ШґШЄЩ‡"/>
+  <StrRes Name="DateTimeToStr" Text="ШЄШЁШЇЩЉЩ„ ЩЉЪ© Щ…Щ‚ШЇШ§Ш± ШЄШ§Ш±ЩЉШ® Щ€ ШІЩ…Ш§Щ† ШЁЩ‡ Ш±ШґШЄЩ‡"/>
+  <StrRes Name="VarToStr" Text="ШЄШЁШЇЩЉЩ„ ЩЉЪ© Щ…Щ‚ШЇШ§Ш± ЪЇЩ€Щ†Ш§ЪЇЩ€Щ† ШЁЩ‡ Ш±ШґШЄЩ‡"/>
+  <StrRes Name="StrToInt" Text="ШЄШЁШЇЩЉЩ„ ЩЉЪ© Ш±ШґШЄЩ‡ ШЁЩ‡ Щ…Щ‚ШЇШ§Ш± Ш№ШЇШЇЩЉ"/>
+  <StrRes Name="StrToInt64" Text="ШЄШєЫЊЫЊШ± Ш±ШґШЄЩ‡ ШЁЩ‡ Ш№ШЇШЇ ШµШ­ЫЊШ­ 64 ШЁЫЊШЄЫЊ"/>
+  <StrRes Name="StrToFloat" Text="ШЄШЁШЇЩЉЩ„ ЩЉЪ© Ш±ШґШЄЩ‡ ШЁЩ‡ Щ…Щ‚ШЇШ§Ш± Ш§Ш№ШґШ§Ш±ЩЉ"/>
+  <StrRes Name="StrToDate" Text="ШЄШЁШЇЩЉЩ„ ЩЉЪ© Ш±ШґШЄЩ‡ ШЁЩ‡ Щ‚Ш§Щ„ШЁ ШЄШ§Ш±ЩЉШ®"/>
+  <StrRes Name="StrToTime" Text="ШЄШЁШЇЩЉЩ„ ЩЉЪ© Ш±ШґШЄЩ‡ ШЁЩ‡ Щ‚Ш§Щ„ШЁ ШІЩ…Ш§Щ†"/>
+  <StrRes Name="StrToDateTime" Text="ШЄШЁШЇЩЉЩ„ ЩЉЪ© Ш±ШґШЄЩ‡ ШЁЩ‡ Щ‚Ш§Щ„ШЁ ШЄШ§Ш±ЩЉШ® Щ€ ШІЩ…Ш§Щ†"/>
+  <StrRes Name="Format" Text="ЩЉЪ© Ш±ШґШЄЩ‡ Щ‚Ш§Щ„ШЁ ШЁЩ†ШЇЩЉ ШґШЇЩ‡ Ш§ШІ Щ…Ш¬Щ…Щ€Ш№Щ‡ ШўШ±ЪЇЩ€Щ…Ш§Щ†Щ‡Ш§ЩЉ ЩЉЪ© ШўШ±Ш§ЩЉЩ‡ Ш±Ш§ ШЁШ±Щ…ЩЉ ЪЇШ±ШЇШ§Щ†ШЇ"/>
+  <StrRes Name="FormatFloat" Text="Щ‚Ш§Щ„ШЁ ШЁЩ†ШЇЩЉ ЩЉЪ© Щ…Щ‚ШЇШ§Ш± Ш§Ш№ШґШ§Ш±ЩЉ"/>
+  <StrRes Name="FormatDateTime" Text="Щ‚Ш§Щ„ШЁ ШЁЩ†ШЇЩЉ ЩЉЪ© Щ…Щ‚ШЇШ§Ш± ШЄШ§Ш±ЩЉШ® Щ€ ШІЩ…Ш§Щ†"/>
+  <StrRes Name="FormatMaskText" Text="Ш±ШґШЄЩ‡ Щ‚Ш§Щ„ШЁ ШЁЩ†ШЇЩЉ ШґШЇЩ‡ Щ€ЩЉШ±Ш§ЩЉШґ Щ…Ш§ШіЪ© Ш±Ш§ ШЁШ±Щ…ЩЉ ЪЇШ±ШЇШ§Щ†ШЇ"/>
+  <StrRes Name="EncodeDate" Text="ШЁШ±Ш§ЩЉ Щ…Щ‚Ш§ШЇЩЉШ± ШЄШ№ЩЉЩЉЩ† ШґШЇЩ‡ ШіШ§Щ„, Щ…Ш§Щ‡ Щ€ Ш±Щ€ШІ ШЁШ± Щ…ЩЉ Ъ©Ш±ШЇШ§Щ†ШЇ TDateTime ЩЉЪ© ШґЩЉШЎ"/>
+  <StrRes Name="DecodeDate" Text="Ш±Ш§ ШЁЩ‡ Щ…Щ‚Ш§ШЇЩЉШ± ШіШ§Щ„, Щ…Ш§Щ‡ Щ€ Ш±Щ€ШІ ШЄЩЃЪ©ЩЉЪ© Щ…ЩЉЪ©Щ†ШЇ TDateTime ШґЩЉШЎ"/>
+  <StrRes Name="EncodeTime" Text="ШЁШ±Ш§ЩЉ Щ…Щ‚Ш§ШЇЩЉШ± ШЄШ№ЩЉЩЉЩ† ШґШЇЩ‡ ШіШ§Ш№ШЄ, ШЇЩ‚ЩЉЩ‚Щ‡, Ш«Ш§Щ†ЩЉЩ‡ Щ€ Щ…ЩЉЩ„ЩЉ Ш«Ш§Щ†ЩЉЩ‡ ШЁШ± Щ…ЩЉ Ъ©Ш±ШЇШ§Щ†ШЇ TDateTime ЩЉЪ© ШґЩЉШЎ"/>
+  <StrRes Name="DecodeTime" Text="Ш±Ш§ ШЁЩ‡ Щ…Щ‚Ш§ШЇЩЉШ± ШіШ§Ш№ШЄ, ШЇЩ‚ЩЉЩ‚Щ‡, Ш«Ш§Щ†ЩЉЩ‡ Щ€ Щ…ЩЉЩ„ЩЉ Ш«Ш§Щ†ЩЉЩ‡ ШЄЩЃЪ©ЩЉЪ© Щ…ЩЉЪ©Щ†ШЇ TDateTime ШґЩЉШЎ"/>
+  <StrRes Name="Date" Text="ШЄШ§Ш±ЩЉШ® Ш¬Ш§Ш±ЩЉ Ш±Ш§ ШЁШ± Щ…ЩЉ ЪЇШ±ШЇШ§Щ†ШЇ"/>
+  <StrRes Name="Time" Text="ШІЩ…Ш§Щ† Ш¬Ш§Ш±ЩЉ Ш±Ш§ ШЁШ± Щ…ЩЉ ЪЇШ±ШЇШ§Щ†ШЇ"/>
+  <StrRes Name="Now" Text="ШЄШ§Ш±ЩЉШ® Щ€ ШІЩ…Ш§Щ† Ш¬Ш§Ш±ЩЉ Ш±Ш§ ШЁШ± Щ…ЩЉ ЪЇШ±ШЇШ§Щ†ШЇ"/>
+  <StrRes Name="DayOfWeek" Text="Ш±Щ€ШІ Щ‡ЩЃШЄЩ‡ Ш±Ш§ ШЁШ±Ш§ЩЉ ЩЉЪ© ШЄШ§Ш±ЩЉШ® Щ…Ш№ЩЉЩ† ШЁШ±Щ…ЩЉ ЪЇШ±ШЇШ§Щ†ШЇ"/>
+  <StrRes Name="IsLeapYear" Text="ШЄШ№ЩЉЩЉЩ† Щ…ЩЉЪ©Щ†ШЇ ШўЩЉШ§ ШіШ§Щ„ Щ…ШґШ®Шµ ШґШЇЩ‡ ШіШ§Щ„ Ъ©ШЁЩЉШіЩ‡ Ш§ШіШЄ"/>
+  <StrRes Name="DaysInMonth" Text="ШЄШ№ШЇШ§ШЇ Ш±Щ€ШІЩ‡Ш§ЩЉ Щ…Ш§Щ‡ ШЄШ№ЩЉЩЉЩ† ШґШЇЩ‡ Ш±Ш§ ШЁШ±Щ…ЩЉ ЪЇШ±ШЇШ§Щ†ШЇ"/>
+  <StrRes Name="Length" Text="Ш·Щ€Щ„ Ш±ШґШЄЩ‡ Ш±Ш§ ШЁШ±Щ…ЩЉ ЪЇШ±ШЇШ§Щ†ШЇ"/>
+  <StrRes Name="Copy" Text="ЩЉЪ© ШІЩЉШ± Ш±ШґШЄЩ‡ Ш§ШІ Ш±ШґШЄЩ‡ Ш±Ш§ ШЁШ±Щ…ЩЉ ЪЇШ±ШЇШ§Щ†ШЇ"/>
+  <StrRes Name="Pos" Text="Щ…Щ€Щ‚Ш№ЩЉШЄ ЩЉЪ© ШІЩЉШ±Ш±ШґШЄЩ‡ ШЇШ± Ш±ШґШЄЩ‡ ШЁШ±Щ…ЩЉ ЪЇШ±ШЇШ§Щ†ШЇ"/>
+  <StrRes Name="Delete" Text="ЩЉЪ© ШІЩЉШ± Ш±ШґШЄЩ‡ Ш§ШІ Ш±ШґШЄЩ‡ Ш±Ш§ Ш­Ш°ЩЃ Щ…ЩЉЪ©Щ†ШЇ"/>
+  <StrRes Name="Insert" Text="ЩЉЪ© ШІЩЉШ± Ш±ШґШЄЩ‡ ШЇШ± Ш±ШґШЄЩ‡ ШЇШ±Ш¬ Щ…ЩЉЪ©Щ†ШЇ"/>
+  <StrRes Name="Uppercase" Text="ШЄЩ…Ш§Щ… Ъ©Ш§Ш±Ш§Ъ©ШЄШ±Щ‡Ш§ ШЇШ± Ш±ШґШЄЩ‡ Ш±Ш§ ШЁЩ‡ Ш­Ш±Щ€ЩЃ ШЁШІШ±ЪЇ ШЄШЁШЇЩЉЩ„ Щ…ЩЉЪ©Щ†ШЇ"/>
+  <StrRes Name="Lowercase" Text="ШЄЩ…Ш§Щ… Ъ©Ш§Ш±Ш§Ъ©ШЄШ±Щ‡Ш§ ШЇШ± Ш±ШґШЄЩ‡ Ш±Ш§ ШЁЩ‡ Ш­Ш±Щ€ЩЃ Ъ©Щ€Ъ†Ъ© ШЄШЁШЇЩЉЩ„ Щ…ЩЉЪ©Щ†ШЇ"/>
+  <StrRes Name="Trim" Text="ШЄЩ…Ш§Щ… ЩЃШ¶Ш§ЩЉ Ш®Ш§Щ„ЩЉ ШЇШ± Ш±ШґШЄЩ‡ Ш±Ш§ Ш­Ш°ЩЃ Щ…ЩЉЪ©Щ†ШЇ"/>
+  <StrRes Name="NameCase" Text="Ъ©Ш§Ш±Ш§Ъ©ШЄШ± Ш§Щ€Щ„ ЩЉЪ© Ъ©Щ„Щ…Щ‡ Ш±Ш§ ШЁЩ‡ Ш­Ш±ЩЃ ШЁШІШ±ЪЇ ШЄШЁШЇЩЉЩ„ Щ…ЩЉЪ©Щ†ШЇ"/>
+  <StrRes Name="CompareText" Text="ШЇЩ€ Ш±ШґШЄЩ‡ Ш±Ш§ Щ…Щ‚Ш§ЩЉШіЩ‡ Щ…ЩЉЪ©Щ†ШЇ"/>
+  <StrRes Name="Chr" Text="ЩЉЪ© Щ…Щ‚ШЇШ§Ш± Ш№ШЇШЇЩЉ Ш±Ш§ ШЁЩ‡ Ъ©Ш§Ш±Ш§Ъ©ШЄШ± ШЄШЁШЇЩЉЩ„ Щ…ЩЉЪ©Щ†ШЇ"/>
+  <StrRes Name="Ord" Text="ЩЉЪ© Щ…Щ‚ШЇШ§Ш± Ш№ШЇШЇЩЉ Ш±Ш§ ШЁЩ‡ Ъ©Ш§Ш±Ш§Ъ©ШЄШ± ШЄШЁШЇЩЉЩ„ Щ…ЩЉЪ©Щ†ШЇ"/>
+  <StrRes Name="SetLength" Text="Ш·Щ€Щ„ Ш±ШґШЄЩ‡ Ш±Ш§ ШЄШ№ЩЉЩЉЩ† Щ…ЩЉЪ©Щ†ШЇ"/>
+  <StrRes Name="Round" Text="Щ…Щ‚ШЇШ§Ш± Ш§Ш№ШґШ§Ш±ЩЉ Ш±Ш§ ШЁЩ‡ Щ†ШІШЇЩЉЪ©ШЄШ±ЩЉЩ† Ш№ШЇШЇ ЪЇШ±ШЇ Щ…ЩЉЪ©Щ†ШЇ"/>
+  <StrRes Name="Trunc" Text="Щ…Щ‚ШЇШ§Ш± Ш§Ш№ШґШ§Ш±ЩЉ Ш±Ш§ ШЁЩ‡ Ш№ШЇШЇ ШµШ­ЩЉШ­ Ъ©Ш§Щ‡Шґ Щ…ЩЉШЇЩ‡ШЇ"/>
+  <StrRes Name="Int" Text="Щ‚ШіЩ…ШЄ  ШµШ­ЩЉШ­ ЩЉЪ© Ш№ШЇШЇ Ш§Ш№ШґШ§Ш±ЩЉ Ш±Ш§ ШЁШ±Щ…ЩЉ ЪЇШ±ШЇШ§Щ†ШЇ"/>
+  <StrRes Name="Frac" Text="Щ‚ШіЩ…ШЄ  Ш§Ш№ШґШ§Ш± ЩЉЪ© Ш№ШЇШЇ Ш§Ш№ШґШ§Ш±ЩЉ Ш±Ш§ ШЁШ±Щ…ЩЉ ЪЇШ±ШЇШ§Щ†ШЇ"/>
+  <StrRes Name="Sqrt" Text="Ш±ЩЉШґЩ‡ Ш№ШЇШЇ ШЄШ№ЩЉЩЉЩ† ШґШЇЩ‡ Ш±Ш§ ШЁШ±Щ…ЩЉ ЪЇШ±ШЇШ§Щ†ШЇ"/>
+  <StrRes Name="Abs" Text="Щ‚ШЇШ±Щ…Ш·Щ„Щ‚ ЩЉЪ© Щ…Щ‚ШЇШ§Ш± Ш±Ш§ ШЁШ±Щ…ЩЉ ЪЇШ±ШЇШ§Щ†ШЇ"/>
+  <StrRes Name="Sin" Text="(ШіЩЉЩ†Щ€Ші ЩЉЪ© ШІШ§Щ€ЩЉЩ‡ Ш±Ш§ ШЁШ±Щ…ЩЉ ЪЇШ±ШЇШ§Щ†ШЇ (ШЇШ± Ш±Ш§ШЇЩЉШ§Щ†"/>
+  <StrRes Name="Cos" Text="(Ъ©ШіЩЉЩ†Щ€Ші ЩЉЪ© ШІШ§Щ€ЩЉЩ‡ Ш±Ш§ ШЁШ±Щ…ЩЉ ЪЇШ±ШЇШ§Щ†ШЇ (ШЇШ± Ш±Ш§ШЇЩЉШ§Щ†"/>
+  <StrRes Name="ArcTan" Text="(ШўШ±Ъ© ШЄШ§Щ†ЪШ§Щ†ШЄ ЩЉЪ© ШІШ§Щ€ЩЉЩ‡ Ш±Ш§ ШЁШ±Щ…ЩЉ ЪЇШ±ШЇШ§Щ†ШЇ (ШЇШ± Ш±Ш§ШЇЩЉШ§Щ†"/>
+  <StrRes Name="Tan" Text="( ШЄШ§Щ†ЪШ§Щ†ШЄ ЩЉЪ© ШІШ§Щ€ЩЉЩ‡ Ш±Ш§ ШЁШ±Щ…ЩЉ ЪЇШ±ШЇШ§Щ†ШЇ (ШЇШ± Ш±Ш§ШЇЩЉШ§Щ†"/>
+  <StrRes Name="Exp" Text="e^x ШЁШ±Щ…ЩЉ ЪЇШ±ШЇШ§Щ†ШЇ"/>
+  <StrRes Name="Ln" Text="Щ„ЪЇШ§Ш±ЩЉШЄЩ… Ш·ШЁЩЉШ№ЩЉ ЩЉЪ© Ш№ШЇШЇ Ш­Щ‚ЩЉЩ‚ЩЉ Ш±Ш§ ШЁШ±Щ…ЩЉ ЪЇШ±ШЇШ§Щ†ШЇ"/>
+  <StrRes Name="Pi" Text="Ш№ШЇШЇ 3.1415926 Ш±Ш§ ШЁШ±Щ…ЩЉ ЪЇШ±ШЇШ§Щ†ШЇ"/>
+  <StrRes Name="Inc" Text="ЩЉЪ© Щ…Щ‚ШЇШ§Ш± Ш±Ш§ Ш§ЩЃШІШ§ЩЉШґ Щ…ЩЉШЇЩ‡ШЇ"/>
+  <StrRes Name="Dec" Text="ЩЉЪ© Щ…Щ‚ШЇШ§Ш± Ш±Ш§ Ъ©Ш§Щ‡Шґ Щ…ЩЉШЇЩ‡ШЇ"/>
+  <StrRes Name="RaiseException" Text="ЩЉЪ© Ш®Ш·Ш§ Ш§ЩЉШ¬Ш§ШЇ Щ…ЩЉЪ©Щ†ШЇ"/>
+  <StrRes Name="ShowMessage" Text="ЩЉЪ© Ш¬Ш№ШЁЩ‡ ЩѕЩЉШєШ§Щ… Щ†ШґШ§Щ† Щ…ЩЉШЇЩ‡ШЇ"/>
+  <StrRes Name="Randomize" Text="Щ…Щ€Ш§ШЇ Ш§Ш№ШЇШ§ШЇ ШЄШµШ§ШЇЩЃЩЉ Ш±Ш§ ШЁЩ‡ Ъ©Ш§Ш± Щ…ЩЉ Ш§Щ†ШЇШ§ШІШЇ"/>
+  <StrRes Name="Random" Text="ЩЉЪ© Ш№ШЇШЇ ШЄШµШ§ШЇЩЃЩЉ ШЁШ± Щ…ЩЉЪЇШ±ШЇШ§Щ†ШЇ"/>
+  <StrRes Name="ValidInt" Text="Ш§ЪЇШ± Щ…Ш­ШЄЩ€ЩЉШ§ШЄ Ш±ШґШЄЩ‡ ЩЉЪ© Ш№ШЇШЇ Щ…Ш№ШЄШЁШ± ШЁШ§ШґШЇ Щ…Щ‚ШЇШ§Ш± ШЇШ±ШіШЄ ШЁШ±Щ…ЩЉЪЇШ±ШЇШ§Щ†ШЇ"/>
+  <StrRes Name="ValidFloat" Text="Ш§ЪЇШ± Щ…Ш­ШЄЩ€ЩЉШ§ШЄ Ш±ШґШЄЩ‡ ЩЉЪ© Ш№ШЇШЇ Ш§Ш№ШґШ§Ш±ЩЉ Щ…Ш№ШЄШЁШ± ШЁШ§ШґШЇ Щ…Щ‚ШЇШ§Ш± ШЇШ±ШіШЄ ШЁШ±Щ…ЩЉЪЇШ±ШЇШ§Щ†ШЇ"/>
+  <StrRes Name="ValidDate" Text="Ш§ЪЇШ± Щ…Ш­ШЄЩ€ЩЉШ§ШЄ Ш±ШґШЄЩ‡ ЩЉЪ© ШЄШ§Ш±ЩЉШ® Щ…Ш№ШЄШЁШ± ШЁШ§ШґШЇ Щ…Щ‚ШЇШ§Ш± ШЇШ±ШіШЄ ШЁШ±Щ…ЩЉЪЇШ±ШЇШ§Щ†ШЇ"/>
+  <StrRes Name="IIF" Text="Ш§ЪЇШ± Ш№ШЁШ§Ш±ШЄ ШЄШ№ЩЉЩЉЩ† ШґШЇЩ‡ ШЇШ±ШіШЄ ШЁШ§ШґШЇ Щ…Щ‚ШЇШ§Ш± ШЇШ±ШіШЄ ШЁШ±Щ…ЩЉЪЇШ±ШЇШ§Щ†ШЇ ШЇШ± ШєЩЉШ± Ш§ЩЉЩ†ШµЩ€Ш±ШЄ Щ†Ш§ШЇШ±ШіШЄ"/>
+  <StrRes Name="Get" Text="ЩЃЩ‚Ш· ШЁШ±Ш§ЩЉ Ш§ШіШЄЩЃШ§ШЇЩ‡ ШЇШ§Ш®Щ„ЩЉ"/>
+  <StrRes Name="Set" Text="ЩЃЩ‚Ш· ШЁШ±Ш§ЩЉ Ш§ШіШЄЩЃШ§ШЇЩ‡ ШЇШ§Ш®Щ„ЩЉ"/>
+  <StrRes Name="InputBox" Text="ЩЉЪ© Ш¬Ш№ШЁЩ‡ ЪЇЩЃШЄЪЇЩ€ Щ†ШґШ§Щ† Щ…ЩЉШЇЩ‡ШЇ Ъ©Щ‡ Ъ©Ш§Ш±ШЁШ± Щ…ЩЉШЄЩ€Ш§Щ†ШЇ ЩЉЪ© Ш±ШґШЄЩ‡ Ш±Ш§ Щ€Ш§Ш±ШЇ Ъ©Щ†ШЇ"/>
+  <StrRes Name="InputQuery" Text="ЩЉЪ© Ш¬Ш№ШЁЩ‡ ЪЇЩЃШЄЪЇЩ€ Щ†ШґШ§Щ† Щ…ЩЉШЇЩ‡ШЇ Ъ©Щ‡ Ъ©Ш§Ш±ШЁШ± Щ…ЩЉШЄЩ€Ш§Щ†ШЇ ЩЉЪ© Ш±ШґШЄЩ‡ Ш±Ш§ Щ€Ш§Ш±ШЇ Ъ©Щ†ШЇ"/>
+  <StrRes Name="MessageDlg" Text="ЩЉЪ© Ш¬Ш№ШЁЩ‡ ЩѕЩЉШєШ§Щ… Щ†ШґШ§Щ† Щ…ЩЉШЇЩ‡ШЇ"/>
+  <StrRes Name="CreateOleObject" Text="Ш§ЩЉШ¬Ш§ШЇ Щ…ЩЉЪ©Щ†ШЇ OLE ЩЉЪ© ШґЩЉШЎ"/>
+  <StrRes Name="VarArrayCreate" Text="ЩЉЪ© ШўШ±Ш§ЩЉЩ‡ ЪЇЩ€Щ†Ш§ЪЇЩ€Щ† Ш§ЩЉШ¬Ш§ШЇ Щ…ЩЉЪ©Щ†ШЇ"/>
+  <StrRes Name="VarType" Text="Щ†Щ€Ш№ Щ…Щ‚ШЇШ§Ш± ЪЇЩ€Щ†Ш§ЪЇЩ€Щ† Ш±Ш§ ШЁШ±Щ…ЩЉЪЇШ±ШЇШ§Щ†ШЇ"/>
+  <StrRes Name="DayOf" Text="(1-31) ШґЩ…Ш§Ш±Щ‡ Ш±Щ€ШІ ШЄШ§Ш±Ш® Ш±Ш§ ШЁШ±Щ…ЩЉЪЇШ±ШЇШ§Щ†ШЇ"/>
+  <StrRes Name="MonthOf" Text="(1-12) ШґЩ…Ш§Ш±Щ‡ Щ…Ш§Щ‡ ШЄШ§Ш±Ш® Ш±Ш§ ШЁШ±Щ…ЩЉЪЇШ±ШЇШ§Щ†ШЇ"/>
+  <StrRes Name="YearOf" Text="ШіШ§Щ„ ШЄШ§Ш±ЩЉШ® Ш±Ш§ ШЁШ±Щ…ЩЉЪЇШ±ШЇШ§Щ†ШЇ"/>
+  <StrRes Name="ctAggregate" Text="Ш№ШЁШ§Ш±ШЄ Щ…Ш­Ш§ШіШЁШ§ШЄЩЉ"/>
+  <StrRes Name="Sum" Text="Щ…Ш¬Щ…Щ€Ш№ Ш№ШЁШ§Ш±ШЄ ШЁШ±Ш§ЩЉ ШіШ·Ш± ШЇШ§ШЇЩ‡ ШЁШ§Щ†ШЇ Ш±Ш§ Щ…Ш­Ш§ШіШЁЩ‡ Щ…ЩЉЪ©Щ†ШЇ"/>
+  <StrRes Name="Avg" Text="Щ…ЩЉШ§Щ†ЪЇЩЉЩ† Ш№ШЁШ§Ш±ШЄ ШЁШ±Ш§ЩЉ ШіШ·Ш± ШЇШ§ШЇЩ‡ ШЁШ§Щ†ШЇ Ш±Ш§ Щ…Ш­Ш§ШіШЁЩ‡ Щ…ЩЉЪ©Щ†ШЇ"/>
+  <StrRes Name="Min" Text="Ъ©Щ…ШЄШ±ЩЉЩ† Ш№ШЁШ§Ш±ШЄ ШЁШ±Ш§ЩЉ ШіШ·Ш± ШЇШ§ШЇЩ‡ ШЁШ§Щ†ШЇ Ш±Ш§ Щ…Ш­Ш§ШіШЁЩ‡ Щ…ЩЉЪ©Щ†ШЇ"/>
+  <StrRes Name="Max" Text="ШЁЩЉШґШЄШ±ЩЉЩ† Ш№ШЁШ§Ш±ШЄ ШЁШ±Ш§ЩЉ ШіШ·Ш± ШЇШ§ШЇЩ‡ ШЁШ§Щ†ШЇ Ш±Ш§ Щ…Ш­Ш§ШіШЁЩ‡ Щ…ЩЉЪ©Щ†ШЇ"/>
+  <StrRes Name="Count" Text="ШЄШ№ШЇШ§ШЇ ШіШ·Ш± ШЇШ§ШЇЩ‡ Ш±Ш§ Щ…Ш­Ш§ШіШЁЩ‡ Щ…ЩЉЪ©Щ†ШЇ"/>
+  <StrRes Name="wzDBConn" Text="Ш¬Ш§ШЇЩ€ЪЇШ± Ш§ШЄШµШ§Щ„ Ш¬ШЇЩЉШЇ"/>
+  <StrRes Name="wzDBTable" Text="Ш¬Ш§ШЇЩ€ЪЇШ± Ш¬ШЇЩ€Щ„ Ш¬ШЇЩЉШЇ"/>
+  <StrRes Name="wzDBQuery" Text="Ш¬Ш§ШЇЩ€ЪЇШ± ЩѕШ±Ші Щ€ Ш¬Щ€ Ш¬ШЇЩЉШЇ"/>
+  <StrRes Name="5800" Text="Ш§ШЄШµШ§Щ„ Щ‡Ш§"/>
+  <StrRes Name="5801" Text="Ш¬ШЇЩЉШЇ"/>
+  <StrRes Name="5802" Text="Ш­Ш°ЩЃ"/>
+  <StrRes Name="cpName" Text="Щ†Ш§Щ…"/>
+  <StrRes Name="cpConnStr" Text="Ш±ШґШЄЩ‡ Ш§ШЄШµШ§Щ„"/>
+  <StrRes Name="startCreateNew" Text="Ш§ЩЉШ¬Ш§ШЇ ЪЇШІШ§Ш±Шґ Ш¬ШЇЩЉШЇ"/>
+  <StrRes Name="startCreateBlank" Text="Ш§ЩЉШ¬Ш§ШЇ ЪЇШІШ§Ш±Шґ Ш®Ш§Щ„ЩЉ"/>
+  <StrRes Name="startOpenReport" Text="ШЁШ§ШІЪ©Ш±ШЇЩ† ЪЇШІШ§Ш±Шґ"/>
+  <StrRes Name="startOpenLast" Text="ШЁШ§ШІЪ©Ш±ШЇЩ† ШўШ®Ш±ЩЉЩ† ЪЇШІШ§Ш±Шґ"/>
+  <StrRes Name="startEditAliases" Text="Щ€ЩЉШ±Ш§ЩЉШґ Щ†Ш§Щ… Ш§ШЄШµШ§Щ„"/>
+  <StrRes Name="startHelp" Text="Ш±Ш§Щ‡Щ†Щ…Ш§"/>
+  <StrRes Name="5900" Text="Щ†ШёШ§Ш±ШЄ"/>
+  <StrRes Name="5901" Text="Ш§ЩЃШІЩ€ШЇЩ† Щ†Ш·Ш§Ш±ШЄ"/>
+  <StrRes Name="5902" Text="Ш­Ш°ЩЃ Щ†ШёШ§Ш±ШЄ"/>
+  <StrRes Name="5903" Text="Щ€ЩЉШ±Ш§ЩЉШґ Щ†ШёШ§Ш±ШЄ"/>
+  <StrRes Name="6000" Text="Ш®Ш·Ш§ Щ…ЩЉШ±Ш§Ш«ЩЉ"/>
+  <StrRes Name="6001" Text="ЪЇШІШ§Ш±Шґ Ш§ШµЩ„ЩЉ Щ€ Щ…Щ€Ш±Щ€Ш«ЩЉ ЩЉЪ© ШґЩЉШЎ ШЄЪ©Ш±Ш§Ш±ЩЉ ШЇШ§Ш±Щ†ШЇ. Ъ†Щ‡ ШЁШ§ЩЉШЇ Ш§Щ†Ш¬Ш§Щ… ШЇШ§ШЇ Шџ"/>
+  <StrRes Name="6002" Text="Ш­Ш°ЩЃ ШЄЪ©Ш±Ш§Ш±ЩЉ Щ‡Ш§"/>
+  <StrRes Name="6003" Text="ШЄШєЩЉЩЉШ± Щ†Ш§Щ… ШЄЪ©Ш±Ш§Ш±ЩЉ Щ‡Ш§"/>
+  <StrRes Name="dsColorOth" Text="Other..."/>
+  <StrRes Name="6100" Text="Fill Editor"/>
+  <StrRes Name="6101" Text="Brush"/>
+  <StrRes Name="6102" Text="Gradient"/>
+  <StrRes Name="6103" Text="Glass"/>
+  <StrRes Name="6104" Text="Brush style:"/>
+  <StrRes Name="6105" Text="Background color:"/>
+  <StrRes Name="6106" Text="Foreground color:"/>
+  <StrRes Name="6107" Text="Gradient style:"/>
+  <StrRes Name="6108" Text="Start color:"/>
+  <StrRes Name="6109" Text="End color:"/>
+  <StrRes Name="6110" Text="Orientation:"/>
+  <StrRes Name="6111" Text="Color:"/>
+  <StrRes Name="6112" Text="Blend:"/>
+  <StrRes Name="6113" Text="Show hatch"/>
+  <StrRes Name="bsSolid" Text="Solid"/>
+  <StrRes Name="bsClear" Text="Clear"/>
+  <StrRes Name="bsHorizontal" Text="Horizontal"/>
+  <StrRes Name="bsVertical" Text="Vertical"/>
+  <StrRes Name="bsFDiagonal" Text="Forward Diagonal"/>
+  <StrRes Name="bsBDiagonal" Text="Backward Diagonal"/>
+  <StrRes Name="bsCross" Text="Cross"/>
+  <StrRes Name="bsDiagCross" Text="Diagonal cross"/>
+  <StrRes Name="gsHorizontal" Text="Horizontal"/>
+  <StrRes Name="gsVertical" Text="Vertical"/>
+  <StrRes Name="gsElliptic" Text="Elliptic"/>
+  <StrRes Name="gsRectangle" Text="Rectangle"/>
+  <StrRes Name="gsVertCenter" Text="Vertical Center"/>
+  <StrRes Name="gsHorizCenter" Text="Horizontal Center"/>
+  <StrRes Name="foVertical" Text="Vertical"/>
+  <StrRes Name="foHorizontal" Text="Horizontal"/>
+  <StrRes Name="foVerticalMirror" Text="Vertical Mirror"/>
+  <StrRes Name="foHorizontalMirror" Text="Horizontal Mirror"/>
+  <StrRes Name="6200" Text="Hyperlink Editor"/>
+  <StrRes Name="6201" Text="Hyperlink kind"/>
+  <StrRes Name="6202" Text="URL"/>
+  <StrRes Name="6203" Text="Page number"/>
+  <StrRes Name="6204" Text="Anchor"/>
+  <StrRes Name="6205" Text="Report"/>
+  <StrRes Name="6206" Text="Report page"/>
+  <StrRes Name="6207" Text="Custom"/>
+  <StrRes Name="6208" Text="Properties"/>
+  <StrRes Name="6209" Text="Specify an URL (for example: http://www.url.com):"/>
+  <StrRes Name="6210" Text="or enter the expression that returns an URL:"/>
+  <StrRes Name="6211" Text="Specify a page number:"/>
+  <StrRes Name="6212" Text="or enter the expression that returns a page number:"/>
+  <StrRes Name="6213" Text="Specify an anchor name:"/>
+  <StrRes Name="6214" Text="or enter the expression that returns an anchor name:"/>
+  <StrRes Name="6215" Text="Report name:"/>
+  <StrRes Name="6216" Text="Report variable:"/>
+  <StrRes Name="6217" Text="Specify a variable value:"/>
+  <StrRes Name="6218" Text="or enter the expression that returns a variable value:"/>
+  <StrRes Name="6219" Text="Report page:"/>
+  <StrRes Name="6220" Text="Specify a hyperlink value:"/>
+  <StrRes Name="6221" Text="or enter the expression that returns a hyperlink value:"/>
+  <StrRes Name="6222" Text="What will happen if you click this object in the preview window:"/>
+  <StrRes Name="6223" Text="Specified URL will be opened."/>
+  <StrRes Name="6224" Text="You will go to the specified page."/>
+  <StrRes Name="6225" Text="You will go to the object that contains specified anchor."/>
+  <StrRes Name="6226" Text="Specified report will be generated and opened in a separate preview tab."/>
+  <StrRes Name="6227" Text="Specified page will be generated and opened in a separate preview tab."/>
+  <StrRes Name="6228" Text="You should create OnClick event handler to define a custom action."/>
+  <StrRes Name="6229" Text="Modify the object's appearance so it will look like a clickable link"/>
+  <StrRes Name="mvHyperlink" Text="Hyperlink..."/>
+  <StrRes Name="4729" Text="Templates path :"/>
+  <StrRes Name="obDataBases" Text="DataBases"/>
+  <StrRes Name="obTables" Text="Tables"/>
+  <StrRes Name="obQueries" Text="Queries"/>
+  <StrRes Name="6004" Text="Sort by Name"/>
+  <StrRes Name="crGroup" Text="Group"/>
+  <StrRes Name="6300" Text="Select same type on Parent"/>
+  <StrRes Name="6301" Text="Select same type on Page"/>
+  <StrRes Name="6302" Text="Reset to Parent object"/>
+  <StrRes Name="6303" Text="Reset to Parent object with childs"/>
+  <StrRes Name="6586" Text="Enabled"/>
+  <StrRes Name="6587" Text="Edit condition"/>
+  <StrRes Name="6588" Text="Enter breakpoint condition"/>
+  <StrRes Name="6589" Text="disabled"/>
+  <StrRes Name="6590" Text="not accessible"/>
+  <StrRes Name="6591" Text="Watches"/>
+  <StrRes Name="6592" Text="Local"/>
+  
+  <StrRes Name="6593" Text="Code complition and  Syntax memo"/>
+  <StrRes Name="6594" Text="Show script variables"/>
+  <StrRes Name="6595" Text="Show report objects"/>
+  <StrRes Name="6596" Text="Show Rtti variables"/>
+  <StrRes Name="6597" Text="Tab stops:"/>
+  <StrRes Name="6598" Text="Stick to guides"/>
+  <StrRes Name="6599" Text="Use guides as anchor"/>
+  
+  <StrRes Name="6600" Text="Editors configurator .."/>
+</Resources>

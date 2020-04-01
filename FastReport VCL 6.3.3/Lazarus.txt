@@ -1,0 +1,6 @@
+Fast Report require Lazarus version 1.0 or above.
+
+Installation:
+- Build and install fs_lazarus.lpk package
+- open fr6_lazarus.lpk and add path to Fast Script source dir
+- Build and install fr6_lazarus.lpk package

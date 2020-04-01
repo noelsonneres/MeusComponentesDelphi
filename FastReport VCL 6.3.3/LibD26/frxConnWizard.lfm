@@ -1,0 +1,256 @@
+object frxConnectionWizardForm: TfrxConnectionWizardForm
+  Left = 192
+  Height = 307
+  Top = 114
+  Width = 301
+  BorderStyle = bsDialog
+  Caption = 'Connection Wizard'
+  ClientHeight = 307
+  ClientWidth = 301
+  Color = clBtnFace
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  KeyPreview = True
+  OnCreate = FormCreate
+  OnHide = FormHide
+  OnKeyDown = FormKeyDown
+  OnShow = FormShow
+  Position = poScreenCenter
+  ShowHint = True
+  LCLVersion = '1.2.6.0'
+  object OKB: TButton
+    Left = 140
+    Height = 25
+    Top = 276
+    Width = 75
+    Caption = 'OK'
+    Default = True
+    ModalResult = 1
+    OnClick = OKBClick
+    TabOrder = 0
+  end
+  object CancelB: TButton
+    Left = 220
+    Height = 25
+    Top = 276
+    Width = 75
+    Caption = 'Cancel'
+    ModalResult = 2
+    TabOrder = 1
+  end
+  object PageControl1: TPageControl
+    Left = 4
+    Height = 265
+    Top = 4
+    Width = 293
+    ActivePage = ConnTS
+    TabIndex = 0
+    TabOrder = 2
+    object ConnTS: TTabSheet
+      Caption = 'Connection'
+      ClientHeight = 239
+      ClientWidth = 285
+      object ConnL1: TLabel
+        Left = 4
+        Height = 13
+        Top = 4
+        Width = 139
+        Caption = 'Choose the connection type:'
+        ParentColor = False
+      end
+      object DBL: TLabel
+        Left = 4
+        Height = 13
+        Top = 60
+        Width = 107
+        Caption = 'Choose the database:'
+        ParentColor = False
+      end
+      object LoginL: TLabel
+        Left = 20
+        Height = 13
+        Top = 164
+        Width = 25
+        Caption = 'Login'
+        ParentColor = False
+      end
+      object PasswordL: TLabel
+        Left = 20
+        Height = 13
+        Top = 188
+        Width = 46
+        Caption = 'Password'
+        ParentColor = False
+      end
+      object ChooseB: TSpeedButton
+        Left = 256
+        Height = 22
+        Top = 80
+        Width = 23
+        Caption = '...'
+        OnClick = ChooseBClick
+      end
+      object ConnCB: TComboBox
+        Left = 16
+        Height = 21
+        Top = 24
+        Width = 157
+        ItemHeight = 13
+        OnClick = ConnCBClick
+        Style = csDropDownList
+        TabOrder = 0
+      end
+      object DatabaseE: TEdit
+        Left = 16
+        Height = 21
+        Top = 80
+        Width = 237
+        TabOrder = 1
+      end
+      object LoginE: TEdit
+        Left = 116
+        Height = 21
+        Top = 160
+        Width = 121
+        TabOrder = 2
+      end
+      object PasswordE: TEdit
+        Left = 116
+        Height = 21
+        Top = 184
+        Width = 121
+        TabOrder = 3
+      end
+      object PromptRB: TRadioButton
+        Left = 4
+        Height = 19
+        Top = 116
+        Width = 79
+        Caption = 'Prompt login'
+        Checked = True
+        TabOrder = 4
+        TabStop = True
+      end
+      object LoginRB: TRadioButton
+        Left = 4
+        Height = 19
+        Top = 136
+        Width = 117
+        Caption = 'Use login/password:'
+        TabOrder = 5
+      end
+    end
+    object TableTS: TTabSheet
+      Caption = 'Table'
+      ClientHeight = 239
+      ClientWidth = 285
+      ImageIndex = 1
+      object ConnL2: TLabel
+        Left = 4
+        Height = 13
+        Top = 4
+        Width = 139
+        Caption = 'Choose the connection type:'
+        ParentColor = False
+      end
+      object TableL: TLabel
+        Left = 4
+        Height = 13
+        Top = 60
+        Width = 115
+        Caption = 'Choose the table name:'
+        ParentColor = False
+      end
+      object ConnCB1: TComboBox
+        Left = 16
+        Height = 21
+        Top = 24
+        Width = 157
+        ItemHeight = 13
+        OnClick = ConnCB1Click
+        Style = csDropDownList
+        TabOrder = 0
+      end
+      object TableCB: TComboBox
+        Left = 16
+        Height = 21
+        Top = 80
+        Width = 157
+        ItemHeight = 13
+        Style = csDropDownList
+        TabOrder = 1
+      end
+      object FilterCB: TCheckBox
+        Left = 4
+        Height = 19
+        Top = 116
+        Width = 87
+        Caption = 'Filter records:'
+        TabOrder = 2
+      end
+      object FilterE: TEdit
+        Left = 16
+        Height = 21
+        Top = 140
+        Width = 157
+        TabOrder = 3
+      end
+    end
+    object QueryTS: TTabSheet
+      Caption = 'Query'
+      ClientHeight = 239
+      ClientWidth = 285
+      ImageIndex = 2
+      object ConnL3: TLabel
+        Left = 4
+        Height = 13
+        Top = 4
+        Width = 139
+        Caption = 'Choose the connection type:'
+        ParentColor = False
+      end
+      object QueryL: TLabel
+        Left = 4
+        Height = 13
+        Top = 60
+        Width = 75
+        Caption = 'SQL statement:'
+        ParentColor = False
+      end
+      object ConnCB2: TComboBox
+        Left = 16
+        Height = 21
+        Top = 24
+        Width = 157
+        ItemHeight = 13
+        OnClick = ConnCB2Click
+        Style = csDropDownList
+        TabOrder = 0
+      end
+      object ToolBar1: TToolBar
+        Left = 232
+        Height = 29
+        Top = 48
+        Width = 53
+        Align = alNone
+        EdgeBorders = []
+        TabOrder = 1
+        object BuildSQLB: TToolButton
+          Left = 1
+          Hint = 'Query Builder'
+          Top = 0
+          ImageIndex = 58
+          OnClick = BuildSQLBClick
+        end
+        object ParamsB: TToolButton
+          Left = 24
+          Hint = 'Edit Query Parameters'
+          Top = 0
+          ImageIndex = 71
+          OnClick = ParamsBClick
+        end
+      end
+    end
+  end
+end

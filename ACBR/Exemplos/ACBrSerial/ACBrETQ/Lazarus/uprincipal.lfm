@@ -1,0 +1,501 @@
+object FPrincipal: TFPrincipal
+  Left = 395
+  Height = 275
+  Top = 228
+  Width = 740
+  BorderIcons = [biSystemMenu, biMinimize]
+  BorderStyle = bsSingle
+  Caption = 'Impressão de Etiquetas'
+  ClientHeight = 275
+  ClientWidth = 740
+  Constraints.MinHeight = 275
+  Constraints.MinWidth = 740
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  OnCreate = FormCreate
+  Position = poScreenCenter
+  LCLVersion = '1.8.4.0'
+  object gbConfiguracao: TGroupBox
+    Left = 10
+    Height = 255
+    Top = 10
+    Width = 246
+    Align = alLeft
+    BorderSpacing.Left = 10
+    BorderSpacing.Top = 10
+    BorderSpacing.Bottom = 10
+    Caption = 'Configurações da Impressora'
+    ClientHeight = 237
+    ClientWidth = 242
+    TabOrder = 0
+    object lbModelo: TLabel
+      AnchorSideLeft.Control = cbModelo
+      AnchorSideBottom.Control = cbModelo
+      Left = 136
+      Height = 13
+      Top = 8
+      Width = 38
+      Anchors = [akLeft, akBottom]
+      Caption = 'Modelo:'
+      ParentColor = False
+    end
+    object lbPorta: TLabel
+      AnchorSideLeft.Control = cbPorta
+      AnchorSideBottom.Control = cbPorta
+      Left = 10
+      Height = 13
+      Top = 8
+      Width = 28
+      Anchors = [akLeft, akBottom]
+      Caption = 'Porta:'
+      ParentColor = False
+    end
+    object lbAvanco: TLabel
+      AnchorSideLeft.Control = eAvanco
+      AnchorSideBottom.Control = eAvanco
+      Left = 10
+      Height = 13
+      Top = 144
+      Width = 59
+      Anchors = [akLeft, akBottom]
+      Caption = 'Avanço Etq:'
+      ParentColor = False
+    end
+    object cbModelo: TComboBox
+      Left = 136
+      Height = 21
+      Top = 21
+      Width = 94
+      ItemHeight = 13
+      OnChange = cbModeloChange
+      Style = csDropDownList
+      TabOrder = 5
+    end
+    object cbPorta: TComboBox
+      Left = 10
+      Height = 21
+      Top = 21
+      Width = 113
+      ItemHeight = 13
+      Items.Strings = (
+        'LPT1'
+        'LPT2'
+        'COM1'
+        'COM2'
+        'COM3'
+        '\\localhost\ZEBRA'
+        '\\127.0.0.1\ARGOX'
+        'Digite a porta'
+      )
+      TabOrder = 0
+      Text = '\\LOCALHOST\L42'
+    end
+    object eAvanco: TEdit
+      Left = 10
+      Height = 21
+      Top = 157
+      Width = 112
+      OnKeyPress = eCopiasKeyPress
+      TabOrder = 3
+    end
+    object lbDPI: TLabel
+      AnchorSideLeft.Control = cbDPI
+      AnchorSideBottom.Control = cbDPI
+      Left = 136
+      Height = 13
+      Top = 53
+      Width = 75
+      Anchors = [akLeft, akBottom]
+      Caption = 'DPI Impressora:'
+      ParentColor = False
+    end
+    object cbDPI: TComboBox
+      Left = 136
+      Height = 21
+      Top = 66
+      Width = 94
+      ItemHeight = 13
+      Style = csDropDownList
+      TabOrder = 6
+    end
+    object lbTemperatura: TLabel
+      AnchorSideLeft.Control = eTemperatura
+      AnchorSideBottom.Control = eTemperatura
+      Left = 10
+      Height = 13
+      Top = 53
+      Width = 63
+      Anchors = [akLeft, akBottom]
+      Caption = 'Temperatura:'
+      ParentColor = False
+    end
+    object eTemperatura: TEdit
+      Left = 10
+      Height = 21
+      Top = 66
+      Width = 113
+      OnKeyPress = eCopiasKeyPress
+      TabOrder = 1
+      Text = '10'
+    end
+    object cbBackFeed: TComboBox
+      Left = 136
+      Height = 21
+      Top = 157
+      Width = 94
+      ItemHeight = 13
+      Style = csDropDownList
+      TabOrder = 7
+    end
+    object lbBackFeed: TLabel
+      AnchorSideLeft.Control = cbBackFeed
+      AnchorSideBottom.Control = cbBackFeed
+      Left = 136
+      Height = 13
+      Top = 144
+      Width = 52
+      Anchors = [akLeft, akBottom]
+      Caption = 'BackFeed:'
+      ParentColor = False
+    end
+    object eMargemEsquerda: TEdit
+      Left = 10
+      Height = 21
+      Top = 111
+      Width = 113
+      OnKeyPress = eCopiasKeyPress
+      TabOrder = 2
+      Text = '10'
+    end
+    object lbMargem: TLabel
+      AnchorSideLeft.Control = eMargemEsquerda
+      AnchorSideBottom.Control = eMargemEsquerda
+      Left = 10
+      Height = 13
+      Hint = 'Utilize ''-1'' para usar velocidade padrão da impressora'
+      Top = 98
+      Width = 89
+      Anchors = [akLeft, akBottom]
+      Caption = 'Margem Esquerda:'
+      ParentColor = False
+    end
+    object ckMemoria: TCheckBox
+      Left = 10
+      Height = 19
+      Top = 189
+      Width = 94
+      Caption = 'Limpar Memória'
+      Checked = True
+      State = cbChecked
+      TabOrder = 4
+    end
+    object lbTemperatura2: TLabel
+      AnchorSideLeft.Control = eVelocidade
+      AnchorSideBottom.Control = eVelocidade
+      Left = 136
+      Height = 13
+      Hint = 'Utilize ''-1'' para usar velocidade padrão da impressora'
+      Top = 98
+      Width = 56
+      Anchors = [akLeft, akBottom]
+      Caption = 'Velocidade:'
+      ParentColor = False
+    end
+    object eVelocidade: TEdit
+      Left = 136
+      Height = 21
+      Hint = 'Utilize ''-1'' para usar velocidade padrão da impressora'
+      Top = 111
+      Width = 94
+      OnKeyPress = eCopiasKeyPress
+      TabOrder = 8
+      Text = '-1'
+    end
+    object lbBackFeed1: TLabel
+      AnchorSideLeft.Control = cbOrigem
+      AnchorSideBottom.Control = cbOrigem
+      Left = 136
+      Height = 13
+      Top = 188
+      Width = 36
+      Anchors = [akLeft, akBottom]
+      Caption = 'Origem:'
+      ParentColor = False
+    end
+    object cbOrigem: TComboBox
+      Left = 136
+      Height = 21
+      Top = 201
+      Width = 94
+      ItemHeight = 13
+      Style = csDropDownList
+      TabOrder = 9
+    end
+  end
+  object gbImagem: TGroupBox
+    Left = 256
+    Height = 255
+    Top = 10
+    Width = 289
+    Align = alClient
+    BorderSpacing.Top = 10
+    BorderSpacing.Bottom = 10
+    Caption = 'Carregar Imagem'
+    ClientHeight = 237
+    ClientWidth = 285
+    TabOrder = 1
+    object Image1: TImage
+      Left = 15
+      Height = 126
+      Top = 10
+      Width = 258
+      Center = True
+      Picture.Data = {
+        07544269746D6170DE0D0000424DDE0D0000000000003E00000028000000FA00
+        00006D0000000100010000000000A00D00000000000000000000020000000000
+        000000000000FFFFFF00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFC0FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFC0FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFC0FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFC0FE00000000000000000000000F00F000000000000000
+        00000000000000003FC0FC00000000000000000000000F00F800000000000000
+        00000000000000000FC0F800000000000000000000000F007C00000000000000
+        000000000000000007C0E000000000000000000000000F003E00000000000000
+        200000000000000001C0C000000000000000000000000F001F00000000000001
+        C00000000000000001C0C000000000000000000000000F000F8000000000001F
+        800000000000000000C0800000000000000000000380040007C000000000007F
+        8000000000000000004080000000000000000000008000000100000000000000
+        00000000000000000040000000000C3BE39E7367E3CF67807C38CCCF9C3CCFCC
+        0FCC3B3CEE0000000000000000000C37E7BF7367E7EFEFC0FE7CCCCFDC7ECFCC
+        0FEC7776EE0000000000000000000FF666737367660EECE0C6C6CCDFDCE0CECC
+        0C6C771EEE000000000000000000066666737363EE07ECE1C0C6CCDFDCE0C7CC
+        0CEE1F7EEE00000000000000000007E6663377606660ECC1C0E6EECCDCE6C4CC
+        0FCE0760EE00000000000000000007C66F9E7EE7E7C7C781C07CFFCF9F7CC7CC
+        0CEFBF3EEE00000000000000000003C00600000000000000EE0000000000000C
+        0CE000000E00000000008000000003C00200000000078000FC0000300000C00C
+        0FC00000EE00000000408000000000000000000000000F003803E1FFE00003C0
+        00000000000000000040C000000000000000000000000F000001FFFE000007C0
+        000000000000000000C0E000000000000000000000000F000000FFF000000780
+        000000000000000001C0F000000000000000000000000F0000007FC000000700
+        000000000000000003C0F800000000000000000000000F0000003C0000000E00
+        000000000000000007C0FE00000000000000000000000F000000000000001E00
+        00000000000000001FC0FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFC0FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFC0FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFC0FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFC0FFFFFFFFFFF8003FFFFF01FFFFFFF800FFFFFFFFFF80
+        7FFFF807FFFFFFFFFFC0FFFFFFE000780078001E03F80001FC00F00000007FE0
+        78007807FFFFFFFFFFC0FFFFFFE000380078001E07E000007E00F000000007F0
+        78007807FFFFFFFFFFC0FFFFFFF000380078001E0F8000001F00F000000001F0
+        78007807FFFFFFFFFFC0FFFFFFF0003C0070001C3E0000000780F0000000007C
+        78007807FFFFFFFFFFC0FFFFFFF8003FFFF0003C3E00000007C0F0000000003C
+        78007807FFFFFFFFFFC0FFFFFFF8001FFFF000387800000001E0F0000000001E
+        78007807FFFFFFFFFFC0FFFFFFFC001FFFF00078F800000001E0F0000000001E
+        78007807FFFFFFFFFFC0FFFFFFFC001FFFE00078F000000000F0F0000000000E
+        78007807FFFFFFFFFFC0FFFFFFFC0000000000F1E000000000F8F0000000000F
+        7800780FFFFFFFFFFFC0FFFFFFFC0000000000F1C00000000078F0000000000F
+        7800780FFFFFFFFFFFC0FFFFFFFE0000000000E3C0003FC00038F0003FF80007
+        7800780FFFFFFFFFFFC0FFFFFFFE0000000000E3C0007FE00038F0003FFC0007
+        F800780FFFFFFFFFFFC0FFFFFFFF0000000001EF8000FFF0003CF0003FFE0007
+        F800781FFFFFFFFFFFC0FFFFFFFF0000000001FF8001F0F8003CF00039FE0007
+        F800781FFFFFFFFFFFC0FFFFFFFF0000000003FF0001E07C001CF0003BCE0007
+        F800781FFFFFFFFFFFC0FFFFFFFF8000000003FF0003C03C00FEF0003FFE0007
+        7800783FFFFFFFFFFFC0FFFFFFFF8000000003E70003801C07FEF0003FFE000F
+        7800783FFFFFFFFFFFC0FFFFFFFFC001FF00078F0003801C1FFEF0003FFC000F
+        7800383FFFFFFFFFFFC0FFFFFFFFC001FF00070F0003801FFFC0F0003FE0000E
+        7800383FFFFFFFFFFFC0FFFFFFFFC001FE000F0F0007801FFF00F0000000001E
+        78003C7FFFFFFFFFFFC0FFFFFFFFE001FE000F0F0007800FE000F0000000003E
+        78001FFFFFFFFFFFFFC0FFFFFFFFE001FE000F0F0007800F8000F0000000007C
+        78001FFFFFFFFFFFFFC0FFFFFFFFE000FE001FEF0007800C0000F000000000F8
+        78001FFFFFFFFFFFFFC0FFFFFFFFF000FC001FFF000780000000F000000007F0
+        7800073FFFFFFFFFFFC0FFFFFFFFF0007C001FFF000780000000F000000007E0
+        7800001FFFFFFFFFFFC0FFFFFFFFF8007C003C7F0007800E0000F000000001F0
+        7800000FFFFFFFFFFFC0FFFFFFFFF80078003C0F0003801FE000F000000000F0
+        7800000FFFFFFFFFFFC0FFFFFFFFF8003800780F0003801FFE00F00000000078
+        7800000FFFFFFFFFFFC0FFFFFFFFFC00300078070003801FFFF8F0003FF0003C
+        78008007FFFFFFFFFFC0FFFFFFFFFC00300070070003C01CFFFEF0003FF8003C
+        78008007FFFFFFFFFFC0FFFFFFFFFE003000F0070001FC7C03FEF0003FF8003C
+        7800C003FFFFFFFFFFC0FFFFFFFFFE001000E0078001FFF8003CF0003838001C
+        7800E003FFFFFFFFFFC0FFFFFFFFFE001000E0078000FFF8003CF0003CF8001E
+        7800F007FFFFFFFFFFC0FFFFFFFFFF000001E00380007FE00038F0003FF8001E
+        7FFFFFFFFFFFFFFFFFC0FFFFFFFFFF000001E003C0003FC00038F0003FF8001E
+        7FFFFFFFFFFFFFFFFFC0FFFFFFFFFF000003C001C00000000078F0003FC0001E
+        7FFFFFFFFFFFFFFFFFC0FFFFFFFFFF800003C001E000000000F0F0000000001C
+        00007FFFFFFFFFFFFFC0FFFFFFFFFF8000038000E000000000F0F0000000003C
+        00007FFFFFFFFFFFFFC0FFFFFFFFFFC000078000F800000001E0F0000000003C
+        0000FFFFFFFFFFFFFFC0FFFFFFFFFFC0000780007800000003C0F00000000038
+        0001FFFFFFFFFFFFFFC0FFFFFFFFFFC0000F00003E00000007C0F000000000FC
+        0003FFFFFFFFFFFFFFC0FFFFFFFFFFC0000F00003E0000000F80F000000000FE
+        0003FFFFFFFFFFFFFFC0FFFFFFFFFFE0000F00001F8000001F00F000000001FE
+        0007FFFFFFFFFFFFFFC0FFFFFFFFFFE0000E000007E000007E00F000000007CF
+        000FFFFFFFFFFFFFFFC0FFFFFFFFFFF0001E000003F80001FC00F00000003FCF
+        800FFFFFFFFFFFFFFFC0FFFFFFFFFFFFFFFC000001FFFFFFF000FFFFFFFFFF07
+        C01FFFFFFFFFFFFFFFC0FFFFFFFFFFFFFFFC0000007FFFFFE000FFFFFFFFFFF3
+        C03FFFFFFFFFFFFFFFC0FFFFFFFFFFFFFFFE0000001FFFFF8001FFFFFFFFFFFF
+        E07FFFFFFFFFFFFFFFC0FFFFFFFFFFFFFFFF00000000FFF00001E000000007FF
+        F0FFFFFFFFFFFFFFFFC0FFFFFFFFFFFFFFFF8000000000700003C0000000007F
+        F9FFFFFFFFFFFFFFFFC0FFFFFFFFFFFFFFFFC000000000700007C00000000001
+        FFFFFFFFFFFFFFFFFFC0FFFFFFFFFFFFFFFFE000000000700007800000000000
+        1FFFFFFFFFFFFFFFFFC0FFFFFFFFFFFFFFFFF00000000070000F000000000000
+        0FFFFFFFFFFFFFFFFFC0FFFFFFFFFFFFFFFFF80000000070001E000000000000
+        1FFFFFFFFFFFFFFFFFC0FFFFFFFFFFFFFFFFFC0000000070003E000000000000
+        3FFFFFFFFFFFFFFFFFC0FFFFFFFFFFFFFFFFFF00000000700078000000000000
+        7FFFFFFFFFFFFFFFFFC0FFFFFFFFFFFFFFFFFF000000007800F8000000000000
+        FFFFFFFFFFFFFFFFFFC0FFFFFFFFFFFFFFFFFF800000007800F0000000000001
+        FFFFFFFFFFFFFFFFFFC0FFFFFFFFFFFFFFFFFFE00000007801E0000000000007
+        FFFFFFFFFFFFFFFFFFC0FFFFFFFFFFFFFFFFFFF00000007803C000000000000F
+        FFFFFFFFFFFFFFFFFFC0FFFFFFFFFFFFFFFFFFFC0000007807C000000000003F
+        FFFFFFFFFFFFFFFFFFC0FFFFFFFFFFFFFFFFFFFE00000078078000000000007F
+        FFFFFFFFFFFFFFFFFFC0FFFFFFFFFFFFFFFFFFFF000000380F000000000000FF
+        FFFFFFFFFFFFFFFFFFC0FFFFFFFFFFFFFFFFFFFFC00000381F000000000003FF
+        FFFFFFFFFFFFFFFFFFC0FFFFFFFFFFFFFFFFFFFFF00000381E00000000000FFF
+        FFFFFFFFFFFFFFFFFFC0FFFFFFFFFFFFFFFFFFFFFC00003C7C00000000003FFF
+        FFFFFFFFFFFFFFFFFFC0FFFFFFFFFFFFFFFFFFFFFF00003C780000000000FFFF
+        FFFFFFFFFFFFFFFFFFC0FFFFFFFFFFFFFFFFFFFFFFC0003CF80000000001FFFF
+        FFFFFFFFFFFFFFFFFFC0FFFFFFFFFFFFFFFFFFFFFFF0003DE0000000000FFFFF
+        FFFFFFFFFFFFFFFFFFC0FFFFFFFFFFFFFFFFFFFFFFFE003FE0000000003FFFFF
+        FFFFFFFFFFFFFFFFFFC0FFFFFFFFFFFFFFFFFFFFFFFFC03FC000000003FFFFFF
+        FFFFFFFFFFFFFFFFFFC0FFFFFFFFFFFFFFFFFFFFFFFFF01F800000000FFFFFFF
+        FFFFFFFFFFFFFFFFFFC0FFFFFFFFFFFFFFFFFFFFFFFFFE1F000000007FFFFFFF
+        FFFFFFFFFFFFFFFFFFC0FFFFFFFFFFFFFFFFFFFFFFFFFFFF0000000FFFFFFFFF
+        FFFFFFFFFFFFFFFFFFC0FFFFFFFFFFFFFFFFFFFFFFFFFFFFC00003FFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFC0FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFC0FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFC0FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+        FFFFFFFFFFFFFFFFFFC0
+      }
+    end
+    object lbNomeImg: TLabel
+      AnchorSideLeft.Control = edNomeImg
+      AnchorSideBottom.Control = edNomeImg
+      Left = 15
+      Height = 13
+      Top = 147
+      Width = 111
+      Anchors = [akLeft, akBottom]
+      Caption = 'Nome Imagem Memória'
+      ParentColor = False
+    end
+    object edNomeImg: TEdit
+      Left = 15
+      Height = 21
+      Top = 160
+      Width = 258
+      TabOrder = 0
+      Text = 'ACBR'
+    end
+    object bCarregarImg: TButton
+      Left = 15
+      Height = 32
+      Top = 190
+      Width = 152
+      Caption = 'Carregar Imagem'
+      OnClick = bCarregarImgClick
+      TabOrder = 1
+    end
+    object rbStream: TRadioButton
+      Left = 183
+      Height = 19
+      Top = 207
+      Width = 87
+      Caption = 'De um Stream'
+      Checked = True
+      TabOrder = 3
+      TabStop = True
+    end
+    object rbArquivo: TRadioButton
+      Left = 183
+      Height = 19
+      Top = 190
+      Width = 90
+      Caption = 'De um Arquivo'
+      TabOrder = 2
+    end
+  end
+  object gbImpressao: TGroupBox
+    Left = 545
+    Height = 255
+    Top = 10
+    Width = 185
+    Align = alRight
+    BorderSpacing.Top = 10
+    BorderSpacing.Right = 10
+    BorderSpacing.Bottom = 10
+    Caption = 'Impressão'
+    ClientHeight = 237
+    ClientWidth = 181
+    TabOrder = 2
+    object lbCopias: TLabel
+      AnchorSideLeft.Control = eCopias
+      AnchorSideBottom.Control = eCopias
+      Left = 16
+      Height = 13
+      Top = 10
+      Width = 47
+      Anchors = [akLeft, akBottom]
+      Caption = 'Nº Copias'
+      ParentColor = False
+    end
+    object eCopias: TEdit
+      Left = 16
+      Height = 21
+      Top = 23
+      Width = 150
+      OnKeyPress = eCopiasKeyPress
+      TabOrder = 0
+      Text = '1'
+    end
+    object bEtqSimples: TButton
+      Left = 16
+      Height = 32
+      Top = 55
+      Width = 150
+      BorderSpacing.InnerBorder = 4
+      Caption = 'Etiqueta Simples'
+      OnClick = bEtqSimplesClick
+      TabOrder = 1
+    end
+    object bEtqCarreiras: TButton
+      Left = 16
+      Height = 32
+      Top = 96
+      Width = 150
+      BorderSpacing.InnerBorder = 4
+      Caption = 'Etiqueta 3 Colunas'
+      OnClick = bEtqCarreirasClick
+      TabOrder = 2
+    end
+    object bImprimirImagem: TButton
+      Left = 16
+      Height = 32
+      Top = 177
+      Width = 150
+      Caption = 'Imprimir Imagem'
+      OnClick = bImprimirImagemClick
+      TabOrder = 4
+    end
+    object bEtqBloco: TButton
+      Left = 16
+      Height = 32
+      Top = 136
+      Width = 150
+      BorderSpacing.InnerBorder = 4
+      Caption = 'Bloco de Etiquetas'
+      OnClick = bEtqBlocoClick
+      TabOrder = 3
+    end
+  end
+  object ACBrETQ: TACBrETQ
+    Origem = ogTop
+    ArqLOG = 'C:\TEMP\etq.txt'
+    Porta = 'LPT1'
+    Ativo = False
+    left = 400
+    top = 48
+  end
+  object OpenPictureDialog1: TOpenPictureDialog
+    Filter = 'BMP MonoCromático|*.bmp|PCX|*.pcx|IMG|*.img'
+    left = 304
+    top = 48
+  end
+end

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <Package Version="4">
+    <PathDelim Value="\"/>
+    <Name Value="ACBr_BlocoX"/>
+    <Type Value="RunAndDesignTime"/>
+    <Author Value="Regys Borges da Silveira"/>
+    <CompilerOptions>
+      <Version Value="11"/>
+      <PathDelim Value="\"/>
+      <SearchPaths>
+        <OtherUnitFiles Value="..\..\..\..\Fontes\ACBrDFe\ACBrBlocoX;..\..\..\..\Fontes\ACBrDFe\ACBrBlocoX\PCNBlocoX"/>
+        <UnitOutputDirectory Value="..\..\..\..\Lib\Lazarus\ACBrDFe\ACBrBlocoX\$(TargetCPU)-$(TargetOS)"/>
+      </SearchPaths>
+      <Parsing>
+        <SyntaxOptions>
+          <UseAnsiStrings Value="False"/>
+        </SyntaxOptions>
+      </Parsing>
+      <Other>
+        <CompilerMessages>
+          <IgnoredMessages idx5024="True"/>
+        </CompilerMessages>
+      </Other>
+    </CompilerOptions>
+    <Description Value="ACBr - Bloco X - (http://www.projetoacbr.com.br/)"/>
+    <License Value="LGPL"/>
+    <Files Count="7">
+      <Item1>
+        <Filename Value="..\..\..\..\Fontes\ACBrDFe\ACBrBlocoX\ACBrBlocoX.pas"/>
+        <UnitName Value="ACBrBlocoX"/>
+      </Item1>
+      <Item2>
+        <Filename Value="..\..\..\..\Fontes\ACBrDFe\ACBrBlocoX\ACBrBlocoX_WebServices.pas"/>
+        <UnitName Value="ACBrBlocoX_WebServices"/>
+      </Item2>
+      <Item3>
+        <Filename Value="..\..\..\..\Fontes\ACBrDFe\ACBrBlocoX\ACBrBlocoX_Reg.pas"/>
+        <HasRegisterProc Value="True"/>
+        <UnitName Value="ACBrBlocoX_Reg"/>
+      </Item3>
+      <Item4>
+        <Filename Value="..\..\..\..\Fontes\ACBrDFe\ACBrBlocoX\ACBrBlocoX_Comum.pas"/>
+        <UnitName Value="ACBrBlocoX_Comum"/>
+      </Item4>
+      <Item5>
+        <Filename Value="..\..\..\..\Fontes\ACBrDFe\ACBrBlocoX\ACBrBlocoX_Estoque.pas"/>
+        <UnitName Value="ACBrBlocoX_Estoque"/>
+      </Item5>
+      <Item6>
+        <Filename Value="..\..\..\..\Fontes\ACBrDFe\ACBrBlocoX\ACBrBlocoX_ReducaoZ.pas"/>
+        <UnitName Value="ACBrBlocoX_ReducaoZ"/>
+      </Item6>
+      <Item7>
+        <Filename Value="..\..\..\..\Fontes\ACBrDFe\ACBrBlocoX\PCNBlocoX\pcnRetEnvBlocoX.pas"/>
+        <UnitName Value="pcnRetEnvBlocoX"/>
+      </Item7>
+    </Files>
+    <RequiredPkgs Count="1">
+      <Item1>
+        <PackageName Value="ACBrDFeComum"/>
+      </Item1>
+    </RequiredPkgs>
+    <UsageOptions>
+      <UnitPath Value="$(PkgOutDir)"/>
+    </UsageOptions>
+    <PublishOptions>
+      <Version Value="2"/>
+    </PublishOptions>
+  </Package>
+</CONFIG>

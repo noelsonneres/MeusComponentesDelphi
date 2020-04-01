@@ -1,0 +1,524 @@
+{******************************************************************************}
+{ Projeto: Componentes ACBr                                                    }
+{ Biblioteca multi plataforma de componentes Delphi para interação com equipa- }
+{ mentos de Automação Comercial utilizados no Brasil                           }
+{                                                                              }
+{  Você pode obter a última versão desse arquivo na página do Projeto ACBr     }
+{ Componentes localizado em      http://www.sourceforge.net/projects/acbr      }
+{                                                                              }
+{  Esta biblioteca é software livre; você pode redistribuí-la e/ou modificá-la }
+{ sob os termos da Licença Pública Geral Menor do GNU conforme publicada pela  }
+{ Free Software Foundation; tanto a versão 2.1 da Licença, ou (a seu critério) }
+{ qualquer versão posterior.                                                   }
+{                                                                              }
+{  Esta biblioteca é distribuída na expectativa de que seja útil, porém, SEM   }
+{ NENHUMA GARANTIA; nem mesmo a garantia implícita de COMERCIABILIDADE OU      }
+{ ADEQUAÇÃO A UMA FINALIDADE ESPECÍFICA. Consulte a Licença Pública Geral Menor}
+{ do GNU para mais detalhes. (Arquivo LICENÇA.TXT ou LICENSE.TXT)              }
+{                                                                              }
+{  Você deve ter recebido uma cópia da Licença Pública Geral Menor do GNU junto}
+{ com esta biblioteca; se não, escreva para a Free Software Foundation, Inc.,  }
+{ no endereço 59 Temple Street, Suite 330, Boston, MA 02111-1307 USA.          }
+{ Você também pode obter uma copia da licença em:                              }
+{ http://www.opensource.org/licenses/lgpl-license.php                          }
+{                                                                              }
+{ Daniel Simões de Almeida  -  daniel@djsystem.com.br  -  www.djsystem.com.br  }
+{              Praça Anita Costa, 34 - Tatuí - SP - 18270-410                  }
+{                                                                              }
+{******************************************************************************}
+
+{******************************************************************************
+|* PCNComum
+|*
+|* PROPÓSITO: Registro de Alterações
+******************************************************************************}
+
+Símbolo : Significado
+
+[+]     : Novo recurso
+[*]     : Recurso modificado/melhorado
+[-]     : Correção de Bug (assim esperamos)
+
+23/12/2019
+-- pcnGerador --
+[*] https://www.projetoacbr.com.br/forum/topic/55483-quebra-de-linha/
+  Por: Rogério
+
+22/11/2019
+-- pcnAuxiliar --
+[*] Ajuste para leitura dos campos "CDATA" no XML.
+    https://www.projetoacbr.com.br/forum/topic/55006-cdata-nas-tags-xml-nfe/
+  Por: BigWings
+
+19/11/2019
+-- pcnRetConsReciDFe--
+[*] https://www.projetoacbr.com.br/forum/topic/54881-sefaz-ms-nota-ms-premiada/?do=findComment&comment=360858
+   Por: Compusofts
+
+25/10/2019
+-- pcnAuxiliar --
+[+] Adicionando o método:
+    function TimeToDecimal(const ATime: TDateTime): Double;
+    https://www.projetoacbr.com.br/forum/topic/54474-converter-horas-para-decimal-s-2245/
+    (por: DSA)
+
+22/10/2019
+-- pcnAuxiliar --
+[*] Ajuste na função "GetInicioDoHorarioDeVerao" e "GetFimDoHorarioDeVerao" 
+    de acordo com as novas regras.
+    https://www.projetoacbr.com.br/forum/topic/54406-tzpcn-j%C3%A1-est%C3%A1-atualizado-para-o-fim-do-hor%C3%A1rio-de-ver%C3%A3o/
+  Por: BigWings
+
+11/10/2019
+[*] pcnRetDistDFeInt
+    Possivel correção, para um erro que esta ocorrendo ao tentar ler a lista 
+    de Itens Averbados.
+    Por: Italo Jurisato Junior
+
+03/10/2019
+[+] pcnRetDistDFeInt
+    Implementado a classe para realizar a leitura dos Itens Averbados em um 
+    retorno com evento de Averbação para Exportação.
+    Por: Italo Jurisato Junior
+
+20/08/2019
+[+] pcnConversao 
+    Acrescentado Enumerador dbisValordaOperacao em TpcnDeterminacaoBaseIcmsST,
+    conforme NT 2019/001 versão 1.20.
+    Por: Italo Jurisato Junior
+
+26/07/2019
+[+] pcnConversao 
+    Acrescentado Enumerador TPosReciboLayout , para controlar o tipo de canhoto.
+    Por: Henrique Leonardo ( HLeoRj )
+
+pcnGerador
+[-] Correção na validação do tamanho mínimo.
+  Por: BigWings
+
+26/07/2019
+[-] pcnConversao 
+    Estava faltando os códigos dos eventos: Comprovante de Entrega, 
+    Cancelamento do Comprovante de Entrega e Inclusão de DFe.
+   Por: Italo Jurisato Junior
+
+24/07/2019
+[+] pcnAuxiliar
+    Incluido a função para validar o código do documento que é usado na chave.
+    -- ValidarCodigoDFe --
+   Por: Italo Jurisato Junior
+
+14/06/2019
+[*] pcnConversao / pcnRetDistDFeInt
+    Correção na conversão do tipo do evento lido do XML para o respectivo 
+    enumerador
+   Por: Italo Jurisato Junior
+
+26/04/2019
+[*] pcnRetDistDFeInt
+    Para CTe o nome da tag correta é retEventoCTe e não retEvento.
+   Por: Italo Jurisato Junior
+
+19/03/2019
+-- pcnConversao --
+[*] Acrescentado o tipo de evento de Alteração de Poltrona a ser usado no BP-e.
+   Por: Italo Jurisato Junior
+
+04/02/2019
+[*] pcnAuxiliar
+    https://www.projetoacbr.com.br/forum/topic/49182-extrair-tipo-de-emiss%C3%A3o-da-chave-de-acesso-do-ct-e/
+	Por: Allan Wolski
+
+30/01/2019
+[*] pcnRetDistDFeInt
+    Incluido a linha para a leitura do valor total da Prestação <vTPrest>
+    se tratando de CT-e
+	Por: Italo Jurisato Junior
+
+23/01/2019
+[+] pcnAuxiliar
+    Adicionado função ValidarCNPJouCPF seguindo padrão das funções ja existente que fazem uso do ACBrValidador  
+	Por: Italo Jurisato Junior
+
+17/01/2019
+-- pcnConversao --
+[+] Inclusão da função SchemaDFeToStr.
+   Por: Italo Jurisato Junior
+
+16/01/2019
+-- Diversos --
+[*] Inclusão das units que foram Generalizadas em PCNComum e os ajustes necessários.
+   Por: Italo Jurisato Junior
+
+28/11/2018
+-- pcnConversao --
+[*] https://www.projetoacbr.com.br/forum/topic/47855-icms51-com-diferimento-total-pdif100/?do=findComment&comment=315345
+  Por: Italo Jurisato Junior
+
+23/10/2018
+-- pcnAuxiliar --
+[*] Ajuste na função "GetInicioDoHorarioDeVerao" de acordo com as novas regras.
+    https://www.projetoacbr.com.br/forum/topic/47233-erro-na-function-getiniciodohorariodeverao/
+  Por: BigWings
+
+16/10/2018
+-- pcnAuxiliar --
+[*] Alterado a função ValidarChave para que este leve em consideração a série,
+    pois dependendo da série o emitente pode ser CNPJ (Pessoa Juridica) ou
+    CPF (Pessoa Fisica). 
+   Por: Maria das Graças
+
+12/09/2018
+-- pcnConversao --
+[*] https://www.projetoacbr.com.br/forum/topic/46359-ajuste-na-descri%C3%A7%C3%A3o-do-cst60-no-dacte/
+  Por: bsoft
+
+30/08/2018
+-- pcnConversao --
+[+] Inclusão de opção de alinhamento à esquerda para o canhoto do DANFE em FR paisagem.
+    https://www.projetoacbr.com.br/forum/topic/45975-impress%C3%A3o-do-canhoto-a-esquerda-no-modelo-pa%C3%ADsagem/
+  Por: Pedro E. Braga
+
+08/08/2018
+-- pcnConst --
+[+] Incluida uma nova constante.
+  Por: Italo Jurisato Junior
+
+26/07/2018
+-- pcnConversao --
+[*] Ajuste na função CSTICMSToStr (Retorno do tipo CST ICMSOutraUF  = 90)
+  Por: José M S Junior
+
+12/06/2018
+-- pcnConversao --
+[*] Movido TpcnModalidadeFrete, modFreteToStr, StrTomodFrete, modFreteToDesStr para pcnConversaoNFe.
+  Por: Rafael Dias
+
+25/05/2018
+-- pcnConversao --
+[*] https://www.projetoacbr.com.br/forum/topic/43584-pcnconversao-sugest%C3%A3o-para-resolver-problema-de-criar-arquivo/
+  Por: Ricardo Longo
+
+02/05/2018
+-- pcnConversao --
+[*] Alerações visanto deixar o componente em conformidade com a NT 2016/002 versão 1.50
+  Por: Italo Jurisato Junior
+
+11/04/2018
+-- pcnConversao --
+[*] https://www.projetoacbr.com.br/forum/topic/42534-consulta-situa%C3%A7%C3%A3o-ct-e-erro-descri%C3%A7%C3%A3o-do-evento-n%C3%A3o-implementado/?do=findComment&comment=280732
+   Por: Douglas wf
+
+09/04/2018
+-- pcnConversao --
+[*] https://www.projetoacbr.com.br/forum/topic/42534-consulta-situa%C3%A7%C3%A3o-ct-e-erro-descri%C3%A7%C3%A3o-do-evento-n%C3%A3o-implementado/?do=findComment&comment=280692
+   Por: Douglas wf
+
+28/03/2018
+-- pcnConversao
+[*] Ref. a Distribuição de Documentos - Eventos
+    https://www.projetoacbr.com.br/forum/topic/42368-ref-a-distribuição-de-documentos-eventos/
+    Por: Juliomar Marchetti
+
+09/03/2018
+-- pcnLeitor --
+[*] Acrescentado mais um elemento na stringlist FNivel, pois estava extapolando
+    a quantidade de níveis ao ler o retorno do eSocial.
+   Por: Digibyte
+
+14/02/2018
+-- pcnAuxiliar / pcnGerador / pcnLeitor --
+[*] Remoção de funções em duplicidade e a troca das chamadas das funções antigas
+    pelas novas
+   Por: Italo Jurisato Junior
+
+06/02/2018
+-- pcnConversao --
+[-] Correção no Enum TpImpToStr
+    (por: Jose M S Junior)
+
+22/11/2017
+-- pcnAuxiliar --
+[*] Método "RetornarConteudoEntre", movido para ACBrUtil
+    (por: DSA)
+
+13/11/2017
+-- pcnConversao --
+[*] Alterado a descrição do CST 90 para Simples Nacional.
+   Por: BSoft
+
+29/09/2017
+-- pcnConversao --
+[*] Incluido o evento 310611 (Cancelamento de MDF-e) esse código de evento é
+    Retornado pelo DistribuicaoDFe quando um MDF-e esta cancelado.
+   Por: Italo Jurisato Junior
+
+14/09/2017
+-- pcnConversao --
+[*] Ajuste em modFreteToDesStr para versão 4.0.
+   Por: Henrique Leonardo
+
+12/09/2017
+-- pcnConversao --
+[*] Alteração para atender a versão 1.30 da NT 2016/002
+   Por: Italo Jurisato Junior
+
+04/09/2017
+-- pcnConversao --
+[+] Inclusão do tipo TIndicador e suas funções.
+   Por: Italo Jurisato Junior
+
+30/08/2017
+-- pcnAuxiliar --
+[*] Método "ExtrairSerieChaveAcesso", modificado para retornar o Numero de Série, quando for SAT
+
+22/07/2017
+-- pcnConversao --
+[-] Remoção da função DescrModeloNFe. Sendo espicífica para as danfe's ( Fast Report / Fortes Report ).
+    	por: Henrique Leonardo
+
+04/07/2017
+-- pcnAuxiliar --
+[+] Adicionado o método:
+    function ExtrairTipoEmissaoChaveAcesso(aChaveNFe: String): Integer;
+    (por: Graziele e DSA)
+
+19/06/2017
+-- pcnConversao --
+[+] Nova função para retornar a descrição do modelo
+	function DescrModeloNFe(chave: String):String;
+    http://www.projetoacbr.com.br/forum/topic/37267-danfe-fortes-conflito-documentos-referenciados-adicionados-pelo-componente-no-danfe/#comment-244342
+    por: RicardoVoigt / Henrique Leonardo
+
+
+26/04/2017
+-- pcnConversao --
+[-]	Correção de erro de compilação em delphi, contribuição de BigWings, tópico abaixo.
+	http://www.projetoacbr.com.br/forum/topic/36411-erro-na-instalação-acbr-revisão-13237/
+	por: Celso marigo Junior
+
+21/04/2017
+-- pcnConversao --
+[*] Alterações visando a NT 2016/002 versão 1.10
+   Por: Italo Jurisato Junior
+
+08/02/2017
+-- pcnConversao --
+[*] Na function StrToCSTICMS foi trocado o valor '90' por '91' quando o 
+    emumerador for cstICMSOutraUF, conforme proposto por Dr Leite.
+    Por: Italo Jurisato Junior
+
+07/01/2017
+-- Diversos --
+[*] Incluido o tipo de navegação, funções de conversão e constantes pois os
+    mesmos são utilizadas pelo CT-e e MDF-e.
+    Por: Italo Jurisato Junior
+
+07/01/2017
+-- pcnLeitor --
+[*] Correção na leitura do tipo tcDatVcto.
+    por: Italo Jurisato Junior
+
+Data: 06/01/2017
+-- pcnGerador --
+[-] Correção no método "TGerador.wCampo". Não estava convertendo corretamente
+    números Double e maiores do que 999, devido a modificação em ACBrUtil.FloatMask
+    (por: DSA)
+
+14/12/2016
+-- pcnConversao --
+[*] Refatoração da CSTIPIToStrTagPosText(const t: TpcnCstIpi): string;
+    http://www.projetoacbr.com.br/forum/topic/33997-corre%C3%A7%C3%A3o-na-fun%C3%A7%C3%A3o-cstipitostrtagpostext/
+    por: Henrique Leonardo ( HleoRj )
+
+30/11/2016
+-- pcnAuxiliar --
+[+] Adicionado os métodos
+    function ExtrairSerieChaveAcesso(AChaveNFE: String): Integer;
+    function ExtrairNumeroChaveAcesso(AChaveNFE: String): Integer;
+    (por: Graziele)
+
+25/11/2016
+-- pcnConversao --
+[+] Adicionado novo Tipo: TImprimirUnidQtdeValor = (iuComercial, iuTributavel, iuComercialETributavel)
+    http://www.projetoacbr.com.br/forum/topic/33636-impress%C3%A3o-de-nfe-com-a-unidade-comercial-e-tribut%C3%A1vel/
+    por WesleyAS / HLeorj
+
+11/11/2016
+-- pcnConversao --
+[+] Nova função para retornar a descrição da unidade de medida 
+          function UnidMedToDescricaoStr(const t: TUnidMed): string;
+    por: Henrique Leonardo ( HleoRj )
+
+26/10/2016
+-- pcnConversao --
+[*] Remoção do Tipo de Responsável pelo Seguro e das funções de conversão.
+    por: Italo Jurisato Junior
+
+16/09/2016
+-- pcnConst / pcnConversao --
+[*] Definição de 2 novos tipos de enventos a serem usados no componente ACBrCTe e
+    a transferencia de uma constante pois a mesma será usada por mais de um componente.
+    por: Italo Jurisato Junior
+
+23/08/2016
+-- diversos --
+[+] Criada a unit pcnConsts que contem as constantes de mensagens usadas na
+    geração dos XML e que são apresentadas quando ocorre erro na validação.
+    por: Italo Jurisato Junior
+
+03/08/2016
+-- pcnAuxiliar --
+[*] Incluido o caracter "." no final das constantes UFS e CODIGOS da function CodigoParaUF.
+    por: Italo Jurisato Junior
+
+15/04/2016
+-- pcnConversao --
+[+] Incluido os tipos de eventos: teCTeAutorizado e teMDFeAutorizado.
+    por: Italo Jurisato Junior
+
+29/02/2016
+-- pcnConversao --
+[*] Pequena correção ortografica.
+    Por: Italo Jurisato Junior
+
+22/02/2016
+-- pcnGerador --
+[*] Adicionada um condição para não gerar valores decimais menores que 10 com 2 
+    digitos quando é habilitado a propriedade SuprimirDecimais.
+    Ex: valor 1.00 tem que gerar 1 e não 01 como estava ocorrendo.
+    Por DSA
+
+19/02/2016
+-- pcnAuxiliar --
+[*] Modificada a maneira de criação / acesso de "TimeZoneConf", para evitar
+    problemas em rotinas que criam o componente em RunTime  (por: DSA)
+    http://www.projetoacbr.com.br/forum/topic/28066-setando-fuso-horário-manualmente-no-xml/?do=findComment&comment=185564
+
+18/02/2016
+-- pcnAuxiliar --      (por: DSA)
+[+] Adicionado novo Tipo: TTimeZoneModoDeteccao = (tzSistema, tzPCN, tzManual);
+[+] Adicionada nova classe: "TTimeZoneConf" com as propriedades published:
+    ModoDeteccao: TTimeZoneModoDeteccao
+    TimeZoneStr: String
+[*] Removida a sobrecarga do método: "GetUTC"
+[+] Adicionado o método: "GetUTCSistema", que utiliza a rotina de synautil para
+    detectar o TimeZone do Sistema Operacional
+[+] Adicionada uma variável global "TimeZoneConf: TTimeZoneConf", para permitir
+    configurar a maneira que o método "GetUTC", irá se comportar de acordo com
+    as propriedades de TTimeZoneConf
+
+27/01/2016
+-- pcnLeitor --
+[*] Melhorado a detecção do tipo de caracter utilizado para determinar o inicio
+    e fim de um valor de atributo. (por: DSA)
+
+07/01/2016
+-- pcnLeitor --
+[*] Melhorado a detecção do tipo de caracter utilizado para determinar o inicio
+    e fim de um valor de atributo.
+    por: Alexandre Eduardo / Italo Jurisato Junior
+
+30/12/2015
+-- pcnGerador --
+[*] Adicionado os parâmetros: ParseTextoXML e Atributo a procedure wCampoNFSe,
+    desta forma é possível gerar um campo com atributo.
+    por: Italo Jurisato Junior
+
+27/11/2015
+-- pcnConversao --
+[*] Adicionado o tipo de evento: teConfInternalizacao - (990910) 
+    Confirmacao de Internalizacao da Mercadoria na SUFRAMA
+    por: Italo Jurisato Junior
+
+11/11/2015
+-- pcnGerador --
+[*] Ajuste no método: wCampoCNPJCPF para preencher corretamente tags onde o CNPJ
+    é opcional. Refatoração para não exigir o CPais para preencher a tag como
+    vazia   (por: André Moraes e DSA)
+    http://www.projetoacbr.com.br/forum/index.php?showtopic=21734
+[-] Correção para não gerar tags de cpf/cnpj em branco quando não são obrigatórias
+    por: regys.silveira
+
+09/11/2015
+-- pcnGerador --
+[*] Ajuste para a conversão de quebras de Linhas por ';' respeitar o valor do
+    parâmetro "ParseTextoXML", (se o mesmo for False não faz a conversão)
+    (por: DSA)
+
+-- pcnAuxiliar --
+[*] Assinatura do método: "FiltrarTextoXML" modificada, incluindo o parâmertro:
+    SubstituirQuebrasLinha: Boolean = True
+    (por: DSA)
+
+-- pcnSignature --
+[*] Modificada para que as Tags "DigestValue", "SignatureValue", "X509Certificate"
+    não tentem efetuar o ParseTextoXML
+    (por: DSA)
+
+30/10/2015
+-- pcnConversao --
+[-] Corrigido retorno de função onde enumadores estavam errados	
+	Por : SisComp
+	
+21/10/2015
+-- pcnGerador --
+[+] Adicionado novas mensagens para as novas TAGs conforme NT 2015/003 v 1.10.
+    Por: Italo Jurisato Junior
+
+19/10/2015
+[-] Adicionado o tipo ptPersonalizado que estava faltando.
+    por: Rômulo da Costa de Souza
+
+22/09/2015
+[-] Acerto para geração de campos string removendo as quebras de linha e 
+    trocando por ;, as quebras de linhas estavam gerando problemas de assinatura
+    inválida, foi feito o acerto anteriormente para somente as observações
+    agora com o novo acerto qualquer campo string recebe a atualização acabando
+    de vez com o problema.
+    por: regys.silveira
+
+26/08/2015
+[*] Removido alguns Tipos e Funções, pois são exclusivas do CT-e.
+    Por: Italo Jurisato Junior
+
+25/08/2015
+-- pcnConversao --    (por: gabriellc)
+[+] function CSTPISToStrTagPosText(const t: TpcnCstPis): string;
+[+] function CSTIPIToStrTagPosText(const t: TpcnCstIpi): string;
+[+] function CSTCOFINSToStrTagPosText(const t: TpcnCstCofins): string;
+    http://www.projetoacbr.com.br/forum/index.php?showtopic=23771
+
+20/08/2015
+-- pcnConversao --    (por: gabriellc)
+[+] function CSOSNToStrTagPosText(const t: TpcnCSOSNIcms): string;
+[+] function OrigToStrTagPosText(const t: TpcnOrigemMercadoria): string;
+[+] function modBCToStrTagPosText(const t: TpcnDeterminacaoBaseIcms): string;
+[+] function modBCSTToStrTagPosText(const t: TpcnDeterminacaoBaseIcmsST): string;
+[*] CSTICMSToStrTagPosText, adicionado Indice no inicio da descrição
+    http://www.projetoacbr.com.br/forum/index.php?showtopic=23771
+
+18/08/2015
+[*] Incluido o tipo de evento: 610500 - teRegistroPassagemNFe.
+    Por: Italo Jurisato Junior
+
+12/08/2015
+[+] function TpEventoToDescStr(const t: TpcnTpEvento): string;
+    Retorna a descrição do tipo de evento
+    Por: Italo Jurisato Junior
+
+12/08/2015   (por: hleorj)
+-- pcnConversao --
+[+] function BandeiraCartaoToDescStr(const t: TpcnBandeiraCartao): string;
+    http://www.projetoacbr.com.br/forum/index.php?showtopic=23505
+
+09/08/2015   (por: hleorj)
+-- pcnConversao --
+[+] function modFreteToDesStr(const t: TpcnModalidadeFrete): string;
+[+] function indProcToDescrStr(const t: TpcnIndicadorProcesso): string;
+    http://www.projetoacbr.com.br/forum/index.php?showtopic=23439
+
+
+
+
+

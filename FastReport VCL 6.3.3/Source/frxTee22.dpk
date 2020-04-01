@@ -1,0 +1,55 @@
+// Package file for Delphi XE8
+
+package frxTee22;
+{$I frx.inc}
+{$I tee.inc}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO ON}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION OFF}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES ON}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$IMPLICITBUILD ON}
+{$RUNONLY}
+{$DEFINE DEBUG}
+
+requires
+  VCL,
+{$IFDEF TeeChartStd} TEE, TEEUI, {$ENDIF}
+{$IFDEF TeeChartStd7}TEE722, TEEUI722, {$ENDIF}
+{$IFDEF TeeChartStd8}TEE822, TEEUI822, {$ENDIF}
+{$IFDEF TeeChartStd9}TEE922, TEEUI922, {$ENDIF}
+{$IFDEF TeeChart4}   TEE422, TEEPRO422, {$ENDIF}
+{$IFDEF TeeChart5}   TEE522, TEEPRO522, {$ENDIF}
+{$IFDEF TeeChart6}   TEE622, TEEPRO622, {$ENDIF}
+{$IFDEF TeeChart7}   TEE722, TEEPRO722, {$ENDIF}
+{$IFDEF TeeChart8}   TEE822, TEEPRO822, {$ENDIF}
+{$IFDEF TeeChart9}   TEE922, TEEPRO922, {$ENDIF}
+  fs22,
+  fsTee22,
+  frx22;
+
+contains
+  frxChart in 'frxChart.pas',
+  frxChartEditor in 'frxChartEditor.pas',
+  frxChartInPlaceEditor in 'frxChartInPlaceEditor.pas',
+  frxChartClipboard in 'frxChartClipboard.pas',
+  frxChartHelpers in 'frxChartHelpers.pas',
+  frxChartRTTI in 'frxChartRTTI.pas';
+
+end.

@@ -1,0 +1,491 @@
+object frxHyperlinkEditorForm: TfrxHyperlinkEditorForm
+  Left = 516
+  Height = 382
+  Top = 162
+  Width = 655
+  BorderStyle = bsDialog
+  Caption = 'Hyperlink Editor'
+  ClientHeight = 382
+  ClientWidth = 655
+  Color = clBtnFace
+  Font.CharSet = RUSSIAN_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  OnCreate = FormCreate
+  OnHide = FormHide
+  OnShow = FormShow
+  LCLVersion = '1.2.6.0'
+  object OKB: TButton
+    Left = 488
+    Height = 25
+    Top = 348
+    Width = 75
+    Caption = 'OK'
+    ModalResult = 1
+    TabOrder = 0
+  end
+  object CancelB: TButton
+    Left = 572
+    Height = 25
+    Top = 348
+    Width = 75
+    Cancel = True
+    Caption = 'Cancel'
+    ModalResult = 2
+    TabOrder = 1
+  end
+  object KindGB: TGroupBox
+    Left = 8
+    Height = 325
+    Top = 8
+    Width = 217
+    Caption = 'Hyperlink kind'
+    ClientHeight = 307
+    ClientWidth = 213
+    TabOrder = 2
+    object UrlRB: TRadioButton
+      Left = 8
+      Height = 19
+      Top = 20
+      Width = 39
+      Caption = 'URL'
+      Checked = True
+      OnClick = UrlRBClick
+      TabOrder = 0
+      TabStop = True
+    end
+    object PageNumberRB: TRadioButton
+      Left = 8
+      Height = 19
+      Top = 40
+      Width = 83
+      Caption = 'Page number'
+      OnClick = UrlRBClick
+      TabOrder = 1
+    end
+    object AnchorRB: TRadioButton
+      Left = 8
+      Height = 19
+      Top = 60
+      Width = 54
+      Caption = 'Anchor'
+      OnClick = UrlRBClick
+      TabOrder = 2
+    end
+    object ReportRB: TRadioButton
+      Left = 8
+      Height = 19
+      Top = 80
+      Width = 53
+      Caption = 'Report'
+      OnClick = UrlRBClick
+      TabOrder = 3
+    end
+    object ReportPageRB: TRadioButton
+      Left = 8
+      Height = 19
+      Top = 100
+      Width = 80
+      Caption = 'Report page'
+      OnClick = UrlRBClick
+      TabOrder = 4
+    end
+    object CustomRB: TRadioButton
+      Left = 8
+      Height = 19
+      Top = 120
+      Width = 56
+      Caption = 'Custom'
+      OnClick = UrlRBClick
+      TabOrder = 5
+    end
+  end
+  object PropertiesGB: TGroupBox
+    Left = 232
+    Height = 325
+    Top = 8
+    Width = 417
+    Caption = 'Properties'
+    ClientHeight = 307
+    ClientWidth = 413
+    TabOrder = 3
+    object Hint1L: TLabel
+      Left = 12
+      Height = 30
+      Top = 256
+      Width = 393
+      AutoSize = False
+      Caption = 'What will happen when you click this object in the preview window:'
+      Font.CharSet = RUSSIAN_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = [fsBold]
+      ParentColor = False
+      ParentFont = False
+      WordWrap = True
+    end
+    object Hint2L: TLabel
+      Left = 12
+      Height = 30
+      Top = 286
+      Width = 393
+      AutoSize = False
+      Caption = 'Hint'
+      ParentColor = False
+      WordWrap = True
+    end
+    object UrlP: TPanel
+      Left = 348
+      Height = 105
+      Top = 16
+      Width = 393
+      Anchors = []
+      BevelOuter = bvNone
+      ClientHeight = 105
+      ClientWidth = 393
+      TabOrder = 0
+      object UrlL: TLabel
+        Left = 0
+        Height = 13
+        Top = 0
+        Width = 229
+        Caption = 'Specify an URL (example: http://www.url.com):'
+        ParentColor = False
+      end
+      object UrlExprL: TLabel
+        Left = 0
+        Height = 13
+        Top = 56
+        Width = 215
+        Caption = 'or enter the expression that returns an URL:'
+        ParentColor = False
+      end
+      object UrlE: TEdit
+        Left = 0
+        Height = 21
+        Top = 20
+        Width = 393
+        TabOrder = 0
+      end
+      object UrlExprE: TfrxComboEdit
+        Left = 0
+        Height = 21
+        Top = 76
+        Width = 393
+        AutoSize = False
+        ItemHeight = 13
+        Style = csSimple
+        TabOrder = 1
+        OnButtonClick = ExprClick
+      end
+    end
+    object PageNumberP: TPanel
+      Left = 328
+      Height = 105
+      Top = 40
+      Width = 393
+      Anchors = []
+      BevelOuter = bvNone
+      ClientHeight = 105
+      ClientWidth = 393
+      TabOrder = 1
+      object PageNumberL: TLabel
+        Left = 0
+        Height = 13
+        Top = 0
+        Width = 105
+        Caption = 'Specify page number:'
+        ParentColor = False
+      end
+      object PageNumberExprL: TLabel
+        Left = 0
+        Height = 13
+        Top = 56
+        Width = 253
+        Caption = 'or enter the expression that returns a page number:'
+        ParentColor = False
+      end
+      object PageNumberE: TEdit
+        Left = 0
+        Height = 21
+        Top = 20
+        Width = 393
+        TabOrder = 0
+      end
+      object PageNumberExprE: TfrxComboEdit
+        Left = 0
+        Height = 21
+        Top = 76
+        Width = 393
+        AutoSize = False
+        ItemHeight = 13
+        Style = csSimple
+        TabOrder = 1
+        OnButtonClick = ExprClick
+      end
+    end
+    object AnchorP: TPanel
+      Left = 312
+      Height = 105
+      Top = 64
+      Width = 393
+      Anchors = []
+      BevelOuter = bvNone
+      ClientHeight = 105
+      ClientWidth = 393
+      TabOrder = 2
+      object AnchorL: TLabel
+        Left = 0
+        Height = 13
+        Top = 0
+        Width = 119
+        Caption = 'Specify an anchor name:'
+        ParentColor = False
+      end
+      object AnchorExprL: TLabel
+        Left = 0
+        Height = 13
+        Top = 56
+        Width = 258
+        Caption = 'or enter the expression that returns an anchor name:'
+        ParentColor = False
+      end
+      object AnchorE: TEdit
+        Left = 0
+        Height = 21
+        Top = 20
+        Width = 393
+        TabOrder = 0
+      end
+      object AnchorExprE: TfrxComboEdit
+        Left = 0
+        Height = 21
+        Top = 76
+        Width = 393
+        AutoSize = False
+        ItemHeight = 13
+        Style = csSimple
+        TabOrder = 1
+        OnButtonClick = ExprClick
+      end
+    end
+    object CustomP: TPanel
+      Left = 296
+      Height = 105
+      Top = 88
+      Width = 393
+      Anchors = []
+      BevelOuter = bvNone
+      ClientHeight = 105
+      ClientWidth = 393
+      TabOrder = 3
+      object CustomL: TLabel
+        Left = 0
+        Height = 13
+        Top = 0
+        Width = 127
+        Caption = 'Specify a hyperlink value::'
+        ParentColor = False
+      end
+      object CustomExprL: TLabel
+        Left = 0
+        Height = 13
+        Top = 56
+        Width = 262
+        Caption = 'or enter the expression that returns a hyperlink value:'
+        ParentColor = False
+      end
+      object CustomE: TEdit
+        Left = 0
+        Height = 21
+        Top = 20
+        Width = 393
+        TabOrder = 0
+      end
+      object CustomExprE: TfrxComboEdit
+        Left = 0
+        Height = 21
+        Top = 76
+        Width = 393
+        AutoSize = False
+        ItemHeight = 13
+        Style = csSimple
+        TabOrder = 1
+        OnButtonClick = ExprClick
+      end
+    end
+    object ReportP: TPanel
+      Left = 276
+      Height = 221
+      Top = 116
+      Width = 393
+      Anchors = []
+      BevelOuter = bvNone
+      ClientHeight = 221
+      ClientWidth = 393
+      TabOrder = 4
+      object ReportValueL: TLabel
+        Left = 0
+        Height = 13
+        Top = 112
+        Width = 130
+        Caption = 'Specify a parameter value:'
+        ParentColor = False
+      end
+      object ReportExprL: TLabel
+        Left = 0
+        Height = 13
+        Top = 168
+        Width = 269
+        Caption = 'or enter the expression that returns a parameter value:'
+        ParentColor = False
+      end
+      object ReportNameL: TLabel
+        Left = 0
+        Height = 13
+        Top = 0
+        Width = 66
+        Caption = 'Report name:'
+        ParentColor = False
+      end
+      object ReportParamL: TLabel
+        Left = 0
+        Height = 13
+        Top = 56
+        Width = 90
+        Caption = 'Report parameter:'
+        ParentColor = False
+      end
+      object ReportValueE: TEdit
+        Left = 0
+        Height = 21
+        Top = 132
+        Width = 393
+        TabOrder = 0
+      end
+      object ReportExprE: TfrxComboEdit
+        Left = 0
+        Height = 21
+        Top = 188
+        Width = 393
+        AutoSize = False
+        ItemHeight = 13
+        Style = csSimple
+        TabOrder = 1
+        OnButtonClick = ExprClick
+      end
+      object ReportNameE: TfrxComboEdit
+        Left = 0
+        Height = 21
+        Top = 20
+        Width = 393
+        AutoSize = False
+        ItemHeight = 13
+        Style = csSimple
+        TabOrder = 2
+        OnButtonClick = ReportNameEButtonClick
+      end
+      object ReportParamCB: TComboBox
+        Left = 0
+        Height = 21
+        Top = 76
+        Width = 393
+        ItemHeight = 13
+        TabOrder = 3
+      end
+    end
+    object ReportPageP: TPanel
+      Left = 256
+      Height = 221
+      Top = 140
+      Width = 393
+      Anchors = []
+      BevelOuter = bvNone
+      ClientHeight = 221
+      ClientWidth = 393
+      TabOrder = 5
+      object ReportPageValueL: TLabel
+        Left = 0
+        Height = 13
+        Top = 112
+        Width = 130
+        Caption = 'Specify a parameter value:'
+        ParentColor = False
+      end
+      object ReportPageExprL: TLabel
+        Left = 0
+        Height = 13
+        Top = 168
+        Width = 269
+        Caption = 'or enter the expression that returns a parameter value:'
+        ParentColor = False
+      end
+      object ReportPageL: TLabel
+        Left = 0
+        Height = 13
+        Top = 0
+        Width = 64
+        Caption = 'Report page:'
+        ParentColor = False
+      end
+      object ReportPageParamL: TLabel
+        Left = 0
+        Height = 13
+        Top = 56
+        Width = 90
+        Caption = 'Report parameter:'
+        ParentColor = False
+      end
+      object ReportPageValueE: TEdit
+        Left = 0
+        Height = 21
+        Top = 132
+        Width = 393
+        TabOrder = 0
+      end
+      object ReportPageExprE: TfrxComboEdit
+        Left = 0
+        Height = 21
+        Top = 188
+        Width = 393
+        AutoSize = False
+        ItemHeight = 13
+        Style = csSimple
+        TabOrder = 1
+        OnButtonClick = ExprClick
+      end
+      object ReportPageParamCB: TComboBox
+        Left = 0
+        Height = 21
+        Top = 76
+        Width = 393
+        ItemHeight = 13
+        TabOrder = 2
+      end
+      object ReportPageCB: TComboBox
+        Left = 0
+        Height = 21
+        Top = 20
+        Width = 393
+        ItemHeight = 13
+        Style = csDropDownList
+        TabOrder = 3
+      end
+    end
+  end
+  object ModifyAppearanceCB: TCheckBox
+    Left = 8
+    Height = 19
+    Top = 348
+    Width = 112
+    Caption = 'Modify appearance'
+    TabOrder = 4
+  end
+  object OpenDialog: TOpenDialog
+    Options = [ofReadOnly, ofNoChangeDir, ofEnableSizing]
+    left = 292
+    top = 352
+  end
+end

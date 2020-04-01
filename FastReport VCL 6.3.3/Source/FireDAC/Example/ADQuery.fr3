@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<TfrxReport Version="4.14.8" DotMatrixReport="False" IniFile="\Software\Fast Reports" PreviewOptions.Buttons="4095" PreviewOptions.Zoom="1" PrintOptions.Printer="Default" PrintOptions.PrintOnSheet="0" ReportOptions.CreateDate="41549,8986211806" ReportOptions.Description.Text="" ReportOptions.LastChange="41549,9059949769" ScriptLanguage="PascalScript" ScriptText.Text="begin&#13;&#10;&#13;&#10;end." PropData="044C65667403100103546F7002480844617461736574730101062A20446174615365743D2246445175657279312220446174615365744E616D653D224644517565727931220000095661726961626C65730100055374796C650100">
+  <TfrxDataPage Name="Data" Height="1000" Left="0" Top="0" Width="1000">
+    <TfrxFDDatabase Name="FDDatabase1" DriverName="MSAcc" DatabaseName="C:\Users\Public\Documents\RAD Studio\12.0\Samples\Data\dbdemos.mdb" Params.Text="Database=C:\Users\Public\Documents\RAD Studio\12.0\Samples\Data\dbdemos.mdb&#13;&#10;DriverID=MSAcc" LoginPrompt="False" Connected="True" PropData="05704C65667402400470546F700224"/>
+    <TfrxFDQuery Name="FDQuery1" UserName="FDQuery1" CloseDataSource="True" FieldAliases.Text="" BCDToCurrency="False" IgnoreDupParams="False" SQL.Text="select * from customer                                                " Database="FDDatabase1" PropData="05704C6566740388000470546F7002240A506172616D65746572730100"/>
+  </TfrxDataPage>
+  <TfrxReportPage Name="Page1" PaperWidth="210" PaperHeight="297" PaperSize="9" LeftMargin="10" RightMargin="10" TopMargin="10" BottomMargin="10" ColumnWidth="0" ColumnPositions.Text="" HGuides.Text="" VGuides.Text="">
+    <TfrxMasterData Name="MasterData1" Height="30,23624" Left="0" Top="18,89765" Width="718,1107" ColumnWidth="0" ColumnGap="0" DataSet="FDQuery1" DataSetName="FDQuery1" RowCount="0">
+      <TfrxMemoView Name="FDQuery1Company" Left="3,77953" Top="3,77953" Width="238,11039" Height="18,89765" ShowHint="False" DataField="Company" DataSet="FDQuery1" DataSetName="FDQuery1" Text="[FDQuery1.&#34;Company&#34;]"/>
+      <TfrxMemoView Name="FDQuery1Country" Left="249,44898" Top="3,77953" Width="158,74026" Height="18,89765" ShowHint="False" DataField="Country" DataSet="FDQuery1" DataSetName="FDQuery1" Text="[FDQuery1.&#34;Country&#34;]"/>
+      <TfrxMemoView Name="FDQuery1Contact" Left="415,7483" Top="3,77953" Width="158,74026" Height="18,89765" ShowHint="False" DataField="Contact" DataSet="FDQuery1" DataSetName="FDQuery1" Text="[FDQuery1.&#34;Contact&#34;]"/>
+    </TfrxMasterData>
+  </TfrxReportPage>
+</TfrxReport>

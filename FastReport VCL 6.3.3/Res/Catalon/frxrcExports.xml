@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<Resources CodePage="1252">
+  <StrRes Name="8000" Text="Exportar a Excel"/>
+  <StrRes Name="8001" Text="Estils"/>
+  <StrRes Name="8002" Text="Imatges"/>
+  <StrRes Name="8003" Text="Ajuntar cel·les"/>
+  <StrRes Name="8004" Text="Exportació ràpida"/>
+  <StrRes Name="8005" Text="WYSIWYG"/>
+  <StrRes Name="8006" Text="Com a text"/>
+  <StrRes Name="8007" Text="Fons"/>
+  <StrRes Name="8008" Text="Obrir Excel després d'exportar"/>
+  <StrRes Name="8009" Text="Fitxer Excel (*.xls)|*.xls"/>
+  <StrRes Name="8010" Text=".xls"/>
+  <StrRes Name="8100" Text="Exportar a Excel"/>
+  <StrRes Name="8101" Text="Estils"/>
+  <StrRes Name="8102" Text="WYSIWYG"/>
+  <StrRes Name="8103" Text="Fons"/>
+  <StrRes Name="8104" Text="Obrir Excel després d'exportar"/>
+  <StrRes Name="8105" Text="Fitxer XML Excel (*.xls)|*.xls"/>
+  <StrRes Name="8106" Text=".xls"/>
+  <StrRes Name="8200" Text="Exportar a HTML"/>
+  <StrRes Name="8201" Text="Obrir després d'exportar"/>
+  <StrRes Name="8202" Text="Estils"/>
+  <StrRes Name="8203" Text="Imatges"/>
+  <StrRes Name="8204" Text="Tot en una carpeta"/>
+  <StrRes Name="8205" Text="Fixar amplada"/>
+  <StrRes Name="8206" Text="Pàgina de navegador"/>
+  <StrRes Name="8207" Text="Múltiples pàgines"/>
+  <StrRes Name="8208" Text="Navegador Mozilla"/>
+  <StrRes Name="8209" Text="Fons"/>
+  <StrRes Name="8210" Text="Fitxer HTML (*.html)|*.html"/>
+  <StrRes Name="8211" Text=".html"/>
+  <StrRes Name="8300" Text="Exportar a text (Impressora d'agulles)"/>
+  <StrRes Name="8301" Text="Vista Prèvia on/off"/>
+  <StrRes Name="8302" Text=" Propietat exportació  "/>
+  <StrRes Name="8303" Text="Dividir Pàgines"/>
+  <StrRes Name="8304" Text="Codi de pàgina OEM"/>
+  <StrRes Name="8305" Text="Línies buides"/>
+  <StrRes Name="8306" Text="Treure espais"/>
+  <StrRes Name="8307" Text="Números pàgina"/>
+  <StrRes Name="8308" Text="Entre el número de pàgina i/o rang de pàgines, separats per comes. Per exemple, 1,3,5-12"/>
+  <StrRes Name="8309" Text=" Escalat "/>
+  <StrRes Name="8310" Text="Escala X"/>
+  <StrRes Name="8311" Text="Escala Y"/>
+  <StrRes Name="8312" Text=" Marcs "/>
+  <StrRes Name="8313" Text="Cap"/>
+  <StrRes Name="8314" Text="Simple"/>
+  <StrRes Name="8315" Text="Gràfic"/>
+  <StrRes Name="8316" Text="Sols amb codis de pàgina OEM"/>
+  <StrRes Name="8317" Text="Imprimir després d'exportar"/>
+  <StrRes Name="8318" Text="Guardar opcions"/>
+  <StrRes Name="8319" Text=" Vista Prèvia "/>
+  <StrRes Name="8320" Text="Amplada:"/>
+  <StrRes Name="8321" Text="Alçada:"/>
+  <StrRes Name="8322" Text="Pàgina"/>
+  <StrRes Name="8323" Text="Amplia"/>
+  <StrRes Name="8324" Text="Redueix"/>
+  <StrRes Name="8325" Text="Fitxer Text (Impressora d'agulles)(*.prn)|*.prn"/>
+  <StrRes Name="8326" Text=".prn"/>
+  <StrRes Name="8400" Text="Imprimir"/>
+  <StrRes Name="8401" Text="Impressora"/>
+  <StrRes Name="8402" Text="Nom"/>
+  <StrRes Name="8403" Text="Configuració..."/>
+  <StrRes Name="8404" Text="Còpies"/>
+  <StrRes Name="8405" Text="Número de còpies"/>
+  <StrRes Name="8406" Text=" Iniciar configuració impressora "/>
+  <StrRes Name="8407" Text="Tipus Impressora"/>
+  <StrRes Name="8408" Text=".fpi"/>
+  <StrRes Name="8409" Text="Iniciar plantilla impressora (*.fpi)|*.fpi"/>
+  <StrRes Name="8410" Text=".fpi"/>
+  <StrRes Name="8411" Text="Iniciar plantilla impressora (*.fpi)|*.fpi"/>
+  <StrRes Name="8500" Text="Exportar a RTF"/>
+  <StrRes Name="8501" Text="Imatges"/>
+  <StrRes Name="8502" Text="WYSIWYG"/>
+  <StrRes Name="8503" Text="Obrir després d'exportar"/>
+  <StrRes Name="8504" Text="Fitxer RTF (*.rtf)|*.rtf"/>
+  <StrRes Name="8505" Text=".rtf"/>
+  <StrRes Name="8600" Text="Opcions Exportació"/>
+  <StrRes Name="8601" Text=" Opcions Imatge "/>
+  <StrRes Name="8602" Text="Qualitat JPEG"/>
+  <StrRes Name="8603" Text="Resolució (dpi)"/>
+  <StrRes Name="8604" Text="Fitxers separats"/>
+  <StrRes Name="8605" Text="Retallar pàgines"/>
+  <StrRes Name="8606" Text="Monocrom"/>
+  <StrRes Name="8700" Text="Exportar a PDF"/>
+  <StrRes Name="8701" Text="Comprimir"/>
+  <StrRes Name="8702" Text="Empotrar lletres"/>
+  <StrRes Name="8703" Text="Impressió Optimitzada"/>
+  <StrRes Name="8704" Text="Contorn"/>
+  <StrRes Name="8705" Text="Fons"/>
+  <StrRes Name="8706" Text="Obrir després d'exportar"/>
+  <StrRes Name="8707" Text="Fitxer Adobe PDF (*.pdf)|*.pdf"/>
+  <StrRes Name="8708" Text=".pdf"/>
+  <StrRes Name="RTFexport" Text="Fitxer RTF"/>
+  <StrRes Name="BMPexport" Text="Imatge BMP"/>
+  <StrRes Name="JPEGexport" Text="Imatge JPEG"/>
+  <StrRes Name="TIFFexport" Text="Imatge TIFF"/>
+  <StrRes Name="TextExport" Text="Text (Impressora d'agulles)"/>
+  <StrRes Name="XlsOLEexport" Text="Taula Excel (OLE)"/>
+  <StrRes Name="HTMLexport" Text="Fitxer HTML"/>
+  <StrRes Name="XlsXMLexport" Text="Taula Excel (XML)"/>
+  <StrRes Name="PDFexport" Text="Fitxer PDF"/>
+  <StrRes Name="ProgressWait" Text="Espera't si us plau"/>
+  <StrRes Name="ProgressRows" Text="Opcions de files"/>
+  <StrRes Name="ProgressColumns" Text="Opcions de columnes"/>
+  <StrRes Name="ProgressStyles" Text="Opcions d'estils"/>
+  <StrRes Name="ProgressObjects" Text="Exportant objectes"/>
+  <StrRes Name="TIFFexportFilter" Text="Imatge Tiff (*.tif)|*.tif"/>
+  <StrRes Name="BMPexportFilter" Text="Imatge BMP (*.bmp)|*.bmp"/>
+  <StrRes Name="JPEGexportFilter" Text="Imatge Jpeg (*.jpg)|*.jpg"/>
+  <StrRes Name="HTMLNavFirst" Text="Primer"/>
+  <StrRes Name="HTMLNavPrev" Text="Anterior"/>
+  <StrRes Name="HTMLNavNext" Text="Següent"/>
+  <StrRes Name="HTMLNavLast" Text="Últim"/>
+  <StrRes Name="HTMLNavRefresh" Text="Actualitza"/>
+  <StrRes Name="HTMLNavPrint" Text="Imprimir"/>
+  <StrRes Name="HTMLNavTotal" Text="Pàgines Totals"/>
+  <StrRes Name="8800" Text="Exportar a Text"/>
+  <StrRes Name="8801" Text="Fitxer Text (*.txt)|*.txt"/>
+  <StrRes Name="8802" Text=".txt"/>
+  <StrRes Name="SimpleTextExport" Text="Fitxer Text"/>
+  <StrRes Name="8850" Text="Exportar a CSV"/>
+  <StrRes Name="8851" Text="Fitxer CSV (*.csv)|*.csv"/>
+  <StrRes Name="8852" Text=".csv"/>
+  <StrRes Name="8853" Text="separador"/>
+  <StrRes Name="CSVExport" Text="Fitxer CSV"/>
+  <StrRes Name="8900" Text="Enviar per E-mail"/>
+  <StrRes Name="8901" Text="E-mail"/>
+  <StrRes Name="8902" Text="Compte"/>
+  <StrRes Name="8903" Text="Connexió"/>
+  <StrRes Name="8904" Text="Adreça"/>
+  <StrRes Name="8905" Text="Adjuntar"/>
+  <StrRes Name="8906" Text="Format"/>
+  <StrRes Name="8907" Text="Adreça des de"/>
+  <StrRes Name="8908" Text="Nom des de"/>
+  <StrRes Name="8909" Text="Amfitrió"/>
+  <StrRes Name="8910" Text="Entrada"/>
+  <StrRes Name="8911" Text="Correu"/>
+  <StrRes Name="8912" Text="Missatge"/>
+  <StrRes Name="8913" Text="Text"/>
+  <StrRes Name="8914" Text="Organització"/>
+  <StrRes Name="8915" Text="Contrasenya"/>
+  <StrRes Name="8916" Text="Port"/>
+  <StrRes Name="8917" Text="Recordar propietats"/>
+  <StrRes Name="8918" Text="Els camps obligatoris no s'omplen"/>
+  <StrRes Name="8919" Text="Configuració avançada d'exportació"/>
+  <StrRes Name="8920" Text="Signatura"/>
+  <StrRes Name="8921" Text="Muntatge"/>
+  <StrRes Name="8922" Text="Assumpte"/>
+  <StrRes Name="8923" Text="Cordialment"/>
+  <StrRes Name="8924" Text="Enviar correu a"/>
+  <StrRes Name="EmailExport" Text="E-mail"/>
+  <StrRes Name="FastReportFile" Text="Fitxer FastReport"/>
+  <StrRes Name="GifexportFilter" Text="Fitxer Gif (*.gif)|*.gif"/>
+  <StrRes Name="GIFexport" Text="Imatge Gif"/>
+  <StrRes Name="8950" Text="Continu"/>
+  <StrRes Name="8951" Text="Pàgina Capçalera/Peu"/>
+  <StrRes Name="8952" Text="Text"/>
+  <StrRes Name="8953" Text="Capçalera/Peu"/>
+  <StrRes Name="8954" Text="Cap"/>
+  <StrRes Name="ODSExportFilter" Text="Obrir fitxer Full de Càlcul (*.ods)|*.ods"/>
+  <StrRes Name="ODSExport" Text="Full de Càlcul"/>
+  <StrRes Name="ODTExportFilter" Text="Obrir document Text (*.odt)|*.odt"/>
+  <StrRes Name="ODTExport" Text="Obrir document Text"/>
+  <StrRes Name="8960" Text=".ods"/>
+  <StrRes Name="8961" Text=".odt"/>
+  <StrRes Name="8962" Text="Seguretat"/>
+  <StrRes Name="8963" Text="Configuració de seguretat"/>
+  <StrRes Name="8964" Text="contrasenya propietari"/>
+  <StrRes Name="8965" Text="contrasenya usuari"/>
+  <StrRes Name="8966" Text="Imprimir document"/>
+  <StrRes Name="8967" Text="Modificar document"/>
+  <StrRes Name="8968" Text="Copia de text i imatges"/>
+  <StrRes Name="8969" Text="Afegir o modificar anotacions"/>
+  <StrRes Name="8970" Text="Seguretat PDF"/>
+  <StrRes Name="8971" Text="Informació Document"/>
+  <StrRes Name="8972" Text="Informatió"/>
+  <StrRes Name="8973" Text="Títol"/>
+  <StrRes Name="8974" Text="Autor"/>
+  <StrRes Name="8975" Text="Assumpte"/>
+  <StrRes Name="8976" Text="Paraules clau"/>
+  <StrRes Name="8977" Text="Creador"/>
+  <StrRes Name="8978" Text="Productor"/>
+  <StrRes Name="8979" Text="Autentificació"/>
+  <StrRes Name="8980" Text="Permisos"/>
+  <StrRes Name="8981" Text="Visualitzadors"/>
+  <StrRes Name="8982" Text="Preferències Visualitzadors"/>
+  <StrRes Name="8983" Text="Ocultar barra d'eines"/>
+  <StrRes Name="8984" Text="Ocultar Barra de menú"/>
+  <StrRes Name="8985" Text="Ocultar finestra d'interfície d'usuari"/>
+  <StrRes Name="8986" Text="Ajusta a la finestra"/>
+  <StrRes Name="8987" Text="Centre a la finestra"/>
+  <StrRes Name="8988" Text="Imprimir escalat"/>
+  <StrRes Name="8989" Text="Confirmació de lectura"/>
+  <StrRes Name="9101" Text="Exportar a DBF"/>
+  <StrRes Name="9102" Text="Exportar a dBase (DBF)"/>
+  <StrRes Name="9103" Text=".dbf"/>
+  <StrRes Name="9104" Text="Error al carregar el fitxer"/>
+  <StrRes Name="9105" Text="Fallada"/>
+  <StrRes Name="9106" Text="Nom camps"/>
+  <StrRes Name="9107" Text="Automàticament"/>
+  <StrRes Name="9108" Text="Manualment"/>
+  <StrRes Name="9109" Text="Carrega des d'un fitxer"/>
+  <StrRes Name="9110" Text="Fitxers de text (*.txt)|*.txt|tots els fitxers|*.*"/>
+  <StrRes Name="9111" Text="Fitxers DBF (*.dbf)|*.dbf|tots els fitxers|*.*"/>
+  <StrRes Name="expMailAddr" Text="Adreça o adreces delimitat per comes"/>
+  <StrRes Name="PNGexport" Text="Imatge PNG"/>
+  <StrRes Name="EMFexport" Text="Imatge EMF"/>
+  <StrRes Name="PNGexportFilter" Text="Imatge PNG (*.png)|*.png"/>
+  <StrRes Name="EMFexportFilter" Text="Imatge EMF (*.emf)|*.emf"/>
+  <StrRes Name="9000" Text="Files comptades:"/>
+  <StrRes Name="9001" Text="Dividir en fulls"/>
+  <StrRes Name="9002" Text="No dividir"/>
+  <StrRes Name="9003" Text="Pàgines a informar"/>
+  <StrRes Name="9004" Text="Usar impressió en pare"/>
+  <StrRes Name="9151" Text="Fitxer Excel 97/2000/XP"/>
+  <StrRes Name="9152" Text="Auto creació de fitxer"/>
+  <StrRes Name="9153" Text="Opcions"/>
+  <StrRes Name="9154" Text="Pàgina"/>
+  <StrRes Name="9155" Text="Línies Graella"/>
+  <StrRes Name="9156" Text="Tot en una pàgina"/>
+  <StrRes Name="9157" Text="Agrupant Dates"/>
+  <StrRes Name="9158" Text="Igual que l'informe"/>
+  <StrRes Name="9159" Text="Trossos. Cada tros té (files):"/>
+  <StrRes Name="9160" Text="Mida d'un tros ha de ser un valor enter no negatiu."/>
+  <StrRes Name="9161" Text="El full individual ha de ser False quan s'esporta un tros"/>
+  <StrRes Name="9162" Text="Autor"/>
+  <StrRes Name="9163" Text="Comentari"/>
+  <StrRes Name="9164" Text="Paraules clau"/>
+  <StrRes Name="9165" Text="Revisió"/>
+  <StrRes Name="9166" Text="Versió"/>
+  <StrRes Name="9167" Text="Aplicació"/>
+  <StrRes Name="9168" Text="Assumpte"/>
+  <StrRes Name="9169" Text="Categoria "/>
+  <StrRes Name="9170" Text="Empresa"/>
+  <StrRes Name="9171" Text="Títol"/>
+  <StrRes Name="9172" Text="Gestor"/>
+  <StrRes Name="9173" Text="General"/>
+  <StrRes Name="9174" Text="Informació"/>
+  <StrRes Name="9175" Text="Protecció"/>
+  <StrRes Name="9176" Text="Contrasenya"/>
+  <StrRes Name="9177" Text="Si s'estableix una cadena de contrasenya no buida, el document generat es protegirà amb aquest senyal. La contrasenya s'escriu sempre en caràcters Unicode i ha de ser inferior a 256 caràcters Unicode."/>
+  <StrRes Name="9178" Text="Confirmació"/>
+  <StrRes Name="9179" Text="Confirmació de la contrasenya no coincideix amb la contrasenya. Introduïu la contrasenya de nou."/>
+  <StrRes Name="9180" Text="Intent d'establir una contrasenya de %d càracters. La longitud màxima permesa de la contrasenya és de %d caràcters."/>
+  <StrRes Name="9181" Text="Ajustar mida de pàgina"/>
+  <StrRes Name="9182" Text="Exportar a Excel 97/2000/XP"/>
+  <StrRes Name="9183" Text="Esborrar línies buides"/>
+  <StrRes Name="9184" Text="Exportar fórmules"/>
+  <StrRes Name="BiffCol" Text="Canvi de mida de columnes"/>
+  <StrRes Name="BiffRow" Text="Canvi de mida de files"/>
+  <StrRes Name="BiffCell" Text="Exportant cel·les"/>
+  <StrRes Name="BiffImg" Text="Exportint imatges"/>
+  <StrRes Name="9200" Text="Microsoft Excel 2007 XML"/>
+  <StrRes Name="9201" Text="Microsoft PowerPoint 2007 XML"/>
+  <StrRes Name="9203" Text="Microsoft Word 2007 XML"/>
+  <StrRes Name="9204" Text="Microsoft Excel 2007 XML files (*.xlsx)|*.xlsx|All files|*.*"/>
+  <StrRes Name="9205" Text="Microsoft PowerPoint 2007 XML files (*.pptx)|*.pptx|All files|*.*"/>
+  <StrRes Name="9206" Text="Microsoft Word 2007 XML files (*.docx)|*.docx|All files|*.*"/>
+  <StrRes Name="9300" Text="Capes HTML"/>
+  <StrRes Name="9301" Text="Fitxers HTML (*.html)|*.html|Tots els fitxers|*.*"/>
+  <StrRes Name="9302" Text="Exportar capes HTML"/>
+  <StrRes Name="9303" Text="Capes HTML5"/>
+  <StrRes Name="9304" Text="Capes HTML4"/>
+  <StrRes Name="9400" Text="Reordenar components"/>
+  <StrRes Name="9401" Text="Renderització components"/>
+  <StrRes Name="9402" Text="Ajust d'intersecció components"/>
+  <StrRes Name="9403" Text="Suprimint files buides"/>
+  <StrRes Name="9404" Text="Ajust marcs"/>
+  <StrRes Name="9405" Text="Dividint cel·les grans"/>
+  <StrRes Name="9406" Text="Composant fitxer BIFF"/>
+  <StrRes Name="xProto" Text="Exportar Prototip "/>
+  <StrRes Name="xBlank" Text="Exportar en blanc"/>
+  <StrRes Name="expMailAddr" Text="Adreça o adreces delimitat per comes"/>
+
+  <StrRes Name="9600" Text="Exportar a SVG"/>
+  <StrRes Name="9612" Text="Imatges Unificades"/>
+  <StrRes Name="9613" Text="Formatat"/>
+  <StrRes Name="SVG11export" Text="Fitxer SVG"/>
+</Resources>

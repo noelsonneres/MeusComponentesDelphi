@@ -1,0 +1,171 @@
+{******************************************************************************}
+{ Projeto: Componentes ACBr                                                    }
+{ Biblioteca multi plataforma de componentes Delphi para interação com equipa- }
+{ mentos de Automação Comercial utilizados no Brasil                           }
+{                                                                              }
+{  Você pode obter a última versão desse arquivo na página do Projeto ACBr     }
+{ Componentes localizado em      http://www.sourceforge.net/projects/acbr      }
+{                                                                              }
+{  Esta biblioteca é software livre; você pode redistribuí-la e/ou modificá-la }
+{ sob os termos da Licença Pública Geral Menor do GNU conforme publicada pela  }
+{ Free Software Foundation; tanto a versão 2.1 da Licença, ou (a seu critério) }
+{ qualquer versão posterior.                                                   }
+{                                                                              }
+{  Esta biblioteca é distribuída na expectativa de que seja útil, porém, SEM   }
+{ NENHUMA GARANTIA; nem mesmo a garantia implícita de COMERCIABILIDADE OU      }
+{ ADEQUAÇÃO A UMA FINALIDADE ESPECÍFICA. Consulte a Licença Pública Geral Menor}
+{ do GNU para mais detalhes. (Arquivo LICENÇA.TXT ou LICENSE.TXT)              }
+{                                                                              }
+{  Você deve ter recebido uma cópia da Licença Pública Geral Menor do GNU junto}
+{ com esta biblioteca; se não, escreva para a Free Software Foundation, Inc.,  }
+{ no endereço 59 Temple Street, Suite 330, Boston, MA 02111-1307 USA.          }
+{ Você também pode obter uma copia da licença em:                              }
+{ http://www.opensource.org/licenses/lgpl-license.php                          }
+{                                                                              }
+{ Daniel Simões de Almeida  -  daniel@djsystem.com.br  -  www.djsystem.com.br  }
+{              Praça Anita Costa, 34 - Tatuí - SP - 18270-410                  }
+{                                                                              }
+{******************************************************************************}
+
+{******************************************************************************
+|* ACBr
+|*
+|* PROPÓSITO: Registro de Alterações
+******************************************************************************}
+
+Símbolo : Significado
+
+[+]     : Novo recurso
+[*]     : Recurso modificado/melhorado
+[-]     : Correção de Bug (assim esperamos)
+
+09/01/2020
+-- libeay32 --
+[-] Unit Removida, pois agora Delphi e Lazarus usam OpenSSLExt.pas
+
+-- OpenSSLExt --
+[*] Atualizada de acordo com a última versão disponível no trunk do FPC
+[+] Adicionado Suporte a OpenSSL 1.1.1
+[+] Adicionado mecanismo de busca de Nomes possíveis de DLLs, dando preferencia
+    ao nome das DLLs do OpenSSL 1.1.1
+[+] Compatibilizada para compilação em Delphi 7-Rio, Win32/64, Linux FMX
+
+06/06/2017
+-- OpenSSLExt --
+[+] Adicionado suporte para os métodos:
+    function BN_num_bytes(const a: PBIGNUM): cint;
+    function BN_bn2bin(const n: PBIGNUM; _to: Pointer): cint;
+    function BN_bin2bn(const _from: Pointer; len: Integer; ret: PBIGNUM): PBIGNUM;
+    (por: DSA)
+
+-- ACBrEAD --
+[+] Adicionado os métodos:
+    procedure LerChavesArquivoPFX(const AArquivoPFX, Senha: String;
+      var AChavePublica: AnsiString; var AChavePrivada: AnsiString);
+    procedure LerChavesPFX(const ADadosPFX: AnsiString; const Senha: String;
+      var AChavePublica: AnsiString; var AChavePrivada: AnsiString);
+    procedure LerChavesPFX(const AStreamPFX: TStream; const Senha: String;
+      var AChavePublica: AnsiString; var AChavePrivada: AnsiString);
+
+    function ConverteChavePublicaParaOpenSSH(const AChavePublicaOpenSSL: String): String;
+    function ConverterChavePublicaDeOpenSSH(const AChavePublicaOpenSSH: String): String;
+    (por: DSA)
+
+05/06/2017
+-- ACBrEAD --
+[+] Adicionado os métodos:
+    function VerificarAssinatura( const AString, Assinatura : AnsiString;
+       const Digest: TACBrEADDgst): Boolean ;
+    function VerificarAssinatura(const AStringList : TStringList;
+       const Assinatura : AnsiString;
+       const Digest: TACBrEADDgst): Boolean ;
+    function VerificarAssinatura(const AStream : TStream;
+       const Assinatura : AnsiString;
+       const Digest: TACBrEADDgst): Boolean ;
+   (por: DSA)
+
+27/03/2017
+-- libxmlsec --
+[*] Remoção da dependencia de "libxslt". (por Waldir Paim)
+    http://www.projetoacbr.com.br/forum/topic/35775-sugest%C3%A3o-limpeza-dos-uses-de-algumas-units/?do=findComment&comment=234842
+
+19/03/2017
+-- libxmlsec --
+[*] variável "libHandle" renomeada para "libXmlSecHandle"
+    (por: DSA)
+
+30/12/2016
+-- ACBrEAD --
+[*] Ajuste para retornar apenas os números da versão do OpenSSL
+[-] Correção de A.V. no método "CalcularModuloeExpoente" quando funcionando com
+    OpenSSL 1.0.0 ou superior
+[-] Correção de A.V. no método "VerificarEAD" quando funcionando com OpenSSL
+    1.0.0 ou superior, e fosse necessária verificação manual do EAD através da
+    chamada a rotina "RSA_public_decrypt"
+[*] Remoção de método desnecessário "VerificaVersaoCompativel"
+    (Por: DSA)
+
+-- OpenSSLExt --
+[+] Adicionado suporte aos métodos:
+    function EvpPkeyGet1RSA(pkey: PEVP_PKEY): pRSA;
+    function EvpPkeySet1RSA(pkey: PEVP_PKEY; rsa: pRSA): cInt;
+    (por: DSA)
+
+23/12/2016
+-- OpenSSLExt --
+[+] Adicionado suporte aos métodos: SslMethodTLSV11, SslMethodTLSV12, BN_bn2hex,
+    BN_bn2dec (por: DSA)
+
+-- ACBrEAD --
+[*] Aplicado ajuste para suportar OpenSSL 1.0.0 ou superior. Ainda continua sem
+    suporte aos métodos "RSA_public_decrypt", e "CalcularModuloeExpoente", em
+    versões superiores a 1.0.0
+
+24/10/2016
+-- libxml2, libxmlsec, libxslt --
+[-] Correção para suporte de libxmlsec em 64 bits. Corrigindo falha ao Assinar XML
+    http://www.projetoacbr.com.br/forum/index.php?showtopic=25670
+[*] Ajuste para permitir o uso de Libxml2, libxslt, libxmlsec compiladas por
+    MinGw (default em Win64)
+    ftp://ftp.zlatkovic.com/libxml/64bit/   (por: DSA)
+
+23/10/2016
+-- OpenSSLExt, libeay32 --
+[+] Adicionado suporte ao método: "X509_NAME_print_ex"  (por: DSA)
+
+13/09/2016
+-- libexslt, libxml2, libxslt --
+[*] Ajustes para correta compilação no Lazarus FPC 64 bits (por: DSA)
+
+13/06/2016
+-- OpenSSLExt --
+[+] Adicionado suporte ao método: X509GetPubkey  (por: DSA)
+
+11/03/2016
+-- libexslt, libxml2, libxmlsec, libxslt --
+[*] Ajustes para suportar a diretiva de compilação "USE_DELAYED"
+    Criado método "Init" nas Units, em substituição de Initialization
+    http://www.projetoacbr.com.br/forum/index.php?showtopic=28561
+
+07/03/2016   
+-- libexslt, libxml2, libxmlsec, libxslt --
+[*] Ajustes para compilação em 64 bits. (por: DSA)
+
+Data: 26/02/2016
+[+] Adicionado modo de saida: "outBinary" para ser usado em "InternalDigest" (por: DSA)
+
+Data: 23/11/2015
+[*] pequena otimização do método GerarXMLeECFc quando passar o parâmetro de arquivo, 
+    estava sendo duplicado a montagem do arquivo nos dois métodos que fazem overload.
+
+
+Data: 08/09/2015
+[*] Carregamento atrasado da dll, funciona somente do Delphi 2010 em diante, por isso existe uma diretiva de compilação.
+    http://www.projetoacbr.com.br/forum/topic/24183-sugestão-de-alteração-de-carregamento-openssl/#comment-156102
+
+Data: 22/08/2015
+-- ACBrEAD --     (por: DSA)
+[*] Métodos para Inicialização e Liberação do OpenSSL movidos para
+    Inicialization e Finalization da Unit. Para evitar que duas instâncias de
+    ACBrEAD, carreguem o OpenSSL duas vezes, ou liberem o mesmo inadivertidamente
+

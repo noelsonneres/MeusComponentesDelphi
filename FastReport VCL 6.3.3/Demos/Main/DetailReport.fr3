@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TfrxReport Version="5.0" DotMatrixReport="False" IniFile="\Software\Fast Reports" PreviewOptions.Buttons="4095" PreviewOptions.Zoom="1" PrintOptions.Printer="Default" PrintOptions.PrintOnSheet="0" ReportOptions.CreateDate="41800,4384631134" ReportOptions.Description.Text="" ReportOptions.LastChange="41829,0216787384" ScriptLanguage="PascalScript" ScriptText.Text="begin&#13;&#10;&#13;&#10;end.">
+  <Datasets>
+    <item DataSet="ReportData.CountryDS" DataSetName="Country"/>
+  </Datasets>
+  <Variables>
+    <item Name=" New Category1"/>
+    <item Name="FilterVar" Value="''"/>
+  </Variables>
+  <TfrxDataPage Name="Data" Height="1000" Left="0" Top="0" Width="1000"/>
+  <TfrxReportPage Name="Page1" PaperWidth="215,9" PaperHeight="279,4" PaperSize="1" LeftMargin="10" RightMargin="10" TopMargin="10" BottomMargin="10" ColumnWidth="0" ColumnPositions.Text="" HGuides.Text="" VGuides.Text="">
+    <TfrxMasterData Name="MasterData1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Font.Charset="1" Font.Color="0" Font.Height="-27" Font.Name="Arial" Font.Style="0" Height="52,91342" Left="0" ParentFont="False" Top="136,06308" Width="740,409927" ColumnWidth="0" ColumnGap="0" DataSet="ReportData.CountryDS" DataSetName="Country" Filter="&#60;Country.&#34;Continent&#34;&#62; = &#60;FilterVar&#62;" RowCount="0">
+      <TfrxMemoView Name="CountryName" Left="3,77953" Top="2,77953" Width="209,40971" Height="37,7953" DataField="Name" DataSet="ReportData.CountryDS" DataSetName="Country" Font.Charset="1" Font.Color="-16777208" Font.Height="-24" Font.Name="Arial" Font.Style="0" FillType="ftGlass" Fill.Color="8421504" Fill.Blend="0,5" ParentFont="False" Text="[Country.&#34;Name&#34;]"/>
+      <TfrxMemoView Name="Memo1" Left="213" Top="2,93692" Width="213,18924" Height="37,7953" DataField="Capital" DataSet="ReportData.CountryDS" DataSetName="Country" Font.Charset="1" Font.Color="-16777208" Font.Height="-24" Font.Name="Arial" Font.Style="0" FillType="ftGlass" Fill.Color="8421504" Fill.Blend="0,5" ParentFont="False" Text="[Country.&#34;Capital&#34;]"/>
+      <TfrxMemoView Name="Memo2" Left="426,08689" Top="2,77953" Width="239,64595" Height="37,7953" DataField="Population" DataSet="ReportData.CountryDS" DataSetName="Country" Font.Charset="1" Font.Color="-16777208" Font.Height="-24" Font.Name="Arial" Font.Style="0" FillType="ftGlass" Fill.Color="8421504" Fill.Blend="0,5" ParentFont="False" Text="[Country.&#34;Population&#34;]"/>
+    </TfrxMasterData>
+    <TfrxReportTitle Name="ReportTitle1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="54,67718" Left="0" Top="18,89765" Width="740,409927">
+      <TfrxMemoView Name="FilterVar" Align="baClient" Left="0" Top="0" Width="740,409927" Height="54,67718" Font.Charset="1" Font.Color="-16777208" Font.Height="-27" Font.Name="Arial" Font.Style="0" HAlign="haCenter" ParentFont="False" Text="[FilterVar]"/>
+    </TfrxReportTitle>
+  </TfrxReportPage>
+</TfrxReport>

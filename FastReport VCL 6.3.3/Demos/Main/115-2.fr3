@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<TfrxReport Version="5.0" DotMatrixReport="False" IniFile="\Software\Fast Reports" PreviewOptions.Buttons="4095" PreviewOptions.Zoom="1" PrintOptions.Printer="Default" PrintOptions.PrintOnSheet="0" ReportOptions.CreateDate="41800,4384631134" ReportOptions.Description.Text="" ReportOptions.LastChange="42474,9703812037" ScriptLanguage="PascalScript" ScriptText.Text="begin&#13;&#10;&#13;&#10;end.">
+  <Datasets>
+    <item DataSet="ReportData.MapOrderDetailsExtendedDS" DataSetName="MapOrderDetailsExtended"/>
+    <item DataSet="ReportData.MapOrdersDS2" DataSetName="MapOrders2"/>
+  </Datasets>
+  <Variables>
+    <item Name=" New Category1"/>
+    <item Name="FilterVar" Value="''"/>
+  </Variables>
+  <TfrxDataPage Name="Data" Height="1000" Left="0" Top="0" Width="1000"/>
+  <TfrxReportPage Name="Page1" PaperWidth="215,9" PaperHeight="279,4" PaperSize="1" LeftMargin="10" RightMargin="10" TopMargin="10" BottomMargin="10" ColumnWidth="0" ColumnPositions.Text="" HGuides.Text="" VGuides.Text="">
+    <TfrxMasterData Name="MasterData1" IndexTag="0" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Font.Charset="1" Font.Color="0" Font.Height="-16" Font.Name="Arial" Font.Style="0" Height="18,8976378" Left="0" ParentFont="False" Top="162,51979" Width="740,409927" ColumnWidth="0" ColumnGap="0" DataSet="ReportData.MapOrdersDS2" DataSetName="MapOrders2" FooterAfterEach="True" Filter="&#60;MapOrders2.&#34;ShipCountry&#34;&#62; = &#60;FilterVar&#62;" RowCount="0">
+      <TfrxMemoView Name="Memo1" IndexTag="0" Left="0" Top="0" Width="182,953" Height="18,8976378" DataField="OrderDate" DataSet="ReportData.MapOrdersDS2" DataSetName="MapOrders2" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="[MapOrders2.&#34;OrderDate&#34;]"/>
+      <TfrxMemoView Name="Memo2" IndexTag="0" Left="196,53556" Top="0" Width="542,00835" Height="18,8976378" DataField="ShipAddress" DataSet="ReportData.MapOrdersDS2" DataSetName="MapOrders2" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="[MapOrders2.&#34;ShipAddress&#34;]"/>
+    </TfrxMasterData>
+    <TfrxReportTitle Name="ReportTitle1" IndexTag="0" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="41,5748031496063" Left="0" Top="18,89765" Width="740,409927">
+      <TfrxMemoView Name="FilterVar" IndexTag="0" Align="baClient" Left="0" Top="0" Width="740,409927" Height="41,5748031496063" Font.Charset="1" Font.Color="-16777208" Font.Height="-19" Font.Name="Arial" Font.Style="1" HAlign="haCenter" ParentFont="False" VAlign="vaCenter" Text="Sales in [FilterVar]"/>
+    </TfrxReportTitle>
+    <TfrxDetailData Name="DetailData1" IndexTag="0" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="18,8976378" Left="0" Top="245,66945" Width="740,409927" ColumnWidth="0" ColumnGap="0" DataSet="ReportData.MapOrderDetailsExtendedDS" DataSetName="MapOrderDetailsExtended" RowCount="0">
+      <TfrxMemoView Name="Memo9" IndexTag="0" Left="18,89765" Top="0" Width="359,0551889" Height="18,8976378" DataField="ProductName" DataSet="ReportData.MapOrderDetailsExtendedDS" DataSetName="MapOrderDetailsExtended" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="[MapOrderDetailsExtended.&#34;ProductName&#34;]"/>
+      <TfrxMemoView Name="Memo10" IndexTag="0" Left="398,74023803" Top="0" Width="94,48818898" Height="18,8976378" DataField="UnitPrice" DataSet="ReportData.MapOrderDetailsExtendedDS" DataSetName="MapOrderDetailsExtended" DisplayFormat.FormatStr="%2.2m" DisplayFormat.Kind="fkNumeric" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" HAlign="haRight" ParentFont="False" Text="[MapOrderDetailsExtended.&#34;UnitPrice&#34;]"/>
+      <TfrxMemoView Name="Memo11" IndexTag="0" Left="510,23630591" Top="0" Width="94,48818898" Height="18,8976378" DataField="Quantity" DataSet="ReportData.MapOrderDetailsExtendedDS" DataSetName="MapOrderDetailsExtended" DisplayFormat.FormatStr="%g" DisplayFormat.Kind="fkNumeric" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" HAlign="haCenter" ParentFont="False" Text="[MapOrderDetailsExtended.&#34;Quantity&#34;]"/>
+      <TfrxMemoView Name="Memo12" IndexTag="0" Left="625,51190378" Top="0" Width="94,48818898" Height="18,8976378" DataSetName="MapOrderDetails2" DisplayFormat.FormatStr="%2.2f" DisplayFormat.Kind="fkNumeric" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" HAlign="haRight" ParentFont="False" Text="[100 * &#60;MapOrderDetailsExtended.&#34;Discount&#34;&#62;]%"/>
+    </TfrxDetailData>
+    <TfrxHeader Name="Header2" IndexTag="0" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="18,8976378" Left="0" Top="204,09462" Width="740,409927">
+      <TfrxMemoView Name="Memo5" IndexTag="0" Left="18,89765" Top="0" Width="359,0551889" Height="18,8976378" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="1" ParentFont="False" Text="Product Name"/>
+      <TfrxMemoView Name="Memo6" IndexTag="0" Left="398,74023803" Top="0" Width="94,48818898" Height="18,8976378" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="1" HAlign="haRight" ParentFont="False" Text="Unit Price"/>
+      <TfrxMemoView Name="Memo7" IndexTag="0" Left="510,23630591" Top="0" Width="94,48818898" Height="18,8976378" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="1" HAlign="haCenter" ParentFont="False" Text="Quantity"/>
+      <TfrxMemoView Name="Memo8" IndexTag="0" Left="625,51190378" Top="0" Width="94,48818898" Height="18,8976378" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="1" HAlign="haRight" ParentFont="False" Text="Discount"/>
+    </TfrxHeader>
+    <TfrxHeader Name="Header1" IndexTag="0" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="18,8976378" Left="0" Top="120,94496" Width="740,409927">
+      <TfrxMemoView Name="Memo13" IndexTag="0" Left="0" Top="0" Width="182,953" Height="18,8976378" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="1" ParentFont="False" Text="Order Date"/>
+      <TfrxMemoView Name="Memo4" IndexTag="0" Left="196,53556" Top="0" Width="542,00835" Height="18,8976378" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="1" ParentFont="False" Text="Ship Address"/>
+    </TfrxHeader>
+    <TfrxFooter Name="Footer1" IndexTag="0" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="9,4488188976378" Left="0" Top="287,24428" Width="740,409927"/>
+  </TfrxReportPage>
+</TfrxReport>

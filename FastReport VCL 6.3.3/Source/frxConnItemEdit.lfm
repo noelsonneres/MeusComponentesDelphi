@@ -1,0 +1,123 @@
+object frxConnectionItemEdit: TfrxConnectionItemEdit
+  Left = 447
+  Height = 225
+  Top = 328
+  Width = 445
+  BorderStyle = bsDialog
+  Caption = 'Edit connection'
+  ClientHeight = 225
+  ClientWidth = 445
+  Color = clBtnFace
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Position = poScreenCenter
+  LCLVersion = '1.2.6.0'
+  object ConnL: TLabel
+    Left = 12
+    Height = 13
+    Top = 56
+    Width = 169
+    AutoSize = False
+    Caption = 'Connection string'
+    ParentColor = False
+  end
+  object NameL: TLabel
+    Left = 12
+    Height = 13
+    Top = 12
+    Width = 245
+    AutoSize = False
+    Caption = 'Connection name '
+    ParentColor = False
+  end
+  object Panel1: TPanel
+    Left = 0
+    Height = 43
+    Top = 182
+    Width = 445
+    Align = alBottom
+    BevelOuter = bvNone
+    ClientHeight = 43
+    ClientWidth = 445
+    TabOrder = 3
+    object OkB: TButton
+      Left = 264
+      Height = 25
+      Top = 8
+      Width = 75
+      Caption = 'OK'
+      ModalResult = 1
+      TabOrder = 0
+    end
+    object CancelB: TButton
+      Left = 352
+      Height = 25
+      Top = 8
+      Width = 75
+      Cancel = True
+      Caption = 'Cancel'
+      ModalResult = 2
+      TabOrder = 1
+    end
+  end
+  object ConnE: TEdit
+    Left = 8
+    Height = 21
+    Top = 72
+    Width = 381
+    TabOrder = 1
+  end
+  object ConnB: TButton
+    Left = 392
+    Height = 21
+    Top = 72
+    Width = 41
+    Caption = '...'
+    OnClick = ConnBClick
+    TabOrder = 4
+  end
+  object NameE: TEdit
+    Left = 8
+    Height = 21
+    Top = 28
+    Width = 425
+    TabOrder = 0
+  end
+  object GroupBox1: TGroupBox
+    Left = 12
+    Height = 73
+    Top = 104
+    Width = 421
+    Caption = 'Connection type'
+    ClientHeight = 55
+    ClientWidth = 417
+    TabOrder = 2
+    object SystemRB: TRadioButton
+      Tag = 1
+      Left = 16
+      Height = 19
+      Hint = 'Should be used for FastReport Server, Scheduler, etc'
+      Top = 0
+      Width = 110
+      Caption = 'System connection'
+      Checked = True
+      ParentShowHint = False
+      ShowHint = True
+      TabOrder = 0
+      TabStop = True
+    end
+    object UserRB: TRadioButton
+      Tag = 1
+      Left = 16
+      Height = 19
+      Hint = 'Generic applications'
+      Top = 24
+      Width = 97
+      Caption = 'User connection'
+      ParentShowHint = False
+      ShowHint = True
+      TabOrder = 1
+    end
+  end
+end

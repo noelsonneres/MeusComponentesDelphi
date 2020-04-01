@@ -1,0 +1,100 @@
+inherited frxIMGExportDialog: TfrxIMGExportDialog
+  Tag = 8600
+  Left = 568
+  Top = 185
+  Caption = 'Export to Images'
+  inherited PageControl1: TPageControl
+    Height = 343
+    inherited ExportPage: TTabSheet
+      ClientHeight = 317
+      inherited OpenCB: TCheckBox
+        Top = 296
+        Visible = False
+      end
+      inherited GroupQuality: TGroupBox
+        Tag = 8601
+        Top = 141
+        object Label2: TLabel[0]
+          Tag = 8602
+          Left = 16
+          Height = 13
+          Top = 48
+          Width = 121
+          AutoSize = False
+          Caption = 'JPEG Quality'
+          ParentColor = False
+        end
+        object Label1: TLabel[1]
+          Tag = 8603
+          Left = 16
+          Height = 13
+          Top = 76
+          Width = 113
+          AutoSize = False
+          Caption = 'Resolution (dpi)'
+          ParentColor = False
+        end
+        object CropPage: TCheckBox[2]
+          Tag = 8605
+          Left = 140
+          Height = 17
+          Top = 20
+          Width = 73
+          Caption = 'Crop pages'
+          Checked = True
+          State = cbChecked
+          TabOrder = 1
+        end
+        object Quality: TEdit[3]
+          Left = 140
+          Height = 21
+          Top = 44
+          Width = 53
+          TabOrder = 2
+          Text = '100'
+        end
+        object Mono: TCheckBox[4]
+          Tag = 8606
+          Left = 16
+          Height = 17
+          Top = 20
+          Width = 79
+          Caption = 'Monochrome'
+          TabOrder = 0
+        end
+        object Resolution: TEdit[5]
+          Left = 140
+          Height = 21
+          Top = 72
+          Width = 53
+          TabOrder = 3
+          Text = '96'
+        end
+      end
+      inherited GroupPageRange: TGroupBox
+        Height = 135
+        ClientHeight = 117
+        object SeparateCB: TCheckBox[5]
+          Tag = 8604
+          Left = 16
+          Height = 17
+          Top = 96
+          Width = 84
+          Caption = 'Separate files'
+          Checked = True
+          State = cbChecked
+          TabOrder = 4
+        end
+      end
+      inherited GroupBox1: TGroupBox
+        Top = 256
+      end
+    end
+  end
+  inherited OkB: TButton
+    Top = 353
+  end
+  inherited CancelB: TButton
+    Top = 353
+  end
+end

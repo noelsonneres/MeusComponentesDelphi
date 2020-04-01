@@ -1,0 +1,221 @@
+object frxFillEditorForm: TfrxFillEditorForm
+  Left = 191
+  Height = 312
+  Top = 116
+  Width = 320
+  BorderStyle = bsDialog
+  Caption = 'frxFillEditorForm'
+  ClientHeight = 312
+  ClientWidth = 320
+  Color = clBtnFace
+  Font.CharSet = RUSSIAN_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  Position = poScreenCenter
+  LCLVersion = '1.2.6.0'
+  object PageControl: TPageControl
+    Left = 8
+    Height = 257
+    Top = 8
+    Width = 305
+    ActivePage = BrushTS
+    TabIndex = 0
+    TabOrder = 0
+    OnChange = PageControlChange
+    object BrushTS: TTabSheet
+      Caption = 'Brush'
+      ClientHeight = 231
+      ClientWidth = 297
+      object BrushBackColorL: TLabel
+        Left = 8
+        Height = 13
+        Top = 44
+        Width = 86
+        Caption = 'Background color:'
+        ParentColor = False
+      end
+      object BrushForeColorL: TLabel
+        Left = 8
+        Height = 13
+        Top = 72
+        Width = 86
+        Caption = 'Foreground color:'
+        ParentColor = False
+      end
+      object BrushStyleL: TLabel
+        Left = 8
+        Height = 13
+        Top = 16
+        Width = 57
+        Caption = 'Brush style:'
+        ParentColor = False
+      end
+      object BrushStyleCB: TComboBox
+        Left = 136
+        Height = 22
+        Top = 12
+        Width = 153
+        ItemHeight = 16
+        OnChange = BrushStyleCBChange
+        OnDrawItem = BrushStyleCBDrawItem
+        Style = csOwnerDrawFixed
+        TabOrder = 0
+      end
+    end
+    object GradientTS: TTabSheet
+      Caption = 'Gradient'
+      ClientHeight = 231
+      ClientWidth = 297
+      ImageIndex = 1
+      object GradientStyleL: TLabel
+        Left = 8
+        Height = 13
+        Top = 16
+        Width = 71
+        Caption = 'Gradient style:'
+        ParentColor = False
+      end
+      object GradientStartColorL: TLabel
+        Left = 8
+        Height = 13
+        Top = 44
+        Width = 54
+        Caption = 'Start color:'
+        ParentColor = False
+      end
+      object GradientEndColorL: TLabel
+        Left = 8
+        Height = 13
+        Top = 72
+        Width = 48
+        Caption = 'End color:'
+        ParentColor = False
+      end
+      object GradientStyleCB: TComboBox
+        Left = 136
+        Height = 21
+        Top = 12
+        Width = 153
+        ItemHeight = 13
+        OnChange = GradientStyleCBChange
+        Style = csDropDownList
+        TabOrder = 0
+      end
+      object ComboBox5: TComboBox
+        Left = 136
+        Height = 21
+        Top = 40
+        Width = 153
+        ItemHeight = 13
+        TabOrder = 1
+        Text = 'ComboBox1'
+      end
+      object ComboBox6: TComboBox
+        Left = 136
+        Height = 21
+        Top = 68
+        Width = 153
+        ItemHeight = 13
+        TabOrder = 2
+        Text = 'ComboBox1'
+      end
+    end
+    object GlassTS: TTabSheet
+      Caption = 'Glass'
+      ClientHeight = 231
+      ClientWidth = 297
+      ImageIndex = 2
+      object GlassOrientationL: TLabel
+        Left = 8
+        Height = 13
+        Top = 16
+        Width = 58
+        Caption = 'Orientation:'
+        ParentColor = False
+      end
+      object GlassColorL: TLabel
+        Left = 8
+        Height = 13
+        Top = 44
+        Width = 29
+        Caption = 'Color:'
+        ParentColor = False
+      end
+      object GlassBlendL: TLabel
+        Left = 8
+        Height = 13
+        Top = 72
+        Width = 30
+        Caption = 'Blend:'
+        ParentColor = False
+      end
+      object GlassOrientationCB: TComboBox
+        Left = 136
+        Height = 21
+        Top = 12
+        Width = 153
+        ItemHeight = 13
+        OnChange = GlassOrientationCBChange
+        Style = csDropDownList
+        TabOrder = 0
+      end
+      object GlassHatchCB: TCheckBox
+        Left = 8
+        Height = 19
+        Top = 100
+        Width = 48
+        Caption = 'Hatch'
+        OnClick = GlassHatchCBClick
+        TabOrder = 1
+      end
+      object GlassBlendE: TEdit
+        Left = 136
+        Height = 21
+        Top = 68
+        Width = 153
+        OnExit = GlassBlendEExit
+        TabOrder = 2
+      end
+    end
+  end
+  object OKB: TButton
+    Left = 156
+    Height = 25
+    Top = 276
+    Width = 75
+    Caption = 'OK'
+    ModalResult = 1
+    TabOrder = 1
+  end
+  object CancelB: TButton
+    Left = 236
+    Height = 25
+    Top = 276
+    Width = 75
+    Cancel = True
+    Caption = 'Cancel'
+    ModalResult = 2
+    TabOrder = 2
+  end
+  object SampleP: TPanel
+    Left = 20
+    Height = 81
+    Top = 168
+    Width = 281
+    BevelOuter = bvNone
+    ClientHeight = 81
+    ClientWidth = 281
+    TabOrder = 3
+    object PaintBox1: TPaintBox
+      Left = 0
+      Height = 81
+      Top = 0
+      Width = 281
+      Align = alClient
+      OnPaint = PaintBox1Paint
+    end
+  end
+end

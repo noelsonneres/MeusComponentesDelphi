@@ -1,0 +1,259 @@
+СОДЕРЖАНИЕ
+
+I.   Введение
+II.  Ручная установка пакетов FastReport
+III. Компиляция пакетов FastReport Basic Edition и Standard Edition 
+IV.  Компиляция пакетов FastReport Professional Edition и Enterprise Edition 
+
+------------------------------------------------------------------------
+I. Введение
+
+FastReport поставляется с откомпилированными файлами *.dcu, *.bpl, *.dcp. 
+Программа установки копирует runtime пакеты в системную папку и устанавливает
+остальные пакеты в Delphi. Вам ничего не нужно устанавливать вручную.
+Тем не менее, если вы изменили исходники FR, поменяли языковые ресурсы, 
+или имеете другую версию TeeChart, IBX или прочих компонент Delphi, вы должны
+перекомпилировать пакеты FR.
+
+FastReport состоит из нескольких пакетов, разделенных на runtime и design-time
+части. Design-time пакеты имеют префикс 'dcl' в имени пакета. Каждый пакет
+имеет номер, соответствующий версии Delphi. Например, пакет dclfrx7.dpk - это
+design-time пакет для Delphi7. Ниже приведен список run-time пакетов,
+используемых FastReport ('*' означает версию Delphi):
+
+fs*.dpk     - FastScript, основной пакет
+fsDB*.dpk   - FastScript, DB классы и контролы
+fsBDE*.dpk  - FastScript, BDE компоненты
+fsADO*.dpk  - FastScript, ADO компоненты
+fsIBX*.dpk  - FastScript, IBX компоненты 
+fsTee*.dpk  - FastScript, Tee компоненты
+frx*.dpk    - FastReport, основной пакет
+frxDB*.dpk  - FastReport, обертка над TDataSet (TfrxDBDataSet)
+frxIBO*.dpk - FastReport, обертка над IB_Objects (TfrxIBODataSet)
+frxBDE*.dpk - FastReport, BDE компоненты
+frxADO*.dpk - FastReport, ADO компоненты
+frxIBX*.dpk - FastReport, IBX компоненты
+frxDBX*.dpk - FastReport, DBX компоненты
+frxTee*.dpk - FastReport, Tee компоненты
+frxe*.dpk   - FastReport, фильтры экспорта
+
+Design-time пакеты:
+
+dclfs*.dpk
+dclfsDB*.dpk
+dclfsBDE*.dpk
+dclfsADO*.dpk
+dclfsIBX*.dpk
+dclfsTee*.dpk
+dclfrx*.dpk
+dclfrxDB*.dpk
+dclfrxIBO*.dpk
+dclfrxBDE*.dpk
+dclfrxADO*.dpk
+dclfrxIBX*.dpk
+dclfrxDBX*.dpk
+dclfrxTee*.dpk
+dclfrxe*.dpk
+
+------------------------------------------------------------------------
+II. Ручная установка пакетов FastReport
+
+Выполните следующие действия для ручной установки пакетов FastReport,
+входящих в стандартную поставку.
+
+Шаг 1. Копирование run-time пакетов в системную папку
+- закройте Delphi
+- скопируйте \Lib\fs*.bpl файл (* = версия Delphi) в Windows\System32
+  (Windows\System для Windows 95/98/ME)
+- скопируйте \Lib\fsDB*.bpl файл в Windows\System32
+- скопируйте \Lib\fsBDE*.bpl файл в Windows\System32
+- скопируйте \Lib\fsADO*.bpl файл в Windows\System32
+- скопируйте \Lib\fsIBX*.bpl файл в Windows\System32
+- скопируйте \Lib\fsTee*.bpl файл в Windows\System32
+- скопируйте \Lib\frx*.bpl файл в Windows\System32
+- скопируйте \Lib\frxDB*.bpl файл в Windows\System32
+- скопируйте \Lib\frxBDE*.bpl файл в Windows\System32
+- скопируйте \Lib\frxADO*.bpl файл в Windows\System32
+- скопируйте \Lib\frxIBX*.bpl файл в Windows\System32
+- скопируйте \Lib\frxDBX*.bpl файл в Windows\System32
+- скопируйте \Lib\frxTee*.bpl файл в Windows\System32
+- скопируйте \Lib\frxe*.bpl файл в Windows\System32
+
+Шаг 2. Установка design-time пакетов 
+- в Delphi IDE, выберите "Component|Install Packages..."
+- нажмите кнопку "Add..." и выберите файл \Lib\dclfs*.bpl (* = версия Delphi)
+- нажмите кнопку "Add..." и выберите файл \Lib\dclfsDB*.bpl
+- нажмите кнопку "Add..." и выберите файл \Lib\dclfsBDE*.bpl
+- нажмите кнопку "Add..." и выберите файл \Lib\dclfsADO*.bpl
+- нажмите кнопку "Add..." и выберите файл \Lib\dclfsIBX*.bpl
+- нажмите кнопку "Add..." и выберите файл \Lib\dclfsTee*.bpl
+- нажмите кнопку "Add..." и выберите файл \Lib\dclfrx*.bpl
+- нажмите кнопку "Add..." и выберите файл \Lib\dclfrxDB*.bpl
+- нажмите кнопку "Add..." и выберите файл \Lib\dclfrxBDE*.bpl
+- нажмите кнопку "Add..." и выберите файл \Lib\dclfrxADO*.bpl
+- нажмите кнопку "Add..." и выберите файл \Lib\dclfrxIBX*.bpl
+- нажмите кнопку "Add..." и выберите файл \Lib\dclfrxDBX*.bpl
+- нажмите кнопку "Add..." и выберите файл \Lib\dclfrxTee*.bpl
+- нажмите кнопку "Add..." и выберите файл \Lib\dclfrxe*.bpl
+
+Шаг 3. Добавление путей
+- в Delphi IDE, выберите "Tools|Environmet options..."
+- переключитесь на закладку "Library", строка ввода "Library path"
+- добавьте путь к папке "FastReport 6\Lib"
+  
+------------------------------------------------------------------------
+III. Компиляция пакетов FastReport Basic Edition и Standard Edition 
+
+Выполните следующие действия для компиляции пакетов FastReport
+(при внесении изменений в исходный код и др.)
+
+Шаг 0 (только для FastReport Basic Edition)
+- откройте файл FastReport 6\Lib\frx.inc и раскомментируйте строку:
+{$DEFINE FR_VER_BASIC}
+
+Шаг 1. Добавление путей
+1.1. в Delphi IDE, выберите "Tools|Environmet options..."
+1.2. переключитесь на закладку "Library", строка ввода "Library path"
+1.3. добавьте путь к папке FastReport 6\Lib 
+
+Шаг 2. Компиляция run-time пакетов
+2.1. повторите шаги 2.2-2.4 для следующих пакетов:
+- FastReport 6\Lib\fs*.dpk (* = версия Delphi)
+- FastReport 6\Lib\fsDB*.dpk
+- FastReport 6\Lib\fsBDE*.dpk
+- FastReport 6\Lib\fsADO*.dpk
+- FastReport 6\Lib\fsIBX*.dpk
+- FastReport 6\Lib\fsTee*.dpk
+- FastReport 6\Lib\frx*.dpk
+- FastReport 6\Lib\frxDB*.dpk
+- FastReport 6\Lib\frxADO*.dpk (FR6 Std)
+- FastReport 6\Lib\frxBDE*.dpk (FR6 Std)
+- FastReport 6\Lib\frxIBX*.dpk (FR6 Std)
+- FastReport 6\Lib\frxDBX*.dpk (FR6 Std)
+- FastReport 6\Lib\frxTee*.dpk
+- FastReport 6\Lib\frxe*.dpk
+2.2. откройте пакет (с помощью команды меню "File|Open project...", выберите 
+  "Delphi package (*.dpk)" в качестве типа файла)
+2.3. нажмите кнопку "Compile"
+2.4. закройте диалог "Package"
+
+Шаг 3. Копирование run-time пакетов в системную папку
+3.1. скопируйте следующие файлы из папки Delphi_dir\Projects\Bpl
+  в папку Windows\System32 (Windows\System для Win9x/Me):
+- fs*.bpl (* = версия Delphi)
+- fsDB*.bpl
+- fsBDE*.bpl
+- fsADO*.bpl
+- fsIBX*.bpl
+- fsTee*.bpl
+- frx*.bpl
+- frxDB*.bpl
+- frxADO*.bpl (FR6 Std)
+- frxBDE*.bpl (FR6 Std)
+- frxIBX*.bpl (FR6 Std)
+- frxDBX*.bpl (FR6 Std)
+- frxTee*.bpl
+- frxe*.bpl
+
+Шаг 4. Компиляция и установка design-time пакетов
+4.1. повторите шаги 4.2-4.5 для следующих пакетов:
+- FastReport 6\Lib\dclfs*.dpk (* = версия Delphi)
+- FastReport 6\Lib\dclfsDB*.dpk
+- FastReport 6\Lib\dclfsBDE*.dpk
+- FastReport 6\Lib\dclfsADO*.dpk
+- FastReport 6\Lib\dclfsIBX*.dpk
+- FastReport 6\Lib\dclfsTee*.dpk
+- FastReport 6\Lib\dclfrx*.dpk
+- FastReport 6\Lib\dclfrxDB*.dpk
+- FastReport 6\Lib\dclfrxADO*.dpk (FR6 Std)
+- FastReport 6\Lib\dclfrxBDE*.dpk (FR6 Std)
+- FastReport 6\Lib\dclfrxIBX*.dpk (FR6 Std)
+- FastReport 6\Lib\dclfrxDBX*.dpk (FR6 Std)
+- FastReport 6\Lib\dclfrxTee*.dpk
+- FastReport 6\Lib\dclfrxe*.dpk
+4.2. откройте пакет (с помощью команды меню "File|Open project...", выберите 
+  "Delphi package (*.dpk)" в качестве типа файла)
+4.3. нажмите кнопку "Compile"
+4.4. нажмите кнопку "Install"
+4.5. закройте диалог "Package", ответьте "NO" когда Delphi попросит 
+  сохранить изменения!
+
+------------------------------------------------------------------------
+IV. Компиляция пакетов FastReport Professional Edition и Enterprise Edition 
+
+Выполните следующие действия для компиляции исходного кода FastReport
+(при внесении изменений в исходный код и др.)
+
+Шаг 1. Удаление путей к старым файлам
+1.1. в Delphi IDE, выберите "Tools|Environmet options..."
+1.2. переключитесь на закладку "Library", строка ввода "Library path"
+1.3. удалите путь к папке FastReport 6\Lib
+
+Шаг 2. Добавление путей
+2.1. в Delphi IDE, выберите "Tools|Environmet options..."
+2.2. переключитесь на закладку "Library", строка ввода "Library path"
+2.3. добавьте путь к папкам FastReport 6\FastScript, FastReport 6\Source, 
+  FastReport 6\Source\BDE,ADO,IBX,DBX, FastReport 6\Source\ExportPack 
+
+Шаг 3. Компиляция run-time пакетов
+3.1. повторите шаги 3.2-3.4 для следующих пакетов:
+- FastReport 6\FastScript\fs*.dpk (* = версия Delphi)
+- FastReport 6\FastScript\fsDB*.dpk
+- FastReport 6\FastScript\fsBDE*.dpk
+- FastReport 6\FastScript\fsADO*.dpk
+- FastReport 6\FastScript\fsIBX*.dpk
+- FastReport 6\FastScript\fsTee*.dpk
+- FastReport 6\Source\frx*.dpk
+- FastReport 6\Source\frxDB*.dpk
+- FastReport 6\Source\ADO\frxADO*.dpk
+- FastReport 6\Source\BDE\frxBDE*.dpk
+- FastReport 6\Source\IBX\frxIBX*.dpk
+- FastReport 6\Source\DBX\frxDBX*.dpk
+- FastReport 6\Source\frxTee*.dpk
+- FastReport 6\Source\ExportPack\frxe*.dpk
+3.2. откройте пакет (с помощью команды меню "File|Open project...", выберите 
+  "Delphi package (*.dpk)" в качестве типа файла)
+3.3. нажмите кнопку "Compile"
+3.4. закройте диалог "Package"
+
+Шаг 4. Копирование run-time пакетов в системную папку
+4.1. скопируйте следующие файлы из папки Delphi_dir\Projects\Bpl
+  в папку Windows\System32 (Windows\System для Win9x/Me):
+- fs*.bpl (* = версия Delphi)
+- fsDB*.bpl
+- fsBDE*.bpl
+- fsADO*.bpl
+- fsIBX*.bpl
+- fsTee*.bpl
+- frx*.bpl
+- frxDB*.bpl
+- frxADO*.bpl
+- frxBDE*.bpl
+- frxIBX*.bpl
+- frxDBX*.bpl
+- frxTee*.bpl
+- frxe*.bpl
+
+Шаг 5. Компиляция и установка design-time пакетов
+5.1. повторите шаги 5.2-5.5 для следующих пакетов:
+- FastReport 6\FastScript\dclfs*.dpk (* = версия Delphi)
+- FastReport 6\FastScript\dclfsDB*.dpk
+- FastReport 6\FastScript\dclfsBDE*.dpk
+- FastReport 6\FastScript\dclfsADO*.dpk
+- FastReport 6\FastScript\dclfsIBX*.dpk
+- FastReport 6\FastScript\dclfsTee*.dpk
+- FastReport 6\Source\dclfrx*.dpk
+- FastReport 6\Source\dclfrxDB*.dpk
+- FastReport 6\Source\ADO\dclfrxADO*.dpk
+- FastReport 6\Source\BDE\dclfrxBDE*.dpk
+- FastReport 6\Source\IBX\dclfrxIBX*.dpk
+- FastReport 6\Source\DBX\dclfrxDBX*.dpk
+- FastReport 6\Source\dclfrxTee*.dpk
+- FastReport 6\Source\ExportPack\dclfrxe*.dpk
+5.2. откройте пакет (с помощью команды меню "File|Open project...", выберите 
+  "Delphi package (*.dpk)" в качестве типа файла)
+5.3. нажмите кнопку "Compile"
+5.4. нажмите кнопку "Install"
+5.5. закройте диалог "Package", ответьте "NO" когда Delphi попросит 
+  сохранить изменения!
+

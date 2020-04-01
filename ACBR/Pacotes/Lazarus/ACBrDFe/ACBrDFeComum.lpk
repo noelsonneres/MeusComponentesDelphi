@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <Package Version="4">
+    <PathDelim Value="\"/>
+    <Name Value="ACBrDFeComum"/>
+    <Author Value="Daniel Simões de Almeida"/>
+    <CompilerOptions>
+      <Version Value="11"/>
+      <PathDelim Value="\"/>
+      <SearchPaths>
+        <OtherUnitFiles Value="..\..\..\Fontes\ACBrDFe;..\..\..\Fontes\Terceiros\Ole;..\..\..\Fontes\Terceiros\LibXmlSec"/>
+        <UnitOutputDirectory Value="..\..\..\Lib\Lazarus\ACBrDFe\$(TargetCPU)-$(TargetOS)"/>
+      </SearchPaths>
+      <Parsing>
+        <SyntaxOptions>
+          <UseAnsiStrings Value="False"/>
+        </SyntaxOptions>
+      </Parsing>
+      <Other>
+        <CompilerMessages>
+          <IgnoredMessages idx5024="True"/>
+        </CompilerMessages>
+      </Other>
+    </CompilerOptions>
+    <Description Value="ACBr - Biblioteca com Métodos e Classes em comum a todos Documentos Fiscais Eletrônicos"/>
+    <Files Count="11">
+      <Item1>
+        <Filename Value="..\..\..\Fontes\ACBrDFe\ACBrDFeConfiguracoes.pas"/>
+        <UnitName Value="ACBrDFeConfiguracoes"/>
+      </Item1>
+      <Item2>
+        <Filename Value="..\..\..\Fontes\ACBrDFe\ACBrDFeWebService.pas"/>
+        <UnitName Value="ACBrDFeWebService"/>
+      </Item2>
+      <Item3>
+        <Filename Value="..\..\..\Fontes\ACBrDFe\ACBrDFeUtil.pas"/>
+        <UnitName Value="ACBrDFeUtil"/>
+      </Item3>
+      <Item4>
+        <Filename Value="..\..\..\Fontes\ACBrDFe\ACBrDFe.pas"/>
+        <UnitName Value="ACBrDFe"/>
+      </Item4>
+      <Item5>
+        <Filename Value="..\..\..\Fontes\ACBrDFe\ACBrDFeSSL.pas"/>
+        <UnitName Value="ACBrDFeSSL"/>
+      </Item5>
+      <Item6>
+        <Filename Value="..\..\..\Fontes\ACBrDFe\ACBrDFeException.pas"/>
+        <UnitName Value="ACBrDFeException"/>
+      </Item6>
+      <Item7>
+        <Filename Value="..\..\..\Fontes\ACBrDFe\ACBrDFeRegUtil.pas"/>
+        <UnitName Value="ACBrDFeRegUtil"/>
+      </Item7>
+      <Item8>
+        <Filename Value="..\..\..\Fontes\ACBrDFe\ACBrDFeReport.pas"/>
+        <UnitName Value="ACBrDFeReport"/>
+      </Item8>
+      <Item9>
+        <Filename Value="..\..\..\Fontes\ACBrDFe\ACBrLibXml2.pas"/>
+        <UnitName Value="ACBrLibXml2"/>
+      </Item9>
+      <Item10>
+        <Filename Value="..\..\..\Fontes\ACBrDFe\ACBrXmlReader.pas"/>
+        <UnitName Value="ACBrXmlReader"/>
+      </Item10>
+      <Item11>
+        <Filename Value="..\..\..\Fontes\ACBrDFe\ACBrXmlWriter.pas"/>
+        <UnitName Value="ACBrXmlWriter"/>
+      </Item11>
+    </Files>
+    <RequiredPkgs Count="3">
+      <Item1>
+        <PackageName Value="ACBr_Integrador"/>
+      </Item1>
+      <Item2>
+        <PackageName Value="ACBrOpenSSL"/>
+      </Item2>
+      <Item3>
+        <PackageName Value="ACBrTCP"/>
+      </Item3>
+    </RequiredPkgs>
+    <UsageOptions>
+      <UnitPath Value="$(PkgOutDir)"/>
+    </UsageOptions>
+    <PublishOptions>
+      <Version Value="2"/>
+    </PublishOptions>
+  </Package>
+</CONFIG>

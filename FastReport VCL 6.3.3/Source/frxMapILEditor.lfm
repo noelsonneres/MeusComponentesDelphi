@@ -1,0 +1,380 @@
+object frxMapILEditorForm: TfrxMapILEditorForm
+  Tag = 6586
+  Left = 923
+  Height = 543
+  Top = 194
+  Width = 688
+  Caption = 'frxMapILEditorForm'
+  ClientHeight = 543
+  ClientWidth = 688
+  Color = clBtnFace
+  Constraints.MinHeight = 543
+  Constraints.MinWidth = 688
+  Font.Color = clWindowText
+  Font.Height = -10
+  Font.Name = 'Tahoma'
+  KeyPreview = True
+  OnClose = FormClose
+  OnCreate = FormCreate
+  OnKeyDown = FormKeyDown
+  OnMouseWheel = FormMouseWheel
+  OnResize = FormResize
+  Position = poScreenCenter
+  LCLVersion = '1.8.4.0'
+  object btnCancel: TButton
+    Tag = 2
+    Left = 607
+    Height = 24
+    Top = 514
+    Width = 73
+    Anchors = [akRight, akBottom]
+    Caption = 'Cancel'
+    ModalResult = 2
+    TabOrder = 1
+  end
+  object btnOk: TButton
+    Tag = 1
+    Left = 520
+    Height = 24
+    Top = 514
+    Width = 73
+    Anchors = [akRight, akBottom]
+    Caption = 'OK'
+    ModalResult = 1
+    TabOrder = 0
+  end
+  object ShapeGroupBox: TGroupBox
+    Left = 517
+    Height = 248
+    Top = 35
+    Width = 168
+    Anchors = [akTop, akRight]
+    Caption = 'Shape'
+    ClientHeight = 231
+    ClientWidth = 164
+    TabOrder = 2
+    Visible = False
+    object TagsLabel: TLabel
+      Tag = 6575
+      Left = 3
+      Height = 12
+      Top = 75
+      Width = 21
+      Caption = 'Tags'
+      ParentColor = False
+    end
+    object TagsMemo: TMemo
+      Left = 2
+      Height = 134
+      Top = 92
+      Width = 161
+      Anchors = [akTop, akLeft, akBottom]
+      ScrollBars = ssBoth
+      TabOrder = 2
+    end
+    object CancelShapeButton: TButton
+      Tag = 2
+      Left = 90
+      Height = 25
+      Top = 45
+      Width = 74
+      Caption = 'Cancel'
+      OnClick = CancelShapeButtonClick
+      TabOrder = 1
+    end
+    object SaveShapeButton: TButton
+      Tag = 6570
+      Left = 3
+      Height = 25
+      Top = 45
+      Width = 74
+      Caption = 'Save'
+      OnClick = SaveShapeButtonClick
+      TabOrder = 0
+    end
+    object RemoveShapeButton: TButton
+      Tag = 6577
+      Left = 3
+      Height = 25
+      Top = 15
+      Width = 161
+      Caption = 'Remove Shape from Layer'
+      OnClick = RemoveShapeButtonClick
+      TabOrder = 3
+    end
+  end
+  object MapPanel: TPanel
+    Left = 0
+    Height = 512
+    Top = 31
+    Width = 514
+    Align = alLeft
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    BevelInner = bvRaised
+    BevelOuter = bvLowered
+    ClientHeight = 512
+    ClientWidth = 514
+    TabOrder = 3
+    object MapPaintBox: TPaintBox
+      Left = 2
+      Height = 508
+      Top = 2
+      Width = 510
+      Align = alClient
+      OnMouseDown = MapPaintBoxMouseDown
+      OnMouseMove = MapPaintBoxMouseMove
+      OnMouseUp = MapPaintBoxMouseUp
+      OnPaint = MapPaintBoxPaint
+    end
+  end
+  object PolyGroupBox: TGroupBox
+    Left = 517
+    Height = 62
+    Top = 282
+    Width = 168
+    Anchors = [akTop, akRight]
+    Caption = 'Poly'
+    ClientHeight = 45
+    ClientWidth = 164
+    TabOrder = 4
+    Visible = False
+    object DeletePointButton: TButton
+      Tag = 6576
+      Left = 3
+      Height = 25
+      Top = 15
+      Width = 161
+      Caption = 'Delete Edited Point'
+      OnClick = DeletePointButtonClick
+      TabOrder = 0
+    end
+  end
+  object PictureGroupBox: TGroupBox
+    Left = 311
+    Height = 67
+    Top = 103
+    Width = 168
+    Anchors = [akTop, akRight]
+    Caption = 'Picture'
+    ClientHeight = 50
+    ClientWidth = 164
+    TabOrder = 5
+    Visible = False
+    object EditPictureButton: TButton
+      Tag = 6583
+      Left = 3
+      Height = 25
+      Top = -2
+      Width = 161
+      Anchors = [akLeft, akBottom]
+      Caption = 'Edit Picture'
+      Default = True
+      OnClick = EditPictureButtonClick
+      TabOrder = 0
+    end
+    object ConstrainProportionsCheckBox: TCheckBox
+      Tag = 6584
+      Left = 3
+      Height = 19
+      Top = 24
+      Width = 119
+      Anchors = [akLeft, akBottom]
+      Caption = 'Constrain Proportions'
+      OnClick = ConstrainProportionsCheckBoxClick
+      TabOrder = 1
+    end
+  end
+  object LegendGroupBox: TGroupBox
+    Left = 311
+    Height = 187
+    Top = 282
+    Width = 168
+    Anchors = [akTop, akRight]
+    Caption = 'Legend'
+    ClientHeight = 170
+    ClientWidth = 164
+    TabOrder = 6
+    Visible = False
+    object LabelFontLabel: TLabel
+      Left = -1
+      Height = 12
+      Top = 36
+      Width = 32
+      Anchors = [akTop, akRight]
+      Caption = 'Sample'
+      ParentColor = False
+    end
+    object TextMemo: TMemo
+      Left = 3
+      Height = 97
+      Top = 69
+      Width = 161
+      Anchors = [akTop, akLeft, akBottom]
+      OnChange = TextMemoChange
+      ScrollBars = ssBoth
+      TabOrder = 1
+    end
+    object LabelFontButton: TButton
+      Tag = 6397
+      Left = -1
+      Height = 19
+      Top = 15
+      Width = 75
+      Anchors = [akTop, akRight]
+      Caption = 'Font...'
+      OnClick = LabelFontButtonClick
+      TabOrder = 0
+    end
+  end
+  object TopPanel: TPanel
+    Left = 0
+    Height = 31
+    Top = 0
+    Width = 688
+    Align = alTop
+    BevelInner = bvLowered
+    ClientHeight = 31
+    ClientWidth = 688
+    TabOrder = 7
+    object SelectSpeedButton: TSpeedButton
+      Tag = 6571
+      Left = 6
+      Height = 19
+      Top = 6
+      Width = 72
+      Caption = 'Select'
+      Down = True
+      GroupIndex = 1
+    end
+    object PointSpeedButton: TSpeedButton
+      Tag = 6572
+      Left = 84
+      Height = 19
+      Top = 6
+      Width = 72
+      Caption = 'Point'
+      GroupIndex = 1
+    end
+    object PointMenuSpeedButton: TSpeedButton
+      Left = 155
+      Height = 19
+      Top = 6
+      Width = 15
+      OnClick = PointMenuSpeedButtonClick
+    end
+    object RectSpeedButton: TSpeedButton
+      Tag = 6578
+      Left = 177
+      Height = 19
+      Top = 6
+      Width = 72
+      Caption = 'Rectangle'
+      GroupIndex = 1
+    end
+    object RectMenuSpeedButton: TSpeedButton
+      Left = 249
+      Height = 19
+      Top = 6
+      Width = 15
+      OnClick = RectMenuSpeedButtonClick
+    end
+    object PictureSpeedButton: TSpeedButton
+      Tag = 6582
+      Left = 270
+      Height = 19
+      Top = 6
+      Width = 72
+      Caption = 'Picture'
+      GroupIndex = 1
+    end
+    object PictureMenuSpeedButton: TSpeedButton
+      Left = 341
+      Height = 19
+      Top = 6
+      Width = 15
+      OnClick = PictureMenuSpeedButtonClick
+    end
+    object TemplateSpeedButton: TSpeedButton
+      Left = 363
+      Height = 19
+      Top = 6
+      Width = 72
+      Caption = 'Template'
+      GroupIndex = 1
+      Visible = False
+    end
+    object TemplateMenuSpeedButton: TSpeedButton
+      Left = 434
+      Height = 19
+      Top = 6
+      Width = 15
+      Visible = False
+      OnClick = TemplateMenuSpeedButtonClick
+    end
+  end
+  object FontDialog: TFontDialog
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'MS Sans Serif'
+    MinFontSize = 0
+    MaxFontSize = 0
+    left = 24
+    top = 60
+  end
+  object PointPopupMenu: TPopupMenu
+    left = 56
+    top = 113
+    object Point1: TMenuItem
+      Tag = 6572
+      Caption = 'Point'
+      OnClick = Point1Click
+    end
+    object Polyline1: TMenuItem
+      Tag = 6573
+      Caption = 'Polyline'
+      OnClick = Point1Click
+    end
+    object Polygon1: TMenuItem
+      Tag = 6574
+      Caption = 'Polygon'
+      OnClick = Point1Click
+    end
+  end
+  object RectPopupMenu: TPopupMenu
+    left = 56
+    top = 169
+    object Rectangle1: TMenuItem
+      Tag = 6578
+      Caption = 'Rectangle'
+      OnClick = Rectangle1Click
+    end
+    object Ellipse1: TMenuItem
+      Tag = 6580
+      Caption = 'Ellipse'
+      OnClick = Rectangle1Click
+    end
+    object Diamond1: TMenuItem
+      Tag = 6581
+      Caption = 'Diamond'
+      OnClick = Rectangle1Click
+    end
+  end
+  object PicturePopupMenu: TPopupMenu
+    left = 56
+    top = 225
+    object Picture1: TMenuItem
+      Tag = 6582
+      Caption = 'Picture'
+      OnClick = Picture1Click
+    end
+    object Legend1: TMenuItem
+      Tag = 6585
+      Caption = 'Legend'
+      OnClick = Picture1Click
+    end
+  end
+  object TemplatePopupMenu: TPopupMenu
+    left = 56
+    top = 281
+  end
+end

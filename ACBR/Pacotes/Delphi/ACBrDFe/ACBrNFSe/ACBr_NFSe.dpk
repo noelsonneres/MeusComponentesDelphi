@@ -1,0 +1,73 @@
+{$I ACBr.inc}
+package ACBr_NFSe;
+
+{$R *.res}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO ON}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION OFF}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES ON}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$DESCRIPTION 'ACBr - Nota Fiscal de Serviço Eletrônica - (http://www.projetoacbr.com.br/)'}
+{$IMPLICITBUILD ON}
+
+requires
+  rtl,
+  vcl,
+  designide,
+  ACBr_DFeComum;
+
+contains
+  ACBrNFSe in '..\..\..\..\Fontes\ACBrDFe\ACBrNFSe\ACBrNFSe.pas',
+  ACBrNFSeConfiguracoes in '..\..\..\..\Fontes\ACBrDFe\ACBrNFSe\ACBrNFSeConfiguracoes.pas',
+  ACBrNFSeNotasFiscais in '..\..\..\..\Fontes\ACBrDFe\ACBrNFSe\ACBrNFSeNotasFiscais.pas',
+  ACBrNFSeReg in '..\..\..\..\Fontes\ACBrDFe\ACBrNFSe\ACBrNFSeReg.pas',
+  ACBrNFSeWebServices in '..\..\..\..\Fontes\ACBrDFe\ACBrNFSe\ACBrNFSeWebServices.pas',
+  pnfsConsts in '..\..\..\..\Fontes\ACBrDFe\ACBrNFSe\PCNNFSe\pnfsConsts.pas',
+  pnfsCancNfseResposta in '..\..\..\..\Fontes\ACBrDFe\ACBrNFSe\PCNNFSe\pnfsCancNfseResposta.pas',
+  pnfsConsSitLoteRpsResposta in '..\..\..\..\Fontes\ACBrDFe\ACBrNFSe\PCNNFSe\pnfsConsSitLoteRpsResposta.pas',
+  pnfsConversao in '..\..\..\..\Fontes\ACBrDFe\ACBrNFSe\PCNNFSe\pnfsConversao.pas',
+  pnfsEnvLoteRpsResposta in '..\..\..\..\Fontes\ACBrDFe\ACBrNFSe\PCNNFSe\pnfsEnvLoteRpsResposta.pas',
+  pnfsNFSe in '..\..\..\..\Fontes\ACBrDFe\ACBrNFSe\PCNNFSe\pnfsNFSe.pas',
+  pnfsNFSeG in '..\..\..\..\Fontes\ACBrDFe\ACBrNFSe\PCNNFSe\pnfsNFSeG.pas',
+  pnfsNFSeR in '..\..\..\..\Fontes\ACBrDFe\ACBrNFSe\PCNNFSe\pnfsNFSeR.pas',
+  pnfsNFSeW in '..\..\..\..\Fontes\ACBrDFe\ACBrNFSe\PCNNFSe\pnfsNFSeW.pas',
+  pnfsSubsNfseResposta in '..\..\..\..\Fontes\ACBrDFe\ACBrNFSe\PCNNFSe\pnfsSubsNfseResposta.pas',
+  ACBrNFSeDANFSeClass in '..\..\..\..\Fontes\ACBrDFe\ACBrNFSe\DANFSE\ACBrNFSeDANFSeClass.pas',
+  pnfsNFSeW_CONAM in '..\..\..\..\Fontes\ACBrDFe\ACBrNFSe\PCNNFSe\pnfsNFSeW_CONAM.pas',
+  pnfsNFSeW_Agili in '..\..\..\..\Fontes\ACBrDFe\ACBrNFSe\PCNNFSe\pnfsNFSeW_Agili.pas',
+  pnfsLerListaNFSe in '..\..\..\..\Fontes\ACBrDFe\ACBrNFSe\PCNNFSe\pnfsLerListaNFSe.pas',
+  pnfsAbrirSessaoResposta in '..\..\..\..\Fontes\ACBrDFe\ACBrNFSe\PCNNFSe\pnfsAbrirSessaoResposta.pas',
+  pnfsNFSeW_ABRASFv1 in '..\..\..\..\Fontes\ACBrDFe\ACBrNFSe\PCNNFSe\pnfsNFSeW_ABRASFv1.pas',
+  pnfsNFSeW_ABRASFv2 in '..\..\..\..\Fontes\ACBrDFe\ACBrNFSe\PCNNFSe\pnfsNFSeW_ABRASFv2.pas',
+  pnfsNFSeW_EGoverneISS in '..\..\..\..\Fontes\ACBrDFe\ACBrNFSe\PCNNFSe\pnfsNFSeW_EGoverneISS.pas',
+  pnfsNFSeW_EL in '..\..\..\..\Fontes\ACBrDFe\ACBrNFSe\PCNNFSe\pnfsNFSeW_EL.pas',
+  pnfsNFSeW_Elotech in '..\..\..\..\Fontes\ACBrDFe\ACBrNFSe\PCNNFSe\pnfsNFSeW_Elotech.pas',
+  pnfsNFSeW_Equiplano in '..\..\..\..\Fontes\ACBrDFe\ACBrNFSe\PCNNFSe\pnfsNFSeW_Equiplano.pas',
+  pnfsNFSeW_Governa in '..\..\..\..\Fontes\ACBrDFe\ACBrNFSe\PCNNFSe\pnfsNFSeW_Governa.pas',
+  pnfsNFSeW_Infisc in '..\..\..\..\Fontes\ACBrDFe\ACBrNFSe\PCNNFSe\pnfsNFSeW_Infisc.pas',
+  pnfsNFSeW_ISSDSF in '..\..\..\..\Fontes\ACBrDFe\ACBrNFSe\PCNNFSe\pnfsNFSeW_ISSDSF.pas',
+  pnfsNFSeW_SP in '..\..\..\..\Fontes\ACBrDFe\ACBrNFSe\PCNNFSe\pnfsNFSeW_SP.pas',
+  pnfsNFSeW_SMARAPD in '..\..\..\..\Fontes\ACBrDFe\ACBrNFSe\PCNNFSe\pnfsNFSeW_SMARAPD.pas',
+  pnfsNFSeW_IPM in '..\..\..\..\Fontes\ACBrDFe\ACBrNFSe\PCNNFSe\pnfsNFSeW_IPM.pas',
+  pnfsNFSeW_AssessorPublico in '..\..\..\..\Fontes\ACBrDFe\ACBrNFSe\PCNNFSe\pnfsNFSeW_AssessorPublico.pas',
+  pnfsNFSeW_WebFisco in '..\..\..\..\Fontes\ACBrDFe\ACBrNFSe\PCNNFSe\pnfsNFSeW_WebFisco.pas',
+  pnfsNFSeW_Giap in '..\..\..\..\Fontes\ACBrDFe\ACBrNFSe\PCNNFSe\pnfsNFSeW_Giap.pas',
+  pnfsNFSeW_Lencois in '..\..\..\..\Fontes\ACBrDFe\ACBrNFSe\PCNNFSe\pnfsNFSeW_Lencois.pas';
+
+end.

@@ -1,0 +1,55 @@
+// Package file for Delphi 10.X
+
+package frxTee26;
+{$I frx.inc}
+{$I tee.inc}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO ON}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION OFF}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES ON}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$IMPLICITBUILD ON}
+{$RUNONLY}
+{$DEFINE DEBUG}
+
+requires
+  VCL,
+{$IFDEF TeeChartStd} TEE, TEEUI, {$ENDIF}
+{$IFDEF TeeChartStd7}TEE726, TEEUI726, {$ENDIF}
+{$IFDEF TeeChartStd8}TEE826, TEEUI826, {$ENDIF}
+{$IFDEF TeeChartStd9}TEE926, TEEUI926, {$ENDIF}
+{$IFDEF TeeChart4}   TEE426, TEEPRO426, {$ENDIF}
+{$IFDEF TeeChart5}   TEE526, TEEPRO526, {$ENDIF}
+{$IFDEF TeeChart6}   TEE626, TEEPRO626, {$ENDIF}
+{$IFDEF TeeChart7}   TEE726, TEEPRO726, {$ENDIF}
+{$IFDEF TeeChart8}   TEE826, TEEPRO826, {$ENDIF}
+{$IFDEF TeeChart9}   TEE926, TEEPRO926, {$ENDIF}
+  fs26,
+  fsTee26,
+  frx26;
+
+contains
+  frxChart in 'frxChart.pas',
+  frxChartEditor in 'frxChartEditor.pas',
+  frxChartInPlaceEditor in 'frxChartInPlaceEditor.pas',
+  frxChartClipboard in 'frxChartClipboard.pas',
+  frxChartHelpers in 'frxChartHelpers.pas',
+  frxChartRTTI in 'frxChartRTTI.pas';
+
+end.

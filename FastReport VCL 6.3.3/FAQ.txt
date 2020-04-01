@@ -1,0 +1,255 @@
+﻿FAST REPORT 4 FAQ
+
+------------------------------------------------------------------------
+TABLE OF CONTENTS
+------------------------------------------------------------------------
+FR Server Component can't work on any port other than 80. 
+Is there a way to change Thousand separator inside FR4 (using FR 4.5.1) ? 
+I would like to know if there is any possibility of rotating TfrxRichView. 
+Is it possible from FastReport to set a different printer ? 
+Is Fast Report 4 Thread Safe? Are there any special properties I need to set when using FR from threads? 
+How can I limit rowcount per page ? 
+How to disconnect the use of global list of Datasets when using TfrxReport in a stream ? 
+When creating a report with cross-table , an error comes up �Could not convert variant of type (String) into type (Double)�. 
+In the report its required to write a text with fixed width into TfrxMemoView ,reducing font size from 10 and below , until the smallest . How can this be done ? 
+Can you dynamically change designer localization as well as preview windows ? 
+How can you transfer an array of variables from Delphi into FR ? 
+During compilation of the project, a message shows � Class TfrxButtonControl not found'. 
+How can you code dataset navigation connected to the report but not connected to any band in report script ? 
+How can you use report converter - Report Builder- in FR ? 
+I try to set a Memo frame in script. I write Memo1.Frame.Typ := [ftLeft, ftRight, ftTop, ftBottom]. But I receive an error. Why ? 
+How to write Report title in preview window title ? 
+Where is zmManyPages �mode in report preview window ? 
+I lost object inspector (data tree, standard tools panel) in my report designer. 
+How can you put the last record into master data on a new page ? 
+How can I use report converter - QuickReport to FastReport?  
+
+------------------------------------------------------------------------
+Question:  FR Server Component can't work on any port other than 80.
+
+ 
+Answer
+
+You have to set the port (or any other config properties you want to alter) 
+In the config.xml file in the same direction as the server  application .  
+
+------------------------------------------------------------------------
+
+Question:  Is there a way to change Thousand separator inside FR4 (using FR 4.5.1) ?
+
+ 
+Answer
+
+  Yes, change thousand separators in locale settings or change thousandSeparator variable in Delphi.  
+ 
+------------------------------------------------------------------------
+
+Question:  I would like to know if there is any possibility of rotating TfrxRichView.
+
+ 
+Answer
+
+No , you cannot rotate it .  
+ 
+------------------------------------------------------------------------
+
+Question:  Is it possible from FastReport to set a different printer ?
+
+ 
+Answer
+
+Maybe you want to use a diffrent printer in the report definition (the 
+*.fr3-file) so that this printer becomes the default printer for this 
+specific report? To do this in the report designer choose "Options..." in 
+the "Report"-menu. Select the "General" tab in the dialog and choose desired 
+printer in the printer list.
+Of course you can also select/alter printer from the preview window or by code from your delphi application.
+ 
+ 
+------------------------------------------------------------------------
+
+Question:  Is Fast Report 4 Thread Safe? Are there any special properties I need to set when using FR from threads?
+
+ 
+Answer
+
+Yes, it's Thread Safe.
+
+Create a report object inside thread and set this property:
+frxReport.EngineOptions.EnableThreadSafe := True;
+frxReport.EngineOptions.DestroyForms := False;
+
+------------------------------------------------------------------------
+
+Question:  How can I limit rowcount per page ?
+
+ 
+Answer
+
+   Use the line# variable in the OnBeforePrint event of the band write code to
+   check the line# variable and use engine.newpage to force the newpage.
+
+ 
+------------------------------------------------------------------------ 
+
+Question:  How to disconnect the use of global list of Datasets when using TfrxReport in a stream ?
+
+ 
+Answer
+
+At default FastReport uses grobal Datasets list which are initialized in the module frxClass. After creating copies of TfrxDBDataset, it adds it them this list. In view of this, it�s not possible to use Datasets with the same name (Even in different streams). For using local Datasets , you need to use the following code :
+
+  frxReport.EngineOptions.UseGlobalDataSetList := False;
+  frxReport.EnabledDataSets.Clear();
+  frxReport.EnabledDataSets.Add(frxDataSet);
+  frxReport.LoadFromFile(ReportName);
+
+------------------------------------------------------------------------  
+
+
+Question:  When creating a report with cross-table , an error comes up �Could not convert variant of type (String) into type (Double)�.
+
+ 
+Answer
+
+If in the cross-table cells you used string values, then you need to disconnect functions arguments in the cross-table editor .  
+ 
+------------------------------------------------------------------------
+
+Question:  In the report its required to write a text with fixed width into TfrxMemoView ,reducing font size from 10 and below , until the smallest . How can this be done ?
+
+ 
+Answer
+
+Use the function TfrxMemoView.CalcWidth in the TfrxMemoView.OnAfterData: 
+procedure Memo1OnAfterData(Sender: TfrxComponent);
+begin
+  Memo1.Font.Size:=10;       
+   if Memo1.CalcWidth>Memo1.Width-Memo1.GapX*2 then
+     Memo1.Font.Size:=Trunc(Memo1.Font.Size*((Memo1.Width-Memo1.GapX*2)/Memo1.CalcWidth));  
+end;
+
+------------------------------------------------------------------------
+ 
+Question:  Can you dynamically change designer localization as well as preview windows ?
+
+ 
+Answer
+
+Make language file a utility of mkall.bat ( in languages catalogue) and connect the language dynamically. 
+uses frxRes;
+frxResources.LoadFromFile('english.xml');
+
+------------------------------------------------------------------------
+
+Question:  How can you transfer an array of variables from Delphi into FR ?
+
+ 
+Answer
+
+
+var a: variant;
+begin
+ a := VarArrayOf([1,2,3]);
+ frxReport1.Script.Variables['a'] := a;
+end;
+
+------------------------------------------------------------------------ 
+ 
+Question:  During compilation of the project, a message shows � Class TfrxButtonControl not found'.
+
+ 
+Answer
+
+Add the component TfrxDialogControls (TfrxRichObject, TfrxCrossObject, TfrxOLEObject, TfrxBarCodeObject, TfrxCheckBoxObject, TfrxGradientObject, frxChartObject, TfrxADOComponents, etc.) from FR component panel into the project or add in the uses section the following modules: frxDCtrl, frxRich, frxCross, frxOLE, frxBarcode, frxChBox, frxGradient, frxChart, frxADOComponents.  
+ 
+------------------------------------------------------------------------
+
+Question:  How can you code dataset navigation connected to the report but not connected to any band in report script ?
+
+ 
+Answer
+
+
+var DS: TfrxDataSet;
+begin
+    DS:=Report.GetDataset('Items');
+    DS.First;
+    while not DS.Eof do      
+      begin          
+        ShowMessage(DS.Value('Part Name'));
+        DS.NEXT;
+      end;        
+end.
+
+------------------------------------------------------------------------ 
+
+Question:  How can you use report converter - Report Builder- in FR ?
+
+ 
+Answer
+
+Just add the module ConverterRB2FR. Into uses section.  
+ 
+------------------------------------------------------------------------
+
+Question:  I try to set a Memo frame in script. I write Memo1.Frame.Typ := [ftLeft, ftRight, ftTop, ftBottom]. But I receive an error. Why ?
+
+ 
+Answer
+
+FastReport script does not support sets . You can do this : Memo1.Frame.Typ := ftLeft + ftRight + ftTop + ftBottom;  
+ 
+------------------------------------------------------------------------
+
+Question:  How to write Report title in preview window title ?
+
+ 
+Answer
+
+Just set the following : frxReport1.ReportOptions.Name:='My Report';  
+ 
+------------------------------------------------------------------------
+
+Question:  Where is zmManyPages �mode in report preview window ?
+
+ 
+Answer
+
+In FastReport 4 there is an automatic setter of report preview window. If there are two pages, the size can be set by using the following : frxPreview1.Zoom:=(frxPreview1.Width-80)/(frxPreview1.PreviewPages.PageSize[frxPreview1.PreviewPages.CurPreviewPage].X*2);  
+ 
+------------------------------------------------------------------------
+
+Question:  I lost object inspector (data tree, standard tools panel) in my report designer.
+
+ 
+Answer
+
+Go to menu � view - settings, and click on restore settings.  
+ 
+------------------------------------------------------------------------
+
+Question:  How can you put the last record into master data on a new page ?
+
+ 
+Answer
+
+
+procedure MasterData1OnBeforePrint(Sender: TfrxComponent);
+begin
+   if MasterData1.DataSet.RecNo = MasterData1.DataSet.RecordCount-1 then Engine.NewPage;
+end;
+
+------------------------------------------------------------------------ 
+
+Question:  How can I use report converter - QuickReport to FastReport?
+
+ 
+Answer
+
+Just add the module ConverterQR2FR into uses section and using:
+conv := TConverterQr2Fr.Create;
+conv.Source := QuickRep1;
+conv.Target := FReport;
+conv.Convert;
+FReport.SaveToFile('converted_fromQR.fr3');  

@@ -1,0 +1,50 @@
+{ Это - файл ресурсов, автоматически созданный lazarus }
+
+LazarusResources.Add('TfqbLinkForm','FORMDATA',[
+  'TPF0'#12'TfqbLinkForm'#11'fqbLinkForm'#4'Left'#3#129#1#6'Height'#3#193#0#3'T'
+  +'op'#3#195#0#5'Width'#3'q'#1#18'HorzScrollBar.Page'#3'p'#1#18'VertScrollBar.'
+  +'Page'#3#192#0#13'ActiveControl'#7#8'RadioOpt'#11'BorderIcons'#11#12'biSyste'
+  +'mMenu'#0#11'BorderStyle'#7#8'bsDialog'#7'Caption'#6#12'Link Options'#12'Fon'
+  +'t.CharSet'#7#15'RUSSIAN_CHARSET'#11'Font.Height'#2#245#9'Font.Name'#6#6'Tah'
+  +'oma'#0#6'TLabel'#6'Label1'#4'Left'#2#2#6'Height'#2#17#3'Top'#2#7#5'Width'#2
+  +'&'#7'Caption'#6#7'Table 1'#5'Color'#7#6'clNone'#11'ParentColor'#8#0#0#6'TLa'
+  +'bel'#6'Label2'#4'Left'#2#2#6'Height'#2#17#3'Top'#2'.'#5'Width'#2'&'#7'Capti'
+  +'on'#6#7'Table 2'#5'Color'#7#6'clNone'#11'ParentColor'#8#0#0#6'TLabel'#6'Lab'
+  +'el3'#4'Left'#2#3#6'Height'#2#17#3'Top'#2#24#5'Width'#2'3'#7'Caption'#6#8'Co'
+  +'lumn 1'#5'Color'#7#6'clNone'#11'ParentColor'#8#0#0#6'TLabel'#6'Label4'#4'Le'
+  +'ft'#2#2#6'Height'#2#17#3'Top'#2'>'#5'Width'#2'3'#7'Caption'#6#8'Column 2'#5
+  +'Color'#7#6'clNone'#11'ParentColor'#8#0#0#11'TRadioGroup'#8'RadioOpt'#4'Left'
+  +#2#3#6'Height'#2'g'#3'Top'#2'U'#5'Width'#2'~'#7'Anchors'#11#5'akTop'#6'akLef'
+  +'t'#8'akBottom'#0#8'AutoFill'#9#7'Caption'#6#13'Join Operator'#28'ChildSizin'
+  +'g.LeftRightSpacing'#2#6#28'ChildSizing.TopBottomSpacing'#2#6#29'ChildSizing'
+  +'.EnlargeHorizontal'#7#24'crsHomogenousChildResize'#27'ChildSizing.EnlargeVe'
+  +'rtical'#7#24'crsHomogenousChildResize'#28'ChildSizing.ShrinkHorizontal'#7#14
+  +'crsScaleChilds'#26'ChildSizing.ShrinkVertical'#7#14'crsScaleChilds'#18'Chil'
+  +'dSizing.Layout'#7#29'cclLeftToRightThenTopToBottom'#27'ChildSizing.Controls'
+  +'PerLine'#2#1#9'ItemIndex'#2#0#13'Items.Strings'#1#6#1'='#6#1'<'#6#1'>'#6#2
+  +'<='#6#2'>='#6#2'<>'#0#8'TabOrder'#2#0#0#0#11'TRadioGroup'#9'RadioType'#4'Le'
+  +'ft'#3#136#0#6'Height'#2'g'#3'Top'#2'U'#5'Width'#3#139#0#7'Anchors'#11#5'akT'
+  +'op'#6'akLeft'#8'akBottom'#0#8'AutoFill'#9#7'Caption'#6#9'Join Type'#28'Chil'
+  +'dSizing.LeftRightSpacing'#2#6#28'ChildSizing.TopBottomSpacing'#2#6#29'Child'
+  +'Sizing.EnlargeHorizontal'#7#24'crsHomogenousChildResize'#27'ChildSizing.Enl'
+  +'argeVertical'#7#24'crsHomogenousChildResize'#28'ChildSizing.ShrinkHorizonta'
+  +'l'#7#14'crsScaleChilds'#26'ChildSizing.ShrinkVertical'#7#14'crsScaleChilds'
+  +#18'ChildSizing.Layout'#7#29'cclLeftToRightThenTopToBottom'#27'ChildSizing.C'
+  +'ontrolsPerLine'#2#1#9'ItemIndex'#2#0#13'Items.Strings'#1#6#5'Inner'#6#10'Le'
+  +'ft Outer'#6#11'Right Outer'#6#10'Full Outer'#0#8'TabOrder'#2#1#0#0#11'TStat'
+  +'icText'#9'txtTable1'#4'Left'#2'7'#6'Height'#2#16#3'Top'#2#7#5'Width'#3'4'#1
+  +#7'Anchors'#11#5'akTop'#6'akLeft'#7'akRight'#0#11'BorderStyle'#7#9'sbsSunken'
+  +#8'TabOrder'#2#2#0#0#11'TStaticText'#9'txtTable2'#4'Left'#2'7'#6'Height'#2#16
+  +#3'Top'#2'.'#5'Width'#3'4'#1#7'Anchors'#11#5'akTop'#6'akLeft'#7'akRight'#0#11
+  +'BorderStyle'#7#9'sbsSunken'#8'TabOrder'#2#3#0#0#11'TStaticText'#7'txtCol1'#4
+  +'Left'#2'7'#6'Height'#2#16#3'Top'#2#23#5'Width'#3'4'#1#7'Anchors'#11#5'akTop'
+  +#6'akLeft'#7'akRight'#0#11'BorderStyle'#7#9'sbsSunken'#8'TabOrder'#2#4#0#0#11
+  +'TStaticText'#7'txtCol2'#4'Left'#2'7'#6'Height'#2#16#3'Top'#2'>'#5'Width'#3
+  +'4'#1#7'Anchors'#11#5'akTop'#6'akLeft'#7'akRight'#0#11'BorderStyle'#7#9'sbsS'
+  +'unken'#8'TabOrder'#2#5#0#0#7'TBitBtn'#7'BitBtn1'#4'Left'#3'"'#1#6'Height'#2
+  +#25#3'Top'#3#130#0#5'Width'#2'K'#7'Anchors'#11#7'akRight'#8'akBottom'#0#4'Ki'
+  +'nd'#7#4'bkOK'#9'NumGlyphs'#2#0#8'TabOrder'#2#6#0#0#7'TBitBtn'#7'BitBtn2'#4
+  +'Left'#3'"'#1#6'Height'#2#25#3'Top'#3#162#0#5'Width'#2'K'#7'Anchors'#11#7'ak'
+  +'Right'#8'akBottom'#0#4'Kind'#7#8'bkCancel'#9'NumGlyphs'#2#0#8'TabOrder'#2#7
+  +#0#0#0
+]);

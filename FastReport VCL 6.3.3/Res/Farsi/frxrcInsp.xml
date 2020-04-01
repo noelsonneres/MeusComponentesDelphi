@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<Resources CodePage="1256">
+  <StrRes Name="propActive" Text="Щ…ШґШ®Шµ Щ…ЩЉЪ©Щ†ШЇ Ш¬ШЇЩ€Щ„ ШЇШ§ШЇЩ‡ ШЁШ§ШІ Ш§ШіШЄ ЩЉШ§ Щ†Щ‡"/>
+  <StrRes Name="propActive.TfrxHighlight" Text="ШЄШ№ЩЉЩЉЩ† Щ…ЩЉЪ©Щ†ШЇ Щ…ШґШ®ШµЩ‡ ЩѕШ± Ш±Щ†ЪЇ ЩЃШ№Ш§Щ„ Ш§ШіШЄ ЩЉШ§ Щ†Щ‡"/>
+  <StrRes Name="propAliasName" Text="BDE Щ†Ш§Щ… Щ…ШіШЄШ№Ш§Ш±"/>
+  <StrRes Name="propAlign" Text="Щ‡Щ… ШЄШ±Ш§ШІЩЉ ШґЩЉШЎ Ш±Ш§ ШЁШ§ ШЁШ§Щ†ШЇ ЩЉШ§ ШµЩЃШ­Щ‡ ШЄШ№ЩЉЩЉЩ† Щ…ЩЉ Ъ©Щ†ШЇ"/>
+  <StrRes Name="propAlignment" Text="Щ‡Щ… ШЄШ±Ш§ШІЩЉ Щ…ШЄЩ† ШґЩЉШЎ"/>
+  <StrRes Name="propAllowAllUp" Text="Щ…ШґШ®Шµ Щ…ЩЉЪ©Щ†ШЇ ШўЩЉШ§ ШЇШ± ЩЉЪ© ЪЇШ±Щ€Щ‡ Щ‡Щ…Щ‡ ШЄЪ©Щ…Щ‡ Щ‡Ш§ ШЇШ± ЩЉЪ© ШІЩ…Ш§Щ† Щ…ЩЉ ШЄЩ€Ш§Щ†Щ†ШЇ Щ†Ш§Щ…Щ†ШЄШ®ШЁ ШґЩ€Щ†ШЇ"/>
+  <StrRes Name="propAllowEdit" Text="ШЄШ№ЩЉЩЉЩ† Щ…ЩЉЪ©Щ†ШЇ ШўЩЉШ§ Ъ©Ш§Ш±ШЁШ± Щ…ЩЉШЄЩ€Ш§Щ†ШЇ ШµЩЃШ­Ш§ШЄ ЪЇШІШ§Ш±Шґ ШўЩ…Ш§ШЇЩ‡ Ш±Ш§ Щ€ЩЉШ±Ш§ЩЉШґ Ъ©Щ†ШЇ"/>
+  <StrRes Name="propAllowExpressions" Text="ШЄШ№ЩЉЩЉЩ† Щ…ЩЉЪ©Щ†ШЇ ШўЩЉШ§ ШґЩЉШЎ Ш±ШґШЄЩ‡ Ш§ЩЉ Щ…ЩЉШЄЩ€Ш§Щ†ШЇ ШґШ§Щ…Щ„ Ш№ШЁШ§Ш±ШЄ Щ…Ш­Ш§ШіШЁШ§ШЄЩЉ ШЁШ§ШґШЇ"/>
+  <StrRes Name="propAllowGrayed" Text="Ш§Ш¬Ш§ШІЩ‡ Щ…ЩЉШЇЩ‡ШЇ Ш¬Ш№ШЁЩ‡ Ш§Щ†ШЄШ®Ш§ШЁ Щ€Ш¶Ш№ЩЉШЄ Ш®Ш§Ъ©ШіШЄШ±ЩЉ ШЇШ§ШґШЄЩ‡ ШЁШ§ШґШЇ"/>
+  <StrRes Name="propAllowHTMLTags" Text="ШЁШ§ШґШЇ HTML ШЄШ№ЩЉЩЉЩ† Щ…ЩЉЪ©Щ†ШЇ ШўЩЉШ§ Щ…ШЄЩ† ШґЩЉШЎ Щ…ЩЉШЄЩ€Ш§Щ†ШЇ ШґШ§Щ…Щ„ ШЁШ±Ъ†ШіШЁ"/>
+  <StrRes Name="propAllowSplit" Text="ШЄШ№ЩЉЩЉЩ† Щ…ЩЉЪ©Щ†ШЇ ШўЩЉШ§ ШЁШ§Щ†ШЇ Щ…ЩЉШЄЩ€Ш§Щ†ШЇ Щ…Ш­ШЄЩ€ЩЉШ§ШЄШґ Ш±Ш§ ШЇШ± ШіШ±ШЄШ§ШіШ± ШµЩЃШ­Ш§ШЄ ШЄЩ‚ШіЩЉЩ… Ъ©Щ†ШЇ"/>
+  <StrRes Name="propAuthor" Text="Щ…Щ€Щ„ЩЃ ЪЇШІШ§Ш±Шґ"/>
+  <StrRes Name="propAutoSize.TfrxPictureView" Text="ШЄШ№ЩЉЩЉЩ† Щ…ЩЉЪ©Щ†ШЇ ШўЩЉШ§ ШЄШµЩ€ЩЉШ± ШЁШ§ЩЉШЇ ШЁШµЩ€Ш±ШЄ Ш®Щ€ШЇЪ©Ш§Ш± Ш§Щ†ШЇШ§ШІЩ‡ Ш§Шґ Ш±Ш§ ШЄЩ†ШёЩЉЩ… Ъ©Щ†ШЇ"/>
+  <StrRes Name="propAutoWidth" Text="ШЄШ№ЩЉЩЉЩ† Щ…ЩЉЪ©Щ†ШЇ ШўЩЉШ§ ШґЩЉШЎ Ш±ШґШЄЩ‡ Ш§ЩЉ ШЁШ§ЩЉШЇ ШЁШµЩ€Ш±ШЄ Ш®Щ€ШЇЪ©Ш§Ш± ЩѕЩ‡Щ†Ш§ЩЉШґ Ш±Ш§ ШЄЩ†ШёЩЉЩ… Ъ©Щ†ШЇ"/>
+  <StrRes Name="propBackPicture" Text="ШЄШµЩ€ЩЉШ± ШІЩ…ЩЉЩ†Щ‡ ШµЩЃШ­Щ‡"/>
+  <StrRes Name="propBarType" Text="Щ†Щ€Ш№ ШЁШ§Ш±Ъ©ШЇ"/>
+  <StrRes Name="propBevelInner" Text="Щ†Щ€Ш№ ЪЇЩ€Щ†ЩЉШ§ ШЇШ§Ш®Щ„ЩЉ"/>
+  <StrRes Name="propBevelOuter" Text="Щ†Щ€Ш№ ЪЇЩ€Щ†ЩЉШ§ Ш®Ш§Ш±Ш¬ЩЉ"/>
+  <StrRes Name="propBevelWidth" Text="ЩѕЩ‡Щ†Ш§ ЪЇЩ€Щ†ЩЉШ§"/>
+  <StrRes Name="propBorder" Text="ШЄШ№ЩЉЩЉЩ† Щ…ЩЉЪ©Щ†ШЇ Ш­Ш§ШґЩЉЩ‡ ШЁЩЉШ±Щ€Щ†ЩЉ Щ†Щ…Ш§ЩЉШґ ШЇШ§ШЇЩ‡ ШґЩ€ШЇ ЩЉШ§ Щ†Щ‡"/>
+  <StrRes Name="propBorderStyle" Text="Щ†Щ…Ш§ ЩѕЩ†Ш¬Ш±Щ‡"/>
+  <StrRes Name="propBottomMargin" Text="Ш§Щ†ШЇШ§ШІЩ‡ Ш­Ш§ШґЩЉЩ‡ ЩѕШ§Ш¦ЩЉЩ† ШµЩЃШ­Щ‡"/>
+  <StrRes Name="propBrushStyle" Text="Щ†Щ…Ш§ Щ†Щ‚Ш§ШґЩЉ Ш§ШіШЄЩЃШ§ШЇЩ‡ ШґШЇЩ‡ ШЇШ± ШІЩ…ЩЉЩ†Щ‡ ШґЩЉШЎ"/>
+  <StrRes Name="propCalcCheckSum" Text="ШЄШ№ЩЉЩЉЩ† Щ…ЩЉЪ©Щ†ШЇ ШўЩЉШ§ ШЁШ§Ш±Ъ©ШЇ ШЁШ§ЩЉШЇ Ш±Щ‚Щ… Щ…Щ‚Ш§ШЁЩ„Щ‡ Ш§ЩЉ Ш±Ш§ ШЁШµЩ€Ш±ШЄ Ш®Щ€ШЇЪ©Ш§Ш± Щ…Ш­Ш§ШіШЁЩ‡ Ъ©Щ†ШЇ"/>
+  <StrRes Name="propCancel" Text="ШЄШ№ЩЉЩЉЩ† Щ…ЩЉЪ©Щ†ШЇ ШўЩЉШ§ ШЄЪ©Щ…Щ‡ Ъ©Щ†ШіЩ„ ШЁШ§ЩЉШЇ ЩЃШ№Ш§Щ„ ШґЩ€ШЇ Щ€Щ‚ШЄЩЉ Ъ©Щ„ЩЉШЇ ЪЇШ±ЩЉШІ ЩЃШґШ§Ш± ШЇШ§ШЇЩ‡ ШґШЇ"/>
+  <StrRes Name="propCaption" Text="Ш№Щ†Щ€Ш§Щ† ШґЩЉШЎ"/>
+  <StrRes Name="propCellFields" Text="Щ†Ш§Щ… ЩЃЩЉЩ„ШЇ ШЁШ§Щ†Ъ© Ш§Ш·Щ„Ш§Ш№Ш§ШЄЩЉ Ъ©Щ‡ Щ†Щ…Ш§ЩЉШґ ШЇЩ‡Щ†ШЇЩ‡ ШіЩ„Щ€Щ„ Щ…Щ€Ш±ШЇ Щ†ШёШ± Ш§ШіШЄ"/>
+  <StrRes Name="propCellLevels" Text="ШґЩ…Ш§Ш±Щ‡ ШіШ·Ш­ ШіЩ„Щ€Щ„"/>
+  <StrRes Name="propCenter" Text="ШЄШ№ЩЉЩЉЩ† Щ…ЩЉЪ©Щ†ШЇ ШўЩЉШ§ ШЄШµЩ€ЩЉШ± ШЁШ§ЩЉШЇ Щ…Ш±Ъ©ШІ ШґЩЉШЎ ШЁШ§ШґШЇ"/>
+  <StrRes Name="propCharset" Text="Щ†Щ€Ш№ Ъ©ШЇ ЩЃЩ€Щ†ШЄ"/>
+  <StrRes Name="propCharSpacing" Text="ШЄШ№ШЇШ§ШЇ ЩѕЩЉЪ©ШіЩ„ ШЁЩЉЩ† ШЇЩ€ Ъ©Ш§Ш±Ш§Ъ©ШЄШ±"/>
+  <StrRes Name="propCheckColor" Text="Ш±Щ†ЪЇ Ш№Щ„Ш§Щ…ШЄ Ъ©Щ†ШЄШ±Щ„"/>
+  <StrRes Name="propChecked" Text="Щ†ШґШ§Щ† Щ…ЩЉ ШЇЩ‡ШЇ ШўЩЉШ§ ШґЩЉШЎ Ш§Щ†ШЄШ®Ш§ШЁ ШґШЇЩ‡ Ш§ШіШЄ"/>
+  <StrRes Name="propCheckStyle" Text="Щ†Щ…Ш§ЩЉ Ш№Щ„Ш§Щ…ШЄ Ъ©Щ†ШЄШ±Щ„"/>
+  <StrRes Name="propChild" Text="ШЁШ§Щ†ШЇ ЩЃШ±ШІЩ†ШЇ Щ…ШЄШµЩ„ ШґШЇЩ‡ ШЁЩ‡ Ш§ЩЉЩ† ШЁШ§Щ†ШЇ"/>
+  <StrRes Name="propClipped" Text="ШЄШ№ЩЉЩЉЩ† Щ…ЩЉЪ©Щ†ШЇ ШўЩЉШ§ Щ…ШЄЩ† ШЁШ§ЩЉШЇ ШЇШ§Ш®Щ„ ШґЩЉШЎ ШЁЪ†ШіШЁШЇ"/>
+  <StrRes Name="propCollate" Text="Щ€Ш¶Ш№ЩЉШЄ ЩѕЩЉШґ ЩЃШ±Ш¶ ШЄШ±ШЄЩЉШЁ"/>
+  <StrRes Name="propColor.TFont" Text="Ш±Щ†ЪЇ Щ…ШЄЩ†"/>
+  <StrRes Name="propColor" Text="Ш±Щ†ЪЇ ШґЩЉШЎ"/>
+  <StrRes Name="propColor.TfrxFrame" Text="Ш±Щ†ЪЇ Щ‚Ш§ШЁ"/>
+  <StrRes Name="propColor.TfrxHighlight" Text="Ш±Щ†ЪЇ ШґЩЉШЎ Ш±Ш§ ШЇШ± Ш­Ш§Щ„ШЄ ЩѕШ± Ш±Щ†ЪЇ ШЄШ№ЩЉЩЉЩ† Щ…ЩЉЪ©Щ†ШЇ"/>
+  <StrRes Name="propColumnFields" Text="Щ†Ш§Щ… ЩЃЩЉЩ„ШЇ ШЁШ§Щ†Ъ© Ш§Ш·Щ„Ш§Ш№Ш§ШЄЩЉ Ъ©Щ‡ Щ†Щ…Ш§ЩЉШґ ШЇЩ‡Щ†ШЇЩ‡ ШіШЄЩ€Щ† Щ…Щ€Ш±ШЇ Щ†ШёШ± Ш§ШіШЄ"/>
+  <StrRes Name="propColumnGap" Text="ЩЃШ§ШµЩ„Щ‡ ШЁЩЉЩ† ШіШЄЩ€Щ†Щ‡Ш§ЩЉ ШЁШ§Щ†ШЇ"/>
+  <StrRes Name="propColumnLevels" Text="ШґЩ…Ш§Ш±Щ‡ ШіШ·Ш­ ШіШЄЩ€Щ†"/>
+  <StrRes Name="propColumns" Text="ШґЩ…Ш§Ш±Щ‡ ШіШЄЩ€Щ† ШЇШ± ШЁШ§Щ†ШЇ"/>
+  <StrRes Name="propColumnWidth" Text="ЩѕЩ‡Щ†Ш§ЩЉ ШіШЄЩ€Щ† ШЁШ§Щ†ШЇ"/>
+  <StrRes Name="propCondition" Text="Ш­Ш§Щ„ШЄ ЪЇШ±Щ€Щ‡ ШЁЩ†ШЇЩЉ. ЪЇШ±Щ€Щ‡ Ш®Щ€Ш§Щ‡ШЇ ШґЪ©ШіШЄ Ш§ЪЇШ± Щ…Щ‚ШЇШ§Ш± Ш§ЩЉЩ† Ш№ШЁШ§Ш±ШЄ ШЄШєЩЉЩЉШ± Ъ©Щ†ШЇ"/>
+  <StrRes Name="propCondition.TfrxHighlight" Text="Ш№ШЁШ§Ш±ШЄ Ш±ШґШЄЩ‡. Ш§ЪЇШ± Ш§ЩЉЩ† Ш№ШЁШ§Ш±ШЄ ШµШ­ЩЉШ­ ШЁШ§ШґШЇ Ш­Ш§Щ„ШЄ ЩѕШ± Ш±Щ†ЪЇ ЩЃШ№Ш§Щ„ Ш®Щ€Ш§Щ‡ШЇ ШґШЇ"/>
+  <StrRes Name="propConnected" Text="Щ†ШґШ§Щ† Щ…ЩЉШЇЩ‡ШЇ ШўЩЉШ§ Ш§ШЄШµШ§Щ„ ШЁЩ‡ ШЁШ§Щ†Ъ© Ш§Ш·Щ„Ш§Ш№Ш§ШЄЩЉ ЩЃШ№Ш§Щ„ Ш§ШіШЄ"/>
+  <StrRes Name="propConvertNulls" Text="ШЄШ№ЩЉЩЉЩ† Щ…ЩЉЪ©Щ†ШЇ ШўЩЉШ§ Щ…Щ‚ШЇШ§Ш± ШЁШ§Щ†Ъ© Ш§Ш·Щ„Ш§Ш№Ш§ШЄЩЉ ШЄЩ‡ЩЉ ШЄШЁШЇЩЉЩ„ Ш®Щ€Ш§Щ‡ШЇ ШґШЇ ШЁЩ‡ ШµЩЃШ± - Щ†Ш§ШЇШ±ШіШЄ ЩЉШ§ Ш±ШґШЄЩ‡ ШЄЩ‡ЩЉ"/>
+  <StrRes Name="propCopies" Text="ШґЩ…Ш§Ш±Щ‡ ЩѕЩЉШґ ЩЃШ±Ш¶ Ъ©ЩѕЩЉ Щ‡Ш§ "/>
+  <StrRes Name="propCursor" Text="Щ†ШґШ§Щ†ЪЇШ± ШґЩЉШЎ"/>
+  <StrRes Name="propDatabaseName" Text="Щ†Ш§Щ… ШЁШ§Щ†Ъ© Ш§Ш·Щ„Ш§Ш№Ш§ШЄЩЉ"/>
+  <StrRes Name="propDataField" Text="ШЄШ№ЩЉЩЉЩ† Щ…ЩЉЪ©Щ†ШЇ ШґЩЉШЎ Ш§ШІ Ъ©ШЇШ§Щ… ЩЃЩЉЩ„ШЇ ШЇШ§ШЇЩ‡ Щ…ЩЉЪЇЩЉШ±ШЇ"/>
+  <StrRes Name="propDataSet" Text="Ш§ШЄШµШ§Щ„ ШґЩЉШЎ ШЁЩ‡ Ш¬ШЇЩ€Щ„ ШЇШ§ШЇЩ‡ Ъ©Щ‡ ЩЃЩЉЩ„ШЇ ШўЩ† Щ†ШґШ§Щ† ШЇШ§ШЇЩ‡ Щ…ЩЉШґЩ€ШЇ"/>
+  <StrRes Name="propDate" Text="Щ…Щ‚ШЇШ§Ш± ШЄШ§Ш±ЩЉШ® ШґЩЉШЎ"/>
+  <StrRes Name="propDateFormat" Text="Щ‚Ш§Щ„ШЁ Щ†Щ…Ш§ЩЉШґ ШЄШ§Ш±ЩЉШ® Ш±Ш§ ШЄШ№ЩЉЩЉЩ† Щ…ЩЉЪ©Щ†ШЇ"/>
+  <StrRes Name="propDecimalSeparator" Text="Ш¬ШЇШ§Ъ©Щ†Щ†ШЇЩ‡ Ш§Ш№ШґШ§Ш±"/>
+  <StrRes Name="propDefault" Text="ШЄШ№ЩЉЩЉЩ† Щ…ЩЉЪ©Щ†ШЇ ШўЩЉШ§ ШЄЪ©Щ…Щ‡ ШЄЪ©Щ…Щ‡ ЩѕЩЉШґ ЩЃШ±Ш¶ Ш§ШіШЄ"/>
+  <StrRes Name="propDefHeight" Text="Ш§Ш±ШЄЩЃШ§Ш№ ЩѕЩЉШґ ЩЃШ±Ш¶ ШіШ·Ш±"/>
+  <StrRes Name="propDescription.TfrxReportOptions" Text="ШґШ±Ш­ ЪЇШІШ§Ш±Шґ"/>
+  <StrRes Name="propDescription" Text="ШЄЩ€Ш¶ЫЊШ­ ШґЫЊШЎ"/>
+  <StrRes Name="propDiagonal" Text="ШЄШ№ЩЉЩЉЩ† Щ…ЩЉЪ©Щ†ШЇ Ш®Ш· Ш§Ш±ЩЉШЁ Ш§ШіШЄ"/>
+  <StrRes Name="propDisplayFormat" Text="Щ‚Ш§Щ„ШЁ Щ…Щ‚ШЇШ§Ш± Щ†ШґШ§Щ† ШЇШ§ШЇЩ‡ ШґШЇЩ‡"/>
+  <StrRes Name="propDoublePass" Text="ШЄШ№ЩЉЩЉЩ† Щ…ЩЉЪ©Щ†ШЇ ШўЩЉШ§ Щ…Щ€ШЄЩ€Ш± ЪЇШІШ§Ш±Шґ ШЁШ§ЩЉШЇ ШЇЩ€ШЁШ§Ш± Ш§Щ†Ш¬Ш§Щ… ШЇЩ‡ШЇ"/>
+  <StrRes Name="propDown" Text="ШЄШ№ЩЉЩЉЩ† Щ…ЩЉЪ©Щ†ШЇ ШўЩЉШ§ ШЄЪ©Щ…Щ‡ ЩЃШґШ§Ш± ШЇШ§ШЇЩ‡ ШґШЇЩ‡ Ш§ШіШЄ ЩЉШ§ Щ†Щ‡"/>
+  <StrRes Name="propDownThenAcross" Text="ШЄШ№ЩЉЩЉЩ† Щ…ЩЉЪ©Щ†ШЇ ЩЉЪ© Ш¬ШЇЩ€Щ„ ШіШЄЩ€Щ†ЩЉ ШЁШІШ±ЪЇ Ъ†ЪЇЩ€Щ†Щ‡ ШіШ±ШЄШ§ШіШ± ШµЩЃШ­Ш§ШЄ ШЄЩ‚ШіЩЉЩ… Ш®Щ€Ш§Щ‡ШЇ ШґШЇ"/>
+  <StrRes Name="propDriverName" Text="BDE Щ†Ш§Щ… ЪЇШ±ШЇШ§Щ†Щ†ШЇЩ‡"/>
+  <StrRes Name="propDropShadow" Text="ШЄШ№ЩЉЩЉЩ† Щ…ЩЉЪ©Щ†ШЇ ШўЩЉШ§ ШґЩЉШЎ ШіШ§ЩЉЩ‡ ШЇШ§Ш±ШЇ"/>
+  <StrRes Name="propDuplex" Text="(ШЄШ№ЩЉЩЉЩ† Щ…ЩЉЪ©Щ†ШЇ ШµЩЃШ­Щ‡ ШЇЩ€ Ш·Ш±ЩЃЩ‡ Ш§ШіШЄ (ШЇЩ€ Ш±Щ€"/>
+  <StrRes Name="propEditMask" Text="Щ…Ш§ШіЪ©ЩЉ Ш±Ш§ Щ†ШґШ§Щ† Щ…ЩЉШЇЩ‡ШЇ Ъ©Щ‡ ШЄШ№ЩЉЩЉЩ† Щ…ЩЉЪ©Щ†ШЇ ШЁШ±Ш§ЩЉ ШґЩЉШЎ Щ€ЩЉШ±Ш§ЩЉШґ Щ…Ш§ШіЪ©ШЇШ§Ш± Ъ†Щ‡ Щ…ШЄЩ†ЩЉ Щ…Ш№ШЄШЁШ± Ш§ШіШЄ"/>
+  <StrRes Name="propEnabled" Text="ШЄШ№ЩЉЩЉЩ† Щ…ЩЉЪ©Щ†ШЇ ШўЩЉШ§ ШґЩЉШЎ ЩЃШ№Ш§Щ„ Ш§ШіШЄ"/>
+  <StrRes Name="propEngineOptions" Text="ЪЇШІЩЉЩ†Щ‡ Щ‡Ш§ЩЉ Щ…Щ€ШЄЩ€Ш± ЪЇШІШ§Ш±Шґ"/>
+  <StrRes Name="propExpression" Text="Щ…Щ‚ШЇШ§Ш± Ш§ЩЉЩ† Ш№ШЁШ§Ш±ШЄ ШЇШ± ШґЩЉШЎ Щ†ШґШ§Щ† ШЇШ§ШЇЩ‡ Ш®Щ€Ш§Щ‡ШЇ ШґШЇ"/>
+  <StrRes Name="propExpressionDelimiters" Text="Ш§ЩЉЩ† Ъ©Ш§Ш±Ш§Ъ©ШЄШ± ШЁЩ‡ Ш№Щ†Щ€Ш§Щ† Ш№Щ„Ш§Щ…ШЄ Ш¬ШЇШ§ШіШ§ШІ Щ€ ШЇШ± Щ…ЩЉШ§Щ† ЪЇЩЉШ±Щ†ШЇЩ‡ Ш№ШЁШ§Ш±ШЄ ШЁЪ©Ш§Ш± Щ…ЩЉШ±Щ€ШЇ"/>
+  <StrRes Name="propFieldAliases" Text="Щ†Ш§Щ… Щ…ШіШЄШ№Ш§Ш± ЩЃЩЉЩ„ШЇ Ш¬ШЇЩ€Щ„ ШЇШ§ШЇЩ‡"/>
+  <StrRes Name="propFilter" Text="ШґШ±Ш· ЩЃЩЉЩ„ШЄШ± Ш¬ШЇЩ€Щ„ ШЇШ§ШЇЩ‡"/>
+  <StrRes Name="propFiltered" Text="ШЄШ№ЩЉЩЉЩ† Щ…ЩЉЪ©Щ†ШЇ ШўЩЉШ§ Ш¬ШЇЩ€Щ„ ШЇШ§ШЇЩ‡ ШЁШ§ЩЉШЇ ЩѕШ±Щ€Щ†ШЇЩ‡ Щ‡Ш§ Ш±Ш§  ЩЃЩЉЩ„ШЄШ± Ъ©Щ†ШЇ ШЁШ§ Ш§ШіШЄЩЃШ§ШЇЩ‡ Ш§ШІ ШґШ±Ш· Ш®ШµЩ€ШµЩЉШЄ ЩЃЩЉЩ„ШЄШ±"/>
+  <StrRes Name="propFlowTo" Text="Ш§ЩЉЩ† ШґЩЉШЎ Щ…ШЄЩ†ЩЉ Ш±Ш§ Щ†ШґШ§Щ† Щ…ЩЉШЇЩ‡ШЇ Ъ©Щ‡ ШЇШ± ШґЩЉШЎ Ш§ШµЩ„ЩЉ Ш¬Ш§ Щ†Щ…ЩЉЪЇЩЉШ±ШЇ"/>
+  <StrRes Name="propFont" Text="Щ…ШґШ®ШµЩ‡ ЩЃЩ€Щ†ШЄ ШґЩЉШЎ"/>
+  <StrRes Name="propFooterAfterEach" Text="ШЄШ№ЩЉЩЉЩ† Щ…ЩЉЪ©Щ†ШЇ ШўЩЉШ§ ЩѕШ§Щ€Ш±Щ‚ЩЉ ШЁШ§ЩЉШЇ ШЁШ№ШЇ Ш§ШІ Щ‡Ш± ШіШ·Ш± ШЇШ§ШЇЩ‡ Щ†ШґШ§Щ† ШЇШ§ШЇЩ‡ ШґЩ€ШЇ"/>
+  <StrRes Name="propFormatStr" Text="Щ‚Ш§Щ„ШЁ ШЁЩ†ШЇЩЉ Ш±ШґШЄЩ‡"/>
+  <StrRes Name="propFrame" Text="Щ…ШґШ®ШµЩ‡ Ъ†Ш§Ш±Ъ†Щ€ШЁ ШґЩЉШЎ"/>
+  <StrRes Name="propGapX" Text="ЩЃШ§ШµЩ„Щ‡ Щ…ШЄЩ† Ш§ШІ Щ„ШЁЩ‡ Ъ†Щѕ"/>
+  <StrRes Name="propGapY" Text="ЩЃШ§ШµЩ„Щ‡ Щ…ШЄЩ† Ш§ШІ ШЁШ§Щ„Ш§"/>
+  <StrRes Name="propGlyph" Text="ШЄШµЩ€ЩЉШ± ШґЩЉШЎ"/>
+  <StrRes Name="propGroupIndex" Text="Ш§Ш¬Ш§ШІЩ‡ Щ…ЩЉШЇЩ‡ШЇ ШЄЪ©Щ…Щ‡ Щ‡Ш§ЩЉ ШіШ±ЩЉШ№ ШЇШ± ЩЉЪ© ЪЇШ±Щ€Щ‡ ШЁШ§ ЩЉЪ©ШЇЩЉЪЇШ± Ъ©Ш§Ш± Ъ©Щ†Щ†ШЇ"/>
+  <StrRes Name="propHAlign" Text="Щ‡Щ… ШЄШ±Ш§ШІЩЉ Ш§ЩЃЩ‚ЩЉ Щ…ШЄЩ†"/>
+  <StrRes Name="propHeight" Text="Ш§Ш±ШЄЩЃШ§Ш№ ШґЩЉШЎ"/>
+  <StrRes Name="propHideZeros" Text="ШЄШ№ЩЉЩЉЩ† Щ…ЩЉЪ©Щ†ШЇ ШўЩЉШ§ Щ…Щ‚ШЇШ§Ш± ШµЩЃШ± ШЁШ±Ш§ЩЉ Щ…ШЄЩ† ШґЩЉШЎ Щ†Щ…Ш§ЩЉШґ ШЇШ§ШЇЩ‡ ШґЩ€ШЇ"/>
+  <StrRes Name="propHighlight" Text="ШґШ±Ш· Щ…ШґШ®ШµЩ‡ ЩѕШ± Ш±Щ†ЪЇ"/>
+  <StrRes Name="propIndexName" Text="Щ†Ш§Щ… ШґШ§Ш®Шµ"/>
+  <StrRes Name="propInitString" Text="ШЇШіШЄЩ€Ш± Ш±Ш§Щ‡ Ш§Щ†ШЇШ§ШІ Ъ†Ш§ЩѕЪЇШ± ШЁШ±Ш§ЩЉ Ъ†Ш§ЩѕЪЇШ±Щ‡Ш§ЩЉ ШіЩ€ШІЩ†ЩЉ"/>
+  <StrRes Name="propItems" Text="Щ„ЩЉШіШЄ Ш§Щ‚Щ„Ш§Щ… Ш§ШІ ШґЩЉШЎ"/>
+  <StrRes Name="propKeepAspectRatio" Text="Щ†ЪЇЩ‡ ШЇШ§ШґШЄЩ† Щ†ШіШЁШЄ ШЇЩЉШЇ Щ€Ш§Щ‚Ш№ЩЉ ШЄШµЩ€ЩЉШ±"/>
+  <StrRes Name="propKeepChild" Text="ШЄШ№ЩЉЩЉЩ† Щ…ЩЉЪ©Щ†ШЇ ШўЩЉШ§ ШЁШ§Щ†ШЇ Щ€ ЩЃШ±ШІЩ†ШЇШґ ШЁШ§ Щ‡Щ… Ъ†Ш§Щѕ Ш®Щ€Ш§Щ‡Щ†ШЇ ШґШЇ"/>
+  <StrRes Name="propKeepFooter" Text="ШЄШ№ЩЉЩЉЩ† Щ…ЩЉЪ©Щ†ШЇ ШўЩЉШ§ ШЁШ§Щ†ШЇ Щ€ ЩѕШ§Щ€Ш±Щ‚ЩЉ Ш§Шґ ШЁШ§ Щ‡Щ… Ъ†Ш§Щѕ Ш®Щ€Ш§Щ‡Щ†ШЇ ШґШЇ"/>
+  <StrRes Name="propKeepHeader" Text="ШЄШ№ЩЉЩЉЩ† Щ…ЩЉЪ©Щ†ШЇ ШўЩЉШ§ ШЁШ§Щ†ШЇ Щ€ ШіШ±ШўЩ…ШЇШґ ШЁШ§ Щ‡Щ… Ъ†Ш§Щѕ Ш®Щ€Ш§Щ‡Щ†ШЇ ШґШЇ"/>
+  <StrRes Name="propKeepTogether" Text="ШЄШ№ЩЉЩЉЩ† Щ…ЩЉЪ©Щ†ШЇ ШўЩЉШ§ ШЁШ§Щ†ШЇ Щ€ Щ‡Щ…Щ‡ ШІЩЉШ± ШЁШ§Щ†ШЇЩ‡Ш§ЩЉШґ ШЁШ§ Щ‡Щ… Ъ†Ш§Щѕ Ш®Щ€Ш§Щ‡Щ†ШЇ ШґШЇ"/>
+  <StrRes Name="propKind.TfrxFormat" Text="Щ†Щ€Ш№ Щ‚Ш§Щ„ШЁ ШЁЩ†ШЇЩЉ"/>
+  <StrRes Name="propKind" Text="Щ†Щ€Ш№ ШЄЪ©Щ…Щ‡"/>
+  <StrRes Name="propLargeDesignHeight" Text="ШЄШ№ЩЉЩЉЩ† Щ…ЩЉЪ©Щ†ШЇ ШўЩЉШ§ ШЇШ± Ш­Ш§Щ„ШЄ Ш·Ш±Ш§Ш­ЩЉ ШµЩЃШ­Щ‡ Ш§Ш±ШЄЩЃШ§Ш№ ШЁШІШ±ЪЇ Ш®Щ€Ш§Щ‡ШЇ ШЇШ§ШґШЄ"/>
+  <StrRes Name="propLayout" Text="Ш·Ш±Ш­ Ш№Щ„Щ„Ш§Щ…ШЄ ШЄЪ©Щ…Щ‡"/>
+  <StrRes Name="propLeft" Text="Щ…Ш®ШЄШµ Ъ†Щѕ ШґЩЉШЎ"/>
+  <StrRes Name="propLeftMargin" Text="Ш§Щ†ШЇШ§ШІЩ‡ Ш­Ш§ШґЩЉЩ‡ Ъ†Щѕ ШµЩЃШ­Щ‡"/>
+  <StrRes Name="propLines" Text="Щ…ШЄЩ† ШґЩЉШЎ"/>
+  <StrRes Name="propLineSpacing" Text="ШЄШ№ШЇШ§ШЇ ЩѕЩЉЪ©ШіЩ„ ШЁЩЉЩ† ШЇЩ€ Ш®Ш· Щ…ШЄЩ†"/>
+  <StrRes Name="propLoginPrompt" Text="ШЄШ№ЩЉЩЉЩ† Щ…ЩЉЪ©Щ†ШЇ ШўЩЉШ§ ЪЇЩЃШЄЪЇЩ€ Щ€Ш±Щ€ШЇ ШЁЩ‡ ШіЩЉШіШЄЩ… Щ†ШґШ§Щ† ШЇШ§ШЇЩ‡ ШґЩ€ШЇ"/>
+  <StrRes Name="propMargin" Text="ШЄШ№ШЇШ§ШЇ ЩѕЩЉЪ©ШіЩ„Щ‡Ш§ ШЁЩЉЩ† Щ„ШЁЩ‡ ШЄШµЩ€ЩЉШ± Щ€ Щ„ШЁЩ‡ ШЄЪ©Щ…Щ‡ Ш±Ш§ ШЄШ№ЩЉЩЉЩ† Щ…ЩЉЪ©Щ†ШЇ"/>
+  <StrRes Name="propMaster" Text="Ш¬ШЇЩ€Щ„ ШЇШ§ШЇЩ‡ Ш§ШµЩ„ЩЉ"/>
+  <StrRes Name="propMasterFields" Text="ЩЃЩЉЩ„ШЇ ЩѕЩЉЩ€Щ†ШЇЩЉ Ш±Ш§ШЁШ·Щ‡ Ш§ЩЉ Ш§ШµЩ„ЩЉ - Ш¬ШІШ¦ЩЉ"/>
+  <StrRes Name="propMaxLength" Text="Ш­ШЇШ§Ъ©Ш«Ш± Ш·Щ€Щ„ Щ…ШЄЩ†"/>
+  <StrRes Name="propMaxWidth" Text="Ш­ШЇШ§Ъ©Ш«Ш± ЩѕЩ‡Щ†Ш§ЩЉ ШіШЄЩ€Щ†"/>
+  <StrRes Name="propMemo" Text="Щ…ШЄЩ† ШґЩЉШЎ"/>
+  <StrRes Name="propMinWidth" Text="Ш­ШЇШ§Щ‚Щ„ ЩѕЩ‡Щ†Ш§ЩЉ ШіШЄЩ€Щ†"/>
+  <StrRes Name="propMirrorMargins" Text="Ш­Ш§ШґЩЉЩ‡ Ъ†Щѕ Щ€ Ш±Ш§ШіШЄ Ш±Ш§ ШЇШ± ШµЩЃШ­Ш§ШЄ ШІЩ€Ш¬ Ш¬Ш§ШЁШ¬Ш§ Щ…ЩЉЪ©Щ†ШЇ"/>
+  <StrRes Name="propModalResult" Text="ШЄШ№ЩЉЩЉЩ† Щ…ЩЉЪ©Щ†ШЇ Ъ†ЪЇЩ€Щ†Щ‡ ЩЉЪ© ШЄЪ©Щ…Щ‡ ЩЃШ±Щ… ШґШ±Ш·ЩЉ Ш§Шґ Ш±Ш§ Щ…ЩЉШЁЩ†ШЇШЇ"/>
+  <StrRes Name="propName.TFont" Text="Щ†Ш§Щ… ЩЃЩ€Щ†ШЄ"/>
+  <StrRes Name="propName.TfrxReportOptions" Text="Щ†Ш§Щ… ЪЇШІШ§Ш±Шґ"/>
+  <StrRes Name="propName" Text="Щ†Ш§Щ… ШґЩЉШЎ"/>
+  <StrRes Name="propNumGlyphs" Text="ШЄШ№ШЇШ§ШЇ ШЄШµЩ€ЩЉШ± Ш±Ш§ ШЇШ± ШЄШµЩ€ЩЉШ±ЩЉ Ъ©Щ‡ ШЁШ±Ш§ЩЉ Ш®ШµЩ€ШµЩЉШЄ Ш№Щ„Ш§Щ…ШЄ ШЁЪ©Ш§Ш± Ш±ЩЃШЄЩ‡ Щ†ШґШ§Щ† Щ…ЩЉШЇЩ‡ШЇ"/>
+  <StrRes Name="propOpenDataSource" Text="ШЄШ№ЩЉЩЉЩ† Щ…ЩЉЪ©Щ†ШЇ ШўЩЉШ§ ШЁШ§Щ†Ъ© Ш§Ш·Щ„Ш§Ш№Ш§ШЄЩЉ ШЁШ·Щ€Ш± Ш®Щ€ШЇЪ©Ш§Ш± ШЁШ§ШІ ШґЩ€ШЇ ЩЉШ§ Щ†Щ‡"/>
+  <StrRes Name="propOrientation" Text="Ш¬Щ‡ШЄ ШµЩЃШ­Щ‡"/>
+  <StrRes Name="propOutlineText" Text="Ш§ЩЉЩ† Щ…ШЄЩ† ШЇШ± ЩѕЩ†Ш¬Ш±Щ‡ ЩѕЩЉШґ Щ†Щ…Ш§ЩЉШґ ШЇШ± Ъ©Щ†ШЄШ±Щ„Ш± ШІЩ…ЩЉЩ†Щ‡ Щ†ШґШ§Щ† ШЇШ§ШЇЩ‡ Ш®Щ€Ш§Щ‡ШЇ ШґШЇ"/>
+  <StrRes Name="propOutlineVisible" Text="ЩѕШЇЩЉШЇШ§Ш±ЩЉ Ъ©Щ†ШЄШ±Щ„Ш± ШІЩ…ЩЉЩ†Щ‡ ШЇШ± ЩѕЩ†Ш¬Ш±Щ‡ ЩѕЩЉШґ Щ†Щ…Ш§ЩЉШґ"/>
+  <StrRes Name="propOutlineWidth" Text="ЩѕЩ‡Щ†Ш§ЩЉ Ъ©Щ†ШЄШ±Щ„Ш± ШІЩ…ЩЉЩ†Щ‡ ШЇШ± ЩѕЩ†Ш¬Ш±Щ‡ ЩѕЩЉШґ Щ†Щ…Ш§ЩЉШґ"/>
+  <StrRes Name="propPageNumbers.TfrxPrintOptions" Text="ШґЩ…Ш§Ш±Щ‡ ШµЩЃШ­Ш§ШЄЩЉ Ъ©Щ‡ Ъ†Ш§Щѕ Щ…ЩЉШґЩ€Щ†ШЇ"/>
+  <StrRes Name="propPaperHeight" Text="Ш§Ш±ШЄЩЃШ§Ш№ ШµЩЃШ­Щ‡"/>
+  <StrRes Name="propPaperWidth" Text="ЩѕЩ‡Щ†Ш§ЩЉ ШµЩЃШ­Щ‡"/>
+  <StrRes Name="propParagraphGap" Text="ЩЃШ§ШµЩ„Щ‡ ( ШЄЩ€ Ш±ЩЃШЄЪ©ЩЉ ) Ш§Щ€Щ„ЩЉЩ† Ш®Ш· ЩѕШ§Ш±Ш§ЪЇШ±Ш§ЩЃ"/>
+  <StrRes Name="propParams.TfrxBDEDatabase" Text="ЩѕШ§Ш±Ш§Щ…ШЄШ±Щ‡Ш§ЩЉ Ш§ШЄШµШ§Щ„ ШЁШ§Щ†Ъ© Ш§Ш·Щ„Ш§Ш№Ш§ШЄЩЉ"/>
+  <StrRes Name="propParams" Text="Query ЩѕШ§Ш±Ш§Щ…ШЄШ±Щ‡Ш§ЩЉ ЩѕШ±Ші Щ€ Ш¬Щ€"/>
+  <StrRes Name="propParentFont" Text="ШЄШ№ЩЉЩЉЩ† Щ…ЩЉЪ©Щ†ШЇ ШўЩЉШ§ ШґЩЉШЎ ЩЃЩ€Щ†ШЄ ЩѕШЇШ± Ш±Ш§ Ш§ШіШЄЩЃШ§ШЇЩ‡ Ш®Щ€Ш§Щ‡ШЇ Ъ©Ш±ШЇ"/>
+  <StrRes Name="propPassword" Text="Ъ©Щ„Щ…Щ‡ Ш±Щ…ШІ ЪЇШІШ§Ш±Шґ"/>
+  <StrRes Name="propPasswordChar" Text="Ъ©Ш§Ш±Ш§Ъ©ШЄШ± Щ†Щ…Ш§ЩЉШґЩЉ Ъ©Щ‡ ШЁШ¬Ш§ЩЉ Ъ©Ш§Ш±Ш§Ъ©ШЄШ±Щ‡Ш§ЩЉЩЉ Ъ©Щ‡ ШЇШ± ШґЩЉШЎ ШЄШ§ЩЉЩѕ Щ…ЩЉШґЩ€Щ†ШЇ Щ†ШґШ§Щ† ШЇШ§ШЇЩ‡ Щ…ЩЉШґЩ€ШЇ"/>
+  <StrRes Name="propPicture" Text="ШЄШµЩ€ЩЉШ±"/>
+  <StrRes Name="propPicture.TfrxReportOptions" Text="ШЄШµЩ€ЩЉШ± ШЄШґШ±ЩЉШ­ЩЉ ЪЇШІШ§Ш±Шґ"/>
+  <StrRes Name="propPosition" Text="Ш§Щ€Щ„ЩЉЩ† Щ…Щ€Щ‚Ш№ЩЉШЄ ЩѕЩ†Ш¬Ш±Щ‡"/>
+  <StrRes Name="propPreviewOptions" Text="ЪЇШІЩЉЩ†Щ‡ Щ‡Ш§ЩЉ ЩѕЩ†Ш¬Ш±Щ‡ ЩѕЩЉШґ Щ†Щ…Ш§ЩЉШґ ЪЇШІШ§Ш±Шґ"/>
+  <StrRes Name="propPrintable" Text="Щ‚Ш§ШЁЩ„ЩЉШЄ Ъ†Ш§Щѕ ШґЩЉШЎ. ШґЩЉШЎ ШЁШ§ Щ‚Ш§ШЁЩ„ЩЉШЄ Ъ†Ш§Щѕ Щ†Ш§ШЇШ±ШіШЄ ШЇШ± ЩѕЩ†Ш¬Ш±Щ‡ ЩѕЩЉШґ Щ†Щ…Ш§ЩЉШґ Щ†ШґШ§Щ† ШЇШ§ШЇЩ‡ Щ…ЩЉШґЩ€ШЇ Щ€Щ„ЩЉ Ъ†Ш§Щѕ Щ†Щ…ЩЉШґЩ€ШЇ"/>
+  <StrRes Name="propPrintChildIfInvisible" Text="ШЄШ№ЩЉЩЉЩ† Щ…ЩЉЪ©Щ†ШЇ ШўЩЉШ§ ШЁШ§Щ†ШЇ ЩЃШ±ШІЩ†ШЇ Ъ†Ш§Щѕ Ш®Щ€Ш§Щ‡ШЇ ШґШЇ Ш§ЪЇШ± ШЁШ§Щ†ШЇ ЩѕШЇШ± Щ†Ш§Щ…Ш±Ш¦ЩЉ ШЁШ§ШґШЇ"/>
+  <StrRes Name="propPrinter" Text="Щ†Ш§Щ… Ъ†Ш§ЩѕЪЇШ±ЩЉ Ъ©Щ‡ Щ‡Щ†ЪЇШ§Щ… ШЁШ§ШІ ЩЉШ§ Ш§Ш¬Ш±Ш§ Ъ©Ш±ШЇЩ† ЪЇШІШ§Ш±Шґ Ш§Щ†ШЄШ®Ш§ШЁ Ш®Щ€Ш§Щ‡ШЇ ШґШЇ"/>
+  <StrRes Name="propPrintIfDetailEmpty" Text="ШЄШ№ЩЉЩЉЩ† Щ…ЩЉЪ©Щ†ШЇ ШўЩЉШ§ ШЁШ§Щ†ШЇ Ш§Ш·Щ„Ш§Ш№Ш§ШЄ Ъ†Ш§Щѕ Ш®Щ€Ш§Щ‡ШЇ ШґШЇ Ш§ЪЇШ± Щ‡Щ…Щ‡ ШІЩЉШ± ШЁШ§Щ†ШЇЩ‡Ш§ЩЉ ШўЩ† Ш®Ш§Щ„ЩЉ ШЁШ§ШґЩ†ШЇ"/>
+  <StrRes Name="propPrintIfEmpty" Text="ШЄШ№ЩЉЩЉЩ† Щ…ЩЉЪ©Щ†ШЇ ШўЩЉШ§ ШµЩЃШ­Щ‡ Ъ†Ш§Щѕ Ш®Щ€Ш§Щ‡ШЇ ШґШЇ Ш§ЪЇШ± Щ‡Щ…Щ‡ Ш¬ШЇШ§Щ€Щ„ Ш§Ш·Щ„Ш§Ш№Ш§ШЄЩЉ ШўЩ† Ш®Ш§Щ„ЩЉ ШЁШ§ШґЩ†ШЇ"/>
+  <StrRes Name="propPrintOnFirstPage" Text="ШЄШ№ЩЉЩЉЩ† Щ…ЩЉЪ©Щ†ШЇ ШўЩЉШ§ ШЁШ§Щ†ШЇ ШЇШ± ШµЩЃШ­Щ‡ Ш§Щ€Щ„ Ъ†Ш§Щѕ Ш®Щ€Ш§Щ‡ШЇ ШґШЇ"/>
+  <StrRes Name="propPrintOnLastPage" Text="ШЄШ№ЩЉЩЉЩ† Щ…ЩЉЪ©Щ†ШЇ ШўЩЉШ§ ШЁШ§Щ†ШЇ ШЇШ± ШµЩЃШ­Щ‡ ШўШ®Ш± Ъ†Ш§Щѕ Ш®Щ€Ш§Щ‡ШЇ ШґШЇ"/>
+  <StrRes Name="propPrintOnParent" Text="ШЄШ№ЩЉЩЉЩ† Щ…ЩЉЪ©Щ†ШЇ ШўЩЉШ§ ШІЩЉШ± ЪЇШІШ§Ш±Шґ Щ…ЩЉШЄЩ€Ш§Щ†ШЇ Ш±Щ€ЩЉ ШЁШ§Щ†ШЇ ЩѕШЇШ± Ъ†Ш§Щѕ ШґЩ€ШЇ"/>
+  <StrRes Name="propPrintOnPreviousPage" Text="ШЄШ№ЩЉЩЉЩ† Щ…ЩЉЪ©Щ†ШЇ ШўЩЉШ§ ШµЩЃШ­Щ‡ Щ…ЩЉШЄЩ€Ш§Щ†ШЇ Ш±Щ€ЩЉ ЩЃШ¶Ш§ЩЉ Ш®Ш§Щ„ЩЉ ШµЩЃШ­Щ‡ Щ‚ШЁЩ„ Ъ†Ш§Щѕ ШґЩ€ШЇ"/>
+  <StrRes Name="propPrintOptions" Text="ЪЇШІЩЉЩ†Щ‡ Щ‡Ш§ЩЉ Ъ†Ш§Щѕ ЪЇШІШ§Ш±Шґ"/>
+  <StrRes Name="propPrintPages" Text="ШЄШ№ЩЉЩЉЩ† Щ…ЩЉЪ©Щ†ШЇ ШўЩЉШ§  ШµЩЃШ­Ш§ШЄ ШІЩ€Ш¬ ЩЉШ§ ЩЃШ±ШЇ ЩЉШ§ Щ‡Щ…Щ‡ Ъ†Ш§Щѕ Щ…ЩЉШґЩ€Щ†ШЇ"/>
+  <StrRes Name="propRangeBegin" Text="Щ†Щ‚Ш·Щ‡ ШґШ±Щ€Ш№ Ш¬ШЇЩ€Щ„ ШЇШ§ШЇЩ‡ Ш±Ш§ ШЄШ№ЩЉЩЉЩ† Щ…ЩЉЪ©Щ†ШЇ"/>
+  <StrRes Name="propRangeEnd" Text="Щ†Щ‚Ш·Щ‡ ЩѕШ§ЩЉШ§Щ† Ш¬ШЇЩ€Щ„ ШЇШ§ШЇЩ‡ Ш±Ш§ ШЄШ№ЩЉЩЉЩ† Щ…ЩЉЪ©Щ†ШЇ"/>
+  <StrRes Name="propRangeEndCount" Text="reCount ШЄШ№ШЇШ§ШЇ ЩѕШ±Щ€Щ†ШЇЩ‡ Щ‡Ш§ ШЇШ± Ш¬ШЇЩ€Щ„ ШЇШ§ШЇЩ‡ Ш±Ш§ ШЄШ№ЩЉЩЉЩ† Щ…ЩЉЪ©Щ†ШЇ Ш§ЪЇШ± Щ†Щ‚Ш·Щ‡ ЩѕШ§ЩЉШ§Щ† ШЁШ±Ш§ШЁШ± ШґЩ€ШЇ ШЁШ§"/>
+  <StrRes Name="propReadOnly" Text="ШЄШ№ЩЉЩЉЩ† Щ…ЩЉЪ©Щ†ШЇ ШўЩЉШ§ Щ…ШЄЩ† ШґЩЉШЎ Щ‚Ш· Ш®Щ€Ш§Щ†ШЇЩ†ЩЉ Ш§ШіШЄ"/>
+  <StrRes Name="propRepeatHeaders" Text="ШЄШ№ЩЉЩЉЩ† Щ…ЩЉЪ©Щ†ШЇ ШўЩЉШ§ ШЇШ± Ш¬ШЇЩ€Щ„ ШіШЄЩ€Щ†ЩЉ ШіШ±ШўЩ…ШЇ ШіШЄШ± Щ€ ШіШЄЩ€Щ†Щ‡Ш§ ШЇШ± ШµЩЃШ­Щ‡ Ш¬ШЇЩЉШЇ Ъ†Ш§Щѕ Ш®Щ€Ш§Щ‡ШЇ ШґШЇ"/>
+  <StrRes Name="propReportOptions" Text="ЪЇШІЩЉЩ†Щ‡ Щ‡Ш§ЩЉ ЪЇШІШ§Ш±Шґ"/>
+  <StrRes Name="propReprintOnNewPage" Text="ШЄШ№ЩЉЩЉЩ† Щ…ЩЉЪ©Щ†ШЇ ШўЩЉШ§ ШЁШ§Щ†ШЇ ШЇШ± ШµЩЃШ­Щ‡ Ш¬ШЇЩЉШЇ Ъ†Ш§Щѕ Ш®Щ€Ш§Щ‡ШЇ ШґШЇ"/>
+  <StrRes Name="propRestrictions" Text="Щ…Ш¬Щ…Щ€Ш№Щ‡ Ш№Щ„Ш§Щ…ШЄЩ‡Ш§ЩЉ Щ…Ш­ШЇЩ€ШЇ Ъ©Щ†Щ†ШЇЩ‡"/>
+  <StrRes Name="propRightMargin" Text="Ш§Щ†ШЇШ§ШІЩ‡ Ш­Ш§ШґЩЉЩ‡ Ш±Ш§ШіШЄ ШµЩЃШ­Щ‡"/>
+  <StrRes Name="propRotation.TfrxBarCodeView" Text="Ш¬Щ‡ШЄ ШЁШ§Ш±Ъ©ШЇ"/>
+  <StrRes Name="propRotation" Text="ШІШ§Щ€ЩЉЩ‡ Ъ†Ш±Ш®Шґ Щ…ШЄЩ†"/>
+  <StrRes Name="propRowCount" Text="ШЄШ№ШЇШ§ШЇ ЩѕШ±Щ€Щ†ШЇЩ‡ Щ‡Ш§ ШЇШ± ШЁШ§Щ†ШЇ Ш§Ш·Щ„Ш§Ш№Ш§ШЄЩЉ"/>
+  <StrRes Name="propRowFields" Text="Щ†Ш§Щ… ЩЃЩЉЩ„ШЇ ШЁШ§Щ†Ъ© Ш§Ш·Щ„Ш§Ш№Ш§ШЄЩЉ Ъ©Щ‡ Щ†ШґШ§Щ† ШЇЩ‡Щ†ШЇЩ‡ ШіШЄШ± Ш¬ШЇЩ€Щ„ ШіШЄЩ€Щ†ЩЉ Ш§ШіШЄ"/>
+  <StrRes Name="propRowLevels" Text="ШґЩ…Ш§Ш±Щ‡ ШіШ·Ш­ ШіШЄШ±"/>
+  <StrRes Name="propRTLReading" Text="ШЄШ№ЩЉЩЉЩ† Щ…ЩЉЪ©Щ†ШЇ ШўЩЉШ§ Щ…ШЄЩ† ШґЩЉШЎ Ш§ШІ Ш±Ш§ШіШЄ ШЁЩ‡ Ъ†Щѕ Щ†ШґШ§Щ† ШЇШ§ШЇЩ‡ Щ…ЩЉШґЩ€ШЇ"/>
+  <StrRes Name="propSessionName" Text="BDE Щ†Ш§Щ… Ш¬Щ„ШіЩ‡"/>
+  <StrRes Name="propShadowColor" Text="Ш±Щ†ЪЇ ШіШ§ЩЉЩ‡"/>
+  <StrRes Name="propShadowWidth" Text="ЩѕЩ‡Щ†Ш§ЩЉ ШіШ§ЩЉЩ‡"/>
+  <StrRes Name="propShape" Text="Щ†Щ€Ш№ ШґЪ©Щ„"/>
+  <StrRes Name="propShiftMode" Text="Ш­Ш§Щ„ШЄ ШЄШєЩЉЩЉШ± Щ…Ъ©Ш§Щ† ШґЩЉШЎ"/>
+  <StrRes Name="propShowColumnHeader" Text="ШЄШ№ЩЉЩЉЩ† Щ…ЩЉЪ©Щ†ШЇ ШўЩЉШ§ Ш¬ШЇЩ€Щ„ ШіШЄЩ€Щ†ЩЉ ШіШ±ШўЩ…ШЇ ШіШЄЩ€Щ†Щ‡Ш§ Ш±Ш§ Щ†ШґШ§Щ† Ш®Щ€Ш§Щ‡ШЇ ШЇШ§ШЇ"/>
+  <StrRes Name="propShowColumnTotal" Text="ШЄШ№ЩЉЩЉЩ† Щ…ЩЉЪ©Щ†ШЇ ШўЩЉШ§ Ш¬ШЇЩ€Щ„ ШіШЄЩ€Щ†ЩЉ Ш¬Щ…Ш№ Ъ©Щ„ ШіШЄЩ€Щ†Щ‡Ш§ Ш±Ш§ Щ†ШґШ§Щ† Ш®Щ€Ш§Щ‡ШЇ ШЇШ§ШЇ"/>
+  <StrRes Name="propShowRowHeader" Text="ШЄШ№ЩЉЩЉЩ† Щ…ЩЉЪ©Щ†ШЇ ШўЩЉШ§ Ш¬ШЇЩ€Щ„ ШіШЄЩ€Щ†ЩЉ ШіШ±ШўЩ…ШЇ ШіШ·Ш±Щ‡Ш§ Ш±Ш§ Щ†ШґШ§Щ† Ш®Щ€Ш§Щ‡ШЇ ШЇШ§ШЇ"/>
+  <StrRes Name="propShowRowTotal" Text="ШЄШ№ЩЉЩЉЩ† Щ…ЩЉЪ©Щ†ШЇ ШўЩЉШ§ Ш¬ШЇЩ€Щ„ ШіШЄЩ€Щ†ЩЉ Ш¬Щ…Ш№ Ъ©Щ„ ШіШ·Ш±Щ‡Ш§ Ш±Ш§ Щ†ШґШ§Щ† Ш®Щ€Ш§Щ‡ШЇ ШЇШ§ШЇ"/>
+  <StrRes Name="propShowDialog" Text="ШЄШ№ЩЉЩЉЩ† Щ…ЩЉЪ©Щ†ШЇ ШўЩЉШ§ ЪЇЩЃШЄЪЇЩ€ Ъ†Ш§Щѕ ШЇШ± ЩѕЩ†Ш¬Ш±Щ‡ ЩѕЩЉШґ Щ†Щ…Ш§ЩЉШґ Щ†ШґШ§Щ† ШЇШ§ШЇЩ‡ Щ…ЩЉШґЩ€ШЇ"/>
+  <StrRes Name="propShowText" Text="ШЄШ№ЩЉЩЉЩ† Щ…ЩЉЪ©Щ†ШЇ ШўЩЉШ§ ШґЩЉШЎ ШЁШ§Ш±Ъ©ШЇ Щ…ШЄЩ† Щ‚Ш§ШЁЩ„ Ш®Щ€Ш§Щ†ШЇЩ† Ш±Ш§ Щ†ШґШ§Щ† Щ…ЩЉШЇЩ‡ШЇ"/>
+  <StrRes Name="propSize" Text="Ш§Щ†ШЇШ§ШІЩ‡ ЩЃЩ€Щ†ШЄ"/>
+  <StrRes Name="propSorted" Text="ШЄШ№ЩЉЩЉЩ† Щ…ЩЉЪ©Щ†ШЇ ШўЩЉШ§ Ш§Щ‚Щ„Ш§Щ… Щ…Ш±ШЄШЁ Щ…ЩЉШґЩ€Щ†ШЇ ЩЉШ§ Щ†Щ‡"/>
+  <StrRes Name="propSpacing" Text="ШЄШ№ШЇШ§ШЇ ЩѕЩЉЪ©ШіЩ„ ШЁЩЉЩ† Щ…ШЄЩ† Щ€ ШЄШµЩ€ЩЉШ± Ш±Ш§ ШЄШ№ЩЉЩЉЩ† Щ…ЩЉЪ©Щ†ШЇ"/>
+  <StrRes Name="propSQL" Text="SQL ШЇШіШЄЩ€Ш±Ш§ШЄ"/>
+  <StrRes Name="propStartNewPage" Text="Щ‚ШЁЩ„ Ш§ШІ Ъ†Ш§Щѕ ШЁШ§Щ†ШЇ ЩЉЪ© ШµЩЃШ­Щ‡ Ш¬ШЇЩЉШЇ ШґШ±Щ€Ш№ Щ…ЩЉШґЩ€ШЇ"/>
+  <StrRes Name="propStretch" Text="ШЄШµЩ€ЩЉШ± Ъ©ШґЩЉШЇЩ‡ Щ…ЩЉШґЩ€ШЇ ШЄШ§ ШЇШ± ЩЃШ¶Ш§ЩЉ ШґЩЉШЎ Ш¬Ш§ ЪЇЩЉШ±ШЇ"/>
+  <StrRes Name="propStretched" Text="ШЄШ№ЩЉЩЉЩ† Щ…ЩЉЪ©Щ†ШЇ ШўЩЉШ§ ШґЩЉШЎ Щ…ЩЉШЄЩ€Ш§Щ†ШЇ Ъ©ШґЩЉШЇЩ‡ ШґЩ€ШЇ"/>
+  <StrRes Name="propStretchMode" Text="Ш­Ш§Щ„ШЄ Ъ©ШґЩЉШЇЩ‡ ШґШЇЩ† ШґЩЉШЎ"/>
+  <StrRes Name="propStyle.TFont" Text="Щ†Щ…Ш§ ЩЃЩ€Щ†ШЄ"/>
+  <StrRes Name="propStyle" Text="Щ†Щ…Ш§ ШґЩЉШЎ"/>
+  <StrRes Name="propStyle.TfrxFrame" Text="Щ†Щ…Ш§ Ъ†Ш§Ш±Ъ†Щ€ШЁ ШґЩЉШЎ"/>
+  <StrRes Name="propSuppressRepeated" Text="Ш§ШІ Щ†ШґШ§Щ† ШЇШ§ШЇЩ† Щ…Щ‚ШЇШ§Ш± ШЄЪ©Ш±Ш§Ш±ЩЉ Ш¬Щ„Щ€ЪЇЩЉШ±ЩЉ Щ…ЩЉЪ©Щ†ШЇ"/>
+  <StrRes Name="propTableName" Text="Щ†Ш§Щ… Ш¬ШЇЩ€Щ„ ШЇШ§ШЇЩ‡"/>
+  <StrRes Name="propTag" Text="ШґЩ…Ш§Ш±Щ‡ ШЁШ±Ъ†ШіШЁ ШґЩЉШЎ"/>
+  <StrRes Name="propTagStr" Text="Ш±ШґШЄЩ‡ ШЁШ±Ъ†ШіШЁ ШґЩЉШЎ"/>
+  <StrRes Name="propText" Text="Щ…ШЄЩ† ШґЩЉШЎ"/>
+  <StrRes Name="propTitleBeforeHeader" Text="ШЄШ№ЩЉЩЉЩ† Щ…ЩЉЪ©Щ†ШЇ ШўЩЉШ§ Ш№Щ†Щ€Ш§Щ† ЪЇШІШ§Ш±Шґ Щ‚ШЁЩ„ Ш§ШІ ШіШ±ШўЩ…ШЇ ШµЩЃШ­Щ‡ Щ†ШґШ§Щ† ШЇШ§ШЇЩ‡ ШґЩ€ШЇ"/>
+  <StrRes Name="propTop" Text="Щ…Ш®ШЄШµ ШЁШ§Щ„Ш§ЩЉ ШґЩЉШЎ"/>
+  <StrRes Name="propTopMargin" Text="Ш§Щ†ШЇШ§ШІЩ‡ Ш­Ш§ШґЩЉЩ‡ ШЁШ§Щ„Ш§ЩЉ ШµЩЃШ­Щ‡"/>
+  <StrRes Name="propTyp" Text="Щ†Щ€Ш№ Ъ†Ш§Ш±Ъ†Щ€ШЁ"/>
+  <StrRes Name="propUnderlines" Text="ШЄШ№ЩЉЩЉЩ† Щ…ЩЉЪ©Щ†ШЇ ШўЩЉШ§ ШЁШ№ШЇ Ш§ШІ Щ‡Ш± Щ…ШЄЩ† ШІЩЉШ±Ш®Ш· Щ†ШґШ§Щ† ШЇШ§ШЇЩ‡ ШґЩ€ШЇ"/>
+  <StrRes Name="propURL" Text="ШґЩЉШЎ URL"/>
+  <StrRes Name="propUserName" Text="Щ†Ш§Щ… Ъ©Ш§Ш±ШЁШ± ШґЩЉШЎ ШЇШ§ШЇЩ‡. Ш§ЩЉЩ† Щ†Ш§Щ… ШЇШ± ШІЩЉШ± Ш¬ШЇЩ€Щ„ ШЇШ§ШЇЩ‡ ШЇШ± ШµЩЃШ­Щ‡ Ш·Ш±Ш§Ш­ЩЉ Щ†ШґШ§Щ† ШЇШ§ШЇЩ‡ Щ…ЩЉШґЩ€ШЇ"/>
+  <StrRes Name="propVAlign" Text="Щ‡Щ… ШЄШ±Ш§ШІЩЉ Ш№Щ…Щ€ШЇЩЉ Щ…ШЄЩ†"/>
+  <StrRes Name="propVersionBuild" Text="Ш§Ш·Щ„Ш§Ш№Ш§ШЄ Щ†ЪЇШ§Ш±Шґ - ШіШ§Ш®ШЄ"/>
+  <StrRes Name="propVersionMajor" Text="Ш§Ш·Щ„Ш§Ш№Ш§ШЄ Щ†ЪЇШ§Ш±Шґ - Щ†ШіШ®Щ‡ Ш№Щ…ШЇЩ‡"/>
+  <StrRes Name="propVersionMinor" Text="Ш§Ш·Щ„Ш§Ш№Ш§ШЄ Щ†ЪЇШ§Ш±Шґ - Щ†ШіШ®Щ‡ Ъ©Щ…ШЄШ±"/>
+  <StrRes Name="propVersionRelease" Text="Ш§Ш·Щ„Ш§Ш№Ш§ШЄ Щ†ЪЇШ§Ш±Шґ - Щ†Щ‡Ш§Ш¦ЩЉ"/>
+  <StrRes Name="propVersion" Text="Щ†ШіШ®Щ‡"/>
+  <StrRes Name="propConnectionName" Text="Щ†Ш§Щ… Ш§ШЄШµШ§Щ„"/>
+  <StrRes Name="propVisible" Text="Щ‚Ш§ШЁЩ„ Ш±Щ€Ш¦ЩЉШЄ ШЁЩ€ШЇЩ† ШґЩЉШЎ"/>
+  <StrRes Name="propWidth" Text="ЩѕЩ‡Щ†Ш§ЩЉ ШґЩЉШЎ"/>
+  <StrRes Name="propWidth.TfrxFrame" Text="ЩѕЩ‡Щ†Ш§ЩЉ Ъ†Ш§Ш±Ъ†Щ€ШЁ"/>
+  <StrRes Name="propWindowState" Text="Щ€Ш¶Ш№ЩЉШЄ Ш§Щ€Щ„ЩЉЩ‡ ЩѕЩ†Ш¬Ш±Щ‡"/>
+  <StrRes Name="propWordBreak" Text="Ъ©Щ„Щ…Ш§ШЄ Ш±Щ€ШіЩЉ Ш±Ш§ Щ…ЩЉШґЪ©Щ†ШЇ"/>
+  <StrRes Name="propWordWrap" Text="ШЄШ№ЩЉЩЉЩ† Щ…ЩЉЪ©Щ†ШЇ ШўЩЉШ§ Щ…ШЄЩ† ШґЩЉШЎ Ш§ШІ Ъ©Ш±Ш§Ъ©ШЄШ±  'Ш®Ш· Ш¬ШЇЩЉШЇ'  ШµШ±ЩЃЩ†ШёШ± Ъ©Щ†ШЇ ЩЉШ§ Ш§ШЇШ§Щ…Щ‡ Щ…ШЄЩ† Ш±Ш§ ШЁЩ‡ ШіШ·Ш± Ш¬ШЇЩЉШЇ Щ…Щ†ШЄЩ‚Щ„ Ъ©Щ†ШЇ"/>
+  <StrRes Name="propZoom.TfrxBarCodeView" Text="ШЁШІШ±ЪЇЩ†Щ…Ш§Ш¦ЩЉ ШЁШ§Ш±Ъ©ШЇ"/>
+  <StrRes Name="propCurve" Text="Ш§Щ†Ш­Щ†Ш§ШЎ Ш­Ш§ШґЩЉЩ‡ Ъ†Щ‡Ш§Ш±ЪЇЩ€Шґ Ш­Ш§ШґЩЉЩ‡ ЪЇШ±ШЇ"/>
+  <StrRes Name="propDrillDown" Text="ШЄШ№ЩЉЩЉЩ† Щ…ЩЉЪ©Щ†ШЇ ШўЩЉШ§ ЪЇШ±Щ€Щ‡ Щ…ЩЉ ШЄЩ€Ш§Щ†ШЇ ШЄЩ€ ШЇШ± ШЄЩ€ ШЁШ§ШґШЇ"/>
+  <StrRes Name="propFontStyle" Text="Щ†Щ€Ш№ ЩЃЩ€Щ†ШЄ Ъ†Ш§ЩѕЪЇШ± ШіЩ€ШІЩ†ЩЉ"/>
+  <StrRes Name="propHideIfSingleDataRecord" Text="Ш§ЪЇШ± ЪЇШ±Щ€Щ‡ ЩЃЩ‚Ш· ЩЉЪ© Ш±Ъ©Щ€Ш±ШЇ ШЇШ§ШґШЄЩ‡ ШЁШ§ШґШЇ ЩѕШ§Щ€Ш±Щ‚ЩЉ Ш±Ш§ Щ…Ш®ЩЃЩЉ Щ…ЩЉЪ©Щ†ШЇ"/>
+  <StrRes Name="propOutlineExpand" Text="ШЄШ№ЩЉЩЉЩ† Щ…ЩЉЪ©Щ†ШЇ ШўЩЉШ§ Ш·Ш±Ш­ ЪЇШІШ§Ш±Шґ ЪЇШіШЄШ±Шґ ЩЉШ§ШЁШЇ ЩЉШ§Щ†Щ‡"/>
+  <StrRes Name="propPagesOnSheet" Text="ШґЩ…Ш§Ш±Щ‡ ШµЩЃШ­Ш§ШЄЩЉ Ъ©Щ‡ Ш±Щ€ЩЉ Щ†ЪЇЩ‡ШЇШ§Ш±Щ†ШЇЩ‡ Ъ©Ш§ШєШ° Ъ†Ш§Щѕ Щ…ЩЉШґЩ€Щ†ШЇ(1ШЊ2 ЩЉШ§ 4 ШµЩЃШ­Щ‡)"/>
+  <StrRes Name="propPlainCells" Text="ШЄШ№ЩЉЩЉЩ† Щ…ЩЉЪ©Щ†ШЇ Ш®Ш§Щ†Щ‡ Щ‡Ш§ШЁШµЩ€Ш±ШЄ ЩѕЩ‡Щ„Щ€ ШЁЩ‡ ЩѕЩ‡Щ„Щ€ ЩЉШ§ ЩѕШґШЄ ШіШ±Щ‡Щ… Ъ†Ш§Щѕ ШґЩ€Щ†ШЇ"/>
+  <StrRes Name="propPrintMode" Text="Ш­Ш§Щ„ШЄ Ъ†Ш§Щѕ: Щ…Ш№Щ…Щ€Щ„ЩЉШЊ ШЄЩ‚ШіЩЉЩ… ШµЩЃШ­Ш§ШЄ ШЁШІШ±ЪЇ ШЁЩ‡ Ъ©Щ€Ъ†Ъ©ШЊ ШЄШ±Ъ©ЩЉШЁ ШµЩЃШ­Ш§ШЄ Ъ©Щ€Ъ†Ъ© ШЇШ± ЩЉЪ© ШµЩЃШ­Щ‡"/>
+  <StrRes Name="propPrintOnSheet" Text="Ш§Щ†ШЇШ§ШІЩ‡ ШµЩЃШ­Щ‡ Ъ†Ш§Щѕ ЪЇШІШ§Ш±ШґШЊ ШЇШ± ШµЩ€Ш±ШЄЩЉ Ш§ШіШЄЩЃШ§ШЇЩ‡ Щ…ЩЉШґЩ€ШЇ Ъ©Щ‡ PrintMode Щ…Щ‚ШЇШ§Ш± pmDefault Щ†ШЁШ§ШґШЇ"/>
+  <StrRes Name="propResetPageNumbers" Text="ШґЩ…Ш§Ш±Щ‡ ШµЩЃШ­Щ‡/Щ…Ш¬Щ…Щ€Ш№ ШµЩЃШ­Ш§ШЄ Ш±Ш§ ШµЩЃШ± Щ…ЩЉЪ©Щ†ШЇ Щ€Щ‚ШЄЩЉ ЪЇШ±Щ€Щ‡ Ъ†Ш§Щѕ Щ…ЩЉШґЩ€ШЇ. Щ€Щ‚ШЄЩЉ Ш§ШіШЄЩЃШ§ШЇЩ‡ Щ…ЩЉШґЩ€ШЇ Ъ©Щ‡ Щ…Щ‚ШЇШ§Ш± StartNewPage ШЁШ±Ш§ШЁШ± true ШЁШ§ШґШЇ"/>
+  <StrRes Name="propReverse" Text="ШЄШ№ЩЉЩЉЩ† Щ…ЩЉЪ©Щ†ШЇ ШўЩЉШ§ ШµЩЃШ­Ш§ШЄ Щ…Ш№Ъ©Щ€Ші Ъ†Ш§Щѕ ШґЩ€Щ†ШЇ"/>
+  <StrRes Name="propShowFooterIfDrillDown" Text="ШЄШ№ЩЉЩЉЩ† Щ…ЩЉЪ©Щ†ШЇ Ш§ЪЇШ± ЪЇШ±Щ€Щ‡ ШЄЩ€ ШЇШ± ШЄЩ€ ШЁШ§ШґШЇ ЩѕШ§Щ€Ш±Щ‚ЩЉ ШўЩ† Ш±Ш§ Щ†ШґШ§Щ† ШЇЩ‡ШЇ"/>
+  <StrRes Name="propSizeMode" Text="Ш­Ш§Щ„ШЄ Щ†Щ…Ш§ЩЉШґ ШґЩЉШЎ OLE"/>
+  <StrRes Name="propWideBarRatio" Text="Щ€Ш§ШЁШіШЄЩ‡ ШЁЩ‡ ЩѕЩ‡Щ†Ш§ЩЉ ШЁШ§Ш±Ъ©ШЇ"/>
+  <StrRes Name="propWysiwyg" Text="ШЄШ№ЩЉЩЉЩ† Щ…ЩЉЪ©Щ†ШЇ ШўЩЉШ§ ШґЩЉШЎ Щ…ШЄЩ†ЩЉ ШєЩ†ЩЉ Ш§ШІ Ъ†Ш§ЩѕЪЇШ± ШЁШ±Ш§ЩЉ Щ‚Ш§Щ„ШЁ ШЁЩ†ШЇЩЉ Щ…ШЄЩ† Ш§ШіШЄЩЃШ§ШЇЩ‡ Щ…ЩЉЪ©Щ†ШЇ. Ъ†Ш§ЩѕЪЇШ± ШЁШ§ЩЉШЇ Щ†ШµШЁ Щ€ ШўЩ…Ш§ШЇЩ‡ ШЁШ§ШґШЇ."/>
+  <StrRes Name="propArrowEnd" Text="ШЄШ№ЩЉЩЉЩ† Щ…ЩЉЪ©Щ†ШЇ ШўЩЉШ§ ШЇШ± Ш§Щ†ШЄЩ‡Ш§ЩЉ Ш®Ш· ШЁШ±ШЇШ§Ш± Ш±ШіЩ… ШґЩ€ШЇ"/>
+  <StrRes Name="propArrowLength" Text="Ш·Щ€Щ„ ШЁШ±ШЇШ§Ш±"/>
+  <StrRes Name="propArrowSolid" Text="ШЄШ№ЩЉЩЉЩ† Щ…ЩЉЪ©Щ†ШЇ ШўЩЉШ§ ШЁШ±ШЇШ§Ш± ШЁШµЩ€Ш±ШЄ ЩЉЪ©Щ†Щ€Ш§Ш®ШЄ Ш±ШіЩ… ШґЩ€ШЇ"/>
+  <StrRes Name="propArrowStart" Text="ШЄШ№ЩЉЩЉЩ† Щ…ЩЉЪ©Щ†ШЇ ШўЩЉШ§ ШЇШ± ШґШ±Щ€Ш№ Ш®Ш· ШЁШ±ШЇШ§Ш± Ш±ШіЩ… ШґЩ€ШЇ"/>
+  <StrRes Name="propArrowWidth" Text="ЩѕЩ‡Щ†Ш§ЩЉ ШЁШ±ШЇШ§Ш±"/>
+  <StrRes Name="propCloseDataSource" Text="ШЄШ№ЩЉЩЉЩ† Щ…ЩЉЪ©Щ†ШЇ ШЇШ± ЩѕШ§ЩЉШ§Щ† ЪЇШІШ§Ш±Шґ ШЇШ§ШЇЩ‡ Ш§Ш·Щ„Ш§Ш№Ш§ШЄЩЉ ШЁШіШЄЩ‡ ШґЩ€ШЇ"/>
+  <StrRes Name="propDatabase" Text="Ш§ШЄШµШ§Щ„ ШЁШ§Щ†Ъ© Ш§Ш·Щ„Ш§Ш№Ш§ШЄЩЉ"/>
+  <StrRes Name="propIndexFieldNames" Text="Щ†Ш§Щ… ЩЃЩЉЩ„ШЇ Ш§ЩЉЩ†ШЇЪ©Ші"/>
+  <StrRes Name="propCommandTimeOut" Text="ШІЩ…Ш§Щ† Ш§Ш¬Ш±Ш§ЩЉ ЩѕШ±Ші Щ€ Ш¬Щ€"/>
+  <StrRes Name="propExpandDrillDown" Text="ШЄШ№ЩЉЩЉЩ† Щ…ЩЉЪ©Щ†ШЇ ШўЩЉШ§ Ш№Щ†Ш§ШµШ± ШЄЩ€ ШЇШ± ШЄЩ€ Ш±Ш§ ШЇШ± Ш§Щ€Щ„ЩЉЩ† ШґШ±Щ€Ш№ ЪЇШІШ§Ш±Шґ ЪЇШіШЄШ±Шґ ШЇЩ‡ШЇ"/>
+  <StrRes Name="propWysiwyg.TfrxMemoView" Text="ШЄШ№ЩЉЩЉЩ† Щ…ЩЉЪ©Щ†ШЇ ШўЩЉШ§ Щ…ШЄЩ† Ш±ШЇ Ш­Ш§Щ„ШЄ WISIWYG Щ†Щ…Ш§ЩЉШґ ШЇШ§ШЇЩ‡ ШґЩ€ШЇ"/>
+  <StrRes Name="propLeftLine" Text="Ш®Ш· Ъ†Щѕ Ъ†Щ‡Ш§Ш±Ъ†Щ€ШЁ"/>
+  <StrRes Name="propTopLine" Text="Ш®Ш· ШЁШ§Щ„Ш§ЩЉ Ъ†Щ‡Ш§Ш±Ъ†Щ€ШЁ"/>
+  <StrRes Name="propRightLine" Text="Ш®Ш· Ш±Ш§ШіШЄ Ъ†Щ‡Ш§Ш±Ъ†Щ€ШЁ"/>
+  <StrRes Name="propBottomLine" Text="Ш®Ш· ЩѕШ§Ш¦ЩЉЩ† Ъ†Щ‡Ш§Ш±Ъ†Щ€ШЁ"/>
+  <StrRes Name="propColor.TfrxFrameLine" Text="Ш±Щ†ЪЇ Ш®Ш· Ъ†Щ‡Ш§Ш±Ъ†Щ€ШЁ"/>
+  <StrRes Name="propStyle.TfrxFrameLine" Text="Ш­Ш§Щ„ШЄ Ш®Ш· Ъ†Щ‡Ш§Ш±Ъ†Щ€ШЁ"/>
+  <StrRes Name="propWidth.TfrxFrameLine" Text="ЩѕЩ‡Щ†Ш§ЩЉ Ш®Ш· Ъ†Щ‡Ш§Ш±Ъ†Щ€ШЁ"/>
+  <StrRes Name="propFileLink" Text="Ш№ШЁШ§Ш±ШЄ ЩЉШ§ Щ†Ш§Щ… ЩЃШ§ЩЉЩ„ЩЉ Ъ©Щ‡ ШґШ§Щ…Щ„ ШЄШµЩ€ЩЉШ± Ш§ШіШЄ"/>
+  <StrRes Name="propEndlessWidth" Text="Ш­Ш§Щ„ШЄ ШµЩЃШ­Щ‡ ШЁШЇЩ€Щ† ЩѕШ§ЩЉШ§Щ†. Ш§ЪЇШ± Щ…Щ‚ШЇШ§Ш± ШўЩ† true ШЁШ§ШґШЇ ШµЩЃШ­Щ‡ ШЁШіШЄЩ‡ ШЁЩ‡ ШЄШ№ШЇШ§ШЇ Ш±Ъ©Щ€Ш±ШЇЩ‡Ш§ ШЁШІШ±ЪЇ Щ…ЩЉШґЩ€ШЇ"/>
+  <StrRes Name="propEndlessHeight" Text="Ш­Ш§Щ„ШЄ ШµЩЃШ­Щ‡ ШЁШЇЩ€Щ† ЩѕШ§ЩЉШ§Щ†. Ш§ЪЇШ± Щ…Щ‚ШЇШ§Ш± ШўЩ† true ШЁШ§ШґШЇ ШµЩЃШ­Щ‡ ШЁШіШЄЩ‡ ШЁЩ‡ ШЄШ№ШЇШ§ШЇ Ш±Ъ©Щ€Ш±ШЇЩ‡Ш§ ШЁШІШ±ЪЇ Щ…ЩЉШґЩ€ШЇ"/>
+  <StrRes Name="propAddHeight" Text="ШЁЩ‡ ЩЉЪ© Щ…Щ‚ШЇШ§Ш± ШЄШ№ЩЉЩЉЩ† ШґШЇЩ‡ ЩЃШ¶Ш§ЩЉ Ш®Ш§Щ„ЩЉ ШЁЩ‡ Ш§Ш±ШЄЩЃШ§Ш№ Ш®Ш§Щ†Щ‡ Ш§Ш¶Ш§ЩЃЩ‡ Щ…ЩЉЪ©Щ†ШЇ"/>
+  <StrRes Name="propAddWidth" Text="ШЁЩ‡ ЩЉЪ© Щ…Щ‚ШЇШ§Ш± ШЄШ№ЩЉЩЉЩ† ШґШЇЩ‡ ЩЃШ¶Ш§ЩЉ Ш®Ш§Щ„ЩЉ ШЁЩ‡ ЩѕЩ‡Щ†Ш§ЩЉ Ш®Ш§Щ†Щ‡ Ш§Ш¶Ш§ЩЃЩ‡ Щ…ЩЉЪ©Щ†ШЇ"/>
+  <StrRes Name="propAllowDuplicates" Text="ШЄШ№ЩЉЩЉЩ† Щ…ЩЉЪ©Щ†ШЇ ШўЩЉШ§ Ш®Ш§Щ†Щ‡ Щ…ЩЉШЄЩ€Ш§Щ†ШЇ ЩЉЪ© Ш±ШґШЄЩ‡ ШЄЪ©Ш±Ш§Ш±ЩЉ ШЇШ±ЩЉШ§ЩЃШЄ Ъ©Щ†ШЇ"/>
+  <StrRes Name="propJoinEqualCells" Text="ШЄШ№ЩЉЩЉЩ† Щ…ЩЉЪ©Щ†ШЇ Ш¬ШЇЩ€Щ„ ШіШЄЩ€Щ†ЩЉ ШЁШ§ЩЉШЇ Ш®Ш§Щ†Щ‡ Щ‡Ш§ ШЁШ§ Щ…Щ‚Ш§ШЇЩЉШ± ШЁШ±Ш§ШЁШ± Ш±Ш§ ШЁЩ‡ Щ‡Щ… Щ…Щ„Ш­Щ‚ Ъ©Щ†ШЇ"/>
+  <StrRes Name="propNextCross" Text="Ш§ШґШ§Ш±Щ‡ ЪЇШ± ШЁЩ‡ Ш¬ШЇЩ€Щ„ ШіШЄЩ€Щ†ЩЉ ШЁШ№ШЇЩЉ Ъ©Щ‡ ШЁШµЩ€Ш±ШЄ ЩѕЩ‡Щ„Щ€ ШЁЩ‡ ЩѕЩ‡Щ„Щ€ Щ†Щ…Ш§ЩЉШґ ШЇШ§ШЇЩ‡ Щ…ЩЉШґЩ€ШЇ"/>
+  <StrRes Name="propNextCrossGap" Text="ЩЃШ§ШµЩ„Щ‡ ШЁЩЉЩ† Ш¬ШЇЩ€Щ„Щ‡Ш§ЩЉ ШіШЄЩ€Щ†ЩЉ ЩѕЩ‡Щ„Щ€ ШЁЩ‡ ЩѕЩ‡Щ„Щ€"/>
+  <StrRes Name="propShowCorner" Text="ШЄШ№ЩЉЩЉЩ† Щ…ЩЉЪ©Щ†ШЇ Ш¬ШЇЩ€Щ„ ШіШЄЩ€Щ†ЩЉ Ш№Щ†ШµШ± ЪЇЩ€ШґЩ‡ Ъ†Щѕ-ШЁШ§Щ„Ш§ Ш±Ш§ ШЁШ§ЩЉШЇ Щ†Щ…Ш§ЩЉШґ ШЇЩ‡ШЇ"/>
+  <StrRes Name="propSuppressNullRecords" Text="!ШЄШ№ЫЊЫЊЩ† Щ…ЫЊЪ©Щ†ШЇ Ш¬ШЇЩ€Щ„ ШіШЄЩ€Щ†ЫЊ Ш±Ъ©Щ€Ш±ШЇ Щ‡Ш§ЫЊЫЊ ШЁШ§ Щ…Щ‚ШЇШ§Ш± ШЄЩ‡ЫЊ Ш±Ш§ ЩѕШґШЄЫЊШЁШ§Щ†ЫЊ Ъ©Щ†ШЇ"/>
+  <StrRes Name="propShowTitle" Text="!ШЄШ№ЫЊЫЊЩ† Щ…ЫЊЪ©Щ†ШЇ Ш¬ШЇЩ€Щ„ ШіШЄЩ€Щ†ЫЊ Ш№Щ†Щ€Ш§Щ† Ш±Ш§ Щ†ШґШ§Щ† ШЇЩ‡ШЇ"/>
+  <StrRes Name="propAutoSize" Text="!ШЄШ№ЫЊЫЊЩ† Щ…ЫЊЪ©Щ†ШЇ Ш¬ШЇЩ€Щ„ ШіШЄЩ€Щ†ЫЊ Ш§Щ†ШЇШ§ШІЩ‡ Ш§Шґ Ш±Ш§ Ш®Щ€ШЇЪ©Ш§Ш± ШЄЩ†ШёЫЊЩ… Ъ©Щ†ШЇ"/>
+  <StrRes Name="propShowHint" Text="ШЄШ№ЫЊЫЊЩ† Щ…ЫЊЪ©Щ†ШЇ ШўЫЊШ§ ШґЫЊШЎ Щ‡Щ†ЪЇШ§Щ…ЫЊЪ©Щ‡ Щ…Щ€Шґ Щ€Ш§Ш±Щ‡ Ш±Щ€ЫЊ ШўЩ† Ш§ШіШЄ ШЄШ°Ъ©Ш± Ш±Ш§ Щ†ШґШ§Щ† ШЇЩ‡ШЇ"/>
+  <StrRes Name="propHint" Text="Щ…ШЄЩ† ШЄШ°Ъ©Ш±"/>
+  <StrRes Name="propPaperSize" Text="Ш§Щ†ШЇШ§ШІЩ‡ Ъ©Ш§ШєШ°"/>
+  <StrRes Name="propPageCount" Text="ШЄШ№ШЇШ§ШЇ ШµЩЃШ­Ш§ШЄ"/>
+  <StrRes Name="propBackPictureVisible" Text="ШЄШ№ЫЊЫЊЩ† Щ…ЫЊЪ©Щ†ШЇ ШўЫЊШ§ ШµЩЃШ­Щ‡ ШЄШµЩ€ЫЊШ± ЩѕШґШЄ ШІЩ…ЫЊЩ†Щ‡ Ш±Ш§ Щ†ШґШ§Щ† ШЇЩ‡ШЇ"/>
+  <StrRes Name="propBackPicturePrintable" Text="ШЄШ№ЫЊЫЊЩ† Щ…ЫЊЪ©Щ†ШЇ ШўЫЊШ§ ШµЩЃШ­Щ‡ ШЄШµЩ€ЫЊШ± ШІЩ…ЫЊЩ†Щ‡ Ш±Ш§ Ъ†Ш§Щѕ Ъ©Щ†ШЇ"/>
+  <StrRes Name="propHightQuality" Text="Щ†Щ…Ш§ЫЊШґ ШЄШµЩ€ЫЊШ± ШЁШ§ Ъ©ЫЊЩЃЫЊШЄ ШЁШ§Щ„Ш§"/>
+  <StrRes Name="propLockType" Text="Щ†Щ€Ш№ Щ‚ЩЃЩ„ ЪЇШ°Ш§Ш±ЫЊ Ш¬ШЇЩ€Щ„ ШЇШ§ШЇЩ‡ Ш±Ш§ Щ…ШґШ®Шµ Щ…ЫЊЪ©Щ†ШЇ"/>
+  <StrRes Name="propIgnoreDupParams" Text="Ш§ШІ ЩѕШ§Ш±Ш§Щ…ШЄШ± ШЄЪ©Ш±Ш§Ш±ЫЊ ШЇШ± Щ€ЫЊШ±Ш§ЫЊШґЪЇШ± ЩѕШ§Ш±Ш§Щ…ШЄШ± ШµШ±ЩЃ Щ†ШёШ± Щ…ЫЊЪ©Щ†ШЇ"/>
+  <StrRes Name="propTransparent" Text="Determinates if the picture can be transparent"/>
+  <StrRes Name="propTransparentColor" Text="Transparent color"/>
+  <StrRes Name="propIgnoreNulls" Text="Allow to ingnore Nulls values in Chart"/>
+  <StrRes Name="propShowClildIfDrillDown" Text="Determinates if child band shown if group is drilldown"/>
+</Resources>

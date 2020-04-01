@@ -1,0 +1,1829 @@
+{******************************************************************************}
+{ Projeto: Componentes ACBr                                                    }
+{ Biblioteca multi plataforma de componentes Delphi para interação com equipa- }
+{ mentos de Automação Comercial utilizados no Brasil                           }
+{                                                                              }
+{  Você pode obter a última versão desse arquivo na página do Projeto ACBr     }
+{ Componentes localizado em      http://www.sourceforge.net/projects/acbr      }
+{                                                                              }
+{  Esta biblioteca é software livre; você pode redistribuí-la e/ou modificá-la }
+{ sob os termos da Licença Pública Geral Menor do GNU conforme publicada pela  }
+{ Free Software Foundation; tanto a versão 2.1 da Licença, ou (a seu critério) }
+{ qualquer versão posterior.                                                   }
+{                                                                              }
+{  Esta biblioteca é distribuída na expectativa de que seja útil, porém, SEM   }
+{ NENHUMA GARANTIA; nem mesmo a garantia implícita de COMERCIABILIDADE OU      }
+{ ADEQUAÇÃO A UMA FINALIDADE ESPECÍFICA. Consulte a Licença Pública Geral Menor}
+{ do GNU para mais detalhes. (Arquivo LICENÇA.TXT ou LICENSE.TXT)              }
+{                                                                              }
+{  Você deve ter recebido uma cópia da Licença Pública Geral Menor do GNU junto}
+{ com esta biblioteca; se não, escreva para a Free Software Foundation, Inc.,  }
+{ no endereço 59 Temple Street, Suite 330, Boston, MA 02111-1307 USA.          }
+{ Você também pode obter uma copia da licença em:                              }
+{ http://www.opensource.org/licenses/lgpl-license.php                          }
+{                                                                              }
+{ Daniel Simões de Almeida  -  daniel@djsystem.com.br  -  www.djsystem.com.br  }
+{              Praça Anita Costa, 34 - Tatuí - SP - 18270-410                  }
+{                                                                              }
+{******************************************************************************}
+Agradecimentos:
+
+* Administradores:
+- Daniel Simões de Almeida
+- André Ferreira de Moraes
+
+* Desenvolvedores:
+- Wemerson P. Souto - Doação do componente ao projeto ACBr
+
+{******************************************************************************
+|* ACBrCTe
+|*
+|* PROPÓSITO: Registro de Alterações
+******************************************************************************}
+
+Símbolo : Significado
+
+[+]     : Novo recurso
+[*]     : Recurso modificado/melhorado
+[-]     : Correção de Bug (assim esperamos)
+
+23/12/2019
+-- ACBrCTeWebServices --
+[*] https://www.projetoacbr.com.br/forum/topic/55322-salvar-xml-do-evento-ap%C3%B3s-consulta/?do=findComment&comment=364097
+   Por: bSoft
+[*] Melhorias para utilizar o CNPJ informado do evento e não do Certificado Digital
+   Por: Italo Jurisato Junior
+
+19/12/2019
+-- ACBrCTeWebServices --
+[+] Incluido a propriedade Protocolo no retorno de envio do CT-e.
+   Por: Italo Jurisato Junior
+
+11/12/2019
+-- ACBrCTeWebServices --
+[*] Rhttps://www.projetoacbr.com.br/forum/topic/55322-salvar-xml-do-evento-ap%C3%B3s-consulta/
+   Por: Italo Jurisato Junior
+
+24/10/2019
+-- pcteCTeR / pcteCTeW --
+[*] Correção na grafia da tag lacre referente ao modal Aquaviário.
+  Por: Renan Eustaquio
+
+16/10/2019
+-- ACBrCTe --
+[*] Removido a checagem de Forma de emissão ao gerar a string do QR-Code.
+    Pois parece que as SVC mudaram as regras de checagem de URL do QR-Code.
+   Por: Italo Jurisato Junior
+-- ACBrCTeDACTeRLRetrato --
+[*] Impressão correta dos titulos dos documentos originarios.
+   Por: Italo Jurisato Junior
+
+12/10/2019
+-- ACBrCTeConfiguracoes --
+[*] Removido a propriedade de configuração: GerarInfCTeSupl pois a geração da 
+    string do QR-Code no XML é obrigatória em ambos os ambientes.
+   Por: Italo Jurisato Junior
+
+12/10/2019
+-- ACBrCTeConhecimentos --
+[*] Removido a condição que defini se é para gerar ou não o grupo
+    <infCTeSupl>.
+   Por: Italo Jurisato Junior
+
+01/10/2019
+-- ACBrCTe --
+[+] Incluida a função GetUFFormaEmissao para determinar a UF a ser utilizada
+    para obter a URL do QR-Code (Antes não estava considerando a Forma de Emissão).
+  Por: Italo Jurisato Junior
+
+27/09/2019
+-- ACBrCTeDACTeRLRetrato --
+[*] https://www.projetoacbr.com.br/forum/topic/53135-ajuste-na-impress%C3%A3o-do-dacte/
+  Por: Maikon Pazazzolo
+
+19/09/2019
+-- ACBrCTeServicos --
+[*] Atualização das URLs de QR-Code da SVC-SP.
+  Por: Italo Jurisato Junior
+
+18/09/2019
+-- ACBrCTeServicos --
+[*] Atualização das URLs de QR-Code de MG.
+  Por: Italo Jurisato Junior
+
+17/09/2019
+-- ACBrCTeServicos --
+[*] Atualização das URLs de QR-Code de MS.
+  Por: Italo Jurisato Junior
+
+17/09/2019
+-- ACBrCTeConhecimentos --
+[*] https://www.projetoacbr.com.br/forum/topic/53645-sugest%C3%A3o-de-melhoria-propriedade-items-da-classe-tconhecimentos/
+  Por: Gabriel Bonzanini
+
+13/09/2019
+-- ACBrCTeServicos --
+[*] Atualização das URLs de QR-Code.
+  Por: Italo Jurisato Junior
+
+12/09/2019
+-- ACBrCTeServicos --
+[*] Atualização das URLs de Consulta ao Cadastro da SEFAZ-MS e
+    QR-Code da SEFAZ-PR.
+  Por: Italo Jurisato Junior
+
+02/09/2019
+-- pcteCTeW --
+[*] Comentado a linha que gera no XML a tag pICMSInterPart.
+  Por: Italo Jurisato Junior
+
+30/08/2019
+-- ACBrCTeConhecimentos --
+[-] Corrigido a leitura da tag ICMSUFFim na leitura do arquivo .ini
+   Por: José M. S. Junior
+
+29/08/2019
+-- ACBrCTeConhecimentos --
+[-] Corrigido o valor atribuido ao campo: imp.ICMS.SituTrib o correto é
+    cstICMSOutraUF quando se tratar de ICMSOutraUF.
+   Por: Italo Jurisato Junior
+
+28/08/2019
+-- ACBrCTeConfiguracoes --
+[*] Alteração do valor padrão da propriedade de configuração "GerarInfCTeSupl".
+   Por: Italo Jurisato Junior
+
+12/08/2019
+-- ACBrCTeServicos --
+[*] Atualização da URL de consulta
+   Por: Italo Jurisato Junior
+
+07/08/2019
+-- Diversos --
+[*] Implementação do modo de envio Síncrono.
+   Por: Italo Jurisato Junior
+
+01/08/2019
+-- ACBrCTeConhecimentos/ACBrCTeWebServices --
+[*] Removido a validação do código numerico da chave do método Enviar e 
+    incluido na Validação de Regras de Negócios.
+   Por: Italo Jurisato Junior
+
+01/08/2019
+-- Diversos --
+[*] Alteração nos eventos de Comprovante de Entrega e Cancelamento por conta
+    dos novos Schemas.
+   Por: Italo Jurisato Junior
+
+30/07/2019
+-- ACBrCTeWebServices --
+[*] https://www.projetoacbr.com.br/forum/topic/52744-sugest%C3%A3o-tratamento-para-status-em-conting%C3%AAncia-svc/
+   Por: BSoft
+-- Diversos --
+[+] Implementação do evento de Cancelamento de Comprovante de Entrega
+   Por: Italo Jurisato Junior
+
+29/07/2019
+-- ACBrCTeWebServices --
+[*] Incluido os enumeradores dos eventos: Comprovante de Entrega e 
+    Cancelamento do Comprovante de Entrega na lista de eventos que
+    utilizam a SEFAZ-Autorizadora e não o Ambiente Nacional.
+   Por: Italo Jurisato Junior
+
+26/07/2019
+-- Diversos --
+[*] https://www.projetoacbr.com.br/forum/topic/52250-evento-comprovante-de-entrega-ct-e/?do=findComment&comment=346376
+   Por: Márcio B.
+
+24/07/2019
+-- ACBrCTeWebServices --
+[*] Ajustes feito para que a validação do código que compõe a chave seja
+    realizado somente no envio e não na geração do XML.
+   Por: Italo Jurisato Junior
+
+23/07/2019
+-- Diversos --
+[*] Finalizado a implementação do Evento Comprovante de Entrega e alterado
+    a condição para gerar o grupo <ICMSUFFim>.
+   Por: Italo Jurisato Junior
+
+18/07/2019
+-- ACBrCTeConhecimentos --
+[-] Correção na leitura do arquivo INI.
+  Por: Italo Jurisato Junior
+-- ACBrCTe --
+[-] Correção feita conforme a que foi feita para o MDF-e.
+  Por: Italo Jurisato Junior
+
+15/07/2019
+-- ACBrCTeConfiguracoes --
+[*] Ajustes para a configuração "GerarInfCTeSupl".
+   Por: Italo Jurisato Junior
+
+12/07/2019
+-- Diversos --
+[*] Ajustes na leitura do grupo infFisco que pode ser retornado junto com as
+    informações do protocolo.
+   Por: Italo Jurisato Junior
+
+10/07/2019
+-- pcteConversaoCTe --
+[*] Acrescentado o enumerador do evento de MDF-e Autorizado no retorno
+    do DistribuicaoDFe do CT-e.
+   Por: Italo Jurisato Junior
+
+02/07/2019
+-- ACBrCTe / ACBrCTeConfiguracoes --
+[*] Acrescentado um método para setar a propriedade GerarInfCTeSupl e 
+    corrigido a função GetURLQRCode.
+   Por: Italo Jurisato Junior
+
+27/06/2019
+-- ACBrCTeConfiguracoes --
+[*] Removido a classe que contem as propriedades de Download utilizadas
+    pelo método DistribuicaoDFe, pois agora se encontra na unit ACBrDFeConfiguracoes.
+   Por: Italo Jurisato Junior
+
+18/06/2019
+-- ACBrCTeConhecimentos --
+[*] Existem 2 campos refCteAnu um para a versão 2.00 e outro para a 3.00
+    Só estava sendo alimentado o campo referente a versão 2.00
+   Por: Italo Jurisato Junior
+
+17/06/2019
+-- ACBrCTeConhecimentos --
+[*] Incluido a leitura do campo "chCT"e ao ler o arquivo INI para CTe Substituto.
+   Por: José M S Junior
+
+14/06/2019
+-- Diversos --
+[+] Adicionado a função especifica para converter o código do evento para 
+    o enumerador, adicionado a propridade de configuração GerarInfCTeSupl,
+    que permite gerar ou não o grupo infCTeSupl que vai conter um campo
+    com a string do QR-Code previsto na versão 3.00a.
+    (ainda não esta disponivel o ambiente de homologação)
+  Por: Italo Jurisato Junior
+
+11/06/2019
+-- ACBrCTeConhecimentos --
+[*] Incluido a leitura do campo indAlteraToma ao ler o arquivo INI.
+   Por: Italo Jurisato Junior
+
+24/05/2019
+-- ACBrCTeWebservices --
+[*] Corrigido a montagem do XML do evento para ser validado corretamente
+   Por: Italo Jurisato Junior
+
+07/05/2019
+-- pcteEnvEventoCTe --
+[-] Corrigido a nomenclatura do campo usado pelo evento: Prestação de Serviço em Desacordo.
+   Por: Italo Jurisato Junior
+
+29/03/2019
+-- Diversos --
+[*] https://www.projetoacbr.com.br/forum/topic/50325-corre%C3%A7%C3%A3o-no-consultar-cadastro/
+   Por: Rômulo da Costa de Souza
+
+16/01/2019
+-- Diversos --
+[*] Remoção das units que foram Generalizadas em PCNComum e os ajustes necessários.
+   Por: Italo Jurisato Junior
+
+26/12/2018
+-- ACBrCTeConhecimentos / ACBrCTeDACTeRLClass --
+[+] Incluido a propriedade NomeArqPDF que é alimentada quando se gera o PDF de
+    um DACTE.
+    Para se ter acesso a propriedade NomeArqPDF basta fazer da seguinte forma:
+
+    NomedoPDF := ACBrCTe1.Conhecimentos.Items[x].NomeArqPDF
+
+  Por: Italo Jurisato Junior
+
+21/12/2018
+-- ACBrCTeDACTeRLRetrato--
+[*] https://www.projetoacbr.com.br/forum/topic/48390-impress%C3%A3o-chave-de-cte-anulado-substitu%C3%ADdo-e-chave-do-cte-de-anula%C3%A7%C3%A3o/
+  Por: Cleonir
+
+17/12/2018
+-- Diversos --
+[*] Remoção de Units que não são utilizadas pelo componente.
+  Por: Italo Jurisato Junior
+
+13/12/2018
+-- ACBrCTe --
+[*] Inclusão do tipo de evento tePrestDesacordo na function IdentificaSchema.
+  Por: Italo Jurisato Junior
+
+10/12/2018
+-- pcteCTeW --
+[*] Correções e ajustes na identação do código.
+  Por: Italo Jurisato Junior
+
+30/11/2018
+-- pcteCTeW --
+[*] Possivel correção para o problema apontado nessa postagem:
+    https://www.projetoacbr.com.br/forum/topic/37298-cte-os-rejei%C3%A7%C3%A3o-760/?do=findComment&comment=315957
+  Por: Italo Jurisato Junior
+
+28/11/2018
+-- pcteCTeW --
+[*] https://www.projetoacbr.com.br/forum/topic/47868-valida%C3%A7%C3%A3o-incorreta-dos-campos-xorig-e-xdes-na-previs%C3%A3o-do-fluxo-da-carga/
+  Por: wm Rodrigo
+
+22/11/2018
+-- pcteCTeW --
+[*] https://www.projetoacbr.com.br/forum/topic/47783-erro-no-xml-do-cte-modal-aquavi%C3%A1rio/
+  Por: Tulio Padua
+[*] Acrescentado as condições de prestação de serviço interestadual e não contribuinte
+    ao gerar o grupo <infTribFed>.
+  Por: Italo Jurisato Junior
+
+10/10/2018
+-- ACBrCTeConhecimentos --
+[*] Após separar o conteudo do grupo <infModal> remove um eventual namespace.
+  Por: Italo Jurisato Junior
+
+21/09/2018
+-- pcteEnvEventoCTe --
+[*] Acrescentado os demais tipos de eventos no metodo de leitura de arquivo INI do tipo eventos.
+  Por: Italo Jurisato Junior
+
+19/09/2018
+-- pcteCTeW --
+[*] Alterado para gerar a tag <dhViagem> somente quando o tipo de fretamento for
+   Eventual.
+  Por: Italo Jurisato Junior
+
+27/08/2018
+-- Diversos --
+[*] Alterações visando deixar o componente em conformidade com a nova versão da Nota Técnica 2018/002.
+  por: Italo Jurisato Junior
+
+21/08/2018
+-- Diversos --
+[*] Correção, pois estava gerando o grupo <infFretamento> de forma indevida.
+  por: Italo Jurisato Junior
+
+08/08/2018
+-- Diversos --
+[*] Alterações visando deixar o componente em conformidade com a Nota Técnica 2018/002.
+  por: Italo Jurisato Junior
+
+18/07/2018
+-- ACBrCTe / ACBrCTeWebServices / pcteDistDFeInt --
+[*] Ajustes no DistribuicaoDFe do CTe visando uma futura liberação por parte
+    da SEFAZ o DistribuicaoDFe por chave.
+   Por: Italo Jurisato Junior
+
+05/07/2018
+-- ACBrCTeConhecimentos --
+[+] Implementado o método GerarINI que tem por finalidade gerar um arquivo INI no
+    padrão ACBr com os dados de um CT-e previamente carregado.
+   Por: Italo Jurisato Junior
+
+21/06/2018
+-- ACBrCTeConhecimentos --
+[*] Ajuste na leitura do arquivo INI (LerArqINI) referente tag [emiDocAnt]
+   Por: Italo Jurisato Junior
+
+08/06/2018
+-- ACBrCTeWebServices --
+[+] Acrescentado a propriedade ListaArqs na classe DistribuicaoDFe com objetivo
+    relacionar o nome de todos os XML retornados pelo método DistribuicaoDFe.
+   Por: Italo Jurisato Junior
+
+11/05/2018
+-- ACBrCTe --
+[*] Incluido a lipeza das classes de envio e retorno antes do envio.
+   Por: Italo Jurisato Junior
+
+23/04/2018
+-- pcteCTeR --
+[*] Alterado a posição da leitura da tag indAlteraToma.
+  Por: Nellien
+-- pcteCTe / pcteCTeW / pcteCTeR --
+[+] Acrescentado os campos para informar os dados referente ao seguro para o 
+    modal Multimodal.
+  Por: Italo Jurisato Junior
+
+19/04/2018
+-- ACBrCTeWebServices --
+[-] Correção na montagem da Mensagem de retorno da consulta.
+  Por: Italo Jurisato Junior
+
+16/04/2018
+-- pcteEventoCTe --
+[*] Modificação nos métodos "Getters" para não disparar exception no caso de
+    erros ou conversão inválida, assumindo valores vazios ou nulos.
+  Por: Italo Jurisato Junior
+
+-- ACBrCTeWebServices --
+[-] Correção na execução do serviço de consulta de cadastro, para retornar o
+    FPBodyElement padrão após uma consulta de cadastro dos estados do RS e
+    estados usuários da SVRS.
+  Por: Italo Jurisato Junior
+
+11/04/2018
+-- pcteEventoCTe --
+[*] https://www.projetoacbr.com.br/forum/topic/42534-consulta-situa%C3%A7%C3%A3o-ct-e-erro-descri%C3%A7%C3%A3o-do-evento-n%C3%A3o-implementado/?do=findComment&comment=280732
+   Por: Douglas wf
+
+09/04/2018
+-- pcteEventoCTe --
+[*] https://www.projetoacbr.com.br/forum/topic/42534-consulta-situa%C3%A7%C3%A3o-ct-e-erro-descri%C3%A7%C3%A3o-do-evento-n%C3%A3o-implementado/?do=findComment&comment=280692
+   Por: Douglas wf
+
+29/03/2018
+-- ACBrCTeConhecimentos --
+[*] https://www.projetoacbr.com.br/forum/topic/42445-ref-a-protocolo-n%C3%A3o-carregado-de-cteos-loadfromstring/?do=findComment&comment=279702
+   Por: Leandro Vignoto
+
+26/02/2018
+-- ACBrCTeWebServices --
+[*] Comentado a linha que permite gerar um XML de evento com acentos.
+   Por: Italo Jurisato Junior
+
+14/02/2018
+-- pcteProcCTe / pcteCTeW --
+[*] Remoção de funções em duplicidade e a troca das chamadas das funções antigas
+    pelas novas
+   Por: Italo Jurisato Junior
+
+12/02/2018
+-- pcteEventoCTe  --
+[*] Removido os acentos e cedilha conforme os novos Schemas mensionados na 
+    Nota Ténica 2017/003 versão 1.03.
+   Por: Italo Jurisato Junior
+
+09/02/2018
+-- ACBrCTeConhecimentos, ACBrCTeConfiguracoes, pcnCTeCTeW  --
+[*] Método: "ObterCodigoMunicipio" / "ObterNomeMunicipio" Ajustes nas classes ACBrDFe para validação e utilização 
+    desta funcionalidade na Geração do XML. Validando a propriedade "NormatizarMunicipios" e o path com os arquivos de Municípios IBGE.
+    (por: Jose M. S. Junior)
+
+09/02/2018
+-- ACBrCTeDACTEFR --
+[*] https://www.projetoacbr.com.br/forum/topic/41428-carregamento-do-conte%C3%BAdo-do-fr3-no-dacte/
+   Por: BSoft
+
+08/02/2018
+-- ACBrCTeWebServices --
+[*] Ficou faltando informar o CTeOS para definir o nome e salvar o XML.
+   Por: Italo Jurisato Junior
+-- Diversos --
+[*] Alterações visando a leitura correta do DistribuicaoDFe quando no retorno 
+    deste conter o XML do CTeOS.
+   Por: Italo Jurisato Junior
+
+26/01/2018
+-- pcteCTeW --
+[*] https://www.projetoacbr.com.br/forum/topic/41117-verifica%C3%A7%C3%A3o-no-preenchimento-do-autxml/
+   Por: BSoft
+
+20/01/2018
+-- ACBrCTeDACTEClass --
+[+] Adicionada a propriedade "UsarSeparadorPathPDF", para permitir que os PDFs
+    sejam salvos, usando a mesma estrutura de pasta de diretórios, com separação
+    por CNPJ, AnoMes, Dia, Modelo
+    (por: DSA)
+
+18/01/2018
+-- pcteCTeW --
+[*] Comentado as linhas que não gerava a tag IE quando indIEToma=9
+    Conforme a NT 2017/003 versão 1,02 agora tem que gerar.
+   Por: Italo Jurisato Junior
+
+17/01/2018
+-- ACBrCTeWebServices --
+[-] Correção em "TCTeRecepcao", "TCTeRetRecepcao", "TCTeConsulta", para que o
+    Numero de Versão seja mantido em todas as etapas
+    (por: DSA e BigWings e Italo Jurisato Junior)
+
+10/01/2018
+-- ACBrCTeWebServices --
+[*] https://www.projetoacbr.com.br/forum/topic/40818-corre%C3%A7%C3%A3o-na-inutiliza%C3%A7%C3%A3o-de-n%C3%BAmero-de-ct-e/
+   Por: BSoft / Italo Jurisato Junior
+
+-- ACBrCTeDACTEClass --
+[*] Método GetPathPDF, modificado para:
+    - Se houver algum Path Definido: Usar o Path exatamente como informado
+      (sem adicionar os separadores de Diretório)
+    - Se For vazio: Calcula o Path da mesma maneira que é computado o Path onde
+      é Salvo o XML do CTe
+    - Se for Vazio, e não houver Conhecimento carregado: Usa o Path da aplicaçao
+  Por: Italo Jurisato Junior
+
+08/01/2017
+-- ACBrCTeConfiguracoes --
+[+] Adicionado os métodos:
+    GravarIni( const AIni: TCustomIniFile );
+    LerIni( const AIni: TCustomIniFile );
+    Que permitem Gravar e Ler os valores de todas as configurações de
+    "TConfiguracoesCTe" em um arquivo INI
+    (por: Italo Jurisato Junior)
+
+28/12/2017
+-- ACBrCTeConhecimentos --
+[*] Alterado o Método LoadFromString com o objetido de detectar automaticamente 
+    o modelo do documento fiscal, mas não atera a configuração do componente.
+   Por: Italo Jurisato Junior
+-- ACBrCTeConhecimentos --
+[*] Métodos "LoadFromFile", "LoadFromString", e "LoadFromStream" modificados para
+    que o parâmetro "AGerarCTe", seja por padrão "False". Para respeitar o XML
+    informado, e evitar processamento de CPU desnecessário
+   Por: Italo Jurisato Junior
+
+08/12/2017
+-- ACBRCTeConhecimentos --
+[+] Classe "Conhecimento" Adicionado o método:
+    function LerArqIni(const AIniString: String): Boolean;
+    Permite carregar um CTe, de um Arquivo INI no Formato aceito pelo
+    ACBrMonitorPLUS
+    O Parâmetro "AIniString", pode ser o caminho para um arquivo INI em disco
+    ou ainda o conteúdo do arquivo INI.
+[+] Classe "TConhecimentos" adicionado o método:
+    function LoadFromIni(AIniString: String): Boolean;
+[*] Método "Conhecimento.VerificarAssinatura", modificado para conseguir validar
+    XMLs com a tag "cteProc"
+    (por: Italo Jurisato Junior)
+
+-- pcteEnvEventoCTe --
+[+] Adicionado o método:
+    function TEventoCTe.LerFromIni(const AIniString: String): Boolean;
+    Permite carregar um ou vários Eventos, de um Arquivo INI, no Formato aceito
+    pelo ACBrMonitorPLUS.
+    O Parâmetro "AIniString", pode ser o caminho para um
+    arquivo INI em disco ou ainda o conteúdo do arquivo INI.
+    (por: Italo Jurisato Junior)
+
+23/11/2017
+-- pcteCTeW --
+[*] Corrigido a posíção da criação do grupo <peri> na versão 3.00
+   Por: Italo Jurisato Junior
+
+14/11/2017
+-- pcteCTeR --
+[*] Não estava alimentando o campo Toma03.Toma quando o tomador é outros.
+   Por: Italo Jurisato Junior
+
+15/11/2017
+-- Diversos --
+[*] Remoção de códigos não utilizados.
+   Por: Italo Jurisato Junior
+-- pcteProcCTe / pcteEventoCTe --
+[*] Removido a function GetVersaoEvento pois este retorna sempre uma versão
+    pré-definida que pode não ser a versão atual do evento.
+    Removido também a function ObterNomeArquivo por não ter nenhuma utilidade.
+   Por: Italo Jurisato Junior
+
+14/11/2017
+-- pcteCTeW --
+[*] A tag tpNav é opcional e estava como obrigatória.
+   Por: Italo Jurisato Junior
+
+13/11/2017
+-- pcteCTeW --
+[*] As tags xLAgEmi e Idt só devem ser geradas na versão 2.00.
+   Por: BSoft
+
+09/11/2017
+-- pcteEventoCTe  --
+[*] Descrição do evento com vogais acentuadas e cedilha tem que ser tratado com a função ACBrStr().
+   Por: Daniel Simões
+-- ACBrCTeWebServices --
+[*] Ajuste não estava previsto a leitura do grupo <retEnviOS>
+   Por: Helio
+
+31/10/2017
+-- pcteCTeW --
+[*] https://www.projetoacbr.com.br/forum/topic/39658-sugest%C3%A3o-de-ajuste-para-a-gera%C3%A7%C3%A3o-da-tag-dos-participantes-do-ct-e/
+   Por: Claudio Venancio / Italo Jurisato Junior
+
+27/10/2017
+-- ACBrCTeWebServices --
+[*] https://www.projetoacbr.com.br/forum/topic/38912-cte-os-como-obter-os-dados-do-retorno-ap%C3%B3s-aprova%C3%A7%C3%A3o/?do=findComment&comment=260350
+   Por: Gabriel Bonzanini
+
+25/10/2017
+-- pcteRetDistDFeInt --
+[*] Correção, para a leitura do valor da prestação.
+   Por: Cleyton
+
+23/10/2017
+-- ACBrCTeWebServices --
+[*] Correção, não identificava corretamente Resumo de Evento e Evento Processado.
+   Por: Italo Jurisato Junior
+
+20/10/2017
+-- pcteCTeW / ACBrCTeConhecimentos --
+[*] Correções para o CT-e OS ao gerar o grupo <infModal>.
+   Por: bSoft
+
+17/10/2017
+-- pcteCTe / ACBrCTeConhecimentos --
+[*] Inicialização dos campos indGlobalizado e indAlteraToma com o valor tiNao.
+   Por: Italo Jurisato Junior
+
+11/10/2017
+-- pcteCTeW --
+[*] Quando é uma operação onde o tomador é do exterior deve gerar a tag vInss.
+   Por: Mauricio Sareto
+
+11/10/2017
+-- ACBrCTeConfiguracoes --
+[*] Método "GetPathDownload", modificado para manter somente letras e numeros
+    do nome da empresa usado para cria o PathDownload.
+    por: Italo Jurisato Junior
+
+09/10/2017
+-- pcteCTeW --
+[*] Alterações visando gerar o campo vICMS mesmo que o mesmo tenha o valor zero.
+   Por: BSoft / Mauricio Sareto
+
+04/10/2017
+-- Diversos --
+[*] https://www.projetoacbr.com.br/forum/topic/39173-contribui%C3%A7%C3%A3o-ct-e-os-nos-estados-do-ms-e-mt/.
+   Por: bsoft
+
+02/10/2017
+-- pcteCTe --
+[*] Definido o valor tiNao como padrão para o campo indGlobalizado.
+   Por: Italo Jurisato Junior
+
+29/09/2017
+-- pcteCTeW --
+[*] Alterado a geração das TAGs de inicio e fim da prestação do serviço.
+    Para o CT-e elas são obrigatórias, mas para o CT-e OS são opcionais.
+   Por: Italo Jurisato Junior / BigWings
+-- pcteEventoCTe --
+[*] Incluido o valor MDFeCancelado2 que se refere ao evento 310611.
+   Por: Italo Jurisato Junior
+-- ACBrCTe --
+[-] Ao chamar o método Inutiliza estava fixo o modelo (57), impedindo dessa forma
+    Inutilizar um numero do modelo 67 (CTeOS), agora o modelo é lido da configuração.
+   Por: Italo Jurisato Junior
+
+04/09/2017
+-- pcteConversaoCTe --
+[-] Remoção do tipo TIndicador e suas funções.
+   Por: Italo Jurisato Junior
+
+04/09/2017
+-- pcteCTeW -- 
+[*] Incluido a chamada para gerar o grupo <cobr> para o modelo 67 - CTe OS e
+    a tag <tpNav> conforme consta na NT 2017/002.
+    por: Italo Jurisato Junior
+
+21/08/2017
+-- ACBrCTeConhecimentos --
+[*] Método "Conhecimento.Assinar", ajuste para não verificar o CNPJ, quando processo
+    de assintura ocorrer externo ao ACBr
+    http://www.projetoacbr.com.br/forum/topic/38349-problemas-com-pin-a3-assinatura-de-xml/
+
+18/08/2017
+-- pcteConversaoCTe --
+[-] Correção em tipo enumerado schconsStatServ para schconsStatServCTe, para
+    permitir encontrar o Schema correto
+    (por: DSA)
+
+16/08/2017
+-- pcteCTeW -- 
+[*] Incluido a chamada para gerar o grupo <infCTeSub> para o modelo 67 - CTe OS.
+    por: Italo Jurisato Junior
+
+07/08/2017
+-- Diversos -- 
+[*] Adicionado os campos novos do grupo <peri> versão 3.00.
+    por: Italo Jurisato Junior
+
+-- pcteEnvEventoCTe -- 
+[*] Correção do indice usado nos campos da assinatura.
+    por: Giulia Carlini
+
+31/07/2017
+-- pcteInutCTe -- 
+[*] Adicionado a leitura das tags referente a assinatura ao executar o método
+    LoadFromString ao carregar o XML de uma Inutilização de numeros.
+    por: Italo Jurisato Junior
+
+30/07/2017
+-- pcteEnvEventoCTe / pcteRetEnvEventoCTe -- 
+[*] Adicionado a leitura das tags referente a assinatura ao executar o método
+    LoadFromString ao carregar o XML de um evento.
+    por: Italo Jurisato Junior
+
+20/07/2017
+-- Diversos --
+[*] Remoção de vários hints e warnings.
+    Por: Italo Jurisato Junior
+ 
+08/07/2017
+-- ACBrCFeWebServices --
+[-] Correção nas classes "TCTeInutilizacao" e "TCTeEnvEvento", para assinar
+    corretamente, XMLs com acentos.
+    (por: DSA)
+
+19/06/2017
+-- ACBrCTeWebServices / pcteConversaoCTe --
+[*] Fim da Implementação os eventos Prestação em Desacordo e GTV.
+    por: Italo Jurisato Junior
+
+14/06/2017
+-- ACBrCTeConfiguracoes --
+[*] Método "GetPathCTe", modificado para informar a Descrição do Modelo baseada
+    no conteúdo do XML a ser Salvo.
+    por: Italo Jurisato Junior
+
+24/05/2017
+-- ACBRCTeConhecimentos --
+[*] Método "Conhecimento.Validar", modificado para não tentar assinar o XML, caso
+    o mesmo não contenha a Tag de assinatura
+   Por: Italo Jurisato Junior
+
+20/05/2017
+[*] Inclusão dos endereços do layout CTeRecepcaoOS_3.00 para os servidores SVC-RS 
+    e SVC-SP, tanto homologação quanto produção.
+   Por: Bsoft
+
+18/05/2017
+-- pcteProcCTe --
+[*] Correção, não estava obtendo de forma correta a chave do CT-e para poder pegar
+    o modelo correto.
+   Por: Italo Jurisato Junior
+
+17/05/2017
+-- Diversos --
+[*] Varias alterações visando a nova versão do CT-e bem como o novo modelo CTe OS.
+   Por: BSoft
+
+10/05/2017
+-- Diversos --
+[*] Inclusão do campo IEST bem como a constante DSC_IEST.
+   Por: Emerson Teixeira / Italo Jurisato Junior
+
+09/05/2017
+-- ACBrCteConhecimentos --
+[*] Correção no método Validar, não existe o grupo infModal no CTeOS Transporte de Valores.
+   Por: Italo Jurisato Junior
+
+08/05/2017
+-- pcteRetConsSitCTe --
+[*] Ajustes na leitura da consulta a situação visando o modelo 67.
+   Por: BigWings
+
+07/05/2017
+-- ACBrCTeWebServices --
+[*] Ajustes na montagem da mensagem de envio, é diferente entre os modelos 57 e 67.
+   Por: BigWings / Italo Jurisato Junior
+
+05/05/2017
+-- Diversos --
+[*] Condicionado a geração dos grupos <compl> e <infTribFed>.
+   Por: Italo Jurisato Junior
+
+04/05/2017
+-- Diversos --
+[*] Alterações visando o modelo 67 CT-e OS 3.00
+   Por: Italo Jurisato Junior
+
+21/04/2017
+-- pcteCTe/pcteCTeR/pcteCTeW --
+[*] Correção, remoção da tag <indIEToma> dentro do grupo <toma> CT-e OS 3.00
+
+-- pcteCTeW --
+[*] Correção na geração da tag <IE> para versões diferentes do ct-e 2.00 e 3.00
+    por: Italo Jurisato Junior
+
+18/04/2017
+[*] correção do campo cInfManu para versões diferentes do ct-e 2.00 e 3.00
+		http://www.projetoacbr.com.br/forum/topic/35607-dacte-xml-ct-e-300/?do=findComment&comment=237660
+		por Juliomar Marchetti
+		
+30/03/2017
+-- Diversos --
+[*] Correção e alteração na definição do campo cInfManu.
+   Por: José S. Simione
+		
+23/02/2017
+-- pcteCTeR --
+[*] Correção na leitura da chave de um CTe Complementado
+   Por: Nellien
+		
+21/01/2017
+-- pcteConversaoCTe --
+[*] Adicionado os novos valores de tipo de documento e documentos de transporte anterior.
+   por: Italo Jurisato Junior
+
+18/01/2017
+-- pcteEnvEventoCTe --
+[*] Criado a propriedade XML na classe TEventoCTe, com objetivo de armazenar o XML 
+    do Evento carregado através do método LerXML.
+   por: Italo Jurisato Junior
+
+16/01/2017
+-- pcteCTe, pcteCTeR, pcteCTeW --
+[*] Mudança no grupo idDocAntEle o campo chave mudou para chCTe na 3.00
+		Correção do bug
+		http://www.projetoacbr.com.br/forum/topic/34624-tag-chave-mudou-para-chcte-no-ct-e-30-na-parte-de-documentos-anteriores/
+		por: Juliomar Marchetti
+		
+07/01/2017
+-- Diversos --
+[*] Migração do tipo de navegação, funções de conversão e constantes para as 
+    units do pcnComum pois o tipo, as funções e constantes são utilizadas pelo
+    CT-e e MDF-e.
+    Por: Italo Jurisato Junior
+
+03/01/2017
+-- pcteDistDFeInt --
+[*] Correção na geração do XML para realizar a consulta a DistribucaoDFe.
+    Por: Italo Jurisato Junior
+
+27/12/2016
+-- pcteCTeW --
+[*] Evitar a duplicidade de alertas.
+    Por: Italo Jurisato Junior
+
+14/12/2016
+-- ACBrCTeServicos --
+[*] Inclusão das URLs de homologação/Produção para acessar o Web Services
+    CTeDistruicaoDFe.
+    Por: Italo Jurisato Junior
+
+13/12/2016
+-- ACBrCTe --
+[*] Descomentado os métodos DistribuicaoDFexxxx.
+    Por: Italo Jurisato Junior
+
+01/12/2016
+-- ACBrCTeDACTEFR
+[-] Adição da informação da I.E. 
+		Tratamento de produtos perigosos
+		Por: Juliomar Marchetti
+		
+29/11/2016
+-- pcteCTeW --
+[*] Ajuste no nome da tag da chave do CT-e a ser Complementado, para a versão 3.00
+    Por: Italo Jurisato Junior
+
+28/11/2016
+-- pcteCTeW --
+[*] Alterado para gerar o CST no grupo ICMSSN para a versão 3.00
+    Por: Italo Jurisato Junior
+
+22/11/2016
+--ACBrCTeDACTEFR
+[+] Adição de informações de produtos perigosos no dacte em fast report
+		http://www.projetoacbr.com.br/forum/topic/3559-transporte-de-produtos-perigosos/
+		por : Juliomar Marchetti
+		
+18/11/2016
+-- ACBrCTeWebServices --
+[*] Correção na geração do prefixo dos arquivos de envio/retorno de eventos
+    No arquivo de envio o prefixo ficava sempre zero.
+    Os mesmos arquivos estavam sendo salvos em duas pastas, ma pasta respectiva
+    do evento e na pasta CTe, alterado para salvar somente na pasta do evento.
+   Por: Italo Jurisato Junior
+
+09/11/2016
+-- Diversos --
+[*] Correção visando atender o Evento EPEC da versão 3.00.
+    Por: Italo Jurisato Junior
+
+04/11/2016
+-- pcteEnvEventoCTe --
+[*] Correção visando atender a versão 3.00, as TAG que contem Data/Hora deve possuir
+    tabém o UTC.
+    Por: Marcelo Augusto
+
+-- ACBrCTeWebServices --
+[*] Acrescentado a propriedade NomeArquivo na classe TCTeInutilizacao, com a
+    finalidade de armazenar o caminho mais o nome completo do XML: *-procInutCTe.xml.
+    Por: Italo Jurisato Junior
+
+03/11/2016
+-- pcteEventoCTe
+[-] Correção a propriedade xObs estava usando para gravar as informações na xJust
+		http://www.projetoacbr.com.br/forum/topic/33266-corre%C3%A7%C3%A3o-re-impress%C3%A3o-de-evento/
+		por : Juliomar Marchetti
+		
+26/10/2016
+-- pcteConversaoCTe --
+[*] Inclusão do Tipo de Responsável pelo Seguro e das funções de conversão.
+    por: Italo Jurisato Junior
+
+17/10/2016
+-- ACBrCTeServicos --
+[*] Inclusão dos grupos para o modelo 67 - CT-e OS (Outros Serviços).
+    por: Italo Jurisato Junior
+
+22/09/2016
+-- ACBrCTeWebServices --
+[*] Removido os status 128 e 155 e acrescentado o 134 na leitura do retorno do
+    envio de um evento.
+    O motivo é que não existe os status 128 e 155, mas existe o 134.
+    Por: Italo Jurisato Junior
+
+16/09/2016
+-- diversos --
+[*] Implementação dos 2 novos tipos de eventos a serem utilizados pela versão
+    3.00 do CT-e
+    Por: Italo Jurisato Junior
+
+08/09/2016
+-- diversos --
+[*] Correções para poder gerar, assinar e validar corretamente os modelos:
+    CTe e CTeOS versão 3.00
+    Por: Italo Jurisato Junior
+
+06/09/2016
+-- ACBrCTeDACTEFR --
+[*] Estava invertido os campos do DataSet em relação ao conteudo atribuido.
+    Por: NCC
+
+17/08/2016
+-- diversos --
+[+] Criada a unit pcteConsts que contem as constantes de mensagens usadas na
+    geração dos XML e que são apresentadas quando ocorre erro na validação.
+[*] Alteração em diversas units em virtude das novas units e para antender a nova
+    versão 3.00 do CT-e.
+    por: Italo Jurisato Junior
+
+12/08/2016
+--ACBrCTeDACTEFR
+[-] Melhoria para não ficar efetuando loop para verificar o CTe
+		http://www.projetoacbr.com.br/forum/topic/31807-envio-de-dacte-por-e-mail/
+		por : Juliomar Marchetti		
+
+11/08/2016
+[-] Correção para imprimir diversas chaves de nf-e no dacte em fortes
+		http://www.projetoacbr.com.br/forum/topic/25893-dacte-fortes-report-n%C3%A3o-imprimi-todas-as-chaves-das-nf-e/
+		por : Juliomar Marchetti
+
+02/08/2016
+[*] Melhoria no posicionamento da razão social no dacte em retrato em fortes
+		http://www.projetoacbr.com.br/forum/topic/31363-layout-cte-dados-do-rlmdadosemitente-sobrep%C3%B5e-o-rlmemitente-quando-descri%C3%A7%C3%A3o-%C3%A9-muito-grande/
+		por Juliomar Marchetti
+		
+16/06/2016
+-- ACBrCTeWebServices --
+[-] Ajuste para não duplicar a lista de items em TDistribuicaoDFe
+    (por: DSA / Italo Jurisato Junior)
+
+14/06/2016
+-- pcteCTeW --
+[*] Método: "GerarXml", modificado para somente gerar Declaração de UTF8 no XML
+    se estiver em FPC (que usa UTF8 de forma nativa)
+
+-- ACBrCTe --
+[+] Adicionado o método "cStatCancelado(AValue: integer): Boolean;" que retorna
+    True se "AValue" estiver entre os status de cancelamento
+
+-- ACBrCTeManifestos --
+[*] Método: "CalcularNomeArquivoCompleto" movido para Public
+[*] Método: "LerXML" corrigido para usar "String" e não "AnsiString"
+[*] Propriedades "XMLOriginal" e "XMLAssinado", modificadas para presumir que o
+    o seu conteudo sempre estará em UTF8
+[+] Adicionada a propriedade: "Conhecimento.Cancelado: Boolean"
+    (True quando CStat for cancelamento)
+[*] Método: "Conhecimento.Validar", modificado para preservar a Declaração do XML
+[*] Método "Conhecimento.LerXML", mnodificado para converter (se necessário) o
+    conteúdo do XML informado para a String Nativa da IDE, além de efetuar o
+    "parse" dos "HTML Entity"). Isso é necessário, para que as propriedades do
+    Objeto "CTe" fiquem com apresentação correta.
+[-] Método: "CalcularNomeArquivoCompleto", correção para evitar somar o Path no
+    Resultado final, quando o nome do arquivo já conter o mesmo.
+[+] Método: "SetXMLOriginal", modificado para verificar se o conteúdo do XML
+    informado está em UTF8, convertendo-o, se necessário.
+[*] Método: "TConhecimentos.VerificarAssinatura", modificado para disparar Erro,
+    caso nenhum Conhecimento esteja carregado.
+[*] Método: "TConhecimentos.LoadFromFile" modificado para não Decodificar o XML
+    para a String nativa, pois isso agora é feito por "Conhecimento.LerXML"
+[-] Método: "TConhecimentos.LoadFromString", modificado para conseguir processar
+    XMLs com a Tag "procCTe", obtido pelo Portal do SEFAZ
+[*] Método: "TConhecimentos.LoadFromString", modificado para converter o XML
+    informado, para a String Nativa (se necessário)
+
+-- ACBrCTeWebServices --
+[*] Método: "TCTeRecepcao.TratarResposta", "TCTeRetRecepcao.TratarRespostaFinal",
+    "TCTeConsulta.TratarResposta" modificados para não salvar 2x o XML.
+[*] Método: "TCTeConsulta.TratarResposta": refatorados para usar "cStatCancelado"
+    e "CstatProcessado";
+[-] "TCTeConsulta.TratarResposta": Corrigido Bug que apagava o conteúdo do XML,
+    caso ocorrese uma falha no Retorno do XML
+[-] "TCTeConsulta.TratarResposta": Corrigido Bug na Atualização do XML caso o
+    mesmo estivesse Cancelado
+
+15/04/2016
+-- pcteEventoCTe --
+[*] Incluido o tipo de evento teMDFeAutorizado:
+    por: Italo Jurisato Junior
+
+13/04/2016
+-- ACBrCTeWebServices --
+[*] Método "TCTeWebService.Clear" modificado para inicializar:
+    SSL.UseCertificateHTTP := True  
+    por: DSA / Italo Jurisato Junior
+
+13/03/2016
+ACBrCTeDACTeRLRetrato
+[*] mostrar informações de transportador
+		http://www.projetoacbr.com.br/forum/topic/28620-dacte-com-muitos-documentos-origin%C3%A1rios-n%C3%A3o-imprime-o-bloco-identifica%C3%A7%C3%A3o-do-conj-transportador/
+		por : Juliomar Marchetti
+		
+12/03/2016
+[*] Modificado para deixar alguns botões fora do preview em fast report
+		por: Juliomar Marchetti
+
+10/03/2016
+-- ACBrCTeConhecimentos --
+[*] Corrigido bug introduzido em 08/03, no método "LoadFromFile"
+
+07/03/2016
+-- ACBrCTe, pcteDistDFeInt, pcteInutCTe --
+[*] Ajustes para compilação em 64 bits. Remoção de Hints e Warnings   (por: DSA)
+
+-- ACBrCTeWebServices --
+[*] Ajustes para novo tratamento de "RetornoWS" sem tratamento de conversão
+    (por: DSA)
+
+-- ACBrCTeConhecimentos --
+[+] Adicionada suporte a Configuracoes.Geral.RetirarEspacos
+[*] Método "LoadFromFile" modificado para usar "ParseText", para decodificar
+    caracteres "HTML Entity" no XML    (por: DSA)
+
+01/03/2016
+-- ACBrCTeServicos --
+[*] Atualização das URLs de produção da SEFAZ-MS.
+    por: Italo Jurisato Junior
+
+25/02/2016
+-- ACBrCTeServicos --
+[*] Atualização das URLs de homologação da SEFAZ-MS.
+    por: Italo Jurisato Junior
+
+17/02/2016
+-- ACBrCTeConhecimentos --
+[*] Refactoring para usar a nova rotina de validação de CNPJ, do DFeSSL (por: DSA)
+
+17/02/2016
+-- pcteRetConsSitCTe --
+[-] A SEFAZ-MS esta retornando Status=129 como status de retorno da consulta
+    mas o status do CT-e consultado é 100, incluido a checagem do status = 129
+    por: Italo Jurisato Junior
+
+17/02/2016
+-- ACBrCTeConhecimentos --
+[-] Acerto para validar corretamente a raiz do certificado quando é o certificado 
+    é emitido para o CPF do responsável e não para o CNPJ da empresa.
+    por: regys.silveria / Italo Jurisato Junior
+
+12/01/2016
+-- ACBrCTeWebServices --
+[*] Correção de leak de memória causado pela criação em duplicidade o objeto
+    CTeRetorno.
+    Por: Italo Jurisato Junior
+
+05/01/2016
+-- ACBrCTeWebServices --
+[*] Adicionada verificação de Chave na atribuição de TCTeConsulta.CTeChave
+    (por: DSA)
+
+04/01/2016
+-- ACBRCTeConhecimentos --
+[-] Correção para atribuição de "ACBrCTe.Conhecimentos[x].NomeArq" em
+    "TConhecimentos.LoadFromFile". A rotina anterior atribuia o ultimo NomeArq
+    a todos os Conhecimentos carregados na memória  
+    por: Italo Jurisato Junior
+    http://www.projetoacbr.com.br/forum/topic/27074-xml-sendo-sobrescrito/
+
+-- ACBrCTeWebServices --
+[*] Ajustes em "Create" e "Clear" de todos os WebServices, para garantir que
+    após o "Clear" os valores necessários, para as propriedades internas, do
+    WebService esteja corretos.  
+    por: Italo Jurisato Junior
+
+-- ACBrCTeWebServices --
+[+] Adicionada sobrecarga no método "Clear" de todos os WebServices
+[*] Remoção de propriedades sem uso.
+[*] Ajuste de acesso (write) em propriedades que podem ser ReadOnly
+    por: Italo Jurisato Junior
+
+30/12/2015
+-- ACBrDACTeFR --
+[-] Correção na impressão da CC-e do CT-e, estava gerando uma página extra.
+    http://www.projetoacbr.com.br/forum/topic/26561-cce-impressão-saindo-em-duas-páginas/
+    por: Regys.Silveira
+
+23/12/2015
+-- ACBrCTeConhecimentos --
+[*] Ajuste no método "VerificarAssinatura", para informar o infElement (por: DSA)
+
+22/12/2015
+-- ACBrCTeWebServices / pcteRetConsSitCTe --
+[*] Incluido o status 301 para que seja acrescentado o protocolo de denegação ao XML.
+    por: Italo Jurisato Junior
+
+17/12/2015
+-- ACBrCTeDACTEFR --
+[*] Refatoração para corrigir erros 
+       Function TACBrCTeDACTEFR.ManterCep( iCep : Integer ) : String;
+       Criado para ter um unico tratamento para os CEP.
+         		
+[*] Adcionado : PreviewOptions.Buttons :=[pbPrint, pbZoom, pbFind, pbNavigator, pbExportQuick];
+	Para o bloqueio dos botões na visualização no fast report.
+    por: Henrique Leonardo
+
+16/12/2015
+-- ACBrCTeDACTEFR --
+[*] Refatoração para corrigir erros 
+       Function MantertpAmb( s : TpcnTipoAmbiente ) : String; 
+[-] Novos alinhamentos 
+
+    por: Henrique Leonardo
+
+
+04/12/2015
+-- ACBrCTeNotasFiscais --
+[*] método "Assinar", modificado para só validar CNPJ se conseguir ler o mesmo
+    com sucesso, do Certificado.
+    por: Italo Jurisato Junior
+
+-- ACBrCTeWebServices --
+[*] WebService: "TCTeEnvEvento", modificado, para salvar o "NomeArquivo", se o
+    XML for salvo após a consulta (depende da configuração).
+    por: Italo Jurisato Junior
+
+-- pcteEventoCTe --
+[+] Tipo: TRetInfEvento, adicionada a propriedade: "NomeArquivo: String", que
+    conterá o nome do arquivo XML criado, após o retorno, e se estiver
+    configurado para salvar o XML.
+    por: Italo Jurisato Junior
+
+03/12/2015
+-- pcteCTeR --
+[*] Tentativa de conseguir ler corretamente todas as ocorrências da tag
+    <qtdRat>.
+    por: Italo Jurisato Junior
+
+-- ACBrDACTEFR --
+[-] acerto para que o DACTe não use os datasets de forma global no FastReport, 
+    isso estava gerando problemas para quem tem nfe e cte na mesma aplicação.
+    por: regys.silveira
+
+02/12/2015
+-- ACBrCTeWebServices --
+[*] Removido na montagem de alguns XML a linha '<' + ENCODING_UTF8 + '>' para 
+    o componente forçar a conversão ao salvar o XML.
+    por: Italo Jurisato Junior
+
+[*] Ao salvar após o envio ou após a consulta não levava em consideração a 
+    propriedade NomeArq, agora é checado essa propriedade.
+    por: Italo Jurisato Junior
+
+01/12/2015
+-- ACBrCTeWebServices --
+[*] Alteração para não alterar o nome do XML quando o CT-e for denegado.
+    por: Italo Jurisato Junior
+-- pcteCTeW --
+[*] Descomentado as TAGs: pFCPUFFim e vFCPUFFim conforme NT 2015/004 publicada em
+    23/12/2015 a fim de testes no ambiente de homologação, para o de produção tem
+    que manter essas TAGs comentadas.
+    por: Italo Jurisato Junior
+
+27/11/2015
+-- ACBrCTeWebServices --
+[*] Acrescenta o protocolo de autorização quando é autorizado fora do prazo
+    Status = 150.
+    E salva o XML protocolo também na pasta definida em PathCTe.
+    por: Italo Jurisato Junior
+
+27/11/2015
+-- ACBrCTeDACTEFR --
+[-] Correção na impressão do evento em fastreport 
+    http://www.projetoacbr.com.br/forum/topic/20062-te-impressão-de-eventos-com-fastreport-variável-homologação-não-existe/
+    por: Gilson Inácio do Carmo
+
+27/11/2015
+-- pcteEventoCTe --
+[*] Adicionado o tipo de evento: teConfInternalizacao - (990910) 
+    Confirmacao de Internalizacao da Mercadoria na SUFRAMA
+    por: Italo Jurisato Junior
+
+24/11/2015
+-- pcteCTe / pcteCTeW / pcteCTeR --
+[*] Incluido as TAGs: pFCPUFFim e vFCPUFFim conforme NT 2015/004 publicada em
+    23/12/2015.
+    por: Italo Jurisato Junior
+
+23/11/2015
+-- ACBrCTeWebServices --
+[*] Ao Consultar só vai atualizar o XML caso o CT-e consta na base de dados
+    da SEFAZ.
+    por: Italo Jurisato Junior
+
+20/11/2015
+[*] Melhoria para o DACTe em Fast Report
+    Adição do modelo em paisagem e remoção dos datamodules
+    por : Juliomar Marchetti
+
+11/11/2015
+-- ACBrCTeWebServices --
+[*] Remoção de variáveis e códigos não utilizados.
+    por: Italo Jurisato Junior
+
+05/11/2015
+-- ACBrCTeServicos --
+[*] Atualização das URLs de consulta ao Cadastro.
+    por: Italo Jurisato Junior
+-- ACBrCTeWebServices --
+[*] Remoção de variáveis e códigos não utilizados.
+    por: Italo Jurisato Junior
+
+03/11/2015
+-- ACBrCTeWebServices --
+[*] Possível correção ao realizar a consulta e o retorno ao enviar um CT-e para o SVC.
+    por: Italo Jurisato Junior
+[*] Refatoração, simplificação de código em TCTeInutilizacao.TratarResposta e
+    TCTeEnvEvento.TratarResposta
+    por: Italo Jurisato Junior
+
+30/10/2015
+(ACBrCTeWebServices)
+[-] Correção, não estava levando em consideração o envio para o SVC.
+    por: Italo Jurisato Junior
+(ACBrCTeWebServices)
+[-] Correção não estava salvando o retorno ao enviar um evento.
+    por: Italo Jurisato Junior
+
+28/10/2015
+[*] Melhorias aplicadas as DACTe e Eventos em Fortes Report!
+		por : Jose Geraldo
+
+14/10/2015
+(ACBrCTeServicos)
+[*] Atualizados as URLs do SVC-RS.
+    por: Italo Jurisato Junior
+(ACBrCTeConhecimentos)
+[*] Compatibilização do EnviarEmail com a mesma rotina do ACBrNFe.
+    por: Italo Jurisato Junior
+
+30/09/2015
+(ACBrCTeWebServices)
+[-] Correção para que o tipo de ambiente fique correto na consulta.
+    por: regys.silveira
+[-] Acerto para utilizar o CNPJ do evento ao salvar os arquivos de envio/retorno.
+    por: Italo Jurisato Junior
+
+29/09/2015
+(ACBrCTeWebServices)
+[-] TCTeConsulta, Correção de Bug introduzido. Interpretação errada de
+    tpEmis e tpAmb.
+    por: Italo Jurisato Junior
+[-] TCTeConsulta, correção para consulta de CTEs com UF diferente da UF do
+    Emissor.  
+    por: Italo Jurisato Junior
+[-] Acerto para utilizar o CNPJ do evento quando for salvá-lo em disco,
+    em alguns casos o usuário pode utilizar o certificado da Matriz, antes
+    estava salvando utilizando o CNPJ do certificado o que mistura xmls de
+    evento da matriz com a filial.
+    por: Italo Jurisato Junior
+
+(ACBrCTeConhecimentos)
+[*] Corrigido o método Validar, para extrair apenas a Tag <CTe> do XML informado
+    por: Italo Jurisato Junior
+
+17/09/2015
+[*] (ACBrCTeConhecimentos/ACBrCTeWebServices)
+    Ajustes para que os arquivos de envio/retorno fiquem condicionados a propriedade
+    Configuracoes.Geral.Salvar e os arquivos fiscais a propriedade
+    Configuracoes.Arquivos.Salvar
+    Por: Italo Jurisato Junior
+
+16/09/2015
+[-] (ACBrCTeConhecimentos)
+    Ajuste para ACBrCTe1.Conhecimentos.LoadFromFile para quando o XML lido com
+    assinatura, seja corretamente atribuido a propriedade "XMLAssinado" caso o
+    parâmetro AGerarCTe = True
+    Por: Italo Jurisato Junior
+
+15/09/2015
+[*] (pcteCTe.pas)
+    Corrigido a posição da definição da function GetVersaoStr.
+    Por: Italo Jurisato Junior
+
+10/09/2015
+[*] (Units: Diversas) 
+    Remoção de código comentados e de alguns comentários desnecessários.
+    Por: Italo Jurisato Junior
+
+09/09/2015
+[+] (ACBrCTeWebServices) 
+    Incluido a procedure DefinirURL para o ConsultarCadastro.
+[+] (pcteRetConsSitCTe) 
+    Incluido a propriedade XMLprotCTe para conter o grupo <protCTe> ao ler o XML 
+    de retorno do Consultar.
+[+] (pcteProcCTe)
+    Incluido as propriedades XML_CTe e XML_prot para montagem do XML assinado e 
+    protocolado.
+[+] (pcteConsReciCTe)
+    Incluido a propriedade XMLprotCTe para conter o grupo <protCTe> ao ler o XML
+    de retorno do RetRecepcao.
+[+] (pcteCTe)
+    Incluido a classe TICMSUFFim.
+[+] (pcteCTeW)
+    Incluido a procedure para escrever o grupo <ICMSUFFim>
+[+] (pcteCTeR)
+    Incluido a leitura do grupo <ICMSUFFim>. 
+    Por: Italo Jurisato Junior
+
+01/09/2015
+[*] Corrigido a extração do XML de retorno, não estava pegando o grupo protCTe.
+    Por: Italo Jurisato Junior
+
+29/08/2015
+[*] Alterado a forma de acrescentar o protocolo de autorização ao XML assinado.
+    O XML assinado e protocolado fica disponivel nas propriedades XML e XMLAssinado
+    Por: Italo Jurisato Junior
+
+26/08/2015
+[*] Incluido alguns Tipos e Funções, pois são exclusivas do CT-e (pcteConversaoCTe).
+    Por: Italo Jurisato Junior
+
+25/08/2015
+[*] Removido tipos e funções que não tem nada haver com o componente.
+    por: Italo Jurisato Junior
+[-] Acerto no LoadFromString, estava cortando o XML ao ler a string para o 
+    componente.
+    por: Italo Jurisato Junior
+
+18/08/2015
+[*] O ValidarChave não necessita mais do prefixo da chave e internamente remove
+    todos os caracteres que não sejam digitos, desta forma na chamada da função
+    foi removido o prefixo.
+    por: Italo Jurisato Junior
+[*] Troca do StringReplace/Copy por OnlyNumber para obter somentes os digitos
+    da propriedade ID.
+    por: Italo Jurisato Junior
+
+14/08/2015
+[*] Não estava atualizando o XML através de uma consulta quando a UF é 51.
+    Por: Italo Jurisato Junior
+
+12/08/2015
+[*] Removido a propriedade SalvarEvento, pois a propriedade Salvar é que determina
+    se o arquivo *-procEventoCTe.xml será salvo ou não em disco.
+    Por: Italo Jurisato Junior
+[*] Uso da function TpEventoToDescStr em GetPathEvento.
+    Por: Italo Jurisato Junior
+
+11/08/2015
+[*] Alteração para incluir o protocolo de cancelamento no XML quando a UF for 51.
+    por: Italo Jurisato Junior
+[*] Alteração na montagem do XML assinado e protocolado.
+    por: Italo Jurisato Junior
+
+10/08/2015
+[*] O componente estava criando uma sub-pasta chamada evento em vez de 
+    criar as sub-pastas: Cancelamento, CCe, etc.
+    por: Italo Jurisato Junior
+
+07/08/2015
+[*] Criado o evento Clear em diversas chamadas ao Web Services, se executado 
+    antes da chamada garante que dados do retorno anterior será limpo.
+    por: Italo Jurisato Junior
+
+06/08/2015
+[*] Criado a propriedade XMLprocCTe que será carregada após o envio de um lote
+    caso ela esteja vazia significa que o CT-e foi rejeitado, se não conterá
+    o XML do CT-e assinado e protocolado.
+    por: Italo Jurisato Junior
+
+05/08/2015
+[*] Ao Ler as URLs não estava levando em consideração a SVC.
+    por: Italo Jurisato Junior
+
+31/07/2015
+[*] Adicionado cabeçalho XML quando não houver ao XML baixado pelo webservice
+    de distribuição de DFe
+    por: Italo Jurisato Junior
+
+30/07/2015
+[*] Correção para acrescentar no XML o protocolo de autorização.
+    por: Italo Jurisato Junior
+
+28/07/2015
+[*] Melhorias na leitura do retorno do envio de eventos.
+    por: Italo Jurisato Junior
+
+27/07/2015
+[*] Compatibilizando com o ACBrNFe.
+    por: Italo Jurisato Junior
+
+15/07/2015
+[-] Esta faltando a definição das TAGs de do cabeçalho e de dados.
+    por: Emerson Teixeira
+
+14/05/2015
+[*] Ajustes no CT-e para Fortes Report, compilando normalmente agora.
+    por: Regys Silveira
+
+06/05/2015
+[*] Criado uma nova definição do Envelope Soap para a consulta ao cadastro de
+    contribuinte.
+    por: Italo Jurisato Junior
+
+01/05/2015
+[*] Atualização das URLs de produção e homologação do CT-e publicadas 
+    pela SEFAZ-RS.
+    por: Italo Jurisato Junior
+
+09/03/2015
+[*] Incluido a leitura do Atributo Id do grupo infProt.
+    por: Italo Jurisato Junior
+
+19/02/2015
+[*] Inclusão de novos tipos de eventos (NFe/CTe/MDFe).
+    por: Italo Jurisato Junior
+
+18/02/2015
+[*] Correção para impressão de eventos em Fast Report no caso de produção
+		http://www.projetoacbr.com.br/forum/index.php?/topic/20062-te-impress%C3%A3o-de-eventos-com-fastreport-vari%C3%A1vel-homologa%C3%A7%C3%A3o-n%C3%A3o-existe/
+		
+04/02/2015
+[*] Compatibilizado a checagem da propriedade ID ao gerar o XML.
+    por: Italo Jurisato Junior
+
+09/01/2015
+[*] Melhorias realizadas no DACTE em Fortes Report.
+    por: W. Pereira
+
+05/01/2015
+[*] Alteração para imprimir os eventos em Fast Report.
+    por: Ricardo
+
+30/12/2014
+[*] Incluido a leitura dos grupos infNF e infOutros para conpatiblizar com as
+    versões ateriores a 2.00.
+    por: Sergio Melchiori
+
+18/12/2014
+[*] Incluido a linha para alimentar a propriedade XML que conterá o resultado
+    do processamento do evento.
+    por: Italo Jurisato Junior
+
+17/12/2014
+[-] Como tem XML procEventoCTe com TAG evento e eventoCTe foi feito uma alteração
+    visando atender essas duas situações.
+    por: Italo Jurisato Junior
+[-] Alteração visando obter o retorno de status e motivo após o envio de um
+    Evento.
+    por: Italo Jurisato Junior
+
+16/12/2014
+[-] Alterado a propriedade pela variável de Retorno de Eventos.
+    por: Italo Jurisato Junior
+[*] Incluido Coinitialize(nil) e CoUninitialize nos métodos ValidaModalMSXML e
+    ValidaAssinaturaMSXML.
+    por: Rafael
+[+] Incluido a function: Cancelamento(<Justificativa>, <numLote>)
+    Essa função se utiliza do envio de eventos para realizar o cancelamento de
+    um CT-e.
+    por: Italo Jurisato Junior
+[-] Alterado a rotina que gera o lote de eventos.
+    por: Italo Jurisato Junior
+
+15/12/2014
+[*] Alteração para resolver o problema de duplicidade das observações.
+    por: Wislei de Brito Fernandes
+
+11/12/2014
+[*] Refactoring em várias Units.
+    por: Italo Jurisato Junior
+
+04/12/2014
+[-] Correções na Unit pcteCTeR: grupo de informações de documentos, estava lendo
+    informações sobre a unidade de carga em duplicidade.
+    por: Leandro Hermes
+
+11/11/2014
+[-] Correções para o modal ferroviário, os grupos: ferroEnv e detVag não 
+    estavam sendo fechados corretamente.
+    por: Danilo Ziza
+
+10/11/2014
+[-] Correções baseado nos relatos de Mauricio Guedes, nomes dos arquivos após ler
+    o XML usando o LoadFromStream.
+    por: Italo Jurisato Junior
+
+07/11/2014
+[*] Alterações realizadas conforme NT ACBr 2014/001
+    por: Italo Jurisato Junior
+
+06/11/2014
+[*] Ajustes no DACTE e DA Eventos para Fortes
+    Por: Wanderson Pereira
+
+05/11/2014
+[*] Caso o valor informado a propriedade cPais for zero será alterado para 1058.
+    Conforme solicitado por Geferson no post:
+    http://www.projetoacbr.com.br/forum/index.php?/topic/18489-solicita%C3%A7%C3%A3o-de-altera%C3%A7%C3%B5es/#entry116794
+    Por: Italo Jurisato Junior
+
+04/11/2014
+[-] Correções no DACTE (Fast Report)
+    por: Toan Rodrigues Le
+
+31/10/2014
+[*] Alterações realizadas conforme NT ACBr 2014/001
+    por: Italo Jurisato Junior
+
+29/10/2014
+[*] Incluido nas classes que contem as estruturas dos XML de retornos a propriedade
+    versao, para que esta receba o conteudo do atributo versao.
+    por: Italo Jurisato Junior
+
+24/10/2014
+[*] Alteração para apresentar todas as informações de InfQ em Fast Report
+    http://www.projetoacbr.com.br/forum/index.php?/topic/2049-colocar-volume-no-cte-%C3%A9-possivel/
+    por: Nicolas Carlos
+
+21/10/2014
+[+] Adição da impressão de eventos para CT-e em Fast Report
+    http://www.projetoacbr.com.br/forum/index.php?/topic/17024-impressao-do-evento-cte/#entry114948
+    por: Thiago Filiano
+
+06/06/2013
+[*] Alterado a unit ACBrCTeWebServices.pas para que na consulta com openssl não retorne vazio os dados
+    por: Juliomar Marchetti
+
+04/04/2013
+[+] Modificado o arquivo ACBrCTeReg.pas para colocar a imagen ao componente no Lazarus
+   (por Juliomar Marchetti)
+
+22/11/2012
+-- ACBrDFeUtil
+[+] Unificação de funções de mesma funcionalidade das units:
+    ACBrNFeUtil, ACBrNFEsUtil, ACBrCTeUtil
+    (por Isaque Pinheiro)
+
+Alterações   10/10/2012 (Italo Jurisato Junior)
+---------------
+[*] Melhorias e simplificação em vários fontes do componente.
+
+Alterações   17/05/2012 (Italo Jurisato Junior)
+---------------
+[*] Se a propriedade ExpandirLogoMarca for TRUE não imprime os dados do emitente
+    somente o logo.
+
+Alterações   17/05/2012 (Italo Jurisato Junior)
+---------------
+[*] Foi alterado o Lay-out do DACTE para ficar em conformidade com o manual versão 1.00a.
+    Agora se código da unidade de informação da carga for uM3 o valor de qCarga será
+    impresso na coluna Cubabem;
+    Se o código da unidade de informação da carga for uUnidade, uLitros ou UMMBTU o valor de qCarga será
+    impresso na coluna Qtde Volumes;
+    Para o valor de qCarga ser impresso na coluna Peso Bruto o código da unidade de informação da carga 
+    tem que ser uKg ou uTon e tpMed ser igual a "PESO BRUTO";
+    Para o valor de qCarga ser impresso na coluna Peso Base Cálulo o código da unidade de informação da carga 
+    tem que ser uKg ou uTon e tpMed ser igual a "PESO BASE DE CALCULO" OU "PESO BC";
+    Caso o código da unidade de informação da carga for uKg ou uTon e tpMed for diferente dos textos
+    acima o valor de qCarga será impresso na coluna Peso Aferido;
+
+Alterações   13/05/2012 (Italo Jurisato Junior)
+---------------
+[*] Agora todas as tags que contem uma chave de CTe ou NFe será validada a não ser
+    que o seu conteudo seja vazio.
+
+Alterações   10/05/2012 (Italo Jurisato Junior)
+---------------
+[-] Ao gerar um CTe com destinatário do exterior estava fixo o código do Páis = 1058
+    problema corrigido.
+    Ao emitir um DACTE de um CTe de Complemento estava aparecendo o Recibo na parte
+    inferior da folha.
+    No caso de CTe de Complemento o Recibo não é impresso em nenhum lugar.
+    Problema tambem resolvido.
+
+Alterações   02/05/2012 (Italo Jurisato Junior)
+---------------
+[*] Foi criado a pasta ...\Fontes\ACBrCTe\DACTE_QR3 e dentro dela encontra-se
+    os fontes ACBrCTeDACTeQR e ACBrCTeDACTeQRRetrato.
+    Trata-se de uma versão para quem utiliza o Quick Report versão 3.0
+    Já os mesmos fontes que encontram-se dentro da pasta ...\Fontes\ACBrCTe são
+    destinados a quem utiliza a versão 5.02 do Quick Report.
+
+Alterações   26/04/2012 (Italo Jurisato Junior)
+---------------
+[*] Alteração na geração do XML, quanto as tags: dhCont e xJust, ficando condicioda
+    ao tpEmis = teFSDA.
+    Alteração na function GetURL, foi acrescentado as URLs de Produção e Homologação
+    para as Forma de Emissao: 7 = SVC-RS e 8 = SVC-SP.
+
+Alterações   16/03/2012 (Italo Jurisato Junior)
+---------------
+[+] Foi criado a função ValidaModalMSXML no fonte ACBrCTeUtil.pas 
+    E alterado a função Valida para que a mesma chame as funções:
+      ValidaMSXML e ValidaModalMSXML
+    Finalidade: validar o XML por completo, visto que antes não ocorria a validação
+                do bloco especifico ao modal (versão 1.04).
+
+Alterações   27/01/12 (Italo Jurisato Junior)
+---------------
+[-] Alteração na Emissão do DACTE - Quick Report código do status para CT-e DENEGADA 
+    estava 102 sendo que o correto é 110, conforme falha detectada na emissão do DANFE
+    - Quick Report por Moroni.
+
+Alterações   25/01/12 (Italo Jurisato Junior)
+---------------
+[-] Alteração no Consultar Cadastro (ACBrCTeWebServices) de forma semelhante 
+    feita no ACBrNFeWebServices.
+
+02/01/2012 - Régys Silveira
+---------------------------
+[-] Acertos na emissão de CTe para o Fast-Report
+
+Alteração    29/11/2011
+-----------------------
+[-] Acerto na passagem da senha para o certifico a cada sessão.
+    http://djsystem.com.br/acbr/forum/viewtopic.php?f=6&t=4054
+
+Alterações   04/07/11 (Italo Jurisato Junior)
+---------------
+[-] Alterações na rotina para assinar usando o ACBrCTeOpenSSL, conforme
+    correções realizadas por Gilberto Ximenes.
+[-] Alterações na rotina para imprimir o canhoto no rodapé conforme
+    correções realizadas por Clever - BSoft Sistemas.
+
+Alterações   02/06/11 (Italo Jurisato Junior)
+---------------
+[-] Alterada a Procedure GerarEmit, ao gerar a tag CNPJ a função wCampoCNPJ, 
+    recebia os valores contidos nos campos CNPJ e cPais, se cPais fosse 
+    diferente de 1058 a tag CNPJ ficava em branco, agora a função recebe o 
+    valor contido no campo CNPJ e o valor da constante CODIGO_BRASIL.
+
+Alterações   17/05/11 (Italo Jurisato Junior)
+---------------
+[-] As funções: TpDispositivoToStr e StrToTpDispositivo o dominio de valores eram
+    [0, 1 e 2] sendo que o correto é [1, 2 e 3] conforme Schema.
+
+Alterações   17/05/11 (Italo Jurisato Junior)
+---------------
+[*] Foi incluido o parametro Mascara: Boolean a função FormatarChaveAcesso, quando
+    for False (default) divide a chave em segmentos de 4 digitos separados por espaco,
+    se True utiliza a seguente mascara:
+    99-99/99-99.999.999/9999-99-99-999-999.999.999-999.999.999-9 
+    a mascara esta sendo utilizada para formatar a chave de documentos originários.
+[*] Foi alterado o tamanho da fonte de 8 para 10 para o campo numero do CT-e, essa 
+    alteração foi feita nos dois recibos (cabeçalho/rodape) e no quadro principal.
+[*] Foi alterado o tamanho de caracteres de 50 para 60 para os campos:
+    CNPJCPF_1 e CNPJCPF_2 do cdsDocumentos (TClientDataSet) para conportar a chave
+    formatada com a mascara.
+
+Alterações   27/04/11 (Italo Jurisato Junior)
+---------------
+[+] Foi incluido a propriedade PosRecibo no componente ACBrCTeDACTeQR,
+    desta forma é possivel escolher a posição do Recibo (prCabecalho ou prRodape) 
+[*] Foram feitas varias modificações no fonte ACBrCTeDACTeQRRetrato.
+
+
+Alterações   30/03/2011 (Jeickson Gobeti)
+---------------
+[+] Dacte CT-e em FastReport
+
+Alterações   25/01/11 (Italo Jurisato Junior)
+---------------
+[+] Foi incluido novos tipos conforme solicitação no Mantis #613
+
+
+Alterações   09/12/10 (Italo Jurisato Junior)
+---------------
+[-] Correção na procedure GerarEnderExped, estava usando a UF do Emitende em vez
+    do Expedidor, gerando o XML de forma incorreta.
+
+Alterações   14/07/10 (Italo Jurisato Junior)
+---------------
+[+] Foi incluido na classe TGeralConf a propriedade AtualizarXMLCancelado.
+[*] Alterado a Function GerarXML dos fontes: pcteConsStatServ, pcteProcCTe,
+    pcteConsCad.
+[*] Alterado a Function LerXML dos fontes: pcteRetConsReciCTe, pcteConsStatServ.
+[*] Alterado as Classes: TInutCTe, TRetCancCTe, TInfCadCollectionItem,
+    TRetConsSitCTe, TRetInutCTe.
+[*] Alterações diversas no fonte ACBrCTeWevServices para poder gerar o arquivo de log.
+[*] Alterações diversas no fonte ACBrCTeConhecimentos.
+[*] Alterado a Function GetCertificado do fonte: ACBrCTeConfiguracoes.
+
+Alterações   23/06/10 (Italo Jurisato Junior)
+---------------
+[+] Foi incluido a chamada para os links de homologação para o estado de
+    MS-Mato Grosso do Sul.
+
+Alterações   15/06/10 (Italo Jurisato Junior)
+---------------
+[+] Foi incluido uma nova função (GerarXMLCTe) na classe TSignature e alterado a
+    chamada no fonte pcteCTeW de GerarXML para GerarXMLCTe.
+
+Alterações   31/05/10 (Paulo Ronaldo Vilela de Lima Junior)
+---------------
+[-] Correções nos fontes: ACBrCTeConfiguracoes, ACBrCTeUtil e ACBrCTeWebServices
+    Adicionado os comandos "coInitialize(nil)" e "coUninitilize" nas funções de chamada
+    do certificado (GetCertificado e SelecionarCertificado) para possibilitar o uso TRHEAD
+    ao fazer as requisições;
+    Retirado espações em branco no inicio e fim de algumas URLs de MT;
+    Inserido a função TRIM nos comandos de chamada da variavel FURL.
+
+Alterações   22/05/10 (Italo Jurisato Junior)
+---------------
+[-] Correção da versão (1.03) do xml nos fontes pcteInutCTe, pcteConsStatServ,
+    pcteConsSitCTe, pcteConsReciCTe e pcteCancCTe.
+
+Alterações   20/05/10 (Italo Jurisato Junior)
+---------------
+[*] Alterada a classe TProcCTe para prever a condição do Protocolo lido do Arquivo.
+
+Alterações   19/05/10 (Italo Jurisato Junior)
+---------------
+[*] No fonte pcteCTeR foi incluido a leitura da tag protCTe.
+[-] No fonte pcteCTe foi incluido no constructor/destructor da classe TCTe, a criação
+    e a liberação do FprocCTe.
+[*] No Componente ACBrCTeDACTeQRRetrato, foi descomentado o código que ocasionava erro
+    ao imprimir o DACTe (o problema era a inexistencia do FprocCTe).
+
+Alterações   17/05/10 (Italo Jurisato Junior)
+---------------
+[*] Foram Incluídos todos os campos que faltavam entre o campo #321 e o Campo #355 e
+    entre o campo #466 e o campo #510.
+[*] No Componente ACBrCTeDACTeQRRetrato, foi incluido o código da Situação Tributária antes da
+    descrição (Exemplo: 00-Prestação Sujeito a Tributação Normal ICMS).
+
+Alterações   14/05/10 (Italo Jurisato Junior)
+---------------
+[*] Alterado o tipo do campo chave de String para AnsiString na function TCTeW.GerarXml: boolean;
+    (Créditos: EMBarbosa, Daniel Simões, Paulo Gurgel)
+[-] Correções feitas nos fontes: pcteCTeR, pcteCTeW e ACBrCTeDACTeQRRetrato,
+    com relação aos campos do ICMS (Créditos: Doni Delphi).
+
+Alterações   13/05/10 (Italo Jurisato Junior)
+---------------
+[*] No fonte pcnConversao, as funções: StrToCSTICMS, CSTICMSToStrTagPos e CSTICMSToStrTagPosText
+    Foram alteradas para ficarem compativeis com a função CSTICMSToStr.
+
+Alterações   12/05/10
+---------------
+[*] Foram Incluídos todos os campos que faltavam entre o campo #277 e o Campo #320.
+[*] Os pacotes de instalação ACBr_CTe e ACBrCTeDacteQRpkg agora possuiem uma diretiva de 
+    compilação para o Delphi 2010 para ignorar a DCP: visualclx (Créditos: Isaque Pinheiro e Vanderlei Silva).
+[*] Na função function TCTeW.GerarXml: boolean;, possuiem uma diretiva de 
+    compilação para o Delphi 2010 para substituir o tipo String por AnsiString na
+    variável chave (Créditos: Isaque Pinheiro e Vanderlei Silva).
+[-] Alterações feita ao ler o xml, não estava lendo a tag xObs (Créditos: Reginaldo Trindade). 
+
+Alterações   07/05/10
+---------------
+[*] Foram Incluídos todos os campos que faltavam entre o campo #1 e o Campo #276.
+    Campos referentes aos dados complementares do CT-e para fins operacionais ou comerciais,
+    Campos referentes ao Local de retirada constante na NF e
+    Campos referentes ao Local de Entrega constante na NF.
+
+Alterações   03/05/10
+---------------
+[-] Correção dos procedimentos: GerarCST81, GerarCST90 e GerarInfSeg (Créditos: Doni Delphi).
+
+Alterações   30/04/10
+---------------
+[-] Foram corrigidos algumas mensagens de erro que mostrava 'nota fiscal' em vez de 'conhecimento'.
+[-] Corrigido o Componente ACBrCTeDACTeQRRetrato para imprimir no DACTe outros tipos de Documentos.
+    no quadro Documentos Originários.
+
+Alterações   29/04/10
+---------------
+[*] Alterado a descrição da forma de pagamento do DACTe de A Vista e A Prazo para Pago e A Pagar.
+
+Alterações   28/04/10
+---------------
+[*] Incluido a descrição da unidade de medida junto com a quantidade nos 4 quadros do DACTe.
+
+Alterações   27/04/10
+---------------
+[-] Corrigido o problema da não imprimir o Logo da empresa.
+
+Alterações   27/04/10
+---------------
+[-] Código de Barras estava sendo impresso faltando pedaço, falha apontada por Doni Delphi.
+[-] Ao ler o arquivo xml ficava em branco quando tem somente o CPF informado.
+[*] Incluido o UF após a descrição do município do remetente, destinatário, etc, falha apontada por Doni Delphi.
+[*] Novo DACTe muito mais elegante e dentro do padrão (Créditos: Mario Araujo).
+
+Alterações   26/04/10
+---------------
+[+] Vários recursos disponiveis no ACBrNFe agora estão disponiveis no ACBrCTe.
+[*] Várias rotinas foram modificadas para ter os mesmos recursos do ACBrNFe.
+[-] Rotinas corrigidas por conter falhas que só apareciam durante a execução.
+
+Versão 0.01a   16/12/08
+---------------
+[+] Início do Projeto
+[+] Primeira Versao lançada baseado no componente fornecido por Wemerson Souto.
+
+
+
+

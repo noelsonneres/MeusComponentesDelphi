@@ -1,0 +1,10 @@
+Installing the FastReport with TeeChart Pro
+
+Run "recompile.exe" and perform the following steps:
+1. Select Delphi version
+2. Select FR edition
+3. Select TeeChart version
+4. Click "Browse" button and select path to your TeeChart Pro .dcu files
+(typically C:\Program Files\Steema Software\TeeChart X for Delphi X\DelphiX\Lib)
+5. Select "Change TeeChart version"
+6. Click "Compile" button

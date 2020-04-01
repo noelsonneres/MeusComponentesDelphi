@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <Package Version="4">
+    <PathDelim Value="\"/>
+    <Name Value="ACBr_SPED"/>
+    <Type Value="RunAndDesignTime"/>
+    <Author Value="Isaque Pinheiro - Daniel Simões de Almeida"/>
+    <CompilerOptions>
+      <Version Value="11"/>
+      <PathDelim Value="\"/>
+      <SearchPaths>
+        <OtherUnitFiles Value="..\..\..\..\Fontes\ACBrTXT\ACBrSPED;..\..\..\..\Fontes\ACBrTXT\ACBrSPED\ACBrSPEDFiscal;..\..\..\..\Fontes\ACBrTXT\ACBrSPED\ACBrSPEDContabil;..\..\..\..\Fontes\ACBrTXT\ACBrSPED\ACBrSPEDPisCofins;..\..\..\..\Fontes\ACBrTXT\ACBrSPED\ACBrSPEDPisCofinsImportar;..\..\..\..\Fontes\ACBrTXT\ACBrSPED\ACBrSPEDECF;..\..\..\..\Fontes\ACBrTXT\ACBrSPED\ACBrSPEDFiscalImportar"/>
+        <UnitOutputDirectory Value="..\..\..\..\Lib\Lazarus\ACBrTXT\ACBrSPED\$(TargetCPU)-$(TargetOS)"/>
+      </SearchPaths>
+    </CompilerOptions>
+    <Description Value="ACBr - EFD ICMS/IPI, EFD Contribuições, EFD Contábil e ECF - (http://www.projetoacbr.com.br/)"/>
+    <License Value="LGPL"/>
+    <Version Release="1"/>
+    <Files Count="7">
+      <Item1>
+        <Filename Value="..\..\..\..\Fontes\ACBrTXT\ACBrSPED\ACBrSped.pas"/>
+        <UnitName Value="ACBrSped"/>
+      </Item1>
+      <Item2>
+        <Filename Value="..\..\..\..\Fontes\ACBrTXT\ACBrSPED\ACBrSPEDFiscal\ACBrSpedFiscal.pas"/>
+        <HasRegisterProc Value="True"/>
+        <UnitName Value="ACBrSpedFiscal"/>
+      </Item2>
+      <Item3>
+        <Filename Value="..\..\..\..\Fontes\ACBrTXT\ACBrSPED\ACBrSPEDContabil\ACBrSpedContabil.pas"/>
+        <HasRegisterProc Value="True"/>
+        <UnitName Value="ACBrSpedContabil"/>
+      </Item3>
+      <Item4>
+        <Filename Value="..\..\..\..\Fontes\ACBrTXT\ACBrSPED\ACBrSPEDPisCofins\ACBrSpedPisCofins.pas"/>
+        <HasRegisterProc Value="True"/>
+        <UnitName Value="ACBrSpedPisCofins"/>
+      </Item4>
+      <Item5>
+        <Filename Value="..\..\..\..\Fontes\ACBrTXT\ACBrSPED\ACBrSPEDPisCofinsImportar\ACBrEPCImportar.pas"/>
+        <HasRegisterProc Value="True"/>
+        <UnitName Value="ACBrEPCImportar"/>
+      </Item5>
+      <Item6>
+        <Filename Value="..\..\..\..\Fontes\ACBrTXT\ACBrSPED\ACBrSPEDECF\ACBrSpedECF.pas"/>
+        <HasRegisterProc Value="True"/>
+        <UnitName Value="ACBrSpedECF"/>
+      </Item6>
+      <Item7>
+        <Filename Value="..\..\..\..\Fontes\ACBrTXT\ACBrSPED\ACBrSPEDFiscalImportar\ACBrEFDImportar.pas"/>
+        <HasRegisterProc Value="True"/>
+        <UnitName Value="ACBrEFDImportar"/>
+      </Item7>
+    </Files>
+    <RequiredPkgs Count="1">
+      <Item1>
+        <PackageName Value="ACBrTXTComum"/>
+      </Item1>
+    </RequiredPkgs>
+    <UsageOptions>
+      <UnitPath Value="$(PkgOutDir)"/>
+    </UsageOptions>
+    <PublishOptions>
+      <Version Value="2"/>
+      <IgnoreBinaries Value="False"/>
+    </PublishOptions>
+  </Package>
+</CONFIG>

@@ -1,0 +1,37 @@
++:
+2478=!Add child band
+crStName=!Enter the style name:
+crResize=!To resize a cross-tab, set its "AutoSize" property to False.
+
+4312=!Select style
+4313=!Save current style...
+4314=!Show title
+4315=!Show corner
+4316=!Reprint headers on new page
+4317=!Auto size
+4318=!Border around cells
+4319=!Print down then across
+4320=!Side-by-side cells
+4321=!Join equal cells
+
+-:
+4331
+4332
+4333
+4334
+4335
+4336
+4337
+4338
+4339
+crBorder
+crDown
+crRepHdrs
+
+
+class:
+
+207=!Other
+211=!Order
+poDirect=!Direct (1-9)
+poReverse=!Reverse (9-1)

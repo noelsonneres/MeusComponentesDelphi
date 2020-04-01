@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <Package Version="4">
+    <PathDelim Value="\"/>
+    <Name Value="ACBr_GNRE"/>
+    <Type Value="RunAndDesignTime"/>
+    <Author Value="Juliomar Marchetti"/>
+    <CompilerOptions>
+      <Version Value="11"/>
+      <PathDelim Value="\"/>
+      <SearchPaths>
+        <OtherUnitFiles Value="..\..\..\..\Fontes\ACBrDFe\ACBrGNRE;..\..\..\..\Fontes\ACBrDFe\ACBrGNRE\PCNGNRE;..\..\..\..\Fontes\ACBrDFe\ACBrGNRE\GNRE"/>
+        <UnitOutputDirectory Value="..\..\..\..\Lib\Lazarus\ACBrDFe\ACBrGNRE\$(TargetCPU)-$(TargetOS)"/>
+      </SearchPaths>
+    </CompilerOptions>
+    <Description Value="ACBr - Guia Nacional de Recolhimento de Tributos Estaduais - (http://www.projetoacbr.com.br/)"/>
+    <License Value="LGPL"/>
+    <Files Count="19">
+      <Item1>
+        <Filename Value="..\..\..\..\Fontes\ACBrDFe\ACBrGNRE\ACBrGNRE2.pas"/>
+        <UnitName Value="ACBrGNRE2"/>
+      </Item1>
+      <Item2>
+        <Filename Value="..\..\..\..\Fontes\ACBrDFe\ACBrGNRE\ACBrGNREConfiguracoes.pas"/>
+        <UnitName Value="ACBrGNREConfiguracoes"/>
+      </Item2>
+      <Item3>
+        <Filename Value="..\..\..\..\Fontes\ACBrDFe\ACBrGNRE\ACBrGNREGuias.pas"/>
+        <UnitName Value="ACBrGNREGuias"/>
+      </Item3>
+      <Item4>
+        <Filename Value="..\..\..\..\Fontes\ACBrDFe\ACBrGNRE\ACBrGNREReg.pas"/>
+        <HasRegisterProc Value="True"/>
+        <UnitName Value="ACBrGNREReg"/>
+      </Item4>
+      <Item5>
+        <Filename Value="..\..\..\..\Fontes\ACBrDFe\ACBrGNRE\PCNGNRE\pgnreConsResLoteGNRE.pas"/>
+        <UnitName Value="pgnreConsResLoteGNRE"/>
+      </Item5>
+      <Item6>
+        <Filename Value="..\..\..\..\Fontes\ACBrDFe\ACBrGNRE\ACBrGNREWebServices.pas"/>
+        <UnitName Value="ACBrGNREWebServices"/>
+      </Item6>
+      <Item7>
+        <Filename Value="..\..\..\..\Fontes\ACBrDFe\ACBrGNRE\PCNGNRE\pgnreConfigUF.pas"/>
+        <UnitName Value="pgnreConfigUF"/>
+      </Item7>
+      <Item8>
+        <Filename Value="..\..\..\..\Fontes\ACBrDFe\ACBrGNRE\PCNGNRE\pgnreConsConfigUF.pas"/>
+        <UnitName Value="pgnreConsConfigUF"/>
+      </Item8>
+      <Item9>
+        <Filename Value="..\..\..\..\Fontes\ACBrDFe\ACBrGNRE\PCNGNRE\pgnreConversao.pas"/>
+        <UnitName Value="pgnreConversao"/>
+      </Item9>
+      <Item10>
+        <Filename Value="..\..\..\..\Fontes\ACBrDFe\ACBrGNRE\PCNGNRE\pgnreGNRE.pas"/>
+        <UnitName Value="pgnreGNRE"/>
+      </Item10>
+      <Item11>
+        <Filename Value="..\..\..\..\Fontes\ACBrDFe\ACBrGNRE\PCNGNRE\pgnreGNRER.pas"/>
+        <UnitName Value="pgnreGNRER"/>
+      </Item11>
+      <Item12>
+        <Filename Value="..\..\..\..\Fontes\ACBrDFe\ACBrGNRE\PCNGNRE\pgnreGNRERetorno.pas"/>
+        <UnitName Value="pgnreGNRERetorno"/>
+      </Item12>
+      <Item13>
+        <Filename Value="..\..\..\..\Fontes\ACBrDFe\ACBrGNRE\PCNGNRE\pgnreGNREW.pas"/>
+        <UnitName Value="pgnreGNREW"/>
+      </Item13>
+      <Item14>
+        <Filename Value="..\..\..\..\Fontes\ACBrDFe\ACBrGNRE\PCNGNRE\pgnreRetCampoAdicional.pas"/>
+        <UnitName Value="pgnreRetCampoAdicional"/>
+      </Item14>
+      <Item15>
+        <Filename Value="..\..\..\..\Fontes\ACBrDFe\ACBrGNRE\PCNGNRE\pgnreRetConsConfigUF.pas"/>
+        <UnitName Value="pgnreRetConsConfigUF"/>
+      </Item15>
+      <Item16>
+        <Filename Value="..\..\..\..\Fontes\ACBrDFe\ACBrGNRE\PCNGNRE\pgnreRetConsResLoteGNRE.pas"/>
+        <UnitName Value="pgnreRetConsResLoteGNRE"/>
+      </Item16>
+      <Item17>
+        <Filename Value="..\..\..\..\Fontes\ACBrDFe\ACBrGNRE\PCNGNRE\pgnreRetDetalhamentoReceita.pas"/>
+        <UnitName Value="pgnreRetDetalhamentoReceita"/>
+      </Item17>
+      <Item18>
+        <Filename Value="..\..\..\..\Fontes\ACBrDFe\ACBrGNRE\PCNGNRE\pgnreRetEnvLoteGNRE.pas"/>
+        <UnitName Value="pgnreRetEnvLoteGNRE"/>
+      </Item18>
+      <Item19>
+        <Filename Value="..\..\..\..\Fontes\ACBrDFe\ACBrGNRE\PCNGNRE\pgnreRetPeriodoApuracao.pas"/>
+        <UnitName Value="pgnreRetPeriodoApuracao"/>
+      </Item19>
+    </Files>
+    <RequiredPkgs Count="1">
+      <Item1>
+        <PackageName Value="ACBrDFeComum"/>
+      </Item1>
+    </RequiredPkgs>
+    <UsageOptions>
+      <UnitPath Value="$(PkgOutDir)"/>
+    </UsageOptions>
+    <PublishOptions>
+      <Version Value="2"/>
+    </PublishOptions>
+  </Package>
+</CONFIG>

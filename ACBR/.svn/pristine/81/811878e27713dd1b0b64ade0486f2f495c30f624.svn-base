@@ -1,0 +1,107 @@
+{******************************************************************************}
+{ Projeto: Componente ACBrCTe                                                  }
+{  Biblioteca multiplataforma de componentes Delphi para emissão de            }
+{  Conhecimento Eletrônico - CTe - http://www.cte.fazenda.gov.br               }
+{                                                                              }
+{ Direitos Autorais Reservados (c) 2008 Wemerson Souto                         }
+{                                       Daniel Simoes de Almeida               }
+{                                       André Ferreira de Moraes               }
+{                                                                              }
+{ Colaboradores nesse arquivo:                                                 }
+{                                                                              }
+{  Você pode obter a última versão desse arquivo na pagina do Projeto ACBr     }
+{ Componentes localizado em http://www.sourceforge.net/projects/acbr           }
+{                                                                              }
+{                                                                              }
+{  Esta biblioteca é software livre; você pode redistribuí-la e/ou modificá-la }
+{ sob os termos da Licença Pública Geral Menor do GNU conforme publicada pela  }
+{ Free Software Foundation; tanto a versão 2.1 da Licença, ou (a seu critério) }
+{ qualquer versão posterior.                                                   }
+{                                                                              }
+{  Esta biblioteca é distribuída na expectativa de que seja útil, porém, SEM   }
+{ NENHUMA GARANTIA; nem mesmo a garantia implícita de COMERCIABILIDADE OU      }
+{ ADEQUAÇÃO A UMA FINALIDADE ESPECÍFICA. Consulte a Licença Pública Geral Menor}
+{ do GNU para mais detalhes. (Arquivo LICENÇA.TXT ou LICENSE.TXT)              }
+{                                                                              }
+{  Você deve ter recebido uma cópia da Licença Pública Geral Menor do GNU junto}
+{ com esta biblioteca; se não, escreva para a Free Software Foundation, Inc.,  }
+{ no endereço 59 Temple Street, Suite 330, Boston, MA 02111-1307 USA.          }
+{ Você também pode obter uma copia da licença em:                              }
+{ http://www.opensource.org/licenses/lgpl-license.php                          }
+{                                                                              }
+{ Daniel Simões de Almeida  -  daniel@djsystem.com.br  -  www.djsystem.com.br  }
+{              Praça Anita Costa, 34 - Tatuí - SP - 18270-410                  }
+{                                                                              }
+{******************************************************************************}
+
+{******************************************************************************
+|* Historico
+|*
+|* 16/12/2008: Wemerson Souto
+|*  - Doação do componente para o Projeto ACBr
+|* 25/06/2009: André Ferreira de Moraes
+|*  - Componente convertido para utilizar units do PCN
+|* 18/08/2009: Wiliam Zacarias da Silva Rosa
+|*  - Componente convertido para utilizar CT-e
+******************************************************************************}
+{$I ACBr.inc}
+package ACBr_CTe;
+
+{$R *.res}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO ON}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION OFF}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES ON}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$DESCRIPTION 'ACBr - Conhecimento de Transporte Eletrônico - (http://www.projetoacbr.com.br/)'}
+{$IMPLICITBUILD OFF}
+{$DEFINE DEBUG}
+
+requires
+  rtl,
+  vcl,
+  designide,
+  ACBr_DFeComum,
+  ACBr_PCNComum;
+
+contains
+  ACBrCTe in '..\..\..\..\Fontes\ACBrDFe\ACBrCTe\ACBrCTe.pas',
+  ACBrCTeConfiguracoes in '..\..\..\..\Fontes\ACBrDFe\ACBrCTe\ACBrCTeConfiguracoes.pas',
+  ACBrCTeConhecimentos in '..\..\..\..\Fontes\ACBrDFe\ACBrCTe\ACBrCTeConhecimentos.pas',
+  ACBrCTeReg in '..\..\..\..\Fontes\ACBrDFe\ACBrCTe\ACBrCTeReg.pas',
+  ACBrCTeWebServices in '..\..\..\..\Fontes\ACBrDFe\ACBrCTe\ACBrCTeWebServices.pas',
+  pcteConsts in '..\..\..\..\Fontes\ACBrDFe\ACBrCTe\PCNCTe\pcteConsts.pas',
+  pcteConsSitCTe in '..\..\..\..\Fontes\ACBrDFe\ACBrCTe\PCNCTe\pcteConsSitCTe.pas',
+  pcteConversaoCTe in '..\..\..\..\Fontes\ACBrDFe\ACBrCTe\PCNCTe\pcteConversaoCTe.pas',
+  pcteCTe in '..\..\..\..\Fontes\ACBrDFe\ACBrCTe\PCNCTe\pcteCTe.pas',
+  pcteCTeR in '..\..\..\..\Fontes\ACBrDFe\ACBrCTe\PCNCTe\pcteCTeR.pas',
+  pcteCTeW in '..\..\..\..\Fontes\ACBrDFe\ACBrCTe\PCNCTe\pcteCTeW.pas',
+  pcteEnvEventoCTe in '..\..\..\..\Fontes\ACBrDFe\ACBrCTe\PCNCTe\pcteEnvEventoCTe.pas',
+  pcteEventoCTe in '..\..\..\..\Fontes\ACBrDFe\ACBrCTe\PCNCTe\pcteEventoCTe.pas',
+  pcteInutCTe in '..\..\..\..\Fontes\ACBrDFe\ACBrCTe\PCNCTe\pcteInutCTe.pas',
+  pcteLayoutTXT in '..\..\..\..\Fontes\ACBrDFe\ACBrCTe\PCNCTe\pcteLayoutTXT.pas',
+  pcteModeloCTe in '..\..\..\..\Fontes\ACBrDFe\ACBrCTe\PCNCTe\pcteModeloCTe.pas',
+  pcteProcCTe in '..\..\..\..\Fontes\ACBrDFe\ACBrCTe\PCNCTe\pcteProcCTe.pas',
+  pcteRetConsSitCTe in '..\..\..\..\Fontes\ACBrDFe\ACBrCTe\PCNCTe\pcteRetConsSitCTe.pas',
+  pcteRetEnvCTe in '..\..\..\..\Fontes\ACBrDFe\ACBrCTe\PCNCTe\pcteRetEnvCTe.pas',
+  pcteRetEnvEventoCTe in '..\..\..\..\Fontes\ACBrDFe\ACBrCTe\PCNCTe\pcteRetEnvEventoCTe.pas',
+  pcteRetInutCTe in '..\..\..\..\Fontes\ACBrDFe\ACBrCTe\PCNCTe\pcteRetInutCTe.pas',
+  ACBrCTeDACTEClass in '..\..\..\..\Fontes\ACBrDFe\ACBrCTe\DACTE\ACBrCTeDACTEClass.pas';
+
+end.

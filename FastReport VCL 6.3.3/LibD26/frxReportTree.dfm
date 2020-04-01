@@ -1,0 +1,41 @@
+object frxReportTreeForm: TfrxReportTreeForm
+  Left = 185
+  Top = 107
+  Width = 179
+  Height = 323
+  BorderStyle = bsSizeToolWin
+  Caption = 'Report Tree'
+  Color = clBtnFace
+  DragKind = dkDock
+  DragMode = dmAutomatic
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  FormStyle = fsStayOnTop
+  OldCreateOrder = False
+  OnCreate = FormCreate
+  OnShow = FormShow
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Tree: TTreeView
+    Left = 0
+    Top = 0
+    Width = 163
+    Height = 285
+    Align = alClient
+    BorderStyle = bsNone
+    DragMode = dmAutomatic
+    HideSelection = False
+    Indent = 19
+    ReadOnly = True
+    ShowRoot = False
+    TabOrder = 0
+    OnChange = TreeChange
+    OnDragDrop = TreeDragDrop
+    OnDragOver = TreeDragOver
+    OnKeyDown = TreeKeyDown
+    OnMouseDown = TreeMouseDown
+  end
+end

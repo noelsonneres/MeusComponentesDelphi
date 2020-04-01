@@ -1,0 +1,56 @@
+package ACBr_SPEDImportar;
+
+{$R *.res}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL ON}
+{$DEBUGINFO OFF}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION OFF}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO OFF}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES ON}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$DESCRIPTION 'ACBr - EFD ICMS/IPI, EFD Contribuições, EFD Contábil - Importação - (http://www.projetoacbr.com.br/)'}
+{$IMPLICITBUILD OFF}
+{$DEFINE DEBUG}
+
+requires
+  rtl,
+  vcl,
+  designide,
+  ACBr_SPED;
+
+contains
+  ACBrEPCImportar in '..\..\..\..\..\Fontes\ACBrTXT\ACBrSPED\ACBrSPEDPisCofinsImportar\ACBrEPCImportar.pas',
+  ACBrEPCBase in '..\..\..\..\..\Fontes\ACBrTXT\ACBrSPED\ACBrSPEDPisCofinsImportar\ACBrEPCBase.pas',
+  ACBrEPCBloco_0_Importar in '..\..\..\..\..\Fontes\ACBrTXT\ACBrSPED\ACBrSPEDPisCofinsImportar\ACBrEPCBloco_0_Importar.pas',
+  ACBrEPCBloco_1_Importar in '..\..\..\..\..\Fontes\ACBrTXT\ACBrSPED\ACBrSPEDPisCofinsImportar\ACBrEPCBloco_1_Importar.pas',
+  ACBrEPCBloco_A_Importar in '..\..\..\..\..\Fontes\ACBrTXT\ACBrSPED\ACBrSPEDPisCofinsImportar\ACBrEPCBloco_A_Importar.pas',
+  ACBrEPCBloco_C_Importar in '..\..\..\..\..\Fontes\ACBrTXT\ACBrSPED\ACBrSPEDPisCofinsImportar\ACBrEPCBloco_C_Importar.pas',
+  ACBrEPCBloco_D_Importar in '..\..\..\..\..\Fontes\ACBrTXT\ACBrSPED\ACBrSPEDPisCofinsImportar\ACBrEPCBloco_D_Importar.pas',
+  ACBrEPCBloco_F_Importar in '..\..\..\..\..\Fontes\ACBrTXT\ACBrSPED\ACBrSPEDPisCofinsImportar\ACBrEPCBloco_F_Importar.pas',
+  ACBrEPCBloco_I_Importar in '..\..\..\..\..\Fontes\ACBrTXT\ACBrSPED\ACBrSPEDPisCofinsImportar\ACBrEPCBloco_I_Importar.pas',
+  ACBrEPCBloco_M_Importar in '..\..\..\..\..\Fontes\ACBrTXT\ACBrSPED\ACBrSPEDPisCofinsImportar\ACBrEPCBloco_M_Importar.pas',
+  ACBrEPCBloco_P_Importar in '..\..\..\..\..\Fontes\ACBrTXT\ACBrSPED\ACBrSPEDPisCofinsImportar\ACBrEPCBloco_P_Importar.pas',
+  ACBrEFDImportar in '..\..\..\..\..\Fontes\ACBrTXT\ACBrSPED\ACBrSPEDFiscalImportar\ACBrEFDImportar.pas',
+  ACBrEFDBase in '..\..\..\..\..\Fontes\ACBrTXT\ACBrSPED\ACBrSPEDFiscalImportar\ACBrEFDBase.pas',
+  ACBrEFDBloco_0_Importar in '..\..\..\..\..\Fontes\ACBrTXT\ACBrSPED\ACBrSPEDFiscalImportar\ACBrEFDBloco_0_Importar.pas',
+  ACBrEFDBloco_C_Importar in '..\..\..\..\..\Fontes\ACBrTXT\ACBrSPED\ACBrSPEDFiscalImportar\ACBrEFDBloco_C_Importar.pas',
+  ACBrEFDBloco_D_Importar in '..\..\..\..\..\Fontes\ACBrTXT\ACBrSPED\ACBrSPEDFiscalImportar\ACBrEFDBloco_D_Importar.pas',
+  ACBrEFDBloco_E_Importar in '..\..\..\..\..\Fontes\ACBrTXT\ACBrSPED\ACBrSPEDFiscalImportar\ACBrEFDBloco_E_Importar.pas',
+  ACBrEFDBloco_H_Importar in '..\..\..\..\..\Fontes\ACBrTXT\ACBrSPED\ACBrSPEDFiscalImportar\ACBrEFDBloco_H_Importar.pas',
+  ACBrEFDBloco_1_Importar in '..\..\..\..\..\Fontes\ACBrTXT\ACBrSPED\ACBrSPEDFiscalImportar\ACBrEFDBloco_1_Importar.pas';
+
+end.

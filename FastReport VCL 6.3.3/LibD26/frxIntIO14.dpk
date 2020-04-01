@@ -1,0 +1,45 @@
+// Package file for Delphi 2010
+
+package frxIntIO14;
+{$I frx.inc}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO ON}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION ON}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES OFF}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST ON}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$RUNONLY}
+{$IMPLICITBUILD OFF}
+
+requires
+  VCL,
+  fs14,
+  frx14,
+  frxIntIOBase14,
+  vclie;
+
+contains	
+  frxBaseSocketIOHandler in 'frxBaseSocketIOHandler.pas',	
+  frxTransportHTTP in 'frxTransportHTTP.pas',
+  frxOpenSSL in 'frxOpenSSL.pas',    
+  frxIOTransportDropbox in 'frxIOTransportDropbox.pas',
+  frxIOTransportOneDrive in 'frxIOTransportOneDrive.pas',
+  frxIOTransportBoxCom in 'frxIOTransportBoxCom.pas',
+  frxIOTransportGoogleDrive in 'frxIOTransportGoogleDrive.pas';
+
+end.

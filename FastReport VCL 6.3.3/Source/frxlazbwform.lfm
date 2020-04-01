@@ -1,0 +1,170 @@
+object frxBWForm: TfrxBWForm
+  Left = 344
+  Height = 239
+  Top = 204
+  Width = 556
+  BorderStyle = bsSizeToolWin
+  Caption = 'frxBWForm'
+  ClientHeight = 239
+  ClientWidth = 556
+  OnCreate = FormCreate
+  OnShow = FormShow
+  ShowHint = True
+  LCLVersion = '1.8.4.0'
+  object splBW: TSplitter
+    Left = 307
+    Height = 239
+    Top = 0
+    Width = 5
+  end
+  object pnlW: TPanel
+    Left = 0
+    Height = 239
+    Top = 0
+    Width = 307
+    Align = alLeft
+    ClientHeight = 239
+    ClientWidth = 307
+    TabOrder = 1
+    OnResize = pnlWResize
+    object tlbW: TToolBar
+      Left = 1
+      Height = 26
+      Top = 1
+      Width = 305
+      Caption = 'tlbW'
+      TabOrder = 0
+      object AddW: TToolButton
+        Left = 1
+        Hint = 'Add watch'
+        Top = 2
+        ImageIndex = 97
+        OnClick = AddWClick
+      end
+      object DeleteW: TToolButton
+        Left = 24
+        Hint = 'Delete watch'
+        Top = 2
+        Caption = 'DeleteW'
+        ImageIndex = 98
+        OnClick = DeleteWClick
+      end
+      object EditW: TToolButton
+        Left = 47
+        Hint = 'Edit watch'
+        Top = 2
+        Caption = 'EditW'
+        ImageIndex = 68
+        OnClick = EditWClick
+      end
+    end
+    object ListTB: TTabControl
+      Left = 1
+      Height = 20
+      Top = 218
+      Width = 305
+      OnChange = ListTBChange
+      TabPosition = tpBottom
+      TabIndex = 0
+      Tabs.Strings = (
+        'Watches'
+        'Local'
+      )
+      Align = alBottom
+      TabOrder = 1
+    end
+    object WatchLBCB: TCheckListBox
+      Left = 1
+      Height = 191
+      Top = 27
+      Width = 305
+      Align = alClient
+      BorderStyle = bsNone
+      ItemHeight = 0
+      OnClickCheck = WatchLBCBClickCheck
+      OnDblClick = EditWClick
+      TabOrder = 2
+    end
+    object WatchLB: TStringGrid
+      Left = 1
+      Height = 191
+      Top = 27
+      Width = 305
+      Align = alClient
+      ColCount = 3
+      FixedCols = 0
+      GridLineWidth = 0
+      Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRowSelect, goSmoothScroll]
+      RowCount = 2
+      TabOrder = 3
+      TitleFont.Height = -11
+      TitleFont.Name = 'Tahoma'
+    end
+  end
+  object pnlB: TPanel
+    Left = 312
+    Height = 239
+    Top = 0
+    Width = 244
+    Align = alClient
+    ClientHeight = 239
+    ClientWidth = 244
+    TabOrder = 2
+    OnResize = pnlBResize
+    object tlbB: TToolBar
+      Left = 1
+      Height = 26
+      Top = 1
+      Width = 242
+      Caption = 'tlbB'
+      TabOrder = 0
+      object DeleteB: TToolButton
+        Left = 1
+        Top = 2
+        Caption = 'Delete BreakPoint'
+        ImageIndex = 98
+        OnClick = DeleteBClick
+      end
+      object EditB: TToolButton
+        Left = 24
+        Top = 2
+        Caption = 'Edit BreakPoint'
+        ImageIndex = 68
+        OnClick = EditBClick
+      end
+      object ToggleEnableB: TToolButton
+        Left = 47
+        Top = 2
+        ImageIndex = 94
+        OnClick = ToggleEnableBClick
+      end
+    end
+    object BreakPGR: TStringGrid
+      Left = 1
+      Height = 211
+      Top = 27
+      Width = 242
+      Align = alClient
+      ColCount = 3
+      DefaultRowHeight = 16
+      FixedCols = 0
+      GridLineWidth = 0
+      Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRowSelect]
+      RowCount = 2
+      TabOrder = 1
+      TitleFont.Height = -11
+      TitleFont.Name = 'Tahoma'
+      OnDblClick = BreakPGRDblClick
+      OnDrawCell = BreakPGRDrawCell
+    end
+    object EditBtn: TButton
+      Left = 217
+      Height = 16
+      Top = 35
+      Width = 16
+      Caption = '...'
+      TabOrder = 2
+      Visible = False
+    end
+  end
+end

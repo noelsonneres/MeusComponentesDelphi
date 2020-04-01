@@ -1,0 +1,55 @@
+// Package file for Delphi 17
+
+package frxIntIOIndy17;
+{$I frx.inc}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO ON}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION ON}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES OFF}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST ON}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$RUNONLY}
+{$IMPLICITBUILD OFF}
+
+requires
+  VCL,
+  fs17,
+  frx17,
+  frxIntIOBase17,
+  vclie,
+{$IFDEF CUSTOM_INDY}
+  IndySystem170,
+  IndyProtocols170,
+  IndyCore170;
+{$ELSE}
+  IndySystem,
+  IndyProtocols,
+  IndyCore;
+{$ENDIF}
+
+contains
+  frxTransportIndyConnector in 'frxTransportIndyConnector.pas',
+  frxTransportIndyConnectorHTTP in 'frxTransportIndyConnectorHTTP.pas',
+  frxIOTransportDropboxIndy in 'frxIOTransportDropboxIndy.pas',
+  frxIOTransportOneDriveIndy in 'frxIOTransportOneDriveIndy.pas',
+  frxIOTransportBoxComIndy in 'frxIOTransportBoxComIndy.pas',
+  frxIOTransportGoogleDriveIndy in 'frxIOTransportGoogleDriveIndy.pas',
+  frxIOTransportIndyMail in 'frxIOTransportIndyMail.pas',  
+  frxIOTransportFTP in 'frxIOTransportFTP.pas';
+
+end.

@@ -1,0 +1,1 @@
+brcc32 -fo"fs_ifdreg.dcr" "TFSFDRTTI.rc"

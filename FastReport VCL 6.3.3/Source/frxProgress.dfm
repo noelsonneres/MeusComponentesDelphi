@@ -1,0 +1,71 @@
+object frxProgress: TfrxProgress
+  Left = 326
+  Top = 272
+  BorderStyle = bsNone
+  ClientHeight = 101
+  ClientWidth = 271
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  OldCreateOrder = False
+  Position = poScreenCenter
+  Scaled = False
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  OnHide = FormHide
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Panel1: TPanel
+    Left = 0
+    Top = 0
+    Width = 271
+    Height = 101
+    Align = alClient
+    BevelWidth = 2
+    TabOrder = 0
+    object LMessage: TLabel
+      Left = 16
+      Top = 11
+      Width = 237
+      Height = 20
+      Alignment = taCenter
+      AutoSize = False
+      Caption = 'LMessage'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+    end
+    object Bar: TProgressBar
+      Left = 16
+      Top = 37
+      Width = 237
+      Height = 17
+      Position = 30
+      Step = 1
+      TabOrder = 0
+    end
+    object CancelB: TButton
+      Left = 100
+      Top = 64
+      Width = 75
+      Height = 25
+      Cancel = True
+      Caption = 'Cancel'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ModalResult = 2
+      ParentFont = False
+      TabOrder = 1
+      OnClick = CancelBClick
+    end
+  end
+end

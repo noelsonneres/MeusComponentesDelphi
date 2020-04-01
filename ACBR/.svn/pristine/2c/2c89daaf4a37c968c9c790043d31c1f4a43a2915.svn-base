@@ -1,0 +1,1183 @@
+{******************************************************************************}
+{ Projeto: Componentes ACBr                                                    }
+{ Biblioteca multi plataforma de componentes Delphi para interação com equipa- }
+{ mentos de Automação Comercial utilizados no Brasil                           }
+{                                                                              }
+{  Você pode obter a última versão desse arquivo na página do Projeto ACBr     }
+{ Componentes localizado em      http://www.sourceforge.net/projects/acbr      }
+{                                                                              }
+{  Esta biblioteca é software livre; você pode redistribuí-la e/ou modificá-la }
+{ sob os termos da Licença Pública Geral Menor do GNU conforme publicada pela  }
+{ Free Software Foundation; tanto a versão 2.1 da Licença, ou (a seu critério) }
+{ qualquer versão posterior.                                                   }
+{                                                                              }
+{  Esta biblioteca é distribuída na expectativa de que seja útil, porém, SEM   }
+{ NENHUMA GARANTIA; nem mesmo a garantia implícita de COMERCIABILIDADE OU      }
+{ ADEQUAÇÃO A UMA FINALIDADE ESPECÍFICA. Consulte a Licença Pública Geral Menor}
+{ do GNU para mais detalhes. (Arquivo LICENÇA.TXT ou LICENSE.TXT)              }
+{                                                                              }
+{  Você deve ter recebido uma cópia da Licença Pública Geral Menor do GNU junto}
+{ com esta biblioteca; se não, escreva para a Free Software Foundation, Inc.,  }
+{ no endereço 59 Temple Street, Suite 330, Boston, MA 02111-1307 USA.          }
+{ Você também pode obter uma copia da licença em:                              }
+{ http://www.opensource.org/licenses/lgpl-license.php                          }
+{                                                                              }
+{ Daniel Simões de Almeida  -  daniel@djsystem.com.br  -  www.djsystem.com.br  }
+{              Praça Anita Costa, 34 - Tatuí - SP - 18270-410                  }
+{                                                                              }
+{******************************************************************************}
+Agradecimentos:
+
+* Administradores:
+- Daniel Simões de Almeida
+- André Ferreira de Moraes
+
+* Desenvolvedores:
+* 27/10/2015: Jean Carlo Cantu, Tiago Ravache
+*  - Doação do componente para o Projeto ACBr
+
+{******************************************************************************
+|* ACBreSocial
+|*
+|* PROPÓSITO: Registro de Alterações
+******************************************************************************}
+
+Símbolo : Significado
+
+[+]     : Novo recurso
+[*]     : Recurso modificado/melhorado
+[-]     : Correção de Bug (assim esperamos)
+
+06/01/2020
+-- Diversos --
+[+] Implementado os métodos: Gerar, Assinar e Validar desta forma o desenvolvedor 
+    poderá apenas gerar o XML do evento sem realizar a assinatura.
+    O método GerarXMLs ainda continua realizando a sua função que é gerar, assinar e
+    validar o XML gerado.
+   Por: Italo Jurisato Junior
+
+13/11/2019
+-- pcesConversaoeSocial/pcesGerador --
+[*] Alterações visando a versão 2.5
+    https://www.projetoacbr.com.br/forum/topic/54851-atualiza%C3%A7%C3%A3o-de-vers%C3%A3o-25-25-revisada-reg-s2200/
+   Por: Paulo Aguiar Junior
+-- pcesConversaoeSocial/pcesS1005 --
+[*] Alterações visando a versão 2.5
+    https://www.projetoacbr.com.br/forum/topic/54210-atualiza%C3%A7%C3%A3o-de-vers%C3%A3o-25-25-revisada/?do=findComment&comment=360276
+   Por: Paulo Aguiar Junior
+
+12/11/2019
+-- pcesConversaoeSocial/pcesS1000 --
+[*] Alterações visando a versão 2.5
+    https://www.projetoacbr.com.br/forum/topic/54210-atualiza%C3%A7%C3%A3o-de-vers%C3%A3o-25-25-revisada/?do=findComment&comment=360229
+   Por: Paulo Aguiar Junior
+-- pcesConversaoeSocial --
+[*] Alterações visando a versão 2.5
+    https://www.projetoacbr.com.br/forum/topic/54210-atualiza%C3%A7%C3%A3o-de-vers%C3%A3o-25-25-revisada/?do=findComment&comment=360029
+   Por: Renato E
+
+11/11/2019
+-- pcesConversaoeSocial --
+[*] Alterações visando a versão 2.5
+    https://www.projetoacbr.com.br/forum/topic/54210-atualiza%C3%A7%C3%A3o-de-vers%C3%A3o-25-25-revisada/
+   Por: Renato E
+
+14/10/2019
+-- Diversos --
+[*] Alterações visando a versão 2.5
+    https://www.projetoacbr.com.br/forum/topic/54210-atualiza%C3%A7%C3%A3o-de-vers%C3%A3o-25-25-revisada/
+   Por: Italo Jurisato Junior / Alisson Souza Pereira
+
+01/08/2019
+-- pcesS1200 --
+[*] Alterado o indice de xx para xxx da seção dmDev e das demais que são filhas 
+    dela.
+    Essa alteração afeta apenas que utiliza a leitura do arquivo INI, para gerar
+    e enviar o respectivo evento.
+   Por: Italo Jurisato Junior
+
+01/07/2019
+-- Diversos --
+[*] Acrescentado o enumerador prpNenhum ao tipo: tpPlanRP, pois a tag é opcional
+    e precisamos de um valor para informar que a mesma não deve ser gerada.
+   Por: Italo Jurisato Junior
+
+26/06/2019
+-- Diversos --
+[*] Alterações visando adequar a geração dos XML em função das alterações realizadas
+    nos Schemas no dia 18/06/2019
+   Por: Italo Jurisato Junior
+
+25/06/2019
+-- pcesS1000 --
+[*] https://www.projetoacbr.com.br/forum/topic/52101-campo-indporte-evento-s-1000-nota-tecnica-14-2019/
+   Por: ghvoliveira
+
+30/05/2019
+-- pcesS5013 --
+[*] https://www.projetoacbr.com.br/forum/topic/51645-vazamento-de-mem%C3%B3ria-s-5013/
+   Por: Alisson Souza Pereira
+-- pcesS2299 / pcesCommon --
+[*] https://www.projetoacbr.com.br/forum/topic/51641-vazamento-de-mem%C3%B3ria-s-2299/
+   Por: Alisson Souza Pereira
+
+29/05/2019
+-- pcesS2240 --
+[*] https://www.projetoacbr.com.br/forum/topic/51599-nota-t%C3%A9cnica-122019-s2240/
+   Por: Angelo Sobreira
+-- ACBreSocial / ACBreSocialWebServices --
+[+] https://www.projetoacbr.com.br/forum/topic/51394-esocial-possibilidade-de-escolher-entre-gerar-assinar-validar-ou-enviar-temos-casos-onde-o-cliente-n%C3%A3o-vai-enviar-diretamente-para-o-webservice/?do=findComment&comment=340170
+   Por: Dream Sistemas
+
+24/05/2019
+-- Diversos --
+[*] https://www.projetoacbr.com.br/forum/topic/51507-corre%C3%A7%C3%A3o-do-evento-s-2298/
+   Por: Gustavo Ribeiro Croscato
+
+23/05/2019
+-- pcesS5011 --
+[-] https://www.projetoacbr.com.br/forum/topic/51495-corre%C3%A7%C3%A3o-pcess5011pas/
+   Por: Patrick Alves
+-- pcesGerador --
+[-] https://www.projetoacbr.com.br/forum/topic/51488-corre%C3%A7%C3%A3o-pcesgeradorpas-m%C3%A9todo-gerarnfs/
+   Por: Digibyte
+
+16/05/2019
+-- pcesConversaoeSocial --
+[*] Incluido o enumerador ufEX no tpUF para ser utilizado quando for Exterior.
+   Por: Italo Jurisato Junior
+
+14/05/2019
+-- pcesS2210 --
+[*] Trocado o tipo de conversão de tcStr para tcInt nos campos que são Integer.
+   Por: Italo Jurisato Junior
+-- pcesGerador/pcesConversaoeSocial --
+[*] https://www.projetoacbr.com.br/forum/topic/51319-s-2230-afastamento-pelo-motivo-35-licen%C3%A7a-maternidade-antecipa%C3%A7%C3%A3o-eou-prorroga%C3%A7%C3%A3o-mediante-atestado-m%C3%A9dico/
+[*] Troca do tipo de conversão de tcStr para tcInt de alguns campos do pcesGerador.
+   Por: Alex Camilo / Italo Jurisato Junior
+
+10/05/2019
+-- pcesS2245 --
+[*] Inclusão do campo: indTreinAnt.
+   Por: Italo Jurisato Junior
+
+07/05/2019
+-- pcesS2299 --
+[*] https://www.projetoacbr.com.br/forum/topic/51115-evento-2299-tag-qtddiasinterm/
+   Por: Roberto Couto dos Santos
+
+29/04/2019
+-- pcesS1000 --
+[*] https://www.projetoacbr.com.br/forum/topic/50994-%C3%B3rg%C3%A3o-p%C3%BAblico/
+   Por: Emerson Moreno
+
+26/04/2019
+-- pcesS2240 --
+[-] Ajuste para o campo dscOC ser gerado apenas quando o campo ideOC igual a 9.
+   Por: Rafael Dias
+[-] Ajuste para o campo eficEpc ser gerado apenas quando o campo utilizEPC igual a 2.
+   Por: Rafael Dias
+
+22/04/2019
+-- pcesS2300 --
+[*] https://www.projetoacbr.com.br/forum/topic/50817-corre%C3%A7%C3%A3o-evento-2300-tag-infodirigentesindical-apenas-sendo-enviada-quando-houver-dtadmorig/
+   Por: G H V Oliveira
+
+12/04/2019
+-- ACBreSocialWebServices --
+[*] Removido a função OnlyNumber do parametro ID para o método Download.
+   Por: Italo Jurisato Junior
+
+11/04/2019
+-- ACBreSocialWebServices --
+[-] Possivel correção na passagem dos parametros para o método Download.
+   Por: Italo Jurisato Junior
+
+02/04/2019
+-- pcesS2399 --
+[*] https://www.projetoacbr.com.br/forum/topic/50319-s2399-desligamento-por-mudan%C3%A7a-de-cpf/
+   Por: Hudson G Leite
+
+01/04/2019
+-- pcesS5011 --
+[*] https://www.projetoacbr.com.br/forum/topic/50320-erro-ao-carregar-xml-do-evento-s-5011/?do=findComment&comment=331763
+   Por: Carlos Solla
+
+29/03/2019
+-- Diversos --
+[*] Removido de todos os eventos o campo tpAmb, agora ao gerar o XML dos eventos
+    esse campo será preenchido automaticamente com o valor da propriedade de 
+    configuração: Ambiente. 
+   Por: Italo Jurisato Junior
+
+28/03/2019
+-- pcesS2210 / pcesS2230 --
+[*] Acrescentado um parâmetro com o tipo do evento na procedure que gera o grupo Emitente
+    Pois para o evento 2210 a tag a ser gerada é nrOC e no evento 2230 tem que ser nrOc.
+   Por: Italo Jurisato Junior
+
+25/03/2019
+-- pcesS2240 --
+[*] https://www.projetoacbr.com.br/forum/topic/49409-eventos-sst-v25/?do=findComment&comment=330424
+   Por: Sandro Herbst
+-- Diversos --
+[*] Remoção de warnings
+   Por: Italo Jurisato Junior
+
+22/03/2019
+-- pcesS2299 --
+[*] https://www.projetoacbr.com.br/forum/topic/50146-s-2299-corre%C3%A7%C3%A3o-infotrabinterm/
+   Por: Paulo Aguiar Junior
+
+20/03/2019
+-- ACBreSocialWebServices --
+[*] Correções no método Consultar Eventos de Identificadores.
+   Por: Wellington
+
+15/03/2019
+-- pcesS2221 --
+[*] https://www.projetoacbr.com.br/forum/topic/50008-evento-s2221/
+   Por: edf
+
+13/03/2019
+-- pcesS2240 --
+[*] Efetuada correções no bloco comentado que se encontra no método LerArqIni.
+   Por: Italo Jurisato Junior
+
+11/03/2019
+-- Diversos --
+[*] https://www.projetoacbr.com.br/forum/topic/46398-solicitardownloadeventos/?do=findComment&comment=328935
+   Por: Adelio
+-- pcesGerador --
+[*] https://www.projetoacbr.com.br/forum/topic/49858-corre%C3%A7%C3%A3o-evento-2230-tagnroc-esta-gerando-incorreto/
+   Por: Edmar Frazao
+
+08/03/2019
+-- pcesS2220 --
+[*] https://www.projetoacbr.com.br/forum/topic/49804-esocial-s-2220-erro-ao-validar/?do=findComment&comment=328838
+   Por: Sandro Herbst
+-- ACBreSocialWebServices --
+[*] Incluido a extensão ".xsd" que ficou faltando para as demais consultas.
+   Por: Italo Jurisato Junior
+
+06/03/2019
+-- Diversos --
+[*] https://www.projetoacbr.com.br/forum/topic/49707-gera%C3%A7%C3%A3o-do-evento-s-2210/
+   Por: edf
+-- pcesS1060 --
+[*] https://www.projetoacbr.com.br/forum/topic/49409-eventos-sst-v25/?do=findComment&comment=327963
+   Por: Arce
+-- pcesS2299 --
+[*] https://www.projetoacbr.com.br/forum/topic/49672-transfer%C3%AAncia-de-funcion%C3%A1rios-evento-2299/
+   Por: Agricio Comper
+
+18/02/2019
+-- pcesS2245 --
+[*] https://www.projetoacbr.com.br/forum/topic/49409-eventos-sst-v25/?do=findComment&comment=326660
+   Por: gtvosouza
+-- Diversos --
+[*] https://www.projetoacbr.com.br/forum/topic/49409-eventos-sst-v25/?do=findComment&comment=326693
+   Por: Arce
+
+14/02/2019
+-- Diversos --
+[*] https://www.projetoacbr.com.br/forum/topic/49409-eventos-sst-v25/
+   Por: Arce
+
+13/02/2019
+-- Diversos --
+[*] https://www.projetoacbr.com.br/forum/topic/46398-solicitardownloadeventos/?do=findComment&comment=326091
+   Por: Alessandro Feelipe
+
+13/02/2019
+-- pcesRetConsultaIdentEvt --
+[*] Simplificação na definição da classe de leitura do numero do recibo.
+   Por: Italo Jurisato Junior
+
+11/02/2019
+-- pcesS1200 --
+[*] Possível correção na leitura do arquivo INI do evento 1200.
+   Por: Italo Jurisato Junior
+
+07/02/2019
+-- diversos --
+[+] Implementação dos métodos ConsultaIdentificadoresEventosEmpregador e DownloadEventos.
+   Por: Alessandro Feelipe e Italo Jurisato Junior
+
+30/01/2019
+-- Diversos --
+[*] https://www.projetoacbr.com.br/forum/topic/47582-comit%C3%AA-gestor-aprova-a-vers%C3%A3o-25-do-leiaute-do-esocial/?do=findComment&comment=324270
+   Por: Joceandro Perin
+
+29/01/2019
+-- Diversos --
+[*] https://www.projetoacbr.com.br/forum/topic/47582-comit%C3%AA-gestor-aprova-a-vers%C3%A3o-25-do-leiaute-do-esocial/?do=findComment&comment=323868
+   Por: Angelo Sobreira
+
+25/01/2019
+-- Diversos --
+[*] https://www.projetoacbr.com.br/forum/topic/48956-ajuste-campo-tpcontr-do-s-2200/
+[*] https://www.projetoacbr.com.br/forum/topic/48956-ajuste-campo-tpcontr-do-s-2200/?do=findComment&comment=323567
+   Por: Joceandro Perin
+
+23/01/2019
+-- Diversos --
+[*] A tag codSusp pode conter um numero inteiro com mais de 10 digitos, sendo 
+    assim o melhor foi mudar o tipo de Integer para String.
+   Por: Italo Jurisato Junior
+
+17/01/2019
+-- pcesS5013 --
+[*] Correção no nome de uma tag que estava com a grafria errada.
+   Por: Arce
+
+17/01/2019
+-- pcesS5013 --
+[*] Implementação do Evento de Retorno 5013.
+   Por: Arce
+
+15/01/2019
+-- pcesS5003 --
+[*] Implementação do Evento de Retorno 5003.
+   Por: Arce
+
+14/01/2019
+-- pcesConversaoeSocial --
+[*] Possível correção para identificação correta do evento.
+   Por: Italo Jurisato Junior
+
+08/01/2019
+-- pcesGerador --
+[*] https://www.projetoacbr.com.br/forum/topic/48578-s-2200-preenchimento-do-campo-dtterm/
+   Por: Alex Camilo
+
+04/01/2019
+-- Diversos --
+[*] Alterações visando a versão 2.5
+   Por: Paulo Aguiar Junior
+
+27/12/2018
+-- pcesGerador / pcesCommon / pces2200 --
+[*] Alterações visando a versão 2.5
+   Por: Italo Jurisato Junior
+
+21/12/2018
+-- pcesS1200 --
+[*] Alteração visando a versão 2.5
+   Por: Italo Jurisato Junior
+
+20/12/2018
+-- Diversos --
+[*] https://www.projetoacbr.com.br/forum/topic/48247-s-2200-grupo-novo-mudancacpf/?do=findComment&comment=319488
+   Por: Sandro Felipe Adad
+
+10/12/2018
+-- pcesS1200 / pcesS2399 --
+[*] https://www.projetoacbr.com.br/forum/topic/47825-evento-s-1200-tag-detplano-n%C3%A3o-aparece-sem-cpf/?do=findComment&comment=317887
+   Por: Kelly Diego Rakelly
+
+27/11/2018
+-- pcesS2206 --
+[*] https://www.projetoacbr.com.br/forum/topic/47823-s-2206-erro-no-formato-da-data-base-da-categoria-profissional-do-trabalhador/ 
+   Por: Alex Camilo
+-- pcesS1200 --
+[*] https://www.projetoacbr.com.br/forum/topic/47825-evento-s-1200-tag-detplano-n%C3%A3o-aparece-sem-cpf/?do=findComment&comment=315034
+   Por: Italo Jurisato Junior
+
+21/11/2018
+-- pcesConversaoeSocial --
+[*] https://www.projetoacbr.com.br/forum/topic/47740-infoente-subteto-valores-deve-ser-1-2-3-ou-9/
+   Por: Jadson
+
+12/11/2018
+-- pcesConversaoeSocial --
+[*] Criado o enumerador ve02_05_00 para nova versão do eSocial
+   Por: Italo Jurisato Junior
+
+22/10/2018
+-- pcesGerador --
+[*] https://www.projetoacbr.com.br/forum/topic/47141-s-2200-erro-no-formato-da-data-base-da-categoria-profissional-do-trabalhador/
+   Por: Alex Camilo
+
+28/09/2018
+-- pcesS2300 / pcesS2306/ pcesCommon --
+[*] Alterado o tipo do campo uf da classe instEnsino para String, pois este campo
+    é opcional.
+   Por: Italo Jurisato Junior
+
+20/09/2018
+-- Diversos --
+[*] Acrescentado a propriedade idEvento na classe Gerados, desta forma é possível
+    obter de uma forma simples o ID de cada evento que foi gerado e esta a espera
+    de ser enviado.
+   Por: Italo Jurisato Junior
+
+18/09/2018
+-- pcesS2230/pcesConversaoeSocial --
+[*] https://www.projetoacbr.com.br/forum/topic/42108-s-2230-afastamento-temporario-retorno-de-afastamento/?do=findComment&comment=307354
+   Por: Leandro LJM
+
+12/09/2018
+-- pcesS2205 --
+[*] Acrescentado a leitura da seção [nascimento] do arquivo INI.
+   Por: Italo Jurisato Junior
+
+10/09/2018
+-- pcesS3000 --
+[*] https://www.projetoacbr.com.br/forum/topic/46212-pcess3000-n%C3%A3o-gera-idetrabalhador-para-os-te-s2299-nem-s2399/?do=findComment&comment=306205
+   Por: Aristarco Ribeiro
+
+05/09/2018
+-- Diversos --
+[*] https://www.projetoacbr.com.br/forum/topic/46168-corre%C3%A7%C3%A3o-no-s-2200-ajuda-s-2206-infoestaturario/?do=findComment&comment=305616
+   Por: Jorge Williams
+
+31/08/2018
+-- Diversos --
+[*] Correções, tag com a nomenclatura errada.
+   Por: Italo Jurisato Junior
+
+09/08/2018
+-- pcesGerador --
+[*] https://www.projetoacbr.com.br/forum/topic/45582-altera%C3%A7%C3%B5es-para-a-unit-pcesgeradorpas/
+   Por: Gustavo Ribeiro Croscato
+
+08/08/2018
+-- pcesS1200--
+[*] https://www.projetoacbr.com.br/forum/topic/43461-s-1200-tsv-com-mais-de-um-demonstartivo/?do=findComment&comment=300837
+-- pcesS1210--
+[*] https://www.projetoacbr.com.br/forum/topic/42760-adicionar-campo-matricula-no-grupo-detpgtofer-do-evento-s-1210/?do=findComment&comment=300851
+   Por: Leandro LJM
+
+07/08/2018
+-- pcesS2230--
+[*] https://www.projetoacbr.com.br/forum/topic/42108-s-2230-afastamento-temporario-retorno-de-afastamento/?do=findComment&comment=300600
+   Por: Leandro LJM
+
+06/08/2018 -- PCNeSocial --
+[*] Migrado a procedure LerIniArquivoOuString para classe ACBrUtil, devido utilização fora das classes do DFe. 
+
+02/08/2018
+-- pcesConversaoeSocial --
+[*] https://www.projetoacbr.com.br/forum/topic/45256-ajuste-nos-campos-indcomerc-e-indaquis-dos-eventos-s-1250-e-s-1260/
+   Por: Joceandro Perin
+
+17/07/2018
+-- Diversos --
+[*] https://www.projetoacbr.com.br/forum/topic/44815-padroniza%C3%A7%C3%A3o-eventos-esocial/
+   Por: Alisson Souza Pereira
+
+29/06/2018
+-- Diversos --
+[*] https://www.projetoacbr.com.br/forum/topic/44184-s-2230-corre%C3%A7%C3%A3o/?do=findComment&comment=292935
+   Por: Paulo Aguiar Junior
+
+20/06/2018
+-- pcesS2300 --
+[*] https://www.projetoacbr.com.br/forum/topic/44095-e-social-nota-de-documenta%C3%A7%C3%A3o-evolutiva-012018-de-30052018/
+   Por: Grupo FS
+
+19/06/2018
+-- ACBreSocialEventos --
+[*] https://www.projetoacbr.com.br/forum/topic/44165-erro-ao-carregar-v%C3%A1rios-xml-de-eventos/
+   Por: Gustavo Almeida
+
+15/06/2018
+-- pcesGerador --
+[*] Estava sendo utilizada uma função de conversão errada para obter o tipo de
+    evento.
+   Por: Italo Jurisato Junior
+
+13/06/2018
+-- Diversos --
+[*] Acrescentado condições na leitura das seções no arquivo INI que são opcionais.
+   Por: Italo Jurisato Junior
+
+12/06/2018
+-- pcesS2200 --
+[*] Acrescentado condições na leitura das seções no arquivo INI que são opcionais.
+   Por: Italo Jurisato Junior
+
+08/06/2018
+-- ACBreSocial --
+[-] Não estava identificando corretamente o tipo de evento ao carregar um XML
+    através do LoadFromFile
+   Por: Italo Jurisato Junior
+
+07/06/2018
+-- pcesS2299 --
+[*] https://www.projetoacbr.com.br/forum/topic/43883-corre%C3%A7%C3%A3o-do-s-2299-desligamento/
+   Por: Renato E
+
+05/06/2018
+-- pcesS1030 --
+[*] Imposta uma condição para gerar ou não o grupo <cargoPublico> na leitura do
+    arquivo INI do evento 1030.
+   Por: Italo Jurisato Junior
+-- pcesS1280 --
+[*] Alterado o tipo de tcDec4 para tcDec2 - tag <fatorMes>.
+   Por: Joceandro Perin
+
+04/06/2018
+-- pcesS2299 / pcesS1210 / pcesCommon --
+[*] https://www.projetoacbr.com.br/forum/topic/43520-adicionar-novos-campos-s-1210-e-s-2299/
+   Por: Italo Jurisato Junior
+
+29/05/2018
+-- ACBreSocialWebServices / pcesGerador / pcesConversaoeSocial --
+[*] Ateração na montagem do caminho mais o nome do schema levando em consideração
+    a versão do layout acrescentada no final do nome do arquivo XSD.
+   Por: Italo Jurisato Junior
+
+-- pcesS5011 / pcesS5012 --
+[*] https://www.projetoacbr.com.br/forum/topic/43675-lerxml-eventos-s-5011-e-s-5012/
+   Por: arce
+
+25/05/2018
+-- ACBreSocial --
+[*] Realizada modificações visando a leitura de XML de terceiros.
+    Ao carregar um XML de terceiros através do método LoadFromFile, o componente
+    checa para saber se o XML esta assinado, caso não esteja, será realizado a
+    assinatura e a validação do mesmo e por fim deixa-lo na fila de eventos para
+    ser enviado através do método Enviar.
+   Por: Italo Jurisato Junior
+
+23/05/2018
+-- pcesGerador --
+[*] Incluido os novos enumeradores na checagem do tipo de empregador ao gerar o 
+    grupo <ideEmpregador>.
+   Por: Italo Jurisato Junior
+
+22/05/2018
+-- pcesConversaoeSocial / pcesGerador --
+[*] https://www.projetoacbr.com.br/forum/topic/43058-esocial-org%C3%A3os-p%C3%BAblicos/?do=findComment&comment=286755
+   Por: Italo Jurisato Junior
+
+18/05/2018
+-- pcesS1200--
+[*] https://www.projetoacbr.com.br/forum/topic/43367-s-1200-tsv-erro-tag-infocomplcont/?do=findComment&comment=286184
+   Por: Alisson Souza Pereira
+
+11/05/2018
+-- pcesGerador --
+[*] https://www.projetoacbr.com.br/forum/topic/38499-esocial/?do=findComment&comment=285106
+   Por: Leandro LJM
+
+09/05/2018
+-- pcesS2241 / pcesS2400--
+[*] Correções necessárias para poder gerar corretamente os XML dos eventos através
+   da leitura de seus dados em arquivos INI.
+   Por: Italo Jurisato Junior
+
+-- pcesS5002 --
+[*] https://www.projetoacbr.com.br/forum/topic/43021-retorno-do-s-1210-evento-s-5002-com-erro-no-componente/?do=findComment&comment=284580
+   Por: Arce
+
+08/05/2018
+-- ACBreSocialLoteEventos / pcesNaoPeriodicos / pcesS2220 / pcesS2210 --
+[*] Correções necessárias para poder gerar corretamente os XML dos eventos através
+   da leitura de seus dados em arquivos INI.
+   Por: Italo Jurisato Junior
+
+07/05/2018
+-- ACBreSocial --
+[*] https://www.projetoacbr.com.br/forum/topic/43138-e-social-reinf-lerarqini/
+   Por: Leandro LJM
+-- pcesConversaoeSocial --
+[*] https://www.projetoacbr.com.br/forum/topic/43113-valor-do-campo-s2298-lei-anistia/?do=findComment&comment=284372
+   Por: Renato E
+-- ACBreSocialEventos / pcesIniciais / pcesNaoPeriodicos / pcesPeriodicos / pcesTabelas --
+[*] Incluido na Classe Gerados a propriedade XML que contem o XML do evento gerado.
+   Por: Italo Jurisato Junior  
+
+04/05/2018
+-- pcesNaoPeriodicos / pcesPeriodicos / pcesTabelas / pcesS1299 / pcesS1300 --
+[*] Correções necessárias para poder gerar corretamente os XML dos eventos através
+   da leitura de seus dados em arquivos INI.
+   Por: Italo Jurisato Junior
+
+03/05/2018
+-- ACBreSocialEventos / pcesConversaoeSocial / pcesIniciais / pcesS1200 / pcesS1202 / pcesS1207 / pcesS2298 --
+[*] Correções necessárias para poder gerar corretamente os XML dos eventos através
+   da leitura de seus dados em arquivos INI.
+   Por: Italo Jurisato Junior
+
+-- pcesS5001 / pcesS5002 / pcesS5011 / pcesS5012 --
+[*] Tentativa de eliminar o erro interno relatado por Edmar Frazao.
+    https://www.projetoacbr.com.br/forum/topic/43021-retorno-do-s-1210-evento-s-5002-com-erro-no-componente/
+   Por: Italo Jurisato Junior
+
+02/05/2018
+-- ACBreSocialLoteEventos / pcesConversaoeSocial / pcesS1080 --
+[*] Correções necessárias para poder gerar corretamente os XML dos eventos através
+   da leitura de seus dados em arquivos INI.
+   Por: Italo Jurisato Junior
+-- pcesGerador / pcesS2300 --
+[*] https://www.projetoacbr.com.br/forum/topic/43062-registro-s-2300-campo-nistrab/
+   Por: Gustavo Ribeiro Croscato
+
+30/04/2018
+-- eSocial --
+[*] Correções em várias Units para que os tipos de eventos salvos em arquivos INI
+    sejam identificados de forma correta.
+   Por: Italo Jurisato Junior
+
+27/04/2018
+-- pcesS1280 --
+[*] https://www.projetoacbr.com.br/forum/topic/43026-ajuste-no-evento-s-1280/
+   Por: Joceandro Perin
+
+26/04/2018
+-- pcesS3000 --
+[*] https://www.projetoacbr.com.br/forum/topic/42988-erro-ao-excluir-evento-s-1200-atrav%C3%A9s-do-evento-s-3000/
+   Por: ghv Oliveira
+
+25/04/2018
+--  pcesConversaoeSocial --
+[*] https://www.projetoacbr.com.br/forum/topic/42949-corre%C3%A7%C3%A3o-s-1000/
+   Por: Paulo Aguiar Junior
+
+23/04/2018
+-- pcesS2230 / pcesConversaoeSocial --
+[*] https://www.projetoacbr.com.br/forum/topic/42896-corre%C3%A7%C3%A3o-s-2230/
+   Por: Paulo Aguiar Junior
+
+20/04/2018
+-- pcesS2260 --
+[*] https://www.projetoacbr.com.br/forum/topic/42872-falta-de-campo-dtprevpgto-no-s2260/
+   Por: Renato E
+
+18/04/2018
+-- pcesS2306 --
+[*] https://www.projetoacbr.com.br/forum/topic/41671-alterar-s2300-campo-natatividade-n%C3%A3o-pode-ser-informado-para-determinadas-categorias/?do=findComment&comment=282067
+   Por: Gustavo Ribeiro Croscato
+
+17/04/2018
+-- pcesS2300 / pcesS2306 --
+[*] https://www.projetoacbr.com.br/forum/topic/41671-alterar-s2300-campo-natatividade-n%C3%A3o-pode-ser-informado-para-determinadas-categorias/?do=findComment&comment=281822
+   Por: Gustavo Ribeiro Croscato
+
+16/04/2018
+-- pcesS1020 / pcesS1070 / pcesGerador --
+[*] https://www.projetoacbr.com.br/forum/topic/42743-altera%C3%A7%C3%A3o-infoprocjudterceiros-evento-s-1020/
+   Por: Arce
+-- pcesS1210 --
+[*] https://www.projetoacbr.com.br/forum/topic/42760-adicionar-campo-matricula-no-grupo-detpgtofer-do-evento-s-1210/
+   Por: Joceandro Perin
+
+13/04/2018
+-- pcesCommon / pcesGerador --
+[*] https://www.projetoacbr.com.br/forum/topic/42715-erro-s2200-e-s2300-exterior/?do=findComment&comment=281388
+   Por: Renato E
+-- pcesS1200 --
+[*] https://www.projetoacbr.com.br/forum/topic/42702-ajuste-ao-gerar-grupo-infotrabinterm-e-infocomplcont-do-evento-s-1200/?do=findComment&comment=281433
+   Por: Joceandro Perin
+
+12/04/2018
+-- pcesS2299 --
+[*] Refeito a geração do grupo <consigFGTS> em função das versões 2.04.01 e 2.04.02
+   Por: Italo Jurisato Junior
+-- pcesS2230 / pcesS2300 --
+[*] https://www.projetoacbr.com.br/forum/topic/42678-valor-do-campo-infonus-s2300/?do=findComment&comment=281148
+-- pcesS1200 --
+[*] https://www.projetoacbr.com.br/forum/topic/42702-ajuste-ao-gerar-grupo-infotrabinterm-e-infocomplcont-do-evento-s-1200/
+   Por: Joceandro Perin
+
+10/04/2018
+-- pcesS1210 / pcesConversaoeSocial --
+[*] https://www.projetoacbr.com.br/forum/topic/42629-ajuste-no-campo-tppgto-do-evento-s-1210-e-valida%C3%A7%C3%B5es/
+  Por: Joceandro Perin
+-- pcesS2300 / pcesS2306 --
+[-] Correção na nomenclatura da propriedade natAtividade.
+  Por: Hudson G Leite
+
+05/04/2018
+-- ACBreSocialWebServices --
+[*] https://www.projetoacbr.com.br/forum/topic/42564-ideempregador-nrinsc-com-8-posi%C3%A7%C3%B5es/
+   Por: Márcio M Gomes
+-- pcesS5001 / pcesS5002 / pcesS5011 / pcesS5012 --
+[+] Implementação da gravação do arquivo INI referente aos eventos de retornos:
+    S-5001, S-5002, S-5011 e S-5012.
+   Por: Italo Jurisato Junior
+
+04/04/2018
+-- pcesGerador --
+[*] Incluido a função de conversão de tipos para o campo tpInsc.
+   Por: Italo Jurisato Junior
+
+>>>>>>> .r14977
+03/04/2018
+-- pcesS1050 --
+[-] Correção de erro "Argument out of range" na geração do evento S-1050.
+    https://www.projetoacbr.com.br/forum/topic/42490-problema-inclus%C3%A3o-de-intervalos-na-s-1050/
+  Por: CarlosSolla / BigWings
+
+02/04/2018
+-- pcesCommon / pcesGerador --
+[*] Correção do tipo do campo qtdHrsSem de Integer para Double.
+   Por: Renato E
+-- pcesGerador --
+[*] https://www.projetoacbr.com.br/forum/topic/39746-erro-ao-assinar-xml-no-esocial/?do=findComment&comment=279903
+   Por: Leandro JLM
+-- pcesGerador / pcesS2306 --
+[*] A geração do grupo Remuneração nos eventos 2200 e 2206 é obrigatória, já nos eventos 2300 e 2306
+    é opcional, na unit pcesGerador foi removido o IF e na unit 2306 foi criado a procedure para gerar o 
+    grupo.
+   Por: Italo Jurisato Junior
+-- pcesS2306 / pcesS2399 / pcesS2400 / pcesS3000 --
+[+] Implementação da leitura do arquivo INI referente aos eventos S-2306, 
+    S-2399, S-2400 e S-3000.
+   Por: Italo Jurisato Junior
+
+29/03/2018
+-- pcesS2299 / pcesS2300 --
+[+] Implementação da leitura do arquivo INI referente aos eventos S-2299 e 
+    S-2300.
+-- pcesS2240 / pcesS2241 / pcesS2250 / pcesS2260 / pcesS2298 --
+[+] Implementação da leitura do arquivo INI referente aos eventos S-2240, 
+    S-2241, S-2250, S-2260 e S-2298.
+   Por: Italo Jurisato Junior
+
+28/03/2018
+-- pcesS2299 --
+[*] https://www.projetoacbr.com.br/forum/topic/42296-s2299-desligamento-adi%C3%A7%C3%A3o-de-campo/?do=findComment&comment=279595
+   Por: Hudson G Leite
+
+-- pcesS2206 / pcesS2210 / pcesS2220 / pcesS2230 --
+[+] Implementação da leitura do arquivo INI referente aos eventos S-2206, 
+    S-2210, S-2220 e S-2230.
+   Por: Italo Jurisato Junior
+
+27/03/2018
+-- pcesS2190 / pcesS2200 / pcesS2205 --
+[+] Implementação da leitura do arquivo INI referente aos eventos S-2190, 
+    S-2200, S-2205.
+   Por: Italo Jurisato Junior
+-- pcesS2300 --
+[*] https://www.projetoacbr.com.br/forum/topic/41671-alterar-s2300-campo-natatividade-n%C3%A3o-pode-ser-informado-para-determinadas-categorias/?do=findComment&comment=279323
+   Por: croscato
+-- pcesS1270 / pcesS1280 / pcesS1295 / pcesS1298 / pcesS1299 / pcesS1300 --
+[+] Implementação da leitura do arquivo INI referente aos eventos S-1270, 
+    S-1280, S-1295, S-1298, S-1299, S-1300.
+   Por: Italo Jurisato Junior
+
+26/03/2018
+-- pcesS1210 / pcesS1250 / pcesS1260 --
+[+] Implementação da leitura do arquivo INI referente aos eventos S-1210, S-1250, S-1260.
+   Por: Italo Jurisato Junior
+
+22/03/2018
+-- pcesS2299 / pcesCommon --
+[*] https://www.projetoacbr.com.br/forum/topic/42296-s2299-desligamento-adi%C3%A7%C3%A3o-de-campo/
+   Por: Hudson G Leite
+
+21/03/2018
+-- pcesS2300 --
+[*] https://www.projetoacbr.com.br/forum/topic/42253-ajuste-no-campo-tpregjor-e-natatividade/?do=findComment&comment=278585
+   Por: Joceandro Perin
+-- pcesS2206 / pcesS2300 / pcesS2306 --
+[*] https://www.projetoacbr.com.br/forum/topic/42253-ajuste-no-campo-tpregjor-e-natatividade/
+   Por: Joceandro Perin
+
+20/03/2018
+-- pcesS1200 / pcesS1202 / pcesS1207 --
+[+] Implementação da leitura do arquivo INI referente aos eventos S-1200, S-1202, S-1207.
+   Por: Italo Jurisato Junior
+
+19/03/2018
+-- pcesConversaoeSocial --
+[*] https://www.projetoacbr.com.br/forum/topic/42199-s2200-adicionando-parametro/?do=findComment&comment=278080
+    https://www.projetoacbr.com.br/forum/topic/42199-s2200-adicionando-parametro/?do=findComment&comment=278117
+   Por: Renato E
+-- pcesConversaoeSocial --
+[*] https://www.projetoacbr.com.br/forum/topic/42223-ajuste-no-tptptributo/
+   Por: Joceandro Perin
+
+16/03/2018
+-- pcesConversaoeSocial --
+[*] https://www.projetoacbr.com.br/forum/topic/42199-s2200-adicionando-parametro/
+   Por: Renato E
+
+15/03/2018
+-- ACBreSocialLoteEventos --
+[-] Com o refactoring na função GetIDEvento foi removido o prefixo ID indevidamente.
+   Por: Italo Jurisato Junior
+
+14/03/2018
+-- ACBreSocial --
+[*] Alteração na formatação do nome dos XMLs referente aos eventos.
+    Agora os eventos são gravados no seguinte formato:
+    <ID da chave>-S-xxxx-n.xml onde xxxx é o numero do evento e n é o indice
+    do mesmo na lista.
+   Por: Italo Jurisato Junior
+[*] https://www.projetoacbr.com.br/forum/topic/42081-layout-2402/?do=findComment&comment=277369
+    Por: arce
+-- pcesRetornoClass / pcesS1050 --
+[*] https://www.projetoacbr.com.br/forum/topic/41444-execut%C3%A1vel-preso-em-mem%C3%B3ria/?do=findComment&comment=277360
+    Por: Joceandro Perin
+-- ACBreSocial --
+[*] https://www.projetoacbr.com.br/forum/topic/42081-layout-2402/
+    Por: arce
+
+13/03/2018
+-- pcesS1040 / pcesS1050 / pcesS1060 / pcesS1070 / pcesS1080--
+[+] Implementação da leitura do arquivo INI referente aos eventos S-1040, S-1050, S-1060, S-1070, S-1080.
+   Por: Italo Jurisato Junior
+-- pcesS1010 / pcesS1020 / pcesS1030 / pcesS1035 --
+[+] Implementação da leitura do arquivo INI referente aos eventos S-1010, S-1020, S-1030, S-1035.
+   Por: Italo Jurisato Junior
+
+12/03/2018
+-- ACBreSocial --
+[-] Corrigido erros de compilação com o D7.
+    https://www.projetoacbr.com.br/forum/topic/42062-erro-na-instala%C3%A7%C3%A3o/?tab=comments#comment-276975
+    Por: arce
+
+[-] Correção para usar interfaces em delphi abaixo do 2010, foi adicionado o metodo GetEvento que retorna a instancia do objeto para fazer cast.
+    Por: Rafael Dias.
+
+09/03/2018
+-- ACBreSocial --
+[*] Inicio da adquação do componente para a versão 2.04.02
+   Por: Italo Jurisato Junior
+
+08/03/2018
+-- pcesS3000 --
+[*] https://www.projetoacbr.com.br/forum/topic/41930-alterar-s-3000-campo-opcional/
+   Por: Edmar Frazao
+-- pcesGerador --
+[*] https://www.projetoacbr.com.br/forum/topic/41934-campo-codmotafast-do-registro-s-2200/
+   Por: Joceandro Perin
+-- pcesS1250 --
+[*] https://www.projetoacbr.com.br/forum/topic/41938-alterar-s-1250-convers%C3%A3o-indaquis/
+   Por: Edmar Frazao
+
+07/03/2018
+-- pcesConversaoeSocial --
+[*] https://www.projetoacbr.com.br/forum/topic/41915-s1010-adicionar/
+   Por: Renato E
+-- pcesGerador / pcesS2260 --
+[-] Correção na geração do endereço do local de trabalho intermitente
+   Por: Italo Jurisato Junior
+
+06/03/2018
+-- pcesGerador --
+[-] https://www.projetoacbr.com.br/forum/topic/41891-s-2230-afastamento-tsv-alterar-svn/
+   Por: Edmar Frazao
+
+01/03/2018
+-- pcesS1200 --
+[*] https://www.projetoacbr.com.br/forum/topic/41795-analisar-para-alterar-s1200-natatividade/?do=findComment&comment=275608
+   Por: Edmar Frazao
+-- pcesConversaoeSocial --
+[*] https://www.projetoacbr.com.br/forum/topic/41816-ajuste-no-campo-tpavprevio-do-evento-s-2250/
+   Por: Joceandro Perin
+-- pcesRetConsultaLote / pcesRetornoClass --
+[*] Correção no tipo da tag <dtBase> de TDateTime para Integer, pois essa tag
+   só contem o mês.
+   Por: Italo Jurisato Junior
+-- ACBreSocial --
+[*] Acrescentado o valor navNaoInformar para o campo natAtividade.
+   Por: Italo Jurisato Junior
+-- pcesRetConsultaLote --
+[*] Correção na variável usada para a leitura da lista do grupo <horarioIntervalo>
+   Por: Italo Jurisato Junior
+
+28/02/2018
+-- pcesGerador --
+[-] Corrigido geração do identificação do empregador quando é pessoa fisica.
+	https://www.projetoacbr.com.br/forum/topic/41753-c%C3%B3digo-inv%C3%A1lido-utilizando-ecpf/
+   (Por: Rafael Dias e Joceandro Perin).
+[-] Corrigido geração do evento S-1005 quando é pessoa fisica.
+	https://www.projetoacbr.com.br/forum/topic/41784-ajuste-no-evento-s-1005-campos-exclusivos-para-pj/
+   (Por: Joceandro Perin). 
+   
+-- ACBreSocialLoteEventos --
+[-] Corrigido geração do lote quando é pessoa fisica.
+	https://www.projetoacbr.com.br/forum/topic/41753-c%C3%B3digo-inv%C3%A1lido-utilizando-ecpf/
+   (Por: Joceandro Perin).
+   
+-- ACBreSocialWebServices --
+[-] Corrigido geração do lote quando é pessoa fisica.
+	https://www.projetoacbr.com.br/forum/topic/41753-c%C3%B3digo-inv%C3%A1lido-utilizando-ecpf/
+   (Por: Joceandro Perin).
+   
+-- pcesS1000 --
+[-] Corrigido geração do evento S-1000 quando é pessoa fisica.
+	https://www.projetoacbr.com.br/forum/topic/41753-c%C3%B3digo-inv%C3%A1lido-utilizando-ecpf/
+   (Por: Joceandro Perin).
+   
+-- pcesS1005 --
+[-] Corrigido geração do evento S-1005 quando é pessoa fisica.
+	https://www.projetoacbr.com.br/forum/topic/41784-ajuste-no-evento-s-1005-campos-exclusivos-para-pj/
+   (Por: Joceandro Perin).
+   
+-- ACBreSocialLoteEventos --
+[-] Corrigido geração do identificação do empregador quando é pessoa fisica.
+	https://www.projetoacbr.com.br/forum/topic/41776-ajuste-no-evento-s-1000-campos-exclusivos-para-pj/
+   (Por: Joceandro Perin).
+
+27/02/2018
+-- pcesGerador --
+[-] Corrigido geração da chave quando o empregador é pessoa fisica.
+   (Por: Rafael Dias).
+[-] S-2206 - Correção (clauAssec).
+	https://www.projetoacbr.com.br/forum/topic/41760-s-2206-corre%C3%A7%C3%A3o-clauassec/
+   (Por: Alisson Souza Pereira).
+
+-- ACBreSocialWebServices --
+[-] Corrigido o nome do arquivo dos eventos S5001, S5002, S50011 e S5012 na hora de salvar.
+   (Por: Rafael Dias).
+
+-- PCN --
+[-] Corrigido erro na leitura do xml dos eventos S5001, S5002, S50011 e S5012.
+   (Por: Rafael Dias).
+
+26/02/2018
+-- pcesConversaoeSocial --
+[*] https://www.projetoacbr.com.br/forum/topic/41710-ajuste-pcesconversaoesocial/?do=findComment&comment=274982
+   Por: Joceandro Perin
+-- pcesConversaoeSocial --
+[*] https://www.projetoacbr.com.br/forum/topic/41710-ajuste-pcesconversaoesocial/
+   Por: Paulo Aguiar Junior
+-- pcesS2299 --
+[*] https://www.projetoacbr.com.br/forum/topic/41712-alterar-s-2200-tag-opcional/
+   Por: Edmar Frazao
+[+] Implementado a leitura dos eventos S5001, S5002, S50011 e S5012 após obter
+   o retorno da consulta.
+   Por: Rafael Dias e Italo Jurisato Junior.
+ 
+23/02/2018
+-- ACBreSocialWebServices --
+[*] https://www.projetoacbr.com.br/forum/topic/41683-ajuste-em-rotina-de-envio-com-transmissor-utilizando-ecpf-com-procura%C3%A7%C3%A3o/
+   Por:  Iuri
+-- pcesS2300 --
+[*] https://www.projetoacbr.com.br/forum/topic/41671-alterar-s2300-campo-natatividade-n%C3%A3o-pode-ser-informado-para-determinadas-categorias/
+   Por:  Edmar Frazao
+
+-- pcesConversaoeSocial --
+[*] Acrescentado o valor idRMS ao enum: tpIdeOC
+   Por:  Edmar Frazao
+
+22/02/2018
+-- pceS1005 --
+[+] Implementado o método LerArqIni que permite ler os dados pertinentes ao evento 
+    contidos em um arquivo INI, esse recurso será útil no futuro caso o componente 
+    venha ser adicionado no ACBrMonitor.
+    Com o passar do tempo iremos implementar para os demais eventos.
+  Por: Italo Jurisato Junior
+
+21/02/2018
+-- ACBreSocial --
+[+] Implementado os métodos: LoadFromFile, LoadFromStream e LoadFromString na classe TEventos.
+    Através desses métodos será possível carregar os XMLs dos eventos previamente gerados
+    e assinados e depois envia-los através do método Enviar.
+[+] Inicio da implementação do método LoadFromIni na classe TEventos.
+    Através desse método será possível ler os dados pertinentes a um evento contidos em um
+    arquivo INI, esse recurso será útil no futuro caso o componente venha ser adicionado no
+    ACBrMonitor.
+    Na pasta: ...\Exemplos\ACBrDFe\ACBreSocial\ArqINI temos o arquivo: S1000.ini a titulo de
+    exemplo.
+    No momento só foi implementado esse recurso para o evento S1000 em breve vamos implementar
+    para os demais.
+  Por: Italo Jurisato Junior
+
+19/02/2018
+-- pcesConversaoeSocial --
+[*] https://www.projetoacbr.com.br/forum/topic/41531-alterar-s-2299-desligamento-indicador-cumprimento-de-aviso/?do=findComment&comment=273743
+   Por: Edmar Frazao
+-- pcesS1020 --
+[*] https://www.projetoacbr.com.br/forum/topic/41545-ajuste-em-tipo-de-inscri%C3%A7%C3%A3o-da-lota%C3%A7%C3%A3o-evento-s-1020-tabela-de-lota%C3%A7%C3%B5es-tribut%C3%A1rias/
+   Por: Luri
+
+16/02/2018
+-- pcesConversaoeSocial --
+[*] https://www.projetoacbr.com.br/forum/topic/41529-ajuste-no-campo-tpdep-conforme-tabela-7/
+   Por: Joceandro Perin
+
+14/02/2018
+-- pcesGerador --
+[*] Remção de funções em duplicidade e a troca das chamadas das funções antigas
+    pelas novas
+   Por: Italo Jurisato Junior
+
+09/02/2018
+-- pcesGerador --
+[*] https://www.projetoacbr.com.br/forum/topic/38499-esocial/?do=findComment&comment=273018
+   Por: Leondro LJM
+   
+-- ACBreSocial --
+[*] Removido eventos que não são mais gerados.
+	Por: Rafael Dias.
+[*] Alteração visando resolver Memory Leak
+   Por: Italo Jurisato Junior
+[*] Alteração visando resolver Memory Leak
+	https://www.projetoacbr.com.br/forum/topic/41444-execut%C3%A1vel-preso-em-mem%C3%B3ria/
+	Por: Joceandro Perin
+	
+-- pcesGerador --
+[*] Alteração no metodo de validação do Xml do eventos receba um enum TeSocialSchema.
+	Por: Rafael Dias.
+
+-- ACBreSocialWebServices --	
+[*] Alteração visando resolver Memory Leak
+	https://www.projetoacbr.com.br/forum/topic/41444-execut%C3%A1vel-preso-em-mem%C3%B3ria/
+	Por: Joceandro Perin
+
+07/02/2018
+-- ACBreSocial --
+[*] https://www.projetoacbr.com.br/forum/topic/41373-vlr-default-evento-s-2230/?do=findComment&comment=272710
+   Por: arce
+[*] Finalizado a leitura do XML de retorno da Consulta.
+   Por: Italo Jurisato Junior
+[*] Adicionado leitura das url do eSocial a partir do ini.
+   Por: Rafael Dias.
+   
+-- ACBreSocialWebServices --
+[*] Acrescentado a rotina para salvar o XML retornado no grupo <tot>.
+   Por: Italo Jurisato Junior
+   
+-- pcesConversaoeSocial --
+[+] Adicionado o enum tpMotivosAfastamento correspondente a Tabela 18 do eSocial.
+	Por: Rafael Dias.
+	
+-- pcesCommon --
+[*] Mudado o tipo da propriedade codMotAfast da classe TAfastamento para o enum tpMotivosAfastamento.
+	Por: Rafael Dias.
+	
+-- pcesS2230 --
+[*] Ajustado a geração do xml para utilizar o enum tpMotivosAfastamento.
+	Por: Rafael Dias.
+
+06/02/2018
+-- ACBreSocial --
+[+] Adicionado a unit pcesRetornoClass para centralizar as classes usadas nas units de retorno
+    de envio e consulta.
+   Por: Italo Jurisato Junior
+[+] Implementado as classes necessárias para finalizar a leitura do XML retornado pela consulta.
+	Por: Rafael Dias
+
+-- ACBreSocialWebServices --
+[-] Corrigido erro na evento OnTransmissaoEventos da consulta e do envio.
+	Por: Rafael Dias
+
+05/02/2018
+-- ACBreSocial --
+[*] Realizado ajustes para que os XMLs sejam salvos conforme configurações estabelecidas
+    no componente, tais como separação por Ano/Mes, etc.
+    Agora a propriedade Id de cada evento vai conter a chave completa gerada automaticamente
+    ao gerar o XML.
+    Foi adicionado uma propriedade chamada Sequencial onde devemos passar o numero sequencial
+    de cada evento, esse numero é utilizado ao gerar a chave do evento.
+    Se o Sequencial for zero ao gerar a chave, o componente se encarrega de gerar um numero
+    aleatório.
+[+] Implementado a unit pcesRetEnvioLote que passa a ser responsável pela leitura do XML de
+    retorno referente ao envio de um Lote de Eventos. Por conta disso, a unit ACBreSocialWebServices ficou mais enxuta.
+[+] Implementado (parcial) a unit pcesRetConsultaLote que passa a ser responsável pela leitura 
+    do XML de retorno referente a consulta de um Lote de Eventos.
+	Por: Italo Jurisato Junior
+   
+-- ACBreSocialWebServices --
+[-] Corrigido erro na geração do envelope SOAP do EnvioLote.
+	Por: Rafael Dias
+	
+-- pcesConversaoeSocial --
+[-] Ajustado enum tpJornada para ficar de acordo com o Layout 2.4.1.
+	Por: Joceandro Perin
+	https://www.projetoacbr.com.br/forum/topic/41334-ajuste-no-registro-s2200-campo-tpjornada/
+
+02/02/2018
+-- ACBreSocial --
+[*] Incluido a propriedade de configuração TipoEmpregador (tePessoaFisica, teOrgaoPublico).
+    Alterado a geração da Chave dos eventos para receber o Tipo de Empregador configurado.
+   Por: Italo Jurisato Junior
+
+31/01/2018
+-- ACBreSocial --
+[*] Implementado as Units responsaveis pela leitura dos XMLs
+    dos eventos S-5011 e S-5012.
+   Por: Italo Jurisato Junior
+
+30/01/2018
+-- pcesConversaoeSocial --
+[-] Arrumado os enum TpAmbiente para refletir as novas mudanças do Layout eSocial.
+	Por: Digibyte.
+	https://www.projetoacbr.com.br/forum/topic/41199-poss%C3%ADvel-altera%C3%A7%C3%A3o-necess%C3%A1ria-unit-pcesconversaoesocial/
+	
+-- pcesGerador --
+[-] Tag CTPS é opcional, checar se tem dados disponivel para então colocar no xml.
+	Por: EdmarFrazao.	
+	https://www.projetoacbr.com.br/forum/topic/41185-alterar-svn-evento-2300-categorias-contribuinte-individual-ctps-opcional/
+[-] Arrumado pasta que estava fixa quando em modo de debug.
+	Por: EdmarFrazao.
+	https://www.projetoacbr.com.br/forum/topic/41191-alterar-svn-quando-em-debug-usa-pasta-docs-fixa/
+
+29/01/2018
+-- ACBreSocial --
+[*] Implementado as Units responsaveis pela leitura dos XMLs
+    dos eventos S-5001 e S-5002.
+   Por: Italo Jurisato Junior
+-- pcesGerador --
+[-] Tag transfDom é opcional, checar se tem dados disponivel para então colocar no xml.
+	Por: EdmarFrazao 
+	https://www.projetoacbr.com.br/forum/topic/41164-altera%C3%A7%C3%B5es-svn-esocial/?tab=comments#comment-271230
+
+-- pcesConversaoeSocial --
+[-] Adicionado o valor 00 TpClassTrib este valor é usado em ambiente de homologação 
+	para zerar a base de dados, vide Pagina 85 do Manual do Desenvolvedor.
+	Por: EdmarFrazao 
+	https://www.projetoacbr.com.br/forum/topic/41164-altera%C3%A7%C3%B5es-svn-esocial/?tab=comments#comment-271230
+
+26/01/2018
+-- ACBreSocial --
+[*] Incluido a geração do XML do evento S-2260 na procedure: GerarXMLEventos
+   Por: Italo Jurisato Junior
+[*] Checagem dos Eventos: 2300 até 3000.
+    Foi checado se todas as tag (opcional e obrigatória) estão sendo geradas
+    bem como o tamanho minimo, máximo e ocorrências.
+   Por: Italo Jurisato Junior
+[-] Ajustado o metodo de assinatura do evento pois o 
+	webservice espera o atributo Uri da assinatura vazio. Por: Rafael Dias.
+[*] Limpeza da unit do ACBreSocialWebServices. Por: Rafael Dias.
+[*] Atualização do tpIndMatProc. Por: Alisson Souza Pereira.
+	https://www.projetoacbr.com.br/forum/topic/41088-os-fontes-oficiais-j%C3%A1-est%C3%A3o-transmitindo-os-arquivos/?page=2&tab=comments#comment-270969
+[-] Limpar os xml do lote antes de gerar os novos. Por: juuninho.
+	https://www.projetoacbr.com.br/forum/topic/41088-os-fontes-oficiais-j%C3%A1-est%C3%A3o-transmitindo-os-arquivos/?do=findComment&comment=271026
+[*] Rename das units para ficar de acordo com o padrão do projeto. Por: Rafael Dias.
+
+-- pcesS2260 --
+[+] Implementado o evento S-2260 - Convocação para Trabalho Intermitente
+   Por: Italo Jurisato Junior
+
+25/01/2018
+-- ACBreSocial --
+[*] Checagem dos Eventos: 2205 até 2299.
+    Foi checado se todas as tag (opcional e obrigatória) estão sendo geradas
+    bem como o tamanho minimo, máximo e ocorrências.
+   Por: Italo Jurisato Junior
+[*] Limpeza e organização da unit do ACBreSocial. Por: Rafael Dias.
+[-] Corrigido a url de produção. Por: Rafael Dias.
+[-] Corrigido leitura das data do retorno do webservice. Por: Rafael Dias.
+
+24/01/2018
+-- ACBreSocial --
+[*] Checagem dos Eventos: 2100 até 2200.
+    Foi checado se todas as tag (opcional e obrigatória) estão sendo geradas
+    bem como o tamanho minimo, máximo e ocorrências.
+   Por: Italo Jurisato Junior
+[*] Checagem dos Eventos: 1040 até 1300.
+    Foi checado se todas as tag (opcional e obrigatória) estão sendo geradas
+    bem como o tamanho minimo, máximo e ocorrências.
+   Por: Italo Jurisato Junior
+
+22/01/2018
+-- ACBreSocial --
+[*] Checagem dos Eventos: 1000, 1005, 1010, 1020, 1030 e 1035.
+    Foi checado se todas as tag (opcional e obrigatória) estão sendo geradas
+    bem como o tamanho minimo, máximo e ocorrências.
+   Por: Italo Jurisato Junior
+
+19/01/2018
+-- ACBreSocial --
+[*] Inicio da compatibilização do componente com o Delphi 7.
+   Por: Italo Jurisato Junior

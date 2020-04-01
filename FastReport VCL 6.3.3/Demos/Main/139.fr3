@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TfrxReport Version="6.0" DotMatrixReport="False" IniFile="\Software\Fast Reports" PreviewOptions.Buttons="4095" PreviewOptions.Zoom="1" PrintOptions.Printer="Default" PrintOptions.PrintOnSheet="0" ReportOptions.CreateDate="37871,9968403472" ReportOptions.Description.Text="This example demonstrates how table can split rows when it's not enough space to print whole table. Notes:&#13;&#10;- set band's AllowSplit property to true." ReportOptions.LastChange="43088,9938825579" ScriptLanguage="PascalScript" ScriptText.Text="begin&#13;&#10;&#13;&#10;end.">
+  <Datasets>
+    <item DataSet="ReportData.BioDS" DataSetName="Bio"/>
+  </Datasets>
+  <TfrxDataPage Name="Data" Height="1000" Left="0" Top="0" Width="1000"/>
+  <TfrxReportPage Name="Page1" PaperWidth="210" PaperHeight="297" PaperSize="9" LeftMargin="5,000625" RightMargin="5,000625" TopMargin="5,000625" BottomMargin="5,000625" Columns="1" ColumnWidth="199,998541666667" ColumnPositions.Text="0" Frame.Typ="0" HGuides.Text="" VGuides.Text="">
+    <TfrxReportTitle Name="Band1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Frame.Typ="0" Height="70,67718" Left="0" Top="18,89765" Width="755,9012755875">
+      <TfrxMemoView Name="Memo1" Left="0" Top="3,77953" Width="758,1107" Height="22,67718" Font.Charset="1" Font.Color="16777215" Font.Height="-16" Font.Name="Arial" Font.Style="1" Frame.Typ="0" Fill.BackColor="8421504" HAlign="haCenter" ParentFont="False" VAlign="vaCenter" Text="Fishes"/>
+      <TfrxMemoView Name="Memo2" Left="0" Top="28" Width="758,1107" Height="38,67718" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" Frame.Typ="0" GapX="10" ParentFont="False" VAlign="vaCenter" Text="This example demonstrates how table can split rows when it's not enough space to print whole table.Notes:&#13;&#10;- set band's AllowSplit property to true."/>
+    </TfrxReportTitle>
+    <TfrxMasterData Name="Band3" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Frame.Typ="0" Height="248,28355" Left="0" Top="151,1812" Width="755,9012755875" AllowSplit="True" Columns="1" ColumnWidth="200" ColumnGap="20" DataSet="ReportData.BioDS" DataSetName="Bio" RowCount="0" Stretched="True">
+      <TfrxTableObject Name="TableObject1" Left="32" Top="19,11812" StretchMode="smActualHeight">
+        <TfrxTableColumn Name="TableColumn1" Width="491,5906"/>
+        <TfrxTableColumn Name="TableColumn2" Width="195,5906"/>
+        <TfrxTableRow Name="TableRow1" Height="18,89765">
+          <TfrxTableCell Name="TableCell1" Restrictions="8" DataSet="ReportData.BioDS" DataSetName="Bio" Font.Charset="1" Font.Color="0" Font.Height="-16" Font.Name="Arial" Font.Style="1" Frame.Color="8421504" Frame.Typ="15" FillType="ftGlass" Fill.Color="16700346" Fill.Blend="0,3" Fill.Hatch="True" ParentFont="False" ColSpan="2" Text="[Bio.&#34;Common Name&#34;]"/>
+          <TfrxTableCell Name="TableCell2" Restrictions="8" Visible="False" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" Frame.Color="8421504" Frame.Typ="15" ParentFont="False" Text=""/>
+        </TfrxTableRow>
+        <TfrxTableRow Name="TableRow2" Height="18,89765">
+          <TfrxTableCell Name="TableCell6" Restrictions="8" DataSet="ReportData.BioDS" DataSetName="Bio" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="1" Frame.Color="8421504" Frame.Typ="15" ParentFont="False" Text="Category"/>
+          <TfrxTableCell Name="TableCell7" Restrictions="8" DataField="Category" DataSet="ReportData.BioDS" DataSetName="Bio" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" Frame.Color="8421504" Frame.Typ="15" ParentFont="False" Text="[Bio.&#34;Category&#34;]"/>
+        </TfrxTableRow>
+        <TfrxTableRow Name="TableRow3" Height="18,89765">
+          <TfrxTableCell Name="TableCell11" Restrictions="8" DataSet="ReportData.BioDS" DataSetName="Bio" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="1" Frame.Color="8421504" Frame.Typ="15" ParentFont="False" Text="Species Name"/>
+          <TfrxTableCell Name="TableCell12" Restrictions="8" DataField="Species Name" DataSet="ReportData.BioDS" DataSetName="Bio" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" Frame.Color="8421504" Frame.Typ="15" ParentFont="False" Text="[Bio.&#34;Species Name&#34;]"/>
+        </TfrxTableRow>
+        <TfrxTableRow Name="TableRow4" Height="18,89765">
+          <TfrxTableCell Name="TableCell16" Restrictions="8" DataSet="ReportData.BioDS" DataSetName="Bio" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="1" Frame.Color="8421504" Frame.Typ="15" ParentFont="False" Text="Length (cm)"/>
+          <TfrxTableCell Name="TableCell17" Restrictions="8" DataField="Length (cm)" DataSet="ReportData.BioDS" DataSetName="Bio" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" Frame.Color="8421504" Frame.Typ="15" ParentFont="False" Text="[Bio.&#34;Length (cm)&#34;]"/>
+        </TfrxTableRow>
+        <TfrxTableRow Name="TableRow5" Height="18,89765">
+          <TfrxTableCell Name="TableCell21" Restrictions="8" DataSet="ReportData.BioDS" DataSetName="Bio" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="1" Frame.Color="8421504" Frame.Typ="15" ParentFont="False" Text="Length In"/>
+          <TfrxTableCell Name="TableCell22" Restrictions="8" DataField="Length In" DataSet="ReportData.BioDS" DataSetName="Bio" DisplayFormat.FormatStr="%2.2n" DisplayFormat.Kind="fkNumeric" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" Frame.Color="8421504" Frame.Typ="15" ParentFont="False" Text="[Bio.&#34;Length In&#34;]"/>
+        </TfrxTableRow>
+        <TfrxTableRow Name="TableRow6" AutoSize="True" Height="130,89765">
+          <TfrxTableCell Name="TableCell3" Restrictions="8" DataField="Notes" DataSet="ReportData.BioDS" DataSetName="Bio" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" Frame.Color="8421504" Frame.Typ="15" ParentFont="False" Text="[Bio.&#34;Notes&#34;]"/>
+          <TfrxTableCell Name="TableCell4" Restrictions="8" DataSet="ReportData.CustomersDS" DataSetName="Customers" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" Frame.Color="8421504" Frame.Typ="15" ParentFont="False" Text="">
+            <TfrxPictureView Name="Picture1" Align="baClient" Left="0" Top="0" Width="195,5906" Height="130,89765" DataField="Graphic" DataSet="ReportData.BioDS" DataSetName="Bio" Frame.Typ="0" HightQuality="False" Transparent="True" TransparentColor="16777215"/>
+          </TfrxTableCell>
+        </TfrxTableRow>
+      </TfrxTableObject>
+    </TfrxMasterData>
+    <TfrxPageFooter Name="Band4" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Frame.Typ="0" Height="22,67718" Left="0" Top="461,10266" Width="755,9012755875">
+      <TfrxMemoView Name="Memo6" Left="0" Top="3,77953000000002" Width="718,1107" Height="15,11812" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="0" Frame.Typ="4" Frame.Width="2" Fill.BackColor="16777215" HAlign="haRight" ParentFont="False" Text="[Page#]"/>
+    </TfrxPageFooter>
+  </TfrxReportPage>
+</TfrxReport>

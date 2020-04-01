@@ -1,0 +1,8 @@
+Invalid resource D:\Delphi\FR40\RES\\Farsi\frxrcClass.frc
+207, poDirect, poReverse, 
+Invalid resource D:\Delphi\FR40\RES\\Farsi\frxrcDesgn.frc
+2478, crStName, crResize, 
+Invalid resource D:\Delphi\FR40\RES\\Farsi\frxrcExports.frc
+ODSExportFilter, ODSExport, ODTExportFilter, ODTExport, 8960, 8961, 
+Invalid resource D:\Delphi\FR40\RES\\Farsi\frxrcInsp.frc
+propAutoSize.TfrxPictureView, propSuppressNullRecords, propShowTitle, 

@@ -1,0 +1,91 @@
+object frxConnEditorForm: TfrxConnEditorForm
+  Left = 321
+  Height = 241
+  Top = 297
+  Width = 614
+  BorderStyle = bsDialog
+  Caption = 'Connections'
+  ClientHeight = 241
+  ClientWidth = 614
+  Color = clBtnFace
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  KeyPreview = True
+  OnHide = FormHide
+  OnKeyDown = FormKeyDown
+  OnShow = FormShow
+  Position = poScreenCenter
+  LCLVersion = '1.2.6.0'
+  object NewB: TButton
+    Left = 524
+    Height = 25
+    Top = 8
+    Width = 75
+    Caption = 'New...'
+    OnClick = NewBClick
+    TabOrder = 0
+  end
+  object DeleteB: TButton
+    Left = 524
+    Height = 25
+    Top = 72
+    Width = 75
+    Caption = 'Delete'
+    OnClick = DeleteBClick
+    TabOrder = 2
+  end
+  object ConnLV: TListView
+    Left = 4
+    Height = 233
+    Top = 4
+    Width = 509
+    Columns = <    
+      item
+        Caption = 'Name'
+        Width = 300
+      end    
+      item
+        Caption = 'Type'
+      end    
+      item
+        Caption = 'Database'
+        Width = 150
+      end>
+    GridLines = True
+    ReadOnly = True
+    RowSelect = True
+    TabOrder = 4
+    ViewStyle = vsReport
+  end
+  object OKB: TButton
+    Left = 524
+    Height = 25
+    Top = 205
+    Width = 75
+    Cancel = True
+    Caption = 'Close'
+    Default = True
+    ModalResult = 1
+    OnClick = OKBClick
+    TabOrder = 3
+  end
+  object EditB: TButton
+    Left = 524
+    Height = 25
+    Top = 40
+    Width = 75
+    Caption = 'Edit'
+    OnClick = EditBClick
+    TabOrder = 1
+  end
+  object TestB: TButton
+    Left = 524
+    Height = 25
+    Top = 132
+    Width = 75
+    Caption = 'Test'
+    OnClick = TestBClick
+    TabOrder = 5
+  end
+end

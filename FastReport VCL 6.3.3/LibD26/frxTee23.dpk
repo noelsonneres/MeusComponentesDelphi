@@ -1,0 +1,55 @@
+// Package file for Delphi 10 Seattle
+
+package frxTee23;
+{$I frx.inc}
+{$I tee.inc}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO ON}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION OFF}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES ON}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$IMPLICITBUILD ON}
+{$RUNONLY}
+{$DEFINE DEBUG}
+
+requires
+  VCL,
+{$IFDEF TeeChartStd} TEE, TEEUI, {$ENDIF}
+{$IFDEF TeeChartStd7}TEE723, TEEUI723, {$ENDIF}
+{$IFDEF TeeChartStd8}TEE823, TEEUI823, {$ENDIF}
+{$IFDEF TeeChartStd9}TEE923, TEEUI923, {$ENDIF}
+{$IFDEF TeeChart4}   TEE423, TEEPRO423, {$ENDIF}
+{$IFDEF TeeChart5}   TEE523, TEEPRO523, {$ENDIF}
+{$IFDEF TeeChart6}   TEE623, TEEPRO623, {$ENDIF}
+{$IFDEF TeeChart7}   TEE723, TEEPRO723, {$ENDIF}
+{$IFDEF TeeChart8}   TEE823, TEEPRO823, {$ENDIF}
+{$IFDEF TeeChart9}   TEE923, TEEPRO923, {$ENDIF}
+  fs23,
+  fsTee23,
+  frx23;
+
+contains
+  frxChart in 'frxChart.pas',
+  frxChartEditor in 'frxChartEditor.pas',
+  frxChartInPlaceEditor in 'frxChartInPlaceEditor.pas',
+  frxChartClipboard in 'frxChartClipboard.pas',
+  frxChartHelpers in 'frxChartHelpers.pas',
+  frxChartRTTI in 'frxChartRTTI.pas';
+
+end.

@@ -1,0 +1,18 @@
+{ This is an automatically generated lazarus resource file }
+
+LazarusResources.Add('TfrxFloatWindow','FORMDATA',[
+  'TPF0'#15'TfrxFloatWindow'#14'frxFloatWindow'#4'Left'#3'A'#1#6'Height'#2'='#3
+  +'Top'#3#196#0#5'Width'#3#213#0#11'BorderIcons'#11#12'biSystemMenu'#0#11'Bord'
+  +'erStyle'#7#6'bsNone'#12'ClientHeight'#2'='#11'ClientWidth'#3#213#0#5'Color'
+  +#7#9'clBtnFace'#10'Font.Color'#7#12'clWindowText'#11'Font.Height'#2#245#9'Fo'
+  +'nt.Name'#6#6'Tahoma'#9'OnDestroy'#7#11'FormDestroy'#7'OnPaint'#7#9'FormPain'
+  +'t'#6'OnShow'#7#8'FormShow'#8'ShowHint'#9#10'LCLVersion'#6#7'1.8.2.0'#0#12'T'
+  +'SpeedButton'#8'CloseBtn'#4'Left'#3#200#0#6'Height'#2#11#3'Top'#2#0#5'Width'
+  +#2#11#4'Flat'#9#10'Glyph.Data'#10#146#0#0#0#142#0#0#0'BM'#142#0#0#0#0#0#0#0
+  +'v'#0#0#0'('#0#0#0#6#0#0#0#6#0#0#0#1#0#4#0#0#0#0#0#24#0#0#0#0#0#0#0#0#0#0#0
+  +#16#0#0#0#0#0#0#0#0#0#0#0#0#0#128#0#0#128#0#0#0#128#128#0#128#0#0#0#128#0#128
+  +#0#128#128#0#0#192#192#192#0#128#128#128#0#0#0#255#0#0#255#0#0#0#255#255#0
+  +#255#0#0#0#255#0#255#0#255#255#0#0#255#255#255#0'www'#0#0'w'#0#0'p'#0#7#0'w'
+  +#0'w'#0'p'#0#7#0#0'w'#0#0#6'Margin'#2#1#7'Spacing'#2#0#7'OnClick'#7#13'Close'
+  +'BtnClick'#0#0#0
+]);

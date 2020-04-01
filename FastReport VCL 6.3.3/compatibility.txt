@@ -1,0 +1,9 @@
+Compatibility issues between FastReport 6 and FastReport 4/5:
+
+- v6 uses the same file/package names as v4/v5. You have to uninstall v4/v5 before 
+installing v6.
+
+- v6 uses the same file format, .fr3 and can open v4/v5 files without any problems.
+
+- v6 can read v4/v5 .fp3 files.
+

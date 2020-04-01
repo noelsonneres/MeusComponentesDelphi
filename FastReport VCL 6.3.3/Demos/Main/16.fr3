@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<TfrxReport Version="6.0" DotMatrixReport="False" IniFile="\Software\Fast Reports" PreviewOptions.Buttons="495615" PreviewOptions.Zoom="1" PrintOptions.Printer="Default" PrintOptions.PrintOnSheet="0" ReportOptions.CreateDate="43184,0685887731" ReportOptions.Description.Text="Demonstrates how to use Anchors for report objects." ReportOptions.LastChange="43185,9731027199" ScriptLanguage="PascalScript" ScriptText.Text="procedure MasterData2OnAfterCalcHeight(Sender: TfrxComponent);&#13;&#10;begin&#13;&#10;  TableObject1.TableWidth := MasterData2.ColumnWidth;&#13;&#10;end;&#13;&#10;&#13;&#10;begin&#13;&#10;&#13;&#10;end.">
+  <Datasets>
+    <item DataSet="ReportData.CountryDS" DataSetName="Country"/>
+  </Datasets>
+  <TfrxDataPage Name="Data" Height="1000" Left="0" Top="0" Width="1000"/>
+  <TfrxReportPage Name="Page1" PaperWidth="210" PaperHeight="297" PaperSize="9" LeftMargin="10" RightMargin="10" TopMargin="10" BottomMargin="10" ColumnWidth="0" ColumnPositions.Text="" Frame.Color="8421376" Frame.Typ="0" HGuides.Text="" VGuides.Text="">
+    <TfrxReportTitle Name="ReportTitle1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Frame.Typ="0" Height="61,89765" Left="0" Top="16" Width="718,1107">
+      <TfrxMemoView Name="Memo8" Left="0,55555556" Top="0" Width="718,39571429" Height="22,67718" Font.Charset="1" Font.Color="16777215" Font.Height="-16" Font.Name="Arial" Font.Style="1" Frame.Typ="0" Fill.BackColor="8421504" HAlign="haCenter" ParentFont="False" VAlign="vaCenter" Text="Anchors"/>
+      <TfrxMemoView Name="Memo9" Left="0,55555556" Top="24,22047" Width="758,1107" Height="37,67718" Font.Charset="1" Font.Color="0" Font.Height="-16" Font.Name="Arial" Font.Style="0" Frame.Typ="0" GapX="10" ParentFont="False" VAlign="vaCenter" Text="It is possible to set anchors for report objects by using &#34;Anchors&#34; property of the report object."/>
+    </TfrxReportTitle>
+    <TfrxMasterData Name="MasterData1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Frame.Typ="15" Height="275,52941174" Left="0" Top="136" Width="718,1107" ColumnWidth="0" ColumnGap="0" RowCount="1" Stretched="True">
+      <TfrxMemoView Name="Memo7" Left="-1,17647059" Top="256,84542907" Width="717,33333334" Height="18,68398267" Visibility="0" Font.Charset="1" Font.Color="-16777208" Font.Height="-8" Font.Name="Arial" Font.Style="0" Frame.Typ="15" HAlign="haCenter" ParentFont="False" Text="Invisible memo to keep aspect of the band"/>
+      <TfrxMemoView Name="Memo5" Anchors="15" Left="57,15151514" Top="9,92465444" Width="602,16666666" Height="246,42948998" Font.Charset="1" Font.Color="-16777208" Font.Height="-13" Font.Name="Arial" Font.Style="0" Frame.Typ="15" Fill.BackColor="15263976" ParentFont="False" Text=""/>
+      <TfrxMemoView Name="Memo3" Anchors="15" ShiftMode="smDontShift" Left="168,87373736" Top="17,76551222" Width="372" Height="108,51978999" Font.Charset="1" Font.Color="-16777208" Font.Height="-13" Font.Name="Arial" Font.Style="0" Frame.Style="fsDot" Frame.Typ="15" Fill.BackColor="15790320" ParentFont="False" Text=""/>
+      <TfrxMemoView Name="Memo2" Left="208,87373736" Top="34,78530222" Width="294,25" Height="71,25" StretchMode="smActualHeight" Font.Charset="1" Font.Color="-16777208" Font.Height="-13" Font.Name="Arial" Font.Style="1" Frame.Typ="15" Frame.Width="2" ParentFont="False" Text="--------------------------&#13;&#10;--------------------------&#13;&#10;--------------------------&#13;&#10;This object increase height of the container&#13;&#10;--------------------------&#13;&#10;--------------------------&#13;&#10;--------------------------"/>
+      <TfrxLineView Name="Line1" Anchors="15" Left="494,62373736" Top="36,66238889" Width="0" Height="65,01282332" Color="0" ArrowEnd="True" Frame.Color="52376" Frame.Typ="0" Frame.Width="3" Diagonal="True"/>
+      <TfrxLineView Name="Line2" Anchors="15" Left="517,87373736" Top="20,74572222" Width="0" Height="103,92948999" Color="0" ArrowEnd="True" ArrowStart="True" Frame.Color="110055" Frame.Typ="0" Frame.Width="3" Diagonal="True"/>
+      <TfrxLineView Name="Line3" Left="208,31818181" Top="90,6901666600001" Width="-93,78030304" Height="0" Color="0" Frame.Typ="0" Frame.Width="2" Diagonal="True"/>
+      <TfrxMemoView Name="Memo4" Left="206,65151514" Top="141,14687666" Width="300" Height="66" Font.Charset="1" Font.Color="16777215" Font.Height="-21" Font.Name="Arial" Font.Style="1" Frame.Typ="15" Fill.BackColor="11711154" HAlign="haCenter" ParentFont="False" VAlign="vaCenter" Text="Code"/>
+      <TfrxLineView Name="Line4" Anchors="15" Left="115,31818181" Top="89,81354333" Width="0" Height="84,42948999" Color="0" Frame.Typ="0" Frame.Width="2" Diagonal="True"/>
+      <TfrxLineView Name="Line5" Anchors="12" Left="114,45151514" Top="174,90969998" Width="91,03030303" Height="0" Color="0" ArrowEnd="True" Frame.Typ="0" Frame.Width="2" Diagonal="True"/>
+      <TfrxMemoView Name="Memo6" Left="133,65151514" Top="224,33333333" Width="437,66666667" Height="25,33333333" Font.Charset="1" Font.Color="-16777208" Font.Height="-19" Font.Name="Arial" Font.Style="1" Frame.Typ="15" Fill.BackColor="16629143" HAlign="haCenter" ParentFont="False" VAlign="vaCenter" Text="Tests"/>
+      <TfrxLineView Name="Line6" Anchors="12" Left="610,53030302" Top="173,66666666" Width="-103,7" Height="0" Color="0" Frame.Typ="0" Frame.Width="2" Diagonal="True"/>
+      <TfrxLineView Name="Line7" Anchors="12" Left="608,65151515" Top="237" Width="-37,33333334" Height="0" Color="0" ArrowEnd="True" Frame.Typ="0" Frame.Width="2" Diagonal="True"/>
+      <TfrxLineView Name="Line8" Anchors="12" Left="609,98484847" Top="173,66666666" Width="0" Height="64,73252029" Color="0" Frame.Typ="0" Frame.Width="2" Diagonal="True"/>
+    </TfrxMasterData>
+    <TfrxPageFooter Name="PageFooter1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Frame.Typ="0" Height="20,89765" Left="0" Top="548" Width="718,1107">
+      <TfrxMemoView Name="Memo1" Left="641,5201" Top="0" Width="75,5906" Height="18,89765" Frame.Typ="0" HAlign="haRight" Text="[Page#]"/>
+    </TfrxPageFooter>
+    <TfrxMasterData Name="MasterData2" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Frame.Typ="0" Height="56,14408864" Left="0" Top="432" Width="718,1107" OnAfterCalcHeight="MasterData2OnAfterCalcHeight" Columns="2" ColumnWidth="359" ColumnGap="0" DataSet="ReportData.CountryDS" DataSetName="Country" RowCount="14" Stretched="True">
+      <TfrxTableObject Name="TableObject1" Align="baLeft" Left="0" Top="0,57142857" StretchMode="smActualHeight">
+        <TfrxTableColumn Name="TableColumn1" AutoSize="True" Width="42,725102923976" MinWidth="0" MaxWidth="250"/>
+        <TfrxTableColumn Name="TableColumn2" AutoSize="True" Width="23,4094117352202" MinWidth="0" MaxWidth="200"/>
+        <TfrxTableColumn Name="TableColumn3" AutoSize="True" Width="24,1975340016708" MinWidth="0" MaxWidth="200"/>
+        <TfrxTableRow Name="TableRow1" MinHeight="0" MaxHeight="0" Height="26,7280593567252">
+          <TfrxTableCell Name="TableCell1" Restrictions="8" DataField="Name" DataSet="ReportData.CountryDS" DataSetName="Country" Font.Charset="1" Font.Color="16446959" Font.Height="-19" Font.Name="Arial" Font.Style="1" Frame.Color="14211288" Frame.Typ="15" Fill.BackColor="9145227" ParentFont="False" Text="[Country.&#34;Name&#34;]"/>
+          <TfrxTableCell Name="TableCell2" Restrictions="8" DataField="Capital" DataSet="ReportData.CountryDS" DataSetName="Country" Font.Charset="1" Font.Color="16446959" Font.Height="-19" Font.Name="Arial" Font.Style="1" Frame.Color="14211288" Frame.Typ="15" Fill.BackColor="9145227" ParentFont="False" Text="[Country.&#34;Capital&#34;]"/>
+          <TfrxTableCell Name="TableCell3" Restrictions="8" DataField="Population" DataSet="ReportData.CountryDS" DataSetName="Country" DisplayFormat.FormatStr="%2.0n" DisplayFormat.Kind="fkNumeric" Font.Charset="1" Font.Color="16446959" Font.Height="-19" Font.Name="Arial" Font.Style="1" Frame.Color="14211288" Frame.Typ="15" Fill.BackColor="9145227" ParentFont="False" Text="[Country.&#34;Population&#34;]"/>
+        </TfrxTableRow>
+        <TfrxTableRow Name="TableRow2" MinHeight="0" MaxHeight="0" Height="29,4160292815372">
+          <TfrxTableCell Name="TableCell6" Restrictions="8" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" Frame.Color="14211288" Frame.Typ="15" Fill.BackColor="11711154" Fill.ForeColor="13434828" ParentFont="False" Text="">
+            <TfrxLineView Name="Line9" Anchors="15" Left="4,97076022" Top="14,61696989" Width="31,15356373" Height="0" Color="0" ArrowEnd="True" Frame.Color="9663782" Frame.Typ="0" Frame.Width="5" Diagonal="True"/>
+          </TfrxTableCell>
+          <TfrxTableCell Name="TableCell7" Restrictions="8" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" Frame.Color="14211288" Frame.Typ="15" Fill.BackColor="11711154" Fill.ForeColor="13434828" ParentFont="False" Text="">
+            <TfrxMemoView Name="Memo12" Anchors="6" Left="3,65625545" Top="7,20209938" Width="16,42857143" Height="16" Font.Charset="1" Font.Color="-16777208" Font.Height="-13" Font.Name="Arial" Font.Style="0" Frame.Typ="15" FillType="ftGradient" Fill.EndColor="7000063" Fill.GradientStyle="gsHorizontal" ParentFont="False" Text=""/>
+          </TfrxTableCell>
+          <TfrxTableCell Name="TableCell8" Restrictions="8" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" Frame.Color="14211288" Frame.Typ="15" Fill.BackColor="11711154" Fill.ForeColor="13434828" ParentFont="False" Text="">
+            <TfrxMemoView Name="Memo11" Anchors="15" Left="3,51627901" Top="7,20209938" Width="16,42857143" Height="16" Font.Charset="1" Font.Color="-16777208" Font.Height="-13" Font.Name="Arial" Font.Style="0" Frame.Typ="15" FillType="ftGradient" Fill.EndColor="16700346" Fill.GradientStyle="gsHorizontal" ParentFont="False" Text=""/>
+          </TfrxTableCell>
+        </TfrxTableRow>
+      </TfrxTableObject>
+    </TfrxMasterData>
+  </TfrxReportPage>
+</TfrxReport>

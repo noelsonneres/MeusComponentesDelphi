@@ -1,0 +1,89 @@
+object frxBreakPointsForm: TfrxBreakPointsForm
+  Left = 675
+  Height = 158
+  Top = 395
+  Width = 411
+  BorderStyle = bsSizeToolWin
+  Caption = 'Watch list'
+  ClientHeight = 158
+  ClientWidth = 411
+  Color = clBtnFace
+  DragKind = dkDock
+  DragMode = dmAutomatic
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  FormStyle = fsStayOnTop
+  KeyPreview = True
+  OnCloseQuery = FormCloseQuery
+  OnCreate = FormCreate
+  OnKeyDown = FormKeyDown
+  OnResize = FormResize
+  OnShow = FormShow
+  Position = poDefault
+  ShowHint = True
+  LCLVersion = '1.8.2.0'
+  object ToolBar1: TToolBar
+    Left = 0
+    Height = 30
+    Top = 0
+    Width = 411
+    BorderWidth = 2
+    Caption = 'ToolBar1'
+    EdgeBorders = []
+    TabOrder = 0
+    object DeleteB: TToolButton
+      Left = 1
+      Hint = 'Delete watch'
+      Top = 0
+      ImageIndex = 98
+      OnClick = DeleteBClick
+    end
+    object EditB: TToolButton
+      Left = 24
+      Hint = 'Edit watch'
+      Top = 0
+      ImageIndex = 68
+      OnClick = EditBClick
+    end
+    object ToggleEnableB: TToolButton
+      Left = 47
+      Top = 0
+      ImageIndex = 94
+      OnClick = ToggleEnableBClick
+    end
+  end
+  object BreakPGR: TStringGrid
+    Left = 0
+    Height = 128
+    Top = 30
+    Width = 411
+    Align = alClient
+    ColCount = 3
+    DefaultRowHeight = 16
+    FixedCols = 0
+    GridLineWidth = 0
+    Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRowSelect]
+    RowCount = 2
+    TabOrder = 1
+    TitleFont.Color = clWindowText
+    TitleFont.Height = -11
+    TitleFont.Name = 'Tahoma'
+    OnDblClick = BreakPGRDblClick
+    OnDrawCell = BreakPGRDrawCell
+    ColWidths = (
+      85
+      64
+      140
+    )
+  end
+  object EditBtn: TButton
+    Left = 304
+    Height = 16
+    Top = 40
+    Width = 16
+    Caption = '...'
+    TabOrder = 2
+    Visible = False
+  end
+end

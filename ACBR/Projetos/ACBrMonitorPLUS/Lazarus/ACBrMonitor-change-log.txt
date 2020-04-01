@@ -1,0 +1,2065 @@
+{******************************************************************************}
+{ Projeto: ACBrMonitor                                                         }
+{  Executavel que faz uso do conjunto de componentes ACBr para emissão de NFe  }
+{                                                                              }
+{ Direitos Autorais Reservados (c) 2006 Daniel Simoes de Almeida               }
+{                                                                              }
+{  Você pode obter a última versão desse arquivo na página do Projeto ACBr     }
+{ Componentes localizado em      http://www.sourceforge.net/projects/acbr      }
+{                                                                              }
+{  Este programa é software livre; você pode redistribuí-lo e/ou modificá-lo   }
+{ sob os termos da Licença Pública Geral GNU, conforme publicada pela Free     }
+{ Software Foundation; tanto a versão 2 da Licença como (a seu critério)       }
+{ qualquer versão mais nova.                                                   }
+{                                                                              }
+{  Este programa é distribuído na expectativa de ser útil, mas SEM NENHUMA     }
+{ GARANTIA; nem mesmo a garantia implícita de COMERCIALIZAÇÃO OU DE ADEQUAÇÃO A}
+{ QUALQUER PROPÓSITO EM PARTICULAR. Consulte a Licença Pública Geral GNU para  }
+{ obter mais detalhes. (Arquivo LICENCA.TXT ou LICENSE.TXT)                    }
+{                                                                              }
+{  Você deve ter recebido uma cópia da Licença Pública Geral GNU junto com este}
+{ programa; se não, escreva para a Free Software Foundation, Inc., 59 Temple   }
+{ Place, Suite 330, Boston, MA 02111-1307, USA. Você também pode obter uma     }
+{ copia da licença em:  http://www.opensource.org/licenses/gpl-license.php     }
+{                                                                              }
+{ Daniel Simões de Almeida  -  daniel@djsystem.com.br  -  www.djsystem.com.br  }
+{              Praça Anita Costa, 34 - Tatuí - SP - 18270-410                  }
+{                                                                              }
+{******************************************************************************}
+
+{******************************************************************************
+|* ACBrMonitor
+|*
+|* PROPÓSITO: Registro de Alterações
+******************************************************************************}
+
+
+Para ver os comandos dispoíveis do ACBrMonitor acesse:
+http://acbr.sourceforge.net/drupal/?q=node/40
+
+Símbolo : Significado
+
+[+]     : Novo recurso
+[*]     : Recurso modificado/melhorado
+[-]     : Correção de Bug (assim esperamos)
+
+06/01/2020
+[+] DoACBrECFUnit, ACBrMonitorConfig
+Adicionado os métodos novos de Processamento, Consultas, Cancelamento, Download ref. BlocoX
+
+02/01/2020
+[*] DoACBrBPeUnit e DoACBrMDFeUnit
+Alterado a implementação dos métodos: GerarBPeIni e GerarMDFeIni visando se utilizar
+do método GerarIni implementado nos códigos dos componentes.
+
+18/12/2019
+[*] DoACBrBPeUnit
+Incluido o parametro Protocolo no retorno do Envio e corrigido a impressão do DABPE
+após o envio somente quando o mesmo for autorizado.
+
+10/12/2019
+[*] DoACBrBPeUnit, DoACBrCTeUnit, DoACBrESocialUnit, DoACBrGNReUnit, DoACBrMDFeUnit, DoACBrSATUnit,
+DoACBrCEPUnit, DoACBrIBGEUnit, DoACBrSEDEXUnit
+Adicionado parametrização para o Tipo de Resposta dos métodos WebService (INI, XML, JSON)
+
+10/12/2019
+[*] ACBrMonitor1, ACBrMonitorConfig, ACBrMonitorConsts, CmdUnit
+Adicionado propriedade para configurar o Tipo de Resposta dos métodos WebService (INI, XML, JSON)
+
+02/12/2019
+[*] ACBrMonitor1, ACBrMonitorConfig, ACBrMonitorConsts
+Adicionado propriedade Para apresentar coluna Desconto e Acrescimo na impressão da DANFe
+
+02/12/2019
+[*] DoACBrMDFe
+Adicionado parametrização para emissão do DAMDFe com mensagem de "MDFeEncerrado"
+
+14/11/2019
+[*] ACBrMonitor1, ACBrMonitorConfig, ACBrMonitorConsts
+Adicionado propriedade "Texto Personalizado Canhoto NFe", configuravel em DFe/Impressao/NFe
+
+08/11/2019
+[*] DoACBrMDFe
+Compatibilização das funções de Respostas do componente MDFe, baseado no Refactory realizado nas classes da ACBrLib.
+
+04/11/2019
+[-] DoACBrNFe
+Ajuste na chamada do metodo NFe.ReciboNFe, estava chamando método de forma errada.
+
+[-] DoACBrNFe
+Ajuste no método NFe.ImprimirEvento, definindo impressora padrão do ACBrMonitor caso não seja passado como parâmetro.
+
+[*] ACBrMonitor1, ACBrMonitorConfig, ACBrMonitorConsts
+Adicionado as propriedades ExpandirDadosAdicionaisAuto e ImprimeContinuacaoDadosAdicionaisPrimeiraPagina para impressão
+do DANFE
+
+31/10/2019
+[*] ACBrMonitor1, ACBrMonitorConfig, ACBrMonitorConsts
+Adicionado campos para configuração de casas de decimais na emissão do Extrato SAT
+
+[*] DoSATUnit, DoBoletoUnit
+Ajustes na validação de retorno de envio de e-mail
+
+[*] ACBrMonitor1
+Ajustes na validação dos Arquivos .ini de ServicosDFe, utiliza arquivo da pasta de instalação se não encontrar o arquivo nas configuraçoes.
+
+18/10/2019
+[*] ACBrMonitor1, ACBrMonitorConfig
+Ajustes nos valores defaults nas margens dos DFes para milímetros
+
+15/10/2019
+[*] ACBrMonitor1, ACBrMonitorConsts
+Validação das configurações SSL ao recarregar o dados .ini, define valores padrão no caso de existir tipos desabilitados.
+
+15/10/2019
+[*] DoACBrMDFeUnit
+Melhorias na rotina de validação da chave MDFe no método EncerrarMDFe estava causando AV na versao x64
+
+14/10/2019
+[*] ACBrMonitor1, ACBrMonitorConfig
+Remoção da propriedade GerarInfCTeSupl, devido ser removido do componente
+
+14/10/2019
+[*] DoACBrNFeUnit, DoACBrCTeUnit
+Validação no método de Impressão via parâmetro, verificando documento em homologação para impressão da Mensagem padrão
+de documento em Homologação no Destinatário.
+
+04/10/2019
+[*] DoSATUnit, ACBrMonitor1, ACBrMonitorConfig, ACBrMonitorConsts
+Adicionado propriedade "Validar Numero Sessao Resposta" nas configurações do SAT
+
+04/10/2019
+[*] DoSATUnit
+Validação para quando não obtem nenhuma resposta do SAT
+
+04/10/2019
+[*] DoACBrNFe
+Ajustes no método para CancelarNFe, limpa o componente ACBrNFe antes de executar o método
+
+04/10/2019
+[*] DoACBrNFe
+Alteraçoes na rotina de impressão para quando existir parametro de gerar PDF com impressão ESCPOS
+
+02/10/2019
+[+] ACBrMonitor1, UtilUnit
+Adicionado um alerta quando usuário está utilizando arquivos de Servicos.ini dos DFes desatualizados.
+
+02/10/2019
+[+] ACBrMonitor1, MonitorConfig, ACBrMonitorConsts
+Adicionado opção de Impressão de Logo Lateral para NFCe
+
+02/10/2019
+[*] DoACBrMDFe
+Ajuste na função de geração arquivo .ini
+
+23/09/2019
+[*] DoACBrCTe
+Adicionado funcionalidades para envio Síncrono do CT-e
+
+23/09/2019
+[*] DoACBrMDFe, DoACBrCTe, DoACBrNFe
+Ajustes e padronização dos métodos de Retorno de Path (GetPath / GetPathCanc / GetPathCCe / GetPathEvento)
+
+20/09/2019
+[*] DoACBrMDFe
+Padronização do retorno no método de Envio, retornando o Path do XML autorizado
+
+20/09/2019
+[*] DoACBrMDFe, DoACBrCTe
+Padronização do retorno no método de Consulta com path do XML atualizado quando existir
+
+20/09/2019
+[*] DoACBrMDFe
+Adicionado parametros de "Preview", "Cópias", "PDF" nos métodos que contém recursos de Impressão
+
+20/09/2019
+[*] ACBrMonitor1, DoEmailUnit, DoACBrNFeUnit
+Ajustes no retorno de envio de email, utilizando processamento paralelo
+
+30/08/2019
+[*] DoACBrCTe / DoACBrMDFe
+Ajustes no retorno de envio de documentos, padronizado conforme NFe.
+
+26/08/2019
+[*] DoACBrNFe
+Ajuste no método de impressão de inutilização utilizando Fortes Report
+
+15/08/2019
+[*] ACBrMonitor1, ACBrMonitorConfig, ACBrMonitorConst
+Adicionado validação da classe para preencher tipo do layout de canhoto em tela
+
+06/08/2019
+[+] ACBrMonitor1, ACBrMonitorConfig, ACBrMonitorConst
+Adicionado opção para selecinar o tipo do layout de canhoto no DANFe
+
+06/08/2019
+[-] DoACBrMDFe
+Correção do método para alterar o ambiente de Envio MDFe "SetAmbiente"
+
+15/07/2019
+[*] ACBrMonitor1, ACBrMonitorConfig, ACBrMonitorConst
+Adicionado flag opcional para Geração da Tag QRCode no XML do CTe
+
+12/07/2019
+[*] DoACBrNFeUnit
+Ajuste retorno do método ConsultaCadastro, baseados nas alterações das classes de Respostas da Lib
+
+12/07/2019
+[*] DoACBrCTeUnit
+Otimização nos retornos do CTe baseados nas alterações das classes de Respostas da Lib
+
+11/07/2019
+[*] DoACBrMDFeUnit
+Adicionado parametro para envio de MDFe em modo Síncrono
+
+11/07/2019
+[*] ACBrMonitor1
+Ajuste na validação de versão DFe para atualização em tela
+
+11/07/2019
+[+] ACBrMonitor1
+Adicionado parametro para configuração versão GNRe
+
+10/07/2019
+[*] DoACBrBPeUnit, DoACBrCTeUnit, DoACBrMDFeUnit
+Ajuste na chamada do método DistribuicaoDFeporNSU
+
+10/07/2019
+[*] DoSATUnit
+Ajuste no retorno do método GerarImpressaoFiscalMFe.
+
+10/07/2019
+[+] ACBrMonitor1, ACBrMonitorConfig, ACBrMonitorConst
+Adicionado campo para parametrizar o diretório dos Schemas DFe, foi realizado alteração para separar os schemas por tipo DFe.
+
+01/07/2019
+[+] DoACBrNFeUnit
+Melhorias e padronizações nas classes de Retorno DFe
+
+01/07/2019
+[+] ACBrMonitor1
+Ajuste na chamada das funções DownloadDFe, conforme ajustes realizados nos componentes DFe
+
+27/06/2019
+[+] ACBrMonitor1, ACBrMonitorConfig, ACBrMonitorConst
+Adicionado nas configurações de impressão de NFCe um campo pade definir qtd de cópias (Específico para NFCe)
+
+14/06/2019
+[+] ACBrMonitor1, ACBrMonitorConfig, ACBrMonitorConst
+Adicionado campo para config. "DígitoAgenciaConta" especifico para alguns bancos
+
+10/06/2019
+[+] DoACBrNFeUnit
+Adicionado funcionalidade de impressão de inutilização de NFCe em ESCPOS
+
+08/0/2019
+[+] ACBrMonitor1
+Adicionado SubMenu: Email referente ao componente SAT
+
+04/06/2019
+[-] DoNFeUnit
+Ajuste no nome das chamadas de métodos de Respostas conforme alterações da classe lib.
+
+03/06/2019
+[-] DoSATUnit
+Correção na leitura em tela das configurações de Regime Tributário.
+
+31/05/2019
+[+] ACBrMonitor1, ACBrMonitorConfig, ACBrMonitorConsts
+Adicionado Propriedade "DownloadDFe" e "Separar por Nome" para baixar XML de Documentos do DistribuicaoDFe
+
+29/05/2019
+[+] ACBrMonitor1, ACBrMonitorConfig, ACBrMonitorConsts, DoSATUnit
+Adicionado para o SAT os Campos para configuração de Assunto e Mensagem de e-mail em tela
+
+29/05/2019
+[+] ACBrMonitor1, ACBrMonitorConfig, ACBrMonitorConsts
+Adicionado propriedade na aba e-mail para definir Envio do Corpo e-mail como HTML
+
+29/05/2019
+[*] DoSATUnit
+Ajuste leitura da versão do SAT configurado em tela
+
+24/05/2019
+[+] DoACBreSocialUnit, ACBrMonitor1
+Adicionado o método "SetTipoEmpregador"
+
+24/05/2019
+[+] DoSATUnit, ACBrMonitor1
+Adicionado o método "EnviarEmailCFe"
+
+23/05/2019
+[*] DoACBrBPe, ACBrMonitor1
+Ajustes no Componente ACBrBPe
+
+20/05/2019
+[+] DoACBrBPe, ACBrMonitor1, ACBrMonitorConfig, ACBrMonitorConsts, ACBrCMD
+Adicionado o Componente ACBrBPe e realizado as configurações necessárias para o componente
+
+15/05/2019
+[*] DoACBrSAT
+Ajuste na validação dos dados em tela para geração do XML de envio
+
+15/05/2019
+[*] DoACBrNFe
+Ajuste na validação de impressora padrão definida em tela
+
+10/05/2019
+[*] ACBrMonitor1
+Ajustes na validaçao Impressão de Cupom Fiscal, geração de PDF sempre em Fortes.
+
+09/05/2019
+[*] DoSatUnit
+Melhorias nas validações, métodos Carregar XML, Leitura do .INI e Envio.
+
+23/04/2019
+[-] ACBrMonitor1
+Ajuste na configuração da propriedade "ForcarGerarTagRejeicao938"
+
+22/04/2019
+[-] DoBoletoUnit
+Ajuste na mensagem padrão para envio de email
+
+11/04/2019
+[*] DoACBrNFeUnit
+Ajustes nos métodos de Resposta com padronizações
+
+10/04/2019
+[*] DoACBrNFeUnit
+Alteração dos métodos de Resposta da classe DoACBrNFeUnit utilizando as funções
+ProcessarResposta da classe da ACBrLibNFe
+
+05/04/2019
+[+] DoACBrUnit
+Adicionado o método "Versao" (retorna versão do ACBrMonitor)
+
+05/04/2019
+[+] DoSATUnit
+Adicionado Validações para Envio de CFe
+
+03/04/2019
+[+] DoEmailUnit
+Adicionado parâmetro no metodo AdicionarAnexo de e-mail para definir a disposição como "Attachement" ou in-line
+
+03/04/2019
+[*] DoACBrNFeUnit
+Ajustes no Retorno do método EnviarLoteNFe
+
+22/03/2019
+[*] DoACBrMDFeUnit, ACBrLibMDFeRespostas
+Ajustes no retorno dos Itens Resposta do método ConsultarMDFeNaoEnc
+
+14/03/2019
+[*] ACBrMonitor1
+Ajustes nas configurações de Margem para impressão NFCe Modelo A4
+
+13/03/2019
+[-] DoACBrMDFe
+Correção na chamada do método MDFe.LerIni
+
+12/03/2019
+[+] DoACBreSocialfUnit, ACBrLibeSocialConsts, ACBrLibeSocialRespostas
+Adicionado no ACBrMonitor os métodos "ConsultaIdentificadoresEventosEmpregador",
+"ConsultaIdentificadoresEventosTabela", "ConsultaIdentificadoresEventosTrabalhador",
+"DownloadEventos" ao componente e-social.
+
+12/03/2019
+[+] DoACBrReinfUnit
+Adicionado novo parâmetro (InscricaoEstabPrestadorTomador) no método Reinf.ConsultarReciboReinf
+
+11/03/2019
+[*] DoSATUnit
+Ajuste no retorno de Resposta de Envio de Cupom
+
+08/03/2019
+[+] DoACBrReinfUnit, ACBrLibReinfConsts, ACBrLibReinfRespostas
+Adicionado no ACBrMonitor o método "ConsultarReciboReinf" ao componente ReInf
+
+07/03/2019
+[*] ACBrMonitor1
+Ajustes na Impressão NFCe modelo A4
+
+27/02/2019
+[-] ACBrMonitor1
+Ajuste na gravamção da mensagem padrão envio de e-mail
+
+08/02/2019
+[+] ACBrMonitor1, ACBrMonitorConfig, ACBrMonitorConsts
+Adicionado parâmetros "ExibeTotalTributosItem" e "ImprimeTributos" para impressão de NFCe
+
+30/01/2019
+[+] DoACBrNFeUnit, DoACBrCTeUnit, DoACBrMDFeUnit
+Adicionado parâmetro "ReplayTo" nos Métodos de Envio de e-mail de DFe
+
+30/01/2019
+[+] DoPosPrinterUnit
+Adicionado Métodos do componente PosPrinter para Impressão de Imagem BMP e
+Gravar Logo na memória da Impressora
+'imprimirimagemarquivo','imprimirlogo','gravarlogoarquivo','apagarlogo'
+
+29/01/2019
+[+] ACBrMonitor1, ACBrMonitorConfig, ACBrMonitorConsts
+Adicionado propriedade "FonteLinhaItem" para impressão NFCe
+(permite definir tipo de Fonte, tamanho e estilo para os itens na NFCe)
+
+28/01/2019
+[+] ACBrMonitor1, ACBrMonitorConfig, ACBrMonitorConsts
+Adicionado propriedade "DescricaoPagamentos" para impressão NFCe
+(permite a seleção para impressão do tipo de impressão pagamento: Tipo, Bandeira, Autorizacao)
+
+24/01/2019
+[*] ACBrMonitor1, DoSedexUnit, ACBrSedex
+Ajustes para consulta e Rastreio Sedex via WebService
+
+24/01/2019
+[+] ACBrMonitor1, ACBrMonitorConfig, ACBrMonitorConsts
+Adicionado configurações para informar Responsável Técnico nos XML DFe
+
+23/01/2019
+[*] DoACBrNFeUnit, DoACBrCTeUnit, DoACBrMDFeUnit, pcnAuxiliar
+Alterado metodos que realizam validação do CNPJ, para validar também se for CPF.
+
+18/01/2019
+[+] DoACBrMDFeUnit, ACBrMonitorConsts
+Adicionado Metodos DistribuicaoDFe para o MDFe no ACBrMonitor.
+
+17/01/2019
+[*] ACBrMonitor1
+Ajustes de tela
+
+17/01/2019
+[*] ACBrMonitor1, DoACBrNFeUnit, DoACBrCTeUnit
+Ajustes nas classes do Monitor referente Refactory realizado nas classes de unificação do DFe
+
+09/01/2019
+[*] ACBrMonitor1
+Ajustes na propriedade da NFe "Exibir Inf Adic. Produto" na impressão.
+
+08/01/2019
+[-] DoACBrCTeUnit
+Correção no método: EnviarLoteCTe na pesquisa e parâmetro do lote a ser enviado
+
+[+] Adicionada configuração para modificar o nome do arquivo do boleto.
+https://www.projetoacbr.com.br/forum/topic/48372-mudar-o-nome-do-boletopdf-para-outro-nome/
+por: Juliana Tamizou
+
+[+] Novas configurações para QRCode lateral e logo adiconadas.
+https://www.projetoacbr.com.br/forum/topic/48406-qrcode-lateral-no-cfe/
+por: DSA
+
+[*] ACBrMonitorPLUS.iss
+Removido manual em PDF do instalador diminuindo o tamanho do instalador em ~50%
+
+[-] ACBr.inc
+Ajustada diretiva de compilação que removia suporte a libXmlSec
+
+27/11/2018
+[+] DoACBrMDFeUnit
+Ajuste na validação de retorno do método ConsultaMDFeNaoEnc
+
+23/11/2018
+[+] ACBrMonitor1, ACBrMonitorConfig, ACBrMonitorConsts
+Adicionado Flag para geração do arquivo de remessa removendo acentuação para componente Boleto
+
+20/11/2018
+[+] DoSATUnit, ACBrMonitorConsts
+Adicionado funcionalidade SatSign no ACBrMonitor para Geração da Assinatura da Software
+House no SAT
+
+19/11/2018
+[*] DoACBrNFeUnit, DoACBrCTeUnit, DoACBrMDFeUnit
+Ajustes no controle de exceptions nas classes
+
+16/11/2018
+[*] ACBrMonitor1
+Ajustes para configuração da versão do e-Social e Reinf em tela.
+
+16/11/2018
+[*] DoACBrMDFeUnit, DoACBrCTeUnit
+Ajuste no método SetFormaEmissão para salvar corretamente o modelo selecionado nas configurações do ACBrMonitor
+
+16/11/2018
+[*] DoACBrNFeUnit, ACBrLibNFeRespostas, ACBrLibNFeConst
+Adicionado Tags de Retorno na Consulta de NFe no caso de eventos vinculados ao XML.
+
+29/10/2018
+[+] DoBoletoUnit
+Adicionado os métodos "MontarNossoNumero", "RetornaLinhaDigitavel", "RetornaCodigoBarras"
+https://www.projetoacbr.com.br/forum/topic/47115-obter-dados-do-boleto-no-acbrmonitor/
+
+26/10/2018
+[*] DoACBrNFeUnit
+Validação da Assinatura no método "EnviarNFe" para gerar novamente o XML
+
+26/10/2018
+[*] DoACBrMDFeUnit
+Correça na validação da consulta de protocolo do método EncerrarMDFe
+
+17/10/2018
+[-] DoACBrUnit
+Ajustes no método ACBr.setWebService
+
+15/10/2018
+[-] DoECFUnit
+Ajuste nos metodos CupomVinculado / AbrirCupomVinculado
+
+15/10/2018
+[*] DoACBrNFeUnit
+Melhorias performance no método "EnviarNFe"
+
+02/10/2018
+[*] ACBrMonitor
+Atualização Tela ref conf SSL
+
+01/10/2018
+[*] DoPosPrinterUnit, DoACBrGNReUnit, DoSedexUnit, DoDISUnit, DoLCBUnit, DoIBGEUnit,
+DoETQUnit, DoGAVUnit, DoCHQUnit, DoCEPUnit, DoeMailUnit, DoBALUnit.
+Realizado Refactory nas classes do ACBrMonitor baseado na estrutura padrão criada para os componentes DFe
+
+01/10/2018
+[+] DoACBrNFeUnit
+Adicionado parâmetro para Assinatura ou não do XML no método "CriarNFe"
+
+01/10/2018
+[+] DoBoleto
+Adicionado campo "DiasDeProtesto" na leitura do arquivo .ini
+
+18/09/2018
+[*] DoSATUnit
+Ajuste no método AssociarAssinatura
+
+11/09/2018
+[*] DoACBrMDFeUnit
+Ajuste na nomenclatura do Campo CNPJCPF, conforme alteração do componente
+
+06/09/2018
+[*] DoECFUnit
+Ajuste na passagem de parâmetros do método "EfetuaPagamento"
+
+04/09/2018
+[*] DoACBrNFeUnit
+Ajuste para envio de NFe em lote
+
+03/09/2018
+[-] DoACBrNFeUnit
+Correção de erros list-index--out-of-bounds
+
+03/09/2018
+[*] DACBrMonitor1
+Ajuste na validação do path do diretório para Monitorar Pasta no ACBrMonitor
+
+30/08/2018
+[*] DoECFUnit
+Realizado Refactory na classe DoECFUnit
+
+24/08/2018
+-- DoACBrMDFeUnit --
+[+] Acrescentado a propriedade Arquivo nas respostas de Cancelamento e Encerramento.
+Por: Italo Jurisato Junior
+
+17/08/2018
+[*] DoBoleto / ACBrMonitor1
+Ajuste na leitura do .ini e configurações em tela
+
+[*] DoACBrNFeUnit 
+Ajustes e validações nos métodos de envio de e-mail
+
+10/08/2018
+[-] DoACBrNFeUnit / DoACBrCTeUnit / DoACBrMDFeUnit
+Correção na mensagem para envio de e-mail
+
+10/08/2018
+[*] ACBrMonitor1
+Ajusta na leitura do .TXT ordenando a leitura pela data de geração do arquivo
+
+07/08/2018
+[*] DoACBrNFe
+Realizado Ajustes ref Refactory no retorno do Integrador Fiscal
+
+06/08/2018
+[*] DoBoletoUnit
+Realizado Ajustes ref Refactory e Leitura .INI para mais de um título.
+
+03/08/2018
+[*] DoACBrNFeUnit, ACBrMonitor1
+Realizado Ajustes referentes Tags de Retorno e ajustes de Tela
+
+30/07/2018
+[*] DoACBrNFeUnit
+Realizado Refactory desta Unit no projeto ACBrMonitor
+
+30/07/2018
+[*] DoACBrCTeUnit
+Realizado Refactory desta Unit no projeto ACBrMonitor
+
+30/07/2018
+[*] DoSATUnit
+Realizado Refactory desta Unit no projeto ACBrMonitor
+
+30/07/2018
+[*] DoBoletoUnit / CMDUnit
+Realizado Refactory desta Unit no projeto ACBrMonitor
+
+23/07/2018
+[*] ACBrNFeUnit
+Ajustes no método NFe.NFeToTXT para geração do arquivo TXT
+
+18/07/2018
+[+] ACBrMonitor1, ACBrMonitorConfig, ACBrMonitorConsts
+Adicionado parâmetro "ComposFatObrigatorios" para NFe4.0
+
+13/06/2018
+[*] DoACBrMDFeUnit
+Ajustes para concatenar corretamentes Tags de Retorno
+
+11/06/2018
+[+] ACBrNFeNotasFiscais
+Adicionado Novos campos ref Grupo ICMS Efetivo
+pRedBCEfet, vBCEfet, pICMSEfet, vICMSEfet=
+
+11/06/2018
+[+] ACBrMonitor1, ACBrMonitorConfig, ACBrMonitorConsts
+Adicionado parâmetro para configurar versão do QRCode
+   por: José M. S. Junior
+
+04/07/2018
+[*] DoACBrMDFeUnit
+Ajuste Método EncerrarMDFe para validar parâmetro com a Chave
+   por: José M. S. Junior
+
+03/07/2018
+[*] DoPosPrinterUnit
+Adicionado Método SetModelo
+https://www.projetoacbr.com.br/forum/topic/44497-contribui%C3%A7%C3%A3o-doposprinterunitpas/
+   por: JSantos
+
+25/06/2018
+[+] DoACBreSocialUnit, DoACBrReinfUnit
+Adicionado os metodos para Configuração: ID Contribuinte, ID Empregador, ID Transmissor
+SetIDTransmissor(),  SetIDEmpregador(), SetIDContribuinte()
+   por: José M. S. Junior
+
+25/06/2018
+[*] DoACBrNFeUnit, DOACBrCTeUnit, DOACBrMDfeUnit - Adicionado Método
+SetTipoImpressao(Para selecionar tipo Retrato ou Paisagem)
+   por: José M. S. Junior
+
+14/06/2018
+[*] DoECFUnit - Ajustes no método "enviarblocoxreducaoz"
+   por: José M. S. Junior
+
+12/06/2018
+[*] Acrescentado na resposta retornada pelo método DistribuicaoDFe o nome do 
+    XML bem como o seu tipo (Schema).
+   Por: Fabio Nery
+
+08/06/2018
+[+] Adicionado parâmetro para configuração de Unidade no componente Etiqueta
+   por: José M. S. Junior
+
+[+] Adicionado Campo "pathArqTXT" na aba diretórios do DFe para gravar GNRe
+   por: José M. S. Junior
+
+[+] Adicionado Campo "IgnorarCaixaEAcentos", "IsUTF8" para consulta IBGE
+   por: José M. S. Junior
+
+07/06/2018
+[*] Ajuste para utilização do componente Reinf e geração Tags de Retorno
+   por: José M. S. Junior
+
+07/06/2018
+[*] Ajuste Componente Boleto, adicionado parametro para nome arquivo em setdiretorioarquivo
+   por: José M. S. Junior
+
+06/06/2018
+[*] Ajuste nos retornos de carregamento XML no componente NFe
+   por: José M. S. Junior
+
+[*] Ajuste nos valores Default para os diretórios DFe
+   por: José M. S. Junior
+
+05/06/2018 - ACBrMonior
+[*] Ajuste para preenchimento campo CST no arquivo .ini
+Grupo de Partilha do ICMS entre a UF de origem e UF de destino ou a UF - CST 10 e 90, informar 10part e 90part respectivamente.
+Grupo de Repasse de ICMS ST retido anteriormente em operações interestaduais com repasses através do Substituto Tributário, CST 41 e 60, informar 41rep e 60rep
+   por: José M. S. Junior
+
+[*] Atualizado Leitura e escrita do .INI com tag indPag (NFe 4.0)
+   por: José M. S. Junior
+
+[-] Correção na gravação das margens da NFCe
+   por: José M. S. Junior
+
+[*] Ajustes para utilizar estruturas de diretórios na geração PDF de Inutilização da NFe
+   por: José M. S. Junior
+
+28/05/2018 - ACBrMonior
+[-] Ajuste na gravação dos dados aba ( Software House )
+   por: José M. S. Junior
+
+24/05/2018 - ACBrMonior
+[+] Adicionado Método (gerarimpressaofiscalmfe) aos métodos SAT
+para retornar geração fiscal MFe
+   por: José M. S. Junior
+
+22/05/2018 - ACBrMonior
+[-] Ajustes Leitura .INI para manter compatibilidade configuração Boleto
+https://www.projetoacbr.com.br/forum/topic/43517-boleto-dados-cedente-mudou-bug/
+   por: José M. S. Junior
+
+[-] Ajustes na geração Arquivo de Respostas
+https://www.projetoacbr.com.br/forum/topic/32678-acbrmonitorplus-sac/
+   por: José M. S. Junior
+
+22/05/2018 - ACBrMonior
+[-] Ajustes na validação no Monitoramento de Pasta
+   por: José M. S. Junior
+
+15/05/2018 - ACBrMonior
+[*] Ajustes quanto ao valor da propriedade ACBrSedex.Servico
+[*] Adicionado novas constantes referentes ao Reinf
+   Por: Italo Jurisato Junior
+
+15/05/2018 - ACBrMonitor
+[*] Ajustes referente remoção da propriedade IncluirQRCodeXMLNFCe
+
+14/05/2018 - ACBrMonitor Versão 1.2.0.0
+[*] Inicio Refactory no ACBrMonitorPlus, iniciando pelo componente MDFe
+Adicionado as classes: DoACBrDFeUnit, ACBrMonitorConsts, ACBrMonitorConfig
+Alterações significativas classes: DoACBrMDFeUnit, ACBrMonitor1, CMDUnit, UtilUnit
+
+[+] Adicionados funcionalidades para o componente e-Social no ACBrMonitor nos
+moldes das classes Refactory. Adicionado a Classe DoACBreSocialUnit
+
+07/04/2018
+[*] Ajuste nos métodos que utilizam parâmetros para Visualizar Impressão
+       por: José M. S. Junior
+
+03/04/2018
+[*] Atualização de campos na Função de Geração do .INI através da leitura do XML
+       por: José M. S. Junior
+
+02/04/2018
+[*] Validação e Ajustes na leitura de Respostas do Integrador Fiscal
+       por: José M. S. Junior
+
+19/03/2018
+[*] Ajustes na configuração - Integrador Fiscal
+       Validação Tipo de Documento (NFCe) para validar Integrador
+       por: José M. S. Junior
+
+09/03/2018
+[+] Atualização Componente PosPrinter
+       Adicionado Campos para configurações Gaveta em tela
+       Atualização metodos ESCPOS (Consultar Manual)
+       por: José M. S. Junior
+
+09/03/2018
+[+] Atualização Componente Etiqueta
+       Adicionado Campos para configurações Etiqueta em tela
+       Adicionado Parâmetros: ImprimirReverso / ExibeCodigo (Consultar Manual)
+       Adicionado os métodos:
+       IniciarEtiqueta / FinalizarEtiqueta
+       Unidade / SetUnidade
+       DPI / SetDPI
+       Origem / SetOrigem
+       BackFeed / SetBackFeed
+       Velodicade / SetVelocidade
+       MargemEsquerda / SetMargemEsquerda
+       por: José M. S. Junior
+
+27/02/2018
+[*] Adicionado Menu de Configurações - Integrador Fiscal
+       Adicionado flag em DFe / WebService / NFCe (Usar Integrador Fiscal)
+       Para utilização da NFCe com Integrador Fiscal
+       por: José M. S. Junior
+
+[*] Ajuste Métodos Componente IBGE
+       por: José M. S. Junior
+
+20/02/2018
+[*] Ajuste no Método "GerarChave", conforme alterações do ACBrDFe
+       por: José M. S. Junior
+
+16/02/2018
+[+] Adicionado Métodos de Distribuição para CTe e MDFe
+        CTe.DistribuicaoDFePorNSU(cUF, cCNPJ, nNSU)
+        CTe.DistribuicaoDFePorUltNSU(cUF, cCNPJ, nUltNSU)
+        MDFe.DistribuicaoDFePorNSU(cUF, cCNPJ, nNSU)
+        MDFe.DistribuicaoDFePorUltNSU(cUF, cCNPJ, nUltNSU)
+	por: Italo Jurissato Junior
+
+05/02/2018
+[+] Adicionado Parâmetro "Utilizar Separador para Path PDF" em DFe / Diretórios
+        Define se utiliza a mesma Estrutura de diretório definida para XML, se não
+        informar o path PDF, cria estrutura a partir do path raiz do ACBrMonitor
+	por: José M. S. Junior
+
+[+] Adicionado Parâmetro "Normatizar Municípios utilizando Diretório MunIBGE" em DFe / Diretórios
+        Define a utilização do Diretorio MunIBGE juntos ao path raiz do ACBrMonitor
+        para atualizar Cod. Município ou Nome Município na geração do XML, caso o mesmo não
+        esteja preenchido.
+	por: José M. S. Junior
+
+12/01/2018
+[*] Atualização das Propriedades de impressão da DANFE
+	por: José M. S. Junior
+
+10/01/2018
+[*] Atualização da Função GerarNFeIni (Leitura das tags adicionadas a versão 4.0)
+	por: José M. S. Junior
+
+28/12/2017
+[*] Ajuste no Retorno do Método DistribuicaoDFe
+        https://www.projetoacbr.com.br/forum/topic/40600-comando-nfedistribuicaodfeporultnsucuf-ccnpj-nultnsu/
+	por: José M. S. Junior
+
+19/12/2017
+[+] Adição de Tag --DoBoletoUnit--
+        Adicionado tag DataMulta
+	por: José M. S. Junior
+
+18/12/2017
+[-] Correção no método CriarEnviarNFe --DoACBrNFeUnit--
+        Gerando erro de duplicidade ao chamar método (LoadFromIni)
+	por: José M. S. Junior
+
+11/12/2017
+[-] Correção no método AdicionarMDFe --DoACBrMDFeUnit--
+        https://www.projetoacbr.com.br/forum/topic/40318-falha-na-valida%C3%A7%C3%A3o-
+        do-mdfe-pelo-acbrmonitor/?tab=comments#comment-265423
+	por: José M. S. Junior
+
+07/12/2017
+[*] Utilização da função para leitura arquivo .ini a partir das classes:
+        ACBRNFeNotasFiscais / pcnEnvEventoNFe  (métodos: TNotasFiscais.LoadFromIni,
+        TEventoNFe.LerFromIni )
+	por: José M. S. Junior
+
+04/12/2017
+[*] Validação para realização de Consulta por número de Recibo no caso de CTe-OS
+[+] Adicionado URLs para NF-e 4.0 Homologação Paraná
+	por: José M. S. Junior
+
+27/11/2017
+[+] Adicionado Parametros para emissão Nome Fantasia na DANFe NFCe
+	por: José M. S. Junior
+
+27/11/2017
+[-] Ajustes de Retorno no comando de geração PDF no caso de Diretório inválido.
+        Estava trazendo a excessão em tela e não atualizava o log
+	por: José M. S. Junior
+
+23/11/2017
+[*] Ajustes ACBrBlocoX Métodos de Assinar / Validar e Enviar
+        Adicionado Métodos (AssinarBlocoX / ValidarBlocoX / EnviarBlocoX )
+	por: José M. S. Junior
+
+10/11/2017
+[+] Adicionado Parametros para emissão Extrato Fortes SAT - Código GTIN /
+        Acréscimo Desconto /Itens apenas em uma linha
+	por: José M. S. Junior
+
+07/11/2017
+[+] Adicionado Método para alterar Logomarca das DFes via Comando NFe / NFCe / SAT / CTe / MDFe
+	por: José M. S. Junior
+
+01/11/2017
+[+] Adicionado parametros para emissão NFCe / NFe - Campo Largura NFCe / Imprimir Detalhamento NFCe /
+        Nomenclatura do campo GTIN
+	por: José M. S. Junior
+
+[*] Ajustes na Geração de PDF de Evendo co CTe
+        https://www.projetoacbr.com.br/forum/topic/39619-impress%C3%A3o-carta-de-corre%C3%A7%C3%A3o/
+	por: José M. S. Junior
+
+26/10/2017
+[+] Adicionado parametros para emissão NFCe - Itens apenas em uma linha / QRCode na Lateral
+	por: José M. S. Junior
+
+[*] Ajustes na Configuração do Tipo de Emissão de DFe em tela e por linha de comando
+        DoACBrCTeUnit, DoACBrMDFe, DoACBrGNRe, ACBrMonitor1
+        https://www.projetoacbr.com.br/forum/topic/39430-forma-de-emiss%C3%A3o/
+	por: José M. S. Junior
+
+25/10/2017
+[*] Ajuste no Retorno de Evento de NFe
+        Descrição e tipo de retorno inconsistentes (DoACBRNFe)
+	por: José M. S. Junior
+
+20/10/2017
+[*] Ajuste no metodo Encerrar MDFe Versão 3.0
+        Não esta permitindo consultar MDFe da versão anterior, assim não conseguia encerrar,
+        adicionado validações e parâmetro para campo Protocolo
+	por: José M. S. Junior
+
+20/09/2017
+[+] Adicionado Funcionalidade de chamada de Ajuda nas telas (F1). Através do .chm, utilizando lhelp do lazarus
+	por: José M. S. Junior
+
+14/09/2017
+[+] Adicionado Funcionalidades para Geração e Configuarão do CTe OS Modelo 67
+	http://www.projetoacbr.com.br/forum/topic/38751-erro-erro-ao-gerar-ini-da-cte-list-index-0-out-of-bounds/
+	por: José M. S. Junior
+
+13/09/2017
+[*] Alteração no Encerramento de MDFe, validação de MDF-e Antiga na Sefaz
+	http://www.projetoacbr.com.br/forum/topic/38641-encerramento-mdfe/
+	por: José M. S. Junior
+
+06/09/2017
+[+] Adicionado Tag MultaValorFixo no ACBrBoleto
+	http://www.projetoacbr.com.br/forum/topic/38668-valor-de-multa-no-boleto/
+	por: José M. S. Junior
+
+05/09/2017
+[+] Adicionadas funções a serem executadas antes e após chamadas de impressão, a fim
+	de evitar problemas com exibição de preview, como relatados em:
+	http://www.projetoacbr.com.br/forum/topic/38145-preview-do-danfe/?tab=comments
+	por: Celso Marigo Junior
+
+01/09/2017
+[*] Validação de MDFe Antigos na consulta para realizar encerramento.
+	por: José M. S. Junior
+
+01/09/2017
+[+] Adicionado Comando para Consulta de MDFe não Encerrados
+        Comando: MDFE.consultamdfenaoenc(cnpj)
+	por: José M. S. Junior
+
+31/08/2017
+[+] Adicionado Tags para CTe versão 3.0
+	por: José M. S. Junior
+
+16/08/2017
+[+] Adicionado o Parâmetro em DFe / Certificado. "Verificar a Validade do Certificado"
+
+15/08/2017
+[+] Adicionado as Tags para Atender NFe-e 4.0
+	por: José M. S. Junior
+
+08/08/2017
+[+] Adicionado as Tags para Atender MDF-e 3.0
+        Adicionado na tela campo Versão MDF-e (1.0 / 3.0)
+	http://www.projetoacbr.com.br/forum/topic/35214-testando-mdfe/
+	por: José M. S. Junior
+
+07/08/2017
+[*] Alteração na validação do campo para informar a LogoMarca para NFC-e / SAT, separado da
+        Logomarca Padrão
+	Mais detalhes em:
+	http://www.projetoacbr.com.br/forum/topic/37698-imagem-do-logo-no-cupom-sat/#comment-247440
+	por: José M. S. Junior
+
+02/08/2017
+[*] Adicionado campos "TipoDesconto" para ACBrBoleto (0: tdNaoConcederDesconto,
+        1: tdValorFixoAteDataInformada, 2: tdPercentualAteDataInformada);
+	http://www.projetoacbr.com.br/forum/topic/35289-boleto-sicoob-desconto/
+	por: José M. S. Junior
+
+25/07/2017
+[-]	Correção na gravação de arquivos de resposta, estava adicionando data+hora, devido aba
+	criação da função AddLinesLogFile
+	por: Celso Marigo Junior
+
+24/07/2017
+[*]	Melhorada gravação de logs em arquivos TXT. Criada a função: AddLinesLogFile,
+	esta função trata "exceptions" disparadas pela WriteToTXT, substituidos locais
+	que usavam diretamente a WriteToTXT.
+	http://www.projetoacbr.com.br/forum/topic/36012-acbr-monitorplus-ver10033-fechando-sozinho/
+	por: Celso Marigo Junior
+
+13/07/2017
+[*] Adicionado campos para informar a LogoMarca para NFC-e / SAT, separado da
+        Logomarca Padrão
+	Mais detalhes em:
+	http://www.projetoacbr.com.br/forum/topic/37698-imagem-do-logo-no-cupom-sat/#comment-247440
+	por: José M. S. Junior
+
+10/07/2017
+[*] Adicionado campos para BOLETO referente dados do Sacador Avalista
+	Método: BOLETO.IncluirTitulos
+	Mais detalhes em: 
+	http://www.projetoacbr.com.br/forum/topic/37620-sacadoravalista/
+	por: José M. S. Junior
+
+[*] Adicionado Método BOLETO.ListaOcorrencias(). Retorna listagem de todos os
+        Tipos de Ocorrências.
+	Mais detalhes em:
+	http://www.projetoacbr.com.br/forum/topic/37584-retorno-boleto/
+	por: José M. S. Junior
+
+18/06/2017
+[*] Contribuição de usuário do Forum:
+	http://www.projetoacbr.com.br/forum/topic/37264-ajuste-em-configurações/
+
+09/06/2017
+[*] Modificado ACBrMonitorPLUS para chamar o método NFe.AssinarNFe antes de NFe.ValidarNFe,
+	evitando tentativa de validação de XML sem assinatura, para os demais DFes: CTe, MDFe e GNRe.
+	Mais detalhes em: 
+	http://www.projetoacbr.com.br/forum/topic/37052-nfedownloadnfe-erro-servico-paralisado-sem-previsao/
+	por: Celso Marigo Junior
+	
+
+09/06/2017
+[*] Modificado ACBrMonitorPLUS para chamar o método NFe.AssinarNFe antes de NFe.ValidarNFe,
+	evitando tentativa de validação de XML sem assinatura.
+	Mais detalhes em: 
+	http://www.projetoacbr.com.br/forum/topic/37052-nfedownloadnfe-erro-servico-paralisado-sem-previsao/
+	por: Celso Marigo Junior
+	
+07/06/2017
+[+] Adicionados comandos para ConsultaNFeDest por Chave, NSU e UltNSU.
+	Parâmetros podem ser vistos no manual do ACBrMonitor, e em:
+	http://www.projetoacbr.com.br/forum/topic/37052-nfedownloadnfe-erro-servico-paralisado-sem-previsao
+	por: Andre F. Moraes/ Celso Marigo Junior
+
+29/05/2017
+[-]	Correção no carregamento de guias com o ini passado via parâmetro.
+	por: Celso Marigo Junior
+	
+[-] Correção na gravação e leitura dos parâmetros de configuração serial da ECF.
+	http://www.projetoacbr.com.br/forum/topic/36778-problema-com-acbrmonitorplus/#comment-240922
+	por: Celso Marigo Junior
+
+25/05/2017
+[-]	Correção no comando NFe.GetPathInu, não estava retornando resposta corretamente.
+	por: Celso Marigo Junior
+
+19/05/2017
+[-]	Correção para gravar XML alterado na consulta. Correção anterior para o mesmo fim havia
+	se perdido.
+	http://www.projetoacbr.com.br/forum/topic/36665-n%C3%A3o-grava-xml-com-protocolo/?do=findComment&comment=241054
+	por: Celso Marigo Junior
+
+12/05/2017
+[-] Correção para AV ao carregar DFe.
+	Ajuste no componente ACBrSedex no lfm do formulario principal.
+	por: Celso Marigo Junior
+
+05/05/2017
+[-] Removida aba de downloads, que não estava programada corretamente.
+	por: Celso Marigo Junior
+
+24/04/2017
+[*]	Corrigido ACBrMonitorPLUS para gravar os parâmetros de comunicação serial da PosPrinter
+	por: Celso Marigo Junior
+
+24/04/2017
+[-]	Corrigido uso do parâmetro Tira Acentos da Resposta para funcionar também em modo TXT
+	por: Celso Marigo Junior
+
+20/04/2017
+[*] Correção para limpar consultas anteriores do MDFe, contribuição do link abaixo.
+	http://www.projetoacbr.com.br/forum/topic/36347-mdfe-na-consulta-não-está-limpando/
+	por: Celso Marigo Junior
+
+19/04/2017
+[*] Adicionada configuração das propriedades: Device.SendBytesCount e Device.SendBytesInterval na
+	janela de configuração para os componentes seriais.
+	http://www.projetoacbr.com.br/forum/topic/36331-acbrmonitor-erro-communication-error-9997-timeout-during-operation/
+	por: Celso Marigo Junior
+
+13/04/2017
+[-] Correção na rotina de Consulta de DFes, a consulta, mesmo que passasse Path completo, estava sendo
+	executada usando apenas a chave do DFe, assinm o arquivo não estava sendo atualizado.
+	Isso ocorria apenas quando o Path completo não possuia acentos.
+	por: Celso Marigo Junior
+
+12/04/2017
+[-] Corrigida função para carregamento de DFe, path do arquivo carregado não estava sendo retornado no
+	parâmetro passado por referencia.
+	por: Celso Marigo Junior
+
+04/04/2017
+[-] Correção de erro ao enviar email de eventos de nfe, estava obrigando carregar uma NFe.
+	http://www.projetoacbr.com.br/forum/topic/26348-problema-ao-imprimir-evento-de-cancelamento-em-seguida
+	por: Celso Marigo Junior
+
+[-] Ajustado o monitor para quando o log estiver desabilitado, também seja desabilitada a exibição de log na tela.
+	por: Celso Marigo Junior
+	
+31/03/2017
+[*] Ajustada propriedade do CTe: cInfManu, que passou a permitir várias no no grupo Aereo
+	- Informar valores como segue:
+	[Aereo]
+	infManu001=01
+	infManu002=99
+	infManuNNN=NN
+	por: Celso Marigo Junior
+
+31/03/2017
+[*] Correção no carregamento de eventos para ler o tipo do evento do evento carregado.
+	por: Celso Marigo Junior
+
+27/03/2017
+[*] Movidas as funções: CarregarDFe para a unit ACBrMonitor1.pas, e modificada a mesma para poder carregar
+	CTes, MDFes e GNRes;
+	Refactor no carregamentos dos CTes, MDFes e GNRes, agora em todos os comandos com carregamento, pode ser passado
+	o path ou o conteúdo do arquivo como parâmetro.
+	por: Celso Marigo Junior
+
+27/03/2017
+[+] Adicionado campo indGlobalizado ao INI do CTe.
+	http://www.projetoacbr.com.br/forum/topic/35897-ct-e-globalizado-ct-e-30-indglobalizado/
+	por: Celso Marigo Junior
+
+27/03/2017
+[*] Modificado carregamento do INI dos parâmetros, devido às mudanças das libs OpenSSL.
+	Caso antes de atualizar, estivesse usando a OpenSSL, será configurada a nova propriedade
+	para usar libOpenSSL, caso anteriormente fosse capicom, ficará setado para libWinCrypt.
+	por: Celso Marigo Junior
+
+21/03/2017
+[+] Mudanças referentes à remoção da CAPICOM, citada em: 
+	http://www.projetoacbr.com.br/forum/topic/35727-bye-bye-capicom
+	- Criada janela própria para seleção do certificado;
+	- Adicionados os campos para a configuração das libs em DFe > Certificados
+	por: Celso Marigo Junior
+
+21/03/2017
+[*]	Refatorado método de carregamento das propriedades dos componentes DFe: NFe, CTe, MDFe, GNRe e BlocoX.
+	O objetivo é melhorar a leitura do código e centralizar as configurações em um só lugar.
+	por: Celso Marigo Junior
+
+21/03/2017
+[*] Adicionado XML de consulta de situação de CTe conforme solicitado no caso:
+	http://www.projetoacbr.com.br/forum/topic/35264-acesso-ao-xml-de-resposta-do-webservice/
+	por: Celso Marigo Junior
+
+21/03/2017
+[+] Adicionado parâmetro para não gravar mensagens de log na tela do monitor.
+	http://www.projetoacbr.com.br/forum/topic/35224-respostas-na-tela-do-acbrmonitorplus-lentid%C3%A3o/
+	por: Celso Marigo Junior
+
+10/03/2017
+[*] Refatoradas as funções de carregamento de XML na classe DoACBrNFeUnit.
+	Os XMLs dos métodos podem ser passados agora via parâmetro.
+	por: Celso Marigo Junior
+
+02/03/2017
+[-] Corrigido erro ao ler dados do certificado digital para mostrar na barra de títulos e tray icon.
+	por: Celso Marigo Junior
+	
+01/03/2017
+[-]	Corrigido erro ao ler IPI do XML relacionado ao tópico do fórum:
+	http://www.projetoacbr.com.br/forum/topic/35423-nfelernfe-vipi/#comment-232059	
+	por: Celso Marigo Junior
+
+27/02/2017
+[+] Adicionados grupos aos inis de resposta para comandos da NFe: ConsultaCadastro,
+	ConsultaNFeDest e DistribuicaoDFe, baseado em sugestão do usuário do fórum.
+	http://www.projetoacbr.com.br/forum/topic/35401-consulta-cadastro-sugest%C3%A3o-de-altera%C3%A7%C3%A3o
+	por: Celso Marigo Junior
+
+24/02/2017
+[*] Modificado parâmetro para salvar XMLs, não usar a configuração de salvar em pastas
+	separadas.
+	http://www.projetoacbr.com.br/forum/topic/35316-nota-autorizada-e-imprimi-nao-autorizada/#comment-231413
+	por: Celso Marigo Junior
+
+24/02/2017
+[+] Inclusão da leitura da tag DataLimitePagto para informar a data máxima para recebimento
+    de um boleto para bancos que possuem esta opção na remessa. 
+    por: Juliana Tamizou
+
+17/02/2017
+[+] Adicionado comando GerarPDFExtratoVenda ao SAT.
+	Comando recebe como parâmetro XML, stream ou path, mais o nome do arquivo,
+	este opcional. Retorna o nome do arquivo na resposta.
+	por: Celso Marigo Junior
+
+16/02/2017
+[+]	Adicionado campo Site ao cadastro de Software House, e os campos Razao Social
+	e Site são agora impressos no rodapé do extrato SAT;	
+	por: Celso Marigo Junior
+
+16/02/2017
+[*]	Adicionada rotina para exclusão das linhas do memo de resposta apos contar
+	1000 linhas.
+	por: Celso Marigo Junior
+
+16/02/2017
+[*]	Centralizada a leitura de arquivos INI em função: LerConverterINI, que converte
+	o arquivo para UTF8 após ler.	
+	por: Celso Marigo Junior	
+	
+13/02/2017
+[*] Correção na tradução de Arquivos TXT de ANSI para UTF8  (por: DSA)
+
+09/02/2017
+[*] Corrigido menu de boletos, opção email estava acessando a tela do relatório.
+	por: Celso Marigo Junior
+
+07/02/2017
+[*] Relatorio de retorno, separada rotina de leitura do arquivo da rotina de impressão
+	do relatório. Após carregar o arquivo habilita a emissão do relatório.
+	Adicionado check para exibir ou não preview antes da impressão do relatório.
+	por: Celso Marigo Junior
+
+31/01/2017
+[+] Modificado formato de gravação da mensagem de email dos boletos resolvendo problemas de
+	codificação.
+	http://www.projetoacbr.com.br/forum/topic/34913-configuração-com-acentos-do-boleto-faz-acbrmonitorini-ser-salvo-em-utf-8-e-atrapalha-texto-do-email-da-nfe/
+	por: Celso Marigo Junior
+
+31/01/2017
+[+] Adicionado relatório de retorno para conferência de títulos
+	http://www.projetoacbr.com.br/forum/topic/34933-acbrmonitorplus-novo-relatório-para-conferência-de-títulos/
+	por: Celso Marigo Junior
+
+31/01/2017
+[+] Adicionao check box que permite exibir a razão social do certificado no icone do tray
+	e barra de título do monitor. Util para quem usa mais de um monitor simultaneamente.
+	por: Celso Marigo Junior
+
+24/01/2017
+[+] Envio de boletos por email no campo Sacado.Email, agora permitem varios endereços
+	separados por ';'.
+	por: Celso Marigo Junior
+
+13/01/2017
+[+]	Versão compativel com TLS 1.2, usa as DLLs compiladas com a MINGW
+	http://www.projetoacbr.com.br/forum/topic/34177-acbrdfe-com-openssl-e-suporte-a-tls12/
+	por: Celso Marigo Junior
+
+11/01/2017
+[-] Correção no teste de email.
+	http://www.projetoacbr.com.br/forum/topic/34429-aba-e-mail-botão-testar-não-envia-body/#comment-225950
+	por: Celso Marigo Junior
+
+28/12/2016
+[-] Correção de comando LerIniBoletos, para disparar erro quando comando enviado de forma
+	incorreta.
+	http://www.projetoacbr.com.br/forum/topic/34193-boleto-bancario-acbrmonitorplus/?do=findComment&comment=224767
+	por: Celso Marigo Junior
+
+26/12/2016
+[+] Adicionado novo exemplo de uso do socket para comunicação utilizando Java,
+	exemplo desenvolvido pelo José Mauro.
+	por Celso Marigo Junior
+
+26/12/2016
+[*] Modificações para adequação ao refactor do bloco x:
+	- Removidos comandos ValidarBlocoX e EnviarBlocoX;
+	- Adicionados os comandos do BlocoX:
+	 - EnviarBlocoXEstoque e EnviarBlocoXReducaoZ;
+	 - ValidarBlocoXEstoque e ValidarBlocoXReducaoZ.	
+	por Celso Marigo Junior
+
+22/12/2016
+[+] Adição no help dos comandos do CT-e ao Help
+		por Juliomar Marchetti
+		
+20/12/2016
+[+] Inclusão de campo para configurar impressão de chave em uma linha no extrato do SAT,
+	para ESCPOS.	
+	por Celso Marigo Junior
+
+20/12/2016
+[+] Inclusão de campo na configuração de Conta Bancária, na aba de boletos, para
+	configuração do Local de Pagamento.
+	por Celso Marigo Junior
+
+13/12/2016
+[+]	Separada a configuração da forma de emissão de documentos, removido radio group,
+	e adicionados check-boxes para cada opção, NFe, CTe, MDFe e GNRe.
+	Ajustado para comandos de Setar Forma de Emissão serem ignorados quando selecionado
+	no monitor o combo-box para esta opção.
+	por:Celso Marigo Junior
+
+07/12/2016
+[+] Adicionado a impressão da inutilização de CT-e
+		por: Juliomar Marchetti
+		
+30/11/2016
+[+]	Adicionado combobox para escolher o que imprimir no campo Unidade, unidade comercial,
+	unidade tributária ou ambos.
+	por:Celso Marigo Junior
+
+29/11/2016
+[+]	Adicionado comando para ativar/desativar "Corta Papel" da aba "Pos Printer"
+	http://www.projetoacbr.com.br/forum/topic/33616-erro-pos-printer-corte-de-papel-não-funciona
+	por:Celso Marigo Junior
+
+28/11/2016
+[+]	Adicionado combobox para seleção da versão do CTe, na aba DFe > WebServices (NF-e/CT-e/MDF-e)
+	http://www.projetoacbr.com.br/forum/topic/33658-criarcte-cacbrschemaserro_v200xsd-não-encontrado/
+	por: Celso Marigo Junior
+
+18/11/2016
+[-]     Correção de erro de compilação, após modificações em ACBrECF
+        http://www.projetoacbr.com.br/forum/index.php?showtopic=33538
+        (por: DSA)
+[-]     Correção no Retorno de "StatusSAT.DH_ULTIMA"
+        (por: Alexandre Bassanezi)
+        http://www.projetoacbr.com.br/forum/index.php?showtopic=33293
+
+14/11/2016
+[+]	Adicionado impressão de Timestamp no arquivo de logs, LOG.TXT, separada a gravação
+	neste do comando e resposta para que o timestamp detalhe o tempo de resposta do
+	ACBrMonitorPLUS.
+	por: Celso Marigo Junior
+
+04/11/2016
+[*]	Adicionado rolagem via mouse wheel, roda do mouse, no manu lateral.
+	Além disso, nos botões que tem sub-botões, coloquei para rolar para o novo menu.
+	por: Celso Marigo Junior
+
+04/11/2016
+[*]	Na aba DFe > Impressao > NFe, substituido radio group por SpedButton na
+	seleção de decimais da quantidade, permitindo quantidade sem casas decimais.
+	Limite continua em 4 casas. Corrigidas as DANFEs do Fortes, retrato e paisagem.
+	por: Celso Marigo Junior
+
+03/11/2016
+[*]	Ajsute na impressão de DACTE para usar a função ACBrSTR na impressão da situação
+	tributária. Correção para o caso abaixo:
+	http://www.projetoacbr.com.br/forum/topic/33116-impressão-do-dacte/
+	por: Celso Marigo Junior
+
+03/11/2016
+[+]	Adicionado comando NFE.XMLEnviarEvento permite envio de evento usando o XML do mesmo.
+	Sugerido em: www.projetoacbr.com.br/forum/topic/33235-envio-da-cce-em-xml
+	por: Celso Marigo Junior
+
+03/11/2016
+http://www.projetoacbr.com.br/forum/topic/32986-ajustes-no-acbrmonitor-para-an%C3%A1lise/
+-- ACBrNFeWebServices.pas --
+[*] Adicionado propriedade NomeArquivo a classe TNFeInutilizacao para armazenar o nome e 
+	caminho do arquivo gerado
+
+-- DoACBrNFeUnit.pas --
+[*] Em 'imprimirinutilizacaopdf', corrigido o retorno do nome do arquivo gerado (PDF) 
+	armazenado na variável ArqPDF, estava com final '-inu.pdf' e o correto é '-procInutNFe.pdf';
+    No retorno do evento de Cancelamento ("cancelarnfe") foi adicionado o valor "Arquivo=", 
+	contendo o caminho e nome do arquivo gerado (Linha 332);
+    No retorno do evento de Cartão de correção ("enviarevento") foram adicionados os valores
+	"Arquivo=" contendo o caminho e o nome do arquivo gerado e "XML=" contendo o conteúdo do XML gerado;
+
+[+] Criado "enviaremailinutilizacao" para envio de e-mail de inutilização permitindo o envio do XML e do PDF;		
+	
+	Contribuição do fórum, usuario: Fabio Souza. Merge: Celso Marigo Junior.
+	
+01/11/2016
+[*]	Ajuste para ler tags do IPI quando CodigoEnquadramento=999, neste caso lê o CST alem do próprio código.
+	por Celso Marigo Junior
+
+08/10/2016
+[*]	Ajuste para imprimir logo na danfe fortes do SAT
+	por Celso Marigo Junior
+
+29/09/2016
+[*]	Versão 1.0.0.0 do ACBrMonitorPLUS disponibilizada para Download no SAC.
+[+]	Configurado projeto para gerar número de versão utilizando o número de build do Lazarus.
+[*] Modificado danfe da NFe para não usar dbware por hleojr
+	por Celso Marigo Junior.
+
+28/09/2016
+-- ACBrMonitor --
+[-] Correção para correta conversão para ANSI. (por: RODRIGO_APOIOSIS)
+    http://www.projetoacbr.com.br/forum/topic/32665-acbrmonitorplus-ansi-n%C3%A3o-funcionando/
+	
+23/09/2016
+-- ACBrMonitor --
+[-] Correção para o problema de Foco na janela de Preview de Impressão (por: DSA)
+
+21/09/2016
+-- ACBrMonitor --
+[*] Compilação com remoção dos DBWares das Danfes, implementado pelo hleojr
+    http://www.projetoacbr.com.br/forum/topic/32497-danfes-report-sem-componentes-dbware/
+
+20/09/2016
+-- DoECFUnit --
+[-] Correção para retorno de informações vazias, onde era substituido pela
+    String de Resposta do ECF  (por: jjw.roberto)
+    http://www.projetoacbr.com.br/forum/topic/32241-problemas-com-comunica%C3%A7%C3%A3o-tcp/
+
+-- DoACBrNFeUnit --
+[-] Possível correção para correta gravação do XML gerado por NFe.DownloadNF  (por: DSA)
+    http://www.projetoacbr.com.br/forum/topic/32447-xml-corrompido-usando-acbrmonitorplus-para-download/#comment-214244
+
+13/09/2016
+-- DoACBrGNReUnit
+[-] Correção para o grupo veic, estava add a cada item
+		por : Juliomar Marchetti
+		
+13/09/2016
+[*] Conversão de correções do danfe MDFe para Lazarus.
+[*] Compilada versão assinada para o SAC. Versão modificada para 0.3.08.3.
+		por: Celso Marigo Junior
+
+13/09/2016		
+[+] Adição da funcionalidade remover acentos das respostas em todos os comandos.
+		http://www.projetoacbr.com.br/forum/topic/32351-sugestão-remoção-de-acentos-das-respostas-do-acbrmonitorplus
+		por: Celso Marigo Junior
+				
+12/09/2016
+[-] Corrigido problema que o identificado estava errado 
+		http://www.projetoacbr.com.br/forum/topic/31943-gnre-iniciando-testes/
+		http://www.projetoacbr.com.br/forum/topic/32159-acbrmonitorplus-gnre-campos-extras/
+		por: Juliomar Marchetti
+		
+02/09/2016
+[*] Corrigida propriedade cListServ para String;
+[*] Compilada versão assinada para o SAC. Versão modificada para 0.3.08.2.
+		por: Celso Marigo Junior
+
+02/09/2016
+[+] Adição da funcionalidade ao imprimir extrato sat setar a impressora, mas somente em fortes
+		por: Juliomar Marchetti
+		
+30/08/2016
+[*] Ajuste na leitura do campo modelo da CTe, do ini, que foi modificado para Inteiro ao inves de String
+[*] Ajuste na impressão de NFe e NFCe, no numero de vias, priorizar valor do comando.
+		por: Celso Marigo Junior
+
+17/08/2016
+[*] Adição do método achar para ECF
+		por: Juliomar Marchetti
+		
+12/08/2016
+[*] Ajustada versão do projeto para 0.3.08.1
+	Ajuste em chamadas a métodos do ACBrSocket, verifica se componente foi atribuido.
+	por: Celso Marigo Junior
+
+09/08/2016
+[+] adicionado os comandos para ECF.ValidarBlocoX(Arquivo), ECF.EnviarBlocoX(Arquivo), ECF.ConsultarBlocoX(recibo)
+		http://www.projetoacbr.com.br/forum/topic/31728-blocox-acbrmonitorplus/
+		por: Juliomar Marchetti
+		
+08/08/2016
+[-] Correção do nome do campo de RNRTC para RNTRC
+                http://www.projetoacbr.com.br/forum/topic/31347-mdfe-informações-não-estão-indo-para-o-xml/
+		por: Italo Jurisato Junior
+		
+03/08/2016
+[+] Adição do suporte ao componente ACBrGNRE junto ao monitor
+		http://www.projetoacbr.com.br/forum/topic/31424-modulo-gnre-para-o-monitor-plus/
+		por: Juliomar Marchetti
+		
+19/07/2016
+[+] Habilitados campos: vFCPUFDest, vICMSUFDest, vICMSUFRemet na geração declaração
+	de NFe usando o INI no formato da SEFAZ
+	por: Celso Marigo Junior
+
+12/07/2016
+[*]	Ajustados os campos de RegTrib e demais que usavam combos para configuração dos
+	valores para utilizar o índice, facilitando a conversão.
+	por: Celso Marigo Junior/ DSA
+
+12/07/2016
+[+] Opção para o usuário selecionar se deseja alterar XML cancelado
+	por: Celso Marigo Junior
+
+08/07/2016
+[+] Adição da modalidade rodoviário completo do MDF-e
+		http://www.projetoacbr.com.br/forum/topic/31007-campos-para-mdfe-no-plus/?do=findComment&comment=205823
+		por : Juliomar Marchetti
+		
+05/07/2016
+[+] Opção para mostrar botão do ACBrMonitorPLUS na barra de tarefas,
+	isso deve resolver o problema do ACBrMonitorPLUS sumir no Ubuntu
+	por: Celso Marigo Junior
+
+01/07/2016
+[*] Adicionados campos faltando no grupo importação na geração do ini da NFe.
+	por: Celso Marigo Junior
+
+01/07/2016
+[*] Correção para parâmetro de impressão de desconto no item da NFCe.
+	por: Celso Marigo Junior
+
+29/06/2016
+[+] Implementada leitura do grupo de EXPORTA da nota.
+	por: Celso Marigo Junior
+
+29/06/2016
+[+] Implementada leitura do grupo de exportação do item.
+	por: Celso Marigo Junior
+
+24/06/2016
+[*] Objeto EMAIL, comandos TextoMensagem e Texto alternativo,
+    modificados para adicionar texto à mensagem ao invés de setar.
+    por: Celso Marigo Junior
+
+18/04/2016
+[+] Implementando opção para configuração de envio de email em Segundo Plano
+    (por: DSA)
+
+11/04/2016
+[+] Adição parametro para geração do PDF ao final CRIARENVIARNFE e EnviarLote!
+		http://www.projetoacbr.com.br/forum/topic/28860-sugest%C3%A3o-acbrplus-no-comando-criarenviarnfe/
+		por : Juliomar Marchetti
+		
+02/04/2016
+[-] Acerto na leitura das tags:
+    Emit.cRegTrib, Emit.cRegTribISSQN, Emit.indRatISSQN
+    Quando não eram informadas não era lido corretamente das configurações
+    por: regys.silveira
+
+01/04/2016
+[-] Acerto na leitura dos dados de partilha, não estava informando porque procurava
+    a tag CST que não existe para partilha, troquei para o percentual de partilha
+    que é a mesma tag usada pelo gerador de XML para verificar se gera ou não.
+    por: regys.silveira
+
+11/03/2016
+[-] Correção para a posição do canhoto nos danfe pois não assumia o valor passado
+    por Juliomar Marchetti
+		
+08/03/2016
+[*] Modificação da tela principal, criado novo menu, buscando melhor visual
+    e melhor navegação nas páginas.
+[+] Adicionado novo parametro para definição se as abas dos pagecontrol deve
+    ser mostradas ou ocultas, pois no novo menu tem todas as opções para chegar
+    nas páginas.
+    por (Isaque Pinheiro)
+
+04/03/2016
+[+] MAIL: Adicionada configuração para Confirmação de leitura de Email
+
+29/02/2016
+[-] Acerto para substituir as variáveis do email também no botão de teste de envio de NFe.
+
+25/02/2016
+[+] Criado uma nova aba em DFe->Impressão de nome NFe, nela irá ter somente
+    configurações de NFe.
+[*] Removido várias opções de configurações da aba DFe-Impressao->Geral e 
+    realocada na nova aba DFe->Impressao->NFe.
+[+] Adicionado componente para definir a quantidade de itens por páginas 
+    coforme relato de erro no link :
+    http://www.projetoacbr.com.br/forum/topic/28308-propriedade-produtosporpagina-no-monitorplus/?do=findComment&comment=186590
+    (Isaque Pinheiro)   
+
+24/02/2016
+[+] NFe.LerNFe não contemplava ler o CEST do xml
+    por: Juliomar Marchetti
+		
+21/02/2016
+[+] Adicionado a opção para assinar os arquivos do Bloco X do Paf-ECF!
+		por: Juliomar Marchetti
+		
+18/02/2016
+[+] Adicionada configuração para permitir configurar o TimeZone, para geração
+    dos XMLs: tzSistema (default), tzPCN, tzManual  (por: DSA)
+
+17/02/2016
+[*] Ajuste em "SAT.EnviarCFe", para permitir o envio do XML que esteja na memória
+    carregado com "SAT.CarregarDadosVenda"  (por: DSA)
+[-] Ajustes na leitura dos campos Emit.cRegTrib, Emit.cRegTribISSQN e
+    Emit.indRatISSQN (por: Anfm)
+
+12/02/2016
+[+] Adicionada configuração para permitir a criação de XMLs com acentos
+[-] Correção nas rotinas de geração de XML por INI, para usar "String"
+    (por: DSA)
+
+11/02/2016
+[*] Ajuste para que o método "SAT.EnviarCFe", não tente interpretar o XML
+    recebido (por: DSA)
+
+28/018/2016
+[*] Ajuste para que todos os Edits números da aba DFe/Impressão usem
+    TSpinEdit ou TFloatSpinEdit  (por: DSA)
+
+26/01/2016
+[+] Adição da opção para selecionar o tamanho de papel no DACT
+	  por: Juliomar Marchetti
+		
+25/01/2015
+[-] Correção para evitar erro na obtenção do nome do destinatário no comando
+    BOLETO.EnviarEmail
+[-] Ajustes para a correta exibição do Preview do DANFE, nos diversos comandos
+    que suportam a impressão do mesmo
+[*] Remoção de Hints e Warnings de compilação
+[*] Ajuste para tratar o campo "cMunFG" como Inteiro e não String (evitando
+    erros de conversão)
+    (por: DSA)
+
+20/01/2015
+[+] Impressão DANFE: Adicionado ajuste para Fonte do Endereço Emitente
+    http://www.projetoacbr.com.br/forum/index.php?showtopic=27521
+
+18/01/2015
+[-] Correções para o envio de Boletos por Email, fazendo uso de rotina interna
+    do componente ACBrBoleto  (por: DSA)
+
+17/01/2015
+[-] Correção da gravação do parâmetro ACBrPosPrinter.EspacoEntreLinhas (por: DSA)
+
+14/04/2015
+[+] Impressão DANFE: Adicionado ajuste para Fonte da Razão Social e Altura Linha
+    Comum.
+    http://www.projetoacbr.com.br/forum/index.php?showtopic=27390
+
+30/12/2015
+[-] Correção para ler campos da sessão ISSQN000, mesmo quando vBC não for
+    informado  (por: DSA)
+
+24/12/2015
+[*] Ajuste para não minimizar a aplicação, quando clicar no "Salvar" (por: DSA)
+
+22/12/2015
+[*] Modificado para usar o Boleto em Fortes Report
+[*] Remoção de Hints e Warnings
+    (por: DSA)
+
+18/12/2015
+[*] Adicionada regra de exclusão para o Campo "Imprimir Valor Líquido do Produto"
+    quando "Imprimir Desconto em Porcentagem" está marcado
+[*] Ajuste para melhor posicionamento do Formulário na tela, durante a primeira
+    exibição
+[*] Ajuste para que todos os Pagecontrols fique na primeira página após a
+    inicialização
+    (por: DSA)
+
+15/12/2015
+[+] Adicionadas as tags do fundo de amparo a pobreza, pFCPUFDest e vFCPUFDest
+    por: regys.silveira
+
+10/12/2015
+[-] Acerto para salvar corretamente o CSC e IdCSC quando é enviado o comando SetXXX.
+    por: regys.silveira
+
+9/12/2015
+[-] acerto na geração de PDF por email quando o monitor está configurado como impressão EscPOS
+    por: regys.silveira
+    http://www.projetoacbr.com.br/forum/topic/26253-comando-que-envia-email-do-cupom-sat-cfe-pelo-acbrmonitor-plus/#comment-171069
+
+04/12/2015
+[-] Correção em ObterCodigoMunicipio, para não localizar Municípios com o nome
+    parcialmente igual
+    http://www.projetoacbr.com.br/forum/index.php?showtopic=26423
+[*] Remoção de métodos repetidos
+
+26/11/2015
+[*] Adicionada substituição de variaveis no envio de email de eventos, assim 
+    como é feito no envio da NF-e.
+[+] Adicionado configuração para ACBrPosPrinter1.ConfigLogo.IgnorarLogo na aba
+    "PosPrinter"  (por: DSA)
+
+13/11/2015
+[-] inclusão do CT-e na lista de objetos que recebem .ini
+    Antes ele lia somente a primeira linha do .ini do CT-e, causando erros
+    http://www.projetoacbr.com.br/forum/topic/25560-cte-erro-o-xml-informado-possui-cnpj-diferente-do-certificado-digital/#comment-168336
+
+11/11/2015
+[-] Tentativa de correção:
+    http://www.projetoacbr.com.br/forum/topic/25881-acbrmonitorplus-01111-em-escpos/
+    por: regys.silveira
+
+23/10/2015
+[+] Incluido comando para setar a propriedade incluirqrcodexmlnfce, facilitando 
+    para quem usa o monitor automatizar essa configuração nos clientes.
+    por: regys.silveira.
+
+22/10/2015
+[+] Ao selecionar "Adicionar Tag de QRCode em Informações Suplementares" será validado
+    se os campos CSC e IDCSC estão preenchidos.
+[+] Adicionado opção para configurar o timeout dos Webservices - 
+    DFe - Geral - Timeout em segundos
+[*] Alterado para salvar arquivos de NFe em Configuracoes.Arquivos.PathNFe ao invés de 
+    usar o diretório Configuracoes.Arquivos.PathSalvar	
+[-] Corrigido para fazer a consulta de processamento do Lote apenas quando usar 
+    o método assíncrono
+[-] Corrigido para não gerar o arquivo nfe.ini quando usado o MenIniFile.
+    por: André Moraes	
+
+09/05/2015
+-- ACBrMonitorPLUS --
+[+] Adicionada Opção para configurar a geração da Tag de QRCode em NFCe
+    DFe -> WebServices -> NFCe -> "Adicionar Tag de QRCode em Informações Suplementares"
+    (por: DSA)
+[-] acerto para remoção de propriedade que foi renomeada (ImprimirDetalhamentoEspecifico).
+    por: regys.silveira
+
+07/05/2015
+-- ACBrMonitorPLUS --
+[+] Adicionada a opção para converter Entrada e Saida de TCP de e para ANSI (por: DSA)
+
+06/05/2015
+-- ACBrMonitorPLUS --
+[+] Adicionada configuração de margens para o DANFCe, ficando assim separada
+    da configuração do DANFE normal.
+[+] Adicionada configuração de timeout do webservice, existem alguns relatos
+    de timeout no plus, configurei para tentar diminuir isso.
+    por: regys.silveira
+
+
+30/09/2015
+-- ACBrMonitorPLUS --
+[*] Melhorias no uso do parâmetro do Número de cópias de Imprimir -> Geral
+[*] Assumindo valor default para "Ide.dEmi" com a Data e Hora atual
+
+24/09/2015
+-- ACBrMonitorPLUS --
+[*] Unificado três campos com o nome da Software House para ficar somente um nome para tudo
+    sugestão do link 
+http://www.projetoacbr.com.br/forum/topic/24623-cadastro-software-house/?do=findComment&comment=159165
+
+
+22/09/2015
+-- ACBrMonitorPLUS --
+[*] Unificada a maneira de configurar a Impressão de Descontos/Acréscimos para
+    DANFCe, em Fortes e EscPos
+
+19/09/2015
+-- CTE --
+[+] Adicionado o suporte a CT-e. (Por: Rafael Dias)
+
+-- MDFE --
+[+] Adicionado o suporte a MDF-e. (Por: Rafael Dias)
+
+17/09/2015
+-- NFE --
+[+] Implementado: NFe.ValidarNfeRegraNegocios(cArqXML), que efetua a validação
+    de todas as regras de negócio nas informações do XML, e retorna com
+    possíveis erros. (Por: Alberto Leal)
+[*] Ajuste para melhor mensagem em NFe.EnviarEmail, quando não for encontrada
+    nenhuma Nota no XML informado
+
+11/09/2015
+[+] Implementação do comando: NFe.DistribuicaoDFe(cUF,cCNPJ,nUltNSU)
+    http://www.projetoacbr.com.br/forum/topic/24242-consultanfedest-x-distribuicaodfe/#comment-156693
+
+10/09/2015
+-- ACBrMonitorPLUS --     (por: DSA)
+[-] Correção na gravação do valor configurado em: ACBrPosPrinter1.ConfigBarras.Altura
+
+21/08/2015
+-- NFE --
+[-] Ajustes para que a Impressão de NFCe, respeite a impressora definida na aba
+    DANFE/NFCe
+
+20/08/2015
+-- SAT --  (por: DSA)
+[-] Método "criarcfe" ou "criarenviarcfe". Correção na pasta para Salvar os XMLs
+    de envio.
+[-] Correção para que a montagem do CFe respeite os valores Default informados
+    na configuração da aba SAT (ACBrSAT1.InicializaCFe)
+
+18/08/2015
+-- NFE --
+[-] Correção para método "nfetotxt"   (por: DSA)
+
+-- SAT --      (por: jrs.santos)
+[*] Ajuste para Retornar dados de Cupom ou Cupom Cancelado em
+    ConsultarNumeroSessao, e atribui-lo a ACBrSAT.CFe, ACBrSAT.CFeCanc
+    http://www.projetoacbr.com.br/forum/index.php?showtopic=23737
+
+11/08/2015     (por: regys silveira)
+[+]   Adicionado a substituição de variáveis no assunto e corpo do email antes de enviar.
+
+10/08/2015     (por: DSA)
+[*]   Adicionada configuração para ACBrBAL.Device.ParamsString
+[-]   Correção no nome para gravação do Arquivo em SAT.CriarCFe
+
+09/08/2015     (por: DSA)
+[-]   Corrigida a rotina "DoSATUnit.GerarIniCFe" para respeitar os parâmetros
+      de Configuração definidos na Interface do ACBrMonitor
+[*]   Modificada a maneira de Salvar o arquivo em "SAT.criarcfe", para respeitar os
+      parâmetros de ACBrSAT e usar a nomenclatura definida na Especificação
+      Técnica
+[*]   Modificado método SAT.criarenviarcfe para NÃO gerar as Tags de
+      responsabilidade do SAT
+
+28/09/2014
+[+]   Adicionada configuração para Impressora padrão na Aba Boleto
+[+]   Adicionado suporte ao componente ACBrSedex
+
+Versão 0.10.9.1 16/09/14
+[-]   Correção para tratamento de arquivos de Entrada (ENT.TXT) com linhas em
+      branco no final do arquivo, ocasionando a não geração do arquivo SAI.TXT   (por: DSA)
+
+Versão 0.10.7.0  14/08/14
+[*]   Modificado mecanismo de criação do arquivo TXT para processar de forma
+      mais otimizada arquivos com lote de comandos  (por: DSA)
+
+Versão 0.9.26.1  01/08/13    (Por: DSA)
+[+]   Adicionado suporte para conversão do Arquivo de Entrada e Saida para ANSI
+
+Versão 0.9.5  22/10/11    (Por: DSA)
+[-]    Corrigido Bug que desativava a comunicação TCP/IP ao clicar no botão Salvar ou Cancelar
+[+]   Adicionado método: pafmf_lmfc_impressao( DtInicial, DtFinal )
+[+]   Adicionado método: pafmf_lmfc_impressao( CRZInicial, CRZFinal )
+[+]   Adicionado método: pafmf_lmfs_impressao( DtInicial, DtFinal )
+[+]   Adicionado método: pafmf_lmfs_impressao( CRZInicial, CRZFinal )
+[+]   Adicionado método: pafmf_lmfc_espelho( DtInicial, DtFinal, NomeArquivo )
+[+]   Adicionado método: pafmf_lmfc_espelho( CRZInicial, CRZFinal, NomeArquivo )
+[+]   Adicionado método: pafmf_lmfs_espelho( DtInicial, DtFinal, NomeArquivo )
+[+]   Adicionado método: pafmf_lmfs_espelho( CRZInicial, CRZFinal, NomeArquivo )
+[+]   Adicionado método: pafmf_lmfc_cotepe1704( DtInicial, DtFinal, NomeArquivo )
+[+]   Adicionado método: pafmf_lmfc_cotepe1704( CRZInicial, CRZFinal, NomeArquivo )
+[+]   Adicionado método: pafmf_mfd_cotepe1704( DtInicial, DtFinal, NomeArquivo )
+[+]   Adicionado método: pafmf_mfd_cotepe1704( COOInicial, COOFinal, NomeArquivo )
+[+]   Adicionado método: pafmf_mfd_espelho( DtInicial, DtFinal, NomeArquivo )
+[+]   Adicionado método: pafmf_mfd_espelho( COOInicial, COOFinal, NomeArquivo )
+
+
+
+Versão 0.9.00b  05/09/10    (Por: DSA)
+[*]    ACBrMonitor e ACBrMonitorConsole, e ECFTeste totalmente convertidos de Delphi para Lazarus/FPC
+[*]    Modificação do Terminador do envio de conexões TCP/IP, de:  CR+LF  para:  CR+LF+'.'+CR+LF
+[*]    Novo instalador em Linux, usando o InstallJammer
+[*]    Substituição dos componentes de comunicação TCP/IP (Indy/Delphi)  por (ACBrTCPServer/Synapse)
+[+]   Adicionado o Objeto BOLETO  (Por: Juliana Tamizou)
+[+]   Adicionado o Objeto CEP
+[+]   Adicionado o Objeto IBGE
+[*]    Revisão da documentação
+[*]    Novos Icones e Glyphs
+[+]   Suporte a UTF-8 (nativo do Lazarus)
+
+Versão 0.8.15b  27/10/09    (Por: DSA)
+[*]    Fontes revistos para corrigir declaração de "String" para "AnsiString"
+       quando necessário
+[*]    Rotina de Leitura do TXT de entrada aprimorada para Ler todo o conteudo
+       do TXT, mesmo que o arquivo contenha caracteres de controle. 
+
+Versão 0.8.14b  27/10/09    (Por: DSA)
+[+]    ECF.TotalCancelamentosISSQN
+[+]    ECF.TotalDescontosISSQN
+[+]    ECF.TotalAcrescimosISSQN
+[+]    ECF.TotalSubstituicaoTributariaISSQN
+[+]    ECF.TotalNaoTributadoISSQN
+[+]    ECF.TotalIsencaoISSQN                
+
+Versão 0.8.13b  27/10/09    (Por: Ivan Moreira)
+[+]    ECF.UsuarioAtual -> Retorna o Número do usuário (proprietário) atual
+[+]    ECF.DataHoraSB -> Retorna a DataHora de Gravação do SW básico
+[+]    ECF.SubModeloECF -> Retorna a Descrição do Modelo do ECF
+	   
+[+]    ECF.EspelhoMFD_DLL( dDataInicial, dDataFinal, cNomeArquivo )  ou
+       ECF.EspelhoMFD_DLL( cCOOInicial, cCOOFinal, cNomeArquivo )
+         Cria Arquivo informado em "cNomeArquivo" contendo o Espelho da MFD em 
+         um periodo de COO ou Data
+[+]    ECF.ArquivoMFD_DLL( dDataInicial, dDataFinal, cNomeArquivo )  ou
+       ECF.ArquivoMFD_DLL( cCOOInicial, cCOOFinal, cNomeArquivo )
+         Cria Arquivo informado em "cNomeArquivo" de acordo com o Ato Cotepe 1704 em
+         um periodo de COO ou Data
+
+Versão 0.8.12b  14/10/09    (Daniel Simões)
+[+]    LeituraMFDSerial. Adicionado novo parâmetro (opcional) "NomeArquivo : String"
+
+       - LeituraMFDSerial( DataInicial, DataFinal : TDateTime[, NomeArquivo : String] )
+       - LeituraMFDSerial( COOInicial, COOFinal : Integer[, NomeArquivo : String] )
+
+       Se NomeArquivo for especificado, o mesmo será criado com a resposta do ECF.
+
+[+]    LeituraMemoriaFiscalSerial. Adicionado novos parâmetros: (opcionais)
+         Simplificada : Boolean = False;  NomeArquivo : String
+
+       - LeituraMemoriaFiscalSerial( DataInicial, DataFinal : TDateTime,
+                               [Simplificada : Boolean, NomeArquivo : String] )
+       - LeituraMemoriaFiscalSerial( COOInicial, COOFinal : Integer,
+                               [Simplificada : Boolean, NomeArquivo : String] )
+                               
+       Se NomeArquivo for especificado, o mesmo será criado com a resposta do ECF.
+
+Versão 0.8.7b  01/12/08
+[+]    Adicionada aba para Servidor de Terminais de Consulta de Preços (Gertec)
+
+Versão 0.8.6b  21/10/08
+[+]    Implementado os métodos:
+       ACBr.SaveToFile( cNomeArquivo, cTextoArquivo ) -> Salva o o conteudo de
+         "cTextoArquivo" no arquivo chamado "cNomeArquivo". Para enviar
+         caracteres "não imprimiveis" use a noteção em Hexa do Caractere: "\xHH".
+          Exemplos:     CR = #13 -> '\x0D';   LF = #10 -> '\x0A'
+       ACBr.LoadFromFile( cNomeArquivo, nTempoEspera ) -> Lê e Retorna o
+         conteudo do arquivo "cNomeArquivo". Aguarda por "nTempoEspera" segundos
+         pela chagada (ou desbloqueio) do arquivo (default 0).
+       ACBr.FilesExists( cMascaraArquivo ) -> Retorna "True" se existem arquivos
+         de acordo com "cMascaraArquivo"
+       ACBr.DeleteFiles( cMascaraArquivo ) -> Apaga todos os arquivos que
+          correspondam a mascara "cMascaraArquivo"
+       ACBr.AppExists( cNomeJanela ) -> Retorna "True" se existir alguma
+          aplicação com o titulo idêntico a "cNomeJanela"
+
+Versão 0.8.5b  20/06/08
+[*]    Função interna IntToStrZero modificada para aceitar Int64. Esse problema
+       poderia causar "erro de conversão" na criação do arquivo ACBrRFD
+[*]    vários métodos implementados para o modelo ecfQuattro e ecfYanco       
+
+Versão 0.8.4b  22/04/08
+[+]    Adicionado método ECF.IdentificaOperador(Nome: String);
+[+]    Adicionado método: ECF.CortaPapel( CorteParcial : Boolean = false) ;
+[+]    Adicionado método: ECF.Sangria( const Valor: Double; Obs: String;
+         DescricaoCNF: String = 'SANGRIA'; DescricaoFPG: String = 'DINHEIRO')
+[+]    Adicionado método: ECF.Suprimento( const Valor: Double; Obs: String;
+         DescricaoCNF: String = 'SUPRIMENTO'; DescricaoFPG: String = 'DINHEIRO')
+[+]    Adicionada propriedade: ECF.TimeOut -> Retorna o TimeOut atual
+[+]    Adicionado o método: ECF.SetTimeOut( nTimeOut ) -> Ajusta o TimeOut
+[*]    Metodo VendeItem modificado, adicionado parametro:
+         cDescontoAcrescimo, permite definir se o Valor informado no parametro
+         "nValorDescontoAcrescimo" é Desconto "D" ou Acréscimo "A".
+         Se nao informado, assume o Default = "D"
+[*]    Diversas corrreções e melhoraria de performance nas Classes Daruma
+       e Bematech  
+
+Versão 0.8.3b  05/03/08
+[+]    Adicionado novos métodos em Objeto ACBr
+       ACBr.AppActivate( cTituloJanela, nWaitTime = 0)
+        - Posiciona o foco na Janela com o titulo Informado em cTituloJanela
+          após esperar por nWaitTime milisegundos
+       ACBr.BlockInput( bBlock )
+        - Se bBlock = "True", Bloqueia Mouse e Teclado; Se "False" desbloqueia
+[+]    Adicionado suporte a geração de arqquivos RFD (CAT 52/07)
+[+]    Adicionada aba para controle de Balanças (Gabriel Frones) 
+
+Versão 0.7b    02/12/06
+[*]    Vários bugs corrigidos e melhorias incorporadas na versão 0.8.6b do ACBr
+[+]    Novas propriedades:
+       - DadosReducaoZ : String
+       - DataMovimento : TDateTime
+       - CNPJ : String
+       - NumCRZ : String
+       - NumCOOInicial : String
+       - VendaBruta : Double
+       - GrandeTotal : Double
+       - TotalCancelamentos : Double
+       - TotalDescontos : Double
+       - TotalAcrescimos : Double
+       - TotalSubstituicaoTributaria : Double
+       - TotalNaoTributado : Double
+       - TotalIsencao : Double
+       - NumUltItem : Integer
+[+]    Novos métodos:
+       - LerTotaisAliquota
+       - LerTotaisFormaPagamento
+       - LerTotaisComprovanteNaoFiscal
+
+       - LeituraMFDSerial( DataInicial, DataFinal : TDateTime )
+       - LeituraMFDSerial( COOInicial, COOFinal : Integer )
+
+       - NaoFiscalCompleto( CodCNF : String; Valor : Double; CodFPG : String;
+                            Obs : String )
+       - AbreNaoFiscal( CPF_CNPJ : String = '')
+       - RegistraItemNaoFiscal( CodCNF : String; Valor : Double; Obs : String )
+       - SubtotalizaNaoFiscal( DescontoAcrescimo : Double = 0)
+       - EfetuaPagamentoNaoFiscal( CodFormaPagto : String; Valor : Double;
+                                   Observacao : String = '';
+                                   ImprimeVinculado : Boolean = false)
+       - FechaNaoFiscal( Observacao : String = '')
+       - CancelaNaoFiscal
+
+       PS.: As novas propriedades e métodos ainda não estão disponíveis em todos
+            os ECFs suportados pelo ACBrECF... Por favor consulte o link abaixo:
+            http://www.forumweb.com.br/foruns/index.php?showtopic=60802
+
+
+Versão 0.6b    02/12/06
+[+]    Definida a Licença do ACBrMonitor: GPL / GNU  Leia o arquivo: LICENCA.TXT
+[+]    Novo Instalador Windows, que permite Instalação: Completa / Mínima /
+       Customizada ( A instalação Mínima é util para usuários finais )
+[-]    Finalmente corrigido problema de congelamento do ACBrMonitor, em Win9X e
+       Linux, quando a janela estava aberta e o ACBrMonitor recebendo comandos
+       em TCP/IP... (Interface do programa não era atualizada)
+[-]    Corrigido bug na gravação do LOG. Em algumas situações, I/O error 103
+[+]    Novo executavel "ACBrMonitorConsole" disponivel no pacote de instalação
+       - Util para programas que trabalham apenas em modo Texto
+        (no Linux, não precisa do Servido X)
+       - Utiliza o mesmo arquivo de configuração "ACBrMonitor.ini"
+[*]    Novos Glyphs na Interface do programa  :)
+[*]    Inicialização acelerada... minimiza para o SysTray mais rapidamente
+[*]    Inicialização mais segura. Mesmo que ocorra alguma exceção durante a
+       inicialização, como por exemplo a falha ao ativar algum equipamento. O
+       ACBrMonitor inicializará e ficará ativo. Caso alguma exceção ocorra
+       durante a inicialização, o ACBrMonitor NÃO será minimizado para o SysTray
+[*]    Todas as Exceções do programa ACBrMonitor agora são capturadas e
+       registradas no Memo de Saída, evitando a paralisação do programa com
+       janelas ShowModal de exibição de erro. Se a gravação do LOG estiver
+       ligada, os erros também serão gravados no LOG
+[+]    Adicionada a funcionalidade da aba "Impressoras de Cheque". Agora é
+       possivel interagir com várias impressoras de Cheque como: Bematech,
+       Chronos, Schalter, Sotomaq, Perto, Urano, ECFs 2 estações, e até mesmo
+       Impressoras matriciais comuns (Ex: LX-300).
+       - Veja o manual do ACBrMonitor para os Novos comandos do Objeto CHQ.
+[+]    Adicionada a funcionalidade da aba "Display". Agora é possível
+       interagir com diversos tipos de Display de Teclados (Gertec, KeyTec,
+       Smak) ou Seriais (Gertec)
+       - Veja o manual do ACBrMonitor para os Novos comandos do Objeto DIS.
+[+]    Adicionada a funcionalidade da aba "Gavetas de Dinheiro". Agora é
+       possível interagir com vários tipos de gaveta de dinheiro. Ligadas ao
+       ECF, ligada a Impressoras de bobinas ou diretamente a Porta serial
+       - Veja o manual do ACBrMonitor para os Novos comandos do Objeto GAV.
+[*]    Aba do Leitor de Cod.Barras otimizada para trabalhar em conjunto com o
+       ECF. Códigos apenas são enviados para o buffer de teclado, quando o ECF
+       estiver livre. Porém, os dados permanecem no buffer da serial e são
+       todos enviados assim que possível.
+       - Isso evita o problema de enviar teclas dos códigos em momento indevido,
+         como por exemplo, quando o EDIT / GET do Campo código não está em FOCO
+[*]    Adicionado novo objeto: LCB, que permite interagir diretamento com o
+       Leitor de Cod.Barras Serial. Vários métodos novos criados para esse
+       Objeto, verifique o manual do ACBrMonitor
+
+Versão 0.5a    10/07/06
+[*]    Rotina de Gravação de Arquivo de Saída TXT mais segura... Agora ela
+       primeiro grava a resposta em um arquivo temporário para depois renomea-lo
+       para o arquivo  de Saída...
+       - Isso evita problemas com aplicações que controlam o ACBrMonitor, que
+         poderiam ler o arquivo de Saída incompleto
+[*]    Interface melhorada com a substituição de alguns Edits por SpinEdits
+[+]    Adicionada StatusBar que exibe o comando que está sendo processado.
+[+]    Adicionada opção de configuração para numero máximo de linhas no LOG.
+       - Se o valor for diferente de 0, o Arquivo de LOG será ajustado sempre
+         que o ACBrMonitor iniciar
+[+]    Adicionada opção para Inverter o Sinal da Gaveta de Dinheiro
+       - Em alguns modelos de Gaveta, com pinagem diferente, pode ocorrer a
+         leitura inversa do Estado da Gaveta
+[-]    Usando a versão 0.8.5b do ACBr, corrigido diversos bugs no ACBrECF
+       ( veja ACBr-change-log.txt )
+[+]    Novo modelo de ECF implementado FiscNET (ZPM).
+       ( experimental, testado apenas no Emulador... veja ACBr-change-log.txt )
+[-]    Corrigido bug no Interpretador de comandos do ACBrMonitor.
+       ( Problemas para detectar a separação de parâmetros (virgulas) sem
+         nenhum espaços entre os parâmetros )
+
+
+Versão 0.4a    20/05/06
+[*]    Melhorada a interface geral do programa
+[*]    Vários componentes da interface agora possuem "Hints" com dicas de ajuda
+[+]    Adicionado Form "Sobre o ACBrMonitor", com botão para exibir o manual de
+       ajuda
+[-]    Corrigido alguns bugs na comunicação TCP/IP: congelamento do programa,
+       não re-conectava pela 2a vez
+[+]    Adicionada opção para definir quantas conexões simultâneas são permitidas
+       em modo TCP/IP. Default = 1
+[+]    Adicionada opção para definir o tempo (em milisegundos) para
+       monitoramento do arquivo de Entrada em modo TXT... O Default é 100,
+       diminua esse tempo para obter respostas mais rápidas do ACBrMonitor
+       quando usando o modo TXT
+[-]    Corrigido Bug no método "ECF.TotalPago" (não era executado)
+[-]    Alguns métodos como "CupomVinculado" ou "AbreCupomVinculado" não
+       efetuavam a conversão de valores com Decimais corretamente
+[*]    Adicionado suporte ao caracter (") Aspas dupla dentro da String. Para
+       informar uma Aspas dentro da String use 2 aspas (""), ela será convertida
+       para apenas uma Aspas.. Exemplo: "Texto ""com aspas"" dentro"  será
+       considerado "Texto "com aspas" dentro"
+[+]    Adicionado o objeto "ACBR", para métodos genéricos
+[+]    Adicionado o método:
+          ACBr.Run( cComando [, cParams, bAguarda, nWindowState, bAltTab ] )
+       que permite executar comandos remotamente, na máquina do ACBrMonitor
+[+]    Adicionada opção na configuração que permite habilitar a execução de
+       comandos remotos (o padrão é desabilitado)
+[+]    Adicionado novos métodos no objeto ECF
+        - ECF.AchaICMSAliquota( nALiquota [, cTipo ] ) -> Procura por uma
+          alíquota previamente cadastrada. Se encontrar, retorna os dados da
+          Alíquota no mesmo formato de "CarregaAliquotas"
+        - ECF.AchaFPGDescricao( cDescricao ) -> Procura por uma Forma de
+          Pagamento pela Descrição, se encontrar, retorna os dados da Forma de
+          Pagamento no mesmo formato de "CarregaFormasPagamento"
+        - ECF.AchaCNFDescricao( cDescricao ) -> Procura por um Comprovante NAO
+          Fiscal pela Descrição, se encontrar, retorna os dados do Comprovante
+          NAO Fiscal no mesmo formato de "CarregaComprovantesNaoFiscais"
+[+]    Adicionada a funcionabilidade da aba "Leitor Serial". Ela permite desviar
+       toda a leitura de dados de um Leitor Serial para o buffer de teclado do
+       Windows. Permitindo modificar os sufixos / prefixos enviados pelo leitor
+       - Funciona mesmo quando em Prompt do MS-DOS tela cheia
+[*]    Métodos "LinhaCupomVinculado" e "LinhaRelatorioGerencial" agora permitem
+       informar várias linhas simultaneamente, sepradas por | (pipe).
+
+
+Versão 0.3a    09/03/06
+
+[+]    Primeira versão distribuida do ACBrMonitor com instaladores para Windows
+       e Linux

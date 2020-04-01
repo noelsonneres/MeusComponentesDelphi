@@ -1,0 +1,102 @@
+object frxMemoEditorForm: TfrxMemoEditorForm
+  Left = 200
+  Height = 400
+  Top = 107
+  Width = 528
+  BorderIcons = [biSystemMenu, biMaximize]
+  Caption = 'Memo'
+  ClientHeight = 400
+  ClientWidth = 528
+  Color = clBtnFace
+  Constraints.MinHeight = 352
+  Constraints.MinWidth = 520
+  Font.Color = clBlack
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  KeyPreview = True
+  OnCreate = FormCreate
+  OnHide = FormHide
+  OnKeyDown = FormKeyDown
+  OnShow = FormShow
+  ShowHint = True
+  LCLVersion = '1.2.6.0'
+  object PageControl1: TPageControl
+    Left = 0
+    Height = 328
+    Top = 0
+    Width = 520
+    ActivePage = TextTS
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    Constraints.MinHeight = 252
+    Constraints.MinWidth = 324
+    TabIndex = 0
+    TabOrder = 0
+    OnChange = PageControl1Change
+    object TextTS: TTabSheet
+      Caption = 'Text'
+      ClientHeight = 302
+      ClientWidth = 512
+      object ToolBar: TToolBar
+        Left = 0
+        Height = 27
+        Top = 0
+        Width = 512
+        ButtonHeight = 23
+        EdgeBorders = []
+        TabOrder = 0
+        object ExprB: TToolButton
+          Left = 1
+          Hint = 'Insert Expression'
+          Top = 0
+          ImageIndex = 70
+          OnClick = ExprBClick
+        end
+        object AggregateB: TToolButton
+          Left = 24
+          Top = 0
+          ImageIndex = 85
+          OnClick = AggregateBClick
+        end
+        object WordWrapB: TToolButton
+          Left = 47
+          Hint = 'Word Wrap'
+          Top = 0
+          AllowAllUp = True
+          ImageIndex = 25
+          OnClick = WordWrapBClick
+          Style = tbsCheck
+        end
+      end
+    end
+    object FormatTS: TTabSheet
+      Caption = 'Format'
+      ImageIndex = 1
+    end
+    object HighlightTS: TTabSheet
+      Caption = 'Highlight'
+      ImageIndex = 2
+    end
+  end
+  object OkB: TButton
+    Left = 361
+    Height = 25
+    Top = 336
+    Width = 75
+    Anchors = [akRight, akBottom]
+    Caption = 'OK'
+    Default = True
+    ModalResult = 1
+    TabOrder = 1
+  end
+  object CancelB: TButton
+    Left = 441
+    Height = 25
+    Top = 336
+    Width = 75
+    Anchors = [akRight, akBottom]
+    Cancel = True
+    Caption = 'Cancel'
+    ModalResult = 2
+    TabOrder = 2
+  end
+end

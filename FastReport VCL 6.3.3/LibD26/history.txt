@@ -1,0 +1,37 @@
+FireDAC компоненты для FastReport 6 VCL
+
+Изменения, описанные в этом файле, сделал 
+Stalker SoftWare <stalker4zx@gmail.com>
+
+* Изменено
++ Добавлено
+- Исправлено
+! Замечание
+
+ver 1.00
+[b1 26.07.2018]
+! Начальная версия изменений frxFDComponents.
++ Добавлен класс TfrxFDMemTable.
+  Структура TfrxFDMemTable создается в коде FR в Run-Time с помощью 
+  методов CopyDataSet или SetFDData (обертка над свойством FDDataSet.Data)
+  или создается руками через свойство FieldDefs и вызов метода CreateDataSet.
++ Добавлен отдельный модуль для FS - fs_iFDRTTI.pas
++ В класс TfrxFDQuery добавлены методы:
+  MacroByName, LocateEx, LocateExpr, FetchAll, EnableControls, DisableControls,
+  CreateBlobStream, FindField;
+  Добавлены обработчики событий:
+  AfterOpen, BeforeOpen, AfterScroll, BeforeScroll, OnFilterRecord.
+  А так же обработчики событий на уровне TField: 
+  OnChangeField и OnGetTextField которые устанавливаются в коде FR в Run-Time 
+  с помощью методов SetChangeFieldEvent и SetGetTextFieldEvent.
+  Добавлена поддержка свойства Macros (для подстановки в запрос макро-значений
+  "как есть" надо указывать тип значения Unknown, он будет преобразован в 
+  тип FD - mdRaw).
+  Добавлены свойства:
+  FDRecNo, MacroCreate, MacroExpand, ReadOnly, CachedUpdates, Active. 
+  Изменен способ хранения параметров - теперь они хранятся не в бинарном виде
+  (PropData), а в виде нормального XML.
+[b2 24.10.2018]  
+- Исправлена (улучшена) ситуация когда параметры запроса (frxFDQuery) в связке 
+  Master-Detail задаются для Detail динамически через изменение самого SQL
+  или через Macro-параметры.

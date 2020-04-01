@@ -1,0 +1,239 @@
+object frxSysMemoEditorForm: TfrxSysMemoEditorForm
+  Left = 425
+  Height = 460
+  Top = 121
+  Width = 290
+  BorderStyle = bsDialog
+  Caption = 'System Memo'
+  ClientHeight = 460
+  ClientWidth = 290
+  KeyPreview = True
+  OnCreate = FormCreate
+  OnHide = FormHide
+  OnKeyDown = FormKeyDown
+  OnShow = FormShow
+  Position = poScreenCenter
+  ShowHint = True
+  LCLVersion = '0.9.31'
+  object OKB: TButton
+    Left = 129
+    Height = 25
+    Top = 426
+    Width = 75
+    HelpContext = 40
+    Caption = 'OK'
+    Default = True
+    ModalResult = 1
+    TabOrder = 3
+  end
+  object CancelB: TButton
+    Left = 209
+    Height = 25
+    Top = 426
+    Width = 75
+    HelpContext = 50
+    Cancel = True
+    Caption = 'Cancel'
+    ModalResult = 2
+    TabOrder = 4
+  end
+  object AggregateRB: TRadioButton
+    Left = 4
+    Height = 23
+    Top = 82
+    Width = 129
+    Caption = 'Aggregate value'
+    TabOrder = 1
+  end
+  object SysVariableRB: TRadioButton
+    Left = 4
+    Height = 23
+    Top = 4
+    Width = 127
+    Caption = 'System variable'
+    Checked = True
+    TabOrder = 0
+    TabStop = True
+  end
+  object TextRB: TRadioButton
+    Left = 4
+    Height = 23
+    Top = 344
+    Width = 49
+    Caption = 'Text'
+    TabOrder = 2
+  end
+  object AggregatePanel: TGroupBox
+    Left = 4
+    Height = 232
+    Top = 108
+    Width = 281
+    ClientHeight = 211
+    ClientWidth = 277
+    TabOrder = 5
+    object DataBandL: TLabel
+      Left = 8
+      Height = 18
+      Top = 38
+      Width = 68
+      Caption = 'Data band'
+      ParentColor = False
+    end
+    object DataSetL: TLabel
+      Left = 8
+      Height = 18
+      Top = 70
+      Width = 54
+      Caption = 'DataSet'
+      ParentColor = False
+    end
+    object DataFieldL: TLabel
+      Left = 8
+      Height = 18
+      Top = 94
+      Width = 60
+      Caption = 'DataField'
+      ParentColor = False
+    end
+    object FunctionL: TLabel
+      Left = 8
+      Height = 18
+      Top = 14
+      Width = 54
+      Caption = 'Function'
+      ParentColor = False
+    end
+    object ExpressionL: TLabel
+      Left = 8
+      Height = 18
+      Top = 118
+      Width = 70
+      Caption = 'Expression'
+      ParentColor = False
+    end
+    object SampleL: TLabel
+      Left = 8
+      Height = 13
+      Top = 190
+      Width = 265
+      AutoSize = False
+      Caption = 'SampleL'
+      Color = clInfoBk
+      ParentColor = False
+      Transparent = False
+    end
+    object DataFieldCB: TComboBox
+      Left = 100
+      Height = 23
+      Top = 90
+      Width = 173
+      ItemHeight = 0
+      OnChange = DataFieldCBChange
+      TabOrder = 3
+    end
+    object DataSetCB: TComboBox
+      Left = 100
+      Height = 23
+      Top = 66
+      Width = 173
+      ItemHeight = 0
+      OnChange = DataSetCBChange
+      TabOrder = 2
+    end
+    object DataBandCB: TComboBox
+      Left = 100
+      Height = 23
+      Top = 34
+      Width = 173
+      ItemHeight = 0
+      OnChange = DataBandCBChange
+      TabOrder = 1
+    end
+    object CountInvisibleCB: TCheckBox
+      Left = 8
+      Height = 22
+      Top = 142
+      Width = 160
+      Caption = 'Count invisible bands'
+      OnClick = FunctionCBChange
+      TabOrder = 5
+    end
+    object FunctionCB: TComboBox
+      Left = 100
+      Height = 23
+      Top = 10
+      Width = 173
+      ItemHeight = 0
+      Items.Strings = (
+        'SUM'
+        'MIN'
+        'MAX'
+        'AVG'
+        'COUNT'
+      )
+      OnChange = FunctionCBChange
+      TabOrder = 0
+    end
+    object ExpressionE: TfrxComboEdit
+      Left = 100
+      Height = 23
+      Top = 115
+      Width = 173
+      AutoSize = False
+      ItemHeight = 0
+      TabOrder = 4
+      Glyph.Data = {
+        D6000000424DD60000000000000076000000280000000C0000000C0000000100
+        0400000000006000000000000000000000001000000000000000000000000000
+        80000080000000808000800000008000800080800000C0C0C000808080000000
+        FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFFFF00707777777777
+        0000770777777777000077087007007700007780778007770000778087700077
+        0000777087007807000077780777777700007700000777770000777708777777
+        0000777700780777000077777000777700007777777777770000
+      }
+      OnButtonClick = ExpressionEButtonClick
+    end
+    object RunningTotalCB: TCheckBox
+      Left = 8
+      Height = 22
+      Top = 162
+      Width = 107
+      Caption = 'Running total'
+      OnClick = FunctionCBChange
+      TabOrder = 6
+    end
+  end
+  object GroupBox1: TGroupBox
+    Left = 4
+    Height = 49
+    Top = 33
+    Width = 281
+    ClientHeight = 28
+    ClientWidth = 277
+    TabOrder = 6
+    object SysVariableCB: TComboBox
+      Left = 8
+      Height = 23
+      Top = 1
+      Width = 173
+      ItemHeight = 0
+      TabOrder = 0
+    end
+  end
+  object GroupBox2: TGroupBox
+    Left = 4
+    Height = 49
+    Top = 368
+    Width = 281
+    ClientHeight = 28
+    ClientWidth = 277
+    TabOrder = 7
+    object TextE: TEdit
+      Left = 8
+      Height = 21
+      Top = 3
+      Width = 265
+      TabOrder = 0
+    end
+  end
+end

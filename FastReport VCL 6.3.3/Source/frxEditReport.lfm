@@ -1,0 +1,431 @@
+object frxReportEditorForm: TfrxReportEditorForm
+  Left = 425
+  Height = 371
+  Top = 199
+  Width = 414
+  BorderStyle = bsDialog
+  Caption = 'Report settings'
+  ClientHeight = 371
+  ClientWidth = 414
+  Color = clBtnFace
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  KeyPreview = True
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  OnHide = FormHide
+  OnKeyDown = FormKeyDown
+  OnShow = FormShow
+  Position = poScreenCenter
+  LCLVersion = '1.2.6.0'
+  object OkB: TButton
+    Left = 254
+    Height = 25
+    Top = 340
+    Width = 75
+    Caption = 'OK'
+    Default = True
+    ModalResult = 1
+    TabOrder = 0
+  end
+  object CancelB: TButton
+    Left = 334
+    Height = 25
+    Top = 340
+    Width = 75
+    Cancel = True
+    Caption = 'Cancel'
+    ModalResult = 2
+    TabOrder = 1
+  end
+  object PageControl: TPageControl
+    Left = 4
+    Height = 325
+    Top = 4
+    Width = 405
+    ActivePage = GeneralTS
+    TabIndex = 0
+    TabOrder = 2
+    OnChange = PageControlChange
+    object GeneralTS: TTabSheet
+      Caption = 'General'
+      ClientHeight = 299
+      ClientWidth = 397
+      object ReportSettingsL: TGroupBox
+        Left = 4
+        Height = 193
+        Top = 4
+        Width = 389
+        Caption = 'Printer settings'
+        ClientHeight = 175
+        ClientWidth = 385
+        TabOrder = 0
+        object CopiesL: TLabel
+          Left = 16
+          Height = 13
+          Top = 148
+          Width = 32
+          Caption = 'Copies'
+          ParentColor = False
+        end
+        object PrintersLB: TListBox
+          Left = 12
+          Height = 135
+          Top = 0
+          Width = 365
+          ItemHeight = 16
+          OnDrawItem = PrintersLBDrawItem
+          Style = lbOwnerDrawFixed
+          TabOrder = 0
+        end
+        object CopiesE: TEdit
+          Left = 68
+          Height = 21
+          Top = 144
+          Width = 37
+          AutoSize = False
+          TabOrder = 1
+          Text = '1'
+        end
+        object CollateCB: TCheckBox
+          Left = 116
+          Height = 19
+          Top = 146
+          Width = 86
+          Caption = 'Collate copies'
+          TabOrder = 2
+        end
+      end
+      object GeneralL: TGroupBox
+        Left = 4
+        Height = 93
+        Top = 200
+        Width = 389
+        Caption = 'General'
+        ClientHeight = 75
+        ClientWidth = 385
+        TabOrder = 1
+        object PasswordL: TLabel
+          Left = 184
+          Height = 13
+          Top = 13
+          Width = 46
+          Caption = 'Password'
+          ParentColor = False
+        end
+        object DoublePassCB: TCheckBox
+          Left = 8
+          Height = 19
+          Top = 12
+          Width = 78
+          Caption = 'Double pass'
+          TabOrder = 0
+        end
+        object PrintIfEmptyCB: TCheckBox
+          Left = 8
+          Height = 19
+          Top = 36
+          Width = 84
+          Caption = 'Print if empty'
+          TabOrder = 1
+        end
+        object PasswordE: TEdit
+          Left = 268
+          Height = 21
+          Top = 8
+          Width = 109
+          EchoMode = emPassword
+          PasswordChar = '*'
+          TabOrder = 2
+        end
+      end
+    end
+    object InheritTS: TTabSheet
+      Caption = 'Inheritance'
+      ClientHeight = 299
+      ClientWidth = 397
+      ImageIndex = 2
+      object InheritGB: TGroupBox
+        Left = 4
+        Height = 289
+        Top = 4
+        Width = 389
+        Caption = 'Inheritance settings'
+        ClientHeight = 271
+        ClientWidth = 385
+        TabOrder = 0
+        object InheritStateL: TLabel
+          Left = 8
+          Height = 13
+          Top = 0
+          Width = 63
+          Caption = 'InheritStateL'
+          ParentColor = False
+        end
+        object SelectL: TLabel
+          Left = 8
+          Height = 13
+          Top = 24
+          Width = 85
+          Caption = 'Select the option:'
+          ParentColor = False
+        end
+        object PathLB: TLabel
+          Left = 12
+          Height = 13
+          Top = 240
+          Width = 81
+          Caption = 'Templates path :'
+          ParentColor = False
+        end
+        object DetachRB: TRadioButton
+          Left = 8
+          Height = 19
+          Top = 64
+          Width = 132
+          Caption = 'Detach the base report'
+          TabOrder = 0
+        end
+        object InheritRB: TRadioButton
+          Left = 8
+          Height = 19
+          Top = 84
+          Width = 140
+          Caption = 'Inherit from base report:'
+          TabOrder = 1
+        end
+        object DontChangeRB: TRadioButton
+          Left = 8
+          Height = 19
+          Top = 44
+          Width = 81
+          Caption = 'Dont change'
+          Checked = True
+          TabOrder = 2
+          TabStop = True
+        end
+        object InheritLV: TListView
+          Left = 12
+          Height = 125
+          Top = 108
+          Width = 365
+          Columns = <>
+          TabOrder = 3
+        end
+        object PathE: TEdit
+          Left = 96
+          Height = 21
+          Top = 236
+          Width = 257
+          OnKeyPress = PathEKeyPress
+          TabOrder = 4
+        end
+        object BrowseB: TButton
+          Left = 352
+          Height = 22
+          Top = 236
+          Width = 25
+          Caption = '...'
+          OnClick = BrowseBClick
+          TabOrder = 5
+        end
+      end
+    end
+    object DescriptionTS: TTabSheet
+      Caption = 'Description'
+      ClientHeight = 299
+      ClientWidth = 397
+      ImageIndex = 1
+      object DescriptionL: TGroupBox
+        Left = 4
+        Height = 213
+        Top = 4
+        Width = 389
+        Caption = 'Description'
+        ClientHeight = 195
+        ClientWidth = 385
+        TabOrder = 0
+        object Bevel3: TBevel
+          Left = 80
+          Height = 77
+          Top = 102
+          Width = 93
+        end
+        object NameL: TLabel
+          Left = 8
+          Height = 13
+          Top = 2
+          Width = 27
+          Caption = 'Name'
+          ParentColor = False
+        end
+        object PictureImg: TImage
+          Left = 84
+          Height = 69
+          Top = 106
+          Width = 85
+          Center = True
+        end
+        object Description1L: TLabel
+          Left = 8
+          Height = 13
+          Top = 50
+          Width = 53
+          Caption = 'Description'
+          ParentColor = False
+        end
+        object PictureL: TLabel
+          Left = 8
+          Height = 13
+          Top = 102
+          Width = 33
+          Caption = 'Picture'
+          ParentColor = False
+        end
+        object AuthorL: TLabel
+          Left = 8
+          Height = 13
+          Top = 26
+          Width = 33
+          Caption = 'Author'
+          ParentColor = False
+        end
+        object NameE: TEdit
+          Left = 80
+          Height = 21
+          Top = 0
+          Width = 297
+          AutoSize = False
+          TabOrder = 0
+        end
+        object DescriptionE: TMemo
+          Left = 80
+          Height = 47
+          Top = 48
+          Width = 297
+          TabOrder = 2
+        end
+        object PictureB: TButton
+          Left = 180
+          Height = 21
+          Top = 102
+          Width = 75
+          Caption = 'Browse...'
+          OnClick = PictureBClick
+          TabOrder = 3
+        end
+        object AuthorE: TEdit
+          Left = 80
+          Height = 21
+          Top = 24
+          Width = 297
+          AutoSize = False
+          TabOrder = 1
+        end
+      end
+      object VersionL: TGroupBox
+        Left = 4
+        Height = 73
+        Top = 220
+        Width = 389
+        Caption = 'Version'
+        ClientHeight = 55
+        ClientWidth = 385
+        TabOrder = 1
+        object MajorL: TLabel
+          Left = 8
+          Height = 13
+          Top = 4
+          Width = 27
+          Caption = 'Major'
+          ParentColor = False
+        end
+        object MinorL: TLabel
+          Left = 100
+          Height = 13
+          Top = 4
+          Width = 26
+          Caption = 'Minor'
+          ParentColor = False
+        end
+        object ReleaseL: TLabel
+          Left = 196
+          Height = 13
+          Top = 4
+          Width = 38
+          Caption = 'Release'
+          ParentColor = False
+        end
+        object BuildL: TLabel
+          Left = 300
+          Height = 13
+          Top = 4
+          Width = 22
+          Caption = 'Build'
+          ParentColor = False
+        end
+        object CreatedL: TLabel
+          Left = 8
+          Height = 13
+          Top = 28
+          Width = 39
+          Caption = 'Created'
+          ParentColor = False
+        end
+        object Created1L: TLabel
+          Left = 76
+          Height = 13
+          Top = 28
+          Width = 103
+          Caption = '22.22.2000 12:23:10'
+          ParentColor = False
+        end
+        object ModifiedL: TLabel
+          Left = 212
+          Height = 13
+          Top = 28
+          Width = 40
+          Caption = 'Modified'
+          ParentColor = False
+        end
+        object Modified1L: TLabel
+          Left = 276
+          Height = 13
+          Top = 28
+          Width = 103
+          Caption = '22.22.2000 12:23:10'
+          ParentColor = False
+        end
+        object MajorE: TEdit
+          Left = 52
+          Height = 21
+          Top = 0
+          Width = 37
+          TabOrder = 0
+        end
+        object MinorE: TEdit
+          Left = 144
+          Height = 21
+          Top = 0
+          Width = 37
+          TabOrder = 1
+        end
+        object ReleaseE: TEdit
+          Left = 252
+          Height = 21
+          Top = 0
+          Width = 37
+          TabOrder = 2
+        end
+        object BuildE: TEdit
+          Left = 340
+          Height = 21
+          Top = 0
+          Width = 37
+          TabOrder = 3
+        end
+      end
+    end
+  end
+end

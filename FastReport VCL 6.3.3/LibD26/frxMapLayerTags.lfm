@@ -1,0 +1,120 @@
+object MapLayerTagsForm: TMapLayerTagsForm
+  Tag = 6560
+  Left = 622
+  Height = 257
+  Top = 96
+  Width = 482
+  BorderStyle = bsDialog
+  Caption = 'MapLayerTagsForm'
+  ClientHeight = 257
+  ClientWidth = 482
+  Color = clBtnFace
+  Font.Color = clWindowText
+  Font.Height = -10
+  Font.Name = 'Tahoma'
+  OnCreate = FormCreate
+  OnKeyDown = FormKeyDown
+  Position = poMainFormCenter
+  LCLVersion = '1.8.2.0'
+  object FileTagsLabel: TLabel
+    Tag = 6561
+    Left = 6
+    Height = 11
+    Top = 6
+    Width = 65
+    Caption = 'FileTagsLabel'
+    ParentColor = False
+  end
+  object LayerTagsLabel: TLabel
+    Tag = 6562
+    Left = 277
+    Height = 11
+    Top = 6
+    Width = 76
+    Caption = 'LayerTagsLabel'
+    ParentColor = False
+  end
+  object FilterLabel: TLabel
+    Tag = 6563
+    Left = 6
+    Height = 11
+    Top = 239
+    Width = 52
+    Caption = 'FilterLabel'
+    ParentColor = False
+  end
+  object CancelB: TButton
+    Tag = 2
+    Left = 419
+    Height = 19
+    Top = 232
+    Width = 57
+    Anchors = [akRight, akBottom]
+    Cancel = True
+    Caption = 'Cancel'
+    ModalResult = 2
+    TabOrder = 6
+  end
+  object OkB: TButton
+    Tag = 1
+    Left = 362
+    Height = 19
+    Top = 232
+    Width = 56
+    Anchors = [akRight, akBottom]
+    Caption = 'Ok'
+    Default = True
+    ModalResult = 1
+    TabOrder = 5
+  end
+  object LayerTagsListBox: TListBox
+    Left = 277
+    Height = 199
+    Top = 24
+    Width = 199
+    ItemHeight = 0
+    MultiSelect = True
+    ScrollWidth = 197
+    TabOrder = 3
+    TopIndex = -1
+  end
+  object FilterEdit: TEdit
+    Left = 78
+    Height = 21
+    Top = 233
+    Width = 127
+    OnKeyPress = FilterEditKeyPress
+    TabOrder = 4
+    Text = 'FilterEdit'
+  end
+  object LayerAddButton: TButton
+    Left = 216
+    Height = 19
+    Top = 72
+    Width = 49
+    Caption = '>>'
+    OnClick = LayerAddButtonClick
+    TabOrder = 1
+  end
+  object LayerDeleteButton: TButton
+    Left = 216
+    Height = 19
+    Top = 108
+    Width = 49
+    Caption = '<<'
+    OnClick = LayerDeleteButtonClick
+    TabOrder = 2
+  end
+  object FileTagsListView: TListView
+    Left = 6
+    Height = 199
+    Top = 24
+    Width = 199
+    Columns = <>
+    HideSelection = False
+    MultiSelect = True
+    ReadOnly = True
+    TabOrder = 0
+    OnColumnClick = FileTagsListViewColumnClick
+  end
+end

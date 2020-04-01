@@ -1,0 +1,60 @@
+﻿	<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+		<PropertyGroup>
+			<ProjectGuid>{8CDE26B7-9BFF-49B3-9DC5-314FA7F22105}</ProjectGuid>
+		</PropertyGroup>
+		<ItemGroup>
+			<Projects Include="ACBrDiversos\ACBrDiversos.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="ACBrComum\ACBrComumTestCases.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="ACBrComum\TestesTACrTXTClass.dproj">
+				<Dependencies/>
+			</Projects>
+		</ItemGroup>
+		<ProjectExtensions>
+			<Borland.Personality>Default.Personality.12</Borland.Personality>
+			<Borland.ProjectType/>
+			<BorlandProject>
+				<Default.Personality/>
+			</BorlandProject>
+		</ProjectExtensions>
+		<Target Name="ACBrDiversos">
+			<MSBuild Projects="ACBrDiversos\ACBrDiversos.dproj"/>
+		</Target>
+		<Target Name="ACBrDiversos:Clean">
+			<MSBuild Targets="Clean" Projects="ACBrDiversos\ACBrDiversos.dproj"/>
+		</Target>
+		<Target Name="ACBrDiversos:Make">
+			<MSBuild Targets="Make" Projects="ACBrDiversos\ACBrDiversos.dproj"/>
+		</Target>
+		<Target Name="ACBrComumTestCases">
+			<MSBuild Projects="ACBrComum\ACBrComumTestCases.dproj"/>
+		</Target>
+		<Target Name="ACBrComumTestCases:Clean">
+			<MSBuild Targets="Clean" Projects="ACBrComum\ACBrComumTestCases.dproj"/>
+		</Target>
+		<Target Name="ACBrComumTestCases:Make">
+			<MSBuild Targets="Make" Projects="ACBrComum\ACBrComumTestCases.dproj"/>
+		</Target>
+		<Target Name="TestesTACrTXTClass">
+			<MSBuild Projects="ACBrComum\TestesTACrTXTClass.dproj"/>
+		</Target>
+		<Target Name="TestesTACrTXTClass:Clean">
+			<MSBuild Targets="Clean" Projects="ACBrComum\TestesTACrTXTClass.dproj"/>
+		</Target>
+		<Target Name="TestesTACrTXTClass:Make">
+			<MSBuild Targets="Make" Projects="ACBrComum\TestesTACrTXTClass.dproj"/>
+		</Target>
+		<Target Name="Build">
+			<CallTarget Targets="ACBrDiversos;ACBrComumTestCases;TestesTACrTXTClass"/>
+		</Target>
+		<Target Name="Clean">
+			<CallTarget Targets="ACBrDiversos:Clean;ACBrComumTestCases:Clean;TestesTACrTXTClass:Clean"/>
+		</Target>
+		<Target Name="Make">
+			<CallTarget Targets="ACBrDiversos:Make;ACBrComumTestCases:Make;TestesTACrTXTClass:Make"/>
+		</Target>
+		<Import Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')" Project="$(BDS)\Bin\CodeGear.Group.Targets"/>
+	</Project>

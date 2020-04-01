@@ -1,0 +1,84 @@
+package ACBr_PAF;
+
+{$R *.res}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO ON}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION ON}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO OFF}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES OFF}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$DESCRIPTION 'ACBr - Programa Aplicativo Fiscal ECF - (http://www.projetoacbr.com.br/)'}
+{$IMPLICITBUILD OFF}
+
+requires
+  rtl,
+  vcl,
+  designide,
+  ACBr_TXTComum,
+  ACBr_OpenSSL;
+
+contains
+  ACBrPAF in '..\..\..\..\Fontes\ACBrTXT\ACBrPAF\ACBrPAF.pas',
+  ACBrPAF_D in '..\..\..\..\Fontes\ACBrTXT\ACBrPAF\ACBrPAF_D.pas',
+  ACBrPAF_D_Class in '..\..\..\..\Fontes\ACBrTXT\ACBrPAF\ACBrPAF_D_Class.pas',
+  ACBrPAF_E in '..\..\..\..\Fontes\ACBrTXT\ACBrPAF\ACBrPAF_E.pas',
+  ACBrPAF_E_Class in '..\..\..\..\Fontes\ACBrTXT\ACBrPAF\ACBrPAF_E_Class.pas',
+  ACBrPAF_P in '..\..\..\..\Fontes\ACBrTXT\ACBrPAF\ACBrPAF_P.pas',
+  ACBrPAF_P_Class in '..\..\..\..\Fontes\ACBrTXT\ACBrPAF\ACBrPAF_P_Class.pas',
+  ACBrPAF_R in '..\..\..\..\Fontes\ACBrTXT\ACBrPAF\ACBrPAF_R.pas',
+  ACBrPAF_R_Class in '..\..\..\..\Fontes\ACBrTXT\ACBrPAF\ACBrPAF_R_Class.pas',
+  ACBrPAF_T in '..\..\..\..\Fontes\ACBrTXT\ACBrPAF\ACBrPAF_T.pas',
+  ACBrPAF_T_Class in '..\..\..\..\Fontes\ACBrTXT\ACBrPAF\ACBrPAF_T_Class.pas',
+  ACBrPAFRegistros in '..\..\..\..\Fontes\ACBrTXT\ACBrPAF\ACBrPAFRegistros.pas',
+  ACBrPAF_N in '..\..\..\..\Fontes\ACBrTXT\ACBrPAF\ACBrPAF_N.pas',
+  ACBrPAF_N_Class in '..\..\..\..\Fontes\ACBrTXT\ACBrPAF\ACBrPAF_N_Class.pas',
+  ACBrPAF_C in '..\..\..\..\Fontes\ACBrTXT\ACBrPAF\ACBrPAF_C.pas',
+  ACBrPAF_C_Class in '..\..\..\..\Fontes\ACBrTXT\ACBrPAF\ACBrPAF_C_Class.pas',
+  ACBrPAF_TITP_Class in '..\..\..\..\Fontes\ACBrTXT\ACBrPAF\ACBrPAF_TITP_Class.pas',
+  ACBrPAF_TITP in '..\..\..\..\Fontes\ACBrTXT\ACBrPAF\ACBrPAF_TITP.pas',
+  ACBrPAF_S in '..\..\..\..\Fontes\ACBrTXT\ACBrPAF\ACBrPAF_S.pas',
+  ACBrPAF_S_Class in '..\..\..\..\Fontes\ACBrTXT\ACBrPAF\ACBrPAF_S_Class.pas',
+  ACBrPAF_U in '..\..\..\..\Fontes\ACBrTXT\ACBrPAF\ACBrPAF_U.pas',
+  ACBrPAF_U_Class in '..\..\..\..\Fontes\ACBrTXT\ACBrPAF\ACBrPAF_U_Class.pas',
+  ACBrPAF_V in '..\..\..\..\Fontes\ACBrTXT\ACBrPAF\ACBrPAF_V.pas',
+  ACBrPAF_V_Class in '..\..\..\..\Fontes\ACBrTXT\ACBrPAF\ACBrPAF_V_Class.pas',
+  ACBrPAF_Z in '..\..\..\..\Fontes\ACBrTXT\ACBrPAF\ACBrPAF_Z.pas',
+  ACBrPAF_Z_Class in '..\..\..\..\Fontes\ACBrTXT\ACBrPAF\ACBrPAF_Z_Class.pas',
+  ACBrPAF_A in '..\..\..\..\Fontes\ACBrTXT\ACBrPAF\ACBrPAF_A.pas',
+  ACBrPAF_A_Class in '..\..\..\..\Fontes\ACBrTXT\ACBrPAF\ACBrPAF_A_Class.pas',
+  ACBrPAF_B in '..\..\..\..\Fontes\ACBrTXT\ACBrPAF\ACBrPAF_B.pas',
+  ACBrPAF_B_Class in '..\..\..\..\Fontes\ACBrTXT\ACBrPAF\ACBrPAF_B_Class.pas',
+  ACBrPAF_F in '..\..\..\..\Fontes\ACBrTXT\ACBrPAF\ACBrPAF_F.pas',
+  ACBrPAF_F_Class in '..\..\..\..\Fontes\ACBrTXT\ACBrPAF\ACBrPAF_F_Class.pas',
+  ACBrPAF_G in '..\..\..\..\Fontes\ACBrTXT\ACBrPAF\ACBrPAF_G.pas',
+  ACBrPAF_G_Class in '..\..\..\..\Fontes\ACBrTXT\ACBrPAF\ACBrPAF_G_Class.pas',
+  ACBrPAF_H in '..\..\..\..\Fontes\ACBrTXT\ACBrPAF\ACBrPAF_H.pas',
+  ACBrPAF_H_Class in '..\..\..\..\Fontes\ACBrTXT\ACBrPAF\ACBrPAF_H_Class.pas',
+  ACBrPAF_J in '..\..\..\..\Fontes\ACBrTXT\ACBrPAF\ACBrPAF_J.pas',
+  ACBrPAF_J_Class in '..\..\..\..\Fontes\ACBrTXT\ACBrPAF\ACBrPAF_J_Class.pas',
+  ACBrPAF_L in '..\..\..\..\Fontes\ACBrTXT\ACBrPAF\ACBrPAF_L.pas',
+  ACBrPAF_L_Class in '..\..\..\..\Fontes\ACBrTXT\ACBrPAF\ACBrPAF_L_Class.pas',
+  ACBrPAF_W in '..\..\..\..\Fontes\ACBrTXT\ACBrPAF\ACBrPAF_W.pas',
+  ACBrPAF_W_Class in '..\..\..\..\Fontes\ACBrTXT\ACBrPAF\ACBrPAF_W_Class.pas',
+  ACBrPAF_M in '..\..\..\..\Fontes\ACBrTXT\ACBrPAF\ACBrPAF_M.pas',
+  ACBrPAF_M_Class in '..\..\..\..\Fontes\ACBrTXT\ACBrPAF\ACBrPAF_M_Class.pas';
+
+end.
+
+
+

@@ -1,0 +1,276 @@
+{******************************************************************************}
+{ Projeto: Componentes ACBr                                                    }
+{ Biblioteca multi plataforma de componentes Delphi para interação com equipa- }
+{ mentos de Automação Comercial utilizados no Brasil                           }
+{                                                                              }
+{  Você pode obter a última versão desse arquivo na página do Projeto ACBr     }
+{ Componentes localizado em      http://www.sourceforge.net/projects/acbr      }
+{                                                                              }
+{  Esta biblioteca é software livre; você pode redistribuí-la e/ou modificá-la }
+{ sob os termos da Licença Pública Geral Menor do GNU conforme publicada pela  }
+{ Free Software Foundation; tanto a versão 2.1 da Licença, ou (a seu critério) }
+{ qualquer versão posterior.                                                   }
+{                                                                              }
+{  Esta biblioteca é distribuída na expectativa de que seja útil, porém, SEM   }
+{ NENHUMA GARANTIA; nem mesmo a garantia implícita de COMERCIABILIDADE OU      }
+{ ADEQUAÇÃO A UMA FINALIDADE ESPECÍFICA. Consulte a Licença Pública Geral Menor}
+{ do GNU para mais detalhes. (Arquivo LICENÇA.TXT ou LICENSE.TXT)              }
+{                                                                              }
+{  Você deve ter recebido uma cópia da Licença Pública Geral Menor do GNU junto}
+{ com esta biblioteca; se não, escreva para a Free Software Foundation, Inc.,  }
+{ no endereço 59 Temple Street, Suite 330, Boston, MA 02111-1307 USA.          }
+{ Você também pode obter uma copia da licença em:                              }
+{ http://www.opensource.org/licenses/lgpl-license.php                          }
+{                                                                              }
+{ Daniel Simões de Almeida  -  daniel@djsystem.com.br  -  www.djsystem.com.br  }
+{              Praça Anita Costa, 34 - Tatuí - SP - 18270-410                  }
+{                                                                              }
+{******************************************************************************}
+Agradecimentos:
+
+* Administradores:
+- Daniel Simões de Almeida
+- André Ferreira de Moraes
+
+{******************************************************************************
+|* ACBrCTe
+|*
+|* PROPÓSITO: Registro de Alterações
+******************************************************************************}
+
+Símbolo : Significado
+
+[+]     : Novo recurso
+[*]     : Recurso modificado/melhorado
+[-]     : Correção de Bug (assim esperamos)
+
+11/12/2019
+-- pgnreGNREW --
+[*] Estava gerando a tag valorGNRE 2 vezes.
+    por: Italo Jurisato Junior
+
+13/11/2019
+-- pgnreRetConsResLoteGNRE/ --
+[*] Melhorias na leitura do retorno da consulta do GNRE versão 2.00
+    por: Murilo X / Italo Jurisato Junior
+
+-- ACBrGNREGuiasRetorno --
+[*] Melhorias na leitura da Guia em formato XML do GNRE versão 2.00
+    por: Murilo X / Italo Jurisato Junior
+
+11/11/2019
+-- pgnreRetConsResLoteGNRE --
+[*] Melhorias na leitura do retorno da consulta do GNRE versão 2.00
+    por: Eremar Mates
+-- Diversos --
+[+] Implementado a leitura da Guia em formato XML do GNRE versão 2.00
+    por: Italo Jurisato Junior
+
+07/11/2019
+-- pgnreRetConsResLoteGNRE --
+[*] Melhorias na leitura do retorno da consulta do GNRE versão 2.00
+    por: Italo Jurisato Junior
+
+23/10/2019
+-- ACBrGNREServicos --
+[+] Inclusão das URL de produção da versão 2.00
+    por: Everto f
+
+29/08/2019
+[*] pgnreGNREW
+    Possível correção na geração da tag <periodo> versão 2.00
+   Por: Italo Jurisato Junior
+
+28/08/2019
+[+] pgnreRetConsResLoteGNRE
+    Implementado a leitura do retorno do GNRE versão 2.00
+   Por: Italo Jurisato Junior
+[*] pgnreGNRE/pgnreGNREW
+    https://www.projetoacbr.com.br/forum/topic/53172-gnre-200/?do=findComment&comment=349758
+   Por: Daniel De Paula Romanini
+
+27/08/2019
+[*] pgnreGNREW
+    https://www.projetoacbr.com.br/forum/topic/53172-gnre-200/
+   Por: Italo Jurisato Junior
+
+19/08/2019
+[*] pgnreGNREW
+    Alterado a forma de gerar o atributo tipo do tag documentoOrigem.
+   Por: Italo Jurisato Junior
+
+11/07/2019
+[+] ACBrGNReGuias
+Adicionado campo TipoGNRe na leitura .ini (LerArqIni)
+
+11/07/2019
+[+] pgnreConversao
+Adicionado função StrToVersaoGNRe para conversão cód versão
+
+23/04/2019
+-- Diversos --
+[*] Mais alguns ajustes visando a versão (2.00).
+    Se faz necessário testes.
+   Por: Italo Jurisato Junior
+
+22/04/2019
+-- Diversos --
+[*] Mais alguns ajustes visando a versão (2.00).
+    Se faz necessário testes.
+   Por: Italo Jurisato Junior
+
+17/04/2019
+-- Diversos --
+[*] Adequação do componente para a nova versão (2.00).
+    Se faz necessário testes.
+   Por: Italo Jurisato Junior
+
+02/04/2019
+-- Diversos --
+[*] Adequação do componente para a nova versão (2.00).
+    Se faz necessário testes.
+   Por: Italo Jurisato Junior
+
+21/12/2018
+--ACBrGNReGuias.pas--
+[*] Não estava salvando o XML da Guia.
+   Por: Italo Jurisato Junior
+
+31/10/2018
+-- ACBrGNREConfiguracoes --
+[+] Acrescentado os métodos GravarINI e LerINI responsáveis por salvar e ler
+    de um arquivo INI as configurações do componente que serão utilizados
+    na ACBrLibGNRe.
+   Por: Italo Jurisato Junior
+
+25/10/2018
+-- Diversos --
+[-] O componente não estava obedecendo o Path informado em PathPDF ao usar o 
+    método ImprimirPDF (Fortes Report), correção realizada.
+   Por: Italo Jurisato Junior
+
+20/10/2018
+-- ACBrGNREWebServices --
+[*] Removido os métodos TGNRERecepcao.GerarPrefixoArquivo e TGNRERecepcao.GetLote,
+    pelo simples fato de não existir um numero de lote e com isso ao salvar os 
+    arquivos de envio e retorno estavam ficando incompletos.
+    Agora o prefiso usado nesses arquivos será a data/hora.
+   Por: Italo Jurisato Junior
+
+31/07/2018
+--ACBrGNReGuias.pas--
+[+] Implementado o método para a leitura de arquivo INI, que é utilizado no
+    ACBrMonitor Plus
+   Por: Italo Jurisato Junior
+
+--ACBrGNReGuiaRL.pas--
+[-] Correção de AV na Guia do Fortes, contribuição: BigWings
+	http://www.projetoacbr.com.br/forum/topic/36490-impress%C3%A3o-gnre-erro-no-lfm/
+	por: Celso Marigo Junior
+
+27/12/2016
+-- pgnreGNREW --
+[*] Evitar a duplicidade de alertas.
+    Por: Italo Jurisato Junior
+
+21/12/2016
+[*] Melhoria na impressão em Fortes e correção de erro
+		http://www.projetoacbr.com.br/forum/topic/31853-erro-ao-imprimir-gnre/
+		por : Juliomar Marchetti
+		
+20/12/2016
+[*] Melhoria para GNRE em Fast Report
+		http://www.projetoacbr.com.br/forum/topic/34030-fontes-alterados/
+		por : Juliomar Marchetti
+		
+24/10/2016
+[-] Correção da impressão da Guia do GNRE em Fortes
+		http://www.projetoacbr.com.br/forum/topic/31853-erro-ao-imprimir-gnre/
+		por : Juliomar Marchetti
+		
+03/08/2016
+[*] Adição de suporte do fortes para as guias do gnre
+		http://www.projetoacbr.com.br/forum/topic/31424-modulo-gnre-para-o-monitor-plus/
+		por : Juliomar Marchetti
+24/06/2016
+[-] Melhoria para impressão do código barras em jato de tinta
+		http://www.projetoacbr.com.br/forum/topic/30853-c%C3%B3digo-de-barras-da-gnre-em-impressora-jato-de-tinta/
+		por : Juliomar Marchetti
+		
+26/04/2016
+[*] Diversas alterações visando a correções de problemas de leitura de retornos.
+    por: Siagri Sistemas
+
+13/04/2016
+-- ACBrGNREWebServices --
+[*] Método "TGNREWebService.Clear" modificado para inicializar:
+    SSL.UseCertificateHTTP := True  
+    por: DSA / Italo Jurisato Junior
+
+28/03/2016
+--ACBrGNREGuiaFR
+[*] Adição do showdialog para exibição e número de cópias em fast report
+		http://www.projetoacbr.com.br/forum/topic/28940-corre%C3%A7%C3%B5es-na-impress%C3%A3o-da-gnre-fastreport/
+    por: Juliomar Marchetti
+
+24/03/2016
+-- ACBrGNREConfiguracoes-ACBrGNREWebServices
+[*] Melhoria proposta pra separar os txt gerado no gnre em pasta diferente do xml!
+		como era usado local as implementações foram nas heranças do ACBrDFe
+		http://www.projetoacbr.com.br/forum/topic/18312-acbrgnre-problemas-com-o-exemplo/?do=findComment&comment=191007
+		por: Juliomar Marchetti
+
+20/03/2016
+[*] Correção para o estado do maranhã vem sem informação de data
+		http://www.projetoacbr.com.br/forum/topic/18312-acbrgnre-problemas-com-o-exemplo/?do=findComment&comment=190594
+		por: Juliomar Marchetti
+		
+12/03/2016
+[*] Modificado para deixar alguns botões fora do preview em fast report
+		por: Juliomar Marchetti
+
+08/03/2016
+[*] Correções do ACBrGNRE
+		http://www.projetoacbr.com.br/forum/topic/26605-acbrgnre-na-trunk2/?page=5
+
+07/03/2016   
+-- ACBrDFeCapicom, ACBrDFeCapicomDelphiSoap --
+[*] Ajustes para compilação em 64 bits. Remoção de Hints e Warnings   (por: DSA)
+
+-- ACBrGNREWebServices --
+[*] Ajustes para novo tratamento de "RetornoWS" sem tratamento de conversão
+[*] Remoção de Warnings   (por: DSA)
+
+-- ACBrGNREGuias --
+[+] Adicionada suporte a Configuracoes.Geral.RetirarEspacos   (por: DSA)
+
+24/02/2016
+[*] Novas implementações para resolver erros da geração do gnre
+		por : Juliomar Marchetti
+
+18/02/2016
+[*] Diversas correções realizadas por: Cesar Balbinott, Leandro Silva visando
+    fazer o componente funcionar de forma correta.
+    
+
+17/02/2016
+-- ACBrGNREGuias --
+[*] Refactoring para usar a nova rotina de validação de CNPJ, do DFeSSL (por: DSA)
+
+17/02/2016
+-- ACBrGNREGuias --
+[-] Acerto para validar corretamente a raiz do certificado quando é o certificado 
+    é emitido para o CPF do responsável e não para o CNPJ da empresa.
+    por: regys.silveria / Italo Jurisato Junior
+
+12/01/2016
+-- ACBrGNREWebServices --
+[*] Inicio do Refactoring para o Trunk2 (não foi testado a compilação).
+    Por: Italo Jurisato Junior
+
+09/12/2013
+[+] Doação do componente para o Projeto ACBr
+    Por: Claudemir Vitor Pereira
+
+
+

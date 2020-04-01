@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="11"/>
+    <BuildModes Active="Default"/>
+    <Units Count="13">
+      <Unit0>
+        <Filename Value="ACBrBPe_Exemplo.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="Frm_ACBrBPe.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmACBrBPe"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="289"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="Frm_SelecionarCertificado.pas"/>
+        <IsPartOfProject Value="True"/>
+        <HasResources Value="True"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="20"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="Frm_ConfiguraSerial.pas"/>
+        <IsPartOfProject Value="True"/>
+        <HasResources Value="True"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="20"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="Frm_Status.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmStatus"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="22" Y="8"/>
+        <UsageCount Value="20"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit4>
+      <Unit5>
+        <Filename Value="..\..\..\..\Fontes\ACBrDFe\ACBrBPe\DABPE\ACBrBPeDABPEClass.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="66"/>
+        <CursorPos X="29" Y="79"/>
+        <UsageCount Value="10"/>
+      </Unit5>
+      <Unit6>
+        <Filename Value="..\..\..\..\Fontes\ACBrDFe\ACBrBPe\ACBrBPe.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="86"/>
+        <CursorPos X="28" Y="99"/>
+        <UsageCount Value="10"/>
+      </Unit6>
+      <Unit7>
+        <Filename Value="..\..\..\..\Fontes\ACBrDFe\ACBrBPe\PCNBPe\pcnEnvEventoBPe.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="49"/>
+        <CursorPos X="17" Y="62"/>
+        <UsageCount Value="10"/>
+      </Unit7>
+      <Unit8>
+        <Filename Value="..\..\..\..\Fontes\ACBrDFe\ACBrBPe\PCNBPe\pcnEventoBPe.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="152"/>
+        <CursorPos X="32" Y="163"/>
+        <UsageCount Value="10"/>
+      </Unit8>
+      <Unit9>
+        <Filename Value="..\..\..\..\Fontes\ACBrDFe\ACBrBPe\PCNBPe\pcnBPeW.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="501"/>
+        <CursorPos Y="493"/>
+        <UsageCount Value="10"/>
+      </Unit9>
+      <Unit10>
+        <Filename Value="..\..\..\..\Fontes\ACBrDFe\ACBrBPe\PCNBPe\pcnBPeR.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="90"/>
+        <CursorPos X="3" Y="110"/>
+        <UsageCount Value="10"/>
+      </Unit10>
+      <Unit11>
+        <Filename Value="..\..\..\..\Fontes\ACBrDFe\ACBrBPe\ACBrBPeBilhetes.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="357"/>
+        <CursorPos X="22" Y="370"/>
+        <UsageCount Value="10"/>
+      </Unit11>
+      <Unit12>
+        <Filename Value="..\..\..\..\Fontes\ACBrDFe\ACBrBPe\ACBrBPeWebServices.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="90"/>
+        <CursorPos X="27" Y="102"/>
+        <UsageCount Value="10"/>
+      </Unit12>
+    </Units>
+    <JumpHistory Count="10" HistoryIndex="9">
+      <Position1>
+        <Filename Value="Frm_ACBrBPe.pas"/>
+        <Caret Line="793" Column="16" TopLine="781"/>
+      </Position1>
+      <Position2>
+        <Filename Value="Frm_ACBrBPe.pas"/>
+        <Caret Line="884" Column="16" TopLine="871"/>
+      </Position2>
+      <Position3>
+        <Filename Value="Frm_ACBrBPe.pas"/>
+        <Caret Line="926" Column="19" TopLine="909"/>
+      </Position3>
+      <Position4>
+        <Filename Value="Frm_ACBrBPe.pas"/>
+        <Caret Line="927" Column="69" TopLine="914"/>
+      </Position4>
+      <Position5>
+        <Filename Value="Frm_ACBrBPe.pas"/>
+        <Caret Line="1005" Column="14" TopLine="992"/>
+      </Position5>
+      <Position6>
+        <Filename Value="Frm_ACBrBPe.pas"/>
+        <Caret Line="1052" Column="14" TopLine="1039"/>
+      </Position6>
+      <Position7>
+        <Filename Value="Frm_ACBrBPe.pas"/>
+        <Caret Line="1124" Column="14" TopLine="1111"/>
+      </Position7>
+      <Position8>
+        <Filename Value="Frm_ACBrBPe.pas"/>
+        <Caret Line="1273" Column="15" TopLine="1260"/>
+      </Position8>
+      <Position9>
+        <Filename Value="Frm_ACBrBPe.pas"/>
+        <Caret Line="2019" Column="31" TopLine="2013"/>
+      </Position9>
+      <Position10>
+        <Filename Value="Frm_ACBrBPe.pas"/>
+        <Caret TopLine="289"/>
+      </Position10>
+    </JumpHistory>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes Count="0" ActiveMode=""/>
+    </RunParams>
+  </ProjectSession>
+</CONFIG>

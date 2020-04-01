@@ -1,0 +1,10 @@
+-hbexe
+-inc
+-icon=ACBrMonitor.ico
+-I..
+
+ACBrBoletoDemo.prg
+ACBrBoleto.prg
+Debugger.prg
+xhb.hbc
+hbxpp.hbc

@@ -1,0 +1,353 @@
+Current version
+----------------------------
+- Fixed bad position when insert new event handler in code editor
+- Fixed wrong clipping in preview when Clipped=false
+- Fixed wrong order of components in inherited reports
+- Font dialog does not set charset anymore for D2009 and above
+- Fixed sheet name encoding in the XLSX export
+- Fixed bug when DetailPage(Hyperlink) contains cross bands (bands were not shown). 
+- Improved ToNRowMode and now works with multiColumn data band and subreport with PrintOnParent
+- Fixed bug in PDF export with transparency in Picture object and KeepAspectRatio property
+- Fixed Clipping of memo object in SVG export
+
+Version 6.3
+----------------------------
+- Fixed PDF LineSpacing (for huge values + VAlign)
+- Fixed Chinese font names in PDF export
+- Fixed active cell for XLS with several sheets in the BIFF8 export
+- Fixed UTF-8 support for Geodata from DBF
+* Improved FireDAC DB components
+[6.2.15]
+* Improved fonts' simulation, exporting of images and checkboxes in the PDF export
+- Fixed Inplace editors in the designer
+- Fixed numeric formats with ";" in XLSX export
+- Fixed FireDAC for x64 platform
++ Added FireDAC to recompile.exe
+- Fixed for AV in RichEdit when using OLE object under Windows 10 with last update
+- Fixed ModifyObject for default values
+[6.2.14]
+* Improved Quick Report to Fast Report converter
+* Improved multi-threading : Datasets on TDataModule, map file access, Inherited reports, Rich critical section
++ Added PDF/A-1, PDF/A-3 support
+- Fixed TTF tables align. Now it uses zeros for align, not garbage memory
+- Fixed macro variables in the table object
+[6.2.13]
+- Fixed series in the script for TeeChart 8 Professional and later
+- Fixed bug when save dialog appears for exports to Stream
+- Fixed MS Office resources for DOCX export
++ Added ability to load Geodata from DB
++ Added new Page.MirrorMode property for better RTL support. The base idea to keep the original layout in the report template and switch to RTL only in preview (during page loading).
++ Added TfrxUserDataset demo
+[6.2.11 - 6.2.12]
++ Added ability to internet IOTransports send files without dialogs from code
+* Improved performance of report preparation for XE3, XE6, XE7, 10, 10.2.
+* Reworked exported bounds for barcodes with outbound text via Vector output
+- Fixed wrong barcode size in PDF export on Win10 with font scaling > 100%
+- Fixed EAN13 barcode rendering
++ Added xtDate support for Arrow and Bubble series
+- Fixed PNG images in the exports
+- Fixed font names table and horizontal_metrix_table return values
+[6.2.9 - 6.2.10]
+* Improved Gauges script RTTI
++ Added Embarcadero RAD Studio 10.3 Rio support
+* TfrxOLEView Editor form is scaled now
+* WKT/WKB MultiPoligonShape support
+* Removed global frxDrawText from preview draw
+[6.2.6 - 6.2.8]
+- Fixed right align for some fonts in the PDF export
+- Fixed WheelDelta in the designer
+- Moved some non-translated strings to resources
+- Lock/Unlock current cached preview page for export.
+- Fixed TfrxMemoView.Duplicates in the TfrxSubreport
+[6.2.4 - 6.2.5]
+- Fixed recent files in the ini file storage
+- Fixed errors processing in the transports
+- Fixed code editor for long script
+- Fixed text wrapping for traditional Chinese
++ Added CharSpacing support in the SVG export
+[6.2.3]
++ Added TfrxMemoView.UnderlinesTextMode property. (ulmNone - no show under lines, ulmUnderlinesAll - show under lines
+  at the whole area of object, ulmUnderlinesText - show under lines for text only, ulmUnderlinesTextAndEmptyLines -
+  show under lines for text and empty lines)
+- Fixed AV in the PDF export with some fonts
+- Fixed TfrxMemoView.Underlines rendering
+- Fixed GS1-128 parsing
+[6.2.2]
+- Fixed Outline checkbox behavior in the PDF export dialog
+- Fixed AV when field name not exists in the dataset
+[6.2.1]
+- Prevent flickering in the report preview with drill-down reports
+- Fixed random crashed during report reloads
+- Fixed exporting of TfrxTableCell with HTMLTags to PDF
+
+Version 6.2
+----------------------------
+[6.1.17]
+- Fixed SVG and HTML5 exports with MultiPage=True
+
+[6.1.16]
++ Added new map layer which allows to load geo-data from DB (supports WKT and WKB)
+* Internet transports improved and removed dependencies from third-party components (removed Indy HTTPS dependency)
+
+[6.1.15]
++ Added new CanShrink property for all stretchable objects
+* Re-worked and optimized standard shift mechanism (ShiftEngine = seTree)
++ Added new linear shift mechanism (mechanism can be changed by ShiftEngine property of Band. ShiftEngine = seLinear)
+- Fixed TfrxReport in the object inspector
+- Fixed TfrxPreviewForm.FormClose
+
+[6.1.14]
+- Fixed loading of TfrxReport.PrintIfEmpty property
+- Fixed XLSX export for MS Excel 2003 compatibility
+- Fixed page number editor in the preview
+- Fixed 2D barcodes scaling when AutoSize = False and FontScaled = False
+- Fixed preview's restoring in the C++ Builder
++ Added CharCase property for dialog controls
+- Fixed GS1 Code 128 encoding
+
+[6.1.13]
+- Fixed OnContentChanged event for some cases
+- Fixed font's exporting in the TfrxDOCXExport
+- Fixed TfrxMemoView with Clipped = False in the preview
+- Fixed expressions processing for memos with DataField
++ Added possibility to set custom font color in the style editor
++ Added ParagraphGap in the DOCX export
+- Fixed ParagraphGap in the HTML export
+
+[6.1.12]
+- Fixed ParagraphGap in the RTF export
+- Fixed LineSpacing in the RTF export
++ Added TfrxPreview.PageSetupDialog for C++Builder compatibility
+
+[6.1.11]
+- Fixed expressions in the TfrxRichView for Windows 10
+- Fixed font embedding in PDF export for some fonts
+- Fixed height calculation of memo object for large font size
+- Fixed issue when CheckBox.Checked state doesn't save properly
+- Fixed PDF export bug when some text may appears as RTL
+
+[6.1.10]
+- Fixed error when TfrxDBDataset.UserName = report's object name
+- Fixed TfrxDBDataset.Next for RangeEnd = reCurrent and RangeBegin = rbCurrent
+* Cross Editor form is sized now
+- Fixed Indy 10 with Delphi 7
+- Fixed editors' windows restoring (menu View-Options-Restore defaults)
+* Changed function GetStreamHash to procedure for C++Builder compatibility
+
+[6.1.9]
+----------------------------
+- Fixed frame width in the DOCX and XLSX exports
+- Fixed bad export output of RTF tables with page breaks
+
+[6.1.7-6.1.8]
+----------------------------
+- Fixed division by zero in the PDF export
+- Fixed bug in Biff8 export when old Excel versions won't open document
+- Fixed Self value when using in Table cells
++ Added new helpers for Guidelines
+- Fixed bug with MouseEnter/Leave events under x64 environment
+
+[6.1.6]
+----------------------------
+* Changed method name TfrxView.GetMetaFile to GetVectorGraphic for C++Builder compatibility
+- Fixed  export of Table object via EMF processor
+- Added EMR_PIE processing via EMF
++ Added Lazarus package (first Alpha version of main package)
+
+[6.1.5]
+----------------------------
+- Fixed export Hebrew font via EMF processor
+- Fixed crash when using the report Designer on panel
+- Fixed export of Table object in PDF
+- Fixed issue when DialogForm appears twice for DetailPage report
+
+[6.1.4]
+----------------------------
+* Improved PDF and SVG export for Rotated text
+- Fixed RTF export when document with page breaks had wrong objects size
+- Fixed events for objects inside table when AutoSize set to False
++ Added new events for TfrxUserDataset (OnGetBlobValue/OnIsBlobField) for blobs processing
+- Fixed PDF structure which may cause incorrect output in some PDF Viewers
+- Fixed searching of expressions inside RichText with linebreak under Windows8 and above
+- Fixed interactive objects events in preview (which may causes map shaking)
++ Added RTTI for USPS Intelligent Mail and GS1 Code128 barcodes
+- Fixed initial values for USPS Intelligent Mail and GS1 Code128 barcodes
++ Added RTTI for TfrxCellurarTextObject
+
+[6.1.3]
+----------------------------
++ Added new barcode auto-encode GS1-Code128 (use simple GS1 rules)
+- Fixed Crosstab bug with OnCalcWidth event when returned Width = MaxWidth
+- Fixed memory leak in the TfrxMailExport with Indy
+- Fixed FIB packages
+- Fixed export filter error when DefaultPath not empty and FileName with full path
+
+[6.1.2]
+----------------------------
++ Added handing of Crosstab.OnCalcWidth event when AutoSize set to false
+- Fixed Docx export with east Asia fonts names
+- Fixed error caused by OnReportClickObject event
+- Fixed issue when frxDotMatrixExport shows save file dialog
+- Fixed shift mechanism for Table object
+- Fixed FlowTo mechanism for objects used inside Table object
+
+[6.1.1]
+----------------------------
++ Added TfrxReportPage.AlignChildren support in the script RTTI
+- Fixed Unknown error(1110) in the TfrxMailExport
+- Fixed issue when decreasing height of column in OnCalcHeight event cut off text in column header
+- Fixed bug when changing export ShowDialog property in AfterPrint event doesn't work
+- Fixed bug with TfrxDBDataSet.OnNext event
+
+
+Version 6.1
+----------------------------
+- Fixed TfrxMailExport.ConfurmReading in the export dialog
+- Fixed hints in the preview
++ Added &A; &B; &C; &D; start/stop control codes for Codabar barcodes
+- Improved ODT export filter to use different styles for different report pages
+- Improved ODT export filter to use max page sizes for Continues sheet
+- Fixed table(objects) width in ODT export filter (doesn't stretch to page width);
+- Fixed text processing with AllowHTML in ODT export filter
+- Fixed TfrxDateEditControl with WeekNumbers = True for Windows XP
+
+[6.0.10]
+----------------------------
+- Fixed bug when OnPreviewClick does not refresh modified object
+- Fixed performance drop with objects "Shift" mechanism
+- Fixed C++ Builder issue with TfrxReportPage
+- Fixed saving of processing property in DFM
+
+[6.0.9]
+----------------------------
++ Added support of PDF/A-2 format
+
+[6.0.8]
+----------------------------
+- Improved rotated text in PDF, SVG and HTML-Div export filters
+- Fixed bug with expressions processing and Drill-Down groups
+
+[6.0.7]
+----------------------------
+- Fixed EMF export
+- Fixed export of table object in graphics export filters
+- Added Arabic numbers substitution in PDF export (with RTLReading)
+
+[6.0.6]
+----------------------------
+- Fixed calculating of table cell with vertical Font rotation
+- Fixed Hindy and Thai ligatures in PDF export
+- Fixed Char spacing with HAlign in PDF export
+- Fixed Copy/Paste of internal DB component
+- Fixed vertical barcodes borders
+- Fixed ADO parameters in the designer
+
+[6.0.5]
+----------------------------
++ Added Anchors for report objects and Dialog controls
++ Added Table rtti helpers for TableWidth and TableHeight properties
+- Fixed bug in IO transports with network path (in DefaultPath)
+- Improved multi-threading support in PDF export
+- Fixed bug with bad position of images in PDF export
+
+[6.0.4]
+----------------------------
++ Added AutoSize property for barcodes (default true), set it to false prevent component from size changing (changes zoom instead)
++ Added MinWidth and MaxWidth for table column can be set ti limit auto size (0 unlimited)
++ Added MinHeight and MaxHeight for table row can be set ti limit auto size (0 unlimited)
+- Fixed bug when using detail report with inheritance and OnLoadTemplate event
+
+[6.0.3]
+----------------------------
++ Added new report variables TableRow and TableColumn can be used inside table objects
++ Added ability to set path for "Indy" library in Recompile
++ Added new align mode baHidden objects with this mode don't collide with others
+- Fixed line spacing in PDF and SVG exports
+- Fixed ADO parameters
+- Fixed highlight editor for group of objects
+- Fixed issues with band Fill/Frame and aligned objects 
+- Fixed bug in column header with band Frame/Fill
+- Fixed exporting of report properties  in OXML exports
+- Fixed FNC1 processing in Datamatrix barcode
+- Fixed PadLeft/PadRight functions under with unicode environment
+- Fixed issue when used RangeEnd = reCount to limit records of the dataset
+- Fixed error which can appear after deleting table column
+
+[6.0.2]
+----------------------------
++ Added TfrxChild.ToNRows and ToNRowsMode properties allows to fill empty page space (see 15.fr3 report in FRMain demo)
+- Fixed aggregate functions for table object
+- Fixed issues when paste data component to report page
+- Fixed SlaveExport property for export filters
+
+[6.0.1]
+----------------------------
++ Added TfrxPreviewOptions.AllowPreviewEdit property - Set it to False to disable any interactive editors in the report preview
+- Fixed export of images embedded in RichView
+- Optimization for big tables and big reports (Designer can handle tables with 10000 cells and more)
+- Fixed vertical band behavior in the report designer
+- Objects containers like table can be used on vertical bands
+- Fixed SaveDialog when FileName is empty
+- Fixed OpenAfterExport behavior
+- Fixed HTML Tags in RTF export
+
+Fixes and improvements during beta
+----------------------------
++ Added Cellular Text object
++ Added TfrxPageControl.OnChanging event
++ Added new Interactive map layer (it possible to draw on map layer)
++ Added ability to copy/paste table's rows/columns
++ Added events for PageControl component
++ Added Object selection in report preview (Hold Shift and mouse click + move. Use PreviewOptions.Buttons to turn it off)
++ Added New copy/paste editors (it's possible to copy content of objects)
++ Added TfrxPageControl.HotTrack property
++ Added Band.AlignChildren in script Rtti
++ Added Rtti module for Table object (and example how to use it)
++ Added TfrxPageControl for dialog form
++ Added Gauge control for dialog form
+- Added IO packages to recompile.exe
+- Improved export of Table and CellularText objects
+- Improved compatibility with components designed for FR5 (like FastCube report components)
+- Improved vector export engine
+- Guidelines now works with table rows/columns
+- Optimized Table object XML serialization
+- InPlace editors now stores state in system Registry
+- Fixed codepage in TfrxRichView under Windows 10
+- Fixed resorces in export dialogs
+- Fixed Height calculation of TfrxMemoView with vertical font rotation
+- Fixed DropDown inplace editor
+- Fixed copy/paste codepage for Table object
+- Fixed copy/paste of whole Table object
+- Added missing text resources
+- Fixed problem with wrong text wrap in PDF export (in some cases)
+- Fixed problem with "tight" text in PDF export (symbols overlap each other)
+- Fixed problem with AutoWidth and Preview
+- Fixed Error message after closing IDE
+- Fixed compatibility with C++Builder
+- Fixed IO filters issue
+- Removed unused Options from "Options dialog"
+- Several visual improvements of Designer and Preview UI
+- Added missing icons for TfrxComponent's
+- Fixed Horizontal and Vertial text align in SVG and HTML5 exports
+- Fixed missing IOTransport package for Delphi 2010
+- Fixed bug with TfrxMemoView.Unerlines
+- Fixed AV in the PDF export
+- Fixed MirrorMargins in PDF export
+- Fixed missing resources for some languages
+- Fixed preview save dialog without Transport filters
+- Fixed compressed report
+- Fixed text kerning in PDF export
+- Fixed duplicated field in TfrxDBDataSet
+- Fixed issue with Table object in some exports filters
+- Fixed compatibility with old E-mail export filter (better to use new Transports)
+- Fixed Interactive maps with detailed report
+- Fixed problem with map editor (adjust maps to wrong layers)
+- Fixed missing default string resources
+- Fixed error in Code Completion thread when using fsGlobalUnit
+- Fixed Break points saving in file
+- Fixed container dialog controls behavior in report designer workspace
+- Fixed save to file IOTransport registration
+- Fixed IOTransport network path
+- Fixed several issues with TfrxPageControl
+- Moved some fixes and improvements from Fast Report 5 branch
+- Fixed InPlace data editor

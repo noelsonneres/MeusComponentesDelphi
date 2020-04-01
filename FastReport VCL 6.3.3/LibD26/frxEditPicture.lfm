@@ -1,0 +1,114 @@
+object frxPictureEditorForm: TfrxPictureEditorForm
+  Left = 200
+  Height = 295
+  Top = 107
+  Width = 331
+  BorderStyle = bsDialog
+  Caption = 'Picture'
+  ClientHeight = 295
+  ClientWidth = 331
+  Color = clBtnFace
+  Font.Color = clBlack
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  KeyPreview = True
+  OnCreate = FormCreate
+  OnKeyDown = FormKeyDown
+  OnShow = FormShow
+  Position = poScreenCenter
+  ShowHint = True
+  LCLVersion = '1.2.6.0'
+  object ToolBar: TToolBar
+    Left = 0
+    Height = 23
+    Top = 0
+    Width = 331
+    AutoSize = True
+    BorderWidth = 2
+    ButtonHeight = 23
+    EdgeBorders = []
+    TabOrder = 0
+    object LoadB: TToolButton
+      Left = 1
+      Top = 0
+      Caption = 'Load'
+      ImageIndex = 1
+      OnClick = LoadBClick
+    end
+    object CopyB: TToolButton
+      Left = 24
+      Top = 0
+      Caption = 'Copy'
+      ImageIndex = 6
+      OnClick = CopyBClick
+    end
+    object PasteB: TToolButton
+      Left = 47
+      Top = 0
+      Caption = 'Paste'
+      ImageIndex = 7
+      OnClick = PasteBClick
+    end
+    object ClearB: TToolButton
+      Left = 70
+      Top = 0
+      Caption = 'Clear'
+      ImageIndex = 82
+      OnClick = ClearBClick
+    end
+    object ToolButton1: TToolButton
+      Left = 93
+      Top = 0
+      Width = 10
+      ImageIndex = 3
+      Style = tbsSeparator
+    end
+    object CancelB: TToolButton
+      Left = 103
+      Top = 0
+      Caption = 'Cancel'
+      ImageIndex = 55
+      OnClick = CancelBClick
+    end
+    object OkB: TToolButton
+      Left = 126
+      Top = 0
+      Caption = 'OK'
+      ImageIndex = 56
+      OnClick = OkBClick
+    end
+  end
+  object Box: TScrollBox
+    Left = 0
+    Height = 249
+    Top = 23
+    Width = 331
+    HorzScrollBar.Page = 329
+    VertScrollBar.Page = 245
+    Align = alClient
+    BorderStyle = bsNone
+    ClientHeight = 249
+    ClientWidth = 331
+    Color = clWindow
+    ParentColor = False
+    TabOrder = 1
+    object Image: TImage
+      Left = 4
+      Height = 241
+      Top = 4
+      Width = 325
+      Center = True
+    end
+  end
+  object StatusBar: TStatusBar
+    Left = 0
+    Height = 23
+    Top = 272
+    Width = 331
+    Panels = <    
+      item
+        Width = 50
+      end>
+    SimplePanel = False
+  end
+end

@@ -1,0 +1,174 @@
+object MapColorRangeForm: TMapColorRangeForm
+  Tag = 6350
+  Left = 358
+  Height = 240
+  Top = 205
+  Width = 485
+  ActiveControl = OkB
+  BorderStyle = bsDialog
+  Caption = 'MapColorRangeForm'
+  ClientHeight = 240
+  ClientWidth = 485
+  Color = clBtnFace
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  OnKeyDown = FormKeyDown
+  Position = poScreenCenter
+  LCLVersion = '1.8.2.0'
+  object Bevel1: TBevel
+    Left = 280
+    Height = 109
+    Top = 8
+    Width = 197
+    Shape = bsFrame
+  end
+  object AutoLabel: TLabel
+    Tag = 6351
+    Left = 288
+    Height = 13
+    Top = 12
+    Width = 26
+    Caption = 'Auto'
+    ParentColor = False
+  end
+  object UpSpeedButton: TSpeedButton
+    Left = 240
+    Height = 23
+    Top = 8
+    Width = 24
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    OnClick = UpSpeedButtonClick
+    ParentFont = False
+  end
+  object DownSpeedButton: TSpeedButton
+    Left = 240
+    Height = 23
+    Top = 32
+    Width = 24
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    OnClick = DownSpeedButtonClick
+    ParentFont = False
+  end
+  object CollectionListBox: TListBox
+    Left = 8
+    Height = 191
+    Top = 8
+    Width = 229
+    Anchors = [akTop, akLeft, akBottom]
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    ItemHeight = 0
+    OnClick = CollectionListBoxClick
+    ParentFont = False
+    ScrollWidth = 227
+    TabOrder = 0
+    TopIndex = -1
+  end
+  object CancelB: TButton
+    Tag = 2
+    Left = 400
+    Height = 25
+    Top = 204
+    Width = 75
+    Cancel = True
+    Caption = 'Cancel'
+    ModalResult = 2
+    TabOrder = 8
+  end
+  object OkB: TButton
+    Tag = 1
+    Left = 320
+    Height = 25
+    Top = 204
+    Width = 75
+    Caption = 'Ok'
+    Default = True
+    ModalResult = 1
+    OnClick = OkBClick
+    TabOrder = 7
+  end
+  object ColorColorBox: TColorBox
+    Left = 356
+    Height = 31
+    Top = 28
+    Width = 110
+    ItemHeight = 16
+    TabOrder = 2
+  end
+  object StartEdit: TEdit
+    Left = 356
+    Height = 23
+    Top = 56
+    Width = 110
+    OnChange = StartEditChange
+    TabOrder = 4
+  end
+  object EndEdit: TEdit
+    Left = 356
+    Height = 23
+    Top = 84
+    Width = 110
+    OnChange = StartEditChange
+    TabOrder = 6
+  end
+  object ColorCheckBox: TCheckBox
+    Tag = 6352
+    Left = 292
+    Height = 24
+    Top = 32
+    Width = 63
+    Caption = 'Color'
+    OnClick = ColorCheckBoxClick
+    TabOrder = 1
+  end
+  object StartCheckBox: TCheckBox
+    Tag = 6353
+    Left = 292
+    Height = 24
+    Top = 60
+    Width = 60
+    Caption = 'Start'
+    OnClick = ColorCheckBoxClick
+    TabOrder = 3
+  end
+  object EndCheckBox: TCheckBox
+    Tag = 6354
+    Left = 292
+    Height = 24
+    Top = 88
+    Width = 53
+    Caption = 'End'
+    OnClick = ColorCheckBoxClick
+    TabOrder = 5
+  end
+  object AddButton: TButton
+    Tag = 6355
+    Left = 8
+    Height = 25
+    Top = 204
+    Width = 87
+    Anchors = [akLeft, akBottom]
+    Caption = 'Add'
+    OnClick = AddButtonClick
+    TabOrder = 9
+  end
+  object DeleteButton: TButton
+    Tag = 6356
+    Left = 100
+    Height = 25
+    Top = 204
+    Width = 88
+    Anchors = [akLeft, akBottom]
+    Caption = 'Delete'
+    OnClick = DeleteButtonClick
+    TabOrder = 10
+  end
+end

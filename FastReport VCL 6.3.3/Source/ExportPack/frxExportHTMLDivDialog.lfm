@@ -1,0 +1,100 @@
+inherited frxHTMLDIVExportDialog: TfrxHTMLDIVExportDialog
+  Tag = 9305
+  Left = 473
+  Top = 107
+  ActiveControl = OkB
+  inherited PageControl1: TPageControl
+    inherited ExportPage: TTabSheet
+      inherited GroupQuality: TGroupBox
+        object PicturesL: TLabel[0]
+          Left = 12
+          Height = 13
+          Top = 73
+          Width = 73
+          AutoSize = False
+          Caption = 'Pictures'
+          ParentColor = False
+        end
+        object StylesCB: TCheckBox[1]
+          Tag = 8202
+          Left = 12
+          Height = 17
+          Top = 4
+          Width = 47
+          Caption = 'Styles'
+          Checked = True
+          State = cbChecked
+          TabOrder = 1
+        end
+        object UnifiedPicturesCB: TCheckBox[2]
+          Tag = 9512
+          Left = 12
+          Height = 17
+          Top = 24
+          Width = 92
+          Caption = 'Unified Pictures'
+          Checked = True
+          State = cbChecked
+          TabOrder = 0
+        end
+        object PicturesCB: TCheckBox[3]
+          Tag = 8002
+          Left = 144
+          Height = 17
+          Top = 4
+          Width = 56
+          Caption = 'Pictures'
+          Checked = True
+          State = cbChecked
+          TabOrder = 2
+        end
+        object MultipageCB: TCheckBox[4]
+          Tag = 8207
+          Left = 144
+          Height = 17
+          Top = 24
+          Width = 64
+          Caption = 'Multipage'
+          TabOrder = 3
+        end
+        object PFormatCB: TComboBox[5]
+          Left = 91
+          Height = 21
+          Top = 69
+          Width = 168
+          ItemHeight = 13
+          ItemIndex = 0
+          Items.Strings = (
+            'PNG'
+            'EMF'
+            'BMP'
+            'JPEG'
+          )
+          TabOrder = 4
+          Text = 'PNG'
+        end
+        object FormattedCB: TCheckBox[6]
+          Tag = 9513
+          Left = 12
+          Height = 17
+          Top = 44
+          Width = 68
+          Caption = 'Formatted'
+          TabOrder = 5
+        end
+        object NavigationCB: TCheckBox[7]
+          Tag = 8206
+          Left = 144
+          Height = 17
+          Top = 44
+          Width = 65
+          Caption = 'Navigator'
+          TabOrder = 6
+        end
+      end
+      inherited GroupPageRange: TGroupBox
+        Left = 0
+      end
+    end
+  end
+end

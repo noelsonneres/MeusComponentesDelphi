@@ -1,0 +1,188 @@
+object frxHighlightEditorForm: TfrxHighlightEditorForm
+  Left = 195
+  Height = 288
+  Top = 120
+  Width = 492
+  BorderStyle = bsDialog
+  Caption = 'Highlight'
+  ClientHeight = 288
+  ClientWidth = 492
+  Color = clBtnFace
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  KeyPreview = True
+  OnCreate = FormCreate
+  OnHide = FormHide
+  OnKeyDown = FormKeyDown
+  OnShow = FormShow
+  Position = poScreenCenter
+  ShowHint = True
+  LCLVersion = '1.2.6.0'
+  object OKB: TButton
+    Left = 330
+    Height = 25
+    Top = 256
+    Width = 75
+    Caption = 'OK'
+    Default = True
+    ModalResult = 1
+    TabOrder = 0
+  end
+  object CancelB: TButton
+    Left = 410
+    Height = 25
+    Top = 256
+    Width = 75
+    Cancel = True
+    Caption = 'Cancel'
+    ModalResult = 2
+    TabOrder = 1
+  end
+  object ConditionsGB: TGroupBox
+    Left = 8
+    Height = 235
+    Top = 8
+    Width = 297
+    Caption = 'Conditions'
+    ClientHeight = 217
+    ClientWidth = 293
+    TabOrder = 2
+    object UpB: TSpeedButton
+      Left = 210
+      Height = 22
+      Top = 158
+      Width = 23
+      OnClick = UpBClick
+    end
+    object DownB: TSpeedButton
+      Left = 210
+      Height = 22
+      Top = 182
+      Width = 23
+      OnClick = DownBClick
+    end
+    object HighlightsLB: TListBox
+      Left = 12
+      Height = 204
+      Top = 0
+      Width = 189
+      ItemHeight = 0
+      OnClick = HighlightsLBClick
+      TabOrder = 0
+    end
+    object AddB: TButton
+      Left = 210
+      Height = 25
+      Top = 0
+      Width = 75
+      Caption = 'Add'
+      OnClick = AddBClick
+      TabOrder = 1
+    end
+    object DeleteB: TButton
+      Left = 210
+      Height = 25
+      Top = 30
+      Width = 75
+      Caption = 'Delete'
+      OnClick = DeleteBClick
+      TabOrder = 2
+    end
+    object EditB: TButton
+      Left = 210
+      Height = 25
+      Top = 60
+      Width = 75
+      Caption = 'Edit'
+      OnClick = EditBClick
+      TabOrder = 3
+    end
+  end
+  object StyleGB: TGroupBox
+    Left = 312
+    Height = 235
+    Top = 8
+    Width = 173
+    Caption = 'Style'
+    ClientHeight = 217
+    ClientWidth = 169
+    TabOrder = 3
+    object FrameB: TSpeedButton
+      Left = 36
+      Height = 25
+      Top = 1
+      Width = 125
+      Caption = 'Frame'
+      Margin = 3
+      OnClick = FrameBClick
+    end
+    object FillB: TSpeedButton
+      Left = 36
+      Height = 25
+      Top = 31
+      Width = 125
+      Caption = 'Fill'
+      Margin = 3
+      OnClick = FillBClick
+    end
+    object FontB: TSpeedButton
+      Left = 36
+      Height = 25
+      Top = 61
+      Width = 125
+      Caption = 'Font'
+      Margin = 3
+      OnClick = FontBClick
+    end
+    object PaintBox1: TPaintBox
+      Left = 12
+      Height = 65
+      Top = 139
+      Width = 149
+      OnPaint = PaintBox1Paint
+    end
+    object FrameCB: TCheckBox
+      Left = 12
+      Height = 19
+      Top = 5
+      Width = 20
+      OnClick = FrameCBClick
+      TabOrder = 0
+    end
+    object FillCB: TCheckBox
+      Left = 12
+      Height = 19
+      Top = 35
+      Width = 20
+      OnClick = FillCBClick
+      TabOrder = 1
+    end
+    object FontCB: TCheckBox
+      Left = 12
+      Height = 19
+      Top = 65
+      Width = 20
+      OnClick = FontCBClick
+      TabOrder = 2
+    end
+    object VisibleCB: TCheckBox
+      Left = 12
+      Height = 19
+      Top = 95
+      Width = 49
+      Caption = 'Visible'
+      OnClick = VisibleCBClick
+      TabOrder = 3
+    end
+  end
+  object FontDialog1: TFontDialog
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'MS Sans Serif'
+    MinFontSize = 0
+    MaxFontSize = 0
+    left = 236
+    top = 256
+  end
+end

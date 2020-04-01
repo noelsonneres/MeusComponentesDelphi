@@ -1,0 +1,31 @@
++Arabic             Khalid Hazmi <khh6000@hotmail.com>
++Brazil             Marcos A Silveira <pr.mas@uol.com.br>
++Portuguese          Fernando Dias <fernandodias@easygate.pt>
++Bulgarian          Georgi Ivanov <g_i_ivanov@mail.bg>
+Catalon
+Chinese             <soarway@hotmail.com>
++Croatian            Antun Tosenberger <antun.tosenberger@zg.t-com.hr>
+Czech               Josef Dustira <jdmail@seznam.cz>
++Danish              Kurt Bilde <kub@adm.sdu.dk>
+Dutch               Gijsbert Tanis <gt@laarmanvwaay.nl>
++English
+Farsi               <sasan_vm@yahoo.com>
++French              Pierre Y. <pierre@crisalid.com>
++German              werner <werner@infissoft.it>
++Greek               Karagikas Dimitris <tdka@adcon.gr>
++Hungarian           Gabor Berenyi <gberenyi@csdonline.hu>
+Indonesian
+Italian             <evolution@evolution.it>
+Japanese
+Latvian
+Polish              <service@pad.com.pl>
++Romanian            Sorin Pohontu <sorin.frontline@assist.ro>
++Serbian             Nenkov Sinisa <sinisanenkov@yahoo.com>
++Slovak              "Ing. Viktor Hal¡sz" <halasz.viktor@stonline.sk>
++Slovene             Planles <info@planles.net>
++Spanish             Pepe Alonso <pepealonso@supercable.es>
++Swedish             Jan W <jan.w@ideida.se>
+Swiss
++Taiwan              Crispin, Chen <crispin@giga.net.tw>
++Turkish             Burhan Cakmak <burhan_ast@hotmail.com>
++Ukrainian           Sergiy Sekela <sekelas@gmail.com>

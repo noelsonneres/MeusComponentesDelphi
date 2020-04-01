@@ -1,0 +1,149 @@
+{******************************************************************************}
+{ Projeto: Componente ACBreSocial                                              }
+{  Biblioteca multiplataforma de componentes Delphi para envio dos eventos do  }
+{ eSocial - http://www.esocial.gov.br/                                         }
+{                                                                              }
+{ Direitos Autorais Reservados (c) 2008 Wemerson Souto                         }
+{                                       Daniel Simoes de Almeida               }
+{                                       André Ferreira de Moraes               }
+{                                                                              }
+{ Colaboradores nesse arquivo:                                                 }
+{                                                                              }
+{  Você pode obter a última versão desse arquivo na pagina do Projeto ACBr     }
+{ Componentes localizado em http://www.sourceforge.net/projects/acbr           }
+{                                                                              }
+{                                                                              }
+{  Esta biblioteca é software livre; você pode redistribuí-la e/ou modificá-la }
+{ sob os termos da Licença Pública Geral Menor do GNU conforme publicada pela  }
+{ Free Software Foundation; tanto a versão 2.1 da Licença, ou (a seu critério) }
+{ qualquer versão posterior.                                                   }
+{                                                                              }
+{  Esta biblioteca é distribuída na expectativa de que seja útil, porém, SEM   }
+{ NENHUMA GARANTIA; nem mesmo a garantia implícita de COMERCIABILIDADE OU      }
+{ ADEQUAÇÃO A UMA FINALIDADE ESPECÍFICA. Consulte a Licença Pública Geral Menor}
+{ do GNU para mais detalhes. (Arquivo LICENÇA.TXT ou LICENSE.TXT)              }
+{                                                                              }
+{  Você deve ter recebido uma cópia da Licença Pública Geral Menor do GNU junto}
+{ com esta biblioteca; se não, escreva para a Free Software Foundation, Inc.,  }
+{ no endereço 59 Temple Street, Suite 330, Boston, MA 02111-1307 USA.          }
+{ Você também pode obter uma copia da licença em:                              }
+{ http://www.opensource.org/licenses/lgpl-license.php                          }
+{                                                                              }
+{ Daniel Simões de Almeida  -  daniel@djsystem.com.br  -  www.djsystem.com.br  }
+{              Praça Anita Costa, 34 - Tatuí - SP - 18270-410                  }
+{                                                                              }
+{******************************************************************************}
+
+{******************************************************************************
+|* Historico
+|*
+|* 27/10/2015: Jean Carlo Cantu, Tiago Ravache
+|*  - Doação do componente para o Projeto ACBr
+******************************************************************************}
+{$I ACBr.inc}
+
+package ACBre_Social;
+
+{$R *.res}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO ON}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION OFF}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES ON}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$DESCRIPTION 'ACBr - eSocial - (http://www.projetoacbr.com.br/)'}
+{$IMPLICITBUILD OFF}
+{$DEFINE DEBUG}
+
+requires
+  vcl,
+  rtl,
+  designide,
+  ACBr_DFeComum;
+
+contains
+  ACBreSocial in '..\..\..\..\Fontes\ACBrDFe\ACBreSocial\ACBreSocial.pas',
+  ACBreSocialConfiguracoes in '..\..\..\..\Fontes\ACBrDFe\ACBreSocial\ACBreSocialConfiguracoes.pas',
+  ACBreSocialEventos in '..\..\..\..\Fontes\ACBrDFe\ACBreSocial\ACBreSocialEventos.pas',
+  ACBreSocialLoteEventos in '..\..\..\..\Fontes\ACBrDFe\ACBreSocial\ACBreSocialLoteEventos.pas',
+  ACBreSocialReg in '..\..\..\..\Fontes\ACBrDFe\ACBreSocial\ACBreSocialReg.pas',
+  ACBreSocialWebServices in '..\..\..\..\Fontes\ACBrDFe\ACBreSocial\ACBreSocialWebServices.pas',
+  pcesGerador in '..\..\..\..\Fontes\ACBrDFe\ACBreSocial\PCNeSocial\pcesGerador.pas',
+  pcesCommon in '..\..\..\..\Fontes\ACBrDFe\ACBreSocial\PCNeSocial\pcesCommon.pas',
+  pcesConversaoeSocial in '..\..\..\..\Fontes\ACBrDFe\ACBreSocial\PCNeSocial\pcesConversaoeSocial.pas',
+  pcesIniciais in '..\..\..\..\Fontes\ACBrDFe\ACBreSocial\PCNeSocial\pcesIniciais.pas',
+  pcesNaoPeriodicos in '..\..\..\..\Fontes\ACBrDFe\ACBreSocial\PCNeSocial\pcesNaoPeriodicos.pas',
+  pcesPeriodicos in '..\..\..\..\Fontes\ACBrDFe\ACBreSocial\PCNeSocial\pcesPeriodicos.pas',
+  pcesConsultaIdentEvt in '..\..\..\..\Fontes\ACBrDFe\ACBreSocial\PCNeSocial\pcesConsultaIdentEvt.pas',
+  pcesRetConsultaIdentEvt in '..\..\..\..\Fontes\ACBrDFe\ACBreSocial\PCNeSocial\pcesRetConsultaIdentEvt.pas',
+  pcesRetConsultaLote in '..\..\..\..\Fontes\ACBrDFe\ACBreSocial\PCNeSocial\pcesRetConsultaLote.pas',
+  pcesRetDownloadEvt in '..\..\..\..\Fontes\ACBrDFe\ACBreSocial\PCNeSocial\pcesRetDownloadEvt.pas',
+  pcesRetEnvioLote in '..\..\..\..\Fontes\ACBrDFe\ACBreSocial\PCNeSocial\pcesRetEnvioLote.pas',
+  pcesRetornoClass in '..\..\..\..\Fontes\ACBrDFe\ACBreSocial\PCNeSocial\pcesRetornoClass.pas',
+  pcesS1000 in '..\..\..\..\Fontes\ACBrDFe\ACBreSocial\PCNeSocial\pcesS1000.pas',
+  pcesS1005 in '..\..\..\..\Fontes\ACBrDFe\ACBreSocial\PCNeSocial\pcesS1005.pas',
+  pcesS1010 in '..\..\..\..\Fontes\ACBrDFe\ACBreSocial\PCNeSocial\pcesS1010.pas',
+  pcesS1020 in '..\..\..\..\Fontes\ACBrDFe\ACBreSocial\PCNeSocial\pcesS1020.pas',
+  pcesS1030 in '..\..\..\..\Fontes\ACBrDFe\ACBreSocial\PCNeSocial\pcesS1030.pas',
+  pcesS1035 in '..\..\..\..\Fontes\ACBrDFe\ACBreSocial\PCNeSocial\pcesS1035.pas',
+  pcesS1040 in '..\..\..\..\Fontes\ACBrDFe\ACBreSocial\PCNeSocial\pcesS1040.pas',
+  pcesS1050 in '..\..\..\..\Fontes\ACBrDFe\ACBreSocial\PCNeSocial\pcesS1050.pas',
+  pcesS1060 in '..\..\..\..\Fontes\ACBrDFe\ACBreSocial\PCNeSocial\pcesS1060.pas',
+  pcesS1070 in '..\..\..\..\Fontes\ACBrDFe\ACBreSocial\PCNeSocial\pcesS1070.pas',
+  pcesS1080 in '..\..\..\..\Fontes\ACBrDFe\ACBreSocial\PCNeSocial\pcesS1080.pas',
+  pcesS1200 in '..\..\..\..\Fontes\ACBrDFe\ACBreSocial\PCNeSocial\pcesS1200.pas',
+  pcesS1202 in '..\..\..\..\Fontes\ACBrDFe\ACBreSocial\PCNeSocial\pcesS1202.pas',
+  pcesS1207 in '..\..\..\..\Fontes\ACBrDFe\ACBreSocial\PCNeSocial\pcesS1207.pas',
+  pcesS1210 in '..\..\..\..\Fontes\ACBrDFe\ACBreSocial\PCNeSocial\pcesS1210.pas',
+  pcesS1250 in '..\..\..\..\Fontes\ACBrDFe\ACBreSocial\PCNeSocial\pcesS1250.pas',
+  pcesS1260 in '..\..\..\..\Fontes\ACBrDFe\ACBreSocial\PCNeSocial\pcesS1260.pas',
+  pcesS1270 in '..\..\..\..\Fontes\ACBrDFe\ACBreSocial\PCNeSocial\pcesS1270.pas',
+  pcesS1280 in '..\..\..\..\Fontes\ACBrDFe\ACBreSocial\PCNeSocial\pcesS1280.pas',
+  pcesS1295 in '..\..\..\..\Fontes\ACBrDFe\ACBreSocial\PCNeSocial\pcesS1295.pas',
+  pcesS1298 in '..\..\..\..\Fontes\ACBrDFe\ACBreSocial\PCNeSocial\pcesS1298.pas',
+  pcesS1299 in '..\..\..\..\Fontes\ACBrDFe\ACBreSocial\PCNeSocial\pcesS1299.pas',
+  pcesS1300 in '..\..\..\..\Fontes\ACBrDFe\ACBreSocial\PCNeSocial\pcesS1300.pas',
+  pcesS2190 in '..\..\..\..\Fontes\ACBrDFe\ACBreSocial\PCNeSocial\pcesS2190.pas',
+  pcesS2200 in '..\..\..\..\Fontes\ACBrDFe\ACBreSocial\PCNeSocial\pcesS2200.pas',
+  pcesS2205 in '..\..\..\..\Fontes\ACBrDFe\ACBreSocial\PCNeSocial\pcesS2205.pas',
+  pcesS2206 in '..\..\..\..\Fontes\ACBrDFe\ACBreSocial\PCNeSocial\pcesS2206.pas',
+  pcesS2210 in '..\..\..\..\Fontes\ACBrDFe\ACBreSocial\PCNeSocial\pcesS2210.pas',
+  pcesS2220 in '..\..\..\..\Fontes\ACBrDFe\ACBreSocial\PCNeSocial\pcesS2220.pas',
+  pcesS2221 in '..\..\..\..\Fontes\ACBrDFe\ACBreSocial\PCNeSocial\pcesS2221.pas',
+  pcesS2230 in '..\..\..\..\Fontes\ACBrDFe\ACBreSocial\PCNeSocial\pcesS2230.pas',
+  pcesS2240 in '..\..\..\..\Fontes\ACBrDFe\ACBreSocial\PCNeSocial\pcesS2240.pas',
+  pcesS2245 in '..\..\..\..\Fontes\ACBrDFe\ACBreSocial\PCNeSocial\pcesS2245.pas',
+  pcesS2250 in '..\..\..\..\Fontes\ACBrDFe\ACBreSocial\PCNeSocial\pcesS2250.pas',
+  pcesS2260 in '..\..\..\..\Fontes\ACBrDFe\ACBreSocial\PCNeSocial\pcesS2260.pas',
+  pcesS2298 in '..\..\..\..\Fontes\ACBrDFe\ACBreSocial\PCNeSocial\pcesS2298.pas',
+  pcesS2299 in '..\..\..\..\Fontes\ACBrDFe\ACBreSocial\PCNeSocial\pcesS2299.pas',
+  pcesS2300 in '..\..\..\..\Fontes\ACBrDFe\ACBreSocial\PCNeSocial\pcesS2300.pas',
+  pcesS2306 in '..\..\..\..\Fontes\ACBrDFe\ACBreSocial\PCNeSocial\pcesS2306.pas',
+  pcesS2399 in '..\..\..\..\Fontes\ACBrDFe\ACBreSocial\PCNeSocial\pcesS2399.pas',
+  pcesS2400 in '..\..\..\..\Fontes\ACBrDFe\ACBreSocial\PCNeSocial\pcesS2400.pas',
+  pcesS3000 in '..\..\..\..\Fontes\ACBrDFe\ACBreSocial\PCNeSocial\pcesS3000.pas',
+  pcesS5001 in '..\..\..\..\Fontes\ACBrDFe\ACBreSocial\PCNeSocial\pcesS5001.pas',
+  pcesS5002 in '..\..\..\..\Fontes\ACBrDFe\ACBreSocial\PCNeSocial\pcesS5002.pas',
+  pcesS5003 in '..\..\..\..\Fontes\ACBrDFe\ACBreSocial\PCNeSocial\pcesS5003.pas',
+  pcesS5011 in '..\..\..\..\Fontes\ACBrDFe\ACBreSocial\PCNeSocial\pcesS5011.pas',
+  pcesS5012 in '..\..\..\..\Fontes\ACBrDFe\ACBreSocial\PCNeSocial\pcesS5012.pas',
+  pcesS5013 in '..\..\..\..\Fontes\ACBrDFe\ACBreSocial\PCNeSocial\pcesS5013.pas',
+  pcesTabelas in '..\..\..\..\Fontes\ACBrDFe\ACBreSocial\PCNeSocial\pcesTabelas.pas';
+
+end.
+

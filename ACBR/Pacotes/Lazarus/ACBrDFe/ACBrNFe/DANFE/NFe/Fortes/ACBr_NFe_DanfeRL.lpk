@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <Package Version="4">
+    <PathDelim Value="\"/>
+    <Name Value="ACBr_NFe_DanfeRL"/>
+    <Type Value="RunAndDesignTime"/>
+    <Author Value="Juliomar Marchetti - Daniel Simões de Almeida"/>
+    <CompilerOptions>
+      <Version Value="11"/>
+      <PathDelim Value="\"/>
+      <SearchPaths>
+        <OtherUnitFiles Value="..\..\..\..\..\..\..\Fontes\ACBrDFe\ACBrNFe\DANFE\NFe\Fortes"/>
+        <UnitOutputDirectory Value="..\..\..\..\..\..\..\Lib\Lazarus\ACBrDFe\ACBrNFe\$(TargetCPU)-$(TargetOS)"/>
+      </SearchPaths>
+      <Other>
+        <CompilerMessages>
+          <IgnoredMessages idx5024="True"/>
+        </CompilerMessages>
+      </Other>
+    </CompilerOptions>
+    <Description Value="ACBr - DANFe em FortesReport - (http://www.projetoacbr.com.br/)"/>
+    <License Value="LGPL"/>
+    <Files Count="10">
+      <Item1>
+        <Filename Value="..\..\..\..\..\..\..\Fontes\ACBrDFe\ACBrNFe\DANFE\NFe\Fortes\ACBrNFeDANFeRL.pas"/>
+        <UnitName Value="ACBrNFeDANFeRL"/>
+      </Item1>
+      <Item2>
+        <Filename Value="..\..\..\..\..\..\..\Fontes\ACBrDFe\ACBrNFe\DANFE\NFe\Fortes\ACBrNFeDANFeRLClass.pas"/>
+        <UnitName Value="ACBrNFeDANFeRLClass"/>
+      </Item2>
+      <Item3>
+        <Filename Value="..\..\..\..\..\..\..\Fontes\ACBrDFe\ACBrNFe\DANFE\NFe\Fortes\ACBrNFeDANFeRLReg.pas"/>
+        <HasRegisterProc Value="True"/>
+        <UnitName Value="ACBrNFeDANFeRLReg"/>
+      </Item3>
+      <Item4>
+        <Filename Value="..\..\..\..\..\..\..\Fontes\ACBrDFe\ACBrNFe\DANFE\NFe\Fortes\ACBrNFeDANFeRLRetrato.pas"/>
+        <UnitName Value="ACBrNFeDANFeRLRetrato"/>
+      </Item4>
+      <Item5>
+        <Filename Value="..\..\..\..\..\..\..\Fontes\ACBrDFe\ACBrNFe\DANFE\NFe\Fortes\ACBrNFeDANFeRLPaisagem.pas"/>
+        <UnitName Value="ACBrNFeDANFeRLPaisagem"/>
+      </Item5>
+      <Item6>
+        <Filename Value="..\..\..\..\..\..\..\Fontes\ACBrDFe\ACBrNFe\DANFE\NFe\Fortes\ACBrNFeDANFeEventoRL.pas"/>
+        <UnitName Value="ACBrNFeDANFeEventoRL"/>
+      </Item6>
+      <Item7>
+        <Filename Value="..\..\..\..\..\..\..\Fontes\ACBrDFe\ACBrNFe\DANFE\NFe\Fortes\ACBrNFeDANFeEventoRLRetrato.pas"/>
+        <UnitName Value="ACBrNFeDANFeEventoRLRetrato"/>
+      </Item7>
+      <Item8>
+        <Filename Value="..\..\..\..\..\..\..\Fontes\ACBrDFe\ACBrNFe\DANFE\NFe\Fortes\ACBrNFeDANFeRLSimplificado.pas"/>
+        <UnitName Value="ACBrNFeDANFeRLSimplificado"/>
+      </Item8>
+      <Item9>
+        <Filename Value="..\..\..\..\..\..\..\Fontes\ACBrDFe\ACBrNFe\DANFE\NFe\Fortes\ACBrNFeDAInutRL.pas"/>
+        <UnitName Value="ACBrNFeDAInutRL"/>
+      </Item9>
+      <Item10>
+        <Filename Value="..\..\..\..\..\..\..\Fontes\ACBrDFe\ACBrNFe\DANFE\NFe\Fortes\ACBrNFeDAInutRLRetrato.pas"/>
+        <UnitName Value="ACBrNFeDAInutRLRetrato"/>
+      </Item10>
+    </Files>
+    <RequiredPkgs Count="2">
+      <Item1>
+        <PackageName Value="ACBrDFeReportRL"/>
+      </Item1>
+      <Item2>
+        <PackageName Value="ACBr_NFe"/>
+      </Item2>
+    </RequiredPkgs>
+    <UsageOptions>
+      <UnitPath Value="$(PkgOutDir)"/>
+    </UsageOptions>
+    <PublishOptions>
+      <Version Value="2"/>
+    </PublishOptions>
+  </Package>
+</CONFIG>

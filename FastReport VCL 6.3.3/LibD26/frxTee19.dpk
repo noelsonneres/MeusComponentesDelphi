@@ -1,0 +1,55 @@
+// Package file for Delphi XE5
+
+package frxTee19;
+{$I frx.inc}
+{$I tee.inc}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO ON}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION OFF}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES ON}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$IMPLICITBUILD ON}
+{$RUNONLY}
+{$DEFINE DEBUG}
+
+requires
+  VCL,
+{$IFDEF TeeChartStd} TEE, TEEUI, {$ENDIF}
+{$IFDEF TeeChartStd7}TEE719, TEEUI719, {$ENDIF}
+{$IFDEF TeeChartStd8}TEE819, TEEUI819, {$ENDIF}
+{$IFDEF TeeChartStd9}TEE919, TEEUI919, {$ENDIF}
+{$IFDEF TeeChart4}   TEE419, TEEPRO419, {$ENDIF}
+{$IFDEF TeeChart5}   TEE519, TEEPRO519, {$ENDIF}
+{$IFDEF TeeChart6}   TEE619, TEEPRO619, {$ENDIF}
+{$IFDEF TeeChart7}   TEE719, TEEPRO719, {$ENDIF}
+{$IFDEF TeeChart8}   TEE819, TEEPRO819, {$ENDIF}
+{$IFDEF TeeChart9}   TEE919, TEEPRO919, {$ENDIF}
+  fs19,
+  fsTee19,
+  frx19;
+
+contains
+  frxChart in 'frxChart.pas',
+  frxChartEditor in 'frxChartEditor.pas',
+  frxChartInPlaceEditor in 'frxChartInPlaceEditor.pas',
+  frxChartClipboard in 'frxChartClipboard.pas',
+  frxChartHelpers in 'frxChartHelpers.pas',
+  frxChartRTTI in 'frxChartRTTI.pas';
+
+end.

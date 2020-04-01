@@ -1,0 +1,1099 @@
+Versão do delphi: Delphi 10.3 Rio Win32
+Dir. Instalação : C:\ComponentesDesphi\ACBR\
+Dir. Bibliotecas: C:\ComponentesDesphi\ACBR\Lib\Delphi\LibD26
+
+Removendo instalação anterior do ACBr na IDE...
+...OK
+Criando diretórios de bibliotecas...
+...OK
+Adicionando library paths...
+...OK
+
+COMPILANDO OS PACOTES...
+Compiling package C:\ComponentesDesphi\ACBR\Pacotes\Delphi\synapse\ACBr_synapse.dpk
+"C:\Program Files (x86)\Embarcadero\Studio\20.0\bin\dcc32.exe" "C:\ComponentesDesphi\ACBR\Pacotes\Delphi\synapse\ACBr_synapse.dpk"
+Embarcadero Delphi for Win32 compiler version 33.0
+Copyright (c) 1983,2017 Embarcadero Technologies, Inc.
+37251 lines, 0.39 seconds, 370584 bytes code, 29404 bytes data.
+Compilation success
+Pacote "ACBr_synapse.dpk" compilado com sucesso.
+Compiling package C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrComum\ACBr_Comum.dpk
+"C:\Program Files (x86)\Embarcadero\Studio\20.0\bin\dcc32.exe" "C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrComum\ACBr_Comum.dpk"
+Embarcadero Delphi for Win32 compiler version 33.0
+Copyright (c) 1983,2017 Embarcadero Technologies, Inc.
+C:\ComponentesDesphi\ACBR\Fontes\ACBrComum\ACBrUtil.pas(2852) Warning: W1000 Symbol 'Time' is deprecated
+C:\ComponentesDesphi\ACBR\Fontes\ACBrComum\ACBrUtil.pas(2852) Warning: W1002 Symbol 'Time' is specific to a platform
+28548 lines, 0.36 seconds, 105188 bytes code, 972 bytes data.
+Compilation success
+Pacote "ACBr_Comum.dpk" compilado com sucesso.
+Compiling package C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrOpenSSL\ACBr_OpenSSL.dpk
+"C:\Program Files (x86)\Embarcadero\Studio\20.0\bin\dcc32.exe" "C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrOpenSSL\ACBr_OpenSSL.dpk"
+Embarcadero Delphi for Win32 compiler version 33.0
+Copyright (c) 1983,2017 Embarcadero Technologies, Inc.
+11796 lines, 0.22 seconds, 80204 bytes code, 1608 bytes data.
+Compilation success
+Pacote "ACBr_OpenSSL.dpk" compilado com sucesso.
+Compiling package C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrDiversos\ACBr_Diversos.dpk
+"C:\Program Files (x86)\Embarcadero\Studio\20.0\bin\dcc32.exe" "C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrDiversos\ACBr_Diversos.dpk"
+Embarcadero Delphi for Win32 compiler version 33.0
+Copyright (c) 1983,2017 Embarcadero Technologies, Inc.
+51744 lines, 0.44 seconds, 236660 bytes code, 10680 bytes data.
+Compilation success
+Pacote "ACBr_Diversos.dpk" compilado com sucesso.
+Compiling package C:\ComponentesDesphi\ACBR\Pacotes\Delphi\PCNComum\ACBr_PCNComum.dpk
+"C:\Program Files (x86)\Embarcadero\Studio\20.0\bin\dcc32.exe" "C:\ComponentesDesphi\ACBR\Pacotes\Delphi\PCNComum\ACBr_PCNComum.dpk"
+Embarcadero Delphi for Win32 compiler version 33.0
+Copyright (c) 1983,2017 Embarcadero Technologies, Inc.
+36400 lines, 0.31 seconds, 206756 bytes code, 808 bytes data.
+Compilation success
+Pacote "ACBr_PCNComum.dpk" compilado com sucesso.
+Compiling package C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrSerial\ACBr_Serial.dpk
+"C:\Program Files (x86)\Embarcadero\Studio\20.0\bin\dcc32.exe" "C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrSerial\ACBr_Serial.dpk"
+Embarcadero Delphi for Win32 compiler version 33.0
+Copyright (c) 1983,2017 Embarcadero Technologies, Inc.
+322154 lines, 1.38 seconds, 1804956 bytes code, 3604 bytes data.
+Compilation success
+Pacote "ACBr_Serial.dpk" compilado com sucesso.
+Compiling package C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrTXT\ACBr_TXTComum.dpk
+"C:\Program Files (x86)\Embarcadero\Studio\20.0\bin\dcc32.exe" "C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrTXT\ACBr_TXTComum.dpk"
+Embarcadero Delphi for Win32 compiler version 33.0
+Copyright (c) 1983,2017 Embarcadero Technologies, Inc.
+3745 lines, 0.38 seconds, 196860 bytes code, 27116 bytes data.
+Compilation success
+Pacote "ACBr_TXTComum.dpk" compilado com sucesso.
+Compiling package C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrTXT\ACBrConvenio115\ACBr_Convenio115.dpk
+"C:\Program Files (x86)\Embarcadero\Studio\20.0\bin\dcc32.exe" "C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrTXT\ACBrConvenio115\ACBr_Convenio115.dpk"
+Embarcadero Delphi for Win32 compiler version 33.0
+Copyright (c) 1983,2017 Embarcadero Technologies, Inc.
+3430 lines, 0.22 seconds, 40496 bytes code, 332 bytes data.
+Compilation success
+Pacote "ACBr_Convenio115.dpk" compilado com sucesso.
+Compiling package C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrTXT\ACBrLFD\ACBr_LFD.dpk
+"C:\Program Files (x86)\Embarcadero\Studio\20.0\bin\dcc32.exe" "C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrTXT\ACBrLFD\ACBr_LFD.dpk"
+Embarcadero Delphi for Win32 compiler version 33.0
+Copyright (c) 1983,2017 Embarcadero Technologies, Inc.
+23271 lines, 0.47 seconds, 350244 bytes code, 412 bytes data.
+Compilation success
+Pacote "ACBr_LFD.dpk" compilado com sucesso.
+Compiling package C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrTXT\ACBrEDI\ACBr_EDI.dpk
+"C:\Program Files (x86)\Embarcadero\Studio\20.0\bin\dcc32.exe" "C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrTXT\ACBrEDI\ACBr_EDI.dpk"
+Embarcadero Delphi for Win32 compiler version 33.0
+Copyright (c) 1983,2017 Embarcadero Technologies, Inc.
+17054 lines, 0.23 seconds, 130352 bytes code, 232 bytes data.
+Compilation success
+Pacote "ACBr_EDI.dpk" compilado com sucesso.
+Compiling package C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrTXT\ACBrPAF\ACBr_PAF.dpk
+"C:\Program Files (x86)\Embarcadero\Studio\20.0\bin\dcc32.exe" "C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrTXT\ACBrPAF\ACBr_PAF.dpk"
+Embarcadero Delphi for Win32 compiler version 33.0
+Copyright (c) 1983,2017 Embarcadero Technologies, Inc.
+50409 lines, 0.47 seconds, 150840 bytes code, 384 bytes data.
+Compilation success
+Pacote "ACBr_PAF.dpk" compilado com sucesso.
+Compiling package C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrTXT\ACBrSEF2\ACBr_SEF2.dpk
+"C:\Program Files (x86)\Embarcadero\Studio\20.0\bin\dcc32.exe" "C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrTXT\ACBrSEF2\ACBr_SEF2.dpk"
+Embarcadero Delphi for Win32 compiler version 33.0
+Copyright (c) 1983,2017 Embarcadero Technologies, Inc.
+38689 lines, 0.34 seconds, 213608 bytes code, 256 bytes data.
+Compilation success
+Pacote "ACBr_SEF2.dpk" compilado com sucesso.
+Compiling package C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrTXT\ACBrSintegra\ACBr_Sintegra.dpk
+"C:\Program Files (x86)\Embarcadero\Studio\20.0\bin\dcc32.exe" "C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrTXT\ACBrSintegra\ACBr_Sintegra.dpk"
+Embarcadero Delphi for Win32 compiler version 33.0
+Copyright (c) 1983,2017 Embarcadero Technologies, Inc.
+6227 lines, 0.23 seconds, 94052 bytes code, 212 bytes data.
+Compilation success
+Pacote "ACBr_Sintegra.dpk" compilado com sucesso.
+Compiling package C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrTXT\ACBrSPED\ACBr_SPED.dpk
+"C:\Program Files (x86)\Embarcadero\Studio\20.0\bin\dcc32.exe" "C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrTXT\ACBrSPED\ACBr_SPED.dpk"
+Embarcadero Delphi for Win32 compiler version 33.0
+Copyright (c) 1983,2017 Embarcadero Technologies, Inc.
+161543 lines, 1.03 seconds, 1664556 bytes code, 628 bytes data.
+Compilation success
+Pacote "ACBr_SPED.dpk" compilado com sucesso.
+Compiling package C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrTXT\ACBrSPED\Importar\ACBr_SPEDImportar.dpk
+"C:\Program Files (x86)\Embarcadero\Studio\20.0\bin\dcc32.exe" "C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrTXT\ACBrSPED\Importar\ACBr_SPEDImportar.dpk"
+Embarcadero Delphi for Win32 compiler version 33.0
+Copyright (c) 1983,2017 Embarcadero Technologies, Inc.
+7165 lines, 0.28 seconds, 121236 bytes code, 284 bytes data.
+Compilation success
+Pacote "ACBr_SPEDImportar.dpk" compilado com sucesso.
+Compiling package C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrTXT\ACBrDeSTDA\ACBr_DeSTDA.dpk
+"C:\Program Files (x86)\Embarcadero\Studio\20.0\bin\dcc32.exe" "C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrTXT\ACBrDeSTDA\ACBr_DeSTDA.dpk"
+Embarcadero Delphi for Win32 compiler version 33.0
+Copyright (c) 1983,2017 Embarcadero Technologies, Inc.
+3353 lines, 0.22 seconds, 58644 bytes code, 244 bytes data.
+Compilation success
+Pacote "ACBr_DeSTDA.dpk" compilado com sucesso.
+Compiling package C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrTXT\ACBrPonto\ACBr_Ponto.dpk
+"C:\Program Files (x86)\Embarcadero\Studio\20.0\bin\dcc32.exe" "C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrTXT\ACBrPonto\ACBr_Ponto.dpk"
+Embarcadero Delphi for Win32 compiler version 33.0
+Copyright (c) 1983,2017 Embarcadero Technologies, Inc.
+4306 lines, 0.23 seconds, 42756 bytes code, 232 bytes data.
+Compilation success
+Pacote "ACBr_Ponto.dpk" compilado com sucesso.
+Compiling package C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrTXT\ACBrLCDPR\ACBr_LCDPR.dpk
+"C:\Program Files (x86)\Embarcadero\Studio\20.0\bin\dcc32.exe" "C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrTXT\ACBrLCDPR\ACBr_LCDPR.dpk"
+Embarcadero Delphi for Win32 compiler version 33.0
+Copyright (c) 1983,2017 Embarcadero Technologies, Inc.
+2532 lines, 0.25 seconds, 37476 bytes code, 272 bytes data.
+Compilation success
+Pacote "ACBr_LCDPR.dpk" compilado com sucesso.
+Compiling package C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrTCP\ACBr_TCP.dpk
+"C:\Program Files (x86)\Embarcadero\Studio\20.0\bin\dcc32.exe" "C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrTCP\ACBr_TCP.dpk"
+Embarcadero Delphi for Win32 compiler version 33.0
+Copyright (c) 1983,2017 Embarcadero Technologies, Inc.
+114856 lines, 0.55 seconds, 309924 bytes code, 588 bytes data.
+Compilation success
+Pacote "ACBr_TCP.dpk" compilado com sucesso.
+Compiling package C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrBoleto\ACBr_Boleto.dpk
+"C:\Program Files (x86)\Embarcadero\Studio\20.0\bin\dcc32.exe" "C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrBoleto\ACBr_Boleto.dpk"
+Embarcadero Delphi for Win32 compiler version 33.0
+Copyright (c) 1983,2017 Embarcadero Technologies, Inc.
+116819 lines, 0.64 seconds, 1524240 bytes code, 1588 bytes data.
+Compilation success
+Pacote "ACBr_Boleto.dpk" compilado com sucesso.
+Compiling package C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrTCP\ACBr_MTER.dpk
+"C:\Program Files (x86)\Embarcadero\Studio\20.0\bin\dcc32.exe" "C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrTCP\ACBr_MTER.dpk"
+Embarcadero Delphi for Win32 compiler version 33.0
+Copyright (c) 1983,2017 Embarcadero Technologies, Inc.
+15582 lines, 0.23 seconds, 47128 bytes code, 236 bytes data.
+Compilation success
+Pacote "ACBr_MTER.dpk" compilado com sucesso.
+Compiling package C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrIntegrador\ACBr_Integrador.dpk
+"C:\Program Files (x86)\Embarcadero\Studio\20.0\bin\dcc32.exe" "C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrIntegrador\ACBr_Integrador.dpk"
+Embarcadero Delphi for Win32 compiler version 33.0
+Copyright (c) 1983,2017 Embarcadero Technologies, Inc.
+10975 lines, 0.22 seconds, 49072 bytes code, 228 bytes data.
+Compilation success
+Pacote "ACBr_Integrador.dpk" compilado com sucesso.
+Compiling package C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrDFe\ACBr_DFeComum.dpk
+"C:\Program Files (x86)\Embarcadero\Studio\20.0\bin\dcc32.exe" "C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrDFe\ACBr_DFeComum.dpk"
+Embarcadero Delphi for Win32 compiler version 33.0
+Copyright (c) 1983,2017 Embarcadero Technologies, Inc.
+83272 lines, 0.62 seconds, 507896 bytes code, 8668 bytes data.
+Compilation success
+Pacote "ACBr_DFeComum.dpk" compilado com sucesso.
+Compiling package C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrDFe\ACBrNFe\ACBr_NFe.dpk
+"C:\Program Files (x86)\Embarcadero\Studio\20.0\bin\dcc32.exe" "C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrDFe\ACBrNFe\ACBr_NFe.dpk"
+Embarcadero Delphi for Win32 compiler version 33.0
+Copyright (c) 1983,2017 Embarcadero Technologies, Inc.
+80393 lines, 0.59 seconds, 787824 bytes code, 308 bytes data.
+Compilation success
+Pacote "ACBr_NFe.dpk" compilado com sucesso.
+Compiling package C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrDFe\ACBrNFe\ACBrECFVirtualNFCe\ACBr_NFCeECFVirtual.dpk
+"C:\Program Files (x86)\Embarcadero\Studio\20.0\bin\dcc32.exe" "C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrDFe\ACBrNFe\ACBrECFVirtualNFCe\ACBr_NFCeECFVirtual.dpk"
+Embarcadero Delphi for Win32 compiler version 33.0
+Copyright (c) 1983,2017 Embarcadero Technologies, Inc.
+3200 lines, 0.25 seconds, 27668 bytes code, 208 bytes data.
+Compilation success
+Pacote "ACBr_NFCeECFVirtual.dpk" compilado com sucesso.
+Compiling package C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrDFe\ACBrNFe\DANFE\NFCe\EscPos\ACBr_NFeDanfeESCPOS.dpk
+"C:\Program Files (x86)\Embarcadero\Studio\20.0\bin\dcc32.exe" "C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrDFe\ACBrNFe\DANFE\NFCe\EscPos\ACBr_NFeDanfeESCPOS.dpk"
+Embarcadero Delphi for Win32 compiler version 33.0
+Copyright (c) 1983,2017 Embarcadero Technologies, Inc.
+3246 lines, 0.25 seconds, 36416 bytes code, 208 bytes data.
+Compilation success
+Pacote "ACBr_NFeDanfeESCPOS.dpk" compilado com sucesso.
+Compiling package C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrDFe\ACBrCTe\ACBr_CTe.dpk
+"C:\Program Files (x86)\Embarcadero\Studio\20.0\bin\dcc32.exe" "C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrDFe\ACBrCTe\ACBr_CTe.dpk"
+Embarcadero Delphi for Win32 compiler version 33.0
+Copyright (c) 1983,2017 Embarcadero Technologies, Inc.
+71452 lines, 0.55 seconds, 604236 bytes code, 296 bytes data.
+Compilation success
+Pacote "ACBr_CTe.dpk" compilado com sucesso.
+Compiling package C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrDFe\ACBrNFSe\ACBr_NFSe.dpk
+"C:\Program Files (x86)\Embarcadero\Studio\20.0\bin\dcc32.exe" "C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrDFe\ACBrNFSe\ACBr_NFSe.dpk"
+Embarcadero Delphi for Win32 compiler version 33.0
+Copyright (c) 1983,2017 Embarcadero Technologies, Inc.
+128854 lines, 0.77 seconds, 1800144 bytes code, 352 bytes data.
+Compilation success
+Pacote "ACBr_NFSe.dpk" compilado com sucesso.
+Compiling package C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrDFe\ACBrMDFe\ACBr_MDFe.dpk
+"C:\Program Files (x86)\Embarcadero\Studio\20.0\bin\dcc32.exe" "C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrDFe\ACBrMDFe\ACBr_MDFe.dpk"
+Embarcadero Delphi for Win32 compiler version 33.0
+Copyright (c) 1983,2017 Embarcadero Technologies, Inc.
+58535 lines, 0.48 seconds, 326748 bytes code, 284 bytes data.
+Compilation success
+Pacote "ACBr_MDFe.dpk" compilado com sucesso.
+Compiling package C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrDFe\ACBrGNRE\ACBr_GNRE.dpk
+"C:\Program Files (x86)\Embarcadero\Studio\20.0\bin\dcc32.exe" "C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrDFe\ACBrGNRE\ACBr_GNRE.dpk"
+Embarcadero Delphi for Win32 compiler version 33.0
+Copyright (c) 1983,2017 Embarcadero Technologies, Inc.
+59043 lines, 0.52 seconds, 151636 bytes code, 300 bytes data.
+Compilation success
+Pacote "ACBr_GNRE.dpk" compilado com sucesso.
+Compiling package C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrDFe\ACBreSocial\ACBre_Social.dpk
+"C:\Program Files (x86)\Embarcadero\Studio\20.0\bin\dcc32.exe" "C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrDFe\ACBreSocial\ACBre_Social.dpk"
+Embarcadero Delphi for Win32 compiler version 33.0
+Copyright (c) 1983,2017 Embarcadero Technologies, Inc.
+189371 lines, 0.98 seconds, 977512 bytes code, 1856 bytes data.
+Compilation success
+Pacote "ACBre_Social.dpk" compilado com sucesso.
+Compiling package C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrDFe\ACBrReinf\ACBr_Reinf.dpk
+"C:\Program Files (x86)\Embarcadero\Studio\20.0\bin\dcc32.exe" "C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrDFe\ACBrReinf\ACBr_Reinf.dpk"
+Embarcadero Delphi for Win32 compiler version 33.0
+Copyright (c) 1983,2017 Embarcadero Technologies, Inc.
+79268 lines, 0.55 seconds, 390176 bytes code, 568 bytes data.
+Compilation success
+Pacote "ACBr_Reinf.dpk" compilado com sucesso.
+Compiling package C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrSAT\ACBr_SAT.dpk
+"C:\Program Files (x86)\Embarcadero\Studio\20.0\bin\dcc32.exe" "C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrSAT\ACBr_SAT.dpk"
+Embarcadero Delphi for Win32 compiler version 33.0
+Copyright (c) 1983,2017 Embarcadero Technologies, Inc.
+43270 lines, 0.41 seconds, 276740 bytes code, 272 bytes data.
+Compilation success
+Pacote "ACBr_SAT.dpk" compilado com sucesso.
+Compiling package C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrSAT\ACBrECFVirtualSAT\ACBr_SATECFVirtual.dpk
+"C:\Program Files (x86)\Embarcadero\Studio\20.0\bin\dcc32.exe" "C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrSAT\ACBrECFVirtualSAT\ACBr_SATECFVirtual.dpk"
+Embarcadero Delphi for Win32 compiler version 33.0
+Copyright (c) 1983,2017 Embarcadero Technologies, Inc.
+2876 lines, 0.25 seconds, 20248 bytes code, 208 bytes data.
+Compilation success
+Pacote "ACBr_SATECFVirtual.dpk" compilado com sucesso.
+Compiling package C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrSAT\Extrato\EscPos\ACBr_SATExtratoESCPOS.dpk
+"C:\Program Files (x86)\Embarcadero\Studio\20.0\bin\dcc32.exe" "C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrSAT\Extrato\EscPos\ACBr_SATExtratoESCPOS.dpk"
+Embarcadero Delphi for Win32 compiler version 33.0
+Copyright (c) 1983,2017 Embarcadero Technologies, Inc.
+3083 lines, 0.25 seconds, 30400 bytes code, 208 bytes data.
+Compilation success
+Pacote "ACBr_SATExtratoESCPOS.dpk" compilado com sucesso.
+Compiling package C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrDFe\ACBrSATWS\ACBr_SATWS.dpk
+"C:\Program Files (x86)\Embarcadero\Studio\20.0\bin\dcc32.exe" "C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrDFe\ACBrSATWS\ACBr_SATWS.dpk"
+Embarcadero Delphi for Win32 compiler version 33.0
+Copyright (c) 1983,2017 Embarcadero Technologies, Inc.
+13809 lines, 0.31 seconds, 23532 bytes code, 224 bytes data.
+Compilation success
+Pacote "ACBr_SATWS.dpk" compilado com sucesso.
+Compiling package C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrDFe\ACBrBlocoX\ACBr_BlocoX.dpk
+"C:\Program Files (x86)\Embarcadero\Studio\20.0\bin\dcc32.exe" "C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrDFe\ACBrBlocoX\ACBr_BlocoX.dpk"
+Embarcadero Delphi for Win32 compiler version 33.0
+Copyright (c) 1983,2017 Embarcadero Technologies, Inc.
+23646 lines, 0.36 seconds, 112184 bytes code, 240 bytes data.
+Compilation success
+Pacote "ACBr_BlocoX.dpk" compilado com sucesso.
+Compiling package C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrDFe\ACBrBPe\ACBr_BPe.dpk
+"C:\Program Files (x86)\Embarcadero\Studio\20.0\bin\dcc32.exe" "C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrDFe\ACBrBPe\ACBr_BPe.dpk"
+Embarcadero Delphi for Win32 compiler version 33.0
+Copyright (c) 1983,2017 Embarcadero Technologies, Inc.
+51190 lines, 0.47 seconds, 264228 bytes code, 280 bytes data.
+Compilation success
+Pacote "ACBr_BPe.dpk" compilado com sucesso.
+Compiling package C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrDFe\ACBrBPe\DABPE\EscPos\ACBr_BPeDabpeESCPOS.dpk
+"C:\Program Files (x86)\Embarcadero\Studio\20.0\bin\dcc32.exe" "C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrDFe\ACBrBPe\DABPE\EscPos\ACBr_BPeDabpeESCPOS.dpk"
+Embarcadero Delphi for Win32 compiler version 33.0
+Copyright (c) 1983,2017 Embarcadero Technologies, Inc.
+2953 lines, 0.25 seconds, 28588 bytes code, 208 bytes data.
+Compilation success
+Pacote "ACBr_BPeDabpeESCPOS.dpk" compilado com sucesso.
+Compiling package C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrDFe\ACBrANe\ACBr_ANe.dpk
+"C:\Program Files (x86)\Embarcadero\Studio\20.0\bin\dcc32.exe" "C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrDFe\ACBrANe\ACBr_ANe.dpk"
+Embarcadero Delphi for Win32 compiler version 33.0
+Copyright (c) 1983,2017 Embarcadero Technologies, Inc.
+26946 lines, 0.39 seconds, 64176 bytes code, 244 bytes data.
+Compilation success
+Pacote "ACBr_ANe.dpk" compilado com sucesso.
+Compiling package C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrDFe\ACBrCIOT\ACBr_CIOT.dpk
+"C:\Program Files (x86)\Embarcadero\Studio\20.0\bin\dcc32.exe" "C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrDFe\ACBrCIOT\ACBr_CIOT.dpk"
+Embarcadero Delphi for Win32 compiler version 33.0
+Copyright (c) 1983,2017 Embarcadero Technologies, Inc.
+35938 lines, 0.38 seconds, 159916 bytes code, 256 bytes data.
+Compilation success
+Pacote "ACBr_CIOT.dpk" compilado com sucesso.
+Compiling package C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrDFe\ACBrONE\ACBr_ONE.dpk
+"C:\Program Files (x86)\Embarcadero\Studio\20.0\bin\dcc32.exe" "C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrDFe\ACBrONE\ACBr_ONE.dpk"
+Embarcadero Delphi for Win32 compiler version 33.0
+Copyright (c) 1983,2017 Embarcadero Technologies, Inc.
+31398 lines, 0.38 seconds, 68692 bytes code, 252 bytes data.
+Compilation success
+Pacote "ACBr_ONE.dpk" compilado com sucesso.
+Compiling package C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrTEFD\ACBr_TEFD.dpk
+"C:\Program Files (x86)\Embarcadero\Studio\20.0\bin\dcc32.exe" "C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrTEFD\ACBr_TEFD.dpk"
+Embarcadero Delphi for Win32 compiler version 33.0
+Copyright (c) 1983,2017 Embarcadero Technologies, Inc.
+51695 lines, 0.36 seconds, 224224 bytes code, 288 bytes data.
+Compilation success
+Pacote "ACBr_TEFD.dpk" compilado com sucesso.
+Compiling package C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrDFe\ACBrNFe\DANFE\NFe\Fast\ACBr_NFeDanfeFR.dpk
+"C:\Program Files (x86)\Embarcadero\Studio\20.0\bin\dcc32.exe" "C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrDFe\ACBrNFe\DANFE\NFe\Fast\ACBr_NFeDanfeFR.dpk"
+Embarcadero Delphi for Win32 compiler version 33.0
+Copyright (c) 1983,2017 Embarcadero Technologies, Inc.
+9743 lines, 0.42 seconds, 77772 bytes code, 216 bytes data.
+Compilation success
+Pacote "ACBr_NFeDanfeFR.dpk" compilado com sucesso.
+Compiling package C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrDFe\ACBrCTe\DACTE\Fast\ACBr_CTeDacteFR.dpk
+"C:\Program Files (x86)\Embarcadero\Studio\20.0\bin\dcc32.exe" "C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrDFe\ACBrCTe\DACTE\Fast\ACBr_CTeDacteFR.dpk"
+Embarcadero Delphi for Win32 compiler version 33.0
+Copyright (c) 1983,2017 Embarcadero Technologies, Inc.
+8003 lines, 0.41 seconds, 89480 bytes code, 216 bytes data.
+Compilation success
+Pacote "ACBr_CTeDacteFR.dpk" compilado com sucesso.
+Compiling package C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrDFe\ACBrNFSe\DANFSE\Fast\ACBr_NFSeDanfseFR.dpk
+"C:\Program Files (x86)\Embarcadero\Studio\20.0\bin\dcc32.exe" "C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrDFe\ACBrNFSe\DANFSE\Fast\ACBr_NFSeDanfseFR.dpk"
+Embarcadero Delphi for Win32 compiler version 33.0
+Copyright (c) 1983,2017 Embarcadero Technologies, Inc.
+5681 lines, 0.39 seconds, 45404 bytes code, 216 bytes data.
+Compilation success
+Pacote "ACBr_NFSeDanfseFR.dpk" compilado com sucesso.
+Compiling package C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrBoleto\FC\Fast\ACBr_BoletoFR.dpk
+"C:\Program Files (x86)\Embarcadero\Studio\20.0\bin\dcc32.exe" "C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrBoleto\FC\Fast\ACBr_BoletoFR.dpk"
+Embarcadero Delphi for Win32 compiler version 33.0
+Copyright (c) 1983,2017 Embarcadero Technologies, Inc.
+5166 lines, 0.33 seconds, 27856 bytes code, 212 bytes data.
+Compilation success
+Pacote "ACBr_BoletoFR.dpk" compilado com sucesso.
+Compiling package C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrDFe\ACBrMDFe\DAMDFE\Fast\ACBr_MDFeDamdfeFR.dpk
+"C:\Program Files (x86)\Embarcadero\Studio\20.0\bin\dcc32.exe" "C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrDFe\ACBrMDFe\DAMDFE\Fast\ACBr_MDFeDamdfeFR.dpk"
+Embarcadero Delphi for Win32 compiler version 33.0
+Copyright (c) 1983,2017 Embarcadero Technologies, Inc.
+6225 lines, 0.39 seconds, 52976 bytes code, 212 bytes data.
+Compilation success
+Pacote "ACBr_MDFeDamdfeFR.dpk" compilado com sucesso.
+Compiling package C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrDFe\ACBrGNRE\GNRE\Fast\ACBr_GNREGuiaFR.dpk
+"C:\Program Files (x86)\Embarcadero\Studio\20.0\bin\dcc32.exe" "C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrDFe\ACBrGNRE\GNRE\Fast\ACBr_GNREGuiaFR.dpk"
+Embarcadero Delphi for Win32 compiler version 33.0
+Copyright (c) 1983,2017 Embarcadero Technologies, Inc.
+7200 lines, 0.42 seconds, 23944 bytes code, 220 bytes data.
+Compilation success
+Pacote "ACBr_GNREGuiaFR.dpk" compilado com sucesso.
+Compiling package C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrDFe\ACBrDFeReportRL.dpk
+"C:\Program Files (x86)\Embarcadero\Studio\20.0\bin\dcc32.exe" "C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrDFe\ACBrDFeReportRL.dpk"
+Embarcadero Delphi for Win32 compiler version 33.0
+Copyright (c) 1983,2017 Embarcadero Technologies, Inc.
+2402 lines, 0.20 seconds, 10932 bytes code, 208 bytes data.
+Compilation success
+Pacote "ACBrDFeReportRL.dpk" compilado com sucesso.
+Compiling package C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrDFe\ACBrNFe\DANFE\NFe\Fortes\ACBr_NFeDanfeRL.dpk
+"C:\Program Files (x86)\Embarcadero\Studio\20.0\bin\dcc32.exe" "C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrDFe\ACBrNFe\DANFE\NFe\Fortes\ACBr_NFeDanfeRL.dpk"
+Embarcadero Delphi for Win32 compiler version 33.0
+Copyright (c) 1983,2017 Embarcadero Technologies, Inc.
+35503 lines, 0.47 seconds, 235440 bytes code, 260 bytes data.
+Compilation success
+Pacote "ACBr_NFeDanfeRL.dpk" compilado com sucesso.
+Compiling package C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrDFe\ACBrNFSe\DANFSE\Fortes\ACBr_NFSeDanfseRL.dpk
+"C:\Program Files (x86)\Embarcadero\Studio\20.0\bin\dcc32.exe" "C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrDFe\ACBrNFSe\DANFSE\Fortes\ACBr_NFSeDanfseRL.dpk"
+Embarcadero Delphi for Win32 compiler version 33.0
+Copyright (c) 1983,2017 Embarcadero Technologies, Inc.
+9743 lines, 0.34 seconds, 33860 bytes code, 232 bytes data.
+Compilation success
+Pacote "ACBr_NFSeDanfseRL.dpk" compilado com sucesso.
+Compiling package C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrDFe\ACBrCTe\DACTE\Fortes\ACBr_CTeDacteRL.dpk
+"C:\Program Files (x86)\Embarcadero\Studio\20.0\bin\dcc32.exe" "C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrDFe\ACBrCTe\DACTE\Fortes\ACBr_CTeDacteRL.dpk"
+Embarcadero Delphi for Win32 compiler version 33.0
+Copyright (c) 1983,2017 Embarcadero Technologies, Inc.
+25666 lines, 0.45 seconds, 164520 bytes code, 260 bytes data.
+Compilation success
+Pacote "ACBr_CTeDacteRL.dpk" compilado com sucesso.
+Compiling package C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrBoleto\FC\Fortes\ACBr_BoletoRL.dpk
+"C:\Program Files (x86)\Embarcadero\Studio\20.0\bin\dcc32.exe" "C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrBoleto\FC\Fortes\ACBr_BoletoRL.dpk"
+Embarcadero Delphi for Win32 compiler version 33.0
+Copyright (c) 1983,2017 Embarcadero Technologies, Inc.
+4172 lines, 0.27 seconds, 74424 bytes code, 216 bytes data.
+Compilation success
+Pacote "ACBr_BoletoRL.dpk" compilado com sucesso.
+Compiling package C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrDFe\ACBrMDFe\DAMDFE\Fortes\ACBr_MDFeDamdfeRL.dpk
+"C:\Program Files (x86)\Embarcadero\Studio\20.0\bin\dcc32.exe" "C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrDFe\ACBrMDFe\DAMDFE\Fortes\ACBr_MDFeDamdfeRL.dpk"
+Embarcadero Delphi for Win32 compiler version 33.0
+Copyright (c) 1983,2017 Embarcadero Technologies, Inc.
+14794 lines, 0.36 seconds, 50156 bytes code, 232 bytes data.
+Compilation success
+Pacote "ACBr_MDFeDamdfeRL.dpk" compilado com sucesso.
+Compiling package C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrSAT\Extrato\Fortes\ACBr_SATExtratoRL.dpk
+"C:\Program Files (x86)\Embarcadero\Studio\20.0\bin\dcc32.exe" "C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrSAT\Extrato\Fortes\ACBr_SATExtratoRL.dpk"
+Embarcadero Delphi for Win32 compiler version 33.0
+Copyright (c) 1983,2017 Embarcadero Technologies, Inc.
+5905 lines, 0.30 seconds, 46560 bytes code, 212 bytes data.
+Compilation success
+Pacote "ACBr_SATExtratoRL.dpk" compilado com sucesso.
+Compiling package C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrDFe\ACBrGNRE\GNRE\Fortes\ACBr_GNREGuiaRL.dpk
+"C:\Program Files (x86)\Embarcadero\Studio\20.0\bin\dcc32.exe" "C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrDFe\ACBrGNRE\GNRE\Fortes\ACBr_GNREGuiaRL.dpk"
+Embarcadero Delphi for Win32 compiler version 33.0
+Copyright (c) 1983,2017 Embarcadero Technologies, Inc.
+9624 lines, 0.31 seconds, 30076 bytes code, 220 bytes data.
+Compilation success
+Pacote "ACBr_GNREGuiaRL.dpk" compilado com sucesso.
+
+INSTALANDO OS PACOTES...
+Installing package C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrComum\ACBr_Comum.dpk
+Compiling package C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrComum\ACBr_Comum.dpk
+"C:\Program Files (x86)\Embarcadero\Studio\20.0\bin\dcc32.exe" "C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrComum\ACBr_Comum.dpk"
+Embarcadero Delphi for Win32 compiler version 33.0
+Copyright (c) 1983,2017 Embarcadero Technologies, Inc.
+C:\ComponentesDesphi\ACBR\Fontes\ACBrComum\ACBrUtil.pas(2852) Warning: W1000 Symbol 'Time' is deprecated
+C:\ComponentesDesphi\ACBR\Fontes\ACBrComum\ACBrUtil.pas(2852) Warning: W1002 Symbol 'Time' is specific to a platform
+28548 lines, 0.27 seconds, 105188 bytes code, 972 bytes data.
+Compilation success
+Cleaning package cache for ACBr_Comum.bpl
+Cleaning ok
+Registering package C:\ComponentesDesphi\ACBR\Lib\Delphi\LibD26\ACBr_Comum.bpl
+Registration ok
+Installation of package finished
+Pacote "ACBr_Comum.dpk" instalado com sucesso.
+Installing package C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrOpenSSL\ACBr_OpenSSL.dpk
+Compiling package C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrOpenSSL\ACBr_OpenSSL.dpk
+"C:\Program Files (x86)\Embarcadero\Studio\20.0\bin\dcc32.exe" "C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrOpenSSL\ACBr_OpenSSL.dpk"
+Embarcadero Delphi for Win32 compiler version 33.0
+Copyright (c) 1983,2017 Embarcadero Technologies, Inc.
+11796 lines, 0.20 seconds, 80204 bytes code, 1608 bytes data.
+Compilation success
+Cleaning package cache for ACBr_OpenSSL.bpl
+Cleaning ok
+Registering package C:\ComponentesDesphi\ACBR\Lib\Delphi\LibD26\ACBr_OpenSSL.bpl
+Registration ok
+Installation of package finished
+Pacote "ACBr_OpenSSL.dpk" instalado com sucesso.
+Installing package C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrDiversos\ACBr_Diversos.dpk
+Compiling package C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrDiversos\ACBr_Diversos.dpk
+"C:\Program Files (x86)\Embarcadero\Studio\20.0\bin\dcc32.exe" "C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrDiversos\ACBr_Diversos.dpk"
+Embarcadero Delphi for Win32 compiler version 33.0
+Copyright (c) 1983,2017 Embarcadero Technologies, Inc.
+51744 lines, 0.34 seconds, 236660 bytes code, 10680 bytes data.
+Compilation success
+Cleaning package cache for ACBr_Diversos.bpl
+Cleaning ok
+Registering package C:\ComponentesDesphi\ACBR\Lib\Delphi\LibD26\ACBr_Diversos.bpl
+Registration ok
+Installation of package finished
+Pacote "ACBr_Diversos.dpk" instalado com sucesso.
+Installing package C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrSerial\ACBr_Serial.dpk
+Compiling package C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrSerial\ACBr_Serial.dpk
+"C:\Program Files (x86)\Embarcadero\Studio\20.0\bin\dcc32.exe" "C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrSerial\ACBr_Serial.dpk"
+Embarcadero Delphi for Win32 compiler version 33.0
+Copyright (c) 1983,2017 Embarcadero Technologies, Inc.
+322154 lines, 0.86 seconds, 1804956 bytes code, 3604 bytes data.
+Compilation success
+Cleaning package cache for ACBr_Serial.bpl
+Cleaning ok
+Registering package C:\ComponentesDesphi\ACBR\Lib\Delphi\LibD26\ACBr_Serial.bpl
+Registration ok
+Installation of package finished
+Pacote "ACBr_Serial.dpk" instalado com sucesso.
+Installing package C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrTXT\ACBrConvenio115\ACBr_Convenio115.dpk
+Compiling package C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrTXT\ACBrConvenio115\ACBr_Convenio115.dpk
+"C:\Program Files (x86)\Embarcadero\Studio\20.0\bin\dcc32.exe" "C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrTXT\ACBrConvenio115\ACBr_Convenio115.dpk"
+Embarcadero Delphi for Win32 compiler version 33.0
+Copyright (c) 1983,2017 Embarcadero Technologies, Inc.
+3430 lines, 0.17 seconds, 40496 bytes code, 332 bytes data.
+Compilation success
+Cleaning package cache for ACBr_Convenio115.bpl
+Cleaning ok
+Registering package C:\ComponentesDesphi\ACBR\Lib\Delphi\LibD26\ACBr_Convenio115.bpl
+Registration ok
+Installation of package finished
+Pacote "ACBr_Convenio115.dpk" instalado com sucesso.
+Installing package C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrTXT\ACBrLFD\ACBr_LFD.dpk
+Compiling package C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrTXT\ACBrLFD\ACBr_LFD.dpk
+"C:\Program Files (x86)\Embarcadero\Studio\20.0\bin\dcc32.exe" "C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrTXT\ACBrLFD\ACBr_LFD.dpk"
+Embarcadero Delphi for Win32 compiler version 33.0
+Copyright (c) 1983,2017 Embarcadero Technologies, Inc.
+23271 lines, 0.23 seconds, 350244 bytes code, 412 bytes data.
+Compilation success
+Cleaning package cache for ACBr_LFD.bpl
+Cleaning ok
+Registering package C:\ComponentesDesphi\ACBR\Lib\Delphi\LibD26\ACBr_LFD.bpl
+Registration ok
+Installation of package finished
+Pacote "ACBr_LFD.dpk" instalado com sucesso.
+Installing package C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrTXT\ACBrEDI\ACBr_EDI.dpk
+Compiling package C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrTXT\ACBrEDI\ACBr_EDI.dpk
+"C:\Program Files (x86)\Embarcadero\Studio\20.0\bin\dcc32.exe" "C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrTXT\ACBrEDI\ACBr_EDI.dpk"
+Embarcadero Delphi for Win32 compiler version 33.0
+Copyright (c) 1983,2017 Embarcadero Technologies, Inc.
+17054 lines, 0.22 seconds, 130352 bytes code, 232 bytes data.
+Compilation success
+Cleaning package cache for ACBr_EDI.bpl
+Cleaning ok
+Registering package C:\ComponentesDesphi\ACBR\Lib\Delphi\LibD26\ACBr_EDI.bpl
+Registration ok
+Installation of package finished
+Pacote "ACBr_EDI.dpk" instalado com sucesso.
+Installing package C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrTXT\ACBrPAF\ACBr_PAF.dpk
+Compiling package C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrTXT\ACBrPAF\ACBr_PAF.dpk
+"C:\Program Files (x86)\Embarcadero\Studio\20.0\bin\dcc32.exe" "C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrTXT\ACBrPAF\ACBr_PAF.dpk"
+Embarcadero Delphi for Win32 compiler version 33.0
+Copyright (c) 1983,2017 Embarcadero Technologies, Inc.
+50409 lines, 0.27 seconds, 150840 bytes code, 384 bytes data.
+Compilation success
+Cleaning package cache for ACBr_PAF.bpl
+Cleaning ok
+Registering package C:\ComponentesDesphi\ACBR\Lib\Delphi\LibD26\ACBr_PAF.bpl
+Registration ok
+Installation of package finished
+Pacote "ACBr_PAF.dpk" instalado com sucesso.
+Installing package C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrTXT\ACBrSEF2\ACBr_SEF2.dpk
+Compiling package C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrTXT\ACBrSEF2\ACBr_SEF2.dpk
+"C:\Program Files (x86)\Embarcadero\Studio\20.0\bin\dcc32.exe" "C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrTXT\ACBrSEF2\ACBr_SEF2.dpk"
+Embarcadero Delphi for Win32 compiler version 33.0
+Copyright (c) 1983,2017 Embarcadero Technologies, Inc.
+38689 lines, 0.22 seconds, 213608 bytes code, 256 bytes data.
+Compilation success
+Cleaning package cache for ACBr_SEF2.bpl
+Cleaning ok
+Registering package C:\ComponentesDesphi\ACBR\Lib\Delphi\LibD26\ACBr_SEF2.bpl
+Registration ok
+Installation of package finished
+Pacote "ACBr_SEF2.dpk" instalado com sucesso.
+Installing package C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrTXT\ACBrSintegra\ACBr_Sintegra.dpk
+Compiling package C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrTXT\ACBrSintegra\ACBr_Sintegra.dpk
+"C:\Program Files (x86)\Embarcadero\Studio\20.0\bin\dcc32.exe" "C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrTXT\ACBrSintegra\ACBr_Sintegra.dpk"
+Embarcadero Delphi for Win32 compiler version 33.0
+Copyright (c) 1983,2017 Embarcadero Technologies, Inc.
+6227 lines, 0.19 seconds, 94052 bytes code, 212 bytes data.
+Compilation success
+Cleaning package cache for ACBr_Sintegra.bpl
+Cleaning ok
+Registering package C:\ComponentesDesphi\ACBR\Lib\Delphi\LibD26\ACBr_Sintegra.bpl
+Registration ok
+Installation of package finished
+Pacote "ACBr_Sintegra.dpk" instalado com sucesso.
+Installing package C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrTXT\ACBrSPED\ACBr_SPED.dpk
+Compiling package C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrTXT\ACBrSPED\ACBr_SPED.dpk
+"C:\Program Files (x86)\Embarcadero\Studio\20.0\bin\dcc32.exe" "C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrTXT\ACBrSPED\ACBr_SPED.dpk"
+Embarcadero Delphi for Win32 compiler version 33.0
+Copyright (c) 1983,2017 Embarcadero Technologies, Inc.
+161543 lines, 0.52 seconds, 1664556 bytes code, 628 bytes data.
+Compilation success
+Cleaning package cache for ACBr_SPED.bpl
+Cleaning ok
+Registering package C:\ComponentesDesphi\ACBR\Lib\Delphi\LibD26\ACBr_SPED.bpl
+Registration ok
+Installation of package finished
+Pacote "ACBr_SPED.dpk" instalado com sucesso.
+Installing package C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrTXT\ACBrSPED\Importar\ACBr_SPEDImportar.dpk
+Compiling package C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrTXT\ACBrSPED\Importar\ACBr_SPEDImportar.dpk
+"C:\Program Files (x86)\Embarcadero\Studio\20.0\bin\dcc32.exe" "C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrTXT\ACBrSPED\Importar\ACBr_SPEDImportar.dpk"
+Embarcadero Delphi for Win32 compiler version 33.0
+Copyright (c) 1983,2017 Embarcadero Technologies, Inc.
+7165 lines, 0.20 seconds, 121236 bytes code, 284 bytes data.
+Compilation success
+Cleaning package cache for ACBr_SPEDImportar.bpl
+Cleaning ok
+Registering package C:\ComponentesDesphi\ACBR\Lib\Delphi\LibD26\ACBr_SPEDImportar.bpl
+Registration ok
+Installation of package finished
+Pacote "ACBr_SPEDImportar.dpk" instalado com sucesso.
+Installing package C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrTXT\ACBrDeSTDA\ACBr_DeSTDA.dpk
+Compiling package C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrTXT\ACBrDeSTDA\ACBr_DeSTDA.dpk
+"C:\Program Files (x86)\Embarcadero\Studio\20.0\bin\dcc32.exe" "C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrTXT\ACBrDeSTDA\ACBr_DeSTDA.dpk"
+Embarcadero Delphi for Win32 compiler version 33.0
+Copyright (c) 1983,2017 Embarcadero Technologies, Inc.
+3353 lines, 0.19 seconds, 58644 bytes code, 244 bytes data.
+Compilation success
+Cleaning package cache for ACBr_DeSTDA.bpl
+Cleaning ok
+Registering package C:\ComponentesDesphi\ACBR\Lib\Delphi\LibD26\ACBr_DeSTDA.bpl
+Registration ok
+Installation of package finished
+Pacote "ACBr_DeSTDA.dpk" instalado com sucesso.
+Installing package C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrTXT\ACBrPonto\ACBr_Ponto.dpk
+Compiling package C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrTXT\ACBrPonto\ACBr_Ponto.dpk
+"C:\Program Files (x86)\Embarcadero\Studio\20.0\bin\dcc32.exe" "C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrTXT\ACBrPonto\ACBr_Ponto.dpk"
+Embarcadero Delphi for Win32 compiler version 33.0
+Copyright (c) 1983,2017 Embarcadero Technologies, Inc.
+4306 lines, 0.20 seconds, 42756 bytes code, 232 bytes data.
+Compilation success
+Cleaning package cache for ACBr_Ponto.bpl
+Cleaning ok
+Registering package C:\ComponentesDesphi\ACBR\Lib\Delphi\LibD26\ACBr_Ponto.bpl
+Registration ok
+Installation of package finished
+Pacote "ACBr_Ponto.dpk" instalado com sucesso.
+Installing package C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrTXT\ACBrLCDPR\ACBr_LCDPR.dpk
+Compiling package C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrTXT\ACBrLCDPR\ACBr_LCDPR.dpk
+"C:\Program Files (x86)\Embarcadero\Studio\20.0\bin\dcc32.exe" "C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrTXT\ACBrLCDPR\ACBr_LCDPR.dpk"
+Embarcadero Delphi for Win32 compiler version 33.0
+Copyright (c) 1983,2017 Embarcadero Technologies, Inc.
+2532 lines, 0.19 seconds, 37476 bytes code, 272 bytes data.
+Compilation success
+Cleaning package cache for ACBr_LCDPR.bpl
+Cleaning ok
+Registering package C:\ComponentesDesphi\ACBR\Lib\Delphi\LibD26\ACBr_LCDPR.bpl
+Registration ok
+Installation of package finished
+Pacote "ACBr_LCDPR.dpk" instalado com sucesso.
+Installing package C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrTCP\ACBr_TCP.dpk
+Compiling package C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrTCP\ACBr_TCP.dpk
+"C:\Program Files (x86)\Embarcadero\Studio\20.0\bin\dcc32.exe" "C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrTCP\ACBr_TCP.dpk"
+Embarcadero Delphi for Win32 compiler version 33.0
+Copyright (c) 1983,2017 Embarcadero Technologies, Inc.
+114856 lines, 0.38 seconds, 309924 bytes code, 588 bytes data.
+Compilation success
+Cleaning package cache for ACBr_TCP.bpl
+Cleaning ok
+Registering package C:\ComponentesDesphi\ACBR\Lib\Delphi\LibD26\ACBr_TCP.bpl
+Registration ok
+Installation of package finished
+Pacote "ACBr_TCP.dpk" instalado com sucesso.
+Installing package C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrBoleto\ACBr_Boleto.dpk
+Compiling package C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrBoleto\ACBr_Boleto.dpk
+"C:\Program Files (x86)\Embarcadero\Studio\20.0\bin\dcc32.exe" "C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrBoleto\ACBr_Boleto.dpk"
+Embarcadero Delphi for Win32 compiler version 33.0
+Copyright (c) 1983,2017 Embarcadero Technologies, Inc.
+116819 lines, 0.44 seconds, 1524240 bytes code, 1588 bytes data.
+Compilation success
+Cleaning package cache for ACBr_Boleto.bpl
+Cleaning ok
+Registering package C:\ComponentesDesphi\ACBR\Lib\Delphi\LibD26\ACBr_Boleto.bpl
+Registration ok
+Installation of package finished
+Pacote "ACBr_Boleto.dpk" instalado com sucesso.
+Installing package C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrTCP\ACBr_MTER.dpk
+Compiling package C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrTCP\ACBr_MTER.dpk
+"C:\Program Files (x86)\Embarcadero\Studio\20.0\bin\dcc32.exe" "C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrTCP\ACBr_MTER.dpk"
+Embarcadero Delphi for Win32 compiler version 33.0
+Copyright (c) 1983,2017 Embarcadero Technologies, Inc.
+15582 lines, 0.20 seconds, 47128 bytes code, 236 bytes data.
+Compilation success
+Cleaning package cache for ACBr_MTER.bpl
+Cleaning ok
+Registering package C:\ComponentesDesphi\ACBR\Lib\Delphi\LibD26\ACBr_MTER.bpl
+Registration ok
+Installation of package finished
+Pacote "ACBr_MTER.dpk" instalado com sucesso.
+Installing package C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrIntegrador\ACBr_Integrador.dpk
+Compiling package C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrIntegrador\ACBr_Integrador.dpk
+"C:\Program Files (x86)\Embarcadero\Studio\20.0\bin\dcc32.exe" "C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrIntegrador\ACBr_Integrador.dpk"
+Embarcadero Delphi for Win32 compiler version 33.0
+Copyright (c) 1983,2017 Embarcadero Technologies, Inc.
+10975 lines, 0.17 seconds, 49072 bytes code, 228 bytes data.
+Compilation success
+Cleaning package cache for ACBr_Integrador.bpl
+Cleaning ok
+Registering package C:\ComponentesDesphi\ACBR\Lib\Delphi\LibD26\ACBr_Integrador.bpl
+Registration ok
+Installation of package finished
+Pacote "ACBr_Integrador.dpk" instalado com sucesso.
+Installing package C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrDFe\ACBrNFe\ACBr_NFe.dpk
+Compiling package C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrDFe\ACBrNFe\ACBr_NFe.dpk
+"C:\Program Files (x86)\Embarcadero\Studio\20.0\bin\dcc32.exe" "C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrDFe\ACBrNFe\ACBr_NFe.dpk"
+Embarcadero Delphi for Win32 compiler version 33.0
+Copyright (c) 1983,2017 Embarcadero Technologies, Inc.
+80393 lines, 0.52 seconds, 787824 bytes code, 308 bytes data.
+Compilation success
+Cleaning package cache for ACBr_NFe.bpl
+Cleaning ok
+Registering package C:\ComponentesDesphi\ACBR\Lib\Delphi\LibD26\ACBr_NFe.bpl
+Registration ok
+Installation of package finished
+Pacote "ACBr_NFe.dpk" instalado com sucesso.
+Installing package C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrDFe\ACBrNFe\ACBrECFVirtualNFCe\ACBr_NFCeECFVirtual.dpk
+Compiling package C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrDFe\ACBrNFe\ACBrECFVirtualNFCe\ACBr_NFCeECFVirtual.dpk
+"C:\Program Files (x86)\Embarcadero\Studio\20.0\bin\dcc32.exe" "C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrDFe\ACBrNFe\ACBrECFVirtualNFCe\ACBr_NFCeECFVirtual.dpk"
+Embarcadero Delphi for Win32 compiler version 33.0
+Copyright (c) 1983,2017 Embarcadero Technologies, Inc.
+3200 lines, 0.41 seconds, 27668 bytes code, 208 bytes data.
+Compilation success
+Cleaning package cache for ACBr_NFCeECFVirtual.bpl
+Cleaning ok
+Registering package C:\ComponentesDesphi\ACBR\Lib\Delphi\LibD26\ACBr_NFCeECFVirtual.bpl
+Registration ok
+Installation of package finished
+Pacote "ACBr_NFCeECFVirtual.dpk" instalado com sucesso.
+Installing package C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrDFe\ACBrNFe\DANFE\NFCe\EscPos\ACBr_NFeDanfeESCPOS.dpk
+Compiling package C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrDFe\ACBrNFe\DANFE\NFCe\EscPos\ACBr_NFeDanfeESCPOS.dpk
+"C:\Program Files (x86)\Embarcadero\Studio\20.0\bin\dcc32.exe" "C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrDFe\ACBrNFe\DANFE\NFCe\EscPos\ACBr_NFeDanfeESCPOS.dpk"
+Embarcadero Delphi for Win32 compiler version 33.0
+Copyright (c) 1983,2017 Embarcadero Technologies, Inc.
+3246 lines, 0.25 seconds, 36416 bytes code, 208 bytes data.
+Compilation success
+Cleaning package cache for ACBr_NFeDanfeESCPOS.bpl
+Cleaning ok
+Registering package C:\ComponentesDesphi\ACBR\Lib\Delphi\LibD26\ACBr_NFeDanfeESCPOS.bpl
+Registration ok
+Installation of package finished
+Pacote "ACBr_NFeDanfeESCPOS.dpk" instalado com sucesso.
+Installing package C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrDFe\ACBrCTe\ACBr_CTe.dpk
+Compiling package C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrDFe\ACBrCTe\ACBr_CTe.dpk
+"C:\Program Files (x86)\Embarcadero\Studio\20.0\bin\dcc32.exe" "C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrDFe\ACBrCTe\ACBr_CTe.dpk"
+Embarcadero Delphi for Win32 compiler version 33.0
+Copyright (c) 1983,2017 Embarcadero Technologies, Inc.
+71452 lines, 0.42 seconds, 604236 bytes code, 296 bytes data.
+Compilation success
+Cleaning package cache for ACBr_CTe.bpl
+Cleaning ok
+Registering package C:\ComponentesDesphi\ACBR\Lib\Delphi\LibD26\ACBr_CTe.bpl
+Registration ok
+Installation of package finished
+Pacote "ACBr_CTe.dpk" instalado com sucesso.
+Installing package C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrDFe\ACBrNFSe\ACBr_NFSe.dpk
+Compiling package C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrDFe\ACBrNFSe\ACBr_NFSe.dpk
+"C:\Program Files (x86)\Embarcadero\Studio\20.0\bin\dcc32.exe" "C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrDFe\ACBrNFSe\ACBr_NFSe.dpk"
+Embarcadero Delphi for Win32 compiler version 33.0
+Copyright (c) 1983,2017 Embarcadero Technologies, Inc.
+128854 lines, 0.58 seconds, 1800144 bytes code, 352 bytes data.
+Compilation success
+Cleaning package cache for ACBr_NFSe.bpl
+Cleaning ok
+Registering package C:\ComponentesDesphi\ACBR\Lib\Delphi\LibD26\ACBr_NFSe.bpl
+Registration ok
+Installation of package finished
+Pacote "ACBr_NFSe.dpk" instalado com sucesso.
+Installing package C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrDFe\ACBrMDFe\ACBr_MDFe.dpk
+Compiling package C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrDFe\ACBrMDFe\ACBr_MDFe.dpk
+"C:\Program Files (x86)\Embarcadero\Studio\20.0\bin\dcc32.exe" "C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrDFe\ACBrMDFe\ACBr_MDFe.dpk"
+Embarcadero Delphi for Win32 compiler version 33.0
+Copyright (c) 1983,2017 Embarcadero Technologies, Inc.
+58535 lines, 0.38 seconds, 326748 bytes code, 284 bytes data.
+Compilation success
+Cleaning package cache for ACBr_MDFe.bpl
+Cleaning ok
+Registering package C:\ComponentesDesphi\ACBR\Lib\Delphi\LibD26\ACBr_MDFe.bpl
+Registration ok
+Installation of package finished
+Pacote "ACBr_MDFe.dpk" instalado com sucesso.
+Installing package C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrDFe\ACBrGNRE\ACBr_GNRE.dpk
+Compiling package C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrDFe\ACBrGNRE\ACBr_GNRE.dpk
+"C:\Program Files (x86)\Embarcadero\Studio\20.0\bin\dcc32.exe" "C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrDFe\ACBrGNRE\ACBr_GNRE.dpk"
+Embarcadero Delphi for Win32 compiler version 33.0
+Copyright (c) 1983,2017 Embarcadero Technologies, Inc.
+59043 lines, 0.38 seconds, 151636 bytes code, 300 bytes data.
+Compilation success
+Cleaning package cache for ACBr_GNRE.bpl
+Cleaning ok
+Registering package C:\ComponentesDesphi\ACBR\Lib\Delphi\LibD26\ACBr_GNRE.bpl
+Registration ok
+Installation of package finished
+Pacote "ACBr_GNRE.dpk" instalado com sucesso.
+Installing package C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrDFe\ACBreSocial\ACBre_Social.dpk
+Compiling package C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrDFe\ACBreSocial\ACBre_Social.dpk
+"C:\Program Files (x86)\Embarcadero\Studio\20.0\bin\dcc32.exe" "C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrDFe\ACBreSocial\ACBre_Social.dpk"
+Embarcadero Delphi for Win32 compiler version 33.0
+Copyright (c) 1983,2017 Embarcadero Technologies, Inc.
+189371 lines, 0.78 seconds, 977512 bytes code, 1856 bytes data.
+Compilation success
+Cleaning package cache for ACBre_Social.bpl
+Cleaning ok
+Registering package C:\ComponentesDesphi\ACBR\Lib\Delphi\LibD26\ACBre_Social.bpl
+Registration ok
+Installation of package finished
+Pacote "ACBre_Social.dpk" instalado com sucesso.
+Installing package C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrDFe\ACBrReinf\ACBr_Reinf.dpk
+Compiling package C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrDFe\ACBrReinf\ACBr_Reinf.dpk
+"C:\Program Files (x86)\Embarcadero\Studio\20.0\bin\dcc32.exe" "C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrDFe\ACBrReinf\ACBr_Reinf.dpk"
+Embarcadero Delphi for Win32 compiler version 33.0
+Copyright (c) 1983,2017 Embarcadero Technologies, Inc.
+79268 lines, 0.53 seconds, 390176 bytes code, 568 bytes data.
+Compilation success
+Cleaning package cache for ACBr_Reinf.bpl
+Cleaning ok
+Registering package C:\ComponentesDesphi\ACBR\Lib\Delphi\LibD26\ACBr_Reinf.bpl
+Registration ok
+Installation of package finished
+Pacote "ACBr_Reinf.dpk" instalado com sucesso.
+Installing package C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrSAT\ACBr_SAT.dpk
+Compiling package C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrSAT\ACBr_SAT.dpk
+"C:\Program Files (x86)\Embarcadero\Studio\20.0\bin\dcc32.exe" "C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrSAT\ACBr_SAT.dpk"
+Embarcadero Delphi for Win32 compiler version 33.0
+Copyright (c) 1983,2017 Embarcadero Technologies, Inc.
+43270 lines, 0.30 seconds, 276740 bytes code, 272 bytes data.
+Compilation success
+Cleaning package cache for ACBr_SAT.bpl
+Cleaning ok
+Registering package C:\ComponentesDesphi\ACBR\Lib\Delphi\LibD26\ACBr_SAT.bpl
+Registration ok
+Installation of package finished
+Pacote "ACBr_SAT.dpk" instalado com sucesso.
+Installing package C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrSAT\ACBrECFVirtualSAT\ACBr_SATECFVirtual.dpk
+Compiling package C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrSAT\ACBrECFVirtualSAT\ACBr_SATECFVirtual.dpk
+"C:\Program Files (x86)\Embarcadero\Studio\20.0\bin\dcc32.exe" "C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrSAT\ACBrECFVirtualSAT\ACBr_SATECFVirtual.dpk"
+Embarcadero Delphi for Win32 compiler version 33.0
+Copyright (c) 1983,2017 Embarcadero Technologies, Inc.
+2876 lines, 0.39 seconds, 20248 bytes code, 208 bytes data.
+Compilation success
+Cleaning package cache for ACBr_SATECFVirtual.bpl
+Cleaning ok
+Registering package C:\ComponentesDesphi\ACBR\Lib\Delphi\LibD26\ACBr_SATECFVirtual.bpl
+Registration ok
+Installation of package finished
+Pacote "ACBr_SATECFVirtual.dpk" instalado com sucesso.
+Installing package C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrSAT\Extrato\EscPos\ACBr_SATExtratoESCPOS.dpk
+Compiling package C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrSAT\Extrato\EscPos\ACBr_SATExtratoESCPOS.dpk
+"C:\Program Files (x86)\Embarcadero\Studio\20.0\bin\dcc32.exe" "C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrSAT\Extrato\EscPos\ACBr_SATExtratoESCPOS.dpk"
+Embarcadero Delphi for Win32 compiler version 33.0
+Copyright (c) 1983,2017 Embarcadero Technologies, Inc.
+3083 lines, 0.23 seconds, 30400 bytes code, 208 bytes data.
+Compilation success
+Cleaning package cache for ACBr_SATExtratoESCPOS.bpl
+Cleaning ok
+Registering package C:\ComponentesDesphi\ACBR\Lib\Delphi\LibD26\ACBr_SATExtratoESCPOS.bpl
+Registration ok
+Installation of package finished
+Pacote "ACBr_SATExtratoESCPOS.dpk" instalado com sucesso.
+Installing package C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrDFe\ACBrSATWS\ACBr_SATWS.dpk
+Compiling package C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrDFe\ACBrSATWS\ACBr_SATWS.dpk
+"C:\Program Files (x86)\Embarcadero\Studio\20.0\bin\dcc32.exe" "C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrDFe\ACBrSATWS\ACBr_SATWS.dpk"
+Embarcadero Delphi for Win32 compiler version 33.0
+Copyright (c) 1983,2017 Embarcadero Technologies, Inc.
+13809 lines, 0.30 seconds, 23532 bytes code, 224 bytes data.
+Compilation success
+Cleaning package cache for ACBr_SATWS.bpl
+Cleaning ok
+Registering package C:\ComponentesDesphi\ACBR\Lib\Delphi\LibD26\ACBr_SATWS.bpl
+Registration ok
+Installation of package finished
+Pacote "ACBr_SATWS.dpk" instalado com sucesso.
+Installing package C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrDFe\ACBrBlocoX\ACBr_BlocoX.dpk
+Compiling package C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrDFe\ACBrBlocoX\ACBr_BlocoX.dpk
+"C:\Program Files (x86)\Embarcadero\Studio\20.0\bin\dcc32.exe" "C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrDFe\ACBrBlocoX\ACBr_BlocoX.dpk"
+Embarcadero Delphi for Win32 compiler version 33.0
+Copyright (c) 1983,2017 Embarcadero Technologies, Inc.
+23646 lines, 0.31 seconds, 112184 bytes code, 240 bytes data.
+Compilation success
+Cleaning package cache for ACBr_BlocoX.bpl
+Cleaning ok
+Registering package C:\ComponentesDesphi\ACBR\Lib\Delphi\LibD26\ACBr_BlocoX.bpl
+Registration ok
+Installation of package finished
+Pacote "ACBr_BlocoX.dpk" instalado com sucesso.
+Installing package C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrDFe\ACBrBPe\ACBr_BPe.dpk
+Compiling package C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrDFe\ACBrBPe\ACBr_BPe.dpk
+"C:\Program Files (x86)\Embarcadero\Studio\20.0\bin\dcc32.exe" "C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrDFe\ACBrBPe\ACBr_BPe.dpk"
+Embarcadero Delphi for Win32 compiler version 33.0
+Copyright (c) 1983,2017 Embarcadero Technologies, Inc.
+51190 lines, 0.36 seconds, 264228 bytes code, 280 bytes data.
+Compilation success
+Cleaning package cache for ACBr_BPe.bpl
+Cleaning ok
+Registering package C:\ComponentesDesphi\ACBR\Lib\Delphi\LibD26\ACBr_BPe.bpl
+Registration ok
+Installation of package finished
+Pacote "ACBr_BPe.dpk" instalado com sucesso.
+Installing package C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrDFe\ACBrBPe\DABPE\EscPos\ACBr_BPeDabpeESCPOS.dpk
+Compiling package C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrDFe\ACBrBPe\DABPE\EscPos\ACBr_BPeDabpeESCPOS.dpk
+"C:\Program Files (x86)\Embarcadero\Studio\20.0\bin\dcc32.exe" "C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrDFe\ACBrBPe\DABPE\EscPos\ACBr_BPeDabpeESCPOS.dpk"
+Embarcadero Delphi for Win32 compiler version 33.0
+Copyright (c) 1983,2017 Embarcadero Technologies, Inc.
+2953 lines, 0.23 seconds, 28588 bytes code, 208 bytes data.
+Compilation success
+Cleaning package cache for ACBr_BPeDabpeESCPOS.bpl
+Cleaning ok
+Registering package C:\ComponentesDesphi\ACBR\Lib\Delphi\LibD26\ACBr_BPeDabpeESCPOS.bpl
+Registration ok
+Installation of package finished
+Pacote "ACBr_BPeDabpeESCPOS.dpk" instalado com sucesso.
+Installing package C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrDFe\ACBrANe\ACBr_ANe.dpk
+Compiling package C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrDFe\ACBrANe\ACBr_ANe.dpk
+"C:\Program Files (x86)\Embarcadero\Studio\20.0\bin\dcc32.exe" "C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrDFe\ACBrANe\ACBr_ANe.dpk"
+Embarcadero Delphi for Win32 compiler version 33.0
+Copyright (c) 1983,2017 Embarcadero Technologies, Inc.
+26946 lines, 0.34 seconds, 64176 bytes code, 244 bytes data.
+Compilation success
+Cleaning package cache for ACBr_ANe.bpl
+Cleaning ok
+Registering package C:\ComponentesDesphi\ACBR\Lib\Delphi\LibD26\ACBr_ANe.bpl
+Registration ok
+Installation of package finished
+Pacote "ACBr_ANe.dpk" instalado com sucesso.
+Installing package C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrDFe\ACBrCIOT\ACBr_CIOT.dpk
+Compiling package C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrDFe\ACBrCIOT\ACBr_CIOT.dpk
+"C:\Program Files (x86)\Embarcadero\Studio\20.0\bin\dcc32.exe" "C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrDFe\ACBrCIOT\ACBr_CIOT.dpk"
+Embarcadero Delphi for Win32 compiler version 33.0
+Copyright (c) 1983,2017 Embarcadero Technologies, Inc.
+35938 lines, 0.33 seconds, 159916 bytes code, 256 bytes data.
+Compilation success
+Cleaning package cache for ACBr_CIOT.bpl
+Cleaning ok
+Registering package C:\ComponentesDesphi\ACBR\Lib\Delphi\LibD26\ACBr_CIOT.bpl
+Registration ok
+Installation of package finished
+Pacote "ACBr_CIOT.dpk" instalado com sucesso.
+Installing package C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrDFe\ACBrONE\ACBr_ONE.dpk
+Compiling package C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrDFe\ACBrONE\ACBr_ONE.dpk
+"C:\Program Files (x86)\Embarcadero\Studio\20.0\bin\dcc32.exe" "C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrDFe\ACBrONE\ACBr_ONE.dpk"
+Embarcadero Delphi for Win32 compiler version 33.0
+Copyright (c) 1983,2017 Embarcadero Technologies, Inc.
+31398 lines, 0.33 seconds, 68692 bytes code, 252 bytes data.
+Compilation success
+Cleaning package cache for ACBr_ONE.bpl
+Cleaning ok
+Registering package C:\ComponentesDesphi\ACBR\Lib\Delphi\LibD26\ACBr_ONE.bpl
+Registration ok
+Installation of package finished
+Pacote "ACBr_ONE.dpk" instalado com sucesso.
+Installing package C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrTEFD\ACBr_TEFD.dpk
+Compiling package C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrTEFD\ACBr_TEFD.dpk
+"C:\Program Files (x86)\Embarcadero\Studio\20.0\bin\dcc32.exe" "C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrTEFD\ACBr_TEFD.dpk"
+Embarcadero Delphi for Win32 compiler version 33.0
+Copyright (c) 1983,2017 Embarcadero Technologies, Inc.
+51695 lines, 0.25 seconds, 224224 bytes code, 288 bytes data.
+Compilation success
+Cleaning package cache for ACBr_TEFD.bpl
+Cleaning ok
+Registering package C:\ComponentesDesphi\ACBR\Lib\Delphi\LibD26\ACBr_TEFD.bpl
+Registration ok
+Installation of package finished
+Pacote "ACBr_TEFD.dpk" instalado com sucesso.
+Installing package C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrDFe\ACBrNFe\DANFE\NFe\Fast\ACBr_NFeDanfeFR.dpk
+Compiling package C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrDFe\ACBrNFe\DANFE\NFe\Fast\ACBr_NFeDanfeFR.dpk
+"C:\Program Files (x86)\Embarcadero\Studio\20.0\bin\dcc32.exe" "C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrDFe\ACBrNFe\DANFE\NFe\Fast\ACBr_NFeDanfeFR.dpk"
+Embarcadero Delphi for Win32 compiler version 33.0
+Copyright (c) 1983,2017 Embarcadero Technologies, Inc.
+9743 lines, 0.41 seconds, 77772 bytes code, 216 bytes data.
+Compilation success
+Cleaning package cache for ACBr_NFeDanfeFR.bpl
+Cleaning ok
+Registering package C:\ComponentesDesphi\ACBR\Lib\Delphi\LibD26\ACBr_NFeDanfeFR.bpl
+Registration ok
+Installation of package finished
+Pacote "ACBr_NFeDanfeFR.dpk" instalado com sucesso.
+Installing package C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrDFe\ACBrCTe\DACTE\Fast\ACBr_CTeDacteFR.dpk
+Compiling package C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrDFe\ACBrCTe\DACTE\Fast\ACBr_CTeDacteFR.dpk
+"C:\Program Files (x86)\Embarcadero\Studio\20.0\bin\dcc32.exe" "C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrDFe\ACBrCTe\DACTE\Fast\ACBr_CTeDacteFR.dpk"
+Embarcadero Delphi for Win32 compiler version 33.0
+Copyright (c) 1983,2017 Embarcadero Technologies, Inc.
+8003 lines, 0.41 seconds, 89480 bytes code, 216 bytes data.
+Compilation success
+Cleaning package cache for ACBr_CTeDacteFR.bpl
+Cleaning ok
+Registering package C:\ComponentesDesphi\ACBR\Lib\Delphi\LibD26\ACBr_CTeDacteFR.bpl
+Registration ok
+Installation of package finished
+Pacote "ACBr_CTeDacteFR.dpk" instalado com sucesso.
+Installing package C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrDFe\ACBrNFSe\DANFSE\Fast\ACBr_NFSeDanfseFR.dpk
+Compiling package C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrDFe\ACBrNFSe\DANFSE\Fast\ACBr_NFSeDanfseFR.dpk
+"C:\Program Files (x86)\Embarcadero\Studio\20.0\bin\dcc32.exe" "C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrDFe\ACBrNFSe\DANFSE\Fast\ACBr_NFSeDanfseFR.dpk"
+Embarcadero Delphi for Win32 compiler version 33.0
+Copyright (c) 1983,2017 Embarcadero Technologies, Inc.
+5681 lines, 0.39 seconds, 45404 bytes code, 216 bytes data.
+Compilation success
+Cleaning package cache for ACBr_NFSeDanfseFR.bpl
+Cleaning ok
+Registering package C:\ComponentesDesphi\ACBR\Lib\Delphi\LibD26\ACBr_NFSeDanfseFR.bpl
+Registration ok
+Installation of package finished
+Pacote "ACBr_NFSeDanfseFR.dpk" instalado com sucesso.
+Installing package C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrBoleto\FC\Fast\ACBr_BoletoFR.dpk
+Compiling package C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrBoleto\FC\Fast\ACBr_BoletoFR.dpk
+"C:\Program Files (x86)\Embarcadero\Studio\20.0\bin\dcc32.exe" "C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrBoleto\FC\Fast\ACBr_BoletoFR.dpk"
+Embarcadero Delphi for Win32 compiler version 33.0
+Copyright (c) 1983,2017 Embarcadero Technologies, Inc.
+5166 lines, 0.33 seconds, 27856 bytes code, 212 bytes data.
+Compilation success
+Cleaning package cache for ACBr_BoletoFR.bpl
+Cleaning ok
+Registering package C:\ComponentesDesphi\ACBR\Lib\Delphi\LibD26\ACBr_BoletoFR.bpl
+Registration ok
+Installation of package finished
+Pacote "ACBr_BoletoFR.dpk" instalado com sucesso.
+Installing package C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrDFe\ACBrMDFe\DAMDFE\Fast\ACBr_MDFeDamdfeFR.dpk
+Compiling package C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrDFe\ACBrMDFe\DAMDFE\Fast\ACBr_MDFeDamdfeFR.dpk
+"C:\Program Files (x86)\Embarcadero\Studio\20.0\bin\dcc32.exe" "C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrDFe\ACBrMDFe\DAMDFE\Fast\ACBr_MDFeDamdfeFR.dpk"
+Embarcadero Delphi for Win32 compiler version 33.0
+Copyright (c) 1983,2017 Embarcadero Technologies, Inc.
+6225 lines, 0.38 seconds, 52976 bytes code, 212 bytes data.
+Compilation success
+Cleaning package cache for ACBr_MDFeDamdfeFR.bpl
+Cleaning ok
+Registering package C:\ComponentesDesphi\ACBR\Lib\Delphi\LibD26\ACBr_MDFeDamdfeFR.bpl
+Registration ok
+Installation of package finished
+Pacote "ACBr_MDFeDamdfeFR.dpk" instalado com sucesso.
+Installing package C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrDFe\ACBrGNRE\GNRE\Fast\ACBr_GNREGuiaFR.dpk
+Compiling package C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrDFe\ACBrGNRE\GNRE\Fast\ACBr_GNREGuiaFR.dpk
+"C:\Program Files (x86)\Embarcadero\Studio\20.0\bin\dcc32.exe" "C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrDFe\ACBrGNRE\GNRE\Fast\ACBr_GNREGuiaFR.dpk"
+Embarcadero Delphi for Win32 compiler version 33.0
+Copyright (c) 1983,2017 Embarcadero Technologies, Inc.
+7200 lines, 0.41 seconds, 23944 bytes code, 220 bytes data.
+Compilation success
+Cleaning package cache for ACBr_GNREGuiaFR.bpl
+Cleaning ok
+Registering package C:\ComponentesDesphi\ACBR\Lib\Delphi\LibD26\ACBr_GNREGuiaFR.bpl
+Registration ok
+Installation of package finished
+Pacote "ACBr_GNREGuiaFR.dpk" instalado com sucesso.
+Installing package C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrDFe\ACBrNFe\DANFE\NFe\Fortes\ACBr_NFeDanfeRL.dpk
+Compiling package C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrDFe\ACBrNFe\DANFE\NFe\Fortes\ACBr_NFeDanfeRL.dpk
+"C:\Program Files (x86)\Embarcadero\Studio\20.0\bin\dcc32.exe" "C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrDFe\ACBrNFe\DANFE\NFe\Fortes\ACBr_NFeDanfeRL.dpk"
+Embarcadero Delphi for Win32 compiler version 33.0
+Copyright (c) 1983,2017 Embarcadero Technologies, Inc.
+35503 lines, 0.39 seconds, 235440 bytes code, 260 bytes data.
+Compilation success
+Cleaning package cache for ACBr_NFeDanfeRL.bpl
+Cleaning ok
+Registering package C:\ComponentesDesphi\ACBR\Lib\Delphi\LibD26\ACBr_NFeDanfeRL.bpl
+Registration ok
+Installation of package finished
+Pacote "ACBr_NFeDanfeRL.dpk" instalado com sucesso.
+Installing package C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrDFe\ACBrNFSe\DANFSE\Fortes\ACBr_NFSeDanfseRL.dpk
+Compiling package C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrDFe\ACBrNFSe\DANFSE\Fortes\ACBr_NFSeDanfseRL.dpk
+"C:\Program Files (x86)\Embarcadero\Studio\20.0\bin\dcc32.exe" "C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrDFe\ACBrNFSe\DANFSE\Fortes\ACBr_NFSeDanfseRL.dpk"
+Embarcadero Delphi for Win32 compiler version 33.0
+Copyright (c) 1983,2017 Embarcadero Technologies, Inc.
+9743 lines, 0.31 seconds, 33860 bytes code, 232 bytes data.
+Compilation success
+Cleaning package cache for ACBr_NFSeDanfseRL.bpl
+Cleaning ok
+Registering package C:\ComponentesDesphi\ACBR\Lib\Delphi\LibD26\ACBr_NFSeDanfseRL.bpl
+Registration ok
+Installation of package finished
+Pacote "ACBr_NFSeDanfseRL.dpk" instalado com sucesso.
+Installing package C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrDFe\ACBrCTe\DACTE\Fortes\ACBr_CTeDacteRL.dpk
+Compiling package C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrDFe\ACBrCTe\DACTE\Fortes\ACBr_CTeDacteRL.dpk
+"C:\Program Files (x86)\Embarcadero\Studio\20.0\bin\dcc32.exe" "C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrDFe\ACBrCTe\DACTE\Fortes\ACBr_CTeDacteRL.dpk"
+Embarcadero Delphi for Win32 compiler version 33.0
+Copyright (c) 1983,2017 Embarcadero Technologies, Inc.
+25666 lines, 0.38 seconds, 164520 bytes code, 260 bytes data.
+Compilation success
+Cleaning package cache for ACBr_CTeDacteRL.bpl
+Cleaning ok
+Registering package C:\ComponentesDesphi\ACBR\Lib\Delphi\LibD26\ACBr_CTeDacteRL.bpl
+Registration ok
+Installation of package finished
+Pacote "ACBr_CTeDacteRL.dpk" instalado com sucesso.
+Installing package C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrBoleto\FC\Fortes\ACBr_BoletoRL.dpk
+Compiling package C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrBoleto\FC\Fortes\ACBr_BoletoRL.dpk
+"C:\Program Files (x86)\Embarcadero\Studio\20.0\bin\dcc32.exe" "C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrBoleto\FC\Fortes\ACBr_BoletoRL.dpk"
+Embarcadero Delphi for Win32 compiler version 33.0
+Copyright (c) 1983,2017 Embarcadero Technologies, Inc.
+4172 lines, 0.25 seconds, 74424 bytes code, 216 bytes data.
+Compilation success
+Cleaning package cache for ACBr_BoletoRL.bpl
+Cleaning ok
+Registering package C:\ComponentesDesphi\ACBR\Lib\Delphi\LibD26\ACBr_BoletoRL.bpl
+Registration ok
+Installation of package finished
+Pacote "ACBr_BoletoRL.dpk" instalado com sucesso.
+Installing package C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrDFe\ACBrMDFe\DAMDFE\Fortes\ACBr_MDFeDamdfeRL.dpk
+Compiling package C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrDFe\ACBrMDFe\DAMDFE\Fortes\ACBr_MDFeDamdfeRL.dpk
+"C:\Program Files (x86)\Embarcadero\Studio\20.0\bin\dcc32.exe" "C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrDFe\ACBrMDFe\DAMDFE\Fortes\ACBr_MDFeDamdfeRL.dpk"
+Embarcadero Delphi for Win32 compiler version 33.0
+Copyright (c) 1983,2017 Embarcadero Technologies, Inc.
+14794 lines, 0.31 seconds, 50156 bytes code, 232 bytes data.
+Compilation success
+Cleaning package cache for ACBr_MDFeDamdfeRL.bpl
+Cleaning ok
+Registering package C:\ComponentesDesphi\ACBR\Lib\Delphi\LibD26\ACBr_MDFeDamdfeRL.bpl
+Registration ok
+Installation of package finished
+Pacote "ACBr_MDFeDamdfeRL.dpk" instalado com sucesso.
+Installing package C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrSAT\Extrato\Fortes\ACBr_SATExtratoRL.dpk
+Compiling package C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrSAT\Extrato\Fortes\ACBr_SATExtratoRL.dpk
+"C:\Program Files (x86)\Embarcadero\Studio\20.0\bin\dcc32.exe" "C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrSAT\Extrato\Fortes\ACBr_SATExtratoRL.dpk"
+Embarcadero Delphi for Win32 compiler version 33.0
+Copyright (c) 1983,2017 Embarcadero Technologies, Inc.
+5905 lines, 0.28 seconds, 46560 bytes code, 212 bytes data.
+Compilation success
+Cleaning package cache for ACBr_SATExtratoRL.bpl
+Cleaning ok
+Registering package C:\ComponentesDesphi\ACBR\Lib\Delphi\LibD26\ACBr_SATExtratoRL.bpl
+Registration ok
+Installation of package finished
+Pacote "ACBr_SATExtratoRL.dpk" instalado com sucesso.
+Installing package C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrDFe\ACBrGNRE\GNRE\Fortes\ACBr_GNREGuiaRL.dpk
+Compiling package C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrDFe\ACBrGNRE\GNRE\Fortes\ACBr_GNREGuiaRL.dpk
+"C:\Program Files (x86)\Embarcadero\Studio\20.0\bin\dcc32.exe" "C:\ComponentesDesphi\ACBR\Pacotes\Delphi\ACBrDFe\ACBrGNRE\GNRE\Fortes\ACBr_GNREGuiaRL.dpk"
+Embarcadero Delphi for Win32 compiler version 33.0
+Copyright (c) 1983,2017 Embarcadero Technologies, Inc.
+9624 lines, 0.30 seconds, 30076 bytes code, 220 bytes data.
+Compilation success
+Cleaning package cache for ACBr_GNREGuiaRL.bpl
+Cleaning ok
+Registering package C:\ComponentesDesphi\ACBR\Lib\Delphi\LibD26\ACBr_GNREGuiaRL.bpl
+Registration ok
+Installation of package finished
+Pacote "ACBr_GNREGuiaRL.dpk" instalado com sucesso.
+
+INSTALANDO OUTROS REQUISITOS...
+CAPICOM instalado com sucesso em "C:\Windows\SysWOW64"
+OPENSSL instalado com sucesso em "C:\Windows\SysWOW64"
+LibXml2 instalado com sucesso em "C:\Windows\SysWOW64"
+DLLs diversas instalado com sucesso em "C:\Windows\SysWOW64"

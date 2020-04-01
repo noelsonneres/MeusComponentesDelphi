@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <Package Version="4">
+    <PathDelim Value="\"/>
+    <Name Value="ACBr_NFSe"/>
+    <Type Value="RunAndDesignTime"/>
+    <Author Value="Juliomar Marchetti, Daniel Simões de Almeida"/>
+    <CompilerOptions>
+      <Version Value="11"/>
+      <PathDelim Value="\"/>
+      <SearchPaths>
+        <OtherUnitFiles Value="..\..\..\..\Fontes\ACBrDFe\ACBrNFSe;..\..\..\..\Fontes\ACBrDFe\ACBrNFSe\PCNNFSe;..\..\..\..\Fontes\ACBrDFe\ACBrNFSe\DANFSE;..\..\..\..\Fontes\ACBrDFe\ACBrNFSe\Provedores"/>
+        <UnitOutputDirectory Value="..\..\..\..\Lib\Lazarus\ACBrDFe\ACBrNFSe\$(TargetCPU)-$(TargetOS)"/>
+      </SearchPaths>
+    </CompilerOptions>
+    <Description Value="ACBr - Nota Fiscal Eletrônica de Serviço - (http://www.projetoacbr.com.br/)"/>
+    <License Value="LGPL"/>
+    <Files Count="25">
+      <Item1>
+        <Filename Value="..\..\..\..\Fontes\ACBrDFe\ACBrNFSe\ACBrNFSe.pas"/>
+        <UnitName Value="ACBrNFSe"/>
+      </Item1>
+      <Item2>
+        <Filename Value="..\..\..\..\Fontes\ACBrDFe\ACBrNFSe\ACBrNFSeConfiguracoes.pas"/>
+        <UnitName Value="ACBrNFSeConfiguracoes"/>
+      </Item2>
+      <Item3>
+        <Filename Value="..\..\..\..\Fontes\ACBrDFe\ACBrNFSe\ACBrNFSeNotasFiscais.pas"/>
+        <UnitName Value="ACBrNFSeNotasFiscais"/>
+      </Item3>
+      <Item4>
+        <Filename Value="..\..\..\..\Fontes\ACBrDFe\ACBrNFSe\ACBrNFSeReg.pas"/>
+        <HasRegisterProc Value="True"/>
+        <UnitName Value="ACBrNFSeReg"/>
+      </Item4>
+      <Item5>
+        <Filename Value="..\..\..\..\Fontes\ACBrDFe\ACBrNFSe\ACBrNFSeWebServices.pas"/>
+        <UnitName Value="ACBrNFSeWebServices"/>
+      </Item5>
+      <Item6>
+        <Filename Value="..\..\..\..\Fontes\ACBrDFe\ACBrNFSe\PCNNFSe\pnfsCancNfseResposta.pas"/>
+        <UnitName Value="pnfsCancNfseResposta"/>
+      </Item6>
+      <Item7>
+        <Filename Value="..\..\..\..\Fontes\ACBrDFe\ACBrNFSe\PCNNFSe\pnfsConsSitLoteRpsResposta.pas"/>
+        <UnitName Value="pnfsConsSitLoteRpsResposta"/>
+      </Item7>
+      <Item8>
+        <Filename Value="..\..\..\..\Fontes\ACBrDFe\ACBrNFSe\PCNNFSe\pnfsConversao.pas"/>
+        <UnitName Value="pnfsConversao"/>
+      </Item8>
+      <Item9>
+        <Filename Value="..\..\..\..\Fontes\ACBrDFe\ACBrNFSe\PCNNFSe\pnfsEnvLoteRpsResposta.pas"/>
+        <UnitName Value="pnfsEnvLoteRpsResposta"/>
+      </Item9>
+      <Item10>
+        <Filename Value="..\..\..\..\Fontes\ACBrDFe\ACBrNFSe\PCNNFSe\pnfsNFSe.pas"/>
+        <UnitName Value="pnfsNFSe"/>
+      </Item10>
+      <Item11>
+        <Filename Value="..\..\..\..\Fontes\ACBrDFe\ACBrNFSe\PCNNFSe\pnfsNFSeG.pas"/>
+        <UnitName Value="pnfsNFSeG"/>
+      </Item11>
+      <Item12>
+        <Filename Value="..\..\..\..\Fontes\ACBrDFe\ACBrNFSe\PCNNFSe\pnfsNFSeR.pas"/>
+        <UnitName Value="pnfsNFSeR"/>
+      </Item12>
+      <Item13>
+        <Filename Value="..\..\..\..\Fontes\ACBrDFe\ACBrNFSe\PCNNFSe\pnfsNFSeW.pas"/>
+        <UnitName Value="pnfsNFSeW"/>
+      </Item13>
+      <Item14>
+        <Filename Value="..\..\..\..\Fontes\ACBrDFe\ACBrNFSe\PCNNFSe\pnfsSubsNfseResposta.pas"/>
+        <UnitName Value="pnfsSubsNfseResposta"/>
+      </Item14>
+      <Item15>
+        <Filename Value="..\..\..\..\Fontes\ACBrDFe\ACBrNFSe\DANFSE\ACBrNFSeDANFSeClass.pas"/>
+        <UnitName Value="ACBrNFSeDANFSeClass"/>
+      </Item15>
+      <Item16>
+        <Filename Value="..\..\..\..\Fontes\ACBrDFe\ACBrNFSe\PCNNFSe\pnfsNFSeW_ABRASFv1.pas"/>
+        <UnitName Value="pnfsNFSeW_ABRASFv1"/>
+      </Item16>
+      <Item17>
+        <Filename Value="..\..\..\..\Fontes\ACBrDFe\ACBrNFSe\PCNNFSe\pnfsNFSeW_ABRASFv2.pas"/>
+        <UnitName Value="pnfsNFSeW_ABRASFv2"/>
+      </Item17>
+      <Item18>
+        <Filename Value="..\..\..\..\Fontes\ACBrDFe\ACBrNFSe\PCNNFSe\pnfsNFSeW_EGoverneISS.pas"/>
+        <UnitName Value="pnfsNFSeW_EGoverneISS"/>
+      </Item18>
+      <Item19>
+        <Filename Value="..\..\..\..\Fontes\ACBrDFe\ACBrNFSe\PCNNFSe\pnfsNFSeW_EL.pas"/>
+        <UnitName Value="pnfsNFSeW_EL"/>
+      </Item19>
+      <Item20>
+        <Filename Value="..\..\..\..\Fontes\ACBrDFe\ACBrNFSe\PCNNFSe\pnfsNFSeW_Elotech.pas"/>
+        <UnitName Value="pnfsNFSeW_Elotech"/>
+      </Item20>
+      <Item21>
+        <Filename Value="..\..\..\..\Fontes\ACBrDFe\ACBrNFSe\PCNNFSe\pnfsNFSeW_Equiplano.pas"/>
+        <UnitName Value="pnfsNFSeW_Equiplano"/>
+      </Item21>
+      <Item22>
+        <Filename Value="..\..\..\..\Fontes\ACBrDFe\ACBrNFSe\PCNNFSe\pnfsNFSeW_Infisc.pas"/>
+        <UnitName Value="pnfsNFSeW_Infisc"/>
+      </Item22>
+      <Item23>
+        <Filename Value="..\..\..\..\Fontes\ACBrDFe\ACBrNFSe\PCNNFSe\pnfsNFSeW_ISSDSF.pas"/>
+        <UnitName Value="pnfsNFSeW_ISSDSF"/>
+      </Item23>
+      <Item24>
+        <Filename Value="..\..\..\..\Fontes\ACBrDFe\ACBrNFSe\PCNNFSe\pnfsNFSeW_Giap.pas"/>
+        <UnitName Value="pnfsnfseW_Giap"/>
+      </Item24>
+      <Item25>
+        <Filename Value="..\..\..\..\Fontes\ACBrDFe\ACBrNFSe\PCNNFSe\pnfsConsts.pas"/>
+        <UnitName Value="pnfsConsts"/>
+      </Item25>
+    </Files>
+    <RequiredPkgs Count="1">
+      <Item1>
+        <PackageName Value="ACBrDFeComum"/>
+      </Item1>
+    </RequiredPkgs>
+    <UsageOptions>
+      <UnitPath Value="$(PkgOutDir)"/>
+    </UsageOptions>
+    <PublishOptions>
+      <Version Value="2"/>
+    </PublishOptions>
+  </Package>
+</CONFIG>

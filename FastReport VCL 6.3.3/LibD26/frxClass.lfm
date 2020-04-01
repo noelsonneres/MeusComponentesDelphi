@@ -1,0 +1,7 @@
+object frxCustomDesigner: TfrxCustomDesigner
+  Left = 105
+  Height = 240
+  Top = 287
+  Width = 320
+  LCLVersion = '1.8.4.0'
+end

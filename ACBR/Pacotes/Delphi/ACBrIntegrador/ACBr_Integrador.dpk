@@ -1,0 +1,42 @@
+package ACBr_Integrador;
+
+{$R *.res}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO ON}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION ON}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES OFF}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$DESCRIPTION 'ACBr - Integrador - (http://www.projetoacbr.com.br/)'}
+{$IMPLICITBUILD OFF}
+
+requires
+  rtl,
+  vcl,
+  designide,
+  ACBr_PCNComum;
+
+contains
+  ACBrIntegradorReg in '..\..\..\Fontes\ACBrIntegrador\ACBrIntegradorReg.pas',
+  ACBrIntegrador in '..\..\..\Fontes\ACBrIntegrador\ACBrIntegrador.pas',
+  ACBrIntegradorResposta in '..\..\..\Fontes\ACBrIntegrador\ACBrIntegradorResposta.pas',
+  pcnVFPe in '..\..\..\Fontes\ACBrIntegrador\pcnVFPe\pcnVFPe.pas',
+  pcnVFPeR in '..\..\..\Fontes\ACBrIntegrador\pcnVFPe\pcnVFPeR.pas',
+  pcnVFPeW in '..\..\..\Fontes\ACBrIntegrador\pcnVFPe\pcnVFPeW.pas';
+
+end.

@@ -1,0 +1,6 @@
+{ This is an automatically generated lazarus resource file }
+
+LazarusResources.Add('TfrxCustomDesigner','FORMDATA',[
+  'TPF0'#18'TfrxCustomDesigner'#17'frxCustomDesigner'#4'Left'#2'i'#6'Height'#3
+  +#240#0#3'Top'#3#31#1#5'Width'#3'@'#1#10'LCLVersion'#6#7'1.8.4.0'#0#0
+]);

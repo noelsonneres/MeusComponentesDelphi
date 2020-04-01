@@ -1,0 +1,245 @@
+ï»¿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<Resources CodePage="1252">
+  <StrRes Name="1" Text="Acceptar"/>
+  <StrRes Name="2" Text="Cancel·lar"/>
+  <StrRes Name="3" Text="Tot"/>
+  <StrRes Name="4" Text="Pàgina activa"/>
+  <StrRes Name="5" Text="Pàgines:"/>
+  <StrRes Name="6" Text="Dividir pàgines"/>
+  <StrRes Name="7" Text="Rang pàgina"/>
+  <StrRes Name="8" Text="Opcions exportació"/>
+  <StrRes Name="9" Text="Entre el número de pàgina i/o rang de pàgines, separats per comes. Per exemple, 1,3,5-12"/>
+  <StrRes Name="100" Text="Vista Prèvia"/>
+  <StrRes Name="101" Text="Imprimir"/>
+  <StrRes Name="102" Text="Imprimir"/>
+  <StrRes Name="103" Text="Obrir"/>
+  <StrRes Name="104" Text="Obrir"/>
+  <StrRes Name="105" Text="Guardar"/>
+  <StrRes Name="106" Text="Guardar"/>
+  <StrRes Name="107" Text="Exportar"/>
+  <StrRes Name="108" Text="Exportar"/>
+  <StrRes Name="109" Text="Cercar"/>
+  <StrRes Name="110" Text="Cercar"/>
+  <StrRes Name="111" Text="Pàgina Completa"/>
+  <StrRes Name="112" Text="Pàgina Completa"/>
+  <StrRes Name="113" Text="Ampla de Pàgina"/>
+  <StrRes Name="114" Text="Ampla de Pàgina"/>
+  <StrRes Name="115" Text="100%"/>
+  <StrRes Name="116" Text="100%"/>
+  <StrRes Name="117" Text="Dos Pàgines"/>
+  <StrRes Name="118" Text="Dos Pàgines"/>
+  <StrRes Name="119" Text="Zoom"/>
+  <StrRes Name="120" Text="Marges"/>
+  <StrRes Name="121" Text="Marges"/>
+  <StrRes Name="122" Text="Perfil"/>
+  <StrRes Name="123" Text="Perfil"/>
+  <StrRes Name="124" Text="Amplia"/>
+  <StrRes Name="125" Text="Amplia"/>
+  <StrRes Name="126" Text="Redueix"/>
+  <StrRes Name="127" Text="Redueix"/>
+  <StrRes Name="128" Text="Contorn"/>
+  <StrRes Name="129" Text="Informe en esquema"/>
+  <StrRes Name="130" Text="Miniatures"/>
+  <StrRes Name="131" Text="Miniatures"/>
+  <StrRes Name="132" Text="Editar"/>
+  <StrRes Name="133" Text="Editar Pàgina"/>
+  <StrRes Name="134" Text="Primera"/>
+  <StrRes Name="135" Text="Primera Pàgina"/>
+  <StrRes Name="136" Text="Anterior"/>
+  <StrRes Name="137" Text="Pàgina Anterior"/>
+  <StrRes Name="138" Text="Següent"/>
+  <StrRes Name="139" Text="Pàgina Següent"/>
+  <StrRes Name="140" Text="Última"/>
+  <StrRes Name="141" Text="Última Pàgina"/>
+  <StrRes Name="142" Text="Número de Pàgina"/>
+  <StrRes Name="150" Text="Pantalla completa"/>
+  <StrRes Name="151" Text="Exportar a PDF"/>
+  <StrRes Name="152" Text="Envia per E-mail"/>
+  <StrRes Name="zmPageWidth" Text="Ampla de Pàgina"/>
+  <StrRes Name="zmWholePage" Text="Pàgina Completa"/>
+  <StrRes Name="200" Text="Imprimir"/>
+  <StrRes Name="201" Text="Impressora"/>
+  <StrRes Name="202" Text="Pàgines"/>
+  <StrRes Name="203" Text="Numero de còpies"/>
+  <StrRes Name="204" Text="Confrontar"/>
+  <StrRes Name="205" Text="Còpies"/>
+  <StrRes Name="206" Text="Imprimir"/>
+  <StrRes Name="207" Text="!Altres"/>
+  <StrRes Name="208" Text="On:"/>
+  <StrRes Name="209" Text="Propietats..."/>
+  <StrRes Name="210" Text="Imprimir a fitxer"/>
+  <StrRes Name="211" Text="!Ordre"/>
+  <StrRes Name="212" Text="Nom:"/>
+  <StrRes Name="213" Text="Mode impressió"/>
+  <StrRes Name="214" Text="Impressió en full"/>
+  <StrRes Name="216" Text="Doble cara"/>
+  <StrRes Name="ppAll" Text="Totes les pàgines"/>
+  <StrRes Name="ppOdd" Text="Pàgines imparells"/>
+  <StrRes Name="ppEven" Text="Pàgines parells"/>
+  <StrRes Name="pgDefault" Text="Per defecte"/>
+  <StrRes Name="pmDefault" Text="Per defecte"/>
+  <StrRes Name="pmSplit" Text="Dividir pàgines grans"/>
+  <StrRes Name="pmJoin" Text="Uneix pàgines petites"/>
+  <StrRes Name="pmScale" Text="Escala"/>
+  <StrRes Name="poDirect" Text="!Directe (1-9)"/>
+  <StrRes Name="poReverse" Text="!Inverteix (9-1)"/>
+  <StrRes Name="300" Text="Cercar Text"/>
+  <StrRes Name="301" Text="Text a cercar:"/>
+  <StrRes Name="302" Text="Opcions "/>
+  <StrRes Name="303" Text="Reemplaça per"/>
+  <StrRes Name="304" Text="Cercar des de l'inici"/>
+  <StrRes Name="305" Text="Diferent maj./minus."/>
+  <StrRes Name="400" Text="Format de Pàgina"/>
+  <StrRes Name="401" Text="Amplada"/>
+  <StrRes Name="402" Text="Alçada"/>
+  <StrRes Name="403" Text="Mida"/>
+  <StrRes Name="404" Text="Orientació"/>
+  <StrRes Name="405" Text="Esquerra"/>
+  <StrRes Name="406" Text="Superior"/>
+  <StrRes Name="407" Text="Dreta"/>
+  <StrRes Name="408" Text="Inferior"/>
+  <StrRes Name="409" Text="Marges"/>
+  <StrRes Name="410" Text="Vertical"/>
+  <StrRes Name="411" Text="Horitzontal"/>
+  <StrRes Name="412" Text="Altres"/>
+  <StrRes Name="413" Text="Aplicar a la pàgina actual"/>
+  <StrRes Name="414" Text="Aplicar a totes les pàgines"/>
+  <StrRes Name="500" Text="Imprimir"/>
+  <StrRes Name="501" Text="Impressora"/>
+  <StrRes Name="502" Text="Pàgines"/>
+  <StrRes Name="503" Text="Còpies"/>
+  <StrRes Name="504" Text="Número de còpies"/>
+  <StrRes Name="505" Text="Opcions"/>
+  <StrRes Name="506" Text="Comandes Escape"/>
+  <StrRes Name="507" Text="Imprimir a fitxer"/>
+  <StrRes Name="508" Text="Codi OEM"/>
+  <StrRes Name="509" Text="Pseudogràfic"/>
+  <StrRes Name="510" Text="Fitxer (*.prn)|*.prn"/>
+  <StrRes Name="mbConfirm" Text="Confirmar"/>
+  <StrRes Name="mbError" Text="Error"/>
+  <StrRes Name="mbInfo" Text="Informació"/>
+  <StrRes Name="xrCantFindClass" Text="No es pot trobar la classe"/>
+  <StrRes Name="prVirtual" Text="Virtual"/>
+  <StrRes Name="prDefault" Text="Defecte"/>
+  <StrRes Name="prCustom" Text="Habitual"/>
+  <StrRes Name="enUnconnHeader" Text="No connectats la capçalera/peu"/>
+  <StrRes Name="enUnconnGroup" Text="No hi ha una banda pel grup"/>
+  <StrRes Name="enUnconnGFooter" Text="No hi ha capçalera pel grup"/>
+  <StrRes Name="enBandPos" Text="Posició incorrecta de la banda:"/>
+  <StrRes Name="dbNotConn" Text="Taula %s no està connectat a la data"/>
+  <StrRes Name="dbFldNotFound" Text="Camp no trobat:"/>
+  <StrRes Name="clDSNotIncl" Text="(taula no està inclòs en el Report.DataSets)"/>
+  <StrRes Name="clUnknownVar" Text="Camp o variable desconeguts:"/>
+  <StrRes Name="clScrError" Text="Error d'script a %s: %s"/>
+  <StrRes Name="clDSNotExist" Text="La taula &#38;#34;%s&#38;#34; no existeix"/>
+  <StrRes Name="clErrors" Text="Ha ocorregut el següent error(s):"/>
+  <StrRes Name="clExprError" Text="Error en l'expressió"/>
+  <StrRes Name="clFP3files" Text="Informe preparat"/>
+  <StrRes Name="clSaving" Text="Guardant fitxer..."/>
+  <StrRes Name="clCancel" Text="Cancel·lar"/>
+  <StrRes Name="clClose" Text="Tancar"/>
+  <StrRes Name="clPrinting" Text="Imprimint pàgina"/>
+  <StrRes Name="clLoading" Text="Llegint fitxer..."/>
+  <StrRes Name="clPageOf" Text="Pàgina %d de %d"/>
+  <StrRes Name="clOf" Text="de %d"/>
+  <StrRes Name="clFirstPass" Text="Primera passada: pàgina "/>
+  <StrRes Name="clNoPrinters" Text="No hi ha impressores instal·lades en el teu sistema"/>
+  <StrRes Name="clDecompressError" Text="Error de descompressió"/>
+  <StrRes Name="prRunningFirst" Text="Primera passada: pàgina %d"/>
+  <StrRes Name="prRunning" Text="Preparant pàgina %d"/>
+  <StrRes Name="prPrinting" Text="Imprimint pàgina %d"/>
+  <StrRes Name="prExporting" Text="Exportant pàgina %d"/>
+  <StrRes Name="uCm" Text="cm"/>
+  <StrRes Name="uInch" Text="in"/>
+  <StrRes Name="uPix" Text="px"/>
+  <StrRes Name="uChar" Text="chr"/>
+  <StrRes Name="dupDefault" Text="Per Defecte"/>
+  <StrRes Name="dupVert" Text="Vertical"/>
+  <StrRes Name="dupHorz" Text="Horizontal"/>
+  <StrRes Name="dupSimpl" Text="Simplex"/>
+  <StrRes Name="crFillMx" Text="Omplint taula de referències creuades..."/>
+  <StrRes Name="crBuildMx" Text="Construïnt taula de referències creuades..."/>
+  <StrRes Name="SLangNotFound" Text="Llenguatge '%s' no trobat"/>
+  <StrRes Name="SInvalidLanguage" Text="Definició de llenguatge erroni"/>
+  <StrRes Name="SIdRedeclared" Text="Identificador redeclarat: "/>
+  <StrRes Name="SUnknownType" Text="Tipus no conegut: "/>
+  <StrRes Name="SIncompatibleTypes" Text="Tipus incompatibles"/>
+  <StrRes Name="SIdUndeclared" Text="Identificador no declarat: "/>
+  <StrRes Name="SClassRequired" Text="Tipus de classe requerida"/>
+  <StrRes Name="SIndexRequired" Text="Índex requerit"/>
+  <StrRes Name="SStringError" Text="Cadenes no tenen propietat o mètodes"/>
+  <StrRes Name="SClassError" Text="Classe %s no té una propietat per defecte"/>
+  <StrRes Name="SArrayRequired" Text="Tipus Matriu requerit"/>
+  <StrRes Name="SVarRequired" Text="Variable requerida"/>
+  <StrRes Name="SNotEnoughParams" Text="Falten paràmetres"/>
+  <StrRes Name="STooManyParams" Text="Masses paràmetres"/>
+  <StrRes Name="SLeftCantAssigned" Text="El costat esquerre no pot ser assignat"/>
+  <StrRes Name="SForError" Text="La variable per repetició ha de ser numèrica"/>
+  <StrRes Name="SEventError" Text="El manejador de successos ha de ser un procedure"/>
+  <StrRes Name="600" Text="Mostra-ho tot"/>
+  <StrRes Name="601" Text="Contrau-ho tot"/>
+  <StrRes Name="clStrNotFound" Text="No s'ha trobat el text"/>
+  <StrRes Name="clCantRen" Text="No es pot canviar el nom %s, es va introduir en l'herència"/>
+  <StrRes Name="clCirRefNotAllow" Text="No està permès la referència fill circular"/>
+  <StrRes Name="clDupName" Text="Nom duplicat"/>
+  <StrRes Name="clErrorInExp" Text="Error en l'expressió de càlcul:"/>
+  <StrRes Name="expMtm" Text="Excedit temps d'espera"/>
+  <StrRes Name="erInvalidImg" Text="Format d'imatge no vàlid"/>
+  <StrRes Name="ReportTitle" Text="TÍ­tol de l'informe"/>
+  <StrRes Name="ReportSummary" Text="Resum de l'informe"/>
+  <StrRes Name="PageHeader" Text="Capçalera de pàgina"/>
+  <StrRes Name="PageFooter" Text="Peu de pàgina"/>
+  <StrRes Name="Header" Text="Capçalera"/>
+  <StrRes Name="Footer" Text="Peu"/>
+  <StrRes Name="MasterData" Text="Dades mestres"/>
+  <StrRes Name="DetailData" Text="Dades detall"/>
+  <StrRes Name="SubdetailData" Text="Dades subdetall"/>
+  <StrRes Name="Data4" Text="Data4"/>
+  <StrRes Name="Data5" Text="Data5"/>
+  <StrRes Name="Data6" Text="Data6"/>
+  <StrRes Name="GroupHeader" Text="Capçalera de grup"/>
+  <StrRes Name="GroupFooter" Text="Capçalera de grup"/>
+  <StrRes Name="Child" Text="Fill"/>
+  <StrRes Name="ColumnHeader" Text="Capçalera de columna"/>
+  <StrRes Name="ColumnFooter" Text="Peu de Columna"/>
+  <StrRes Name="Overlay" Text="Sobreposa"/>
+  <StrRes Name="2_5_interleaved" Text="2_5_interleaved"/>
+  <StrRes Name="2_5_industrial" Text="2_5_industrial"/>
+  <StrRes Name="2_5_matrix" Text="2_5_matrix"/>
+  <StrRes Name="Code39" Text="Code39"/>
+  <StrRes Name="Code39 Extended" Text="Code39 Extended"/>
+  <StrRes Name="Code128A" Text="Code128A"/>
+  <StrRes Name="Code128B" Text="Code128B"/>
+  <StrRes Name="Code128C" Text="Code128C"/>
+  <StrRes Name="Code93" Text="Code93"/>
+  <StrRes Name="Code93 Extended" Text="Code93 Extended"/>
+  <StrRes Name="MSI" Text="MSI"/>
+  <StrRes Name="PostNet" Text="PostNet"/>
+  <StrRes Name="Codebar" Text="Codebar"/>
+  <StrRes Name="EAN8" Text="EAN8"/>
+  <StrRes Name="EAN13" Text="EAN13"/>
+  <StrRes Name="UPC_A" Text="UPC_A"/>
+  <StrRes Name="UPC_E0" Text="UPC_E0"/>
+  <StrRes Name="UPC_E1" Text="UPC_E1"/>
+  <StrRes Name="UPC Supp2" Text="UPC Supp2"/>
+  <StrRes Name="UPC Supp5" Text="UPC Supp5"/>
+  <StrRes Name="EAN128A" Text="EAN128A"/>
+  <StrRes Name="EAN128B" Text="EAN128B"/>
+  <StrRes Name="EAN128C" Text="EAN128C"/>
+  <StrRes Name="rpEditRep" Text="Edita informe..."/>
+  <StrRes Name="rpEditAlias" Text="Edita Camps Àlies..."/>
+  <StrRes Name="rave0" Text="Importació Rave"/>
+  <StrRes Name="rave1" Text="El fitxer Rave no conté elements TRaveReport."/>
+  <StrRes Name="rave2" Text="El fitxer Rave conté %d informes. Cada informa serà convertit en un fitxer fr3. Tria un directori on guardar els fitxers fr3. Només es mostrarà l'últim informe."/>
+  <StrRes Name="rave3" Text="No es pot crear %s."/>
+  <StrRes Name="rave4" Text="Informe %s, pàgina %s."/>
+  <StrRes Name="701" Text="Highlight editable text"/>
+  <StrRes Name="702" Text="Highlight"/>
+  <StrRes Name="149" Text="Full Screen"/>
+  <StrRes Name="153" Text="E-mail"/>
+  <StrRes Name="154" Text="PDF"/>
+  <StrRes Name="160" Text="Copy content"/>
+  <StrRes Name="161" Text="Paste content"/>
+  <StrRes Name="162" Text="Save to"/>
+  <StrRes Name="163" Text="File"/>
+</Resources>

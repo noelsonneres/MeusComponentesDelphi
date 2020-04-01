@@ -1,0 +1,130 @@
+// Package file for Delphi XE6
+
+package frxe20;
+
+
+{$I frx.inc}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO ON}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION ON}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES OFF}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST ON}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$RUNONLY}
+{$IMPLICITBUILD OFF}
+
+requires
+  vcl,
+  vclimg,
+{$IFDEF USE_INDY}
+{$IFDEF CUSTOM_INDY}
+  IndySystem200,
+  IndyProtocols200,
+  IndyCore200,
+{$ELSE}
+  IndySystem,
+  IndyProtocols,
+  IndyCore,
+{$ENDIF}
+{$ENDIF}
+  frx20;
+
+contains
+  frxExportImage in 'frxExportImage.pas', 
+  Gif in 'GIF.pas',
+  frxImageConverter in 'frxImageConverter.pas',
+  frxExportMatrix in 'frxExportMatrix.pas', 
+  frxExportCSV in 'frxExportCSV.pas', 
+  frxExportText in 'frxExportText.pas',
+  frxZip in 'frxZip.pas',
+  frxrcExports in 'frxrcExports.pas'
+{$IFNDEF ACADEMIC_ED}  
+  , frxSendMAPI in 'frxSendMAPI.pas',
+  frxExportHTML in 'frxExportHTML.pas',
+  frxExportPDF in 'frxExportPDF.pas',
+  frxExportPDFHelpers in 'frxExportPDFHelpers.pas', 
+  frxEMFAbstractExport in 'frxEMFAbstractExport.pas', 
+  frxEMFFormat in 'frxEMFFormat.pas', 
+{$IFNDEF RAD_ED}
+  frxEMFtoSVGExport in 'frxEMFtoSVGExport.pas', 
+  frxEMFtoPDFExport in 'frxEMFtoPDFExport.pas',
+{$ENDIF}  
+  frxExportRTF in 'frxExportRTF.pas',
+  frxRC4 in 'frxRC4.pas',
+  frxGML in 'frxGML.pas',
+  frxExportHelpers in 'frxExportHelpers.pas',
+  frxCrypto in 'frxCrypto.pas',
+  frxExportBaseDialog in 'frxExportBaseDialog.pas',
+{$IFNDEF RAD_ED}
+  frxSMTP in 'frxSMTP.pas',
+  frxExportMail in 'frxExportMail.pas',
+  frxExportODF in 'frxExportODF.pas',
+  frxExportDBF in 'frxExportDBF.pas',
+  frxExportBIFF in 'frxExportBIFF.pas',
+  frxExportXLS in 'frxExportXLS.pas',
+  frxExportXML in 'frxExportXML.pas',
+  frxExportSVG in 'frxExportSVG.pas',
+  frxCBFF in'frxCBFF.pas',
+  frxOLEPS in 'frxOLEPS.pas',
+  frxDraftPool in 'frxDraftPool.pas',
+  frxBiffConverter in 'frxBiffConverter.pas',
+  frxBIFF in 'frxBIFF.pas',
+  frxEscher in 'frxEscher.pas',
+  frxExportHTMLDiv in 'frxExportHTMLDiv.pas',
+  frxExportDOCX in 'frxExportDOCX.pas',
+  frxExportPPTX in 'frxExportPPTX.pas',
+  frxExportXLSX in 'frxExportXLSX.pas',
+  frxOfficeOpen in 'frxOfficeOpen.pas',
+  frxExportXLSDialog in 'frxExportXLSDialog.pas',
+  frxExportXLSXDialog in 'frxExportXLSXDialog.pas',
+  frxExportPPTXDialog in 'frxExportPPTXDialog.pas',
+  frxExportDOCXDialog in 'frxExportDOCXDialog.pas',
+  frxExportHTMLDivDialog in 'frxExportHTMLDivDialog.pas',
+  frxExportSVGDialog in 'frxExportSVGDialog.pas',
+  frxExportBIFFDialog in 'frxExportBIFFDialog.pas',
+  frxExportODFDialog in 'frxExportODFDialog.pas',
+  frxExportXMLDialog in 'frxExportXMLDialog.pas',
+{$ENDIF}
+  frxExportRTFDialog in 'frxExportRTFDialog.pas',
+  frxExportPDFDialog in 'frxExportPDFDialog.pas',
+  frxExportHTMLDialog in 'frxExportHTMLDialog.pas',
+  frxExportTextDialog in 'frxExportTextDialog.pas',
+  frxExportCSVDialog in 'frxExportCSVDialog.pas',
+  frxExportImageDialog in 'frxExportImageDialog.pas',
+
+
+  frxTrueTypeCollection in 'frxTrueTypeCollection.pas',
+  frxTrueTypeFont in 'frxTrueTypeFont.pas',
+  frxCmapTableClass in 'frxCmapTableClass.pas',
+  frxGlyphTableClass in 'frxGlyphTableClass.pas',
+  frxGlyphSubstitutionClass in 'frxGlyphSubstitutionClass.pas',
+  frxHorizontalHeaderClass in 'frxHorizontalHeaderClass.pas',
+  frxHorizontalMetrixClass in 'frxHorizontalMetrixClass.pas',
+  frxIndexToLocationClass in 'frxIndexToLocationClass.pas',
+  frxKerningTableClass in 'frxKerningTableClass.pas',
+  frxPostScriptClass in 'frxPostScriptClass.pas',
+  frxMaximumProfileClass in 'frxMaximumProfileClass.pas',
+  frxOS2WindowsMetricsClass in 'frxOS2WindowsMetricsClass.pas',
+  frxPreProgramClass in 'frxPreProgramClass.pas',
+  frxNameTableClass in 'frxNameTableClass.pas',
+  frxFontHeaderClass in 'frxFontHeaderClass.pas',
+  frxTrueTypeTable in 'frxTrueTypeTable.pas',
+  TTFHelpers in 'TTFHelpers.pas'
+{$ENDIF};
+
+end.

@@ -1,0 +1,451 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectOptions>
+    <Version Value="11"/>
+    <PathDelim Value="\"/>
+    <General>
+      <MainUnit Value="0"/>
+      <Title Value="TEFDDemo"/>
+      <ResourceType Value="res"/>
+      <UseXPManifest Value="True"/>
+    </General>
+    <BuildModes Count="1">
+      <Item1 Name="default" Default="True"/>
+    </BuildModes>
+    <PublishOptions>
+      <Version Value="2"/>
+    </PublishOptions>
+    <RunParams>
+      <local>
+        <LaunchingApplication PathPlusParams="\usr\X11R6\bin\xterm -T 'Lazarus Run Output' -e $(LazarusDir)\tools\runwait.sh $(TargetCmdLine)"/>
+      </local>
+      <FormatVersion Value="2"/>
+      <Modes Count="1">
+        <Mode0 Name="default">
+          <local>
+            <LaunchingApplication PathPlusParams="\usr\X11R6\bin\xterm -T 'Lazarus Run Output' -e $(LazarusDir)\tools\runwait.sh $(TargetCmdLine)"/>
+          </local>
+        </Mode0>
+      </Modes>
+    </RunParams>
+    <RequiredPackages Count="5">
+      <Item1>
+        <PackageName Value="LCLBase"/>
+        <MinVersion Major="1" Release="1" Valid="True"/>
+      </Item1>
+      <Item2>
+        <PackageName Value="ACBrSerial"/>
+        <MinVersion Minor="9" Valid="True"/>
+      </Item2>
+      <Item3>
+        <PackageName Value="ACBrComum"/>
+      </Item3>
+      <Item4>
+        <PackageName Value="ACBr_TEFD"/>
+        <MinVersion Release="1" Valid="True"/>
+      </Item4>
+      <Item5>
+        <PackageName Value="LCL"/>
+      </Item5>
+    </RequiredPackages>
+    <Units Count="22">
+      <Unit0>
+        <Filename Value="TEFDDemo.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos Y="15"/>
+        <UsageCount Value="206"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="Unit1.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="Form1"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <IsVisibleTab Value="True"/>
+        <TopLine Value="1037"/>
+        <CursorPos X="3" Y="997"/>
+        <UsageCount Value="206"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="ConfiguraSerial.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frConfiguraSerial"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="3" Y="3"/>
+        <UsageCount Value="204"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="Unit2.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="Form2"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="10"/>
+        <CursorPos X="3" Y="3"/>
+        <UsageCount Value="200"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="Unit3.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="Form3"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <CursorPos X="48" Y="11"/>
+        <UsageCount Value="206"/>
+      </Unit4>
+      <Unit5>
+        <Filename Value="ACBrTEFDCliSiTef.pas"/>
+        <TopLine Value="770"/>
+        <CursorPos X="43" Y="1003"/>
+        <UsageCount Value="6"/>
+      </Unit5>
+      <Unit6>
+        <Filename Value="Unit4.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="Form4"/>
+        <ResourceBaseClass Value="Form"/>
+        <TopLine Value="31"/>
+        <CursorPos X="118" Y="47"/>
+        <UsageCount Value="200"/>
+      </Unit6>
+      <Unit7>
+        <Filename Value="Unit5.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="Form5"/>
+        <ResourceBaseClass Value="Form"/>
+        <TopLine Value="6"/>
+        <CursorPos X="35" Y="38"/>
+        <UsageCount Value="200"/>
+      </Unit7>
+      <Unit8>
+        <Filename Value="..\..\Fontes\ACBrTEFD\ACBrTEFD.pas"/>
+        <TopLine Value="33"/>
+        <CursorPos X="62" Y="49"/>
+        <UsageCount Value="74"/>
+      </Unit8>
+      <Unit9>
+        <Filename Value="..\..\Fontes\ACBrTEFD\ACBrTEFDClass.pas"/>
+        <TopLine Value="63"/>
+        <CursorPos X="34" Y="63"/>
+        <UsageCount Value="73"/>
+        <Bookmarks Count="4">
+          <Item0 X="3" Y="2220"/>
+          <Item1 X="43" Y="2534" ID="8"/>
+          <Item2 X="3" Y="2248" ID="5"/>
+          <Item3 X="31" Y="2710" ID="6"/>
+        </Bookmarks>
+      </Unit9>
+      <Unit10>
+        <Filename Value="..\..\Fontes\ACBrTEFD\ACBrTEFDCliSiTef.pas"/>
+        <TopLine Value="1383"/>
+        <CursorPos X="12" Y="1394"/>
+        <UsageCount Value="71"/>
+        <Bookmarks Count="6">
+          <Item0 X="55" Y="1324" ID="9"/>
+          <Item1 X="23" Y="273" ID="7"/>
+          <Item2 X="10" Y="1216" ID="2"/>
+          <Item3 X="3" Y="682" ID="1"/>
+          <Item4 X="4" Y="1271" ID="3"/>
+          <Item5 X="18" Y="1245" ID="4"/>
+        </Bookmarks>
+      </Unit10>
+      <Unit11>
+        <Filename Value="..\..\Fontes\ACBrTEFD\ACBrTEFDVeSPague.pas"/>
+        <TopLine Value="1647"/>
+        <CursorPos X="12" Y="1655"/>
+        <UsageCount Value="76"/>
+      </Unit11>
+      <Unit12>
+        <Filename Value="..\..\Fontes\ACBrSerial\ACBrECF.pas"/>
+        <TopLine Value="990"/>
+        <CursorPos X="27" Y="1006"/>
+        <UsageCount Value="38"/>
+      </Unit12>
+      <Unit13>
+        <Filename Value="..\..\Fontes\ACBrTEFD\ACBr_TEFD-change-log.txt"/>
+        <TopLine Value="37"/>
+        <CursorPos X="29" Y="46"/>
+        <UsageCount Value="74"/>
+        <DefaultSyntaxHighlighter Value="None"/>
+      </Unit13>
+      <Unit14>
+        <Filename Value="Unit6.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="Form6"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <TopLine Value="10"/>
+        <CursorPos X="28" Y="17"/>
+        <UsageCount Value="202"/>
+      </Unit14>
+      <Unit15>
+        <Filename Value="..\..\Fontes\ACBrTEFD\ACBrTEFDAuttar.pas"/>
+        <TopLine Value="92"/>
+        <CursorPos X="34" Y="104"/>
+        <UsageCount Value="17"/>
+      </Unit15>
+      <Unit16>
+        <Filename Value="Unit7.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="Form7"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <TopLine Value="30"/>
+        <CursorPos X="46" Y="13"/>
+        <UsageCount Value="202"/>
+      </Unit16>
+      <Unit17>
+        <Filename Value="..\..\Fontes\ACBrComum\ACBrBase.pas"/>
+        <TopLine Value="321"/>
+        <CursorPos X="28" Y="333"/>
+        <UsageCount Value="3"/>
+      </Unit17>
+      <Unit18>
+        <Filename Value="..\..\..\Fontes\ACBrTEFD\ACBrTEFD.pas"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="654"/>
+        <CursorPos Y="667"/>
+        <UsageCount Value="143"/>
+        <Loaded Value="True"/>
+      </Unit18>
+      <Unit19>
+        <Filename Value="..\..\..\Fontes\ACBrTEFD\ACBrTEFDCappta.pas"/>
+        <EditorIndex Value="3"/>
+        <TopLine Value="252"/>
+        <CursorPos X="24" Y="274"/>
+        <UsageCount Value="142"/>
+        <Loaded Value="True"/>
+      </Unit19>
+      <Unit20>
+        <Filename Value="..\..\..\Fontes\ACBrTEFD\ACBrTEFDClass.pas"/>
+        <EditorIndex Value="2"/>
+        <CursorPos X="42" Y="8"/>
+        <UsageCount Value="142"/>
+        <Loaded Value="True"/>
+      </Unit20>
+      <Unit21>
+        <Filename Value="..\..\..\Fontes\ACBrComum\ACBrUtil.pas"/>
+        <EditorIndex Value="4"/>
+        <TopLine Value="3604"/>
+        <CursorPos X="6" Y="3610"/>
+        <UsageCount Value="116"/>
+        <Loaded Value="True"/>
+      </Unit21>
+    </Units>
+    <JumpHistory Count="28" HistoryIndex="27">
+      <Position1>
+        <Filename Value="..\..\..\Fontes\ACBrTEFD\ACBrTEFDCappta.pas"/>
+        <Caret Line="196" TopLine="180"/>
+      </Position1>
+      <Position2>
+        <Filename Value="..\..\..\Fontes\ACBrTEFD\ACBrTEFDCappta.pas"/>
+        <Caret Line="148" TopLine="127"/>
+      </Position2>
+      <Position3>
+        <Filename Value="..\..\..\Fontes\ACBrTEFD\ACBrTEFDCappta.pas"/>
+        <Caret Line="282" TopLine="267"/>
+      </Position3>
+      <Position4>
+        <Filename Value="..\..\..\Fontes\ACBrTEFD\ACBrTEFDCappta.pas"/>
+        <Caret Line="205" TopLine="192"/>
+      </Position4>
+      <Position5>
+        <Filename Value="..\..\..\Fontes\ACBrTEFD\ACBrTEFDCappta.pas"/>
+        <Caret Line="185" TopLine="171"/>
+      </Position5>
+      <Position6>
+        <Filename Value="..\..\..\Fontes\ACBrTEFD\ACBrTEFDCappta.pas"/>
+        <Caret Line="186" TopLine="171"/>
+      </Position6>
+      <Position7>
+        <Filename Value="..\..\..\Fontes\ACBrTEFD\ACBrTEFDCappta.pas"/>
+        <Caret Line="189" TopLine="177"/>
+      </Position7>
+      <Position8>
+        <Filename Value="..\..\..\Fontes\ACBrTEFD\ACBrTEFDCappta.pas"/>
+        <Caret Line="190" TopLine="177"/>
+      </Position8>
+      <Position9>
+        <Filename Value="..\..\..\Fontes\ACBrTEFD\ACBrTEFDCappta.pas"/>
+        <Caret Line="194" TopLine="177"/>
+      </Position9>
+      <Position10>
+        <Filename Value="..\..\..\Fontes\ACBrTEFD\ACBrTEFDCappta.pas"/>
+        <Caret Line="196" TopLine="177"/>
+      </Position10>
+      <Position11>
+        <Filename Value="..\..\..\Fontes\ACBrComum\ACBrUtil.pas"/>
+        <Caret Line="3601" TopLine="3593"/>
+      </Position11>
+      <Position12>
+        <Filename Value="..\..\..\Fontes\ACBrComum\ACBrUtil.pas"/>
+        <Caret Line="3607" TopLine="3596"/>
+      </Position12>
+      <Position13>
+        <Filename Value="..\..\..\Fontes\ACBrComum\ACBrUtil.pas"/>
+        <Caret Line="3608" TopLine="3596"/>
+      </Position13>
+      <Position14>
+        <Filename Value="..\..\..\Fontes\ACBrComum\ACBrUtil.pas"/>
+        <Caret Line="3610" TopLine="3596"/>
+      </Position14>
+      <Position15>
+        <Filename Value="..\..\..\Fontes\ACBrComum\ACBrUtil.pas"/>
+        <Caret Line="3618" TopLine="3602"/>
+      </Position15>
+      <Position16>
+        <Filename Value="..\..\..\Fontes\ACBrComum\ACBrUtil.pas"/>
+        <Caret Line="3620" TopLine="3602"/>
+      </Position16>
+      <Position17>
+        <Filename Value="..\..\..\Fontes\ACBrComum\ACBrUtil.pas"/>
+        <Caret Line="3621" TopLine="3602"/>
+      </Position17>
+      <Position18>
+        <Filename Value="..\..\..\Fontes\ACBrComum\ACBrUtil.pas"/>
+        <Caret Line="3624" TopLine="3602"/>
+      </Position18>
+      <Position19>
+        <Filename Value="..\..\..\Fontes\ACBrComum\ACBrUtil.pas"/>
+        <Caret Line="3602" TopLine="3588"/>
+      </Position19>
+      <Position20>
+        <Filename Value="..\..\..\Fontes\ACBrTEFD\ACBrTEFDCappta.pas"/>
+        <Caret Line="198" TopLine="177"/>
+      </Position20>
+      <Position21>
+        <Filename Value="..\..\..\Fontes\ACBrTEFD\ACBrTEFDCappta.pas"/>
+        <Caret Line="200" TopLine="177"/>
+      </Position21>
+      <Position22>
+        <Filename Value="..\..\..\Fontes\ACBrTEFD\ACBrTEFDClass.pas"/>
+        <Caret Line="8" Column="42"/>
+      </Position22>
+      <Position23>
+        <Filename Value="..\..\..\Fontes\ACBrTEFD\ACBrTEFDCappta.pas"/>
+        <Caret Line="283" TopLine="269"/>
+      </Position23>
+      <Position24>
+        <Filename Value="..\..\..\Fontes\ACBrTEFD\ACBrTEFDCappta.pas"/>
+        <Caret Line="205" TopLine="192"/>
+      </Position24>
+      <Position25>
+        <Filename Value="..\..\..\Fontes\ACBrTEFD\ACBrTEFDCappta.pas"/>
+        <Caret Line="186" TopLine="172"/>
+      </Position25>
+      <Position26>
+        <Filename Value="..\..\..\Fontes\ACBrTEFD\ACBrTEFDCappta.pas"/>
+        <Caret Line="197" Column="13" TopLine="179"/>
+      </Position26>
+      <Position27>
+        <Filename Value="..\..\..\Fontes\ACBrComum\ACBrUtil.pas"/>
+        <Caret Line="3601" Column="2" TopLine="3591"/>
+      </Position27>
+      <Position28>
+        <Filename Value="..\..\..\Fontes\ACBrComum\ACBrUtil.pas"/>
+        <Caret Line="3610" Column="6" TopLine="3604"/>
+      </Position28>
+    </JumpHistory>
+  </ProjectOptions>
+  <CompilerOptions>
+    <Version Value="11"/>
+    <PathDelim Value="\"/>
+    <Target>
+      <Filename Value="TEFDDemo"/>
+    </Target>
+    <SearchPaths>
+      <IncludeFiles Value="$(ProjOutDir)"/>
+      <UnitOutputDirectory Value="lib\$(TargetCPU)-$(TargetOS)"/>
+    </SearchPaths>
+    <Parsing>
+      <SyntaxOptions>
+        <UseAnsiStrings Value="False"/>
+      </SyntaxOptions>
+    </Parsing>
+    <Linking>
+      <Options>
+        <Win32>
+          <GraphicApplication Value="True"/>
+        </Win32>
+      </Options>
+    </Linking>
+    <Other>
+      <CompilerMessages>
+        <IgnoredMessages idx5024="True"/>
+      </CompilerMessages>
+    </Other>
+  </CompilerOptions>
+  <Debugging>
+    <BreakPoints Count="1">
+      <Item1>
+        <Kind Value="bpkSource"/>
+        <WatchScope Value="wpsLocal"/>
+        <WatchKind Value="wpkWrite"/>
+        <Source Value="..\..\..\Fontes\ACBrTEFD\ACBrTEFDCappta.pas"/>
+        <Line Value="283"/>
+      </Item1>
+    </BreakPoints>
+    <Exceptions Count="18" IgnoreAll="True">
+      <Item1>
+        <Name Value="EAbort"/>
+      </Item1>
+      <Item2>
+        <Name Value="ECodetoolError"/>
+      </Item2>
+      <Item3>
+        <Name Value="EFOpenError"/>
+      </Item3>
+      <Item4>
+        <Name Value="EACBrTEFDGPNaoInicializado"/>
+      </Item4>
+      <Item5>
+        <Name Value="EConvertError"/>
+      </Item5>
+      <Item6>
+        <Name Value="EACBrECFNaoInicializado"/>
+      </Item6>
+      <Item7>
+        <Name Value="Unknown"/>
+      </Item7>
+      <Item8>
+        <Name Value="EACBrTEFDGPNaoResponde"/>
+      </Item8>
+      <Item9>
+        <Name Value="ESynaSerError"/>
+      </Item9>
+      <Item10>
+        <Name Value="EACBrECFSemResposta"/>
+      </Item10>
+      <Item11>
+        <Name Value="Exception"/>
+      </Item11>
+      <Item12>
+        <Name Value="EACBrECFOcupado"/>
+      </Item12>
+      <Item13>
+        <Name Value="EACBrTEFDECF"/>
+      </Item13>
+      <Item14>
+        <Name Value="EACBrTEFDArquivo"/>
+      </Item14>
+      <Item15>
+        <Name Value="EACBrTEFDErro"/>
+      </Item15>
+      <Item16>
+        <Name Value="EACBrECFCMDInvalido"/>
+      </Item16>
+      <Item17>
+        <Name Value="EACBrTEFDSTSInvalido"/>
+      </Item17>
+      <Item18>
+        <Name Value="EClassNotFound"/>
+      </Item18>
+    </Exceptions>
+  </Debugging>
+</CONFIG>

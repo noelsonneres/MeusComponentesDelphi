@@ -1,0 +1,144 @@
+package ACBr_Serial;
+
+{$R *.res}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO ON}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION ON}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES OFF}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$DESCRIPTION 'ACBr - ECF, Balanças, Cheques, Displays, Etiquetas, Gavetas, Terminais, SMS, RFD, Leitores - (http://www.projetoacbr.com.br/)'}
+{$IMPLICITBUILD OFF}
+
+requires
+  rtl,
+  vcl,
+  designide,
+  ACBr_Diversos,
+  ACBr_OpenSSL;
+
+contains
+  ACBrBAL in '..\..\..\Fontes\ACBrSerial\ACBrBAL.pas',
+  ACBrBALClass in '..\..\..\Fontes\ACBrSerial\ACBrBALClass.pas',
+  ACBrBALFilizola in '..\..\..\Fontes\ACBrSerial\ACBrBALFilizola.pas',
+  ACBrBALToledo in '..\..\..\Fontes\ACBrSerial\ACBrBALToledo.pas',
+  ACBrBALUrano in '..\..\..\Fontes\ACBrSerial\ACBrBALUrano.pas',
+  ACBrBALUranoPOP in '..\..\..\Fontes\ACBrSerial\ACBrBALUranoPOP.pas',
+  ACBrBALLucasTec in '..\..\..\Fontes\ACBrSerial\ACBrBALLucasTec.pas',
+  ACBrBALToledo2180 in '..\..\..\Fontes\ACBrSerial\ACBrBALToledo2180.pas',
+  ACBrBALMagna in '..\..\..\Fontes\ACBrSerial\ACBrBALMagna.pas',
+  ACBrBALDigitron in '..\..\..\Fontes\ACBrSerial\ACBrBALDigitron.pas',
+  ACBrBALMagellan in '..\..\..\Fontes\ACBrSerial\ACBrBALMagellan.pas',
+  ACBrBALLider in '..\..\..\Fontes\ACBrSerial\ACBrBALLider.pas',
+  ACBrBALAFTS in '..\..\..\Fontes\ACBrSerial\ACBrBALAFTS.pas',
+  ACBrBALLibratek in '..\..\..\Fontes\ACBrSerial\ACBrBALLibratek.pas',
+  ACBrBALMuller in '..\..\..\Fontes\ACBrSerial\ACBrBALMuller.pas',
+  ACBrBALRinnert in '..\..\..\Fontes\ACBrSerial\ACBrBALRinnert.pas',
+  ACBrBALSaturno in '..\..\..\Fontes\ACBrSerial\ACBrBALSaturno.pas',
+  ACBrBALToledo2090 in '..\..\..\Fontes\ACBrSerial\ACBrBALToledo2090.pas',
+  ACBrBALToledo9091_8530_8540 in '..\..\..\Fontes\ACBrSerial\ACBrBALToledo9091_8530_8540.pas',
+  ACBrBALMicheletti in '..\..\..\Fontes\ACBrSerial\ACBrBALMicheletti.pas',
+  ACBrBALAlfa in '..\..\..\Fontes\ACBrSerial\ACBrBALAlfa.pas',
+  ACBrBALWeightechWT1000 in '..\..\..\Fontes\ACBrSerial\ACBrBALWeightechWT1000.pas',
+  ACBrBALMarelCG62XL in '..\..\..\Fontes\ACBrSerial\ACBrBALMarelCG62XL.pas',
+  ACBrBALWeightechWT3000_ABS in '..\..\..\Fontes\ACBrSerial\ACBrBALWeightechWT3000_ABS.pas',
+  ACBrBALToledo2090N in '..\..\..\Fontes\ACBrSerial\ACBrBALToledo2090N.pas',
+  ACBrBALToledoBCS21 in '..\..\..\Fontes\ACBrSerial\ACBrBALToledoBCS21.pas',
+  ACBrBALPrecision in '..\..\..\Fontes\ACBrSerial\ACBrBALPrecision.pas',
+  ACBrBALDigitron_UL in '..\..\..\Fontes\ACBrSerial\ACBrBALDigitron_UL.pas',
+  ACBrCHQ in '..\..\..\Fontes\ACBrSerial\ACBrCHQ.pas',
+  ACBrCHQBematech in '..\..\..\Fontes\ACBrSerial\ACBrCHQBematech.pas',
+  ACBrCHQChronos in '..\..\..\Fontes\ACBrSerial\ACBrCHQChronos.pas',
+  ACBrCHQClass in '..\..\..\Fontes\ACBrSerial\ACBrCHQClass.pas',
+  ACBrCHQImpressoraComum in '..\..\..\Fontes\ACBrSerial\ACBrCHQImpressoraComum.pas',
+  ACBrCHQImpressoraECF in '..\..\..\Fontes\ACBrSerial\ACBrCHQImpressoraECF.pas',
+  ACBrCHQPerto in '..\..\..\Fontes\ACBrSerial\ACBrCHQPerto.pas',
+  ACBrCHQSchalter in '..\..\..\Fontes\ACBrSerial\ACBrCHQSchalter.pas',
+  ACBrCHQSotomaq in '..\..\..\Fontes\ACBrSerial\ACBrCHQSotomaq.pas',
+  ACBrCHQUrano in '..\..\..\Fontes\ACBrSerial\ACBrCHQUrano.pas',
+  ACBrCHQElgin in '..\..\..\Fontes\ACBrSerial\ACBrCHQElgin.pas',
+  ACBrDevice in '..\..\..\Fontes\ACBrSerial\ACBrDevice.pas',
+  ACBrDIS in '..\..\..\Fontes\ACBrSerial\ACBrDIS.pas',
+  ACBrDISClass in '..\..\..\Fontes\ACBrSerial\ACBrDISClass.pas',
+  ACBrDISGertecSerial in '..\..\..\Fontes\ACBrSerial\ACBrDISGertecSerial.pas',
+  ACBrDISGertecTeclado in '..\..\..\Fontes\ACBrSerial\ACBrDISGertecTeclado.pas',
+  ACBrDISGertecTEC65lib in '..\..\..\Fontes\ACBrSerial\ACBrDISGertecTEC65lib.pas',
+  ACBrDISKeytecTeclado in '..\..\..\Fontes\ACBrSerial\ACBrDISKeytecTeclado.pas',
+  ACBrDISSmakTeclado in '..\..\..\Fontes\ACBrSerial\ACBrDISSmakTeclado.pas',
+  ACBrDISSmakTecladoLib in '..\..\..\Fontes\ACBrSerial\ACBrDISSmakTecladoLib.pas',
+  ACBrDISSmakSerial in '..\..\..\Fontes\ACBrSerial\ACBrDISSmakSerial.pas',
+  ACBrECF in '..\..\..\Fontes\ACBrSerial\ACBrECF.pas',
+  ACBrECFBematech in '..\..\..\Fontes\ACBrSerial\ACBrECFBematech.pas',
+  ACBrECFClass in '..\..\..\Fontes\ACBrSerial\ACBrECFClass.pas',
+  ACBrECFDaruma in '..\..\..\Fontes\ACBrSerial\ACBrECFDaruma.pas',
+  ACBrECFDataRegis in '..\..\..\Fontes\ACBrSerial\ACBrECFDataRegis.pas',
+  ACBrECFEpson in '..\..\..\Fontes\ACBrSerial\ACBrECFEpson.pas',
+  ACBrECFFiscNET in '..\..\..\Fontes\ACBrSerial\ACBrECFFiscNET.pas',
+  ACBrECFICash in '..\..\..\Fontes\ACBrSerial\ACBrECFICash.pas',
+  ACBrECFMecaf in '..\..\..\Fontes\ACBrSerial\ACBrECFMecaf.pas',
+  ACBrECFNaoFiscal in '..\..\..\Fontes\ACBrSerial\ACBrECFNaoFiscal.pas',
+  ACBrECFNCR in '..\..\..\Fontes\ACBrSerial\ACBrECFNCR.pas',
+  ACBrECFQuattro in '..\..\..\Fontes\ACBrSerial\ACBrECFQuattro.pas',
+  ACBrECFSchalter in '..\..\..\Fontes\ACBrSerial\ACBrECFSchalter.pas',
+  ACBrECFSweda in '..\..\..\Fontes\ACBrSerial\ACBrECFSweda.pas',
+  ACBrECFSwedaSTX in '..\..\..\Fontes\ACBrSerial\ACBrECFSwedaSTX.pas',
+  ACBrECFUrano in '..\..\..\Fontes\ACBrSerial\ACBrECFUrano.pas',
+  ACBrECFYanco in '..\..\..\Fontes\ACBrSerial\ACBrECFYanco.pas',
+  ACBrECFEscECF in '..\..\..\Fontes\ACBrSerial\ACBrECFEscECF.pas',
+  ACBrETQ in '..\..\..\Fontes\ACBrSerial\ACBrETQ.pas',
+  ACBrETQClass in '..\..\..\Fontes\ACBrSerial\ACBrETQClass.pas',
+  ACBrETQPpla in '..\..\..\Fontes\ACBrSerial\ACBrETQPpla.pas',
+  ACBrETQEpl2 in '..\..\..\Fontes\ACBrSerial\ACBrETQEpl2.pas',
+  ACBrETQZplII in '..\..\..\Fontes\ACBrSerial\ACBrETQZplII.pas',
+  ACBrGAV in '..\..\..\Fontes\ACBrSerial\ACBrGAV.pas',
+  ACBrGAVClass in '..\..\..\Fontes\ACBrSerial\ACBrGAVClass.pas',
+  ACBrGAVImpressoraComum in '..\..\..\Fontes\ACBrSerial\ACBrGAVImpressoraComum.pas',
+  ACBrGAVImpressoraECF in '..\..\..\Fontes\ACBrSerial\ACBrGAVImpressoraECF.pas',
+  ACBrGAVSerialGerbo in '..\..\..\Fontes\ACBrSerial\ACBrGAVSerialGerbo.pas',
+  ACBrGAVSerialMenno in '..\..\..\Fontes\ACBrSerial\ACBrGAVSerialMenno.pas',
+  ACBrLCB in '..\..\..\Fontes\ACBrSerial\ACBrLCB.pas',
+  ACBrRFD in '..\..\..\Fontes\ACBrSerial\ACBrRFD.pas',
+  ACBrSerialReg in '..\..\..\Fontes\ACBrSerial\ACBrSerialReg.pas',
+  ACBrTER in '..\..\..\Fontes\ACBrSerial\ACBrTER.pas',
+  ACBrTERClass in '..\..\..\Fontes\ACBrSerial\ACBrTERClass.pas',
+  ACBrTERWilbor in '..\..\..\Fontes\ACBrSerial\ACBrTERWilbor.pas',
+  ACBrSMSZTE in '..\..\..\Fontes\ACBrSerial\ACBrSMSZTE.pas',
+  ACBrSMS in '..\..\..\Fontes\ACBrSerial\ACBrSMS.pas',
+  ACBrSMSClass in '..\..\..\Fontes\ACBrSerial\ACBrSMSClass.pas',
+  ACBrSMSDaruma in '..\..\..\Fontes\ACBrSerial\ACBrSMSDaruma.pas',
+  ACBrECFVirtual in '..\..\..\Fontes\ACBrSerial\ACBrECFVirtual.pas',
+  ACBrECFVirtualBuffer in '..\..\..\Fontes\ACBrSerial\ACBrECFVirtualBuffer.pas',
+  ACBrECFVirtualPrinter in '..\..\..\Fontes\ACBrSerial\ACBrECFVirtualPrinter.pas',
+  ACBrECFVirtualNaoFiscal in '..\..\..\Fontes\ACBrSerial\ACBrECFVirtualNaoFiscal.pas',
+  ACBrPosPrinter in '..\..\..\Fontes\ACBrSerial\ACBrPosPrinter.pas',
+  ACBrEscPosEpson in '..\..\..\Fontes\ACBrSerial\ACBrEscPosEpson.pas',
+  ACBrEscBematech in '..\..\..\Fontes\ACBrSerial\ACBrEscBematech.pas',
+  ACBrEscDaruma in '..\..\..\Fontes\ACBrSerial\ACBrEscDaruma.pas',
+  ACBrEscElgin in '..\..\..\Fontes\ACBrSerial\ACBrEscElgin.pas',
+  ACBrEscDiebold in '..\..\..\Fontes\ACBrSerial\ACBrEscDiebold.pas',
+  ACBrEscEpsonP2 in '..\..\..\Fontes\ACBrSerial\ACBrEscEpsonP2.pas',
+  ACBrEscCustomPos in '..\..\..\Fontes\ACBrSerial\ACBrEscCustomPos.pas',
+  ACBrEscPosStar in '..\..\..\Fontes\ACBrSerial\ACBrEscPosStar.pas',
+  ACBrEscZJiang in '..\..\..\Fontes\ACBrSerial\ACBrEscZJiang.pas',
+  ACBrEscGPrinter in '..\..\..\Fontes\ACBrSerial\ACBrEscGPrinter.pas',
+  ACBrEscPosHook in '..\..\..\Fontes\ACBrSerial\ACBrEscPosHook.pas',
+  ACBrEscPosHookEpsonDLL in '..\..\..\Fontes\ACBrSerial\ACBrEscPosHookEpsonDLL.pas',
+  ACBrEscPosHookElginDLL in '..\..\..\Fontes\ACBrSerial\ACBrEscPosHookElginDLL.pas',
+  ACBrWinUSBDevice in '..\..\..\Fontes\ACBrSerial\ACBrWinUSBDevice.pas';
+
+end.

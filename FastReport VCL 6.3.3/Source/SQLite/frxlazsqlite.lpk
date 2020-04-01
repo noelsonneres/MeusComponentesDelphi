@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <Package Version="4">
+    <PathDelim Value="\"/>
+    <Name Value="frxlazsqlite"/>
+    <Type Value="RunAndDesignTime"/>
+    <CompilerOptions>
+      <Version Value="11"/>
+      <PathDelim Value="\"/>
+      <SearchPaths>
+        <IncludeFiles Value=".."/>
+        <UnitOutputDirectory Value="lib\$(TargetCPU)-$(TargetOS)"/>
+      </SearchPaths>
+    </CompilerOptions>
+    <Version Major="5" Minor="6"/>
+    <Files Count="3">
+      <Item1>
+        <Filename Value="frxlazsqlitecomp.pas"/>
+        <HasRegisterProc Value="True"/>
+        <UnitName Value="frxlazsqlitecomp"/>
+      </Item1>
+      <Item2>
+        <Filename Value="frxlazsqliteeditor.pas"/>
+        <UnitName Value="frxlazsqliteeditor"/>
+      </Item2>
+      <Item3>
+        <Filename Value="frxlazsqlitertti.pas"/>
+        <UnitName Value="frxlazsqlitertti"/>
+      </Item3>
+    </Files>
+    <RequiredPkgs Count="2">
+      <Item1>
+        <PackageName Value="fr6_lazarus"/>
+      </Item1>
+      <Item2>
+        <PackageName Value="FCL"/>
+      </Item2>
+    </RequiredPkgs>
+    <UsageOptions>
+      <UnitPath Value="$(PkgOutDir)"/>
+    </UsageOptions>
+    <PublishOptions>
+      <Version Value="2"/>
+    </PublishOptions>
+  </Package>
+</CONFIG>
