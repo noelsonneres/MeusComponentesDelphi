@@ -1,3 +1,0 @@
-{$DEFINE FULL}
-
-//{$DEFINE HAS_FMX}
