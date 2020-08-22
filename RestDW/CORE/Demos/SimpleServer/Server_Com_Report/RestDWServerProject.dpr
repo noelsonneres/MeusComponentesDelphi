@@ -1,0 +1,16 @@
+program RestDWServerProject;
+{$APPTYPE GUI}
+
+uses
+  Vcl.Forms,
+  RestDWServerFormU in 'RestDWServerFormU.pas' {RestDWForm},
+  uDmService in 'uDmService.pas' {DataModule1: TDataModule};
+
+{$R *.res}
+
+begin
+  reportmemoryleaksonshutdown:=true;
+  Application.Initialize;
+  Application.CreateForm(TRestDWForm, RestDWForm);
+  Application.Run;
+end.

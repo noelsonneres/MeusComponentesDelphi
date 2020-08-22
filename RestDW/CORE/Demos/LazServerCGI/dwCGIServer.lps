@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="10"/>
+    <BuildModes Active="Default"/>
+    <Units Count="20">
+      <Unit0>
+        <Filename Value="dwCGIServer.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="4"/>
+        <CursorPos X="49" Y="17"/>
+        <UsageCount Value="55"/>
+        <Loaded Value="True"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="dmdwcgiserver.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="dwCGIService"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="DataModule"/>
+        <TopLine Value="28"/>
+        <CursorPos X="41" Y="38"/>
+        <UsageCount Value="55"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="uConsts.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="2"/>
+        <TopLine Value="7"/>
+        <CursorPos X="28" Y="14"/>
+        <UsageCount Value="55"/>
+        <Loaded Value="True"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="uDmService.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="ServerMethodDM"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="DataModule"/>
+        <EditorIndex Value="6"/>
+        <TopLine Value="56"/>
+        <CursorPos X="35" Y="66"/>
+        <UsageCount Value="55"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="..\..\Source\uRESTDWBase.pas"/>
+        <EditorIndex Value="4"/>
+        <TopLine Value="495"/>
+        <CursorPos X="26" Y="502"/>
+        <UsageCount Value="25"/>
+        <Bookmarks Count="2">
+          <Item0 X="28" Y="2891" ID="3"/>
+          <Item1 X="53" Y="895" ID="2"/>
+        </Bookmarks>
+        <Loaded Value="True"/>
+      </Unit4>
+      <Unit5>
+        <Filename Value="..\..\Source\libs\SysTypes.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="157"/>
+        <CursorPos X="30" Y="165"/>
+        <UsageCount Value="24"/>
+      </Unit5>
+      <Unit6>
+        <Filename Value="..\..\Source\libs\uDWJSONObject.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="2315"/>
+        <CursorPos X="36" Y="2323"/>
+        <UsageCount Value="23"/>
+        <Bookmarks Count="1">
+          <Item0 X="16" Y="710" ID="1"/>
+        </Bookmarks>
+      </Unit6>
+      <Unit7>
+        <Filename Value="..\..\Source\libs\uDWConsts.pas"/>
+        <EditorIndex Value="5"/>
+        <TopLine Value="63"/>
+        <CursorPos X="30" Y="81"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+      </Unit7>
+      <Unit8>
+        <Filename Value="..\..\Source\libs\uzliblaz.pas"/>
+        <UnitName Value="uZlibLaz"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="48"/>
+        <CursorPos X="17" Y="48"/>
+        <UsageCount Value="16"/>
+      </Unit8>
+      <Unit9>
+        <Filename Value="C:\lazarus\fpc\3.0.4\source\packages\fcl-web\src\base\httpdefs.pp"/>
+        <UnitName Value="HTTPDefs"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="966"/>
+        <CursorPos X="3" Y="976"/>
+        <UsageCount Value="13"/>
+      </Unit9>
+      <Unit10>
+        <Filename Value="..\..\Source\libs\uDWMassiveBuffer.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="719"/>
+        <CursorPos X="68" Y="722"/>
+        <UsageCount Value="9"/>
+      </Unit10>
+      <Unit11>
+        <Filename Value="..\..\Source\libs\uDWConstsData.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="50"/>
+        <CursorPos X="33" Y="58"/>
+        <UsageCount Value="12"/>
+      </Unit11>
+      <Unit12>
+        <Filename Value="..\..\Source\libs\uDWJSONTools.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="539"/>
+        <CursorPos Y="547"/>
+        <UsageCount Value="10"/>
+      </Unit12>
+      <Unit13>
+        <Filename Value="C:\Users\XyberX\AppData\Local\lazarus\onlinepackagemanager\packages\Indy10\source\IdURI.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="303"/>
+        <CursorPos Y="318"/>
+        <UsageCount Value="10"/>
+      </Unit13>
+      <Unit14>
+        <Filename Value="..\..\Source\uRESTServerEvents.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="290"/>
+        <CursorPos Y="293"/>
+        <UsageCount Value="9"/>
+      </Unit14>
+      <Unit15>
+        <Filename Value="..\..\Source\uRESTDWServerEvents.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="794"/>
+        <CursorPos X="23" Y="802"/>
+        <UsageCount Value="9"/>
+      </Unit15>
+      <Unit16>
+        <Filename Value="..\..\Source\uRESTDWReg.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="23"/>
+        <CursorPos X="36" Y="32"/>
+        <UsageCount Value="9"/>
+        <Bookmarks Count="2">
+          <Item0 X="36" Y="32" ID="1"/>
+          <Item1 X="81" Y="8" ID="2"/>
+        </Bookmarks>
+      </Unit16>
+      <Unit17>
+        <Filename Value="..\..\Source\libs\JSON\uDWJSON.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="1095"/>
+        <CursorPos Y="1105"/>
+        <UsageCount Value="11"/>
+      </Unit17>
+      <Unit18>
+        <Filename Value="C:\lazarus\lcl\lresources.pp"/>
+        <UnitName Value="LResources"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="3149"/>
+        <CursorPos X="38" Y="3154"/>
+        <UsageCount Value="10"/>
+      </Unit18>
+      <Unit19>
+        <Filename Value="..\..\Source\uDWResponseTranslator.pas"/>
+        <EditorIndex Value="3"/>
+        <TopLine Value="30"/>
+        <CursorPos X="19" Y="34"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit19>
+    </Units>
+    <JumpHistory Count="20" HistoryIndex="19">
+      <Position1>
+        <Filename Value="dmdwcgiserver.pas"/>
+        <Caret Line="46" Column="105" TopLine="38"/>
+      </Position1>
+      <Position2>
+        <Filename Value="..\..\Source\uDWResponseTranslator.pas"/>
+        <Caret Line="34" Column="19" TopLine="30"/>
+      </Position2>
+      <Position3>
+        <Filename Value="..\..\Source\uRESTDWBase.pas"/>
+        <Caret Line="39" Column="37" TopLine="29"/>
+      </Position3>
+      <Position4>
+        <Filename Value="..\..\Source\uRESTDWBase.pas"/>
+        <Caret Line="898" Column="53" TopLine="886"/>
+      </Position4>
+      <Position5>
+        <Filename Value="..\..\Source\uRESTDWBase.pas"/>
+        <Caret Line="334" Column="14" TopLine="327"/>
+      </Position5>
+      <Position6>
+        <Filename Value="dwCGIServer.lpr"/>
+        <Caret Line="5" Column="3" TopLine="4"/>
+      </Position6>
+      <Position7>
+        <Filename Value="..\..\Source\uRESTDWBase.pas"/>
+        <Caret Line="506" Column="34" TopLine="502"/>
+      </Position7>
+      <Position8>
+        <Filename Value="..\..\Source\uRESTDWBase.pas"/>
+        <Caret Line="334" Column="14" TopLine="327"/>
+      </Position8>
+      <Position9>
+        <Filename Value="..\..\Source\uRESTDWBase.pas"/>
+        <Caret Line="502" Column="2" TopLine="500"/>
+      </Position9>
+      <Position10>
+        <Filename Value="dmdwcgiserver.pas"/>
+        <Caret Line="37" Column="21" TopLine="34"/>
+      </Position10>
+      <Position11>
+        <Filename Value="..\..\Source\uRESTDWBase.pas"/>
+        <Caret Line="334" Column="14" TopLine="326"/>
+      </Position11>
+      <Position12>
+        <Filename Value="..\..\Source\uRESTDWBase.pas"/>
+        <Caret Line="502" Column="2" TopLine="495"/>
+      </Position12>
+      <Position13>
+        <Filename Value="dmdwcgiserver.pas"/>
+        <Caret Line="37" TopLine="34"/>
+      </Position13>
+      <Position14>
+        <Filename Value="dmdwcgiserver.pas"/>
+        <Caret Line="38" Column="20" TopLine="34"/>
+      </Position14>
+      <Position15>
+        <Filename Value="..\..\Source\uRESTDWBase.pas"/>
+        <Caret Line="334" Column="14" TopLine="326"/>
+      </Position15>
+      <Position16>
+        <Filename Value="dmdwcgiserver.pas"/>
+        <Caret Line="37" Column="32" TopLine="34"/>
+      </Position16>
+      <Position17>
+        <Filename Value="dmdwcgiserver.pas"/>
+        <Caret Line="15" Column="5" TopLine="6"/>
+      </Position17>
+      <Position18>
+        <Filename Value="..\..\Source\uRESTDWBase.pas"/>
+        <Caret Line="333" TopLine="328"/>
+      </Position18>
+      <Position19>
+        <Filename Value="..\..\Source\uRESTDWBase.pas"/>
+        <Caret Line="502" Column="26" TopLine="495"/>
+      </Position19>
+      <Position20>
+        <Filename Value="dmdwcgiserver.pas"/>
+        <Caret Line="37" TopLine="28"/>
+      </Position20>
+    </JumpHistory>
+  </ProjectSession>
+  <Debugging>
+    <BreakPoints Count="3">
+      <Item1>
+        <Kind Value="bpkSource"/>
+        <WatchScope Value="wpsLocal"/>
+        <WatchKind Value="wpkWrite"/>
+        <Source Value="uDmService.pas"/>
+        <Line Value="66"/>
+      </Item1>
+      <Item2>
+        <Kind Value="bpkSource"/>
+        <WatchScope Value="wpsLocal"/>
+        <WatchKind Value="wpkWrite"/>
+        <Source Value="..\..\Source\uRESTDWBase.pas"/>
+        <Line Value="907"/>
+      </Item2>
+      <Item3>
+        <Kind Value="bpkSource"/>
+        <WatchScope Value="wpsLocal"/>
+        <WatchKind Value="wpkWrite"/>
+        <Source Value="..\..\Source\uRESTDWBase.pas"/>
+        <Line Value="501"/>
+      </Item3>
+    </BreakPoints>
+  </Debugging>
+</CONFIG>

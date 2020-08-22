@@ -1,0 +1,633 @@
+LazarusResources.Add('TRESTClientPooler','PNG',[
+  #137'PNG'#13#10#26#10#0#0#0#13'IHDR'#0#0#0#24#0#0#0#24#8#6#0#0#0#224'w='#248#0
+  +#0#0#25'tEXtSoftware'#0'Adobe ImageReadyq'#201'e<'#0#0#3'fiTXtXML:com.adobe.'
+  +'xmp'#0#0#0#0#0'<?xpacket begin="'#239#187#191'" id="W5M0MpCehiHzreSzNTczkc9'
+  +'d"?> <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.3-c011 6'
+  +'6.145661, 2012/02/06-14:56:27        "> <rdf:RDF xmlns:rdf="http://www.w3.o'
+  +'rg/1999/02/22-rdf-syntax-ns#"> <rdf:Description rdf:about="" xmlns:xmpMM="h'
+  +'ttp://ns.adobe.com/xap/1.0/mm/" xmlns:stRef="http://ns.adobe.com/xap/1.0/sT'
+  +'ype/ResourceRef#" xmlns:xmp="http://ns.adobe.com/xap/1.0/" xmpMM:OriginalDo'
+  +'cumentID="xmp.did:0D9263920FD6E81187F08110CB34C608" xmpMM:DocumentID="xmp.d'
+  +'id:DE74378DE1B811E89E23E7AF67A5B26E" xmpMM:InstanceID="xmp.iid:DE74378CE1B8'
+  +'11E89E23E7AF67A5B26E" xmp:CreatorTool="Adobe Photoshop CS6 (Windows)"> <xmp'
+  +'MM:DerivedFrom stRef:instanceID="xmp.iid:781250A1B8E1E811A97ED2C7F74D7FE1" '
+  +'stRef:documentID="xmp.did:0D9263920FD6E81187F08110CB34C608"/> </rdf:Descrip'
+  +'tion> </rdf:RDF> </x:xmpmeta> <?xpacket end="r"?>'#244'H'#167#19#0#0#0'~IDA'
+  +'Tx'#218'b'#252#255#255'?'#3'-'#1#19#3#141#1#163'V'#218#12#170'y'#225#234#204
+  +'tF'#186#251#128#5'n{J'#6#217#134'h'#207#153'1pq0'#244'-`!5L'#241#198'E'#250
+  +#204#255#131#195#7#212'LY'#244#243#1#185#225'>'#240#169#8'['#249#129'-5P'#20
+  +'D'#212'4p`'#146')z0Q'#211'G'#140#216'j4jZ@'#251#26#141#148':'#25#159#207#176
+  +#165'F'#188#22'P#'#152'@'#150#14#174' "'#7#0#4#24#0'6'#233'2c'#4#165'*C'#0#0
+  +#0#0'IEND'#174'B`'#130
+]);
+LazarusResources.Add('TDWClientEvents','PNG',[
+  #137'PNG'#13#10#26#10#0#0#0#13'IHDR'#0#0#0#24#0#0#0#24#8#6#0#0#0#224'w='#248#0
+  +#0#0#25'tEXtSoftware'#0'Adobe ImageReadyq'#201'e<'#0#0#3'fiTXtXML:com.adobe.'
+  +'xmp'#0#0#0#0#0'<?xpacket begin="'#239#187#191'" id="W5M0MpCehiHzreSzNTczkc9'
+  +'d"?> <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.3-c011 6'
+  +'6.145661, 2012/02/06-14:56:27        "> <rdf:RDF xmlns:rdf="http://www.w3.o'
+  +'rg/1999/02/22-rdf-syntax-ns#"> <rdf:Description rdf:about="" xmlns:xmpMM="h'
+  +'ttp://ns.adobe.com/xap/1.0/mm/" xmlns:stRef="http://ns.adobe.com/xap/1.0/sT'
+  +'ype/ResourceRef#" xmlns:xmp="http://ns.adobe.com/xap/1.0/" xmpMM:OriginalDo'
+  +'cumentID="xmp.did:C58E22B161D5E8119BB3853D9E5E7202" xmpMM:DocumentID="xmp.d'
+  +'id:AD57EA21E1B711E8AA7ECFA9BD5E0D87" xmpMM:InstanceID="xmp.iid:AD57EA20E1B7'
+  +'11E8AA7ECFA9BD5E0D87" xmp:CreatorTool="Adobe Photoshop CS6 (Windows)"> <xmp'
+  +'MM:DerivedFrom stRef:instanceID="xmp.iid:1B8FECF6B4E1E811A97ED2C7F74D7FE1" '
+  +'stRef:documentID="xmp.did:C58E22B161D5E8119BB3853D9E5E7202"/> </rdf:Descrip'
+  +'tion> </rdf:RDF> </x:xmpmeta> <?xpacket end="r"?>'#140#236#170#23#0#0#0#222
+  +'IDATx'#218#188'T'#193#13#194'0'#12#180#171#174#193#167#195#192#155#25'h'#161
+  +';'#240'f'#134#22'5'#204#192#27#134'a'#21#227' '#18'A'#20'7'#165'8='#201'RT+'
+  +'>9w=$"'#8#129#199#251#215'G:'#173'qf'#15#10#16'@'#219#205#171#162#23#199'zL'
+  +#232'H'#185#7'%$`'#7#225#245#6#151#190#127#15#170#166#245#152#196#146#139#27
+  +#216#139#159#216#181'-'#218'J'#246#130#141'0'#166#129#166#14'`'#9#180#203't'
+  +#29#185's'#1#153#129#176#31#232#223'!t'#174'Qz:'#245#13'B'#11'{'#155'R'#211
+  +#252#190#254'0$'#237#173#190'AhaU'#2#255#7'3'#137'#'#210#215#128'I'#204#234
+  +#225'##'#187'MK'#213#247#247'6'#173#160#230#243#178'6'#29#179#220'\'#162'El*'
+  +#167#233#193#144#20#9#211't'#200' r'#24#221#234'a'#23'C'#254#184#150'4'#208
+  +'B'#246#13#158#2#12#0#195'Z'#209'<zF\)'#0#0#0#0'IEND'#174'B`'#130
+]);
+LazarusResources.Add('TDWServerEvents','PNG',[
+  #137'PNG'#13#10#26#10#0#0#0#13'IHDR'#0#0#0#24#0#0#0#24#8#6#0#0#0#224'w='#248#0
+  +#0#0#25'tEXtSoftware'#0'Adobe ImageReadyq'#201'e<'#0#0#3'fiTXtXML:com.adobe.'
+  +'xmp'#0#0#0#0#0'<?xpacket begin="'#239#187#191'" id="W5M0MpCehiHzreSzNTczkc9'
+  +'d"?> <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.3-c011 6'
+  +'6.145661, 2012/02/06-14:56:27        "> <rdf:RDF xmlns:rdf="http://www.w3.o'
+  +'rg/1999/02/22-rdf-syntax-ns#"> <rdf:Description rdf:about="" xmlns:xmpMM="h'
+  +'ttp://ns.adobe.com/xap/1.0/mm/" xmlns:stRef="http://ns.adobe.com/xap/1.0/sT'
+  +'ype/ResourceRef#" xmlns:xmp="http://ns.adobe.com/xap/1.0/" xmpMM:OriginalDo'
+  +'cumentID="xmp.did:3CECDD5D9BD7E811A63ED86818533998" xmpMM:DocumentID="xmp.d'
+  +'id:B1B80930E1B811E8AAFB99AAD3ECF3BE" xmpMM:InstanceID="xmp.iid:B1B8092FE1B8'
+  +'11E8AAFB99AAD3ECF3BE" xmp:CreatorTool="Adobe Photoshop CS6 (Windows)"> <xmp'
+  +'MM:DerivedFrom stRef:instanceID="xmp.iid:3DECDD5D9BD7E811A63ED86818533998" '
+  +'stRef:documentID="xmp.did:3CECDD5D9BD7E811A63ED86818533998"/> </rdf:Descrip'
+  +'tion> </rdf:RDF> </x:xmpmeta> <?xpacket end="r"?>'#15'O'#2#2#0#0#0#246'IDAT'
+  +'x'#218#180'UQ'#14#194' '#12#133#133#243#236'GO'#161#254'x'#27#179#152#200#18
+  +#179'x'#27#127#212'[x&'#164#19#150#13')'#180#12'_'#210#31#202'xk'#223'+Hc'
+  +#140#8'!'#187#215'b'#209#12';Y'#154'k'#4#2's'#220#143#17#253'0'#145#131'%'#23
+  +'c'#14'%'#152#31#6#216#182#173#134#160#230'<'#9'J '#239#207'pI'#187'H'#230
+  +#128'wqNL'#131'X'#233#155#199'i'#234#245#251'p#'#231'P'#130#128#204#139'F'
+  +#202#185'viK&'#178#26#172#5#185'E'#201'3'#220#223#179'lZ'#138#208#194#20#2
+  +#137#4#201#222#213'+'#8'-L!0H'#252'nt'#215#6#144'x'#162#250#26'X'#18';'#23
+  +#189#155#13#169#136#26'`'#149'e'#161#170#246#223#219#212#14#152#197#5#170'QD'
+  +#13'X6'#157't '#218#180'x'#30#168'"'#179#230#160#196#166','#7#133'6'#173#175
+  +#193#236#9'-'#171#224'<|'#131#136#191'_'#215#252'9'#184'v'#172#237#205#202
+  +#183' '#171#209'G'#128#1#0#238#182#130#253#18#211'4'#194#0#0#0#0'IEND'#174'B'
+  +'`'#130
+]);
+LazarusResources.Add('TRESTServicePooler','PNG',[
+  #137'PNG'#13#10#26#10#0#0#0#13'IHDR'#0#0#0#24#0#0#0#24#8#6#0#0#0#224'w='#248#0
+  +#0#0#25'tEXtSoftware'#0'Adobe ImageReadyq'#201'e<'#0#0#3'fiTXtXML:com.adobe.'
+  +'xmp'#0#0#0#0#0'<?xpacket begin="'#239#187#191'" id="W5M0MpCehiHzreSzNTczkc9'
+  +'d"?> <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.3-c011 6'
+  +'6.145661, 2012/02/06-14:56:27        "> <rdf:RDF xmlns:rdf="http://www.w3.o'
+  +'rg/1999/02/22-rdf-syntax-ns#"> <rdf:Description rdf:about="" xmlns:xmpMM="h'
+  +'ttp://ns.adobe.com/xap/1.0/mm/" xmlns:stRef="http://ns.adobe.com/xap/1.0/sT'
+  +'ype/ResourceRef#" xmlns:xmp="http://ns.adobe.com/xap/1.0/" xmpMM:OriginalDo'
+  +'cumentID="xmp.did:7C1250A1B8E1E811A97ED2C7F74D7FE1" xmpMM:DocumentID="xmp.d'
+  +'id:A65256C8E1B911E8B4A180AFAA4C34A9" xmpMM:InstanceID="xmp.iid:A65256C7E1B9'
+  +'11E8B4A180AFAA4C34A9" xmp:CreatorTool="Adobe Photoshop CS6 (Windows)"> <xmp'
+  +'MM:DerivedFrom stRef:instanceID="xmp.iid:7E1250A1B8E1E811A97ED2C7F74D7FE1" '
+  +'stRef:documentID="xmp.did:7C1250A1B8E1E811A97ED2C7F74D7FE1"/> </rdf:Descrip'
+  +'tion> </rdf:RDF> </x:xmpmeta> <?xpacket end="r"?>'#142#199#132'R'#0#0#1'CID'
+  +'ATx'#218'b'#252#255#255'?'#3'-'#1#11'1'#138#24#171#182#17#229#138#255'm^'
+  +#140#232'bL'#12'4'#6',$'#170'g'#196#229'x\'#26#6#157#15#254#211#202#2'Fr-b!5'
+  +#165'@-c'#28#212'q@LJ!:'#136#6#196#7#255#7'2'#153#194#131#17'X,'#192#18#7#1
+  +#133#208#194#14')'#21#225#141#3'l'#229#141#129#177#197#27' u'#1#196#4'b'#145
+  +#11'gOP'#236#3#144#161'/'#160'q'#200't'#161'UA'#24'H;'#131#197#171#31#188#1
+  +#202'}'#7'2'#185#129'X'#136#146'8'#0#25','#138'.'#8#181#12'd'#209'k'#138'|'
+  +#128#156#2#129#134']'#1'R '#131#223#2'-'#208'A'#150'''+'#31#0#131#224'!'#146
+  +'K'#175#2#217#186'H'#150']'#6'Y'#2#146#7#178#31#146#155#15#248#144#216#194'h'
+  +'r"'#200#234#152'p'#184#20#27'F'#6#159#145#216'o'#208#228#144#249#159#9#199
+  +'AM'#27#132'n'#169'B'#22#149#3#165#22'P0'#128#130#3#20','#232'q'#0#20'{{'#170
+  +'E]'#142#146'H'#254#135#148'r`'#17'+'#137'.'#143'-'#163#17'U'#177#3'#'#250#29
+  +#144#250#131#148#15'`'#145#252#22'j8'#200#241'B`'#11'H'#168#11#224#150#0'-`'
+  +#0#6#1#152'oVs'#19#20#238#15#129'X'#30'('#6#143'd'#160'8'#3'@'#128#1#0#17'D'
+  +#128#25'<'#0'K'#10#0#0#0#0'IEND'#174'B`'#130
+]);
+LazarusResources.Add('TRESTServiceCGI','PNG',[
+  #137'PNG'#13#10#26#10#0#0#0#13'IHDR'#0#0#0#24#0#0#0#24#8#6#0#0#0#224'w='#248#0
+  +#0#0#25'tEXtSoftware'#0'Adobe ImageReadyq'#201'e<'#0#0#3'fiTXtXML:com.adobe.'
+  +'xmp'#0#0#0#0#0'<?xpacket begin="'#239#187#191'" id="W5M0MpCehiHzreSzNTczkc9'
+  +'d"?> <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.3-c011 6'
+  +'6.145661, 2012/02/06-14:56:27        "> <rdf:RDF xmlns:rdf="http://www.w3.o'
+  +'rg/1999/02/22-rdf-syntax-ns#"> <rdf:Description rdf:about="" xmlns:xmpMM="h'
+  +'ttp://ns.adobe.com/xap/1.0/mm/" xmlns:stRef="http://ns.adobe.com/xap/1.0/sT'
+  +'ype/ResourceRef#" xmlns:xmp="http://ns.adobe.com/xap/1.0/" xmpMM:OriginalDo'
+  +'cumentID="xmp.did:EF24085C62D5E81195F0CC216343BFBE" xmpMM:DocumentID="xmp.d'
+  +'id:10265E30E1B811E8B3AFE01F7CE9D194" xmpMM:InstanceID="xmp.iid:10265E2FE1B8'
+  +'11E8B3AFE01F7CE9D194" xmp:CreatorTool="Adobe Photoshop CS6 (Windows)"> <xmp'
+  +'MM:DerivedFrom stRef:instanceID="xmp.iid:EB92A3B762DEE8118CA9834001FABCD0" '
+  +'stRef:documentID="xmp.did:EF24085C62D5E81195F0CC216343BFBE"/> </rdf:Descrip'
+  +'tion> </rdf:RDF> </x:xmpmeta> <?xpacket end="r"?>'#164'ZU'#131#0#0#2#15'IDA'
+  +'Tx'#218#180'U;K'#3'A'#16#158'=R'#248#0#13'1'#138#22'F;Q'#132#4#4#9#150'j'#17
+  +#196#159'`omc'#17#133'D'#136'bg'#233#31#240#31#8'> '#196'6'#136'B'#240#133'v'
+  +'j'#165'1'#9#168'E"h'#214#153#203#237'eo'#217#187'K0'#14'9fwvwf'#246#155'o'''
+  +',ux'#203#183#242#207#0#245':'#0#24#248#145#150'E'#216'tk'#160#216#13#243#151
+  +#138'G '#189'<'#197#200#194'`'#243#152'/'#14'vC'#165#246#13#157#144'PW'#0#178
+  +#197'*'#240'L'#194#12#16#128#31'0'#157#179#131#181#142#4#168#172#236'9.j'#192
+  +#191'H3B@'#183'|'#146#203#217#227#196#252#188#167#221'm'#175'k'#0':'#160':'
+  +#165#185#155']'#183'&'#3#227#11#145'.+/{K'#16'y'#137#31'$:'#18#183'%'#2#150
+  +'V'#221#26#237'd'#220#17#22#137#162#169'0'#184#217#133#205'Yh'#195#187#6#237
+  +#20#214#15#174#192'_'#159#212#197#213#21'Sm,y'#194#29#1#168#127#152'O'#188'E'
+  +#185'\_p8'#141#205#196'K'#168#10'4,\'#230#195'f'#143#19#1#230#134'z!'#251#242
+  +#169#233#140#18#15'8&'#196'XC7'#157#190'X'#7#140#194#246#248#0#234#5#17','#10
+  +'P'#141#157#166'{)w'#198#165'C:i\Wm'#215#6#139#158#166#139#232'x'#208#237'\l'
+  +#227#241#13#213#144'o'#13#248'NB'#135#177#131'*'#232#236#6#21#221#162#140'A'
+  +#167'e*'#217'7'#152#220'='#227#247#31'_'#190#127'8|g'#137'!'#12'O'#232'(b9'
+  +#191'E'#220#167'%'#232#174'E'#16'\{'#182'op'#255'^'#179'pV'#18#166')'#217#132
+  +'nH'#159#180'c@'#201'(,'#141#251#154#16'1'#14'K'#163'Ax'#221'_e'#30#148#20'C'
+  +'bE'#208#26#151#148'm4'#31#22#251'l'#136'X'#242#136#183#210#154'DM'#136'-'#22
+  +'{'#180'5@['#249'<3'#17#182'o0'#213#223#3'w'#4#147#143'X'#143#136'E'#165'bI'
+  +#133#29'Q'#27#146'/M]i8'#19#175#160#250#150#222#129'`T'#217'rN'#201#135#254
+  +#210'*B'#8#129#229#244#129'p'#127#194'o'#140'`'#17#27'f7'#31#224'W'#128#1#0
+  +#154'J'#221#163#128#24'R"'#0#0#0#0'IEND'#174'B`'#130
+]);
+LazarusResources.Add('TRESTDWClientSQL','PNG',[
+  #137'PNG'#13#10#26#10#0#0#0#13'IHDR'#0#0#0#24#0#0#0#24#8#6#0#0#0#224'w='#248#0
+  +#0#0#25'tEXtSoftware'#0'Adobe ImageReadyq'#201'e<'#0#0#3'fiTXtXML:com.adobe.'
+  +'xmp'#0#0#0#0#0'<?xpacket begin="'#239#187#191'" id="W5M0MpCehiHzreSzNTczkc9'
+  +'d"?> <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.3-c011 6'
+  +'6.145661, 2012/02/06-14:56:27        "> <rdf:RDF xmlns:rdf="http://www.w3.o'
+  +'rg/1999/02/22-rdf-syntax-ns#"> <rdf:Description rdf:about="" xmlns:xmpMM="h'
+  +'ttp://ns.adobe.com/xap/1.0/mm/" xmlns:stRef="http://ns.adobe.com/xap/1.0/sT'
+  +'ype/ResourceRef#" xmlns:xmp="http://ns.adobe.com/xap/1.0/" xmpMM:OriginalDo'
+  +'cumentID="xmp.did:2B1AD8D038DEE8118CA9834001FABCD0" xmpMM:DocumentID="xmp.d'
+  +'id:EA096C63E1B811E8A0CADF8FAD98A416" xmpMM:InstanceID="xmp.iid:EA096C62E1B8'
+  +'11E8A0CADF8FAD98A416" xmp:CreatorTool="Adobe Photoshop CS6 (Windows)"> <xmp'
+  +'MM:DerivedFrom stRef:instanceID="xmp.iid:558890EA4AE1E81182558B93C8A9BF46" '
+  +'stRef:documentID="xmp.did:2B1AD8D038DEE8118CA9834001FABCD0"/> </rdf:Descrip'
+  +'tion> </rdf:RDF> </x:xmpmeta> <?xpacket end="r"?>'#207#215'q'#174#0#0#0#226
+  +'IDATx'#218#204'UK'#18#194' '#12'm'#24#150'^'#195'[x'#2#187'r'#225'ep'#207'u'
+  +'\'#213#203'x'#141#238#17#180'qb'#134#150#4#196'1'#11'f'#194#231#189#188#23
+  +'Z '#132'0'#244#12#155#6'p'#183'.,'#193#31#193#22'7'#157#198#143#28#174'Sq.'
+  +#229#24'f'#232#28#144'z'#240#19#139#184#196#180#216'T'#249'R'#180#209#30#168
+  +#186'E'#18'`TT"'#226#202#173#196'G'#10#170#181#206'H'#155#229#156#235'c'#17#2
+  +'{'#239#129#230'k'#129#251#196#4#233#0#5#229#0'_'#177#136#147#252#139'E'#176
+  +'I'#16'o'#206#210'`'#157'ExN'#243#29#196#241#0#151'3'#188'Iv'#251#233'I2'#223
+  +#199#192#243#153#228#226#30' '#208#218'\n]'#172#128#6#173','#167#164#250#22
+  +'I'#128#154#8'ZHlm'#15'd'#243#1#212'/'#26'*'#161#253#224#189#209#190'h Q'#151
+  +'#'#137'?'#201#23'A'#207'x'#8'0'#0'"!'#146#195#9#164#142'C'#0#0#0#0'IEND'#174
+  +'B`'#130
+]);
+LazarusResources.Add('TRESTDWDataBase','PNG',[
+  #137'PNG'#13#10#26#10#0#0#0#13'IHDR'#0#0#0#24#0#0#0#24#8#6#0#0#0#224'w='#248#0
+  +#0#0#25'tEXtSoftware'#0'Adobe ImageReadyq'#201'e<'#0#0#3'fiTXtXML:com.adobe.'
+  +'xmp'#0#0#0#0#0'<?xpacket begin="'#239#187#191'" id="W5M0MpCehiHzreSzNTczkc9'
+  +'d"?> <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.3-c011 6'
+  +'6.145661, 2012/02/06-14:56:27        "> <rdf:RDF xmlns:rdf="http://www.w3.o'
+  +'rg/1999/02/22-rdf-syntax-ns#"> <rdf:Description rdf:about="" xmlns:xmpMM="h'
+  +'ttp://ns.adobe.com/xap/1.0/mm/" xmlns:stRef="http://ns.adobe.com/xap/1.0/sT'
+  +'ype/ResourceRef#" xmlns:xmp="http://ns.adobe.com/xap/1.0/" xmpMM:OriginalDo'
+  +'cumentID="xmp.did:2102588139D5E811860DAB8FA7406045" xmpMM:DocumentID="xmp.d'
+  +'id:F19031EFE1B811E89676E8F72AA2792C" xmpMM:InstanceID="xmp.iid:F19031EEE1B8'
+  +'11E89676E8F72AA2792C" xmp:CreatorTool="Adobe Photoshop CS6 (Windows)"> <xmp'
+  +'MM:DerivedFrom stRef:instanceID="xmp.iid:B264970B50DEE8118CA9834001FABCD0" '
+  +'stRef:documentID="xmp.did:2102588139D5E811860DAB8FA7406045"/> </rdf:Descrip'
+  +'tion> </rdf:RDF> </x:xmpmeta> <?xpacket end="r"?>~'#189#229#187#0#0#1'8IDAT'
+  +'x'#218'b'#252#255#255'?'#3'-'#1'#'#177#22'|'#13'e'#132'+'#228'^'#253#159#17
+  +'Y'#12#23#31#4#152'H5'#28#155#24'6y'#24'`!'#197#187#200'.'#195#230'rl'#128
+  +#137#20#131#241#25'D'#145#5#148'X'#2#14'"'#198#170'm '#10#167#198'/'#183#189
+  +#137#142#27#244#200'f"'#213#203'0'#159' '#199#7'z'#220#16#138'dF,'#134#130'|'
+  +#249#31#221#155' '#131'A'#174#5'a'#16#27#155'E'#224'|'#128#22'D'#184'\'#3#151
+  +#255#223#230'EZ'#28#224'0'#136'*'#128#137#129#198#128#168'8'#192#229#179#247
+  +'5'#140#243#129#148#3#16'+'#160'I='#0#226#3#130'-'#255#19'Y'#200'u'#25#208
+  +#240#247'@'#234#2#16#7#225'P'#210#7'RCI'#28#8'\map'#212#174#193')'#239#8'2'
+  +#139#162'8'#0#26'~'#31#143'4('#152'~P'#20#7#208#176'G'#23#255#3#196#127#201
+  +'*M'#209#1'0'#136#24#129#190'0'#196'!}'#30#136'?P'#18#7#31#160'A'#164#136'C'
+  +#254#0'Q>'#152#151#7')'#232#146'&m'#197#136'd('#254#143#197'q'#223#161'4'#243
+  +#128#4#17#10#192#226'r'#146#130#136#137#140#242#7#172#22#152'K'#5#129#212#25
+  +' ~'#2#21#251#5'J'#150'P'#252#12#148#23#129'j'#4#24'i'#221'l'#1#8'0'#0#158'x'
+  +#142#144#243'%='#249#0#0#0#0'IEND'#174'B`'#130
+]);
+LazarusResources.Add('TRESTDWPoolerList','PNG',[
+  #137'PNG'#13#10#26#10#0#0#0#13'IHDR'#0#0#0#24#0#0#0#24#8#6#0#0#0#224'w='#248#0
+  +#0#0#25'tEXtSoftware'#0'Adobe ImageReadyq'#201'e<'#0#0#3'fiTXtXML:com.adobe.'
+  +'xmp'#0#0#0#0#0'<?xpacket begin="'#239#187#191'" id="W5M0MpCehiHzreSzNTczkc9'
+  +'d"?> <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.3-c011 6'
+  +'6.145661, 2012/02/06-14:56:27        "> <rdf:RDF xmlns:rdf="http://www.w3.o'
+  +'rg/1999/02/22-rdf-syntax-ns#"> <rdf:Description rdf:about="" xmlns:xmpMM="h'
+  +'ttp://ns.adobe.com/xap/1.0/mm/" xmlns:stRef="http://ns.adobe.com/xap/1.0/sT'
+  +'ype/ResourceRef#" xmlns:xmp="http://ns.adobe.com/xap/1.0/" xmpMM:OriginalDo'
+  +'cumentID="xmp.did:7C1250A1B8E1E811A97ED2C7F74D7FE1" xmpMM:DocumentID="xmp.d'
+  +'id:BCA8896FE1B911E8B804F44D37E79DF5" xmpMM:InstanceID="xmp.iid:BCA8896EE1B9'
+  +'11E8B804F44D37E79DF5" xmp:CreatorTool="Adobe Photoshop CS6 (Windows)"> <xmp'
+  +'MM:DerivedFrom stRef:instanceID="xmp.iid:7C1250A1B8E1E811A97ED2C7F74D7FE1" '
+  +'stRef:documentID="xmp.did:7C1250A1B8E1E811A97ED2C7F74D7FE1"/> </rdf:Descrip'
+  +'tion> </rdf:RDF> </x:xmpmeta> <?xpacket end="r"?>'#27#208'K'#149#0#0#0#163
+  +'IDATx'#218'b'#252#255#255'?'#3'-'#1#11'1'#138#24#171#182#17#229#138#255'm^'
+  +#140#232'bL'#12'4'#6',$'#170'g'#196#229'x\'#26#6#157#15#254#211#202#2'Fr-b!5'
+  +#165'@-c'#28#212'q@LJ!:'#136#6#196#7#255#7'2'#153#194#131#17'X,'#192#18#7#245
+  +#227#0'f8:'#155#154'>`0'#209#211#3'[x'#230#210'%F'#24#27#29#128#228#200#142#3
+  +#144'ft6'#208'"'#250#250#0#20#220#228#230#131#193#237#3':'#199'AM'#27#132'n'
+  +#169#162#154#15#24#232#235#3'4'#151#147#234#3'FP'#179#133#132#186#0'g'#235#1
+  +#23#0#8'0'#0#155#13'Y'#30#163'}H{'#0#0#0#0'IEND'#174'B`'#130
+]);
+LazarusResources.Add('TRESTDWStoredProc','PNG',[
+  #137'PNG'#13#10#26#10#0#0#0#13'IHDR'#0#0#0#24#0#0#0#24#8#6#0#0#0#224'w='#248#0
+  +#0#0#25'tEXtSoftware'#0'Adobe ImageReadyq'#201'e<'#0#0#3'fiTXtXML:com.adobe.'
+  +'xmp'#0#0#0#0#0'<?xpacket begin="'#239#187#191'" id="W5M0MpCehiHzreSzNTczkc9'
+  +'d"?> <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.3-c011 6'
+  +'6.145661, 2012/02/06-14:56:27        "> <rdf:RDF xmlns:rdf="http://www.w3.o'
+  +'rg/1999/02/22-rdf-syntax-ns#"> <rdf:Description rdf:about="" xmlns:xmpMM="h'
+  +'ttp://ns.adobe.com/xap/1.0/mm/" xmlns:stRef="http://ns.adobe.com/xap/1.0/sT'
+  +'ype/ResourceRef#" xmlns:xmp="http://ns.adobe.com/xap/1.0/" xmpMM:OriginalDo'
+  +'cumentID="xmp.did:D3A3E9F86AD5E811B404BD74D6F439F5" xmpMM:DocumentID="xmp.d'
+  +'id:0E54E27DE1B911E8924AE9560D69D3D8" xmpMM:InstanceID="xmp.iid:0E54E27CE1B9'
+  +'11E8924AE9560D69D3D8" xmp:CreatorTool="Adobe Photoshop CS6 (Windows)"> <xmp'
+  +'MM:DerivedFrom stRef:instanceID="xmp.iid:B864970B50DEE8118CA9834001FABCD0" '
+  +'stRef:documentID="xmp.did:D3A3E9F86AD5E811B404BD74D6F439F5"/> </rdf:Descrip'
+  +'tion> </rdf:RDF> </x:xmpmeta> <?xpacket end="r"?>'#142'^'#184#3#0#0#1'7IDAT'
+  +'x'#218'b'#252#255#255'?'#3'-'#1#19'5'#13'c'#172#218#134#225'ZFd'#31'`S'#240
+  +#191#205#139#145'T'#195#145#245'`'#248#224#175#176'7'#28#147#235'rd>'#134#15
+  +#144#13'f~'#187#149#162' '#3#249#132#133#24'E'#228#132'=L'#31'F'#16#129'\'#13
+  +#195#164#184#20''''#31#20'D'#212#194#12#149'['#255#163#139'11'#208#24#160#196
+  +#193#251#26#198#249'@'#202#1#136#21'p'#168#127#0#196#7#4'['#254''''#146'l'#1
+  +#208#240#247'@'#234#2'P'#179'">'#13'@u'#251'Aj'#129#234#4'I'#205#201#2'W['#24
+  +#28#9'i'#128#170#17#24#144#162#130'`'#28'h'#215'0'#220#127#207#192#24#132'O'
+  +#131'6'#3#195'z '#245#131','#11#160#145'{'#14#135#218'?'#160#146#132#162#210
+  +#20#24#190#160#12#130#11#179#2'1'#7#20#19#237#3'xY'#4'ME'#31#128'8'#136#128
+  +#158'~ 6'#0#166'"'#1'b'#138#10#228' '#18#128'b'#244' '#2'i'#254#5#196'l@'#252
+  +#29'V'#162'`+'#133#177#21#146#196#4#17#19'4X@47'#20#147#21#201#31'@'#169#136
+  +#200' "='#153#130'r&0'#30'V'#3#153#155#129'X'#26'*'#252#27#136#255'!'#169#127
+  +#7#196''''#145#195#159'P'#221#193'8'#164'*'#253#1#177#0' '#192#0#159'M'#190
+  +#153'X'#182'3'#180#0#0#0#0'IEND'#174'B`'#130
+]);
+LazarusResources.Add('TRESTDWPoolerDB','PNG',[
+  #137'PNG'#13#10#26#10#0#0#0#13'IHDR'#0#0#0#24#0#0#0#24#8#6#0#0#0#224'w='#248#0
+  +#0#0#25'tEXtSoftware'#0'Adobe ImageReadyq'#201'e<'#0#0#3'fiTXtXML:com.adobe.'
+  +'xmp'#0#0#0#0#0'<?xpacket begin="'#239#187#191'" id="W5M0MpCehiHzreSzNTczkc9'
+  +'d"?> <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.3-c011 6'
+  +'6.145661, 2012/02/06-14:56:27        "> <rdf:RDF xmlns:rdf="http://www.w3.o'
+  +'rg/1999/02/22-rdf-syntax-ns#"> <rdf:Description rdf:about="" xmlns:xmpMM="h'
+  +'ttp://ns.adobe.com/xap/1.0/mm/" xmlns:stRef="http://ns.adobe.com/xap/1.0/sT'
+  +'ype/ResourceRef#" xmlns:xmp="http://ns.adobe.com/xap/1.0/" xmpMM:OriginalDo'
+  +'cumentID="xmp.did:241AD8D038DEE8118CA9834001FABCD0" xmpMM:DocumentID="xmp.d'
+  +'id:FECF8C20E1B811E8B044D5FC5E7845AA" xmpMM:InstanceID="xmp.iid:FECF8C1FE1B8'
+  +'11E8B044D5FC5E7845AA" xmp:CreatorTool="Adobe Photoshop CS6 (Windows)"> <xmp'
+  +'MM:DerivedFrom stRef:instanceID="xmp.iid:B564970B50DEE8118CA9834001FABCD0" '
+  +'stRef:documentID="xmp.did:241AD8D038DEE8118CA9834001FABCD0"/> </rdf:Descrip'
+  +'tion> </rdf:RDF> </x:xmpmeta> <?xpacket end="r"?>'#147#191'4'#14#0#0#0#252
+  +'IDATx'#218'b'#252#255#255'?'#3'-'#1'#1'#22'0V'#239'"'#202#21#255'['#221#24
+  +#209#197#152#24'h'#12'XH'#245'1.'#199#227#210'0'#232'|'#240#159'V'#22'0'#146
+  +'k'#17#11#169')'#5'j'#25#227#160#142#3'bR'#10#209'A4 >'#248'?'#144#201#20'Q'
+  +#196#180#186#209'4'#14#192#224'}'#13#227'| '#229#0#196#10'hR'#15#128#248#128
+  +'`'#203#255'D'#178'|'#0'r='#208#240#247'@'#230#5' '#14#194#161#172#15#164#134
+  +#146'8'#16#184#218#194#224#168']'#131'S'#222#17'd'#22'E'#169#8'h'#248'}<'#210
+  +#160'`'#250'AQ'#28'@'#195#30']'#252#15#16#255#165'4'#21#129#1'0'#136#24#129
+  +#190'0'#196'!}'#30#136'?P'#18#7#31#160'A'#164#136'C'#254#0'q>'#168#246#135
+  +#208#173#27'1"'#25#138#177#21'!'#223#161'4'#243#128#4#17'*'#192't9IA'#196'Db'
+  +']'#0#14#6#160'z'#6'`.'#21#4#178#207#0#241#19'h'#208#252#2'%K(~'#6#202#232'@'
+  +'5'#2#0#1#6#0#253#179'U{'#144#248#7#251#0#0#0#0'IEND'#174'B`'#130
+]);
+LazarusResources.Add('TDWMassiveCache','PNG',[
+  #137'PNG'#13#10#26#10#0#0#0#13'IHDR'#0#0#0#24#0#0#0#24#8#6#0#0#0#224'w='#248#0
+  +#0#0#25'tEXtSoftware'#0'Adobe ImageReadyq'#201'e<'#0#0#3'fiTXtXML:com.adobe.'
+  +'xmp'#0#0#0#0#0'<?xpacket begin="'#239#187#191'" id="W5M0MpCehiHzreSzNTczkc9'
+  +'d"?> <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.3-c011 6'
+  +'6.145661, 2012/02/06-14:56:27        "> <rdf:RDF xmlns:rdf="http://www.w3.o'
+  +'rg/1999/02/22-rdf-syntax-ns#"> <rdf:Description rdf:about="" xmlns:xmpMM="h'
+  +'ttp://ns.adobe.com/xap/1.0/mm/" xmlns:stRef="http://ns.adobe.com/xap/1.0/sT'
+  +'ype/ResourceRef#" xmlns:xmp="http://ns.adobe.com/xap/1.0/" xmpMM:OriginalDo'
+  +'cumentID="xmp.did:47AF0EB236DEE8118CA9834001FABCD0" xmpMM:DocumentID="xmp.d'
+  +'id:593D1068E1B811E8A573FD6BFC227872" xmpMM:InstanceID="xmp.iid:593D1067E1B8'
+  +'11E8A573FD6BFC227872" xmp:CreatorTool="Adobe Photoshop CS6 (Windows)"> <xmp'
+  +'MM:DerivedFrom stRef:instanceID="xmp.iid:3B0DACE251DEE8118CA9834001FABCD0" '
+  +'stRef:documentID="xmp.did:47AF0EB236DEE8118CA9834001FABCD0"/> </rdf:Descrip'
+  +'tion> </rdf:RDF> </x:xmpmeta> <?xpacket end="r"?>'#156#155'XO'#0#0#0#201'ID'
+  +'ATx'#218'b'#252#255#255'?'#3'-'#1#11'2''..'#14#171'm'#139#22'-b'#132#177#25
+  +#171#182#17#237#162#255'm^'#140','#232#6#235'''OBQtqn'#30'\'#30#217#162#255
+  +#129#222'p5'#140#235#183#226#20'cA'#214'H'#140#15#208#13' $'#198#130#207'`'
+  +#244#160#131'Y'#4'r)'#212'0F|!D'#145#15#208#13'B'#247#12'E>'#192'e'#24#206'T'
+  +'4'#188'|'#0'J'#150'T'#247#1#178'A'#189#7'?'#144#154'Y'#25#137#206#201' Pl/@'
+  +#216'DDz'#255'OTQAj'#246''''#187',"6'#251#147'm'#1#177#217#159#148#194#145#5
+  +#217#245#196'f'#127'R'#10'G'#22'r'#146#30')'#25#147#133#156#164'GJ'#198#28
+  +#245#193#192#251#128#17#212#170' 7'''#19#213'H'#160'u'#179#5' '#192#0#157''''
+  +#170')'#154'u'#178#19#0#0#0#0'IEND'#174'B`'#130
+]);
+LazarusResources.Add('TDWMassiveSQLCache','PNG',[
+  #137'PNG'#13#10#26#10#0#0#0#13'IHDR'#0#0#0#24#0#0#0#24#8#6#0#0#0#224'w='#248#0
+  +#0#0#25'tEXtSoftware'#0'Adobe ImageReadyq'#201'e<'#0#0#3'fiTXtXML:com.adobe.'
+  +'xmp'#0#0#0#0#0'<?xpacket begin="'#239#187#191'" id="W5M0MpCehiHzreSzNTczkc9'
+  +'d"?> <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.3-c011 6'
+  +'6.145661, 2012/02/06-14:56:27        "> <rdf:RDF xmlns:rdf="http://www.w3.o'
+  +'rg/1999/02/22-rdf-syntax-ns#"> <rdf:Description rdf:about="" xmlns:xmpMM="h'
+  +'ttp://ns.adobe.com/xap/1.0/mm/" xmlns:stRef="http://ns.adobe.com/xap/1.0/sT'
+  +'ype/ResourceRef#" xmlns:xmp="http://ns.adobe.com/xap/1.0/" xmpMM:OriginalDo'
+  +'cumentID="xmp.did:0376267044D5E811B59BFCFB6E5EBDE0" xmpMM:DocumentID="xmp.d'
+  +'id:64F31CA7E1B811E8B221B5CBC65EFFE8" xmpMM:InstanceID="xmp.iid:64F31CA6E1B8'
+  +'11E8B221B5CBC65EFFE8" xmp:CreatorTool="Adobe Photoshop CS6 (Windows)"> <xmp'
+  +'MM:DerivedFrom stRef:instanceID="xmp.iid:52FD0B8354DEE8118CA9834001FABCD0" '
+  +'stRef:documentID="xmp.did:0376267044D5E811B59BFCFB6E5EBDE0"/> </rdf:Descrip'
+  +'tion> </rdf:RDF> </x:xmpmeta> <?xpacket end="r"?>'#221'['#29#29#0#0#1#137'I'
+  +'DATx'#218'b'#252#255#255'?'#3'-'#1#11#177#10#191#134'2'#194']'#194#189#250
+  +'?#'#178#24'.>'#8'0'#145'j861l'#242'$'#251#0#221'e'#216'\'#142#13'0'#145'b0>'
+  +#131'('#178#128#18'KX'#200#141#3'b'#196'A'#142#2'[pY'#143#145'A'#198#143#193
+  +#1#200#244#7'b'#3' v'#128')'#22'l'#193#30#238' '#26'['#170'A'#7#140#160'|'
+  +#240#190#134'q>'#144#157#0#21';'#0#196#23#128#248'#'#212#130#6'b|'#135#203#18
+  +#152#5' E'#11#128#184#240#201'&'#134#15#200#10't/'#253#167'ZF['#136'n8,'#248
+  +'p'#1'h'#176#238'G'#15'F'#178'R'#17#185#0#217#130'~'#168#139#136#2'@'#181'1@'
+  +#170#12#136#127#17#19'D'#31#160#169'g?P'#227#3' '#13#194#7'q'#232#209#5'bY 6'
+  +#133#242#239#17'c'#129#0#212'P'#5'$'#140#211'7'#248#194#28'_$''B-q'#128'Z'
+  +#160#15#181#24#25#188#131'&a8'#136#139#139#195#154#204#22'-Z'#196#136#158'LA'
+  +#26#19#129')'#233#2#158'p'#135#249#0#197'`'#153' '#212#172#242'd]'#3#206'88'
+  +#15#141#3'Pf{'#8#149'{'#6#196#188'@'#252#15#136'y'#254'22p'#0#233'j'#152#11#9
+  +#249#0'W'#28'$'#224#242#5'3'#196#184'j\'#6#163#7#29'z'#28#192'|'#2#178#196#30
+  +'-'#236'a'#6#190'Fv!'#177'>'#0#231#3' '#14#4#198#193#2'\aOL'#228#226#242#1
+  +#200#245#160#2#239'>6'#195#176#149'a$'#249#0#228'j'#160#193#7#160'ao'#143'/'
+  +#15#144#234#3'FJ'#155'-'#132'|'#0#16'`'#0'tY'#187#215'B'#242'}!'#0#0#0#0'IEN'
+  +'D'#174'B`'#130
+]);
+LazarusResources.Add('TDWMemtable','PNG',[
+  #137'PNG'#13#10#26#10#0#0#0#13'IHDR'#0#0#0#24#0#0#0#24#8#6#0#0#0#224'w='#248#0
+  +#0#0#25'tEXtSoftware'#0'Adobe ImageReadyq'#201'e<'#0#0#3'fiTXtXML:com.adobe.'
+  +'xmp'#0#0#0#0#0'<?xpacket begin="'#239#187#191'" id="W5M0MpCehiHzreSzNTczkc9'
+  +'d"?> <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.3-c011 6'
+  +'6.145661, 2012/02/06-14:56:27        "> <rdf:RDF xmlns:rdf="http://www.w3.o'
+  +'rg/1999/02/22-rdf-syntax-ns#"> <rdf:Description rdf:about="" xmlns:xmpMM="h'
+  +'ttp://ns.adobe.com/xap/1.0/mm/" xmlns:stRef="http://ns.adobe.com/xap/1.0/sT'
+  +'ype/ResourceRef#" xmlns:xmp="http://ns.adobe.com/xap/1.0/" xmpMM:OriginalDo'
+  +'cumentID="xmp.did:EA85005D4FDEE8118CA9834001FABCD0" xmpMM:DocumentID="xmp.d'
+  +'id:715D7F65E1B811E88A1CE9C6EA3F40CE" xmpMM:InstanceID="xmp.iid:715D7F64E1B8'
+  +'11E88A1CE9C6EA3F40CE" xmp:CreatorTool="Adobe Photoshop CS6 (Windows)"> <xmp'
+  +'MM:DerivedFrom stRef:instanceID="xmp.iid:E5852CD05AE1E8119D02B9131FCBBA29" '
+  +'stRef:documentID="xmp.did:EA85005D4FDEE8118CA9834001FABCD0"/> </rdf:Descrip'
+  +'tion> </rdf:RDF> </x:xmpmeta> <?xpacket end="r"?>'#16#223'b'#254#0#0#0#234
+  +'IDATx'#218#212'U'#193#13#195' '#12#180#17#211#181#175'.'#192'73'#192#0#236
+  +#192'7'#11#244#149#14#209#165#220#144#6'DP'#9'N'#9'Rk'#201#15'c'#240'q'#7#24
+  +'AD'#208#211'%'#204#134#230'A'#208#193#200'^PV'''#221#174#155#24#239'Su'#204
+  +#199#193#4't'#182'*'#131't7G'#199'6'#0'9E'#175'_'#203#206#195#185#138#163#11
+  +#206#151'h-'#28#24#213#128'r'#230#146's'#213#210#162'G'#165#19#220#251'l'#140
+  +#233'#Q(l'#173#197'4.Y'#152#199#6#240#11#210#162'y'#129'S$'#202'A~B'#162'x'
+  +#25'|'#199#3'='#17'=!'#250#18''''#29'QkMM'#221#148'#Q)'#167#148#250#200'h'#28
+  +'GdI'#196')<'#12#195'&'#231#156#139#249#150'n'#138#171#195#14#3#148#13#0#196
+  +'a'#248#255#12'd'#233#195'(u'#205#164#217#225#30#144'g0'#131#188#1#190#252'\'
+  +'X'#12'pyh'#13'V{'#7'/'#1#6#0'c'#203#0#220#4'D'#142#234#0#0#0#0'IEND'#174'B`'
+  +#130
+]);
+LazarusResources.Add('TDWClientREST','PNG',[
+  #137'PNG'#13#10#26#10#0#0#0#13'IHDR'#0#0#0#24#0#0#0#24#8#6#0#0#0#224'w='#248#0
+  +#0#0#25'tEXtSoftware'#0'Adobe ImageReadyq'#201'e<'#0#0#3'fiTXtXML:com.adobe.'
+  +'xmp'#0#0#0#0#0'<?xpacket begin="'#239#187#191'" id="W5M0MpCehiHzreSzNTczkc9'
+  +'d"?> <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.3-c011 6'
+  +'6.145661, 2012/02/06-14:56:27        "> <rdf:RDF xmlns:rdf="http://www.w3.o'
+  +'rg/1999/02/22-rdf-syntax-ns#"> <rdf:Description rdf:about="" xmlns:xmpMM="h'
+  +'ttp://ns.adobe.com/xap/1.0/mm/" xmlns:stRef="http://ns.adobe.com/xap/1.0/sT'
+  +'ype/ResourceRef#" xmlns:xmp="http://ns.adobe.com/xap/1.0/" xmpMM:OriginalDo'
+  +'cumentID="xmp.did:A34E127A5FE0E811823CE2B83938D8F8" xmpMM:DocumentID="xmp.d'
+  +'id:BD4576D9E1B711E889D3E3D7C60D5C42" xmpMM:InstanceID="xmp.iid:BD4576D8E1B7'
+  +'11E889D3E3D7C60D5C42" xmp:CreatorTool="Adobe Photoshop CS6 (Windows)"> <xmp'
+  +'MM:DerivedFrom stRef:instanceID="xmp.iid:805BAE1852E1E81182558B93C8A9BF46" '
+  +'stRef:documentID="xmp.did:A34E127A5FE0E811823CE2B83938D8F8"/> </rdf:Descrip'
+  +'tion> </rdf:RDF> </x:xmpmeta> <?xpacket end="r"?>'#249#222#219'O'#0#0#1'yID'
+  +'ATx'#218#196'U'#189'N'#195'@'#12#182'Cy'#4#182'"F'#164'F'#234#202'H%'#22'T'
+  +#177'03'#240#28#189#21#233'@'#234#203'0@'#133#152#128#141#21#9#24#152'"'#196
+  +#196'# '#197#216'I'#147'^'#238#135'KC'#16#150#172'K'#156#239'l'#127'>'#159
+  +#131'0'#187'~'#6#128#17#20#146#176#230#208#20#143#141#144#0#9#157'U'#176'D_'
+  +#252#252'Fz'#154#10't'#176'r'#14#30#231#1'['#225#204#179#10#22'a'#211#244'9'
+  +#168#147#210'S'#132#30#4#213#130'l'#254#127'*5'#131#207#163#241#29'/'#251'vB'
+  +'Bn'#141#247'{'#24'_@'#140'A'#168'T'#216#18#7'}'#151#200#12'4i'#19#128#2#142
+  +#200'rH'#157#25'$'#136#173'K'#178'u'#245#180'v'#0#204#137#130#25#198#28#254
+  +#230#12'h'#217'm'#212#169'M9'#179'I'#160#28#209'R'#241#222#149'M-'#224#127'.'
+  +#154'}'#197#251#18'a'#240#210#131#31'2T'#228#210#12#144#22#243#176#28'v>'#253
+  +#233#130'U'#154#24'*'#239#199'N'#137#150#19#213'7'#29#157' 6'#14#173#131'5'
+  +#191'#'#149'=/'#160'wN`'#8#149#161'F'#240#173#19#27#162#211'M3x '#207#208#195
+  +#243#221#13#160#211'3'#171#139#8#135#30#234#24#176'5'#130'i'#173#227']Tf'#144
+  +#191#242#214#212'_'#170#27#160'l'#222'`'#167'v'#246#28#156#206#30'Ig'#252'p{'
+  +#224#158#1#19#26#21'\'#216#153'['#247'C'#132#147'y'#167'6'#173'N'#227#163#229
+  +'h'#142'uX'#3'c2'#216#150#159#182#175'<1QJ'#133'3'#178#155#166'o'#249#22'`'#0
+  +#230':z'#172#25'A'#208#148#0#0#0#0'IEND'#174'B`'#130
+]);
+LazarusResources.Add('TDWResponseTranslator','PNG',[
+  #137'PNG'#13#10#26#10#0#0#0#13'IHDR'#0#0#0#24#0#0#0#24#8#6#0#0#0#224'w='#248#0
+  +#0#0#25'tEXtSoftware'#0'Adobe ImageReadyq'#201'e<'#0#0#3'fiTXtXML:com.adobe.'
+  +'xmp'#0#0#0#0#0'<?xpacket begin="'#239#187#191'" id="W5M0MpCehiHzreSzNTczkc9'
+  +'d"?> <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.3-c011 6'
+  +'6.145661, 2012/02/06-14:56:27        "> <rdf:RDF xmlns:rdf="http://www.w3.o'
+  +'rg/1999/02/22-rdf-syntax-ns#"> <rdf:Description rdf:about="" xmlns:xmpMM="h'
+  +'ttp://ns.adobe.com/xap/1.0/mm/" xmlns:stRef="http://ns.adobe.com/xap/1.0/sT'
+  +'ype/ResourceRef#" xmlns:xmp="http://ns.adobe.com/xap/1.0/" xmpMM:OriginalDo'
+  +'cumentID="xmp.did:2F16A00BF7D5E811B3ACA7645A236B4A" xmpMM:DocumentID="xmp.d'
+  +'id:7A0C954BE1B811E895CEF30A62F6F620" xmpMM:InstanceID="xmp.iid:7A0C954AE1B8'
+  +'11E895CEF30A62F6F620" xmp:CreatorTool="Adobe Photoshop CS6 (Windows)"> <xmp'
+  +'MM:DerivedFrom stRef:instanceID="xmp.iid:5AFD0B8354DEE8118CA9834001FABCD0" '
+  +'stRef:documentID="xmp.did:2F16A00BF7D5E811B3ACA7645A236B4A"/> </rdf:Descrip'
+  +'tion> </rdf:RDF> </x:xmpmeta> <?xpacket end="r"?>8<'#209#134#0#0#1#30'IDATx'
+  +#218'b'#252#255#255'?'#3'-'#1#19#3#141#1#11#136#152#19#180#4#198#7'{''e]'#12
+  +'#T'#12#230'=F'#160#24#3#186'X$s,'#195#242#191#139'A|F$3'#15#1#177'-'#200#12
+  +'B>'#248#143#133#253#159#128'<qA'#244'5'#20#217'A`'#215'1'#226#225#227#181#4
+  +#159#15#24#145'4'#254'G'#10'Fl'#224'0.K'#8'E2#'#9#241#9'Sk'#139#17#201'8'#188
+  +#247#159#136#184#193'f'#201#127'B>`'#228'^'#253#31#221#245#224#20#131'%.'#8
+  +#250#154'qxd4'#162'b'#176'j'#27#201'^'#253#223#230#197#8#183'@;}'#166#219'5a'
+  +#217#157#224'`k'#243'"'#172'9'#208#27'a'#249#250#173'8'#197'X'#200#245':'#204
+  +#0'Bb$'#197#1#146#11#25#137#192#148#249#128#136#252#128#219#2#164#8#197#23#31
+  +#140'd''S'#173#183#143#29'a'#174#4'Z'#134#207#7#184'0'#214'dz'#5'Zh'#253#7
+  +#166'&t'#131#24#169#225#131'g@l'#7#210#136#228#3'|'#6#145#236#3'8'#0#250'`?'
+  +#17#174'd$)''_'#157#153'Nn1M'#157#162#2'-#'#17']l'#208#188'4'#5#8'0'#0#206'H'
+  +'fRO'#197#178'^'#0#0#0#0'IEND'#174'B`'#130
+]);
+LazarusResources.Add('TDWServerContext','PNG',[
+  #137'PNG'#13#10#26#10#0#0#0#13'IHDR'#0#0#0#24#0#0#0#24#8#6#0#0#0#224'w='#248#0
+  +#0#0#25'tEXtSoftware'#0'Adobe ImageReadyq'#201'e<'#0#0#3'fiTXtXML:com.adobe.'
+  +'xmp'#0#0#0#0#0'<?xpacket begin="'#239#187#191'" id="W5M0MpCehiHzreSzNTczkc9'
+  +'d"?> <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.3-c011 6'
+  +'6.145661, 2012/02/06-14:56:27        "> <rdf:RDF xmlns:rdf="http://www.w3.o'
+  +'rg/1999/02/22-rdf-syntax-ns#"> <rdf:Description rdf:about="" xmlns:xmpMM="h'
+  +'ttp://ns.adobe.com/xap/1.0/mm/" xmlns:stRef="http://ns.adobe.com/xap/1.0/sT'
+  +'ype/ResourceRef#" xmlns:xmp="http://ns.adobe.com/xap/1.0/" xmpMM:OriginalDo'
+  +'cumentID="xmp.did:D3A3E9F86AD5E811B404BD74D6F439F5" xmpMM:DocumentID="xmp.d'
+  +'id:9FEFE27AE1B811E8BC66AA1B07C12099" xmpMM:InstanceID="xmp.iid:9FEFE279E1B8'
+  +'11E8BC66AA1B07C12099" xmp:CreatorTool="Adobe Photoshop CS6 (Windows)"> <xmp'
+  +'MM:DerivedFrom stRef:instanceID="xmp.iid:218FECF6B4E1E811A97ED2C7F74D7FE1" '
+  +'stRef:documentID="xmp.did:D3A3E9F86AD5E811B404BD74D6F439F5"/> </rdf:Descrip'
+  +'tion> </rdf:RDF> </x:xmpmeta> <?xpacket end="r"?>'#200'M'#148#163#0#0#0#199
+  +'IDATx'#218'b'#252#255#255'?'#3'-'#1'#'#173'-`'#161#170'k'#171#182'a'#186#22
+  +#228#3'R1C'#229'V\'#226#255#231'=g'#128'c'#16#159#5'j3'#216'.b'#29#138#215
+  +#197#212#14#162#255'm^x-d'#193#231'Bt'#179#240#132'='#156#157'4i+'#237'"'#25
+  +#217'7'#248','#160'j'#186'eb'#160'1'#160'J'#28#144#26#201#196#132'5V>('#178
+  +#231#229'y'#163'D8'#11#165'.%'#148#23'X(I- '#195'i'#146#15'@A'#129#28'L'#195
+  +';'#31#16#246'AM'#27#132'n'#169'"'#166#184#198'H],T'#206'W'#255#209'-$l'#1#17
+  +'.G'#206#7#175'.U'#192#197#197#244':'#224#22#252''''#209#149#140'$'#229#3'l'
+  +#177'OLX'#163#235#195'f'#25'U+}'#154'['#128#13#0#4#24#0'_C'#157#240#220#254
+  +#27#171#0#0#0#0'IEND'#174'B`'#130
+]);
+LazarusResources.Add('TDWContextRules','PNG',[
+  #137'PNG'#13#10#26#10#0#0#0#13'IHDR'#0#0#0#24#0#0#0#24#8#6#0#0#0#224'w='#248#0
+  +#0#0#25'tEXtSoftware'#0'Adobe ImageReadyq'#201'e<'#0#0#3'fiTXtXML:com.adobe.'
+  +'xmp'#0#0#0#0#0'<?xpacket begin="'#239#187#191'" id="W5M0MpCehiHzreSzNTczkc9'
+  +'d"?> <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.3-c011 6'
+  +'6.145661, 2012/02/06-14:56:27        "> <rdf:RDF xmlns:rdf="http://www.w3.o'
+  +'rg/1999/02/22-rdf-syntax-ns#"> <rdf:Description rdf:about="" xmlns:xmpMM="h'
+  +'ttp://ns.adobe.com/xap/1.0/mm/" xmlns:stRef="http://ns.adobe.com/xap/1.0/sT'
+  +'ype/ResourceRef#" xmlns:xmp="http://ns.adobe.com/xap/1.0/" xmpMM:OriginalDo'
+  +'cumentID="xmp.did:0E375E844EDEE8118CA9834001FABCD0" xmpMM:DocumentID="xmp.d'
+  +'id:F9C69097E1B711E8AB7EA508FD86FD87" xmpMM:InstanceID="xmp.iid:F9C69096E1B7'
+  +'11E8AB7EA508FD86FD87" xmp:CreatorTool="Adobe Photoshop CS6 (Windows)"> <xmp'
+  +'MM:DerivedFrom stRef:instanceID="xmp.iid:0F375E844EDEE8118CA9834001FABCD0" '
+  +'stRef:documentID="xmp.did:0E375E844EDEE8118CA9834001FABCD0"/> </rdf:Descrip'
+  +'tion> </rdf:RDF> </x:xmpmeta> <?xpacket end="r"?>'#17#153'A'#5#0#0#0#172'ID'
+  +'ATx'#218'b'#252#255#255'?'#3'-'#1#19#3#141#1'#C'#229'Vl^`'#252#223#230'E'
+  +#186'aU'#219'0'#204'b'#1#17#175'.U'#192#5#196#244':`'#138#201'r'#241#188'<o8'
+  +';i'#210'V'#136#5'X'#192#127#12#159#18#167#142#1#171#15#176#6#29#241#134#224
+  +'U'#139'3'#14#208'4'#225#243#1'~'#11'p%S'#164'8 '#218#2'l'#9#131#246#201#20
+  +#228#3#2')'#134#148' '#194#240#5#205#227#128#5'['#218#165#4#144#155#15#254#19
+  +#8'B'#138#243#1#249#201't4'#31#208'='#31#160#231#137#161#151#15#208#235#22#22
+  +'r'#210'6'#181#243#1#177'u'#1'i'#249#128'Zu2#'#173#155'-'#0#1#6#0#159'Dg_'
+  +#211#216'R'#2#0#0#0#0'IEND'#174'B`'#130
+]);
+LazarusResources.Add('TRESTDWServiceNotification','PNG',[
+  #137'PNG'#13#10#26#10#0#0#0#13'IHDR'#0#0#0#24#0#0#0#24#8#6#0#0#0#224'w='#248#0
+  +#0#0#25'tEXtSoftware'#0'Adobe ImageReadyq'#201'e<'#0#0#3'fiTXtXML:com.adobe.'
+  +'xmp'#0#0#0#0#0'<?xpacket begin="'#239#187#191'" id="W5M0MpCehiHzreSzNTczkc9'
+  +'d"?> <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.3-c011 6'
+  +'6.145661, 2012/02/06-14:56:27        "> <rdf:RDF xmlns:rdf="http://www.w3.o'
+  +'rg/1999/02/22-rdf-syntax-ns#"> <rdf:Description rdf:about="" xmlns:xmpMM="h'
+  +'ttp://ns.adobe.com/xap/1.0/mm/" xmlns:stRef="http://ns.adobe.com/xap/1.0/sT'
+  +'ype/ResourceRef#" xmlns:xmp="http://ns.adobe.com/xap/1.0/" xmpMM:OriginalDo'
+  +'cumentID="xmp.did:A6BABEC359DEE8118CA9834001FABCD0" xmpMM:DocumentID="xmp.d'
+  +'id:0724F7FAE1B911E8AC4EC3C614C6F496" xmpMM:InstanceID="xmp.iid:0724F7F9E1B9'
+  +'11E8AC4EC3C614C6F496" xmp:CreatorTool="Adobe Photoshop CS6 (Windows)"> <xmp'
+  +'MM:DerivedFrom stRef:instanceID="xmp.iid:9BD6DD09FDE0E811AFD3BF1EE28E85C0" '
+  +'stRef:documentID="xmp.did:A6BABEC359DEE8118CA9834001FABCD0"/> </rdf:Descrip'
+  +'tion> </rdf:RDF> </x:xmpmeta> <?xpacket end="r"?>'#15#195#155#166#0#0#1';ID'
+  +'ATx'#218'b'#250#255#255'?'#3'-1'#19#3#141#1#205'-`A'#23'`'#172#218#6'g'#139
+  +'>gbx5'#223#3'$f'#11#228#246#163')-'#4#226#195#235'3'#189#24#210#234'v0'#188
+  +#150#252#7#22#252#223#230#133'j'#30'('#156'p'#25#14#2'@'#141#139#129'T'#16#16
+  +'s'#161'Y'#240#13#136#215#1'q,>K'#176#6#17#17#134'3@'#197'@r'#139#3#167'C'#28
+  +#6#178#136'P'#28#128#189#3#10#22#168#225'>8'#12'G'#182#4#164'f1HO'#128','#196
+  +#12#228#144'`'#130#6#13#138' '#20#184#2#177#0#17#241#8'Rc'#135'%.'#255#19'JE'
+  +#226'@|'#150#8#11'@j'#228#6','#153#142'Z0x,`'#164#129#217#140#216'|'#192'H-'
+  +#131#9#149'Eg'#128#216#152'D'#131#207#2#203' '#19#152#25#176#242#8#197#2#168
+  +'%'#200#134#159'%'#210'pcdK'#240#249#224#1#144#146#167'0'#136#30#2'-Q'#192'j'
+  +#1#182#242'd'#129#232#134#245#241'B'#179#3#177#201'/|'#151#186'>'#225'u@ '
+  +#208'@'#198#193'S'#163#161#148#221'@'#151'1V'#129#139#240#245#216#228#193#174
+  +'W'#247'f'#132#150#242#216'C'#1'9'#136'6<F'#149#132'U$'#12#184'M'#128#7#13'r'
+  +'e'#3#173#23#8#199#1'5'#0'@'#128#1#0'UK'#193'^!'#14#222#201#0#0#0#0'IEND'#174
+  +'B`'#130
+]);
+LazarusResources.Add('TRESTDWBatchMove','PNG',[
+  #137'PNG'#13#10#26#10#0#0#0#13'IHDR'#0#0#0#24#0#0#0#24#8#6#0#0#0#224'w='#248#0
+  +#0#0#9'pHYs'#0#0#11#19#0#0#11#19#1#0#154#156#24#0#0#1'6iCCPPhotoshop ICC pro'
+  +'file'#0#0'x'#218#173#142#177'J'#195'P'#20'@'#207#139#162#226'P+'#4'qpx'#147
+  +'(('#182#234'`'#198#164'-E'#16#172#213'!'#201#214#164#161'Ji'#18'^^'#213'~'
+  +#132#163'['#7#23'w'#191#192#201'QpP'#252#2#255'@q'#234#224#16'!'#131#131#8
+  +#158#233#220#195#229'r'#193#168#216'u'#167'a'#148'a'#16'k'#213'n:'#210#245'|'
+  +'9'#251#196#12'S'#0#208#9#179#212'n'#181#14#0#226'$'#142#248#193#231'+'#2#224
+  +'y'#211#174';'#13#254#198'|'#152'*'#13'L'#128#237'n'#148#133' *@'#255'B'#167
+  +#26#196#24'0'#131'~'#170'A'#220#1#166':i'#215'@<'#0#165'^'#238'/@)'#200#253
+  +#13'()'#215#243'A|'#0'f'#207#245'|0'#230#0'3'#200'}'#5'0ut'#169#1'jI:Rg'#189
+  +'S-'#171#150'eI'#187#155#4#145'<'#30'e:'#26'dr?'#14#19#149'&'#170#163#163'.'
+  +#144#255#7#192'b'#190#216'n:r'#173'jY{'#235#252'3'#174#231#203#220#222#143#16
+  +#128'Xz,ZA8T'#231#223'*'#140#157#223#231#226#198'x'#25#14'oazR'#180#221'+'
+  +#184#217#128#133#235#162#173'V'#161#188#5#247#227'/'#192#198'O'#253#232'ZOb'
+  +#0#0#0' cHRM'#0#0'z%'#0#0#128#131#0#0#249#255#0#0#128#232#0#0'R'#8#0#1#21'X'
+  +#0#0':'#151#0#0#23'o'#215'Z'#31#144#0#0#5'UIDATx'#218#132#150']'#136#156'W'
+  +#25#199#127#207'9'#231#157'wgwf'#246#171#187'kv'#221#196#166#141#137'1l'#170
+  +'i'#177#23'F'#17#161'$B-'#189#176'A'#208#18#181#130#151#10#246#194#11#5#209
+  +#155'B'#17#21'DADQQ'#138#21#3'm'#149#182#210'.'#169'Vz'#17'CJ>k'#178#11#251
+  +#153#157#236#204#236#236#204#206#199';'#239'9'#143#23';'#155'Lb'#26#159#155
+  +#247#235'<'#207#255'<'#255#231#255'?'#188#162#170'O'#172#174'o'#254#244#249
+  +'7'#223#25#30#154#236#195'kJ'#189#210#130#182#211#209#169'~'#154#173#150#24
+  +'c1@P'#197#24'A'#141#231#250'Z'#131#227'{'#246#133#207'?|@'#0#225#238'Qw'#229
+  +#205#250#169#226#226#22'c'#133'Qf'#227#23#184#188'q'#14#173#228#248#202#196
+  +#183'x'#219#190#204#149#250'%'#162'LD'#192#225'BD'#232'4'#217#248'@'#31#31
+  +#159'y'#154'q'#191#139#255#19'y'#249#222#169#217#246#240'T'#191#150#27#245'h'
+  +#161#184'l'#172#143#24#223#157#165#207#15#208#212'&'#237'4A'#197#19#140'A'
+  +#130#146#198'#'#244#253#246'e'#204#249#139'|'#234#249#31#241#248''''#14'j'
+  +#183#3#5'<`{:'#170#185#212#186#246'/'#237#169#252#149#228'*'#19':'#197'3#''x'
+  +'#'#249'='#239#22#255'E'#222'N'#128#25#192#6#135'Q'#168#164'E>'#253#201#239
+  +#243#221'kM'#242#255'x'#149'3'#27'7'#244'w'#255'yQK'#149#27#8'B'#159#235#243
+  +'''g'#190'hb'#23#223#164#204#165#245'M'#158#189'X%'#173#166#172'77IM'#141#175
+  +#238#250#130#250']O'#138'`B0'#168#9#198#160'&U|'#168'V'#198#227'K'#182#204#12
+  +'0W\'#228#236#248#27#230'#'#147#147'4'#26'-'#206#156#191#16'?6'#253'Y'#238#31
+  +#155#190#201#145#187#127'jDO'#166'+'#224#207#178#214'*pv'#207'7'#147'c'#15#31
+  +'2'#128#235'i5'#5'Z'#128'M'#193#255#17'ok'#192'ha'#168'3'#230'G'#169#172'ne'
+  +#30'98C'#168#8'Fo'#159#183'i%A'#241'1h'#31'U'#19#209'I'#219#161#231#187#0#166
+  +'{'#141#128#254'UHA|'#29#216'=2i~x'#224';'#213#145#242'x'#227#220#242#5#2#225
+  +'N='#137'1B'#184'U'#11#16#137#186'E{'#129#146#238#0#209#237#251#20' x'#239
+  +#238#203#141#20#246'O'#238'mw|'#10'*'#154#205#196#189'y'#169#1#245#168#130#10
+  +#130'b'#9#30#232't'#23'h'#143':Lw'#27'9'#129#140#1#218#190#147#150#26#213'f'
+  +#169'Q'#30#136#157#195#8#186'R-V7[[['#221'|kR'#31#4'U'#16#193#136#226'DMWj;'
+  +#0#0#217#238#187'4'#134'J'#174'V'#13'c'#192'xa'#184'v'#185#190#220'<u'#254
+  +#239#153#7'w}'#144#173#206#150#249#241#236'o'#10'iHv'#242#131#203'd'#156#210
+  +'X'#135#214#2#3#173#28#24''''#221'bIw'#208#10#168'j'#144'bi'#171'S#J'#222#249
+  +#240#163#204'&'#134#163#141#148#199#250#14#249#163'#'#199':+W'#215#162'\}'
+  +#138#227#7#31#151#254'0'#236#214#138'5\'#204#186#252#224#175#167'K''&'#231'G'
+  +':'#149#213#228#189'b;'#173#141#31#227'sG'#14#237#152#167'?'#227'l''r'#182
+  +#241#218#185'k'#217#217#165#5'7V'#16')'#229#10',T-'#251#146'M'#159#31#16#151
+  +#139#243'z'#173'rZ'#134#226#221':'#218#255'`'#187#220','#234#216#224'xvy'#177
+  +'Z'#148#175#253#252#207#155'iaw>'#181#25#31':-'#159#173'/'#153#200#8#178'=s'
+  +#215'J:'#161'\'#218'b'#247#196#1#227#247'\'#226'o'#239#253#140'llyt'#224#27
+  +'ap'#180'__'#188#252#156#157#204#239#163#221'H'#136'2'#17#137#175#251#213#214
+  +#130'<'#253#204#175#205#196#242#193#13#169'5Z'#229'N'#234#135'E'#192#26#227
+  +'U'#196'wR'#31'mO'#5'}'#233#204#21'^'#159#159#227'C'#147#5#193#180'X^)'#145
+  +#203'e'#25#204#231#17#132'Z{'#3'+'#22'c,AS'#162#129#1'6'#230'J|'#244#133'?Q'
+  +#217#251'P'#205#229#178#177#191'C'#247#218#149#168#5#228#240#212#3#252'a'#253
+  +#180#190#178#248'*'#145'd86'#244'e'#136#219#252#226#221'o3'#152#153#192#154
+  +#136#160')'#130#208'H'#234'L'#238'?'#194#147'CO'#233#201#215'^'#145#151'f'
+  +#202'8 '#211'k< '#238'y'#246's'#173#150'<T'#218'2O'#181'-V,'#243#201'<'#147
+  +#135'>'#19#158'{'#228'''8'#137'$H'#0#8#162'b'#2'*'#154#201'ji'#174#204'"'#208
+  +#188'o'#28#183#163#239#247#137'P'#139#243#156#152#14#230#200#250#191#193#26
+  +#222#10#251#244#240#209'#'#20'nyv'#199#237#218'5'#160#127#221']'#140#151#1
+  +#227#189#152#30#173#223'-\'#164#234#202#169#129'4'#11'>'#199'F'#176#178#214
+  ,#188'y|'#244#130#236#0#185'z'#179#181'M'#131'l'#155#234'^'#225#197'H'#199#152
+  +'['#7'L'#234'SB'#184#235#218#29#255'X'#147#166'>'#2'T'#228#158#244'x'#160#13
+  +#24#213#174'-T'#177'b'#177#183'g'#221#9#167#193#24#28#208#215'l'#224#238#1'`'
+  +#128#200'{/'#169'W'#184#217#133#162#183'H'#213#187'P'#172#26#2#23#128#171#222
+  +#246#223#11'@'#128#140#218'L'#154#167#161'4'#23#4#227#200#186':q'#246#127'h'
+  +#185'-'#226'|'#174'9'#255#171#191'\?'#176'wz'#221#1#249'{'#13'!)/'#185'7'#147
+  +#7'H'#166#158'EEy'#251#250#4're'#137#246'`'#223#246#214#181#231#164#223#254
+  +#243#176#215'nlD_'#255#210#19#253#211#25'9,'#170#186#2#228#222#167'~'#251#242
+  +#194'R'#244#207#235#29#178#195'SFU'#177#141#27#228#218#21'pN'#5'$l'#3'h'#151
+  +'0I}'#192'Y'#19#142#127'l'#191's'#214'$'#255#29#0#128'ow'#144'd:'#10#212#0#0
+  +#0#0'IEND'#174'B`'#130
+]);
+LazarusResources.Add('TRESTDWUpdateSQL','PNG',[
+  #137'PNG'#13#10#26#10#0#0#0#13'IHDR'#0#0#0#24#0#0#0#24#8#2#0#0#0'o'#21#170#175
+  +#0#0#0#9'pHYs'#0#0#11#19#0#0#11#19#1#0#154#156#24#0#0#0' cHRM'#0#0'z%'#0#0
+  +#128#131#0#0#249#255#0#0#128#233#0#0'u0'#0#0#234'`'#0#0':'#152#0#0#23'o'#146
+  +'_'#197'F'#0#0#4#22'IDATx'#218#148#148'[h\U'#20#134#215#222#231'2sf'#152#153
+  +'Lf2'#185''''#214'$'#182#169#245#210#6'Q'#163#20#164#130#162#168#181#22#21'j'
+  +'E'#17'A'#250' '#248#224#147#250' "'#8#130#208#7#241'AAP'#20#10'R'#180'T'#132
+  +'Z(m'#211'VM'#160'M'#155'67'#155#166'sI'''#153#203#153'9g'#206'}'#239#189'|'
+  +#176'R'#155#206'<'#228'{^'#235'[{'#255#155#181#9'""'#226#145#191'f'#178#149
+  +'F'#221#241'6'#245#244#238#186#191#183'3'#26#1#128':c'#147#151'K3'#217#229
+  +#186'o'#14'uw'#239#220#220'?'#152'js}'#255#203#195'Ge5'#254#238#158''''#9#220
+  +#130#2'@'#197#180'V'#12#199'Pb'#141'p,k'#176'l'#185#134#128#2#160#168#155#215
+  +#202#150'Nc'#134#150#200'Zl!W'#242#4'G '#158#28#242#212#8' '#252#31#217#13
+  +#216'O'#151'rV'#170'?'#157'J'#199#3#154'/'#214#142#207'WF'#186#4#147#201#209
+  +#233'rCK'''#7#227#29'J`'#151#141'3'#133'*'#213#214#198#135'2'#152#28'T'#18#25
+  +' '#183#139'|&'#230't'#153'ylogmko'#199'o'#24'*'#229#218'=O\'#201#150'r"1'#24
+  +#133'}'#155'h'#146#134#235#25#233's'#221#155#188#225#141#245'q'#207#9'{'#208
+  +#0#188#205'%'#171#178#212#163#184'Wu'#247#196't'#242'<'#187#216#149#193#253
+  +#15#221#213#174'A'#209'0'#12#11#247#13#15'g$'#2#0'iM'#217#220'&'#159#254#187
+  +#230's.a'#192'-X'#7'Ue'#250#234#216#224'X_b'#217#231#151'x'#228'l'#193#254
+  +#225#244#5#195#229#213' '#234'Z'#209#136'z+'#9'J|'#221#225'\'#136#134#219#168
+  +'2g'#157'H'#22'\'#212#245#218#142#142#208'S'#247'&'#138'u'#239#219')'#243'XY'
+  +'~'#162'j9'#156#219'.3<'#136#169#0#0#8'P0'#25'6*('#238#182#253' '#160'l]F'
+  +#212'e'#252#199'?'#243#199'.'#21#187'B'#202#195#189#137#7#251#211#133#213':g'
+  +#193'P'''#5'7'#247#235#201#235#142#23'p'#196#169#235#213#139#11#245#161#164
+  +#18#14')'#182'mS'#203''''#235'N'#164#169'JG{'#244#220'R'#241#224'Dl$'#25#254
+  +#227'Jak,'#212#215#30#235#147#201'tfm'#162'XZ='#161#199#162#234#210#138#237
+  +#210#216#214#225#225#144'"'#171'!'#201'F'#233#171#147'3a`'#140#9#25'Yw[T'#150
+  +'(y~|'#164#216#168#156':'#127#249#172#131#209#164#252#214#248#246#206'D'#148
+  +#16'x'#127#247#216#193'c'#211#243#197#138#16'N'#138'*'#198#154';'#155'S'#237
+  +#209'x'#181'pu'#141'E'#204'R'#158' '#250#156'h'#204#218#214#159'&('#4#18#226
+  +'qa'#219'.g"'#172#133'ba'#5#0'\t'#203#214#234#188#185'\'#172'R'#199#183#219
+  +'"'#252#232#212#141#235's'#226#131#231#30#223'1:'#192#4#16'@!'#16#8#161#128
+  +'!E&'#136#8#205'8'#185#242#203')'#247'{%N'#208'O'#10#26'0'#201#156';'#135'/'
+  +#223#243#225#211'C'#15'h'#10#189#179'^'#134#22#220#208#23#226#253'A '#9''''
+  +#154'g'#138']]'#176#186#26'[^'#216#178#157#182#168'o.'#10#4#227#146'f1U'#242
+  +#21'*9!_6g'#188'O'#158#249#8#5#3#218#188#165#249#128'U'#183#156#243#242#22
+  +#138#138#228'x('#231#23#205#129#254'm'#13#225#150#234'k'#1#15'6 '#178'y'#222
+  +#14#230'}'#190'\'#231'Y'#211'2'#133#11#165#224#234#199'g'#222'9'#240#221'~'
+  +#27#141#13'\'#173#176#188#196'u'#143#135'i,'#170'P'''#172'%'#226#0#186'['#225
+  +'{w'#190#145#144'S'#27#16'm'#238'y'#164'-=p'#193#154#154'\='#228'G'#28'G1'
+  +#136']'#136#248'='#187#238#219#13#27#10#187'''5'#144#129#206#217'k'#23#214'j'
+  +#197#6'`Cv'#189#197#242#129#145'75'#17'n%j'#241#154#28#0#188'kK'#179#21#189
+  +#230#234'uR'#13#132#167#30#158#248#249#224#161'/'#28#207#221#136#8#17#133#156
+  +#134#193'Q:'#142#21#217#180#234#165#134#153'L'#165'_{q'#143#166#134'['#182'4'
+  +'A '#23#156'!+'#224#226#179#223#140'v'#127#10'o'#31'y'#165#140#5'D'#134#156
+  +'7'#237'h!'#250#143#137#213#19#143#189'7'#252#245#239#159#249#232#11#20'7'
+  +#135'4'#163#229#174#221#220#184#185#227'e}'#229#165'G_'#7#1'@'#0#200#191#127
+  +#28#185#179#242#159#1#0#140'Q'#173#149'VV'#160#178#0#0#0#0'IEND'#174'B`'#130
+]);

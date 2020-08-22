@@ -1,0 +1,26 @@
+object dwCGIService: TdwCGIService
+  OnCreate = DataModuleCreate
+  OldCreateOrder = False
+  Actions = <>
+  CreateSession = False
+  Kind = wkOneShot
+  Height = 244
+  HorizontalOffset = 256
+  VerticalOffset = 127
+  Width = 243
+  PPI = 96
+  object RESTServiceCGI1: TRESTServiceCGI
+    CORS = False
+    ServerParams.HasAuthentication = False
+    ServerParams.UserName = 'testserver'
+    ServerParams.Password = 'testserver'
+    Encoding = esUtf8
+    ForceWelcomeAccess = False
+    ServerContext = 'cgieflex/dwCGIServer.exe'
+    RootPath = '/'
+    CriptOptions.Use = False
+    CriptOptions.Key = 'RDWBASEKEY256'
+    left = 96
+    top = 88
+  end
+end
